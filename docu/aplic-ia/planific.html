@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Planificacion</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Agentes Inteligentes"
+HREF="agent-intel.html"><LINK
+REL="NEXT"
+TITLE="Procesamiento de Lenguaje Natural"
+HREF="nlp.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="agent-intel.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="nlp.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="planific"
+>6. Planificacion</A
+></H1
+><P
+>Llamaremos planificación al proceso de
+    búsqueda y articulación de una secuencia de acciones
+    que permitan alcanzar un objetivo. Por ejemplo, si nuestro
+    objetivo es viajar desde un pueblo perdido de Asturias y queremos
+    llegar a Guatemala la secuencia de acciones serían los
+    distintos transportes que se deben tomar para llegar. Otro ejemplo
+    podría ser que tuviéramos un robot en un laberinto y
+    nuestro objetivo fuera sacarle de él; en tal caso, nuestras
+    acciones serían los tramos recorridos en línea recta
+    y los giros dados por el robot.</P
+><P
+>Para formalizar el problema de la planificación
+    existen 2 notaciones principales: ADL y <A
+HREF="http://www.rci.rutgers.edu/~cfs/472_html/Planning/STRIPS_plan_472.html"
+TARGET="_top"
+>STRIPS</A
+>.
+    Ambas coinciden en utilizar la lógica para representar
+    estado inicial, objetivo y acciones. También coinciden en
+    que, para aplicar una acción, es necesario cumplir unas
+    precondiciones y, tras haber ejecutado la acción,
+    habrá provocado unos efectos.</P
+><P
+>Para obtener la secuencia de acciones, es decir, el
+    resultado al problema de la planificación, existen varios
+    enfoques:</P
+><P
+></P
+><UL
+><LI
+><P
+>Búsquedas en el espacio de estados que operan
+	hacia adelante (desde el estado inicial), o hacia atrás
+	(desde el objetivo) aplicando las acciones. También
+	existen heurísticas (estrategias) eficaces que nos
+	ayudan en la búsqueda. Estos enfoques funcionan bien
+	cuando los subobjetivos son independientes.</P
+></LI
+><LI
+><P
+>Si los subobjetivos no son independientes suele ser
+	buena idea utilizar algoritmos de Planificación de
+	Orden Parcial (POP), que exploran el espacio de planes sin
+	comprometerse con una secuencia de acciones totalmente
+	ordenada. Trabajan hacia atrás, desde el objetivo y
+	añaden acciones para planificar cómo alcanzar
+	cada subobjetivo.</P
+></LI
+><LI
+><P
+>Otras estrategias prometedoras son el algoritmo <A
+HREF="http://www-2.cs.cmu.edu/~avrim/graphplan.html"
+TARGET="_top"
+>GRAPHPLAN</A
+>
+	y el algoritmo <A
+HREF="http://www.cs.washington.edu/homes/kautz/satplan/"
+TARGET="_top"
+>SATPLAN</A
+>.</P
+></LI
+><LI
+><P
+>Cuando no se trabaja en mundos cerrados, sino en el
+	mundo real, debemos tener en cuenta varias
+	consideraciones. Muchas acciones consumen recursos: tiempo,
+	dinero, materias primas, etc. por lo que debemos tener en
+	cuenta medidas numéricas. Las <A
+HREF="http://www.cs.umd.edu/projects/plus/HTN/"
+TARGET="_top"
+>redes
+	jerárquicas de tareas (HTN)</A
+> permiten tener
+	sugerencias sobre el dominio por parte del
+	diseñador. La información incompleta puede ser
+	manejada mediante planificación que utilice acciones
+	sensoriales para obtener la información que
+	necesita. La planificación multiagente es necesaria
+	cuando existen otros agentes en el entorno con los que
+	cooperar, competir, o coordinarse.</P
+></LI
+></UL
+><P
+>Los problemas y soluciones que se abordan en
+    planificación tienen aplicaciones directas en
+    gestión de tareas (workflow), control de misiones complejas
+    (espaciales, satélites, militares, etc.), turismo (visitas
+    a ciudades, planificar rutas, ...), procesos de
+    enseñanza/aprendizaje, robótica (planificar
+    caminos), ...</P
+><P
+>Para la problemática de la planificación, las
+    licencias libres han brillado por su ausencia. No obstante, todos
+    los algoritmos se distribuyen con su código, lo cual
+    también es cierto en arquitecturas integradas como <A
+HREF="http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/prodigy/Web/prodigy-home.html"
+TARGET="_top"
+>PRODIGY</A
+>,
+    muy usadas en planificación.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="agent-intel.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="nlp.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Agentes Inteligentes</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Procesamiento de Lenguaje Natural</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

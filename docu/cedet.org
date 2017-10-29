@@ -1,0 +1,15 @@
+
+
+
+* Instalación
+
+Es posible descargarse cedet desde
+http://sourceforge.net/projects/cedet/. Una vez descargado se instala
+con los siguientes comandos, como se explica en el fichero INSTALL:
+
+#+BEGIN_SRC bash
+$ mv cedet-1.1 ~/emacs/cedet
+$ cd ~/emacs/cedet
+$ make 
+
+#+END_SRC

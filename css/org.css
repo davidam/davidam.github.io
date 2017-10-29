@@ -1,0 +1,73 @@
+body {
+ margin-left: 7%;
+ margin-right: 7%;
+ margin-top: 0px;
+ /* background-color: #ccc; */
+ background-color: #bbb;
+ font: 300 .9em/1.6em "Brawler", "Libre Baskerville", "Source Code Pro", "Droid Sans Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
+ text-align: justify;
+ font-size: 13pt;
+ padding: 12px;
+ line-height: 18pt;
+}
+
+h1 {
+  line-height: 28pt;
+  color: rgb(69, 83, 114);
+  font-size: 32pt;
+}
+
+h2 {
+  color: rgb(255, 92, 85);
+  font-family: Oswald,Arial,Helvetica,"Nimbus Sans L",sans-serif;
+}
+
+
+
+#postamble {
+ display: none;
+}
+
+#content { 
+    background-color: #fefefe;
+    box-shadow: 1px 1px 8px #555;
+    /* border: 2px solid #aaa; */
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+}
+
+#table-of-contents {
+    font-size: 10pt;
+    position: fixed;
+    right: 0em;
+    top: 0em;
+    background: white;
+    line-height: 12pt;
+    text-align: right;
+    box-shadow: 0 0 1em #777777;
+    -webkit-box-shadow: 0 0 1em #777777;
+    -moz-box-shadow: 0 0 1em #777777;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    /* ensure doesn't flow off the screen when expanded */
+    max-height: 80%;
+    z-index: 90;
+    overflow: auto; }
+#table-of-contents h2 {
+    font-size: 13pt;
+    max-width: 9em;
+    border: 0;
+    font-weight: normal;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.05em;
+    padding-bottom: 0.05em; }
+#table-of-contents #text-table-of-contents {
+    display: none;
+    text-align: left; }
+#table-of-contents:hover #text-table-of-contents {
+    display: block;
+    padding: 0.5em;
+    margin-top: -1.5em; }

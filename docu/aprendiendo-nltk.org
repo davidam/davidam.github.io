@@ -1,0 +1,87 @@
+#+TITLE: Aprendiendo NLTK
+#+LANGUAGE: es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+AUTHOR: David Arroyo Menéndez
+
+* Instalar NLTK
+
+En la documentación de http://nltk.org/install.html no está muy bien
+documentado cómo instalar nltk en debian, pero es fácil:
+
+#+BEGIN_SRC python
+$ sudo apt-get install python-pip
+$ sudo pip install -U numpy
+$ sudo pip install -U pyyaml nltk
+$ python
+>>> import nltk
+>>> nltk.download()
+#+END_SRC
+
+* Practicando con gutenberg
+
+Lo primero es familiarizarse un poco con la clase FreqDist
+
+#+BEGIN_SRC python
+>>> from nltk.tokenize import word_tokenize
+>>> from nltk.probability import FreqDist
+>>> sent = 'is This is an example sentence'
+>>> fdist1 = FreqDist(word.lower() for word in word_tokenize(sent))
+>>> fdist1.N
+<bound method FreqDist.N of <FreqDist with 5 samples and 6 outcomes>>
+#+END_SRC
+
+Como se puede observar los samples son las palabras únicas del texto y
+los outcomes el total de palabras. De este modo, ahora tenemos en un
+vector el número de ocurrencias de cada palabra, veamos:
+
+#+BEGIN_SRC lisp
+>>> from nltk.book import *
+>>> fdist1 = FreqDist(text1) 
+>>> fdist1 
+<FreqDist with 260819 outcomes>
+>>> fdist1['whale']
+906
+>>> fdist1['I']
+2124
+#+END_SRC
+
+En el punto 2.1 Accessing Text Corpora de la documentación hay algunos
+errores en los ejemplos de código que he considerado interesante
+documentar:
+
+#+BEGIN_SRC python
+>>> for file in gutenberg.fileids():
+     num_chars = len(gutenberg.raw(file))
+     num_words = len(gutenberg.words(file))
+     num_sents = len(gutenberg.sents(file))
+     num_vocab = len(set(w.lower() for w in gutenberg.words(file)))
+     print num_chars/num_words, num_words/num_sents, num_words/num_vocab, file
+
+#+END_SRC
+
+También podemos encontrar palabras similares de un texto concreto de
+gutenberg de la siguiente manera:
+
+#+BEGIN_SRC python
+>>> import nltk.corpus
+>>> from nltk.text import Text
+>>> moby = Text(nltk.corpus.gutenberg.words('melville-moby_dick.txt'))
+>>> moby.similar('woman')
+Building word-context index...
+man king ahab as baby bildad bird boat bull calf camel captain
+carpenter cobbler cod condor corpse craft darkey day
+>>> moby.similar('bought')
+figures floats held hunted luffs put sat stole stood threw
+
+#+END_SRC
+
+* Clasificando de Manera Supervisada 
+
+Teniendo instalado nltk en debian/ubuntu la documentación se encuentra en
+/usr/local/lib/python2.7/dist-packages/nltk/test/classify.doctest.
+
+* Licencia
+
+Este documento está bajo la [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]]
+
+[[file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

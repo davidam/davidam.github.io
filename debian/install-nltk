@@ -1,0 +1,15 @@
+
+
+su -
+apt-get update
+apt-get install python2.5 python-tk python-numpy python-matplotlib prover9
+wget -c http://nltk.googlecode.com/files/nltk-0.9.7.zip
+unzip nltk-0.9.7.zip
+mv nltk-0.9.7.zip /opt
+cd /opt/nltk-0.9.7/
+python setup.py install
+python -m nltk.downloader -d /usr/share/nltk_data all
+python
+>>> import nltk.book
+
+

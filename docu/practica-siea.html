@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Práctica de SIEA</title>
+<!-- 2013-08-20 mar 19:11 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Práctica de SIEA</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Introducción</a></li>
+<li><a href="#sec-2">Características del Curso</a></li>
+<li><a href="#sec-3">Tareas de Adaptación</a>
+<ul>
+<li><a href="#sec-3-1">Modelo Pedagógico y del Dominio</a></li>
+<li><a href="#sec-3-2">Modelo del Estudiante</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">Objetivos de la Adaptación</a>
+<ul>
+<li><a href="#sec-4-1">Presentación Adaptativa</a></li>
+<li><a href="#sec-4-2">Navegación Adaptativa</a></li>
+<li><a href="#sec-4-3">Colaboración Adaptativa</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">Métodos de Adaptación</a>
+<ul>
+<li><a href="#sec-5-1">Presentación Adaptativa</a></li>
+<li><a href="#sec-5-2">Adaptación a la Navegación</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">Licencia</a></li>
+<li><a href="#sec-7">Licencia</a></li>
+<li><a href="#sec-8">Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com">Volver a davidam.com</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Introducción</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+El objetivo de esta práctica es realizar un sistema adaptativo que ayude al alumnado de la asignatura Sistemas Interactivos de Enseñanza Aprendizaje (en adelante SIEA) a interactuar tanto con compañeros y profesores, como con las actividades de la asignatura y la plataforma que la soporta.
+</p>
+
+<p>
+Debido a la experiencia que ya tenía con aLF2 se acordó con el equipo docente que podía ser interesante hacer la práctica con esta plataforma en lugar de con alguna de las propuestas de manera oficial.
+</p>
+
+<p>
+He dividido la práctica en las siguientes secciones:
+</p>
+
+<p>
+<i>Características del Curso</i>: Se explican los objetivos del curso y brevemente las características de la plataforma sobre la que se hará la adaptación.
+</p>
+
+<p>
+<i>Tareas de Adaptación</i>: Se describen las tareas de adaptación a realizar según la teoría del capítulo 5 del libro base de la asignatura. Esta sección tiene las siguientes subsecciones: Modelo pedagógico y del dominio, modelo del estudiante, objetivos de la adaptación y métodos y técnicas de adaptación.
+</p>
+
+<p>
+<i>Datos a Recoger</i>: Aquí se desarrolla qué datos se recogerán en funció del tipo de adaptación propuesta.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Características del Curso</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+La plataforma elegida para el curso sería <a href="http://www.innova.uned.es">aLF2</a>. Esta plataforma tiene una serie de aplicaciones adecuadas para la enseñanza/aprendizaje a través de internet (foros, calendario, actividades, área de almacenamiento, etc.), tanto en un área personal como de grupo (curso, comunidad, &#x2026;). Es, por tanto, una herramienta de soporte a la colaboración, también conocida como CSCL (Computer Support Collaborative Learning).
+</p>
+
+<p>
+Las interacciones de los usuarios con la plataforma son almacenadas en una base de datos
+</p>
+
+<p>
+El objetivo de SIEA es (cito textualmente de la guía didáctica) conseguir que los alumnos del segundo curso del Segundo Ciclo de la Escuela Superior de de Ingeniería Informática de la UNED que lo deseen sean capaces de adquirir las bases que fundamentan el desarrollo y uso de estos sistemas.
+</p>
+
+<p>
+A modo de introducción se puede decir que entendemos como SIEA a los sistemas que en el campo de la educación utilizan fundamentalmente las técnicas y los recursos provenientes del campo de la Inteligencia Artificial (IA) para adaptar la respuesta que le proporciona al usuario/alumno (por ejemplo, a modo de recomendaciones de navegación).
+</p>
+
+<p>
+Los objetivos principales de esta asignatura son:
+</p>
+
+<ul class="org-ul">
+<li>Describir los puntos fundamentales que han de considerarse a la hora de realizar un software educativo
+</li>
+<li>Destacar los aspectos metodológicos del desarrollo de estos sistemas
+</li>
+<li>Mostrar cómo pueden combinarse en el desarrollo de los SIEAs principios y modelos provenientes del campo de la educación con herramientas y técnicas (fundamentalmente del campo de la IA)
+</li>
+<li>Describir los procesos de adaptación en los SIEAs
+</li>
+</ul>
+
+<p>
+En la asignatura SIEA existen unos contenidos en formato libro, no obstante, para un mejor aprovechamiento de la práctica supondré que también existen vía web. Así mismo, es necesario entregar un trabajo evaluable y, finalmente, realizar un examen que solo puede realizarse tras haber superado el trabajo. También hay otros medios de apoyo como un sitio web de la asignatura, un teléfono de contacto en unas determinadas horas y dirección de correo electrónico y postal.
+</p>
+
+<p>
+Los contenidos pueden accederse en cualquier orden tanto a través del libro como del sitio web.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Tareas de Adaptación</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Antes de entrar de lleno en las tareas de adaptación definiremos el modelo pedagógico y de dominio (de manera muy breve), así como el modelo del estudiante (dónde se fijarán las características del usuario a adaptar). Seguidamente, fijaremos los objetivos de la adaptación. Finalmente, especificaremos los métodos y técnicas de adaptación a utilizar.
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Modelo Pedagógico y del Dominio</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+En las características del curso ya hemos hablado someramente acerca del dominio. En nuestro caso, éste es básicamente los capítulos del libro "Sistemas Interactivos de Enseñanza/Aprendizaje, Editorial Sanz y Torres". El dominio es demasiado amplio para hacer una representación uml, ó mediante algún otro lenguaje formal. Destacaré que nos encontramos ante un dominio no cerrado que es un campo abierto de investigación
+</p>
+
+<p>
+Por todo lo dicho en el párrafo anterior parece interesante diseñar una herramienta de enseñanza/aprendizaje mediante las aproximaciones más constructivistas (se permitirá el acceso a múltiples recursos, se facilitará la comunicación con otros alumnos, etc.), aunque en mi diseño no eliminaré las posibilidades de tutorización convencional (sigue existiendo la figura del docente, existe un examen, etc.) y tutorización mediante aprendizaje automático (se realizarán consejos vía web y vía mail, habrá adaptación de enlaces e incluso de contenido, todo ello sólo cuando se vea necesario tratando de no molestar al estudiante.).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Modelo del Estudiante</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Un modelo es una representación formal de una realidad, cada estudiante tiene cientos de atributos (peso, nombre, edad, amigos, etc.) que le caracterizan, sin embargo, nosotros tan solo formalizaremos aquellos que más adelante nos puedan servir para hacer adaptación.
+</p>
+
+<p>
+He dividido los atributos posibles en: conocimientos, objetivos, procedencia y experiencia en el hiperespacio.
+</p>
+
+<p>
+<i>Conocimientos</i>: Aquí me refiero a la parte del modelo del dominio que el sistema le da por al alumno como asimilada. Como ya hemos dicho éstos podrían ser los capítulos del libro y/o los conceptos que en él se explican. Estos datos podrían inferirse en base a páginas visitadas, test realizados, otras interacciones en la plataforma, &#x2026;
+</p>
+
+<p>
+<i>Objetivos</i>: Los objetivos que un/a alumno/a de la asignatura tiene son básicamente aprobar la práctica, maximizar su nota en el examen y adquirir el mayor número de conocimientos acerca de SIEA. Para aprobar la práctica el/la estudiante tendrá subobjetivos como entender la especificación, adquirir los conocimientos necesarios y realizar la práctica en sí. Para maximizar la nota del examen el/la alumno/a tendrá subobjetivos como adquirir conocimientos necesarios y destrezas adecuadas resolviendo exámenes de SIEA.
+</p>
+
+<p>
+<i>Procedencia</i>: Nos interesará saber quizás mediante un test ó de algún otro modo si el alumno ha tenido algún tipo de experiencia previa con los contenidos que se imparten en la asignatura, ya sea por motivos profesionales ó académicos.
+</p>
+
+<p>
+<i>Experiencia en el hiperespacio</i>: También parece interesante la experiencia que pueda tener el/la estudiante en internet, no tendrá el mismo comportamiento el alumno no familiarizado con el medio que aquel que lo utiliza a diario y, que tal vez es su trabajo.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Objetivos de la Adaptación</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+En un SIEA es posible hacer adaptación a la presentación (el modo en
+el que se muestran los contenidos), la navegación (qué enlaces
+aparecerán y cómo), ó la colaboración (cómo y con quién interactuar).
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Presentación Adaptativa</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Una de las técnicas típicas de los Sistemas Tutoriales Inteligentes (STI) es hacer sistemas basados en reglas para adaptar la presentación. Es decir, es posible afirmar que para poder entender una lección ó un concepto, era necesario haber asimilado otro u otros. Para evaluar si el alumno había asimilado un determinado concepto es posible examinar las trazas de navegación y/ó realizar test ó ejercicios de autoevaluación. Esta técnica tiene una buena aplicación en áreas de conocimiento fuertemente estructuradas como las matemáticas, la programación, la física, &#x2026; Pero no parece demasiado útil en el dominio que nos ocupa.
+</p>
+
+<p>
+No obstante, parece útil aprovechar el conocimiento adquirido y experiencia previa del alumno para mostrar unos contenidos u otros. Por lo que no se descarta la utilización de alguna técnica “suave” de presentación adaptativa.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">Navegación Adaptativa</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+El elemento principal de adaptación será un <i>espacio de consejos</i> que aparecerá tanto desde el área del alumno, como desde el área del curso, aunque con diferentes objetivos. En el área del alumno aparecerían consejos de cualquier comunidad ó curso al que pertenezca y los consejos del curso serían específicos de éste. En dicha área se recomendaría una parte del curso a trabajar, realizar una tarea ó actividad, investigar acerca de un recurso externo, etc.
+</p>
+
+<p>
+Otro elemento interesante de adaptación con un objetivo similar al anterior (consejos acerca de una próxima tarea pedagógica) puede ser el <i>envío de correo electrónico</i>.
+</p>
+
+<p>
+Para este curso también puede ser interesante hacer adaptación a <i>enlaces locales no contextuales</i> (independientes del contenido, como por ej. recursos externos), al <i>índice del curso</i>, ó a <i>mapas</i> del curso si los hubiera. Lo que no se hará es adaptación a enlaces locales (me refiero a enlaces que están embebidos en el contenido del curso).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">Colaboración Adaptativa</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Los elementos principales de adaptación serán de nuevo el <i>correo electrónico</i> y el <i>espacio de consejos</i>. Pero en este caso los consejos serían del tipo <i>le recomendamos que visite / intervenga en este hilo / mensaje del foro, es posible que le resulte interesante visitar la página de interacciones de este usuario</i> (por ej: a un usuario inactivo recomendarle la de un usuario activo, ó a un usuario activo, pero poco colaborativo, la de uno activo y colaborativo). Ó consejos más genéricos como <i>utilice más el foro, suba documentos al área del curso</i>, etc.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Métodos de Adaptación</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Ahora que ya sabemos qué adaptar puede ser interesante empezar a pensar en cómo adaptar.
+</p>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">Presentación Adaptativa</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Para el dominio en el que estamos trabajando la técnica que parece más interesante utilizar es la de texto expansible. Esto es que en función de la actividad del usuario al pasar el puntero por un determinado concepto se expandirá un texto explicativo del mismo.
+</p>
+
+<p>
+Aunque a priori no se vea demasiado interés, tampoco estaría de más experimentar con técnicas de texto condicional ó de variantes de fragmentos y páginas.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2">Adaptación a la Navegación</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Los consejos comentados en el apartado anterior servirán de <i>guía global</i> al alumno. Esto es ayudar al usuario a encontrar el camino más corto para conseguir sus objetivos. Estos consejos se ordenarán según la relevancia que tengan para el usuario, haciendo uso de la técnica de <i>ordenación de enlaces</i>.
+</p>
+
+<p>
+Mediante <i>ocultación de enlaces</i>, así como cambios de tamaño ó color se realizarán ayudas a la orientación local. Esto es, ayudar al usuario a orientarse localmente en el hiperespacio, por ejemplo limitando el número de opciones de navegación. Especialmente útil para los usuarios que no están demasiado familiarizados con el medio.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Licencia</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Copyright (C)  2004 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.2
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+<p>
+<a href="https://www.gnu.org/copyleft/fdl.html">/home/davidam/public<sub>html</sub>/img/licenses/by/3.0/gfdl.png</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Licencia</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+
+<div class="figure">
+<p><a href="https://www.gnu.org/copyleft/fdl.html"><img src="file:///home/davidam/public_html/img/licenses/by/3.0/gfdl.png" alt="gfdl.png" /></a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Licencia</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+
+<div class="figure">
+<p><a href="https://www.gnu.org/copyleft/fdl.html"><img src="file:///home/davidam/public_html/img/licenses/gfdl.png" alt="gfdl.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2013-08-20 mar 19:11</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

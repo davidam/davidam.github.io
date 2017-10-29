@@ -1,0 +1,30 @@
+#+TITLE: Vídeo de Lisp
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez y José E. Marchesi
+#+LANGUAGE:   es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+Este vídeo fué tomado en el hacklab de Cielito Lindo en 2006.
+
+#+BEGIN_HTML
+<video controls width="320" height="240">
+<source src="http://www.davidam.com/video/Taller_LISP_hacklab_cielitolindo.mpg" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+<source src="media/html5iscool.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+<source src="media/html5iscool.webm" type='video/webm; codecs="vp8, vorbis"'/>
+<object width="320" height="240" type="application/x-shockwave-flash" data="media/flowplayer-3.2.5.swf">
+<param name="movie" value="media/flowplayer-3.2.5.swf"/>
+<param name="allowfullscreen" value="false"/>
+<param name="flashvars" value='config={"clip": {"url": "http://www.davidam.com/video/Taller_LISP_hacklab_cielitolindo.mpg", "autoPlay":false, "autoBuffering":true}}'/>
+</object>
+</video>
+#+END_HTML
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:~/public_html/img/licenses//gfdl/gfdl.png]]

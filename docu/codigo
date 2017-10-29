@@ -1,0 +1,2 @@
+Sin[x]^2 + Cos[y]^2 == 1
+Pi^2/6 == Sum[1/x^2,{x,1,Infinity}]

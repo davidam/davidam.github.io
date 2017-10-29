@@ -1,0 +1,419 @@
+#+TITLE: Tesis Doctoral. Productividad en Entornos de Programación Web
+#+h3: David Arroyo Menéndez 
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez 
+#+EMAIL: davidam@gnu.org
+#+DATE: 01/10/2017
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+
+* Enmarcando el problema de la productividad en el software
+
+Por productividad ya hemos comentado que son outputs producidos por el
+proceso dividido por inputs consumidos por el proceso, es decir, más
+productividad es sacar más con menos recursos.  Una persona en
+sociedad tiende a competir y cooperar con su familia, con su gobierno,
+con sus vecinos y finalmente con el entorno laboral en economía.
+
+Toda economía tiene un marco de valores que establece la sociedad y
+que son algo medibles en los diputados del parlamento. La
+diferenciación más sencilla es izquierda o derecha, esto es,
+obviamente demasiado simple, deja fuera ideologías que no quieren
+estar en el parlamento, religiones, etc. Sin embargo, suele ser un
+indicador válido para comparar entre países, por ejemplo, en España
+tenemos la autoubicación ideológica media
+http://www.cis.es/cis/export/sites/default/-Archivos/Indicadores/documentos_html/IndiAubid.html
+que viene siendo de centro, algo de izquierda desde hace bastantes
+años, esto no quiere decir que los ciudadanos no cambien de valores, o
+de intención de voto.
+
+Una vez vence un sistema de valores se establece una economía. En el
+mundo del software 2 tendencias de valores claras la del software
+libre y la del software privativo. En una empresa pueden convivir
+ambas perfectamente y, así mismo conviven con los valores de la sociedad.
+
+La productividad para un trabajador en una empresa software sería
+trabajar pocas horas o dedicarle poco tiempo al trabajo informático y
+ganar mucho dinero. Los valores normales con los que se discuten estas
+cuestiones es el sindicalismo. Antes de entrar en la cuestión
+sindical, hay que recordar que los trabajadores del ramo más cercanas
+a las ciencias suelen ser mejores obteniendo dinero
+https://elpais.com/especiales/2014/carreras-con-mas-empleo/ que otras
+carreras. Por tanto, el trabajador en una empresa software cuando
+siente un descontento salarial suele entrar en el dilema de si dedicar
+tiempo libre a la cuestión desde el punto de vista científico o
+sindical/político.
+
+Hay aplicaciones software de suerte política y baja inteligencia de
+programación, como la aplicación que reproduce pedos en un iphone que
+tiene un gran número de descargas porque a la gente le parece
+divertida como pasa con un partido político o un movimiento social,
+que en un momento dado tienen una popularidad y eso puede dar dinero a
+alguna persona astuta de esa tendencia política.
+
+Muchos descubrimientos científicos no dan mucho dinero, la explicación
+más clara es por ejemplo, un régimen socialista como lo fué la URSS
+donde los científicos tienen un salario más o menos igualitario con la
+sociedad por una cuestión de valores y aunque hagan avanzar bastante
+en lo económico a su sociedad no ganan mucho dinero con la invención.
+
+Los grandes ingenios multimillonarios de la industria del software
+suelen ser una mezcla de inteligencia, innovación y política científica. 
+
+EEUU sigue teniendo un nivel de liderazgo en esta cuestiones, sus
+universidades son caras e innaccesibles para la población obrera.
+
+Bill Gates estudió en una universidad norteamericana y dejó sus
+estudios a medias para crear Microsoft. Google fué un trabajo doctoral
+de Stanford. Facebook se fué popularizando desde Harvard.
+
+¿Cómo reaccionan otras naciones a este fenómeno? Un caso muy
+interesante es el de China. Mao cambió todos los valores del país:
+comunismo, ateísmo, etc. esto supuso una involución tecnológica
+tremenda para China en ese momento, sin embargo, en la actualidad es
+un gigante económico que rivaliza como un igual con EEUU, con sus
+aperturismos a la economía política capitalista sin abandonar muchas
+de las cuestiones como por ejemplo la bandera comunista. Puesto que
+hay una rivalidad política y económica, al final hay fenómenos como
+Baidu que ganan en el entorno geográfico chino al buscador ganador
+mundial.
+
+Otro caso interesante en productividad, valores y software es el caso
+de Linus Torvalds y su kernel. Él calló los valores de Richard
+Stallman convirtiéndolos en recomendaciones prácticas para ganar
+dinero y popularidad en la industria del software. Linus Torvalds es
+hoy un multimillonario del tamaño de un PIB de una muy pequeña
+nación. Lo cual demuestra que en lo práctico el software libre no
+acaba con la desigualdad económica, sino que sirve para acumular
+riqueza de una más baja, pero similar a la industria del software
+privativo y con otros valores.
+
+Para acabar con desigualdad, podemos volver a la cuestión sindical,
+mirándolo en una empresa, obreros que acuerdan ponerse en huelga para
+ganar una cuestión salarial. En realidad, son un grupo suficiente de
+personas que desde una economía más baja y con unos valores de ayuda
+mutua en lo práctico se enfrentan a un enemigo que ejerciéndole
+la necesaria extorsión obrera son capaces de vencer.
+
+En general, la ciencia obedece a una ideología moderada de los valores
+de cada sociedad, esto no quiere decir que haya científicos críticos,
+con una ideología imperante casos como Noam Chomsky, Richard Stallman,
+etc. Sin embargo, esto se hace en consonancia con una necesidad
+económica de entender esas fórmulas de pensamiento. La financiación de
+la ciencia al venir de proyectos acordados por estados, o empresas
+tienen el marco de valores de estas organizaciones.
+
+Así que parece que la ciencia siempre obedece al marco de valores de
+la sociedad en la que está, son los movimientos sociales, las
+revoluciones obreras y las extorsiones de estados y empresas a la
+ciudadanía las que cambian los valores. En el caso práctico del
+movimiento del software libre, se trataban de aplicar el marco de
+valores con el que se había gobernado el software hasta la invención
+de legal del software privativo. No es de extrañar, por tanto, que
+sean los científicos de los grandes centros de supercomputación que
+programan y publican artículos, quienes se resisten más a la invención
+de legal de las empresas que fué el software privativo que vende el
+software como si fuera una tostadora, esto es, suponiendo que el
+usuario no lo va a modificar y como no tiene conocimientos para
+hacerlo pues se acepta por el usuario, que igual tampoco conoce a
+nadie que se lo vaya a hacer gratuitamente.
+
+Entonces para que un software tenga éxito económico y, por tanto, sea
+productivo para el programador debe estar en consonancia con el marco
+de valores de la ciencia. En general, lo que suele ocurrir es que el
+software más de bajo nivel suele ser más libre/abierto que el que se
+da al usuario final. Por ejemplo, en el caso de la programación web,
+el lenguaje de programación es libre, uno se lo puede descargar, mirar
+el código y si tiene algo interesante que aportar seguramente los
+mantenedores del lenguaje estén encantados de escuchar esa nueva idea.
+
+METER LAS ESTADÍSTICAS DE TIOBE
+
+Luego muchos programadores web prefieren el marco de valores del
+software libre también para los servidores, por si falla algo poder
+arreglarlo, o pedir ayuda a alguien que le pueda ayudar y no depender
+de un montón de burocracia de diferentes compañías para que resuelvan
+un problema en el que programador queda como el que no sabe y es que
+no puede.
+
+METER ESTADÍSTICAS W3
+
+Ya en el producto final es más raro dar el código fuente, esto puede
+venir bien a la compañía y sobre todo al programador para reutilizar
+su propio código en otro proyecto ya sea dentro o fuera de la
+compañía, pero lo más probable es que nunca se vuelva a mirar por
+nadie una vez entregado sino se ha contratado el mantenimiento. Al
+resto del mundo le da un poco igual cada página web se hace de una
+manera completamente diferente y para copiar es más cómodo instalar
+una solución estándar que va a funcionar mejor.
+
+* Lenguajes de Programación
+
+Crear un lenguaje u otro hoy es un esfuerzo parecido, en la carrera
+uno aprende las nociones de cómo hacer esa tarea de construir un
+lenguaje, lo productivo tras construir un lenguaje es que mucha gente
+lo use y así poder ganar dinero con la formación y el mando en el lenguaje. 
+
+El marco de valores de los constructores de lenguajes suele ser una
+mezcla de industria, ciencia y comités de estandarización. Es decir,
+se necesita un bagaje científico fuerte para comprender qué sintaxis
+es útil y porque aplicarla, se focaliza en un posible éxito industrial
+y se consensúa en comités de estandarización dónde participan
+diferentes compañías y/o instituciones científicas. Los principales
+lenguajes suelen compartir sus especificaciones para ampliar el número
+de usuarios y la calidad del lenguaje (más ojos, más mejoras). Sin
+embargo, hay lenguajes que son propiedad de compañías privadas y
+pueden no dar las especificaciones.
+
+La evolución de cómo se programa empieza con tarjetas perforadas para
+crear 0 y 1, para hacer el proceso más productivo, es decir, escribir
+más rápido 0s y 1s se crea un teclado y un display, aquí la
+productividad es en el proceso, es decir, un pequeño invento
+tecnológico hace al programador perder menos tiempo/recursos en
+escribir lo mismo.
+
+Seguramente el programador gane el mismo dinero porque le paguen el
+salario/hora al mismo dinero, pero la industria evoluciona, se hace el
+cálculo más rápido y se invierten menos recursos en corregir errores y
+sino se actualiza seguramente pierda el puesto de trabajo. Así, en
+general, en la evolución de lenguajes de programación no se encuentra
+la productividad del programador que gane más trabajando menos, sino
+el proceso más rápido con menos recursos y, si uno es muy bueno en un
+proceso muy rápido con pocos recursos, muy fiable, sin errores, en un
+software muy popular, etc. lo normal es que gane un buen salario si
+existe un modelo de negocio que lo recompense con dinero.
+
+El modelo de negocio de tarjetas perforadas y 0s y 1s eran cálculos
+matemáticos automatizados, es decir, la industria del software
+comienza trabajando para la ciencia. En la ciencia hay una cultura de
+valores de compartir los resultados y revisarlos por pares para el
+avance científico en publicación de artículos en revistas. El modelo
+de negocio es cálculos inteligentes, mejores artículos, se consolidan
+plazas científicas. No hay mucho sentido en no compartir resultados si
+lo que quieres es sacar un artículo de investigación.
+
+Después de los 0s y 1s, llega el lenguaje ensamblador, todavía se
+opera la programación procesador a procesador y memoria a memoria,
+pero con unas mínimas estructuras de control. Esto no cambia mucho el
+modelo de negocio.
+
+Luego ya llegan los lenguajes de alto nivel y los sistemas operativos,
+con lo que se empieza a abstraer la máquina del cálculo científico. Se
+inventan nuevos modelos de negocio como las computadoras personales y
+llegan dos inventos de modelos de negocio la industria del software
+privativo, asociada sobre todo al nuevo invento de las computadoras
+personales y la industria del software libre, más acorde con los
+valores iniciales de compartición de resultados científicos.
+
+ESTADÍSTICAS DE NEGOCIO ACTUAL EN SOFTWARE LIBRE Y SOFTWARE PRIVATIVO.
+
+En la actualidad, el modelo de negocio del software libre es
+predominante en el ámbito de la supercomputación, lenguajes de
+programación, en menor medida en servidores, en alguna medida en
+tablets y dispositivos móviles y de manera residual en el escritorio.
+
+METER LAS ESTADÍSTICAS DE TIOBE
+
+En el lenguaje preferido por la industria es Java, es ampliamente
+utilizado en universidades, banca, grandes consultoras, dispositivos
+móviles, etc. Es un lenguaje orientado a objetos que se compila y se
+interpreta en una máquina virtual, con una librería estándar.
+
+El segundo lenguaje preferido por la industria es C, ampliamente
+utilizado en sistemas operativos. Es un lenguaje compilado. Con una
+multitud de librerías que se estandarizan o no por su popularidad.
+
+El tercer lenguaje preferido por la industria es C++, dada la
+tradición de C en sistemas operativos y la posibilidad de orientación
+se han desarrollado muchas aplicaciones en este lenguaje.
+
+El cuarto lenguaje preferido por la industria es C#, es un invento de
+Microsoft para competir con Java.
+
+El quinto lenguaje preferido por la industria es Python. Es el
+lenguaje interpretado más popular. La ventaja en productividad del
+programador de los lenguajes interpretados es que no hay que
+compilarlos, esto es, se ejecutan directamente una vez son
+escritos. La desventaja sobre C sería que suele ser algo más lento de
+ejecutar, por lo que no es apenas utilizado en la industria de
+sistemas operativos. Sin embargo, hay grandes sectores de la
+industria: data science, estadística, administración de sistemas,
+etc. dónde es fuerte.
+
+El sexto lenguaje preferido por la industria es PHP. Es el lenguaje
+interpretado del lado del servidor más popular en programación web.
+
+ESTADÍSTICAS DE LENGUAJES EN PROGRAMACIÓN WEB.
+
+El séptimo lenguaje preferido por la industria es Javascript. Es el
+lenguaje interpretado del lado cliente utilizado en programación
+web. Actualmente con tecnologías como nodejs es utilizado en lado
+servidor y también para algunas aplicaciones móviles.
+
+El octavo lenguaje preferido por la industria es Visual Basic .NET. Es el
+lenguaje de programación visual de Microsoft. 
+
+El noveno lenguaje preferido por la industria es Perl. Ha sido el
+lenguaje de scripting amado por los administradores de sistemas
+durante muchos años.
+
+El décimo lenguaje prefidor por la industria es Ruby. Se usa sobre
+todo para administración de sistemas y programación web.
+
+En definitiva, en la elección del lenguaje de programación con
+respecto a la productividad/dinero, hay una relación de fuerzas entre
+lo que pide la empresa, lo que sabe el programador y la adecuación al
+mercado. Por ejemplo, en administración de sistemas se pueden utilizar
+unos cuantos lenguajes de programación: bash, python, perl, ruby,
+... La elección tiene que ver con un acuerdo empresa/cliente y
+programador/a. La empresa querrá que el software se desarrolle rápido,
+sin errores, con un buen versionado, copias de seguridad y, si el
+programador un día no está pues que sea legible para otra persona. El
+programador querrá aprender, hacer las cosas a su manera, a su ritmo y
+que le paguen bien. Hay un montón de discusiones técnicas que se
+podrían hacer: bash es bueno para cosas simples, perl ha sido
+utilizado durante muchos años, pero es un poco ofuscado, python se usa
+más, la sintaxis de ruby es más elegante. Pero en la cuestión del
+dinero es básicamente llegar a un acuerdo mental/técnico entre el
+trabajador y el empresario/cliente de utilizar unas herramientas para
+resolver unos problemas técnicos por un salario, mientras ambos
+sienten que se cumple el acuerdo de manera satisfactoria para ambos se
+sigue trabajando, cuando se incumple se finaliza el trato. 
+
+A veces se debería evaluar no solo el acuerdo y el tiempo que dura,
+sino también los costes de entrar en tratos y finalizar tratos. Por
+ejemplo, a veces un trabajador para entrar en una compañía ha hecho
+hasta 5 entrevistas en esa compañía, pero es posible que los haya
+hecho en muchas más. Por otro lado, el empresario a veces no sabe
+medir el coste de la respuesta al despido, a veces es solo unos
+comentarios, pero en ocasiones puede llevarle años de conflicto
+laboral con un sindicato. Es muy normal en programación web poner
+mínimos económicos en presupuesto de webs para empezar a hablar con un
+cliente.
+
+En ingeniería del software se enseña COCOMO, se evalúa el valor del
+software por líneas de código, esto en programación web no es una
+buena herramienta. Si se utiliza un framework es posible que estés
+utilizando generadores de código, entonces generas muchas líneas en
+medio segundo, pero el trabajo real dura 3 horas y son las mismas
+líneas de código que lo que se hizo en medio segundo. Luego si tienes
+una herramienta CMS como Drupal, Joomla, ... pues hay mucho trabajo de
+configuración que a veces no se puede medir en líneas de código y si
+se generan líneas de código es a una velocidad diferente que cuando se
+programa.
+
+En programación de webs que se pueden generar con un CMS, lo que
+se suele hacer que funciona, es funcionalidad tiempo y dinero. Un
+programador de una startup, por ejemplo, sabe más o menos lo que tarda
+para una funcionalidad con un cliente y, por ejemplo, tiene un Excel y
+sumando funcionalidades aparece el dinero que cuesta la web.
+
+Esto no valdría exactamente para proyectos grandes tipo Facebook,
+dónde hay un alto nivel de innovación tecnológica, pero en general un
+programador sí sabe hacer una estimación de tiempo/dinero para una
+tarea que sabe hacer. Si es un avance científico pues ya es diferente
+porque se requiere un nivel de creatividad competitiva.
+
+* Servidores Web
+
+En la actualidad hay 3 grandes servidores web: Apache (45%), Microsoft
+Internet Information Server (8%) y Nginx (21%) (Fuente: Netcraft,
+Septiembre 2017). Como se puede observar en la gráfica la tendencia de
+mercado es utilizando cada vez más Nginx debido a que es más rápido y
+ligero. IIS está generalmente asociado a tecnologías Microsoft en
+lenguajes de scripting (ej: VBasic) y páginas ASP para los
+templates. Apache y Nginx son servidores libres asociados al mundo
+UNIX de la programación web.
+
+GRÁFICA NETCRAFT: web-servers-developers.png
+
+Sin embargo, en programación web, especialmente en lenguajes que no
+son PHP: Python, Ruby, Lisp, etc. es muy habitual tener los entornos
+de desarrollo con su propio servidor web. Esto favorece mucho el
+aprendizaje de todos los micropasos que ocurren desde la petición de
+una página web hasta la construcción de la respuesta. Es más fácil
+entender lo que ocurre en el servidor si es un programa sencillo y
+didáctico.
+
+
+* Bases de Datos
+
+Muchas veces cuando se habla de montar un entorno de programación web
+se dice montar un entorno LAMP: Linux, Apache, MySQL y PHP. Esto es
+así, porque son las tecnologías más utilizadas.
+
+En bases de datos SQL para programación web en un principio había una
+discusión sobre si Oracle, PostgreSQL, o MySQL. Desde que MySQL
+cumplió las cuestiones ACID (Atomicity, Consistency, Isolation,
+Durability), esta base de datos se impuso sobre las demás por la
+tendencia de mercado y la velocidad.
+
+Ahora la discusión sobre este tema es si continuar con Bases de Datos
+SQL, o si las bases de datos no-sql acabarán imponiéndose en el
+mercado por su velocidad. En CMS la base de datos no sql más popular
+está siendo MongoDB, generalmente estas bases de datos están teniendo
+una mayor aceptación en sitios de muchos usuarios tipo Facebook
+
+* Sistemas Operativos
+
+ANALIZAR ESTADÍSTICAS W3TECH de sistemas operativos.
+
+Desde el lado del programador web se pueden encontrar los principales
+sistemas operativos de mercado: Windows, Machintosh, o GNU/Linux. Al
+final la elección de un sistema u otro es la inercia personal del
+programador y la cultura de la empresa. Quizás desde un punto de vista
+de productividad es positivo tener en el ordenador el mismo sistema
+que en el servidor, pero hay que recordar que esto puede conseguirse
+con máquinas virtuales y que es probable que el programador web
+programe para diferentes entornos de servidor.
+
+
+
+* Lenguajes de Marcado
+
+* Editores de Texto/IDES
+
+En este mercado hay dos grandes tendencias: 
++ Editores unix tradicionales: vim, gnu emacs, nano, etc.
++ IDES de programación: Eclipse, Sublime, etc.
+
+Los editores unix tradicionales pueden ser ejecutados desde el
+servidor vía ssh o similar en modo texto con comandos y con atajos de
+teclado y algunos como GNU Emacs tienen también un entorno de diálogos
+con ratón. Los IDES de programación también tienen atajos de teclados,
+pero son usados de una manera de cuadros de diálogo y ratón. 
+
+La discusión con respecto, a atajos de teclados y comandos versus
+ratón, suele estar en que cuando uno abre un programa por primera vez
+es comfortable encontrar todas las funcionalidades moviendo el
+ratón. Sin embargo, si uno usa el mismo editor todos los días y para
+cualquier lenguaje de programación con el que tenga que trabajar,
+suele aprender los atajos y comandos para no levantar las manos del
+teclado, lo cual suele ser una pequeña distracción de la labor de
+escribir.
+
+Entonces, un editor UNIX tradicional tiene una curva de aprendizaje
+algo mayor, pero una vez superada suele resultar más productivo al
+programador en este aspecto.
+
+Un programador web, en la actualidad suele comenzar con un IDE, que ya
+tiene muchas facilidades ya configuradas para el lenguaje de
+programación con el que trabaja: autocompleción de código, generadores
+de código, resaltado de sintaxis, tabulación, integración con sistemas
+de control de versiones, etc. suelen ser las cuestiones que uno
+encuentra cuando empieza a trabajar con un IDE.
+
+En GNU/Emacs o vim estás facilidades IDE también están resueltas, pero
+generalmente puede llevar algún trabajo de configuración o instalación
+de plugins/modos, lo cual también lleva algo de tiempo. Con los
+sistemas de paquetería cada vez lleva algo menos de tiempo, sin
+embargo, los IDE parecen más competitivos en este aspecto de
+productividad en el momento que se escribe esta tesis por no tener que
+hacer nada.
+
+Otra cuestión de productividad es la extensibilidad del
+editor/IDE. Los entornos modernos tienen sistemas para hacer esto, así
+uno puede mejorar su propio entorno y adaptarlo a sus necesidades con
+un lenguaje de scripting: lisp en Emacs, python en vim, etc.
+
+* Frameworks

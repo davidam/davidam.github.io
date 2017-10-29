@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Drupal Commerce</title>
+<!-- 2014-04-01 mar 21:06 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Drupal Commerce</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Tutorial</a></li>
+<li><a href="#sec-2">2. Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com/">Volver a davidam.com</a>
+</p>
+
+<p>
+Drupal es una herramienta extremadamente configurable y una de las
+funcionalidades donde destaca es en las tiendas de comercio electrónico,
+debido a la gran cantidad de módulos con los que puede integrarse.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Tutorial</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+En este tutorial se explica cómo hacer una tienda on-line sencilla.
+</p>
+
+<ol class="org-ol">
+<li>Se descargan los módulos
+</li>
+</ol>
+<div class="org-src-container">
+
+<pre class="src src-bash">$ drush dl commerce commerce_paypal
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Se habilitan
+</li>
+</ol>
+<div class="org-src-container">
+
+<pre class="src src-bash">$ drush en cart checkout commerce commerce-ui customer customer-ui commerce_line-item line-items order payment payment-methods price product product-pricing product-reference 
+$ drush en commerce_paypal_wps commerce_paypal_wpp commerce_paypal_ec commerce_payflow commerce_paypal
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Se Crea un tipo de Producto
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">admin/commerce/products/add/product
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Se Crea un Product Display
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">admin/structure/types/add
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Se Añade un método de pago (por ej. Paypal)
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">admin/commerce/config/payment-methods/add
+</pre>
+</div>
+
+<p>
+Se podría añadir el evento <i>Completing the checkout process</i> y la
+acción <i>Enable payment method: PayPal WPP - Credit Card</i>.
+</p>
+
+<ol class="org-ol">
+<li>Configura el método de pago 
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">admin/commerce/config/payment-methods/manage/rules_paypal/edit/3
+</pre>
+</div>
+
+<p>
+En el caso de querer utilizar tarjetas de crédito es bastante probable
+que te interese usar sermepa:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">drush dl commerce_sermepa
+drush en commerce_sermepa
+</pre>
+</div>
+
+<p>
+Luego se habilita la regla Sermepa via Store &gt; Configuration &gt; Payment settings
+</p>
+
+<p>
+En el caso de no querer dar de alta Sermepa, se puede habilitar
+ simplemente Paypal o similar.
+</p>
+
+<p>
+En tal caso, la configuración de sandbox seria la siguiente (sacado de
+<a href="https://developer.paypal.com/webapps/developer/docs/classic/express-checkout/integration-guide/ECGettingStarted/">https://developer.paypal.com/webapps/developer/docs/classic/express-checkout/integration-guide/ECGettingStarted/</a>)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">USER=sdk-three_api1.sdk.com
+PWD=QFZCWN5HZM8VBG7Q
+SIGNATURE=A-IzJhZZjhg29XQ2qnhapuwxIDzyAZQ92FRP5dqBzVesOkzbdUONzmOU
+</pre>
+</div>
+
+<p>
+Si se quiere una configuración completa los pasos son:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">1. Mi Cuenta -&gt; Perfil -&gt; Acceso a API
+2. Solicitar Credenciales API
+3. Solicite una Firma API
+</pre>
+</div>
+
+<p>
+Una vez creado se vuelve a ver del siguiente modo: Mi Cuenta -&gt; Perfil
+-&gt; Acceso a API -&gt; Ver Firma API
+</p>
+
+<p>
+Una versión en inglés sacada de
+<a href="http://www.putler.com/support/faq/how-to-get-paypal-api-username-password-and-signature-information/">http://www.putler.com/support/faq/how-to-get-paypal-api-username-password-and-signature-information/</a>
+es:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">1. Log in to your PayPal Premier or Business account.
+2. Click the Profile subtab located in the top navigation area.
+3. Click the API Access link under the Account Information header.
+4. Click the Get Started link under the Request API Credentials heading.
+5. Click the My selling preferences sub option in left sidebar.
+6. Click the Update option for API access item
+7. Complete the API Credential Request form by clicking the agreement checkbox and clicking Submit.
+8. You will now get the API username, password and signature.
+9. Copy the values from this page into Putler Settings – Accounts.
+10. Click Test to verify the settings work.
+</pre>
+</div>
+
+
+<ol class="org-ol">
+<li>Se Crea una Vista
+</li>
+</ol>
+
+<p>
+A veces me he perdido un poco buscando el botón de añadir al carrito
+(add button cart form), o campos como el precio está en el field
+product. Obviamente para que el add button no de errores el producto
+debe tener un precio.
+</p>
+
+<ol class="org-ol">
+<li>Errores
+</li>
+</ol>
+
+<p>
+En cierta ocasión al visualizar productos he tenido algunos problemas
+<a href="http://www.unknownerror.org/Problem/index/1231344521/error-when-create-drupal-commerce-product-display/">para los que era bueno commerce<sub>repair</sub></a>. Una vez habilitado hay que ir
+a /admin/commerce/config/repair.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Licencia</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/es/deed.es">Licencia Creative Commons Atribución 3.0 España</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/es/deed.es"><img src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2014-04-01 mar 21:06</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.5h)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+#+TITLE: Como Sobrevivir a los Nuevos Dispositivos Siendo Militante de GNU/Linux
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Con el cambio de cultura material en cuanto a como nos conectamos a
+Internet, la batalla global por el triunfo del software libre en el
+mercado, cambia de manera drástica.
+
+Los cambios son los siguientes:
+
++ Windows cae de manera brutal. Deja de ser el referente tecnológico
+  en cuanto a lo que las personas entienden que son los interfaces con
+  los que están acostumbrados a interactuar, por lo que pierde valor
+  global el clonar aplicaciones de windows.
+
++ La cultura unix se revaloriza en el escritorio, por lo que hay que
+  incrementar la batalla moral del Software Libre con respecto al
+  competidor de Machintosh que es el unix privativo que ha crecido de
+  manera fuerte, para un trabajador del sector de la informática es
+  interesante desde cualquier forma de sindicalismo que luche por la
+  propiedad colectiva de una manera honesta, sin abandonar otras
+  estrategias de autoempleo o cooperativismo y luchar más desde el
+  triunfo de la moral que de la tecnicidad y así dar tecnicidad a
+  quien se tomen en serio los valores de GNU y si no guerra sindical
+  para enriquecernos en lo económico.
+
++ Ahora el kernel está totalmente asumido por el mercado, esto es una
+  ventaja competitiva para seguir ganando tanto en escritorios,
+  aplicaciones móviles, como en servidores, el bajo está conseguido,
+  tenemos que ir al alto al sociológico y ganar demostrando que no
+  somos una opción idealista, sino una realidad económica, que
+  precisamente por los valores ha habido economía, que el triunfo del
+  apoyo mutuo se consolida en lo económico, porque trae avances técnicos.
+
++ El que GNU/Linux no esté creciendo no se puede valorar como un
+  retroceso en el plan estratégico de GNU de que el Software Libre
+  triunfe en el mundo en realidad, el problema es técnico. Las
+  herramientas de GNU han sido creadas para el escritorio y los
+  servidores, no son necesarias para los dispositivos móviles. Lo
+  importante es que tanto desarrolladores como administradores de
+  sistemas las sigan usando para que no se olvide la importancia de la
+  moral. Lo importante es demostrar con estadísticas que las
+  diferentes herramientas de GNU o bien triunfaron en su ámbito
+  específico, o que hicieron la presión necesaria para que hubiera
+  otra opción libre, bien financiada y protegida por una empresa que
+  fuera honesta en este aspecto. Con respecto a los dispositivos
+  móviles lo importante es que se pueda diferenciar claramente qué es
+  libre y qué no lo es y que haya distribuciones y personas que solo
+  acepten lo que es libre.
+
+

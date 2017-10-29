@@ -1,0 +1,19 @@
+A ver esto es lo que creo que hice en gruber
+
+0) Compilar kernel y meter las opciones adecuadas
+
+1) Instalar paquetes de debian 
+ * alsa-utils
+ * alsa-base
+ * libasound1
+
+ y alguno más, no recuerdo cuales. Es curioso alsaconf no está instalado ...
+
+
+2) Configurar /etc/modutils/alsa y /etc/modules.conf  
+ * Para ello te puedes ayudar de http://www.alsa-project.org
+
+3) Ejecutar snddevices y dar permisos
+ * chmod a+rw /dev/dsp /dev/mixer 
+
+4) Subir el volumen con aumix

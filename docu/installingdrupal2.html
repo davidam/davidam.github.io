@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Installing Drupal in Debian/Ubuntu GNU/Linux</title>
+<!-- 2013-09-01 dom 13:34 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Installing Drupal in Debian/Ubuntu GNU/Linux</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Installing Debian Packages</a></li>
+<li><a href="#sec-2">2. Configuring Apache</a></li>
+<li><a href="#sec-3">3. Creation of the database in Mysql</a></li>
+<li><a href="#sec-4">4. Creation of the database in Postgresql</a></li>
+<li><a href="#sec-5">5. Web install</a></li>
+<li><a href="#sec-6">6. References</a></li>
+<li><a href="#sec-7">7. License</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Installing Debian Packages</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+A fast way to do it with mysql may be the next:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ sudo apt-get install drupal7 drush
+</pre>
+</div>
+
+<p>
+Drush is an useful tool to facilitate the manage of our drupal by
+command line, by example, updates of modules, backups, etc.
+</p>
+
+<p>
+Really, it's better download the last version of drupal that the
+debian package, due to my policy of use drush to upgrades. But install
+drupal7 as debian package is a good idea to install depedencies.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ cd /var/www/
+$ sudo wget -c http://ftp.drupal.org/files/projects/drupal-7.22.tar.gz
+$ tar -xvzf drupal-7.22.tar.gz
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Configuring Apache</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+To install a drupal site, I would like enable clean urls, to it I will
+create the file mysite in /etc/apache2/sites-available/mysite, with
+the next content:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">&lt;VirtualHost *:80&gt;
+
+  ServerAdmin webmaster@localhost
+  ServerName mysite
+
+  DocumentRoot /var/www/mysite
+
+  &lt;Directory /var/www/mysite&gt;
+		RewriteEngine on
+		RewriteBase /mysite
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+  &lt;/Directory&gt;
+
+&lt;/VirtualHost&gt;
+</pre>
+</div>
+
+<p>
+Due to in this moment don't have the domain of the site it will be
+possible enable the host in /etc/hosts
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">127.0.0.1       localhost
+127.0.1.1       mysite
+</pre>
+</div>
+
+<p>
+Later, we can enable it so:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ sudo a2ensite mysite
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Creation of the database in Mysql</h2>
+<div class="outline-text-2" id="text-3">
+<div class="org-src-container">
+
+<pre class="src src-bash">$ mysql -u root -p 
+mysql&gt; create database mysite;
+mysql&gt; create user 'drupal7'@'localhost' identified by 'lapasswd';
+mysql&gt; grant all privileges on drupal7.* to 'drupal7'@'%' with grant option;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Creation of the database in Postgresql</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+First of all, you must install the needed debian packages:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ sudo apt-get install postgresql-9.1 postgresql-client php5-pgsql
+</pre>
+</div>
+
+<p>
+Now, you can create the database and the user to postgres.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ createuser dpsql --pwprompt --encrypted
+$ createdb dpsql --owner=dpsql
+</pre>
+</div>
+
+<p>
+To use the psql client on local you can modify the line local in
+/etc/postgresql/9.1/main/pg<sub>hba</sub>.conf:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">local             all            all                   trust
+</pre>
+</div>
+
+<p>
+If you want change the pass you can do:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ psql -U dpsql dpsql -W
+dpsql=&gt; ALTER USER dpsql with password 'thepassword';
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Web install</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+So enabled the site, you can go to <a href="http://mysite/install.php">http://mysite/install.php</a> and the
+installation is done step by step
+</p>
+
+<p>
+In the step 4 (Set up database) you can find database name, database
+username and database password with the data provided.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> References</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li><a href="https://drupal.org/documentation/install">https://drupal.org/documentation/install</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> License</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Copyright (C)  2013 David Arroyo Menéndez
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+
+<div class="figure">
+<p><a href="https://www.gnu.org/copyleft/fdl.html"><img src="file:///home/davidam/public_html/img/licenses/gfdl/gfdl.png" alt="gfdl.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2013-09-01 dom 13:34</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

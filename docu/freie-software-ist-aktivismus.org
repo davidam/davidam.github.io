@@ -1,0 +1,128 @@
+#+TITLE: Freie Software ist Aktivismus
+#+LANGUAGE: de
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+AUTHOR: David Arroyo Menéndez
+
+Dank http://sector-o.cc durch Übersetzung.
+
+* Einleitung
+
+Im September 2012 konnte ich eine Forschungsarbeit beenden und als
+Masterarbeit veröffentlichen. Es geht um Soziale Bewegungen und Neue
+Technologien in Madrid. Eine Frage in den geführten Interviews war
+"Welche technischen Werkzeuge hast du für dein Politisches Engagament
+benutzt?".
+
+Nur Menschen die sehr vertraut mit dem Hacktivismus sind, haben eine
+Beziehung zu Freier Software wie GIMP, oder GNUPG, üblicherweise aber,
+entwickelt oder erweitert niemand von denen Freie Software weiter. Das
+Groß der Antworten war, das sie Soziale Netzwerke, speziell Facebook
+oder Twitter nutzen. Ich als GNU-Aktivist und Anarchist, ich würde mir
+wünschen, dass die auftretenen Gefahren für eine Soziales Bewegung,
+welche durch die Nutzung proprietärer Software1 entstehen, durch die
+Aktivisten stärker in Betracht gezogen werden. Sie vergessen, dass das
+werben und fördern von freier Software die beste Option ist,
+Technologie und politisches Engagement auf leichte Art und Weise zu
+verbinden.
+
+* Hasse nicht die Medien, werde selbst zum Medium!
+
+In den 1990ern Jahren und zu Beginn des 21Jhd verbreitete sich der
+Slogan in den unabhängigen Medien, “Hasse nicht die Medien, werde
+selbst zum Medium”. Bei Nachrichtenportalen in einem Netzwerk, auch
+Internet genannt, konnte nun jeder gleichzeitig Konsument und
+Produzent von Inhalten werden. Zum Beispiel bei Projekten wie
+Indymedia, Sindomino, Ourproject, Risup etc. Sie implizierten einen
+ausdrücklichen Weg im globalen Kampf gegen den Kapitalismus.
+
+Aber was ist mit Facebook und Twitter? Tatsächlich gilt dort Slogan
+der Kapitalisten “Wenn Sie Medien sind, sind Sie das Produkt”. Und
+genau zu diesen Produkt werden sie, wenn die Leute “retwitten”, oder
+auf “gefällt mir” klicken.
+
+Viele Menschen freuen sich, dass aus dem arabischen Frühling,
+Demokratien mit vielen Gemeinsamkeiten zur westlichen Demokratie
+wurden. Doch wurden gleichzeitig die Mängel der westlichen Demokratien
+kopiert, welche in einigen Fällen zu grausamen Bürgerkriegen
+führten. In Spanien hat sich die 15M (15May) Bewegung gefunden. Sie
+wuchs und schwächte sich ab wie die Entwicklungen auf dem gesamten
+Globus. Momentan ist eine ähnliche Entwicklung wie bei Gewerkschaften
+zu beobachten.
+
+Aber was ist der Grund? Die sozialen Netzwerke? Oder die massiven
+Angriffe auf die Arbeiter? Das Problem mit den sozialen Netzwerken
+ist, wer kontrolliert sie? Diese Medien machen gute spekulative
+Arbeit. Eine politische Partei zu kritisieren, ist das gleiche wie ein
+Handelsunternehmen. Börsianer, Bankdirektoren oder Politiker
+investieren in die 1% der Menschen die reicher und reicher werden,
+während die 99% ärmer und ärmer werden.
+
+Wie können wir den Kreis durchbrechen? Mit dem Kapitalismus brechen,
+und einen kollektiven Anarchismus wie in Spanien der 1930er Jahren
+erzeugen? Die Spielregeln haben sich geändert, wir haben modernere
+Technologien. Was können wir damit tun? Wir können uns mitteilen, wir
+haben die Technik dazu, und wir nutzen sie seit den 1990er
+Jahren. Bedenke jedoch. Werde selbst zum Medium, nicht zum Produkt. In
+diesem Sinne: nutze freie und liberale soziale Netzwerke und Software2
+(z.B. n-1.cc), Sie sind ein logischer und möglicher Weg in dieser
+Zeit.
+
+* Was ist Freie Software? Was ist ihr Ziel?
+
+Freie Software ist definiert als Software die Freiheit für den User
+(Benutzer) erzeugt. Er kann sie benutzen, kopieren, verändern, und
+veränderte Kopien weitergeben. Wir können Freie Software auch als
+Software verstehen, die Eigentum von jedem ist, also Entwicklern und
+Nutzern gleichermaßen gehört. Obwohl Freie Software auf den Prinzipien
+der Open-Source-Philosphie beruht, hat sich ein Problem
+etabliert. Freie Software entspricht manchmal nicht den Bedürfnissen
+oder den realen Interessen der Anwender und Entwickler. Dies erzeugte
+ein “Markt”, mit all den finanziellen Interessen wie bei anderen
+Märkten und Produkten auch.
+
+Die Open-Source-Philosphie, verwirft dabei manchmal die ethische
+Argumentationslinie der Freien Software. Dabei ist das alleinige
+technisches Argument, ob es ein gutes oder kein gutes Buissnessmodell
+ist, kein gute Begründung den Weg der Freien Software zu
+verlassen. Sie denken nicht daran, was der Mehrwert von Gemeingütern
+ist, es liegt außerhalb des Diskurs. Viele Unternehmen haben ziemlich
+gute Beiträge zur Entwicklung von Freier Software und unter Beachtung
+der Free-Software-Philosophie gemacht, aber manchmal wird diese
+Philosophie mit der von proprietärer Software vermischt, wie im
+Beispiel von Ubuntu, Android, etc..
+
+In der kapitalistischen Welt ist der Triumph der Rentabilität und der
+Technisierung nicht von der Hand zu weisen, aber tatsächlich geht es
+beim erzeugen von Software um den sozialen Nutzen. Der Gebrauch und
+die Entwicklung von Software, die unter dem Aspekt des
+gesamtgesellschaftlichen Nutzen steht, wurde verdrängt. Gleichwohl es
+viele Communitys gibt, wie die GNU-Community (General Public License)
+oder die Debian-Community etc., welche konsequent ihre Software
+Produktion nach dem sozialen Nutzen ausrichten, statt nach
+wirtschaftlicher Rentabilität fragen. Es ist nicht leicht in langen
+Zeiträumen zu denken, und sich im Technologiefeld vom Kapitalismus
+wegzubewegen, aber es bringt sehr viel Freude mit einer Gemeinschaft
+ein Ziel zu erreichen, dass wirklich Nachhaltig ist.
+
+So, wenn dich nun jemand fragt, welche technischen Werkzeuge du für
+deine politische Arbeit nutzt? – kannst du antworten: Ich nutze Freie
+Software, welche Communitybasierend ist, wie GNU Emacs, Debian,
+Trisquel, Gimp, OpenGPG, weil ich möchte das die Softwarewelt als
+selbstverantwortliches Kollektiv funktioniert.
+
+Dieser Artikel stammt von David Arroyo Menéndez und wurde in im
+Original in “Diagonal newspaper” veröffentlicht. Die englische Version
+enthält einige Verbesserungen, die vom mir (mit freundlicher
+unterstützung von Nadine Müller) verfasste Transkription aus dem
+Englischen, enthält etwas stärkere sprachliche Revisionen, und
+versucht dem deutschen Sprachgebrauch gerecht zu werden.
+
+1. Software, die nicht unter einer freien Lizenz steht (auch unfreie
+   oder proprietäre Software genannt), ist dadurch gekennzeichnet,
+   dass ihre Weitergabe lizenz- oder patentrechtlich eingeschränkt
+   ist. Der Quelltext zu der Software wird in der Regel geheim
+   gehalten und es können keine direkten Änderungen am Programm
+   vorgenommen werden. 
+
+2. http://n-1.cc | http://diasporaproject.org/| http://identi.ca 
+

@@ -1,0 +1,831 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdfetex 2013.3.12)  10 APR 2013 02:50
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\catcode126=12 \def\normaltilde{~}\catcode126=13 \let~\normaltilde  \input ./
+gccintro.es.texi
+(./gccintro.es.texi (./texinfo.tex Loading texinfo [version 2011-11-09.15]:
+\bindingoffset=\dimen16
+\normaloffset=\dimen17
+\pagewidth=\dimen18
+\pageheight=\dimen19
+\outerhsize=\dimen20
+\outervsize=\dimen21
+\cornerlong=\dimen22
+\cornerthick=\dimen23
+\topandbottommargin=\dimen24
+\headlinebox=\box16
+\footlinebox=\box17
+\margin=\insert252
+\EMsimple=\toks13
+\groupbox=\box18
+\groupinvalidhelp=\toks14
+\mil=\dimen25
+\exdentamount=\skip18
+\inmarginspacing=\skip19
+
+pdf,
+\tempnum=\count27
+\lnkcount=\count28
+\filename=\toks15
+\filenamelength=\count29
+\pgn=\count30
+\toksA=\toks16
+\toksB=\toks17
+\toksC=\toks18
+\toksD=\toks19
+\boxA=\box19
+\countA=\count31
+\nopdfimagehelp=\toks20
+ fonts,
+\sffam=\fam8
+\textleading=\dimen26
+ markup,
+\fontdepth=\count32
+ glyphs,
+\errorbox=\box20
+ page headings,
+\titlepagetopglue=\skip20
+\titlepagebottomglue=\skip21
+\evenheadline=\toks21
+\oddheadline=\toks22
+\evenfootline=\toks23
+\oddfootline=\toks24
+ tables,
+\tableindent=\dimen27
+\itemindent=\dimen28
+\itemmargin=\dimen29
+\itemmax=\dimen30
+\itemno=\count33
+\multitableparskip=\skip22
+\multitableparindent=\skip23
+\multitablecolspace=\dimen31
+\multitablelinespace=\skip24
+\colcount=\count34
+\everytab=\toks25
+ conditionals,
+\doignorecount=\count35
+ indexing,
+\whatsitskip=\skip25
+\whatsitpenalty=\count36
+\secondaryindent=\skip26
+\partialpage=\box21
+\doublecolumnhsize=\dimen32
+
+sectioning,
+\unnumberedno=\count37
+\chapno=\count38
+\secno=\count39
+\subsecno=\count40
+\subsubsecno=\count41
+\appendixno=\count42
+\absseclevel=\count43
+\secbase=\count44
+\chapheadingskip=\skip27
+\secheadingskip=\skip28
+\subsecheadingskip=\skip29
+ toc,
+\tocfile=\write0
+\contentsrightmargin=\skip30
+\savepageno=\count45
+\lastnegativepageno=\count46
+\tocindent=\dimen33
+ environments,
+\lispnarrowing=\skip31
+\envskipamount=\skip32
+\circthick=\dimen34
+\cartouter=\dimen35
+\cartinner=\dimen36
+\normbskip=\skip33
+\normpskip=\skip34
+\normlskip=\skip35
+\lskip=\skip36
+\rskip=\skip37
+\nonfillparindent=\dimen37
+\tabw=\dimen38
+\verbbox=\box22
+ defuns,
+\defbodyindent=\skip38
+\defargsindent=\skip39
+\deflastargmargin=\skip40
+\defunpenalty=\count47
+\parencount=\count48
+\brackcount=\count49
+ macros,
+\paramno=\count50
+\macname=\toks26
+ cross references,
+\auxfile=\write1
+\savesfregister=\count51
+ insertions,
+\footnoteno=\count52
+\SAVEfootins=\box23
+\SAVEmargin=\box24
+
+(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen39
+\epsfframethickness=\dimen40
+\epsfrsize=\dimen41
+\epsftmp=\dimen42
+\epsftsize=\dimen43
+\epsfxsize=\dimen44
+\epsfysize=\dimen45
+\pspoints=\dimen46
+)
+\noepsfhelp=\toks27
+ localization,
+\nolanghelp=\toks28
+\countUTFx=\count53
+\countUTFy=\count54
+\countUTFz=\count55
+ formatting,
+\defaultparindent=\dimen47
+ and turning on texinfo input format.)
+texinfo.tex: doing @include of config-local.texi
+
+
+(./config-local.texi) (./gccintro.es.aux)
+\openout1 = `gccintro.es.aux'.
+
+@cpindfile=@write2
+@fnindfile=@write3
+@vrindfile=@write4
+@tpindfile=@write5
+@kyindfile=@write6
+@pgindfile=@write7
+
+(/usr/share/texmf/tex/texinfo/txi-es.tex) [1
+Non-PDF special ignored!
+\openout2 = `gccintro.es.cp'.
+
+\openout3 = `gccintro.es.fn'.
+
+\openout4 = `gccintro.es.vr'.
+
+\openout5 = `gccintro.es.tp'.
+
+\openout6 = `gccintro.es.ky'.
+
+\openout7 = `gccintro.es.pg'.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (22.22435pt too wide) in paragraph at lines 41--41
+[]@textrm Traducido por David Ar-royo Men^^Sendez y Luis Palomo de On^^S^^Ps Gu
+ti^^Serrez,[] 
+
+@hbox(7.60416+2.12917)x318.67085, glue set - 1.0
+.@hbox(0.0+0.0)x0.0
+.@textrm T
+.@kern-0.91252
+.@textrm r
+.@textrm a
+.etc.
+
+[2] (./gccintro.es.toc [-1] [-2] [-3]) [-4] (./gccintro.es.toc)
+(./gccintro.es.toc) (Una Introducci@'on a GCC)
+\openout0 = `gccintro.es.toc'.
+
+ (Prefacio) [1] [2]
+Cap@'{@char 16{}}tulo 1 [3] [4] [5] [6] [7] Cap@'{@char 16{}}tulo 2 [8]
+texinfo.tex: doing @verbatiminclude of hola.es.c
+
+
+(./hola.es.c) [9]
+texinfo.tex: doing @verbatiminclude of mal.es.c
+
+ (./mal.es.c)
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 557--557
+ []@texttt type 'double', but argument 2 has type 'int' [-Wformat][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt t
+.@texttt y
+.@texttt p
+.etc.
+
+[10]
+texinfo.tex: doing @verbatiminclude of main.es.c
+
+ (./main.es.c) [11]
+texinfo.tex: doing @verbatiminclude of hola1.es.h
+
+ (./hola1.es.h)
+texinfo.tex: doing @verbatiminclude of hola_fn.es.c
+
+ (./hola_fn.es.c) [12] [13] [14]
+texinfo.tex: doing @verbatiminclude of main2.es.c
+
+
+(./main2.es.c) [15]
+texinfo.tex: doing @verbatiminclude of c1makefile2
+
+ (./c1makefile2) [16] [17]
+texinfo.tex: doing @verbatiminclude of calc.es.c
+
+ (./calc.es.c) [18] [19] [20]
+texinfo.tex: doing @verbatiminclude of badconv.es.c
+
+
+(./badconv.es.c) [21] Cap@'{@char 16{}}tulo 3 [22] [23]
+texinfo.tex: doing @verbatiminclude of dbmain.es.c
+
+ (./dbmain.es.c
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 8--8
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x316.17783
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt d
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 9--9
+ [][] 
+
+@hbox(7.60416+1.52081)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+1.52081)x316.17783
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt d
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) [24]
+Overfull \hbox (24.93687pt too wide) in paragraph at lines 1497--1497
+ []@texttt $ gcc -Wall -I/opt/gdbm-1.8.3/include dbmain.es.c -lgdbm[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+[25] [26]
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 1645--1645
+ []@texttt $ C_INCLUDE_PATH=.:/opt/gdbm-1.8.3/include:/net/include[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+[27] [28] [29]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 1832--1832
+ []@texttt $ LD_LIBRARY_PATH=/opt/gdbm-1.8.3/lib:/opt/gtk-1.4/lib[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+[30]
+texinfo.tex: doing @verbatiminclude of ansi.es.c
+
+ (./ansi.es.c) [31]
+Overfull \hbox (42.18294pt too wide) in paragraph at lines 1966--1966
+ []@texttt ansi.c:6:14: error: expected identifier or '(' before 'asm'[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt a
+.@texttt n
+.@texttt s
+.etc.
+
+texinfo.tex: doing @verbatiminclude of pi.es.c
+
+(./pi.es.c)
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 2008--2008
+ []@texttt pi.c:7:38: error: 'M_PI' undeclared (first use in this[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt p
+.@texttt i
+.@texttt .
+.etc.
+
+
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 2010--2010
+ []@texttt pi.c:7:38: note: each undeclared identifier is reported[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt p
+.@texttt i
+.@texttt .
+.etc.
+
+[32]
+texinfo.tex: doing @verbatiminclude of gnuarray.es.c
+
+ (./gnuarray.es.c [33])
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 2096--2096
+ []@texttt gnuarray.es.c:5: warning: ISO C90 forbids variable-size[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt g
+.@texttt n
+.@texttt u
+.etc.
+
+[34] [35]
+texinfo.tex: doing @verbatiminclude of main4.es.c
+
+ (./main4.es.c) [36]
+texinfo.tex: doing @verbatiminclude of w.es.c
+
+ (./w.es.c)
+Overfull \hbox (25.2662pt too wide) in paragraph at lines 2299--2299
+ []@texttt expression < 0 is always false [-Wtype-limits][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 79.49742
+.@hbox(0.0+0.0)x0.0
+.@texttt e
+.@texttt x
+.@texttt p
+.etc.
+
+[37]
+texinfo.tex: doing @verbatiminclude of wabs.es.c
+
+ (./wabs.es.c)
+Overfull \hbox (19.51752pt too wide) in paragraph at lines 2342--2342
+ []@texttt wabs.c:8:3: warning: conversion to 'int' from[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 79.49742
+.@hbox(0.0+0.0)x0.0
+.@texttt w
+.@texttt a
+.@texttt b
+.etc.
+
+[38]
+texinfo.tex: doing @verbatiminclude of shadow.es.c
+
+ (./shadow.es.c)
+texinfo.tex: doing @verbatiminclude of shadow2.es.c
+
+ (./shadow2.es.c [39])
+texinfo.tex: doing @verbatiminclude of castqual.es.c
+
+ (./castqual.es.c) [40]
+Cap@'{@char 16{}}tulo 4 [41] [42]
+texinfo.tex: doing @verbatiminclude of dtest.es.c
+
+ (./dtest.es.c) [43]
+texinfo.tex: doing @verbatiminclude of dtestval.es.c
+
+ (./dtestval.es.c)
+[44]
+texinfo.tex: doing @verbatiminclude of dtestval2.es.c
+
+ (./dtestval2.es.c)
+texinfo.tex: doing @verbatiminclude of dtestval3.es.c
+
+ (./dtestval3.es.c) [45]
+texinfo.tex: doing @verbatiminclude of test.es.c
+
+ (./test.es.c) [46]
+texinfo.tex: doing @verbatiminclude of hola.es.c
+
+ (./hola.es.c) [47] Cap@'{@char 16{}}tulo 5 [48] [49]
+texinfo.tex: doing @verbatiminclude of null.es.c
+
+ (./null.es.c) [50] [51] [52] [53]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 3133--3133
+ []@texttt Run till exit from #0 0x08048400 in foo (p=0x40013f98)[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt R
+.@texttt u
+.@texttt n
+.etc.
+
+[54] Cap@'{@char 16{}}tulo 6 [55] [56] [57] [58] [59] [60] [61] [62]
+texinfo.tex: doing @verbatiminclude of optim.es.c
+
+
+(./optim.es.c [63]) [64] [65]
+texinfo.tex: doing @verbatiminclude of uninit.es.c
+
+ (./uninit.es.c) [66] Cap@'{@char 16{}}tulo 7
+[67] [68]
+texinfo.tex: doing @verbatiminclude of hola.es.cc
+
+ (./hola.es.cc) [69]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 3864--3864
+ []@texttt hola.o(.text+0x1b): undefined reference to `std::cout'[] 
+
+@hbox(7.60416+0.91246)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt h
+.@texttt o
+.@texttt l
+.etc.
+
+
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 3896--3896
+ []@texttt hola.o(.text+0x1b): undefined reference to `std::cout' 
+
+@hbox(7.60416+0.91246)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt h
+.@texttt o
+.@texttt l
+.etc.
+
+[70] [71]
+texinfo.tex: doing @verbatiminclude of holastr.es.cc
+
+ (./holastr.es.cc) [72]
+texinfo.tex: doing @verbatiminclude of string.es.cc
+
+ (./string.es.cc) [73]
+texinfo.tex: doing @verbatiminclude of buffer.es.h
+
+ (./buffer.es.h [74])
+texinfo.tex: doing @verbatiminclude of tprog.es.cc
+
+
+(./tprog.es.cc) [75]
+texinfo.tex: doing @verbatiminclude of templates.es.cc
+
+ (./templates.es.cc)
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 4171--4171
+ []@texttt $ g++ -Wall -fno-implicit-templates -c templates.es.cc[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+[76]
+texinfo.tex: doing @verbatiminclude of templates2.es.cc
+
+ (./templates2.es.cc) Cap@'{@char 16{}}tulo 8 [77] [78] [79] [80] [81]
+texinfo.tex: doing @verbatiminclude of alpha.es.c
+
+
+(./alpha.es.c) [82] [83] [84]
+texinfo.tex: doing @verbatiminclude of setfpu.es.c
+
+ (./setfpu.es.c) [85]
+texinfo.tex: doing @verbatiminclude of fptest2.es.c
+
+ (./fptest2.es.c) [86]
+texinfo.tex: doing @verbatiminclude of signed.es.c
+
+
+(./signed.es.c [87]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 8--8
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x310.42914
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 11--11
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x310.42914
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+)
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 4862--4862
+ []@texttt signed.c:7: warning: comparison is always false due to[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt s
+.@texttt i
+.@texttt g
+.etc.
+
+[88]
+texinfo.tex: doing @verbatiminclude of testgetc.es.c
+
+ (./testgetc.es.c)
+texinfo.tex: doing @verbatiminclude of testgetc2.es.c
+
+ (./testgetc2.es.c) [89] Cap@'{@char 16{}}tulo 9 [90]
+[91] [92]
+Overfull \hbox (36.43425pt too wide) in paragraph at lines 5075--5075
+ []@texttt -mtune=generic -march=i586 -auxbase hola.es -Wall -version[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt -
+.@texttt m
+.@texttt t
+.etc.
+
+
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 5080--5080
+ []@texttt warning: GMP header version 5.0.1 differs from library[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt w
+.@texttt a
+.@texttt r
+.etc.
+
+
+Overfull \hbox (24.93687pt too wide) in paragraph at lines 5091--5091
+ []@texttt /usr/lib/i386-linux-gnu/gcc/i486-linux-gnu/4.6.1/include[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt /
+.@texttt u
+.@texttt s
+.etc.
+
+[93]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 5100--5100
+ []@texttt warning: GMP header version 5.0.1 differs from library[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt w
+.@texttt a
+.@texttt r
+.etc.
+
+
+Overfull \hbox (24.93687pt too wide) in paragraph at lines 5107--5107
+ []@texttt '-march=i586' as --32 -o /tmp/ccQxW8a5.o /tmp/cchpM0t3.s[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt '
+.@texttt -
+.@texttt m
+.etc.
+
+[94]
+texinfo.tex: doing @verbatiminclude of bucle.es.c
+
+ (./bucle.es.c) [95]
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 5214--5214
+ []@texttt Reading symbols from /lib/ld-linux.so.2...(no debugging[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt R
+.@texttt e
+.@texttt a
+.etc.
+
+[96] Cap@'{@char 16{}}tulo 10 [97] [98]
+texinfo.tex: doing @verbatiminclude of hola_fn.es.c
+
+ (./hola_fn.es.c)
+texinfo.tex: doing @verbatiminclude of adios_fn.es.c
+
+ (./adios_fn.es.c)
+texinfo.tex: doing @verbatiminclude of hola.es.h
+
+
+(./hola.es.h) [99]
+texinfo.tex: doing @verbatiminclude of main3.es.c
+
+ (./main3.es.c) [100]
+texinfo.tex: doing @verbatiminclude of collatz.es.c
+
+ (./collatz.es.c [101] [102]) [103]
+texinfo.tex: doing @verbatiminclude of cov.es.c
+
+
+(./cov.es.c) [104]
+texinfo.tex: doing @verbatiminclude of cov_c_gcov
+
+ (./cov_c_gcov
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 13--13
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x310.42914
+..@texttt #
+..@texttt #
+..@texttt #
+..@texttt #
+..@texttt #
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) Cap@'{@char 16{}}tulo 11 [105] [106]
+texinfo.tex: doing @verbatiminclude of hola.es.c
+
+ (./hola.es.c) [107] [108] [109]
+Cap@'{@char 16{}}tulo 12 [110] [111] [112] Cap@'{@char 16{}}tulo 13 [113]
+[114]
+texinfo.tex: doing @verbatiminclude of msg-file.es.c
+
+ (./msg-file.es.c)
+texinfo.tex: doing @verbatiminclude of msg-nest1.es.h
+
+ (./msg-nest1.es.h)
+texinfo.tex: doing @verbatiminclude of msg-nest2.es.h
+
+ (./msg-nest2.es.h [115])
+texinfo.tex: doing @verbatiminclude of msg-invalidpp.es.c
+
+
+(./msg-invalidpp.es.c)
+texinfo.tex: doing @verbatiminclude of msg-undeclared.es.c
+
+ (./msg-undeclared.es.c [116])
+texinfo.tex: doing @verbatiminclude of msg-parse.es.c
+
+ (./msg-parse.es.c)
+texinfo.tex: doing @verbatiminclude of msg-eoi.es.c
+
+
+(./msg-eoi.es.c [117])
+texinfo.tex: doing @verbatiminclude of msg-implicitdecl.es.c
+
+ (./msg-implicitdecl.es.c)
+texinfo.tex: doing @verbatiminclude of msg-unterm.es.c
+
+ (./msg-unterm.es.c [118])
+texinfo.tex: doing @verbatiminclude of msg-string2.es.c
+
+
+(./msg-string2.es.c)
+texinfo.tex: doing @verbatiminclude of msg-string2.es.cc
+
+ (./msg-string2.es.cc
+Overfull \hbox (42.51227pt too wide) in paragraph at lines 6--6
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 79.49742
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x281.6857
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt s
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) [119]
+texinfo.tex: doing @verbatiminclude of msg-char.es.c
+
+ (./msg-char.es.c)
+texinfo.tex: doing @verbatiminclude of msg-null.es.c
+
+ (./msg-null.es.c [120])
+texinfo.tex: doing @verbatiminclude of msg-derefincomplete.es.c
+
+ (./msg-derefincomplete.es.c)
+[121]
+texinfo.tex: doing @verbatiminclude of msg-unknownesc.es.c
+
+ (./msg-unknownesc.es.c)
+texinfo.tex: doing @verbatiminclude of msg-assign.es.c
+
+ (./msg-assign.es.c) [122]
+texinfo.tex: doing @verbatiminclude of msg-control.es.c
+
+ (./msg-control.es.c)
+texinfo.tex: doing @verbatiminclude of msg-unused.es.c
+
+
+(./msg-unused.es.c [123])
+texinfo.tex: doing @verbatiminclude of msg-const.es.c
+
+ (./msg-const.es.c) [124]
+texinfo.tex: doing @verbatiminclude of msg-init.es.c
+
+ (./msg-init.es.c)
+texinfo.tex: doing @verbatiminclude of msg-ext
+
+ (./msg-ext) [125]
+texinfo.tex: doing @verbatiminclude of msg-undef.es.c
+
+ (./msg-undef.es.c) [126] [127] Cap@'{@char 16{}}tulo 14 [128]
+(Lectura adicional) [129] [130] [131] (Reconocimientos) [132] [133]
+(Organizaciones de software libre) [134]
+(Licencia para documentaci@'on libre GNU) [135] [136] [137] [138] [139]
+[140] [141] (@'Indice) [142] (./gccintro.es.cps [143] [144] [145] [146]
+[147] [148] [149] [150] [151] [152] [153] [154] [155] [156]) [157] [158] ) 
+Here is how much of TeX's memory you used:
+ 3121 strings out of 497040
+ 41401 string characters out of 3204522
+ 90111 words of memory out of 3000000
+ 3753 multiletter control sequences out of 15000+200000
+ 32127 words of font info for 112 fonts, out of 3000000 for 9000
+ 77 hyphenation exceptions out of 8191
+ 16i,6n,17p,367b,709s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsl9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on gccintro.es.pdf (164 pages, 690472 bytes).
+PDF statistics:
+ 2298 PDF objects out of 2487 (max. 8388607)
+ 2083 compressed objects within 21 object streams
+ 264 named destinations out of 1000 (max. 500000)
+ 861 words of extra memory for PDF output out of 10000 (max. 10000000)
+

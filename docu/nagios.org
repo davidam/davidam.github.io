@@ -1,0 +1,78 @@
+#+TITLE: Nagios
+#+AUTHOR: David Arroyo Menéndez
+#+LANGUAGE:   es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+
+* Instalación de paquetes
+
+Es muy sencilla en realidad:
+
+#+BEGIN_SRC bash
+$ su -
+$ apt-get update
+$ apt-get install nagios3
+#+END_SRC
+
+Después ya se configura el apache teniendo en cuenta que el raíz está en:
+
+#+BEGIN_SRC bash
+/usr/share/nagios3/htdocs/
+#+END_SRC
+
+* Configuración
+
+En /etc/nagios3/conf.d/ están los ficheros de configuración servicios
+(services_nagios2.cfg), grupos de servidores (hostgroups_nagios2.cfg) y
+servicios por servidor (localhost_nagios2.cfg), entre otros.
+
+Un ejemplo de configuración:
+
+#+BEGIN_SRC bash
+define host{
+        use             generic-host
+        host_name       mydomain
+        alias           mydomain
+        address         215.267.250.173
+}
+
+define service{
+        use                     generic-service
+        host_name               mydomain
+        service_description     HTTP-Server
+        check_command           check_http
+} 
+
+define service{
+        use                     generic-service
+        host_name               mydomain
+        service_description     SSH-Server
+        check_command           check_ssh
+}
+
+define service{
+        use                             generic-service         ; Name of service template to use
+        host_name                       mydomain
+        service_description             Disk Space
+        check_command                   check_all_disks!20%!10%
+}
+
+define service{
+        use                             generic-service         ; Name of service template to use
+        host_name                       mydomain
+        service_description             Current Load
+        check_command                   check_load!5.0!4.0!3.0!10.0!6.0!4.0
+}
+
+#+END_SRC
+
+* Usando nagios
+
+Pues ahora se entra en la url por ej. http://midominio/nagios3 y se
+pincha en host groups desde ahí se verán los servicios que hay
+levantados.
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]

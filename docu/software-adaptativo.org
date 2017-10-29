@@ -1,0 +1,80 @@
+#+TITLE: Software Adaptativo y Agentes con mis palabras
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+* Introducción
+
+En estos días me encuentro retomando la tarea de escribir software
+adaptativo, así que me he decidido escribir un pequeño artículo para
+ilustrar qué es y cómo utilizarlo.
+
+* ID3
+
+Para hacer software adaptativo debemos pensar en una tarea de
+aprendizaje, por ejemplo, saber qué días son buenos para jugar al
+tenis. Para ello he utilizado [[http://www.cs.cmu.edu/afs/cs/project/theo-11/www/decision-trees.lisp][el algoritmo de árboles de decisión de
+Tom Mitchell]].
+
+Veamos paso a paso cómo utilizar este algoritmo:
+
+1. Se carga el fichero lisp
+#+BEGIN_SRC lisp
+ >> (load "/home/davidam/tosync/documentos/programacion/lisp/ID3.lsp")
+#+END_SRC
+
+2. Se echa una mirada a los ejemplos de entrenamiento
+#+BEGIN_SRC lisp
+ >> *training.examples*  
+#+END_SRC
+
+3. Se ejecuta ID3 para aprender un árbol
+#+BEGIN_SRC lisp
+>> (setq tree (id3 *training.examples* 'play.tennis? '(outlook temperature humidity wind)))
+#+END_SRC
+
+4. Se puede echar un vistazo al árbol 
+#+BEGIN_SRC lisp
+>> (print.tree tree)
+#+END_SRC
+
+* Agentes
+
+Para Russell y Norvig un agente es cualquier cosa capaz de percibir su
+medioambiente mediante sensores y actuar en ese medio mediante
+actuadores. Todo agente tiene una función u objetivo. 
+
+Un agente inteligente ó racional trata de maximizar el valor de una
+medida de rendimiento, dada la secuencia de percepciones que ha
+observado hasta el momento.
+
+Repitamos lo dicho ejemplificándolo. Un agente inteligente tiene un
+objetivo abstracto (ej: "si un día es bueno para jugar al tenis"),
+tiene una forma de evaluar si esa información es interesante (ej: "el
+usuario lee los ejemplos positivos de entrenamiento"), tiene unos
+actuadores (ej: "una caja html donde presenta los días buenos") y
+tiene unos sensores (ej: "los ejemplos en general"). La pregunta ahora
+es ¿cómo mejorar ese rendimiento?, pues ID3 sería la manera matemática
+de mejorar el rendimiento.
+
+#+BEGIN_SRC lisp
+$ sbcl
+* (load "/opt/aima/aima.lisp")
+* (aima-load 'all)
+#+END_SRC
+
+clasificar todos los artículos de la
+wikipedia en 4 categorías.
+
+#+BEGIN_SRC bash
+$ sudo apt-get install r-cran-cluster
+$ R
+$ ??cluster
+#+END_SRC
+
+* Licencia
+
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed][Licencia Creative Commons Reconocimiento Unported 3.0]]
+
+[[file:http://i.creativecommons.org/l/by/3.0/88x31.png]]
+
+

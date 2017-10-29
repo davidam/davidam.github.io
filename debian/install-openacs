@@ -1,0 +1,110 @@
+
+INSTALL OPENACS ON UBUNTU 7.10 / DEBIAN UNSTABLE
+
+
+# 1) Install tcl 8.4
+
+apt-get install tcl8.4 tcl8.4-dev tcl8.4-doc
+
+# 2) Install PostgreSQL 8.2 (from ubuntu repository or debian etch)
+
+# 2.1) Install with apt
+
+apt-get install postgresql-8.2 postgresql-client postgresql-dev postgresql-doc postgresql-contrib-8.2
+
+# 2.2) Config the postgresql 8.x from http://openacs.org/xowiki/How_to_install_in_Postgres_8.x
+# /etc/postgresql/8.2/main/postgresql.conf
+
+add_missing_from = on
+regex_flavor = extended
+default_with_oids = on
+
+# On debian you could need change the postgresql port number on debian etch to 5432, see /etc/postgresql/8.2/main/postgresql.conf
+
+# 2.3) Create the database
+su postgres -c "/usr/lib/postgresql/8.2/bin/createlang plpgsql template1"
+su postgres -c "createuser service --no-superuser --createdb --createrole"
+su postgres -c "createdb -E UNICODE service"
+
+# 3) Install Aolserver (4.5 for now only from debian unstable)
+
+# Note: on ubuntu maybe more better install aolserver 4.0 and you can download it from debian stable
+
+# 3.1) Add the next lines to /etc/apt/sources.list
+
+deb http://http.us.debian.org/debian stable main contrib non-free
+deb http://non-us.debian.org/debian-non-US stable/non-US main contrib non-free
+deb http://security.debian.org stable/updates main contrib non-free
+
+# 3.2) Update
+
+apt-get update
+
+# If you have troubles with gpg keys, then you must read: http://www.davidam.com/debian/debian-gpg
+
+# 3.3) Install wit apt
+
+apt-get install -t unstable aolserver4 aolserver4-nscache aolserver4-nsopenssl aolserver4-nspostgres aolserver4-nssha1 aolserver4-dev aolserver4-doc daemontools-installer cvs
+
+
+# 3.4) Install tdom from cvs
+# Sometimes cvs.tdom.org is down, if you have problems you can download with wget http://cognovis.de/file-storage/view/aolserver45.tar.bz2
+
+cd /usr/lib/aolserver4
+sudo ln -s /usr/include/aolserver4 include
+mkdir /usr/local/src/aolserver4
+cd /usr/local/src/aolserver4
+sudo cvs -z3 -d:pserver:anonymous@cvs.tdom.org:/usr/local/pubcvs co tdom
+cd tdom/unix        
+../configure --enable-threads --disable-tdomalloc --with-aolserver=/usr/lib/aolserver4 --prefix=/usr/lib/aolserver4 --with-tcl=/usr/lib/tcl8.4    
+sudo make install  
+
+# 3.5) Next on the list is XoTCL
+
+cd /usr/local/src
+sudo wget http://media.wu-wien.ac.at/download/xotcl-1.5.6.tar.gz
+sudo tar xvfz xotcl-1.5.6.tar.gz
+cd xotcl-1.5.6/
+export CC=gcc
+sudo ./configure --enable-threads --enable-symbols --prefix=/usr/lib/aolserver4 --exec-prefix=/usr/lib/aolserver4 --with-tcl=/usr/lib/tcl8.4
+sudo make
+sudo make install-aol
+
+# 3.6) Now TclLib
+
+sudo wget http://heanet.dl.sourceforge.net/sourceforge/tcllib/tcllib-1.10.tar.bz2
+sudo tar xvfj tcllib-1.10.tar.bz2
+cd tcllib-1.10
+sudo ./configure --prefix=/usr/lib/aolserver4
+sudo make install
+
+# 4) Download and config Openacs 5.3.2
+
+# 4.1) Create the directory where we can install openacs
+su - service
+mkdir aolserver
+cd aolserver
+
+# 4.2) Copy all the two config files there in. The files are aolserver.nsadmin y nsadmin.tcl
+
+wget http://www.davidam.com/debian/aolserver.nsadmin
+wget http://www.davidam.com/debian/nsadmin.tcl
+
+# 4.3) Change nsadmin to service
+mv aolserver.nsadmin aolserver.service
+mv nsadmin.tcl service.tcl
+sed -i "s/nsadmin/service/g" aolserver.service service.tcl
+
+# 4.4) Download openacs of the cvs
+# cvs -z3 -d :pserver:anonymous@openacs.org:/cvsroot co -r oacs-5-1 openacs-4
+cvs -z3 -d :pserver:anonymous@cvs.openacs.org:/cvsroot co -r oacs-5-2 openacs-4
+mv openacs-4 service 
+chmod 774 aolserver.service
+
+# 4.5) Start aol     
+mkdir service/log   
+/aolserver.service start
+
+# some minutes after, it must run from http://localhost:8000
+
+

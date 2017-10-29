@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>The Evolution in the Internet Access in the Last 5 Years</title>
+<!-- 2014-05-11 dom 13:52 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<link rel="stylesheet" type="text/css" href="../css/graphbar.css" />
+<link rel="stylesheet" type="text/css" href="../css/internet-access-os.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">The Evolution in the Internet Access in the Last 5 Years</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. From Personal Computers to Tablets and Smartphones</a></li>
+<li><a href="#sec-2">2. The Data</a></li>
+<li><a href="#sec-3">3. Looking at Microsoft Windows: From the Sucessfull to the Drecreasing</a></li>
+<li><a href="#sec-4">4. Looking at Macintosh: Reborning</a></li>
+<li><a href="#sec-5">5. Looking at Google: Borning in the Operating System Market</a></li>
+<li><a href="#sec-6">6. Why the Microsoft strategy is not running?</a></li>
+<li><a href="#sec-7">7. What happens whith the free software movement?</a></li>
+<li><a href="#sec-8">8. Conclusion</a></li>
+<li><a href="#sec-9">9. Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="file:///home/davidam/public_html/index.html">Volver a davidam.com</a>
+</p>
+
+<p>
+Today we are in a moment, where the smartphones and tablets is being
+more and more used. It is performing a change in the market of
+operating system and the feeling of values of triumph in this market.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> From Personal Computers to Tablets and Smartphones</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The market of operating system in the internet access is suffering a
+very strong change from personal computers and laptops to tablets and
+smartphones in the next graphics, we can see the evolution:
+</p>
+
+
+<div class='graphbar'>
+<div><div class='percentage2'></div><div class='data'>2010 (2.15%)</div></div>
+<div><div class='percentage5'></div><div class='data'>2011 (5.49%)</div></div>
+<div><div class='percentage13'></div><div class='data'>2012 (13.56%)</div></div>
+<div><div class='percentage32'></div><div class='data'>2013 (32.10%)</div></div>
+<div><div class='percentage45'></div><div class='data'>2014 (44.78%)</div></div>
+</div>
+<div style="clear:both"></div>
+
+<!--
+<p class='source'>
+Source: Wikipedia Logs (<a href="http://stats.wikimedia.org/wikimedia/squids/SquidReportOperatingSystems.htm">http://stats.wikimedia.org/wikimedia/squids/SquidReportOperatingSystems.htm</a>)
+</p>
+-->
+
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> The Data</h2>
+<div class="outline-text-2" id="text-2">
+
+<div class="figure">
+<p><img src="../img/operating-system-evolution/operating-system-evolution-mid.png" alt="operating-system-evolution-mid.png" />
+</p>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="right">Operating System</td>
+<td class="right">"Windows (non mobile)"</td>
+<td class="right">"Windows (mobiles)"</td>
+<td class="right">Macintosh</td>
+<td class="right">"Android Linux"</td>
+<td class="right">iPhone</td>
+<td class="right">Blackberry</td>
+<td class="right">iPad</td>
+<td class="right">GNU/Linux</td>
+</tr>
+
+<tr>
+<td class="right">2009-04</td>
+<td class="right">89.44</td>
+<td class="right">0.06</td>
+<td class="right">6.05</td>
+<td class="right">0.03</td>
+<td class="right">0.93</td>
+<td class="right">0.15</td>
+<td class="right">0</td>
+<td class="right">1.46</td>
+</tr>
+
+<tr>
+<td class="right">2010-04</td>
+<td class="right">86.63</td>
+<td class="right">0.04</td>
+<td class="right">6.89</td>
+<td class="right">0.17</td>
+<td class="right">1.52</td>
+<td class="right">0.38</td>
+<td class="right">0.04</td>
+<td class="right">1.58</td>
+</tr>
+
+<tr>
+<td class="right">2011-04</td>
+<td class="right">80.39</td>
+<td class="right">0.07</td>
+<td class="right">8.17</td>
+<td class="right">1.12</td>
+<td class="right">2.89</td>
+<td class="right">0.51</td>
+<td class="right">0.90</td>
+<td class="right">1.56</td>
+</tr>
+
+<tr>
+<td class="right">2012-04</td>
+<td class="right">71.38</td>
+<td class="right">0.66</td>
+<td class="right">8.75</td>
+<td class="right">3.67</td>
+<td class="right">5.67</td>
+<td class="right">0.80</td>
+<td class="right">2.76</td>
+<td class="right">1.60</td>
+</tr>
+
+<tr>
+<td class="right">2013-04</td>
+<td class="right">55.9</td>
+<td class="right">0.47</td>
+<td class="right">6.90</td>
+<td class="right">6.32</td>
+<td class="right">16.37</td>
+<td class="right">0.51</td>
+<td class="right">8.43</td>
+<td class="right">1.31</td>
+</tr>
+
+<tr>
+<td class="right">2014-02</td>
+<td class="right">43.87</td>
+<td class="right">0.68</td>
+<td class="right">5.85</td>
+<td class="right">11.03</td>
+<td class="right">22.34</td>
+<td class="right">0.39</td>
+<td class="right">10.34</td>
+<td class="right">1.35</td>
+</tr>
+</tbody>
+</table>
+
+<!--
+<p class='source-wikipedia'>
+Source: Wikipedia Logs (<a href="http://stats.wikimedia.org/wikimedia/squids/SquidReportOperatingSystems.htm">http://stats.wikimedia.org/wikimedia/squids/SquidReportOperatingSystems.htm</a>)
+</p>-->
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Looking at Microsoft Windows: From the Sucessfull to the Drecreasing</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Microsoft Windows won the battle in the personal computers thanks a
+good trade agreements with IBM, the privative licenses, similar
+features to the competence (for instance, Macintosh), and the freedom
+to choose the hardware. The image of Microsoft is the successful in
+the bussiness.
+</p>
+
+<p>
+Microsoft did start late in the market of smartphones and tablets with
+Nokia, this agreement allows has market, but not win in the market. 
+</p>
+
+<p>
+From 2009 to 2014 has decreased from 89.44% to 43.87% of global market
+of Internet users in Wikipedia in the non mobile version. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Looking at Macintosh: Reborning</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Macintosh was an innovative operating system loved by many graphical
+designers.
+</p>
+
+<p>
+The strategy of Macintosh is the same. The company launch a new
+product with innovative features in a specific hardware. The market is
+different than the personal computers, you can change pieces in a
+personal computer with a free market, you obtain more cheaper prices
+if you has many hardware vendors. In the market of smartphones and
+tablets you don't change many pieces, you change the full device, in
+this market has sense the Macintosh strategy.
+</p>
+
+<p>
+From 2009 to 2014 has decreased from 6.05% to 5.85% of global market
+of internet users in the non mobile version. In the mobile version has
+grow from 0.06% to 0.68%. iPhone has grow from 0.93% to 22.34%. iPad
+has grow from 0.93% to 10.34%. In summary, iPhone and iPad has grow
+from 0.99% to 32.68% of Internet users in Wikipedia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Looking at Google: Borning in the Operating System Market</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Google born as a university toy of two students of Stanford and today
+is the most used search engine in the world. Google had been thinking
+the entry in the operating system market with his own version of
+GNU/Linux based on cloud. Finally, Google did launch Android with
+innovative hardware trademarks in competition with Apple.
+</p>
+
+<p>
+Android has grown from 2009 to 2014 from 0.03% to 11.03%.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Why the Microsoft strategy is not running?</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Really, the laptop market is similar than the smartphones and tablets
+market in the sense that you don't change the pieces, but in the
+laptop market the apps is new, then there are not qwerty effect and
+you can choose the apps that you consider cool, or you have installed
+by default it gives more power to the Microsoft competence.
+</p>
+
+<p>
+So, in this field the innovation is so important. Microsoft use to be
+better in the bussiness. Microsoft could grow if there are more and
+more comercial agreement or feeling more closed to the innovative
+cultures: free software communities or universities.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> What happens whith the free software movement?</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+The public of the free software movement is the people worried by the
+ethical problems of the privative software or by technical power
+shared by this community.
+</p>
+
+<p>
+Android mix free and not free software in the same solution, the
+percentages that an Android user can have of non free software could
+have is so bigger that in Ubuntu (for instance). Really, the Android
+users don't know that is free, they only want a good product. But it
+allows grows important pieces, such as the Linux kernel in number of
+users.
+</p>
+
+<p>
+So, the pure GNU/Linux users is more or less stable, but the market of
+free software users (in general) is growing, but not with the original
+values of GNU, is growing with pragmatical values of market. 
+</p>
+
+<p>
+In the Free Software Foundation Europe there are a campaign to Free
+your Android (<a href="https://fsfe.org/campaigns/android/android.en.html">https://fsfe.org/campaigns/android/android.en.html</a>), that
+is remove the non free software from your Android.
+</p>
+
+<p>
+IMHO, the GNU movement in the desktop has the same problem from years:
+the market. The problem thinking in the market is forget the ethical
+values. But to preserve and recognise this idealistic values and not
+only by innovative solutions is necesary to be strong in the economy
+with values: ethical banks, fair trade, cooperatives, etc. It could be
+an interesting challenge in the free software movement.
+</p>
+
+<p>
+In other markets, such as servers the landscape is better, UNIX is the
+67.5% and Windows is 32.5%.
+</p>
+
+<div class='graphbar2'>
+<div><div class='percentage67'></div><div class='data'>UNIX (67.5%)</div></div>
+<div><div class='percentage32'></div><div class='data'>Windows (32.5%)</div></div>
+</div>
+<div style="clear:both"></div>
+<div class="source">Source: w3stats http://w3techs.com/technologies/overview/operating_system/all</div>
+
+<p>
+The UNIX servers today is GNU/Linux overall
+</p>
+
+<div class='graphbar3'>
+<div><div class='percentage57'></div><div class='data'>GNU/Linux (57.2%)</div></div>
+<div><div class='percentage1'></div><div class='data'>BSD (1.5%)</div></div>
+<div><div class='percentage0'></div><div class='data'>Darwin (0.1%)</div></div>
+<div><div class='percentage0'></div><div class='data'>HP-UX (0.1%)</div></div>
+<div><div class='percentage0'></div><div class='data'>Solaris (0.1%)</div></div>
+<div><div class='percentage41'></div><div class='data'>Unknown (41.2%)</div></div>
+</div>
+<div style="clear:both"></div>
+<div class="source">Source: w3stats http://w3techs.com/technologies/overview/operating_system/all</div>
+
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Conclusion</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Whith the change of devices, we are seeing a change to operating
+systems more innovatives, giving the end to the Microsoft monopoly in
+the Internet access.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Licencia</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/es/deed.es">Licencia Creative Commons Atribución 3.0 España</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/es/deed.es"><img src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2014-05-11 dom 13:52</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.6)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

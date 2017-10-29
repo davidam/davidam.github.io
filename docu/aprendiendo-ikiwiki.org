@@ -1,0 +1,136 @@
+#+TITLE: Aprendiendo Ikiwiki
+#+LANGUAGE: es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+AUTHOR: David Arroyo Menéndez
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Recientemente he descubierto ikiwiki. Y diréis ¿para qué otro wiki?
+pues bien a mi me resuelve muchos problemas, pero hay uno que es
+importante y es poder editar las entradas de mi sitio web personal
+directamente con mi emacs y poder administrarlas con un sistema de
+control de versiones, sin el desfase de usar un sitio html estático,
+ni el atraso de usar herramientas privativas como disqus. Así que es
+probable que este sitio en un futuro esté construido con ikiwiki, pero
+por ahora solo lo estoy evaluando. Dejo aquí mis impresiones:
+
+* ¿Qué es ikiwiki?
+
+ikiwiki is un compilador wiki. Construye páginas html para un wiki
+desde un fuente en el lenguajes de marcas ikiwiki (u otros).
+
+* Instalación
+
+Muy sencillo en debian/ubuntu: 
+
+#+BEGIN_SRC bash
+sudo apt-get install ikiwiki apache2
+#+END_SRC
+
+Y seguir los pasos de debconf para el tipo de control de version, la
+carpeta donde se situará el repositorio, etc.
+
+Por tanto, también habrá que instalar un sistema de control de
+versiones, por defecto se usa git, aunque yo también he testeado bzr y
+funciona sin problemas.
+
+En caso de elegir git: 
+
+#+BEGIN_SRC bash
+sudo apt-get install git gitweb
+#+END_SRC
+
+Después habra que compilar un wiki local:
+
+#+BEGIN_SRC bash
+ikiwiki --setup /etc/ikiwiki/auto.setup
+#+END_SRC
+
+Es posible que tengas que configurar mínimamente el apache. Por
+ejemplo, habilitar el módulo userdir:
+
+#+BEGIN_SRC bash
+a2enmod userdir
+#+END_SRC
+
+O habilitar el uso de cgi.
+
+* Instalar plugins
+
+1. Descargar plugins desde http://ikiwiki.info/plugins/ a la carpeta
+   ~/.ikiwiki/IkiWiki/Plugin/
+2. Especificar el lugar del fichero de configuración del wiki desde
+   ~/.ikiwiki/wikilist (En mi caso es ~/wiki.setup)
+3. Aplicar los cambios con ikiwiki -setup /home/davidam/wiki.setup
+   -rebuild -v
+
+A modo de ejercicio, os proponemos que también instaleis el plugin de
+org-mode y de [[http://git.savannah.gnu.org/cgit/hurd/web.git/plain/.library/IkiWiki/Plugin/texinfo.pm][texinfo]] ue a pesar de no ser plugins estables son
+poderosos :-) .
+
+* Habilitar multilenguaje con po
+
+Quienes estén familiarizados con el proceso de traducción en gnu estarán familiarizados con gettext y los ficheros .po, sino es posible echar un vistazo a Traduciendo Documentación en Texinfo con emacs y po4a
+
+Para que nuestro sitio sea multilingüe usando ficheros .po es necesario modificar la configuración de ikiwiki y el apache.
+
+Primero modifiquemos la configuración de ikiwiki:
+
+1. Habilito po en la configuración
+2. master language: en|English
+3. slave languages: es|Español
+4. PageSpec controlling which pages are translatable: index or po-test (dos páginas para comprobar que todo va bien)
+5. internal linking behavior: default
+
+Después la configuración de Apache:
+
+1. Añadir la siguiente línea a por ejemplo /etc/apache2/sites-available:
+
+#+BEGIN_SRC bash
+DirectoryIndex index.html index.htm index.en.html index.es.html
+#+END_SRC
+
+2. Añadir a /etc/apache2/httpd.conf lo siguiente: 
+
+#+BEGIN_SRC bash
+AddType application/rss+xml;qs=0.8 .rss 
+AddType application/atom+xml;qs=0.8 .atom
+#+END_SRC
+
+* Habilitando búsquedas
+
+1. Se habilita search en la configuración
+2. Al aplicar los cambios encuentro el siguiente error:
+
+#+BEGIN_SRC bash
+Can't locate Search/Xapian.pm in @INC (@INC contains: /home/davidam/.ikiwiki /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at (eval 342) line 2.
+BEGIN failed--compilation aborted at (eval 342) line 2.
+#+END_SRC
+
+3. Lo soluciono con: 
+
+#+BEGIN_SRC bash
+sudo apt-get install libsearch-xapian-perl xapian-omega
+#+END_SRC
+
+* Habilitando barra lateral
+
+1. Habilitar sidebar en la configuración
+2. Crear una página sidebar.mdwn con el contenido que se desee
+
+* Modificando el aspecto
+
+Lo más  sencillo es habilitar themes  en la configuración y  elegir un
+tema. Pero para  afinar más se puede crear un  fichero local.css en el
+directorio raíz  subirlo al repositorio e  (importante) reconstruir el
+wiki con:
+
+#+BEGIN_SRC bash
+ikiwiki -setup /home/davidam/wiki.setup -rebuild
+#+END_SRC
+
+* Licencia
+Este documento está bajo la [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]]
+
+[[file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

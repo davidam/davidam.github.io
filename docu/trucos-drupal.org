@@ -1,0 +1,21 @@
+#+TITLE: Trucos de Drupal
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Esto es un montón de pequeños trucos y configuraciones para que no se
+me olvide a mí, pero si te sirve a tí, me alegro por tí
+
+* Comandos Drush Útiles
+
+#+BEGIN_SRC bash
+#+END_SRC
+
+
+* Organic Groups
+
+Esto sirve como su propio nombre indica para tener grupos en
+drupal. Un caso de uso práctico es 

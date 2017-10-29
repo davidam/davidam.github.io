@@ -1,0 +1,1184 @@
+#+OPTIONS *:t
+
+* Introducción:
+*entrevistador*: Bueno pues muchas gracias por aceptar a hacer la
+entrevista.  
+
+*hombre1*: ¿Cuántas cervezas son esto?  
+
+*entrevistador*: jaja, unas cuantas.  Bueno, eeh, la entrevista la
+organiza la Asociación Comunes. Está en el contexto de crear
+herramientas tecnológicas, entonces organiza un estudio de cómo usan
+los movimientos sociales las nuevas tecnologías.
+
+Y entonces, bueno, la entrevista se divide en varias partes: una es
+cómo funcionan los flujos de información en los colectivos en los que
+participas y otra más de factores de cambio tecnológico. Entonces
+empiezo por la primera parte.
+
+Me habías comentado que participas en varios colectivos, si quieres
+...
+
+*hombre1*: Sí. El que más tiempo llevo es BAH, que es Bajo el Asfalto
+está la Huerta, que es una cooperativa de productores, distribuidores
+y consumidores de productos ecológicos. Luego con gente del BAH y
+vecinos del barrio creamos un grupo de consumo que se llama Común
+Arganzuela que es la *no se entiende* a través de esa cooperativa de
+verdura es conseguir productos ecológicos, sin coste asociado, es un
+grupo de amigos y ... contactamos con productores de productos
+ecológicos. Y ... luego el tercero es la Asamblea Popular del Barrio
+de Arganzuela.
+
+*entrevistador*: Entonces, entiendo que los tres colectivos no están
+legalmente constituidos, sino que son colectivos ...
+
+*hombre1*: Ninguno.
+
+Realmente el BAH está constituido como una asociación de difusión de
+la ecología que es una figura legal, como asociación tiene una
+presidenta, un secretario, un tesorero, un libro de actas y tal.
+
+Y lo otro es un grupo de amigos que es Común Arganzuela.
+
+Y la Asamblea Popular de Arganzuela es la Asamblea Popular de
+Arganzuela.
+
+* Flujos de información:
+*entrevistador*: Bueno, pues si te parece te voy a ir haciendo una
+serie de preguntas acerca de cuáles son los flujos de información y tú
+si quieres me vas contestando cómo son los tres colectivos en los que
+participas ¿te parece?  
+*hombre1*: Sí.  
+
+*entrevistador*: Como son varios. Esto estaba más pensado para
+preguntar por una asociación concreta, pero yo creo que es bueno
+aprovechar la experiencia que tienes en todos.
+
+** comunicación interna
+*** flujo de comunicación? flujos horizontales/verticales?
+*entrevistador*: Entonces, la primera pregunta es sobre comunicación
+interna ¿cuáles son los flujos de información si son horizontales si
+son verticales? ¿o cómo funciona la comunicación ... noticias,
+organización de asambleas, todo ese tipo de ...?
+
+*hombre1*: Vale, vamos por ... a ver primero en el que menos
+experiencia tengo y en el que menos implicado estoy de esfuerzo es la
+Asamblea Popular de Arganzuela ... eeh esta tiene en concreto que te
+das de alta y te llegan todos los mensajes, contactos, tiene un n-1
+que no me he dado de alta todavía y una lista de correo. Entonces que
+yo entienda así, aparte de las distintas comisiones que tiene va
+llegando la información a la lista de correo, o al facebook y el n-1
+es la herramienta que siempre se presenta en la asamblea como la más
+novedosa, la que puedes trabajar en wiki, tal, tal, tal, pero la
+verdad ...
+
+*entrevistador*: luego no se usa tanto
+
+*hombre1*: yo por lo menos no lo hago, porque el otro día estaba super
+liado y ... creo que es una cosa que haré tarde o temprano... Ahí lo
+que tienes es la cosa de los recordatorios de la asamblea porque como
+cambia sábados mañana, o sábado tarde alternos y un poco orden del día
+y cosas que hay que tratar y luego otro canal que va a notas
+informativas para hacerse eco de información de la Comunidad de
+Madrid, del Canal de Isabel II y otras convocatorias, que puede ir
+cualquiera, aunque hay una persona de dar esa información, de mantener
+ese Facebook.
+
+Y todo al final es un complemento para un mejor trabajo de la
+asamblea.
+
+Común Arganzuela. Sí
+
+*entrevistador*: Espera un momento. Has contado solamente los flujos
+de información telemáticos, pero igual también hay flujos ... Ya me
+has comentado que hay asambleas
+
+*hombre1*: Ah, perdona, sí
+
+*entrevistador*: o hay pegadas de carteles, o ...
+
+*hombre1*: claro, te entendí ...
+
+*entrevistador*: aunque la entrevista, es decir, el objetivo del
+estudio son las nuevas tecnologías en los movimientos sociales también
+interesa saber cómo se organizan los colectivos de maneras no
+telemáticas por si pudiera haber una herramienta que pudiera haber
+
+*hombre1*: es que te entendí que solo era. Entonces, sí. La asamblea,
+es donde se plantea un orden del día hay varias personas de una
+comisión que se llama dinamización que dinamizan la asamblea y en esa
+asamblea hay novedades, tal, tal, un tema que cada asamblea es un tema
+monográfico: vamos a hablar de ... la educación, está ahí el tema de
+la educación, o la privatización del Canal de Isabel II o las marchas
+laicas o las 2 españas, lo que sea. Y luego es el lugar donde las
+comisiones informan al resto de asambleas de lo que han hecho durante
+esa semana, los proyectos que tienen, ... la verdad es que hay varias
+comisiones y yo no participo en ninguna, pero bueno ... ahí se queda
+pues los martes nos reunimos, como nos reunimos en el parque de
+Arganzuela, los martes en este lugar, los miércoles la comisión de no
+se qué en el Planetario, o los jueves en un bar tal. Esa información
+está ahí, en la asamblea. Y luego las comisiones en temas más
+específicos hay ... a nivel ... eso casi no endogámico porque todo es
+abierto en la asamblea pero hay una mesa itinerante entonces se va los
+lunes de lunes a jueves cada tarde un par de horas en un punto
+estratégico del barrio.
+
+*entrevistador*: Una pregunta. ¿Un grupo de personas que físicamente
+están en un punto del barrio?
+
+*hombre1*: Sí, eso es. Una mesa, que van a Embajadores, por ejemplo,
+al lado del Metro, una mesa de camping, con panfletillos, tríptico,
+bueno eso los jueves, el miércoles el Centro Integral de Arganzuela,
+el martes en el parque y así. Entonces es más exogámico que si te
+apuntas al facebook te llega pero eso es una información para
+nosotros, si vas a la asamblea te llega pero esa información también
+es para ti, entonces está eso y los carteles, los carteles la pegada
+de carteles que me pones tu de ejemplo es más para cuando se ha hecho
+es para anunciar las asambleas para que la gente venga a la
+asamblea. No hay una pegada de carteles, manifestación tal, pues eso
+igual alguien lo ha hecho pero no como asamblea. Creo que con eso te
+contesto.
+
+*entrevistador*: Igual hay un blog, por ejemplo, ...
+
+*hombre1*: Hay un blog, también tienes razón. Pero es que yo no lo
+miro porque ... sí, sí, pero es verdad que está.
+
+*entrevistador*: Sí esto es como comunicación interna. Luego hay un
+punto de eso, lo pregunto luego.
+
+*hombre1*: Es que como el blog cuenta cosas de facebook, no ...
+
+*entrevistador*: Sí nos salimos de punto, venga
+ 
+Pues sigue con el siguiente.
+
+*hombre1*: Comun Arganzuela. Comun Arganzuela son como 15 unidades de
+consumo, a lo mejor 20 pero activas, quiero decir a nivel de
+implicación más o menos. Entonces trabajamos con el ... un grupo de
+google y entonces ahí tenemos, está diseñado casi a raíz de ... con
+esta herramienta. Entonces repartimos un jueves de cada 2 y entonces
+yo hago un pedido y lo cierro este jueves, pasado mañana y el jueves
+que viene me llega.
+
+*entrevistador*: ¿Cómo haces ese pedido?
+
+*hombre1*: Ahora te cuento.
+
+*entrevistador*: Ah, vale.
+
+*hombre1*: Entonces el jueves se cierra la lista de pedidos, durante
+toda la semana se va rellenando la ficha que ahora te lo cuento y
+luego el jueves siguiente el productor ecológico deja en Tabacalera
+(donde nos reunimos) los productos o el martes, o el miércoles o el
+día que sea, pero si son frescos ... para que el jueves lo
+recojamos. Entonces, nosotros nos vemos físicamente cada 15 días y
+cada x tiempo no hay una fecha fija tenemos una asamblea, después del
+reparto, nos juntamos, yo que sé y ahí tenemos una dinámica más
+clásica de asamblea, pero donde estamos conectados en el día a día es
+con la lista de correo de Comun Arganzuela del google groups entonces
+tenemos los una hoja excel con pestañas los productores, con pestañas
+de pagos, ... ya no hay más. Entonces tu te encargas, yo me encargo
+por ejemplo de la carne de cerdo. Yo reviso mi hoja excel con los
+pedidos y llamo por teléfono o mando un correo al productor *No se
+entiende* me dejan ir allí con el albarán, le mando un correo a la
+chica que es la tesorera y le manda la pasta a su cuenta. Podemos casi
+no vernos pero con la herramienta esta que está todo cuadriculado
+porque tenemos una friki del excel que nos lo ha dado todo y tenemos
+unas tablas super chulas que nos facilita todo.
+
+*entrevistador*: una hoja de cálculo ¿no?
+
+*hombre1*: una hoja de cálculo que no es excel es ...
+
+*entrevistador*: ¿google docs?
+
+*hombre1*: sí eso la de google docs.
+
+Y ahí funcionamos en plan la pasta y los productores y nada más luego
+los hilos que hay en cualquier foro que hay en google docs:
+comentarios a tal productor, no pidáis esto que no rinde, o así pero
+más bien el día a día es la lista de "oye que hay pedido el jueves,
+que venga, que tal" y ...
+
+*entrevistador*: ¿y eso como se gestiona?
+
+*hombre1*: cada persona sabe que el jueves se gestiona el pedido
+
+*entrevistador*: ¿pero quien hace el pedido? ¿lo hace ...?
+
+*hombre1*: sí, como todos tenemos acceso, se hace desde casa ... A ver
+¿qué me apetece comer? costillas, patatas, harina de trigo integral,
+tal, la miel y voy la pestaña la voy abriendo y voy poniendo en mi
+columna lo que quiero. Eso, el responsable de la miel que es el
+jueves, o el viernes por la mañana envía el correo con su pedido
+final, o llama por teléfono, cada uno ... al productor de miel, al
+productor de carne, tal y el jueves siguiente aparece todo. Pero lo
+hacemos todo con la herramienta esta de google docs.
+
+Y bueno la asamblea esa, pero ya te digo la asamblea son cosas que
+ahora queremos coger un local, que si podemos poner dinero cada uno,
+ya son cosas que es para vernos las caras y para que sea diferente,
+para que sea un proyecto de barrio,... Comun Arganzuela está dentro de
+otro grupo más grande que se llama Vivo en Arganzuela que no está
+muerto pero es más esporádico tiene menos vida, nosotros estamos ahí y
+a partir de ahí salen cosas pero sí que hay un canal para otras cosas
+que no tienen que ver con la comida: "oye, en el barrio han abierto no
+sé qué bar" pues yo que sé "los niños, hay una cosa para niños" hay
+también lo mandan.
+
+El BAH. El BAH tiene ya 11 años, yo llevo como 8 y funciona por la
+lista de correo a nivel telemático hay una lista de correos, una
+página web, un wiki y yo creo que ... bueno hay un blog pero que
+dentro de la página web cuando alguien cuelga un texto o algo se manda
+un correo de "oye se ha actualizado la página web con los tres últimos
+textos" pues ahí yo que sé ahí colgamos las fotos, eeh ... la página
+web la verdad no la suelo usar casi nunca. El correo: todos los días
+me llegan correos del BAH, a veces es un poco ruido, somos ciento y
+pico unidades de consumo, entonces hay algunos interesantes: son
+temática afín al BAH y otros son alquilo casa en ... cuesta mucho
+gestionarlo, pero simplemente poner el OT delante pues hay gente que
+lo hace y lo borras y hay gente que no. Sí que es, yo el BAH lo veo
+como un lugar de aprendizaje hacia los movimientos sociales, hay mucha
+gente que no tiene relación con los movimientos sociales y en el BAH
+es una academia, entre otras cosas, pero siempre es aquí pues yo que
+sé gente que al final lo notas ¿no? gente que ves que no escribe, o
+que escribe unos correos super largos o fuera de ... y poco a poco se
+van ... domesticando iba a decir pero no sé cogiendo un formato, un
+estilo que más o menos hay debate, pero ya te digo que algunos debates
+son eternos hay 120 unidades de consumo somos 8 o 9 grupos ... y
+cuando se manda una cuestión pues tiene que contestar cada grupo
+entonces te llegan muchos correos sobre lo mismo que a veces hace
+ruido. Pero yo creo que ahí funciona muy bien que nos conectamos
+mucho, sí recuerdo que al principio, no tan al principio, hace años
+que había un debate muy grande sobre la actividad en la lista de
+correo y los que no tenían Internet, había dos ... la brecha digital
+
+*entrevistador*: aha
+
+*hombre1*: Y era un debate chungo. Había gente que se oponía a que las
+actas ...
+
+*entrevistador*: Se enviaran por correo.
+
+*hombre1*: Se enviaran por correo, había que fotocopiarlas enviarlas
+al reparto para la gente que no tenía correo, eh, bueno, pero luego es
+verdad que eso ya es algo caduco y ahora bueno funciona pues
+incidencias
+
+*entrevistador*: Las actas se envían por correo electrónico.
+
+*hombre1*: Que yo sepa sí, que haya alguien en algún grupo que otro se
+lo imprime pues no tengo ni idea. En mi grupo, en el grupo de Lavapies
+pues había 3 o 4 personas que no tenían correo, entonces había una
+tarea de hecho en el grupo que era pues alguien que en el curro tenía
+facilidad que era imprimir las actas de la asamblea general y
+enviarlas en el cesto del reparto o alguna cosa así. Creo que en el
+BAH puede dar mucho juego porque hay un montón de cosas y alguna se me
+escapará.
+
+*entrevistador*: A ver, tranquilo, como hay estos puntos, simplemente,
+... estamos en comunicación interna
+
+*hombre1*: Vale, comunicación interna. Entonces nosotros funcionamos
+básicamente con nuestro grupo de uso dentro del BAH general --porque
+cada grupo es un mundo y funciona a su manera-- con un reparto a la
+semana, los martes; con una asamblea al mes que suele ser, después del
+reparto también un martes y una asamblea general que suele ir una o
+dos personas del grupo que es un miércoles, ... eeeh, entonces para
+acelerar la asamblea pues el orden del día lo suelen mandar antes por
+correo y los recordatorios de "oye, ir pronto el martes que luego hay
+que ir a la asamblea"
+
+*entrevistador*: suele ser dos días antes o algo así ...
+
+*hombre1*: a lo mejor el mismo martes o el lunes o "para el reparto de
+mañana no puedo llegar, se utilizará mi bolsa, repartirla, o dejarla
+allí que ya llegaré el miércoles, suele ser lunes y martes día de
+movimiento para el correo del BAH, luego durante la semana decae, pues
+son cosas así, más ...
+
+*entrevistador*: más off-topics
+
+*hombre1*: también tenemos otro, un domingo al mes que se va a
+trabajar a la huerta y lo organiza cada vez un grupo. Entonces si cae
+domingo verde pues hay un poco de debate "¿quién va a venir?" yo que
+sé, también pues lo que decía antes de la domesti... domestiza...
+
+*entrevistador*: domesticación
+
+*hombre1*: jeje, domesticación, pues al final los correos del BAH
+suelen ser bastante divertidos, tienen un tono de ... lo contrario de
+"caña al mono hasta que aprenda inglés", no esto es "con la risa llega
+mejor" tiene un tono de siempre las coñas con las verduras, los
+repollos, eeh, yo que sé, es una cooperativa de agroecología
+anticapitalista, entonces siempre está la coña yo que sé, siempre está
+la broma o alguna cosa para dinamizar los correos, que agilizan los
+debates y que con bromas parece que funcionan mejor, lo digo porque
+los domingos verdes intentan ser festivas y entonces la jornada *No se
+entiende* Y ... yo creo que nada más
+
+*** sincronización interna
+** colaboración interna
+*** redacción en común?
+*entrevistador*: Había otro punto que era de cómo se consensuan los
+documentos ó como se redactan documentos en común.
+
+*hombre1*: Vale. Entonces. Se me ha olvidado contarte otra cosa que
+soy socio de Ecologistas en Acción. Entonces me he hecho socio ahora
+en Junio, entonces en Junio tuve un montón de exámenes, en Septiembre
+otro montón de exámenes con el verano por medio y no he parado.
+
+*entrevistador*: Si quieres no me cuentes eso, porque no conoces
+mucho...
+
+*hombre1*: Bueno, es una lista de correo y llegan convocatorias de
+cursos, actividades, llega una revista que también es de información
+que llega al mes y no sé qué más, quedan un día a la semana el martes
+de identificarte o algo así lo llaman que es una tarde que tuve que
+hacer. Es lo único que te puedo contar porque no ... como socio
+participante es lo único que sé de la organización.
+
+Perdona era ...
+
+*entrevistador*: Redacción de textos en común.
+
+*hombre1*: ¡Ah! Entonces, eeh... Otra vez, Asamblea Popular de
+Arganzuela. La redacción de textos en común. El texto en común por
+antonomasia es las actas de la asamblea. Tu vas allí y ¿quién quiere
+tomar actas? ¿quién coge turnos de palabra? ¿quién no sé qué? No hay
+un protocolo que establecido así de comisiones. No son autónomas
+porque se aprueban antes de la asamblea.
+
+*entrevistador*: Es rotativo, un poco, la toma de actas.
+
+*hombre1*: Sí. sí, sí, totalmente. Rotativo y voluntario. O sea que
+...
+
+*entrevistador*: Y luego se revisan en la próxima asamblea ¿no?
+
+*hombre1*: Claro, entonces, en el orden del día, el primer punto
+siempre es revisión del acta anterior. Que tu en principio lo tienes
+que llevar leido de casa para que sea más dinámico. Porque sino no
+acabamos nunca, que pasa siempre. Eeeh ... entonces se hace el acta la
+persona que lo haga y también pues aparte de la información que
+... hay una comisión de dinamización de asambleas que son los que
+dinamizan, o sea dinamización punto, que también amenizan la asamblea.
+
+Entonces hay 2 o 3 personas pues uno que está tomando ... como que
+moderadores hacen que la información vaya un poco más contenida. Pero
+no hay un consenso, sí hay un consenso pues como los símbolos que son
+conocidos por las asambleas de Sol ¿no?: girar las manos, juntar,
+cual, sí hay un consenso en esa comunicación como se canaliza, como
+... Si entras nuevo te dicen ¿sábes como funciona esto? vale y luego
+el acta de la asamblea que no hay un protocolo.
+
+Comun Arganzuela
+
+*entrevistador*: Espera, espera, me has dicho cómo se redacción de
+actas pero igual también redactais manifiestos o convocatorias.
+
+*hombre1*: Claro, entonces, por ejemplo, el primero que hemos hecho,
+bueno el primero no, el segundo. Si viene alguien de fuera el
+requisito para adherirnos o decir algo a su favor es que vengan a
+presentar lo que estén haciendo. Me explico, lo digo por la cara que
+has puesto.
+
+*entrevistador*: Sí, no lo he entendido bien.
+
+*hombre1*: Movida de la educación en Madrid. Nos sumamos. Pero si
+llegamos a hacer algo tiene que venir alguien del colectivo de la
+enseñanza que nos tiene que decir qué está pasando. Por ejemplo, los
+del Canal de Isabel II vinieron a contarnos qué estaba pasando con el
+Canal de Isabel II. Entonces a raíz de eso, la Asamblea Popular de
+Arganzuela apoya tal, tal, tal
+
+*entrevistador*: Entonces el manifiesto ese lo hizo una persona ...
+
+*hombre1*: No, no, se consensuó.
+
+Fueron propuestas que luego se fueron consensuando en una
+asamblea. Ese día no estuve, lo ví después. El que sí que estuve, que
+al final no se hizo ninguno fué porque un punto del orden del día era
+un manifiesto después de la marcha laica, cuando vino Ratzinger y
+entonces había una propuesta que unos decían que no había que hacer un
+manifiesto, otros hicieron enmiendas y al final todo el mundo opinaba
+y al final no se hizo manifiesto.
+
+*entrevistador*: Fué a través de la asamblea.
+
+*hombre1*: Fué en la asamblea. Todo en real, no hubo un debate en
+Internet previo, no. Creo que también es más *no se entiende* en
+asamblea. Comun Arganzuela no es ningún estándar de nada, sí está el
+estándar de la tabla, pero no hay protocolos hay actas de la asamblea
+pues lo típico poner quién está, no sé lo que se habla el orden del
+día y ... y poco más.
+
+Y luego sí en el BAH es más complejo, sí que el órgano decisorio es la
+asamblea que sí que hay, que hay tanta experiencia que está super
+estructurado ... que es muy dinámico que hay gente que lo ... por
+ejemplo en nuestro grupo cada vez va uno a la asamblea que no vas tú
+cada mes. Yo voy un mes y el mes siguiente acompaño al que va nuevo
+para que no vaya solo. Por decirlo de otra manera, cada vez va uno,
+luego otro de 6 meses en 6 meses. Te empapas y cuando estás enterado
+te toca otra tarea, entonces ...
+
+Eeeh, pero sí hay un modelo de acta con ... casi es un casillero donde
+vas poniendo y tiene que reflejar puntos ... o el lugar donde es,
+quién está, la hora: a qué hora se empieza, a qué hora se acaba; o sí
+dónde va a ser la asamblea siguiente a qué hora quién modera y quién
+toma actas, luego valoración de la bolsa de este mes, "oye, ha habido
+zanahoria, me gusta mucho", "adelante con los repollos". Eso son como
+puntos de común acuerdo, tal. Recuento de bolsas, si no hemos podido
+consumir una, si hemos cogido otra, tal. Tareas pendientes, o sea como
+desde ese día hasta el mes siguiente pues tal día de domingo verde lo
+organiza no sé quién pues tal fecha, o se cambia a tal otra, hay que
+hacer no sé qué, o hay que controlar el agual del riego, o
+movilización por el plan urbanístico de Perales, ... de la huerta, o
+tal fecha hay una manifestación. Y luego ya cada mes tiene su orden
+del día correspondiente. Y también las tareas en negrita y no sé qué
+... y siempre hay alguna coña.
+
+*entrevistador*: Y ahí, la redacción de actas es similar a lo del 15M
+¿no?
+
+*hombre1*: Sí, lo que pasa es que ya sí que hay una estructura de
+documento.
+
+*entrevistador*: Ah, una estructura.
+
+*hombre1*: Y también yo creo que al final, pues después de 11 años que
+lleva esto, la gente que va a tomar actas ya ...
+
+*entrevistador*: Tiene mucha más experiencia.
+
+*hombre1*: Claro. Discrimina y el acta es otra cosa. En vez de
+parrafadas son mucho más concretas. El acta se cuelga en la web,
+perdona, se manda a la lista de correo. Y al mes siguiente tu ya la
+has leido y "donde dije digo, digo diego", "que esto lo he entendido
+mal, o no quise decir esto" "esto se cambia, o no sé cuantos". Eso sí
+se comenta "oye que no dije esto" y eso sí que sale en el hilo del
+correo. Y luego están los correos que sí que son "que no te columpies
+que ...", llega bastante spam a veces y eso es real.
+
+*entrevistador*: Y las convocatorias son ...
+
+*hombre1*: Convocatorias, internas, llegan también por ahí. Y externas
+también es un canal oficial de convocatorias de movimientos
+sociales. Porque te llega de todo. Rollo de Palestina, educación
+ahora, privatizaciones, ... Todo lo que tenga que ver con
+agroecología, anticapitalismo, ...
+
+*entrevistador*: Yo lo digo en un sentido de redacción de textos en
+común. Lo de las actas, no sé si haceis manifiestos.
+
+*hombre1*: No.
+
+*entrevistador*: O por ejemplo, información que está en la web, sobre
+el BAH.
+
+*hombre1*: Eso lo ...
+
+*entrevistador*: Si por ejemplo se habla en las asambleas.
+
+*hombre1*: Sí, claro. Poner, si claro, eso, tu me preguntas y yo tengo
+ya como una etapa pasada del BAH. Hubo un montón de debates, para ver,
+para definir qué carajo era el BAH, o sea ponerle el latiguillo
+anticapitalista, o cooperativa, o cualquier otra palabra, fué una
+tarea de meses de consensos, porque iba a la asamblea, luego a los
+grupos, claro, porque lo que va a la asamblea nosotros lo debatimos en
+la asamblea de grupo y de ahí vuelve a la asamblea ... Tu como grupo
+de tu barrio propones que a partir de ahora nos vamos a llamar VAH
+pero con uve, porque te da a ti la gana, eso baja a todos los grupos y
+en los grupos decimos "hostia, pues BAH con V", "pues a mi me gusta
+más con B", "pues ahora nos vamos a llamar ni con B, ni con V, con J,
+JAH" y el grupo de Lavapiés decide que con J, entonces se vuelve otra
+vez a la asamblea y se busca el consenso, porque claro aquí las
+decisiones en el BAH son por consenso, entonces "ah, sí que nos hemos
+puesto de acuerdo que ni con V, ni con B, con J" entonces eso va ahí y
+se aprueba en la asamblea y nos quedamos con la J. Esto que te cuento
+son 2 meses, cuando hay un trasfondo más político, ha sido un debate
+de años, lo de poner ... el rollo vegano, por ejemplo, ha habido mucha
+... pues hay unos que son veganos y otros que no, entonces llegar a la
+conclusión de que el BAH no es vegano y el discurso apoyar esto pues
+en la furgoneta del BAH se repartía carne de cordero, otra cooperativa
+de segundo grado, no era así realmente pero hubo debate, todo esto
+generó ...
+
+*entrevistador*: Un debate.
+
+*hombre1*: Meses de consenso. Pues se hace todo en asamblea en la de
+los grupos y en la ...
+
+*entrevistador*: Entonces se lleva el texto y se lee en la asamblea
+
+*hombre1*: El texto, o la propuesta ...
+
+*entrevistador*: El texto o la propuesta ¿no?
+
+*hombre1*: Sí, pero es verdad que ahora ya, ahora estamos, es que lo
+que pasa es que el BAH siempre está en crisis y llevamos una temporada
+bastante buena, porque que si escisiones, que el grupo de trabajo se
+va porque siempre tiene yo que sé una línea por delante, tiene más
+implicación en la cooperativa, o viene con otra idea, para trabajar en
+el BAH con casi nada, estar en la huerta con piedras y palas, que se
+coman ... yo que sé había otra implicación que la que tengo yo que
+vivo en Madrid y tengo una implicación pues de segundo nivel
+
+Y luego las condiciones pues cada uno funciona de una manera. Yo estoy
+en la comisión de la furgoneta y la gente de la furgoneta pues me
+muevo con correo
+
+*entrevistador*: Aha.
+
+*hombre1*: Pero sí que hay consenso. Todo va a través de consenso,
+pasando por la asamblea, o la general, o la de grupo, pero ahí se
+consensua todo, o sea todo. Tu puedes agilizar un debate sobre todo si
+es a nivel de grupo, de tu grupo, "oye, pues que hay que ir pensando
+en aquello que preguntó la Prospe sobre tal acción colectiva que
+vayamos a pedir tales camisetas o tales otras" o hay tal manifestación
+y quieren que aparezcamos en la pancarta diciendo que el BAH apoya
+esto. Pues acaba la manifestación y todavía no nos hemos puesto de
+acuerdo. Ahora ya no, bueno participar sí que participamos, sí que hay
+un consenso aunque hay una herramienta web con la lista de correo, al
+final siempre es en el mundo físico.
+
+** búsqueda de consensos
+
+*entrevistador*: Vale. Bueno, había aquí un punto de búsqueda de
+consensos pero más o menos con lo que hemos hablado está bastante
+claro.
+
+*hombre1*: Pues los tres, son por consenso.
+
+*entrevistador*: Aha. Por asamblea, sí.
+
+*hombre1*: Sí, eeh ... claro, yo creo que también Comun Arganzuela,
+casi todos estamos en el BAH y los de la Asamblea Popular pues al
+final casi que también el consenso de o me opongo rotundamente, o lo
+pasaría y tal, pues al final sí son consensos son también son
+consensos así ... *No se oye* sí son consensos. También es cierto, que
+yo a veces he notado cierta delegación confiando en otras personas que
+saben más o tienen más información, no digo que hayan llegado a
+manipular (digo del BAH) sino que bueno confías en que al tener más
+información van a hacer tal *No se oye*.
+
+** gestión de tareas
+
+*entrevistador*: Entonces ahora hay un punto de cómo se gestionan las
+tareas.
+
+*hombre1*: Vale. Mismo orden. Comun Arganzuela, no.
+
+*entrevistador*: Asamblea Popular
+
+*hombre1*: Asamblea Popular. Hay comisiones, tu voluntariamente te
+apuntas o vas al día de la comisión que se acuerda: "el martes la
+reunión de la comisión de información nos reunimos debajo de este
+árbol" y ahí pues se reunen, hacen cosas, un logo, un no sé qué, ahora
+carrera popular de la fiesta del barrio, tal, cual, ... se organizan y
+por la lista de correo cada comisión se organiza. En n-1 sí que hay
+dentro de la Asamblea Popular de Arganzuela hay comisiones y dentro de
+comisiones tu tienes ahí todos los hilos de ...
+
+*entrevistador*: De tareas ¿no?
+
+*hombre1*: Eso es, de tareas y de cosas que ... Tareas cada asamblea
+igual, tu dices comisión de coordinación dice lo que hace y dice lo
+que está por hacer y además nos vendrá de puta madre ...
+
+*entrevistador*: ¿Y éstas tareas se deciden en asamblea?
+
+*hombre1*: No, no. O sea sí. Claro como hay una tarea que es diseñar
+un dorsal para la carrera popular de La Melonera, pues va a la de
+información o no sé como la ha llamado *No se oye* y se decide que se
+va a hacer, ahí salen las propuestas y se elige uno en asamblea. Pero
+también hay tareas que ellos mismos, dicen que nuestra comisión tiene
+que hacer no sé cuantas fotocopias, necesitamos un informático para
+que nos arregle no sé qué problema y nos vendría de puta madre uno que
+traduzca al francés, entonces eso está ahí. Pero no hay mucho más.
+
+*entrevistador*: Entonces, a veces las comisiones proponen tareas a la
+asamblea y a veces pide tareas a las comisiones.
+
+*hombre1*: Sí... En el Comun Arganzuela, en el grupo de consumo,
+cuando son voluntarias, casi todos tenemos tareas, entonces las tareas
+son: encargarte del productor, los jueves realizar el pedido,
+contactar con el productor y cuando llega el pedido pues si hay alguna
+incidencia, tu reclamarla o ponerte en contacto con el productor.
+
+*entrevistador*: Oye, ahora me está viniendo una pregunta que es que
+tu al principio comentaste que las actas se pusieran en la cesta, no
+sé qué pero todas estas tareas también se están haciendo on-line, o
+...
+
+*hombre1*: Se deciden en asamblea.
+
+*entrevistador*: Se deciden en asamblea ...
+
+*hombre1*: Comun Arganzuela.
+
+*entrevistador*: ... pero luego no se gestionan on-line, o ...
+
+*hombre1*: Sí, sí, sí. A ver tenemos la asamblea que decimos pues a mí
+me apetece ... gestionar lo de la carne de cerdo ¿no? porque además
+*No se entiende* entonces yo en asamblea decidí que esa
+voluntariamente era mi tarea. Entonces, yo lo que hago a partir de ese
+momento, hasta el día de hoy es simplemente el jueves, recoger el
+pedido on-line, mando un correo on-line para Cristina *No se entiende*
+y cuando me mandan una incidencia si ha pasado algo le mando la
+incidencia a Cristina on-line, eso ya una vez que tengo la tarea, yo
+la gestiono on-line. Hay tareas que son esas, principalmente son esas,
+la tesorería, que es dejar dinero a los productores y a alguien
+responsable y luego hay que, la tarea que es el apoyo al reparto, que
+es cada vez una unidad de consumo llega pronto abre las cajas de los
+pedidos que haya, el impreso con las listas de lo que ha pedido cada
+uno, porque todo está on-line y va preparando los lotes. Y luego manda
+hacer un reporte de incidencias "no han venido dos docenas de huevos,
+tal", el encargado de huevos dice "oye, tu" "ah, sí, sí, es que no
+tenía huevos suficientes". Ésta es la única tarea que es física, que
+no se hace on-line, luego tienes el apoyo de mandar el ...
+
+*entrevistador*: el correo.
+
+*hombre1*: el correo ... de "se ha repartido estupendamente" o "habéis
+llegado tarde, cabrones" o "los yogures *no se entiende*" pues tienes
+ese feedback con ...
+
+El BAH. Como siempre este es más complicado. Igual, tienes tareas así
+más voluntariamente, pero también se pretende que cada uno y cada una
+tenga una tarea, que sean rotativas para que todos aprendamos de todo,
+pues eso el llegar pronto y repartir la verdura, gestionar otros
+productos que vienen del BAH, que no son del BAH, o sea una
+cooperativa que se llama "El Puchero" que son cordero, aceite,
+productos de limpieza y no sé qué más, pan y ... se autogestionan
+también bastante on-line. Tienen una hoja de pedidos y tu simplemente
+les mandas un correo pues este mes quiero esto, o esta semana quiero
+esto, otros en excel, otros pues el mismo reparto, para la semana que
+viene ... pues mando un correo recojo el pedido de cerveza, pues lo
+dices ahí. Entonces pues tienes las 2 partes, pero claro, al final la
+el invento requiere cierta parte física. El reparto, por ejemplo,
+siempre tiene una parte on-line.
+
+*entrevistador*: aha
+
+*hombre1*: Sobre todo la lista de correo, del BAH. Y a nivel general
+pues ir a la asamblea, a enterarte, aunque luego te leas el acta. Pero
+si que tienes que, o sea es obligatorio que cada grupo mande una
+persona a la asamblea general. Entonces esa persona tiene que ir.
+
+Y luego el acta se manda por correo y se dice que revise el acta, en
+la asamblea siguiente.
+
+*entrevistador*: Vale. Bueno, a ver, nos estamos alargando un poco yo
+creo y todavía quedan bastantes... Hay una que es gestión de eventos y
+otra que es comunicación con el exterior yo creo que son cosas
+similares
+
+** gestión de eventos
+** comunicación con el exterior
+
+*hombre1*: Pues con comunicación con el exterior, Comun Arganzuela,
+cero. O sea porque decíamos que íbamos a ampliar el grupo porque al
+principio éramos poquitos y queríamos ver como funcionábamos y cuando
+hemos funcionado mejor hemos hecho una ronda de contactos a amigos,
+vecinos que se quieren sumar y es lo más que se ha comunicado con el
+exterior. Y luego la asamblea que todo es cara al exterior, pero es el
+cartel de vente a la asamblea y entras a la asamblea.
+
+*entrevistador*: Pero ¿no tienes ni página web, ni nada?
+
+*hombre1*: Está la asamblea, está en facebook, el n-1 y la lista de
+correo. O sea para llegar a enterarte de eso tienes que o tener algún
+contacto o venir a una asamblea.
+
+Bien, el BAH pues no nos escondemos tampoco. Pero la historia es que
+pasamos desapercibidos. Hay una comisión que se encarga de gestionar
+correos...
+
+*entrevistador*: Pero bueno, ahí sí que hacéis jornadas de
+agroecología, o cosas así ¿no?
+
+*hombre1*: Sí. Hay más comunicación: la lista del BAH que está en
+Ourproject, esa es pública, tu puedes ... como el BAH es un ente
+disperso, peculiar, que es una asociación cultural, pues no nos,
+tampoco nos interesa, que ha habido un montón de ofertas, aparecer en
+los grandes medios de comunicación, que venga El País, el otro día
+vino una de Noruega, o de no sé donde, que se habían enterado de esto
+y querían hacer una entrevista y ver como funciona, "lo sentimos pero
+no". Ha habido gente que ha hecho una maestría de ...  una cosa que
+hay en Córdoba de la IEA de ... y otros han hecho una IAP:
+Investigación Acción Participación del Máster de la Complut.. bueno
+Máster o Magister de la Complutense del ..., pero la discusión es más
+a nivel de base.
+
+*entrevistador*: aha
+
+*hombre1*: Apuntabas tu: hacer la jornada de agroecología que es una
+vez al año. Participar en las jornadas de agroecología de Lavapiés, en
+la Elipa también hacen sus talleres, ehm ... pues se hacen fiestas,
+siempre hay una parte de financiación del BAH (el 10%) se hace a
+través de acciones colectivas, entonces parte es para ganar dinero y
+parte es para difundir lo que es el bah, pero siempre es a nivel de
+barrio, no... Hay un BAH en Valladolid. Se enteraron de lo que había
+aquí y se montó otro en Valladolid y hay otros proyectos parecidos al
+BAH, que no se llaman BAH y que están por ahí distribuidos.
+
+Hay una exposición hecha del BAH que se ponen los cumpleaños y que por
+ahí alguien va. Hay a veces que nos invitan a dar charlas. Entonces
+eso se manda un correo y se dice "oye, nos han invitado a dar una
+charla a la Universidad de Extremadura sobre movimientos sociales,
+sobre agroecología y no sé qué ¿quién puede ir y tal? ¿quién tiene la
+exposición? ¿quién expuso la última vez? ¿qué puedo contar? se manda
+un correo, se cuenta y al final sí que ...
+
+*entrevistador*: Con esos otros colectivos que son afines al BAH que
+tenéis a través de jornadas o cosas así, pero ¿no hay contactos
+establecidos?  ¿puede ser?
+
+*hombre1*: Pues, mira, hay varios canales. Canal informal, que al
+final se conocen todos porque todos son ... pues que estuvo aquí y se
+fué a una cooperativa a no sé dónde en el País Vasco y ha trabajado en
+el grupo de trabajo de aquí. Otro se escindió de aquí y se ha montado
+otro allá. Y al final otros han venido para ver cómo funcionaba el BAH
+para hacer otro allí. U otro ha estado en un grupo de ecoaldeas en no
+sé dónde y se ha reencontrado y luego ya ahí ... pues esa
+informalidad, que no es un contacto, pues como es el BAH, que no es
+nada institucional.
+
+Y, entonces, sí que hay contacto con gente de fuera, pero no hay una
+carta, ni una comisión de contacto...
+
+*entrevistador*: Nada formal hecho.
+
+*hombre1*: ... con otros organismos, que son todos amigos, por redes
+sí, sí.
+
+Comun Arganzuela, pues sí, grupos de consumo en Madrid, pero al final
+es lo mismo. Si no le conoces de ahí, le conoces de otra cosa, o del
+BAH.
+
+*** captación de voluntarios/colaboradores
+*** comunicación con otros colectivos
+*** formar alianzas/coaliciones/movimientos/plataformas
+** documentación interna
+** gestión económica
+
+*entrevistador*: Vale, ehmm ... bueno aquí hay un punto de gestión
+económica que algo sí que hemos hablado, para el tema ... de lo de
+Comun Arganzuela.
+
+*hombre1*: Vale, pues
+
+*entrevistador*: Pero si quieres comentar algo más, o ...
+
+*hombre1*: Mira, mira en lo de la Asamblea Popular de Arganzuela, no
+hay dinero, si hay que hacer fotocopias, o algo así, o hacer una
+pancarta, o alguien ha traido cosas, pero no hay así, bueno hemos
+hecho un cine de barrio, antes de decir la comunicación, pero vino la
+policía y ... Luego está lo de la mesa de información que decías
+antes, creo recordar que te lo contesté antes, pero ...
+
+*entrevistador*: Vale.
+
+*hombre1*: Comun Arganzuela, la gestión económica. Se abrió una cuenta
+en un banco, de la comisión, por hacer transferencias y demás. Está a
+nombre de una persona, nosotros ingresamos, tu calcula, pues la hoja
+de cálculo está diseñada así, tu le dices lo que tienes que ingresar
+de cada pedido, de todo lo que has pedido y eso. Pues ya está, poco
+más, se ingresa lo que sea y llega ahí, luego esa chica me manda el
+albarán del pedido que sea y se da el dinero al productor, casi es así
+a ese nivel.
+
+¿Y el BAH?. El BAH tiene una comisión económica que es muy complicada,
+el comecon se llama, y gestiona todo, ya también que despueś de tantos
+años está más estructurada, hay unas plantillas, con gastos fijos,
+gastos variables, asignación al gg, el 10% que se cubre acciones
+colectivas, que cada grupo tiene que cubrir el 6%, todo está bastante
+... no va la furgoneta, se rompe la furgoneta, hay cosas se hace una
+fiesta, se venden camisetas, hay créditos o sea sin intereses,
+¡préstamos! créditos no, préstamos.
+
+*entrevistador*: ¿En el BAH?
+
+*hombre1*: Sí, cuando ha hecho falta, porque de repente se necesitan
+2000 euros y no había, pues alguien los ha prestado y se le ha ido
+devolviendo. Y el seguro que lo pagué el otro día, bueno el otro día,
+en Mayo, y lo he cobrado.
+
+*** gestión de donaciones
+*** formas de financiación
+*** contribuciones de miembros
+*** gastos/ingresos
+** toma de decisiones
+
+*entrevistador*: Vale, bueno hay un punto de toma de decisiones, pero
+yo creo que está super hablado...
+** movilización
+** gestión de nuevos colaboradores
+
+*entrevistador*: movilización, gestión de nuevos colaboradores, ya me
+lo has explicado también, reuniones/asambleas, tal
+
+*hombre1*: una cuestión, simplemente, el BAH te exige un mínimo, ose
+tu cuando llegas allí, los martes se hace jornada de puertas abiertas,
+"oye, que voy" "vale, pues vente, pero ¿quieres conocerlo? vale pues
+vente un martes y ves como es" entonces hay una persona que se encarga
+de, que es el ministro de la verdad, que es el tutor: esto funciona
+así, este gestiona dinero, este es así, tin, tin, tin, ¿quieres
+probar? pues prueba y si dices que sí, te exigimos un compromiso de un
+año, para que ... porque luego uno, pues yo que sé, la gente al final
+no lo cumple y tampoco ... pero bueno
+
+*entrevistador*: Se pide eso.
+
+*hombre1*: Se pide.
+
+Te pueden mandar a trabajar fuera o ... te cambian el turno y entonces
+no puedes venir, pero en principio para que tengas ese compromiso de
+que no sea solo que pagues y que recibas una verdura, sino que cojas
+una tarea, que tengas de Septiembre a Septiembre, etcétera. Es lo
+único que se pide así para nuevas incorporaciones que estén informados
+y que sean participativos, lo demás yo creo que es un grupo cerrado,
+¿está aquí? vale pues si somos más, somos más, pero somos todos
+amigos, amigos y la asamblea pues va bien
+
+*entrevistador*: ¿dices en el BAH?
+
+*hombre1*: Comun Arganzuela es un grupo cerrado.
+
+*entrevistador*: Ah, vale
+
+*hombre1*: Somos hasta veinte y ya no lo hemos abierto más.
+
+*entrevistador*: Ah, qué es un grupo cerrado ¿no se admite más gente?
+
+*hombre1*: De momento, no. Luego ya en una asamblea decidimos que
+abriamos hasta tanto y admitimos a más gente, pero ya veremos cuando
+veamos que hace falta más o que no funcionamos bien con ese volumen
+porque *no se entiende* y la asamblea es abierta. Tu vas allí un
+Sábado por la mañana o un Sábado por la tarde y participas como tu
+quieras.
+
+** reuniones/asambleas
+*** facilitadores/moderadores, anotadores, otros roles
+
+*entrevistador*: Vale. Hay un punto que es de asambleas que hemos
+hablado bastante, pero bueno en ese hay un subpunto que yo creo que sí
+que no hemos tocado que es el de facilitadores, moderadores,
+anotadores, o sea ¿qué roles hay en el funcionamiento de una asamblea?
+
+*hombre1*: A ver. En la Asamblea Popular, hay una comisión de
+dinamización que es la que se encarga de hacerlo dinámico que toma los
+turnos de palabra de cortar, es decir, de reconducir la asamblea
+cuando se está perdiendo, de hacer una especie de resumen, hay una
+comisión y es rotativo, para que no esté siendo siempre los mismos. Y
+Comun Arganzuela, pues hay dos o tres personas que tiran más del
+carro.
+
+*entrevistador*: Claro. Es una asamblea más pequeñita.
+
+*hombre1*: Sí, me refiero en general, no solo en la asamblea, en
+general, "venga, que no me habéis hecho el pedido tal" las que han
+hecho la tabla con el superdiseño, las que hicieron la propuesta en su
+día.
+
+*entrevistador*: Gente más implicada.
+
+*hombre1*: Sí, sí son los que tienen un poco más del tirón. También
+son gente con mucha más experiencia en movimientos sociales, gente
+más, ... Y ... y luego en la asamblea cuando nos hemos juntado son las
+que dicen "oye, ¿por qué no volvemos?, vamos a hacer una asamblea"
+siempre están ahí y bueno en la asamblea *no se entiende*
+
+Y en el BAH, pues si son somos casi doscientos en el grupo, pues una
+vez al mes le toca a cada grupo y si te toca moderar, tu moderas, si
+te toca tomar actas, tomas actas y esas son las figuras, así ... pero
+son rotativas
+
+*entrevistador*: Moderar y tomar actas.
+
+*hombre1*: Sí, son grupos diferentes. Si te toca una cosa, no te toca
+la otra.
+
+*entrevistador*: Vale. Y ... eso los números de las asambleas
+
+*hombre1*: ¿Números?
+
+*entrevistador*: De personas
+
+En las asamblea popular del 15M yo lo que veo es que son muy grandes.
+
+*hombre1*: No, es que ... claro es que hemos empezado en Junio, en
+verano.
+
+*entrevistador*: Aaah
+
+vale, vale.
+
+*hombre1*: Entonces, pues es que ha habido la primera estábamos pues
+no sé 800 ... es que dijeron el número y unos decían 300, otros 500,
+otros 400 y otros no se cuantos. Había mucha, mucha gente. Sí, pues
+igual había 800, no me acuerdo bien, pero era mirar para atrás y ver
+gente y mirar para allá y ver gente.
+
+Y las del BAH son abiertas porque puede ir quien quiera pero como
+mínimo está una o dos personas por grupo somos doce más la gente de la
+comisión económica que va a recoger dinero porque en ese momento
+también el grupo lleva el dinero para pagar cuotas y alguna comisión
+en concreto *no se entiende* pero ya te digo 15 o 20 personas pues
+algunos son dos, pero ya te digo puedes ir tu o acompañas al siguiente
+si eres más nuevo. O también se me ha pasado antes cuando hay alguien
+nuevo así está la figura de un tutor, no se llama así, pero para que
+no esté cortando a la asamblea "oye, ¿qué quieres decir con eso?"
+"pues ¿cómo funciona no sé qué?" pues tu te pones a su lado y
+
+*entrevistador*: ¿Y eso en qué grupo?
+
+*hombre1*: En el BAH.
+
+*entrevistador*: En el BAH.
+
+*hombre1*: Entonces "oye ¿por qué ha dicho esto?", o "¿qué quiere
+decir esto?", o "¿cada cuanto es?" Y no para la asamblea a cada rato y
+se entera de todo porque tiene al lado una persona que se lo explica.
+
+Y a la de Comun Arganzuela pues vamos casi todos y si no puedes ir, no
+puedes ir. El martes pasado hubo una y yo no pude ir, pero bueno, hubo
+allí un montón de gente y a mí me llegó el correo.
+
+*entrevistador*: Bueno, hemos visto comunicación con el exterior. Oye,
+si te tienes que ir.
+
+*hombre1*: No, no, es que como tiene una hora solo de grabación, no sé
+si ...
+
+*entrevistador*: Igual el mío tiene más.
+
+No sé que más contarte
+
+*hombre1*: *no se entiende*
+
+** visibilidad exterior
+
+*entrevistador*: Hay un punto de visibilidad exterior, pero yo creo
+que está bastante hablado en otros puntos.
+
+*** web con información
+*** actividades de promoción/visibilidad
+
+** participación en iniciativas de terceros
+** Compartición de recursos
+*** ¿licencias libres?
+
+*entrevistador*: Este punto de compartición de recursos, yo creo que
+sí que es bastante novedoso, por ejemplo, ¿utilizáis licencias libres
+en los documentos que estáis generando o ...?
+
+*hombre1*: Pues ...
+
+*entrevistador*: O cosas así.
+
+*hombre1*: Pues ... en Asamblea Popular Arganzuela siempre se apuesta
+por n-, o sea siempre se apuesta, siempre se cita por lo menos el n-1,
+el n-1 también ...
+
+*entrevistador*: O sea que usáis software libre ¿no?
+
+*hombre1*: Sí, claro, la alternativa a Facebook, una red social que es
+horizontal, que yo te digo que ... que puedes entrar a los grupos de
+la Asamblea Popular de Arganzuela, a las comisiones, que tiene otra
+estructura que Facebook no te
+
+*entrevistador*: Es verdad.
+
+*hombre1*: Comun Arganzuela. Comun Arganzuela usamos Google Docs, el
+Google ...
+
+*entrevistador*: Pero yo me refería a si vosotros, los bienes
+materiales e inmateriales que se generan ¿cómo se comparten con el
+exterior?
+
+*hombre1*: Entonces, la Asamblea Popular, todo queda en la red, en el
+Facebook, en la lista de correo, o en el n-1.
+
+*entrevistador*: Vale.
+
+*hombre1*: En Comun Arganzuela, tenemos el Google Docs, que además es
+el archivo.
+
+Y en el BAH usamos Ourproject que es todo abierto.
+
+*entrevistador*: Aha.
+
+*hombre1*: "Oye, no pongas tu teléfono en los correos porque todo es
+abierto, todo es compartido"
+
+*entrevistador*: Y eso por ejemplo cuando tu abres un grupo en
+Ourproject te dicen qué licencia quieres para los materiales que tu
+estás generando.
+
+*hombre1*: La más abierta que ... sí, sí. Esto es para que otros
+grupos puedan ver como tu trabajas, desde otros sitios, ... Y eso se
+hizo con un cosenso que hubo en su día con todo esto.
+
+*entrevistador*: Vale.
+
+*hombre1*: No he hablado de teléfonos, no he hablado de cuentas, ni de
+todo esto en la lista de correo
+
+*** transparencia de métodos, de acciones, de cuentas
+** Planificación
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: Oye, otro tema que no hemos hablado es la gestión de
+planes, de si en el BAH hay temas de producción a tanto plazo, o en
+...
+
+*hombre1*: Eeen ...
+
+*entrevistador*: O en el grupo de consumo, consumir tanto ...
+
+*hombre1*: Bueno, pues en lo de la Asamblea Popular de Arganzuela el
+plan es cambiar el planeta. En el barrio de momento, ese es el plan
+inmediato.
+
+En el grupo de consumo pues el plan ahora es coger un local y hacerlo
+más físico.
+
+*entrevistador*: Yo no me refiero tanto a qué planes tenéis, sino a
+como lo gestionáis.
+
+*hombre1*: Claro, pues el plan este y de momento se gestiona en las
+asambleas.
+
+*entrevistador*: Si como objetivo en las asambleas que luego se
+refleja en actas y ya está.
+
+*hombre1*: Cuanto podéis poner cada unidad de consumo para conseguir
+un local *no se entiende* Y ahora lo gordo es que estos grupos son
+pobres. El BAH sí, tiene una planificación *no se entiende* una
+planificación agrícola de Septiembre a Septiembre, entonces con los
+puntos que te decía antes en la asamblea de devolución de bolsas con
+eso, se va diseñando el año agrícola, a la gente le ha molado la
+borraja, pues ponemos más borraja, el repollo está de puta madre y nos
+viene bien, porque llega el invierno y no hay nada en la cesta pues
+repollo tardío y no se qué. Sí que hay una planificación anual, hay
+una planificación económica, de lo que se recoge cada mes, una cosa va
+a la furgoneta, 150 euros para la furgoneta, para la *no se entiende*,
+por si se rompe sí que hay una planificación pues las tablas esas que
+te contaba de la planificación económica, pues cada mes entra dinero a
+tal fondo, tal fondo, fondo de yo que sé imprevistos ... ese tipo de
+cosas. Y pues eso se quiere poner el riego pues durante tres años se
+pone el riego, pues hay una planificación
+
+*entrevistador*: Esa planificación se lleva a través de una comisión
+...
+
+*hombre1*: Sí. Siempre consensuado con la asamblea.
+
+Luego hay, está la figura de los plenarios para un tema en
+concreto. Dos veces al año, uno más político, que también es una
+herramienta que puede llegar a consenso y otro más técnico para
+discutir, la asignación de la gente que trabaja en la huerta, si se
+quita de aquí y se pone aquí, en el 2050 puedes tener un sueldo
+digno. Esos cálculos se hacen con una *no se entiende*, se queda en un
+plenario, todo el día, para hablar de esto con gente que dinamiza, con
+herramientas que se llega a consenso todos juntos y sí son cosas
+planificadas y cada vez más, sí porque antes nos lo pasábamos
+discutiendo y ahora que no discutimos tanto tenemos tiempo para
+planificar.
+
+* Factores de Cambio
+
+*entrevistador*: Vale, pues si no tienes nada que añadir paso al
+siguiente tema grande que era ... son cuatro preguntas ¿eh?
+
+*hombre1*: Vale, yo lo digo porque esto son justo.
+
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: Esto ha acabado ya.
+
+Bueno este continúa.
+
+Vale, bueno herramientas tecnológicas que recuerdes que has usado en
+el último mes
+
+*hombre1*: Pues las listas de correo ...
+
+*entrevistador*: Por ejemplo, el correo lo usas ha diario
+
+*hombre1*: A diario. Tengo dos cuentas, una en gmail y otra en
+yahoo. Y la del BAH la tengo en yahoo que es la que tengo más
+... cuando te mandan algo sospechoso o tal tengo la de yahoo y la de
+gmail la tengo como más importante, la tengo además como archivo de
+cosas más interesantes lo tengo siempre en yahoo, o sea perdón en
+gmail, yahoo lo tengo un poco más ... Entonces la lista del BAH la
+tengo en yahoo que llega un montón de spam y cosas y es la primera que
+tuve, ya no la cambié. Y lo de arganzuela, Asamblea Popular de
+Arganzuela, me llega al gmail y luego pues Facebook, porque la página
+web del BAH no la miro casi nunca, bueno igual para algún trabajo,
+ahora este mes, es que ... para algún trabajo del máster que tuvo que
+ver con esto pero no.
+
+Cuando me hice el perfil de n-1 fué hace más de un mes y ya está.
+
+*entrevistador*: Vale.
+
+*hombre1*: Bueno, mirar el periódico ... Mirar el Diagonal, porque
+como llega cada quince días a casa, pues antes de que llegue miras
+alguna noticia si ha pasado algo interesante, convocatorias, tengo
+cuenta de Twitter, me abrí una cuenta de Twitter a partir de lo del
+15M, pero claro ahí no hay BAH, no hay Comun Arganzuela, no hay
+Asamblea Popular, hay Acampada de Sol, o cosas así, hay ¿cómo se
+llama? *no se entiende* ahí sigo convocatorias y sigo otras cosas. Lo
+miro pues yo que sé cuando hay alguna inmediatez como una
+manifestación o algo así, pues lo voy siguiendo.
+
+** Cuáles son las herramientas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: Vale, dime las herramientas que has dejado de usar si
+miras 5 años atrás
+
+*hombre1*: ¿Qué he dejado de usar? ... No, es que tampoco soy ...
+
+** Qué herramientas has incorporado si miras 5 años atrás
+
+*entrevistador*: Vale, al revés ¿qué herramientas has incorporado si
+miras 5 años atrás?
+
+*hombre1*: Pues, antes tenía una cuenta de hotmail que ya no uso,
+porque cogí yahoo, la de gmail no sé cuanto tiempo hace que la tengo,
+pero a lo mejor puede ser esos 5 años o lo habrá hecho ahora, el
+google groups, facebook también lo he abierto no hace tanto y ... y
+luego no sé pues algún foro o algo así, pero eso también a parte de
+otras cosas.
+
+** Qué herramientas has incorporado debido a tu activismo político
+
+*entrevistador*: Y debido a tu activismo político ¿qué herramientas
+has incorporado?
+
+*hombre1*: Pues es que las uso tanto para una cosa como para otra.
+
+*entrevistador*: O sea, todas las que has dicho antes
+
+*hombre1*: El twitter, por ejemplo, eso sí fué una cosa concreta por
+activismo político, para estar informado de lo que iba a pasar, antes
+leía el Diagonal, que iban poniendo casi a eso en directo ciertas
+cosas, pero en twitter sale más gente o te iban mandando fotos, o de
+manifestaciones que no podía ir, o que no sabía por donde estaban pues
+salía de casa, miraba ahí y me iba.
+
+*entrevistador*: Otros medios de contrainformación, tipo indymedia o
+...
+
+*hombre1*: Indymedia es, por ejemplo, uno de los que he dejado de
+usar. Sí, porque antes entre el Indymedia y el Nodo50, los miraba no
+sé si a diario y ahora estás cosas, bueno en Rebelión o así, pero
+Indymedia, me parece a mí ... Sé que sigue existiendo y el Nodo50
+también está ahí con sus cosas, pero no, no lo sigo. Es verdad, mira
+se me había olvidado para la pregunta anterior.
+
+*entrevistador*: Vale, pues ya hemos terminado.

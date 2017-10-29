@@ -1,0 +1,21 @@
+;; Object aplic-ia/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aplic-ia/"
+  :tables (list 
+   (semanticdb-table "mi.dsl"
+    :major-mode 'dsssl-mode
+    :tags '(("%stylesheet%" variable (:default-value ("\"docbook-bsd.css\"")) nil [75 151]))
+    :file "mi.dsl"
+    :pointmax 151
+    )
+   (semanticdb-table "docbook.dsl"
+    :major-mode 'dsssl-mode
+    :tags '(("if-front-page" variable (:default-value ((2218 . 2292))) nil [2194 2293]) ("if-first-page" variable (:default-value ((2319 . 2393))) nil [2295 2394]) ("read-entity" variable (:default-value ((3677 . 3749))) nil [3655 3750]) ("all-element-number" variable (:default-value ((3781 . 3860))) nil [3752 3861]) ("debug" variable (:default-value ((3879 . 3945))) nil [3863 3946]))
+    :file "docbook.dsl"
+    :pointmax 8675
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )

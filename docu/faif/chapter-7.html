@@ -1,0 +1,1079 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta content=
+"HTML Tidy for Linux/x86 (vers 1st December 2002), see www.w3.org"
+name="generator">
+<title>Una Decisi&oacute;n Moral Dif&iacute;cil</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.76b+">
+<link rel="HOME" title="Libre como en Libertad" href="index.html">
+<link rel="PREVIOUS" title="La comuna de Emacs" href=
+"chapter-6.html">
+<link rel="NEXT" title="St. Ignucius" href="chapter-8.html">
+<link rel="STYLESHEET" type="text/css" href="base.css">
+</head>
+<body class="CHAPTER" bgcolor="#FFFFFF" text="#000000" link=
+"#0000FF" vlink="#840084" alink="#0000FF">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+       cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">Libre como en Libertad:</th></tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"chapter-6.html" accesskey="P">Anterior</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"chapter-8.html" accesskey="N">Siguiente</a></td></tr></table>
+<hr align="left" width="100%"></div>
+<div class="CHAPTER">
+<h1><a name="CHAPTER-7">Cap&iacute;tulo 7. Una Decisi&oacute;n
+Moral <span class="SYSTEMITEM">Dif&iacute;cil</span></a></h1>
+<p>En Septiembre 27 de 1983 los programadores de computadores que
+entraron al grupo de Usenet net.unix-wizards encontraron un mensaje
+inusual. Publicado en las primeras horas de la madrugada, a las
+12:30 a.m. para ser precisos, y firmado por <a href=
+"mailto:rms@mit-oz" target="_top">mailto:rms@mit-oz</a>, el asunto
+del mensaje era <span class="SYSTEMITEM">conciso</span> pero
+llamaba la atenci&oacute;n. "Nueva implementaci&oacute;n de UNIX,"
+dec&iacute;a. Sin embargo, en lugar de presentar una versi&oacute;n
+de Unix reci&eacute;n lanzada, el p&aacute;rrafo inicial del
+mensaje enviaba <span class="SYSTEMITEM">un llamado a tomar las
+armas</span>:</p>
+<a name="AEN1356"></a>
+<blockquote class="BLOCKQUOTE">
+<p>Comenzando este D&iacute;a de Acci&oacute;n de Gracias voy a
+escribir un sistema compatible con Unix llamado GNU (que significa
+Gnu No es Unix), y lo voy a entregar gratis para cualquiera que
+desee utilizarlo. Contribuciones en tiempo, dinero, programas y
+equipos son bastante necesarias. <a name="AEN1358" href=
+"#FTN.AEN1358">[1]</a></p></blockquote>
+<p>Para el desarrollador experimentado de Unix, el mensaje era una
+mezcla de idealismo y hubris. No solamente pretend&iacute;a el
+autor reconstruir el ya maduro sistema operativo Unix
+      <span class="SYSTEMITEM">empezando de cero</span>, sino que
+      tambi&eacute;n propon&iacute;a mejorarlo en algunos lugares.
+      El nuevo sistema GNU, predec&iacute;a el autor,
+      contendr&iacute;a todos los componentes usuales --un editor
+      de texto, un programa de consola para ejecutar aplicaciones
+      compatibles con Unix, un compilador y "algunas otras cosas."
+      <a name="AEN1367" href="#FTN.AEN1367">[2]</a> Tambi&eacute;n
+      contendr&iacute;a muchas caracter&iacute;sticas <span class=
+      "SYSTEMITEM">atractivas</span> qie otros sistemas Unix no
+      ofrec&iacute;an a&uacute;n: una interfaz gr&aacute;fica de
+      usuario, basada en el lenguaje de programaci&oacute;n Lisp,
+      un sistema de archivos a prueba de caidas, y protocolos de
+      red construidos de acuerdo con el sistema de red interno de
+      MIT.</p>
+<p>"GNU ser&aacute; capaz de ejecutar programas de Unix, pero no
+ser&aacute; id&eacute;ntico a Unix," escrib&iacute;a el autor.
+"Haremos todas las mejoras que sean convenientes, basados en
+nuestra experiencia con otros sistemas operativos."</p>
+<p>Anticipando una respuesta esc&eacute;ptica de parte de algunos
+lectores, el autor se asegur&oacute; de ubicar a
+continuaci&oacute;n de su descripci&oacute;n del sistema operativo
+una breve referencia biogr&aacute;fica titulada
+"&iquest;Qui&eacute;n soy yo?":</p>
+<a name="AEN1372"></a>
+<blockquote class="BLOCKQUOTE">
+<p>Yo soy Richard Stallman, inventor del original y muy imitado
+editor EMACS, ahora en el laboratorio de Inteligencia Artificial en
+MIT. He trabajado extensivamente en compiladores, editores,
+depuradores, int&eacute;rpretes de comandos, el Sistema
+Incompatible de Tiempo Compartido (Incompatible Timesharing System
+&oacute; ITS) y el sistema operativo de la M&aacute;quina Lisp.
+Inici&eacute; el soporte de visualizaci&oacute;n independiente de
+la terminal en el ITS. Adem&aacute;s he implementado un sistema a
+prueba de ca&iacute;das y dos sistemas de ventanas para
+m&aacute;quinas Lisp. <a name="AEN1374" href=
+"#FTN.AEN1374">[3]</a></p></blockquote>
+<p>Por asuntos del destino, el <span class=
+"SYSTEMITEM">elegante</span> Proyecto GNU de Stallman no pudo
+cumplir su fecha de lanzamiento de D&iacute;a de Acci&oacute;n de
+Gracias. Para enero de 1984, sin embargo, Stallman cumpli&oacute;
+su promesa y se involucr&oacute; plenamente en el mundo del
+desarrollo de software de Unix. Para un arquitecto de software
+criado en ITS, era como dise&ntilde;ar centros comerciales de los
+suburbios en vez de palacios Moros. A&uacute;n as&iacute;,
+construir un sistema operativo parecido a Unix ten&iacute;a sus
+ventajas ocultas. ITS hab&iacute;a sido poderoso, pero
+tambi&eacute;n ten&iacute;a un tal&oacute;n de Aquiles: Los hackers
+de MIT lo hab&iacute;an dise&ntilde;ado espec&iacute;ficamente para
+aprovechar la l&iacute;nea de m&aacute;quinas PDP, creada por DEC.
+Cuando los administradores del laboratorio de IA decidieron
+<span class="SYSTEMITEM">sacar de circulaci&oacute;n</span> la
+poderosa m&aacute;quina PDP-10 del laboratorio a comienzos de los
+ochentas, el sistema operativo que los hackers hab&iacute;an
+asimilado a una vibrante ciudad se convirti&oacute;
+instant&aacute;nea,emte en un pueblo fantasma. Unix, por otro lado,
+estaba dise&ntilde;ado para movilidad y supervivencia a largo
+plazo. Inicialmente desarrollado por cient&iacute;ficos menores en
+AT&amp;T, el programa se hab&iacute;a escapado del radar de la
+gerencia corporativa, encontrando un hogar feliz en el mundo
+<span class="SYSTEMITEM">presupuestalmente limitado</span> de los
+sistemas de computadores acad&eacute;micos. Con menos recursos que
+sus <span class="SYSTEMITEM">colegas</span> en MIT, los
+desarrolladores de Unix hab&iacute;an adaptado el software para
+funcionar en un conjunto muy dis&iacute;mil de sistemas de
+hardware: todo desde el peque&ntilde;o PDP-11-a de 16 bits,
+considerado &uacute;til solamente para tareas peque&ntilde;as por
+la mayor&iacute;a de los hackers del Laboratorio de IA, hasta
+<i class="FOREIGNPHRASE">mainframes</i> de 32 bits como el VAX
+11/780. Para 1983 unas pocas compa&ntilde;&iacute;as, notablemente
+Sun Microsystems, iban a&uacute;n mas lejos, desarroll&aacute;ndo
+una nueva generaci&oacute;n de microcomputadores, llamados
+"estaciones de trabajo," para aprovechar el cada vez mas ubicuo
+sistema operativo.</p>
+<p>Para facilitar este proceso, los desarrolladores encargados de
+dise&ntilde;ar las familias dominantes de Unix se aseguraban de
+dejar una capa adicional de abstracci&oacute;n entre el
+   <i class="FOREIGNPHRASE">software</i> y la m&aacute;quina. En
+   lugar de adaptar el sistema para aprovechar los recursos de una
+   m&aacute;quina espec&iacute;fica -- como hab&iacute;an hecho los
+   hackers del Laboratorio de IA con ITS y PDP-10 -- los
+   desarrolladores de Unix prefer&iacute;an una aproximaci&oacute;n
+   m&aacute;s gen&eacute;rica. Concentr&aacute;ndose m&aacute;s en
+   los est&aacute;ndares y especificaciones de interconexi&oacute;n
+   que manten&iacute;an los m&uacute;ltiples componentes de un
+   sistema operativo juntos que en los componentes mismos, crearon
+   un sistema que pod&iacute;a ser r&aacute;pidamente modificado
+   para adaptarse a los gustos de cualquier m&aacute;quina. Si un
+   usuario se alteraba alguna parte, los est&aacute;ndares
+   hac&iacute;an posible retirar un subcomponente individual y
+   arreglarlo o reemplazarlo con algo mejor. De manera sencilla, lo
+   que le faltaba a la aproximaci&oacute;n de Unix en estilo a
+   est&eacute;tica quedaba m&aacute;s que compensado en
+   t&eacute;rminos de flexibilidad y econom&iacute;a, de ah&iacute;
+   su r&aacute;pida adopci&oacute;n. <a name="AEN1399" href=
+   "#FTN.AEN1399">[4]</a></p>
+<p>La decisi&oacute;n de Stallman de comenzar a desarrollar el
+sistema GNU fue motivada por el final del sistema ITS en el que los
+hackers del Laboratorio de AI hab&iacute;an trabajado por tanto
+tiempo. El final del sistema ITS fue un golpe traum&aacute;tico
+para Stallman. Al llegar poco despu&eacute;s del episodio de la
+impresora laser de Xerox, ofrec&iacute;a a&uacute;n mas evidencias
+de que la cultura hacker del laboratorio de IA estaba dejando de
+ser inmune a las pr&aacute;cticas de negocios del mundo
+exterior.</p>
+<p>Como el c&oacute;digo del software que lo compon&iacute;a, las
+ra&iacute;ces del final de ITS se extend&iacute;an muy
+atr&aacute;s. El gasto de defensa, por mucho tiempo una fuente
+importante para el desarrollo de las ciencias de la
+computaci&oacute;n, se hab&iacute;a terminado durante los
+a&ntilde;os posteriores a Vietnam. En una lucha desesperada por
+nuevos fondos los laboratorios y universidades empezaron a buscar
+en el sector privado. En el caso del Laboratorio de IA ganarse los
+inversionistas privados fue f&aacute;cil. Hogar de algunos de los
+proyectos m&aacute;s ambiciosos de ciencias de computaci&oacute;n
+de la posguerra, el laboratorio se convirti&oacute; en un incubador
+r&aacute;pido de tecnolog&iacute;a. De hecho, para 1980, la
+mayor&iacute;a del personal del laboratorio, incluyendo muchos
+hackers, divid&iacute;an su tiempo entre los proyectos del
+instituto y proyectos comerciales.</p>
+<p>Lo que inicialmente parec&iacute;a como un trato de
+ganancia-ganancia -los hackers trabajaban en los mejores proyectos,
+d&aacute;ndole al laboratorio la posibilidad de ser el primero en
+tener acceso a las m&aacute;s novedosas tecnolog&iacute;as de
+computadores - pronto se revel&oacute; como un trato Faustiano.
+Mientras m&aacute;s tiempo dedicaban los hackers a los proyectos
+comerciales de punta, menos tiempo ten&iacute;an para dedicarle al
+mantenimiento de la infraestructura barroca de software del
+laboratorio. Pronto las <span class=
+"SYSTEMITEM">compa&ntilde;&iacute;as comenzaron a contratar hackers
+directamente</span> en un intento de monopolizar su tiempo y
+atenci&oacute;n. Con menos hackers para preocuparse del taller, los
+programas y las m&aacute;quinas tomaban mas tiempo en ser
+arregladas. A&uacute;n peor; seg&uacute;n Stallman, el laboratorio
+comenz&oacute; a sufrir un "cambio demogr&aacute;fico". Los hackers
+que alguna vez hab&iacute;an formado una minor&iacute;a vocal
+dentro del Laboratorio de Inteligencia Artificial estaban perdiendo
+su membres&iacute;a a la vez que "los profesores y estudiantes que
+no quer&iacute;an realmente el [PDP-10] eran tan numerosos como
+antes." <a name="AEN1411" href="#FTN.AEN1411">[5]</a></p>
+<p>El punto de corte vino en 1982. Ese fue el a&ntilde;o en que la
+administraci&oacute;n del laboratorio decidi&oacute; actualizar su
+computador principal, el PDP-10. Digital, la compa&ntilde;&iacute;a
+que fabricaba el PDP-10 hab&iacute;a descontinuado la l&iacute;nea.
+A pesar de que la compa&ntilde;&iacute;a a&uacute;n ofrec&iacute;a
+un <i class="FOREIGNPHRASE">mainframe</i> de alto poder, llamado el
+KL-10, la nueva m&aacute;quina requer&iacute;a una reescritura
+dr&aacute;stica o "port" de ITS si los hackers quer&iacute;an
+continuar corriendo con el mismo sistema operativo. Temiendo que el
+laboratorio hubiera perdido su masa cr&iacute;tica de programadores
+talentosos, los miembros de la facultad del laboratorio presionaron
+para adoptar Twenex, un sistema operativo desarrollado por Digital.
+Superados en n&uacute;mero los hackers no tuvieron otra
+opci&oacute;n que aceptar.</p>
+<p>"Sin hackers para mantener el sistema, dec&iacute;an [los
+miembros de la facultad], `Vamos a tener un desastre; debemos tener
+software comercial,'" Stallman recordar&iacute;a algunos
+a&ntilde;os despu&eacute;s. "Ellos dijeron, `Podemos esperar que la
+compa&ntilde;&iacute;a lo mantenga.' Se comprob&oacute; que estaban
+completamente equivocados, pero eso fue lo que hicieron."
+   <a name="AEN1424" href="#FTN.AEN1424">[6]</a></p>
+<p>Al principio, los hackers vieron el sistema Twenex como otro
+s&iacute;mbolo autoritario esperando ser derrotado. El mismo nombre
+del sistema era una protesta. Oficialmente llamado TOPS-20 por DEC,
+era un sucesor de TOPS-10, un sistema operativo comercial que DEC
+mercadeaba para el PDP-10. Bolt Beranek Newman hab&iacute;a
+desarrollado una versi&oacute;n mejorada, llamada Tenes, en la que
+TOPS-20 se bas&oacute;. <a name="AEN1431" href=
+"#FTN.AEN1431">[7]</a> Stallman, el hacker que acu&ntilde;&oacute;
+el t&eacute;rmino Twenex, dice que pens&oacute; en el nombre como
+una manera de evitar usar el nombre TOPS-20. "El sistema no era lo
+mejor (<i class="FOREIGNPHRASE">tops</i>, en ingl&eacute;s) por lo
+que de ninguna manera lo iba a llamar as&iacute;," recuerda
+Stallman. "Por lo que decid&iacute; incluir una 'w' en el nombre
+Tenex y llamarlo Twenex."</p>
+<p>La m&aacute;quina que corr&iacute;a el sistema Twenex/TOPS-20
+ten&iacute;a su propio sobrenombre burl&oacute;n: Oz. De acuerdo a
+una leyenda hacker, la m&aacute;quina obtuvo su alias porqu&eacute;
+requer&iacute;a una m&aacute;quina PDP-11 m&aacute;s peque&ntilde;a
+para accionar su terminal. Un hacker, al ver la
+configuraci&oacute;n del KL-10-PDP-11 por primera vez lo
+vincul&oacute; a la espectacular aparici&oacute;n en pantalla del
+Mago de Oz. "Yo soy en grande y poderoso Oz," entonaba el hacker.
+"No le presten atenci&oacute;n al PDP-11 detr&aacute;s de esa
+consola." <a name="AEN1439" href="#FTN.AEN1439">[8]</a></p>
+<p>Si los hackers se rieron la primera vez que se encontraron con
+el KL-10, su risa se desvaneci&oacute; r&aacute;pidamente cuando se
+encontraron con Twenex. No solamente ten&iacute;a seguridad
+incluida, sino que los ingenieros de software hab&iacute;an
+dise&ntilde;ado las herramientas y aplicaciones con el sistema de
+seguridad en mente. Lo que alguna vez hab&iacute;a sido un juego de
+gato y rat&oacute;n sobre los paswords, en el caso del sistema de
+seguridad del Laboratorio de Ciencias de la Computaci&oacute;n, se
+convirti&oacute; en una batalla a campo abierto sobre el manejo del
+sistema. Los administradores del Systema argumentaron que, sin
+seguridad, el sistema Oz era m&aacute;s vulnerable a ca&iacute;das
+accidentales. Los hackers replicaron que las ca&iacute;das
+pod&iacute;an prevenirse mejor atacando el c&oacute;digo fuente.
+Desafortunadamente, el n&uacute;mero de hackers con el tiempo y la
+inclinaci&oacute;n para desarrollar este tipo de ataque se
+hab&iacute;a reducido hasta el punto que el argumento del
+administrador del sistema prevaleci&oacute;.</p>
+<p>Regalando sus claves de acceso y deliberadamente haciendo caer
+el sistema para recolectar evidencia del desastre resultante,
+Stallman logr&oacute; derrotar el intento de obtener control por
+parte del administrador del sistema. Despu&eacute;s de una de estas
+"tomas de poder" fallidas, Stallman envi&oacute; una alerta a todo
+el personal de IA. <a name="AEN1446" href=
+"#FTN.AEN1446">[9]</a></p>
+<p>"Ha habido otro intento de obtener del poder," escribi&oacute;
+Stallman. "Hasta ahora, las fuerzas aristocr&aacute;ticas han sido
+derrotadas." Para proteger su identidad, Stallman firm&oacute; el
+mensaje "Radio Libre OZ."</p>
+<p>El disfraz fue, en el mejor de los casos, muy d&eacute;bil. Para
+1982 la aversi&oacute;n de Stallman hacia las claves de acceso y el
+secreto era tan conocida que usuarios fuera del laboratorio de IA
+estaban usando su cuenta como punto de entrada para ARPAnet, la red
+de computadores financiada con dineros para investigaci&oacute;n
+que servir&iacute;a como base para lo que hoy es internet. Uno de
+aquellos "turistas" a comienzos de los 80 era Don Hopkins, un
+programador de California que se enter&oacute; por la
+      <span class="SYSTEMITEM">comunidad hacker</span> de que todo
+      lo que un extra&ntilde;o deb&iacute;a hacer para obtener
+      acceso al preciado sistema ITS de MIT era ingresar con las
+      iniciales RMS e incluir el mismo monograma de tres letras
+      cuando el sistema solicitar&aacute; una clave de acceso.</p>
+<p>"Yo estar&eacute; eternamente agradecido de que MIT me dejara a
+mi y a muchos otros utilizar sus computadores gratis." dice
+Hopkins. "Signific&oacute; mucho para mucha gente."</p>
+<p>Esta pol&iacute;tica de "turistas", que hab&iacute;a sido
+abiertamente tolerada por la gerencia de MIT durante los
+a&ntilde;os del ITS, <a name="AEN1458" href="#FTN.AEN1458">[10]</a>
+fue dejada a un lado cuando Oz se convirti&oacute; en el
+v&iacute;nculo principal del laboratorio con ARPAnet. Al principio,
+Stallman continu&oacute; con su pol&iacute;tica de repetir su
+nombre de usuario como clave de acceso, para que los usuarios
+externos pudieran seguir sus pasos. Con el tiempo, sin embargo, la
+fragilidad de Oz oblig&oacute; a contener a los usuarios externos
+que podr&iacute;an, por accidente o por albergar intenciones
+malignas, hacer caer el sistema. Cuando esos mismos administradores
+obligaron a Stallman a dejar de publicar su clave de acceso,
+Stallman, alegando &eacute;tica personal se neg&oacute; a hacerlo y
+dej&oacute; de utilizar el sistema Oz del todo. <a name="AEN1460"
+href="#FTN.AEN1460">[11]</a></p>
+<p>"[Cuando] las claves de acceso aparecieron por primera vez en el
+laboratorio de IA de MIT yo [decid&iacute;] seguir mi creencia de
+que no deben haber claves de acceso," Stallman dir&iacute;a mas
+tarde. "Como yo no creo que sea realmente deseable que haya
+seguridad en un computador, no deber&iacute;a estar dispuesto a
+ayudar a mantener un r&eacute;gimen de seguridad." <a name=
+"AEN1463" href="#FTN.AEN1463">[12]</a></p>
+<p>La renuencia de Stallman a inclinarse ante el grande y poderoso
+Oz simbolizaba la creciente tensi&oacute;n entre los hackers y la
+gerencia del laboratorio de IA a comienzos de los 80. Esta
+tensi&oacute;n no era nada comparada con el conflicto que
+exist&iacute;a en el seno mismo de la comunidad hacker. Para el
+momento en que lleg&oacute; el KL-10 la comunidad hacker ya se
+hab&iacute;a dividido en dos campos. El primero se mov&iacute;a
+alrededor de una compa&ntilde;&iacute;a de software llaman
+Symbolics, Inc. El segundo se mov&iacute;a en torno a el principal
+rival de Symbolics, Lisp Machines, Inc. (LMI). Ambas
+compa&ntilde;&iacute;as se encontraban en una carrera para llevar
+al mercado la M&aacute;quina Lisp, un dispositivo construido para
+aprovechar plenamente del Lenguaje de Programaci&oacute;n Lisp.</p>
+<p>Creado por el pionero en la investigaci&oacute;n de la
+inteligencia artificial, John McCarthy, investigador en
+inteligencia artificial de MIT, a finales de los a&ntilde;os 50,
+Lisp es un lenguaje elegante, muy &uacute;til para programas
+encargados de procesamiento y ordenamiento en grandes cantidades.
+El nombre del lenguaje es una versi&oacute;n reducida de
+Procesamiento de Listas (<i class="FOREIGNPHRASE">LISt
+Processing</i>). Tras la salida del McCarthy hac&iacute;a el
+Laboratorio de Inteligencia Artificial de Stanford, los hackers de
+MIT refinaron el lenguaje en un dialecto local llamado MACLIST. El
+"MAC" se refer&iacute;a al Proyecto MAC, un proyecto de
+investigaci&oacute;n financiado por DARPA que di&oacute; origen al
+laboratorio de IA y al Laboratorio para las Ciencias de la
+Computaci&oacute;n. Dirigidos por el arquitecto-hacker Richard
+Greenblatt, los programadores del laboratorio de AI contruyeron
+durante los 70 un sistema operativo completo basado en Lisp,
+llamado el sistema operativo de la M&aacute;quina Lisp
+   (<i class="FOREIGNPHRASE">Lisp Machine Operating System</i>).
+   Para 1980, el proyecto de la M&aacute;quina Lisp hab&iacute;a
+   generado dos iniciativas comerciales. Symbolics, encabezado por
+   Russell Noftsker, un antiguo administrador del laboratorio de
+   IA, y Lisp Machines, Inc.,encabezado por Greenblatt.</p>
+<p>El software de la M&aacute;quina Lisp era construido por
+hackers, es decir, era propiedad de MIT pero estabaa disponible
+para que cualquiera lo copiara, como una costumbre de hackers. Ese
+sistema limitaba las ventajas de mercadeo de cualquier
+compa&ntilde;&iacute;a que esperara licenciar el software a MIT y
+mercadearlo como &uacute;nico. Para asegurarse una ventaja, y para
+favorecer los aspectos que los clientes podr&iacute;an considerar
+atractivos, las compa&ntilde;&iacute;as reclutaron a algunos de los
+hackers del Laboratorio de IA y los pusieron a trabajar en varios
+componentes del sistema operativo de la M&aacute;quina Lisp fuera
+de la tutela del Laboratorio de IA.</p>
+<p>La compa&ntilde;&iacute;a que aplicaba esta estrategia de manera
+m&aacute;s agresiva era Symbolics. Para finales de 1980
+hab&iacute;a contratado 14 de los miembros del equipo de AI del
+laboratorio como consultores de medio tiempo para desarrollar su
+versi&oacute;n de la M&aacute;quina Lisp. Con excepci&oacute;n de
+Stallman, los dem&aacute;s firmaron para ayudar a LMI. <a name=
+"AEN1488" href="#FTN.AEN1488">[13]</a></p>
+<p>En un principo, Stallman acept&oacute; el intento de ambas
+compa&ntilde;&iacute;as de comercializar la m&aacute;quina Lisp, a
+pesar de que significaba m&aacute;s trabajo para el. Ambas
+licenciaron el c&oacute;digo fuente del sistema operativo de la
+M&aacute;quina Lisp a MIT, y el trabajo de Stallman era actualizar
+la M&aacute;quina Lisp del laboratorio, para mantenerse al
+d&iacute;a con las &uacute;ltimas innovaciones. A pesar de que la
+licencia de Symbolics con MIT le daba a Stallman el derecho a
+revisar, pero no copiar el c&oacute;digo fuente de Symbolics,
+Stallman dice que un "acuerdo de caballeros" entre la gerencia de
+Symbolics y el Laboratorio de IA hac&iacute;a posible utilizar
+porciones atractivas del c&oacute;digo a la manera hacker
+tradicional.</p>
+<p>En marzo 16 de 1982, una fecha que Stallman recuerda bien por
+ser su cumplea&ntilde;os, los ejecutivos de Symbolics decidieron
+terminaron con este acuerdo de caballeros. La jugada fue en gran
+parte un movimiento estrat&eacute;gico. LMI, la competencia
+m&aacute;s importante en el mercado de la M&aacute;quina Lisp
+estaba esencialmente usando una copia de la m&aacute;quina Lisp del
+Laboratorio de IA. En lugar de subsidiar el desarrollo de un rival
+de mercado, los ejecutivos de Symbolics eligieron hacer cumplir los
+puntos de la licencia. Si el Laboratorio de AI quer&iacute;a que su
+sistema operativo se mantuviero actualizado con el de Symbolics, el
+laboratorio deber&iacute;a cambiarse a una m&aacute;quina Symbolics
+y acabar con sus v&iacute;nculos con LMI.</p>
+<p>Como la persona responsable de mantener la M&aacute;quina Lisp
+del laboratorio Stallman estaba <span class=
+"SYSTEMITEM">indignado</span>. Viendo este anuncio como un
+"ultimatum," Stallman respondi&oacute; desconectando el canal de
+comunicaci&oacute;n de microondas entre Symbolics y el laboratorio.
+Luego hizo votos para nunca trabajar en una m&aacute;quina
+Symbolics y se ali&oacute; inmediatamente con LMI. "De la forma en
+yo lo ve&iacute;a, el Laboratorio de IA era un pa&iacute;s neutral,
+como B&eacute;lgica en la Segunda Guerra Mundial," dice Stallman.
+"Si Alemania invade B&eacute;lgica, B&eacute;lgica le declara la
+guerra a Alemania y se al&iacute;a con Gran Breta&ntilde;a y
+Francia."</p>
+<p>Las circunstancias de la llamada "Guerra de Symbolics" de
+1982-1983 dependen fuertemente de qui&eacute;n sea el que cuente la
+historia. Cuando los ejecutivos de Symbolics se dieron cuenta de
+que sus caracter&iacute;sticas mas novedosas a&uacute;n
+aparec&iacute;an en la M&aacute;quina Lisp del Laboratorio de IA y,
+por extensi&oacute;n en la m&aacute;quina de LMI, instalaron un
+programa "esp&iacute;a" en la terminal de computador de Stallman.
+Stallman dice que estaba reescribiendo las nuevas
+caracter&iacute;sticas de ceros, aprovechando una cla&uacute;sula
+de la licencia que permit&iacute;a las revisiones, pero
+tambi&eacute;n incurriendo en esfuerzos para que el c&oacute;digo
+fuente fuera bastante diferente. Los ejecutivos de Symbolics no
+estuvieron de acuerdo y llevaron su caso ante la
+administraci&oacute;n de MIT. De acuerdo al libro de 1994,
+[<span class="CITATION">The Brain Makers: Genius, Ego, and Greed,
+and the Quest for Machines That Think</span>], escrito por Harvey
+Newquist, la administraci&oacute;n respondi&oacute; con una
+advertencia a Stallman para que se "mantuviera alejado" del
+proyecto de la M&aacute;quina Lisp. <a name="AEN1507" href=
+"#FTN.AEN1507">[14]</a> Seg&uacute;n Stallman los administradores
+de MIT lo respaldaron. "Nunca fui amenzado," dice. "Si hice algunos
+cambios en mi forma de hacer las cosas, sin embargo. S&oacute;lo
+para estar ultra seguro, ya no le&iacute;a el c&oacute;digo fuente.
+Usaba solamente la documentaci&oacute;n y despu&eacute;s
+escrib&iacute;a el c&oacute;digo a partir de eso."</p>
+<p>Sin importar el resultado, la discusi&oacute;n solidific&oacute;
+la resoluci&oacute;n de Stallman. Sin c&oacute;digo fuente para
+revisar, Stallman llen&oacute; los vac&iacute;os en el software de
+acuerdo a sus propios gustos y enlist&oacute; a los miembros del
+Laboratorio de IA para que le produjeran un flujo continuo de
+reportes de error. Tambi&eacute;n se asegur&oacute; de que los
+programadores de LMI tuvieran acceso directo a los cambios. "Iba a
+castigar Symbolics aunque fuera lo &uacute;ltimo que hiciera," dice
+Stallman.</p>
+<p>Este tipo de declaraciones son reveladoras. No solo arrojan una
+luz sobre la naturaleza no pacifista de Stallman, sino que
+tambi&eacute;n reflejan el intenso nivel de emoci&oacute;n
+provocado por el conflicto. De acuerdo a otra historia relacionada
+con Newquist, Stallman estaba tan enfurecido en un punto que
+escribi&oacute; un correo electr&oacute;nico amenazando "envolverme
+a mi mismo en dinamita y entrar en las oficinas de Symbolics."
+<a name="AEN1512" href="#FTN.AEN1512">[15]</a> A pesar de que
+Stallman niega recordar el correo electr&oacute;nico, y a&uacute;n
+describe su existencia como un "rumor vicioso," el es conciente de
+que esos pensamientos si entraron a su cabeza. "Yo definitivamente
+si tuve fantas&iacute;as de matarme a mi mismo y destruir su
+edificio en el proceso," dice Stallman. "Pens&eacute; que mi vida
+hab&iacute;a terminado." <a name="AEN1515" href=
+"#FTN.AEN1515">[16]</a></p>
+<p>Este nivel de frustraci&oacute;n era debido en gran parte a lo
+que Stallman ve&iacute;a como la "destrucci&oacute;n" de su "hogar"
+--i.e., el final de la subcultura hacker del Laboratorio de IA. En
+una entrevista posterior por correo electr&oacute;nico con Levy,
+Stallman se vincular&iacute;a a si mismo con la figura
+hist&oacute;rica de Ishi, el &uacute;ltimo miembro sobreviviente de
+los Yahi, una trib&uacute; del Nordeste de la costa Pac&iacute;fica
+aniquilada durante las Guerras Indias de las d&eacute;cadas de 1860
+y 1870. La analog&iacute;a ubica la supervivencia de Stallman en
+t&eacute;rminos &eacute;picos, casi m&iacute;ticos. En la realidad,
+sin embargo, habla un poco m&aacute;s acerca de la tensi&oacute;n
+entre Stallman y sus compa&ntilde;eros hackers del laboratorio de
+IA antes del asunto Symbolics-LMI. En lugar de ver a Symbolics como
+una fuerza exterminadora, muchos de los colegas de Stallman la
+ve&iacute;an como una posibilidad tard&iacute;a de relevancia.
+Comercializando la M&aacute;quina Lisp, la compa&ntilde;&iacute;a
+expuls&oacute; los conceptos de dise&ntilde;o de software manejado
+por ingenieros de los confines de la torre de m&aacute;rfil del
+laboratorio de IA hac&iacute;a el mercado, donde mandaban los
+principios de dise&ntilde;o de los gerentes. En lugar de ver a
+Stallman como un <span class="SYSTEMITEM">adalid</span>, muchos
+hackers lo ve&iacute;an como un anacronismo
+problem&aacute;tico.</p>
+<p>Stallman no disputa esta visi&oacute;n alternativa de los
+eventos hist&oacute;ricos. De hecho, el dice que fue una
+raz&oacute;n m&aacute;s para aumentar la hostilidad causada por el
+"ultimatum" de Symbolics. Incluso antes de que Symbolics contratara
+a la mayor&iacute;a del personal hacker del laboratorio de IA,
+Stallman dice que muchos de los hacker que m&aacute;s tarde se
+unir&iacute;an a Symbolics lo estaban evitando. "Ya no estaba
+siendo invitado a Chinatown," recierda Stallman. "La costumbre
+iniciada por Greenblatt era que si uno sal&iacute;a a comer, iba de
+un lugar a otro o enviaba un mensaje preguntando a cualquiera en el
+laboratorio si deseaba ir. El alg&uacute;n momento entre 1980 y
+1981 dejaron de preguntarme. No s&oacute;lo no estaba siendo
+invitado, sino que una persona me confes&oacute; mas tarde que
+hab&iacute;a sido presionado para mentirme con el fin de mantener
+una salida a comer sin mi como un secreto."</p>
+<p>A pesar de que Stallman sent&iacute;a furia hac&iacute;a
+aquellos hackers que orquestaron esta singular forma de ostracismo,
+la controversia de Symbolics gener&oacute; un nuevo tipo de furia,
+la furia de una persona a punto de perder su hogar. Cuando
+Symbolics dej&oacute; de enviar el c&oacute;digo fuente de sus
+cambios, Stallman respondi&oacute; encerr&aacute;ndose en sus
+oficinas de MIT y reescribiendo cada nueva caracter&iacute;stica y
+herramienta desde ceros. Tan frustrante como puede haber sido,
+garantizaba que los usuarios futuros de la M&aacute;quina Lisp
+tuvieran acceso irrestricto a las mismas caracter&iacute;sticas que
+los usuarios de Symbolics.</p>
+<p>Tambi&eacute;n garantiz&oacute; la condici&oacute;n legendaria
+de Stallman dentro de la comunidad hacker. Ya conocido por su
+trabajo con Emacs, la habilidad de Stallman para igualar los
+resultados de todo un equipo de programadores de Symbolics --un
+equipo que, por s&iacute; mismo, inclu&iacute;a a mas de un hacker
+legendario-- a&uacute;n es considerado como uno de los mayores
+logros humanos de la Era de la Informaci&oacute;n, o de cualquier
+era. Llamandolo un "<i class="FOREIGNPHRASE">hack</i> maestro" y a
+Stallman mismo un "John Henry virtual del c&oacute;digo de
+computador, " el autor Steven Levy anota que muchos de sus rivales
+empleados por Symbolics no ten&iacute;an otra opci&oacute;n que
+respetar, a pesar suyo, a su antiguo camarada idealista. Levy se
+refiere a las declaraciones de Bill Gosper, un hacker que
+eventualmente se fue a trabajar para Symbolics en la oficina de la
+compa&ntilde;&iacute;a en Palo Alto, cuando expresa su asombro ante
+los resultados de Stallman durante este periodo:</p>
+<a name="AEN1533"></a>
+<blockquote class="BLOCKQUOTE">
+<p>Pod&iacute;a ver algo que Stallman escribi&oacute;, y
+pod&iacute;a decidir que era malo (probablemente no, pero
+algui&eacute;n podr&iacute;a convencerme de que era malo), y yo
+todav&iacute;a dir&iacute;a "Pero, esperen un momento --Stallman no
+tiene nadie con qui&eacute;n discutir toda la noche all&aacute;.
+&iexcl;Esta trabajando solo! &iexcl;Es increible que algui&eacute;n
+pudiera hacer esto solo!" <a name="AEN1535" href=
+"#FTN.AEN1535">[17]</a></p></blockquote>
+<p>Para Stallman los meses gastados jugando a igualar a Symbolics
+evocan una mezcla de orgullo y profunda tristeza. Como un liberal
+cuyo padre hab&iacute;a participado en la Segunda Guerra Mundial
+Stallman no es ning&uacute;n pacifista. De muchas maneras la guerra
+contra Symbolics ofreci&oacute; el rito de paso hac&iacute;a el que
+Stallman se hab&iacute;a ido acercando desde que se hab&iacute;a
+unido al personal del Laboratorio de IA una d&eacute;cada antes. Al
+mismo tiempo, sin embargo, coincidi&oacute; con la
+destrucci&oacute;n traum&aacute;tica de la cultura hacker que
+hab&iacute;a acogido a Stallman desde sus a&ntilde;os de
+adolescencia. Un d&iacute;a, mientras tomaba un descanso de
+escribir c&oacute;digo, Stallman experiment&oacute; un momento
+traum&aacute;tico cuando pasaba por la sala de equipos de
+laboratorio. All&iacute; Stallman encontr&oacute; el aparatoso
+armaz&oacute;n de la m&aacute;quina PDP-10, ya en desuso.
+Impresionado por las luces apagadas, luces que alguna vez se
+encendieron activamente para indicar el estado del programa
+interno, Stallman dice que el impacto emocional no fue muy
+diferente de aquel que se siente al encontrarse con el
+cad&aacute;ver bien conservado de alg&uacute;n miembro de la
+familia muy querido.</p>
+<p>"Empec&eacute; a llorar all&iacute; mismo en la sala de equipos,
+" dice. "Viendo la m&aacute;quina all&iacute;, muerta, con nadie
+m&aacute;s para arreglarla vi como mi comunidad hab&iacute;a sido
+completamente destruida."</p>
+<p>Stallman tendr&iacute;a muy pocas oportunidades para lamentarse.
+A pesar de todo el furor que hab&iacute;a causado y de todo el
+trabajo necesario para desarrollarla, no era m&aacute;s que un
+espect&aacute;culo de segunda en las grandes batallas del mercado
+de la tecnolog&iacute;a. El incansable ritmo de la
+miniaturizaci&oacute;n estaba trayendo nuevos y m&aacute;s
+poderosos microprocesadores que pronto de incoroporar&iacute;an en
+las capacidades de <i class="FOREIGNPHRASE">hardware</i> y
+   <i class="FOREIGNPHRASE">software</i> de la misma manera en que
+   una ciudad moderna se traga un peque&ntilde;o poblado
+   desierto.</p>
+<p>En la cresta de esta ola de microprocesadors se encontraban
+cientos de miles de programas de software comercial, cada uno
+protegido por un intrincado conjunto de licencias y acuerdos de
+privacidad que hac&iacute;a imposible para los hackers revisar o
+compartir el c&oacute;digo fuente. Las licencias eran
+      <span class="SYSTEMITEM">toscas y a veces no encajaban muy
+      bien</span>, pero para 1983 ya eran lo suficientemente
+      fuertes como para satisfacer a las cortes y asustar a quienes
+      quisiseran transgredirlas. El <i class=
+      "FOREIGNPHRASE">software</i>, alguna vez una forma de aderezo
+      que la mayor&iacute;a de las compa&ntilde;&iacute;as de
+      hardware regalaban para darle a sus sistemas m&aacute;s
+      sabor, se estaba convirtiendo r&aacute;pidamente en el plato
+      principal. En su creciente hambre por nuevos juegos y
+      caracter&iacute;sticas los usuarios estaban dejando de lado
+      la solicitud tradicional de revisar la receta despu&eacute;s
+      de cada comida.</p>
+<p>En ninguna parte era este estado de las cosas m&aacute;s
+evidente que en el campo de los sistemas personales de
+computadores. Compa&ntilde;&iacute;as como Apple Compter y
+Commodore estaban creando nuevos millonarios vendiendo
+m&aacute;quinas con sistemas operativos incluidos. Sin saber de la
+existencia de la cultura hacker y de su disgusto por el software
+que se distribu&iacute;a solemente en binario, la mayor&iacute;a de
+los usuarios no vieron necesidad de protestar cuando estas
+compa&ntilde;&iacute;as no incluyeron los archivos de c&oacute;digo
+fuente. Algunos an&aacute;rquicos seguidores de la &eacute;tica
+hacker ayudaron a promover esa &eacute;tica dentro de este nuevo
+mercado, pero en su mayor parte el mercado recompensaba a sus
+programadores lo suficientemente r&aacute;pido como para que
+escribieran nuevos programas y con el suficiente sentido
+com&uacute;n como para proteger los trabajos legalmente por medio
+de derechos de autor.</p>
+<p>Uno de los mas notables de estos programadores era Bill Gates,
+un desertor de Harvard dos posterior a Stallman. A pesar de que
+Stallman no lo sab&iacute;a en ese momento, siete a&ntilde;os antes
+de enviar su mensaje al grupo de noticias net.unix-wizards Gates,
+un naciente emprendedor y socio de la firma de software de
+Albuquerque Micro-Soft, que despu&eacute;s se escribir&iacute;a
+Microsoft, hab&iacute;a enviado su propia carta abierta a la
+comunidad de desarrolladores. Escrita como respuesta a la actitud
+de los usuarios de PC de copiar los programas de Micro-Soft, la
+"Carta abierta a los Aficionados" (<i class="FOREIGNPHRASE">Open
+Letter to Hobbyists</i>) hab&iacute;a criticado fuertemente la
+noci&oacute;n de desarrollo comunitario de software.</p>
+<p>"&iquest;Qui&eacute;n puede darse el lugo de hacer trabajo
+profesional por nada?" preguntaba Gates. "&iquest;Que aficionado
+puede ponerle tres a&ntilde;os hombre a programar, corregir y
+documentar su producto para despu&eacute;s distribuirlo gratis?"
+<a name="AEN1567" href="#FTN.AEN1567">[18]</a></p>
+<p>A pesar de que solo algunos hackers del Laboratorio de IA vieron
+la misiva, la carta de Gates de 1976 representaba la cambiante
+actitud hac&iacute;a el software tanto entre
+compa&ntilde;&iacute;as de software comercial como entre
+desarrolladores de software comercial. &iquest;Por qu&eacute;
+tratar al software como un bien de costo cero cuando el mercado
+dec&iacute;a otra cosa? Cuando los a&ntilde;os 70 le dieron paso a
+los 80 vender software se volvi&oacute; mucho m&aacute;s que una
+manera de pagar los costos, se convirti&oacute; en una
+declaraci&oacute;n pol&iacute;tica. En un momento en que la
+Administraci&oacute;n Reagan estaba r&aacute;pidamente
+desmantelando muchas de las regulaciones federales y programas de
+gastos que se hab&iacute;an construido durante el medio siglo que
+sigui&oacute; a la gran depresi&oacute;n, muchos programadores de
+software vieron la &eacute;tica hacker como anticompetitiva y, por
+extensi&oacute;n, no americana. En el mejor de los casos era un
+recuerdo de las actitudes anticorporativas de finales de los
+sesentas y comienzos de los setentas. Como si un banquero
+descubriera un <span class="SYSTEMITEM">poncho hippie entre sus
+camisas y corbatas</span>, muchos programadores de computadores
+trataban la &eacute;tica hacker como un vestigio embarazoso de una
+era idealista.</p>
+<p>Como un hombre que hab&iacute;a permanecido durante todos los
+sesentas como un embarazoso retorno a los cincuentas, a Stallman no
+le importaba vivir fuera de tiempo con sus compa&ntilde;eros. Como
+un programador acostumbrado a trabajar con las mejores
+m&aacute;quinas y el mejor software, sin embargo, Stallman se
+enfrentaba lo que &eacute;l solo pod&iacute;a describir como una
+"dif&iacute;cil decisi&oacute;n moral": o se sobrepon&iacute;a a su
+objeci&oacute;n hac&iacute;a el software "propietario" --el
+t&eacute;rmino que Stallman y los hackers utilizaban para describir
+cualquier programa que incluyera derechos de autor privados o una
+licencia que restringiera la copia y modificaci&oacute;n-- o
+dedicaba su vida a construir un sistema alterno, no propietario, de
+programas de software. Dado su reciente enfrentamiento de varios
+meses contra Symbolics, Stallman se sent&iacute;a mucho mas
+c&oacute;modo con la segunda opci&oacute;n. "Supongo que pude haber
+dejado de trabajar con software del todo," dice Stallman. "No
+ten&iacute;a habilidades especiales, pero estoy seguro de que me
+pude haber convertido en un mesero. No en un restaurante elegante,
+probablemente, pero pude haber sido un mesero en alguna parte."</p>
+<p>Convertirse en mesero --i.e., abandonar del todo la
+programaci&oacute;n --habr&iacute;a significado renunciar
+totalmente a una actividad, programaci&oacute;n de computadores,
+que le hab&iacute;a proporcionado tanto placer. Mirando
+hac&iacute;a atr&aacute;s su vida desde que se mud&oacute; a
+Cambridge, Stallman encuentra f&aacute;cil identificar largos
+periodos cuando la programaci&oacute;n de software
+proporcion&oacute; el &uacute;nico placer. En lugar de desertar,
+Stallman decidi&oacute; perseverar.</p>
+<p>Como ateo, Stallman rechaza nociones como el destino, el dharma
+o una llamada divina. Sin embargo, &eacute;l si siente que la
+decisi&oacute;n de evitar el software propietario y construir un
+sistema operativo para ayudar a otros a hacer lo mismo fue natural.
+Despu&eacute;s de todo fue la combinaci&oacute;n de terquedad,
+visi&oacute;n y "virtuosismo en la codificaci&oacute;n" del mismo
+Stallman los que lo motivaron a considerar una divisi&oacute;n en
+un camino cuya existencia ignoraban muchos. Cuando describe esta
+decisi&oacute;n en un cap&iacute;tulo para el libro de 1999
+[<span class="CITATION">Open Sources</span>], Stallman se refiere
+al espirit&uacute; latente en las palabras de la saga jud&iacute;a
+de Hillel:</p>
+<a name="AEN1582"></a>
+<blockquote class="BLOCKQUOTE">
+<p>Si yo no soy para mi mismo, entonces qui&eacute;n ser&aacute;
+para mi? Si s&oacute;lo soy para mi mismo entonces,
+&iquest;Qu&eacute; soy? Si no es ahora &iquest;Cuando? <a name=
+"AEN1584" href="#FTN.AEN1584">[19]</a></p></blockquote>
+<p>Cuando habla frente al p&uacute;blico, Stallman evita el camino
+religioso y expresa la decisi&oacute;n en t&eacute;rminos
+pragm&aacute;ticos. "Me preunt&eacute; a mi mismo:
+&iquest;Qu&eacute; puedo yo, un desarrollador de sistemas
+operativos, hacer para mejorar la situaci&oacute;n? No fue sino
+hasta que examin&eacute; la pregunta por un tiempo que me di cuenta
+de que un desarrollador de sistemas operativos era exactamente lo
+que se necesitaba para resolver el problema."</p>
+<p>Una vez lleg&oacute; a esta decisi&oacute;n, seg&uacute;n
+Stallman, todo lo dem&aacute;s "qued&oacute; en su sitio." Se
+abstendr&iacute;a de usar programas de software que comprometieran
+sus creencias &eacute;ticas, y al mismo tiempo dedicar&iacute;a su
+vida a crear software para facilitarle a otros seguir el mismo
+camino. Como parte de su cruzada por construir un sistema operativo
+con software libre o a "morir intentando; de viejo, por suspuesto,"
+a&ntilde;ade Stallman, renunci&oacute; en MIT en enero de 1984,
+para construir GNU.</p>
+<p>La renuncia distancio el trabajo de Stallman de los auspicios
+legales de MIT. Sin embargo, Stallman a&uacute;n ten&iacute;a
+suficientes amigos y aliados dentro del Laboratorio de IA como para
+mantener su oficina en MIT sin pagar arriendo. Tambi&eacute;n
+ten&iacute;a la habilidad de asegurarse trabajos de
+consultor&iacute;a externos para subvencionar los estadios
+iniciales de desarrollo del Proyecto GNU. Al renunciar de MIT, sin
+embargo, Stallman imposibilit&oacute; cualquier debate sobre
+conflicto de inter&eacute;s o propiedad del software por parte del
+instituto. Stallman, cuyo miedo al aislamiento social lo
+hab&iacute;a inclinado a involucrarse cada vez m&aacute;s con el
+laboratorio de IA durante su adultez temprana, estaba ahora
+construyendo una pared legal entre &eacute;l mismo y ese
+entorno.</p>
+<p>Durante los primeros meses, Stallman oper&oacute; tambi&eacute;n
+aislado de la comunidad Unix. A pesar de que su anuncio en el grupo
+net.unix-wizards hab&iacute;a atra&iacute;do respuestas de
+simpatizantes, muy pocos voluntarios se enlistaron para unirse a la
+cruzada en sus primera etapas.</p>
+<p>"La reacci&oacute;n de la comunidad fue en gran parte uniforme,"
+recuerda Rich Morin, l&iacute;der de un grupo de usuarios de Unix
+en ese entonces. "La gente dec&iacute;a, `Oh, es una gran idea.
+Mu&eacute;strenos su c&oacute;digo. Mu&eacute;strenos que puede
+hacerse.'"</p>
+<p>A la manera realmente hacker, Stallman comenz&oacute; a buscar
+programas y herramientas existentes que pudieran ser convertidas y
+programas y herramientas GNU. Uno de los primeros fue un compilador
+llamado VUCK, que convert&iacute;a los programas escritos en el
+popular lenguaje C en c&oacute;digo de m&aacute;quina. Traducido
+del holand&eacute;s, el acr&oacute;nimo quer&iacute;a decir Kit de
+Compilador de la Universidad Libre (<i class="FOREIGNPHRASE">Free
+University Compiler Kit</i>), optimista, Stallman le
+pregunt&oacute; al autor del programa si este efectivamente era
+libre. Cuando este le inform&oacute; que las palabras "Universidaad
+Libre" se refer&iacute;an a la <i class="FOREIGNPHRASE">Vrije
+Universiteit</i>, en Amsterdam Stallman estaba decepcionado.</p>
+<p>"El le contest&oacute; <span class=
+"SYSTEMITEM">sarc&aacute;sticamente</span> que la Universidad era
+libre, pero el compilador no," recuerda Stallman. "Yo en
+consecuencia decid&iacute; que mi primer prigrama para el Proyecto
+GNU ser&iacute;a un compilador multilenguaje y multiplataforma."
+<a name="AEN1608" href="#FTN.AEN1608">[20]</a></p>
+<p>Eventualmente Stallman encontr&oacute; un compilador del
+lenguage Pastel escrito por programadores del Laboratorio Nacional
+Lawrence Livermore. De acuerdo a la informaci&oacute;n que Stallman
+pose&iacute;a en ese momento, el compilador era libre para ser
+copiado y modificado. Desafortunadamente, el programa ten&iacute;a
+una falla de dise&ntilde;o importante: grababa cada uno de los
+programas en la <span class="SYSTEMITEM">memoria base</span>, por
+lo que acaparaba espacio, necesario para otras actividades del
+software. En sistemas tipo <i class="FOREIGNPHRASE">mainframe</i>
+esta falla de dise&ntilde;o era perdonable. En sistemas Unix era
+una barrera inhabilitante, ya que las m&aacute;quinas que
+corr&iacute;an Unix eran demasiado peque&ntilde;as para manejar los
+enormes archivos generados. Stallman hizo progresos sustanciales en
+un comienzo, construyendo una interfaz compatible con C para el
+compilador. Para el verano, sin embargo, hab&iacute;a llegado a la
+conclusi&oacute;n de que deber&iacute;a construir un compilador
+totalmente nuevo desde ceros.</p>
+<p>En septiembre de 1984, Stallman archiv&oacute; el desarrollo de
+compiladores a corto plazo y comenz&oacute; a buscar objetivos
+m&aacute;s cercanos. Inici&oacute; el desarrollo de una
+versi&oacute;n GNU de Emacs, el programa que el mismo hab&iacute;a
+supervisado por una d&eacute;cada. La decisi&oacute;n fue
+estrat&eacute;gica. Dentro de la comunidad Unix, los dos editores
+nativos eran vi, escrito por el cofundador de Sun Microsystems,
+Bill Joy y ed, escrito por el cient&iacute;fico de los Laboratorios
+Bell (y co-creador de Unix) Ken Thompson. Ambos eran &uacute;tiles
+y populares, pero ninguno de los dos ofrec&iacute;a la naturaleza
+infinitamente expandible de Emacs. En el proceso de reescritura de
+Emacs para los interesados en Unix, Stallman ten&iacute;a mejores
+posibilidades de mostrar sus habilidades. Adem&aacute;s,
+ten&iacute;a sentido pensar que los usuarios de Emacs
+estar&iacute;an mas sintonizados con la mentalidad de Stallman.</p>
+<p>Mirando hac&iacute;a atr&aacute;s, Stallman dice que el no
+vi&oacute; la decisi&oacute;n en t&eacute;rminos
+estrat&eacute;gicos. "Quer&iacute;a un Emacs, y ten&iacute;a una
+buena oportunidad de desarrollar uno."</p>
+<p>Una vez m&aacute;s, la idea de reinventar la rueda irritaba la
+sensibilidad de hacker eficiente de Stallman. En el proceso de
+escribir una versi&oacute;n de Emacs para Unix, Stallman estaba
+pronto siguiendo los pasos del estudiante graduado de Carnegie
+Mellon James Gosling, autor de una versi&oacute;n de Emacs basada
+en C llamada Gosling Emacs o GOSMACS. La versi&oacute;n de Gosling
+inclu&iacute;a un int&eacute;rprete que aprovechaba un subconjunto
+simplificado del leguaje LISP llamado MOCKLISP. Decidido a
+construir GNU Emacs con unos cimientos de LISP similares, Stallman
+aprovech&oacute; muchas de las innovaciones de Gosling. A pesar de
+que Gosling hab&iacute;a protegido a GOSMACS con derechos de autor
+y hab&iacute;a vendido los derechos a UniPress, una
+compa&ntilde;&iacute;a de software privada, Stallman se bas&oacute;
+en las afirmaciones de un compa&ntilde;ero desarrollador que
+hab&iacute;a participado en el desarrollo inicial del
+int&eacute;rprete de MOCKLISP. De acuerdo al desarrollador,
+Gosling, mientras que era un estudiante de Ph.D. en Carnegie
+Mellon, hab&iacute;a asegurado a sus colaboradores iniciales que su
+trabajo se mantendr&iacute;a accesible. A pesar de esto, cuando
+UniPress se di&oacute; cuenta de la naturaleza del proyecto de
+Stallman amenaz&oacute; con hacer v&aacute;lidos los derechos de
+autor. De nuevo Stallman se enfrentaba a la idea de comenzar todo
+desde ceros.</p>
+<p>En el proceso de ingenier&iacute;a reversa del int&eacute;rprete
+de Gosling, Stallman crear&iacute;a un int&eacute;rprete de Lisp
+completamente funcional, haciendo innecesaria la primera
+versi&oacute;n del int&eacute;rprete de Gosling. Sin embargo, la
+idea de ver a los desarrolladores vendiendo derechos sobre el
+software --de hecho, la noci&oacute;n misma de los desarrolladores
+teniendo derechos para vender en primer lugar-- <span class=
+"SYSTEMITEM">molestaba profundamente</span> a Stallman. En un
+discurso en el Instituto T&eacute;cnico Real de Suecia, en 1986,
+Stallman cit&oacute; el incidente con UniPress como otro ejemplo de
+los peligros asociados con el software propietario.</p>
+<p>"A veces pienso que posiblemente una de las mejores cosas que
+podr&iacute;a hacer con mi vida es encontrar una pila enorme de
+software propietario que sea secreto comercial, y comenzar a
+regalar copias en una esquina de la calle para que no sea
+m&aacute;s un secreto comercial," dij&oacute; Stallman.
+"Posiblemente esa sea una manera mucho m&aacute;s eficiente de
+darle a la gente nuevo software libre, mucho m&aacute;s que
+escribirlo yo mismo; pero todos son demasiado cobardes como para
+siquiera aceptarlo." <a name="AEN1656" href=
+"#FTN.AEN1656">[21]</a></p>
+<p>A pesar de la tensi&oacute;n que gener&oacute;, la disputa sobre
+las innovaciones de Gosling ayudar&iacute;a a largo plazo tanto a
+Stallman como al movimiento de software libre. Esta
+confrontaci&oacute;n obligar&iacute;a a Stallman a solucionar las
+debilidades de la Comuna de Emacs y el sistema informal de
+confianza que hab&iacute;a permitido la aparici&oacute;n se
+situaciones problem&aacute;ticas, adem&aacute;s, Stallman se
+ver&iacute;a en la necesidad de endurecer los objetivos
+pol&iacute;ticos del movimiento de software libre. Luego del
+lanzamiento de GNU Emacs en 1985, Stallman hizo p&uacute;blico el
+"Manifiesto GNU," una extensi&oacute;n del anuncio original,
+publicado en Septiembre de 1983. Stallman incluy&oacute; dentro del
+documento una larga secci&oacute;n dedicada a los muchos argumentos
+utilizados por programadores comerciales y acad&eacute;micos para
+justificar la proliferaci&oacute;n de programas de software
+propietario. Un argumento, "&iquest;Acaso los programadores no
+merecen una recompensa por su creatividad?, " obtuvo una respuesta
+que resume la furia de Stallman respecto al reciente episodio con
+el Emacs de Gosling:</p>
+<p>"Si algo merece una recompensa, es la contribuci&oacute;n
+social," escribi&oacute; Stallman. "La creatividad puede ser una
+contribuci&oacute;n social, pero solo en la medida en que la
+sociedad sea libre para usar los resultados. Si los programadores
+merecen ser recompensados por crear programas innovadores, entonces
+por la misma raz&oacute;n merecen ser castigados si restringen el
+uso de estos programas." <a name="AEN1667" href=
+"#FTN.AEN1667">[22]</a></p>
+<p>Con el lanzamiento de GNU Emacs, el Proyecto GNU finalmente
+ten&iacute;a c&oacute;digo para mostrar. Tambi&eacute;n
+ten&iacute;a los problemas t&iacute;picos de cualquier iniciativa
+de software. A medida que m&aacute;s y m&aacute;s desarrolladores
+de Unix comenzaron a jugar con el software, dinero, regalos y
+solicitudes de cintas comenzaron a llegar. Para atender la parte de
+negocios del proyecto GNU Stallman <span class=
+"SYSTEMITEM">reclut&oacute;</span> a algunos de sus colegas y
+form&oacute; la Fundaci&oacute;n para el Software Libre
+   (<i class="FOREIGNPHRASE">Free Software Foundation</i>), una
+   organizaci&oacute;n sin &aacute;nimo de lucro dedicada a
+   acelerar el Proyecto GNU hac&iacute;a su meta. Con Stallman como
+   presidente y varios hackers aliados como miembros del
+   directorio, la FSF ayud&oacute; a proporcionarle un rostro
+   corporativo al proyecto GNU.</p>
+<p>Robert Chassell, un programador que trabajaba en ese entonces en
+Lisp Machines, Inc., se convirti&oacute; uno de los cinco
+<span class="SYSTEMITEM">miembros del directorio</span> en la
+Fundaci&oacute;n para el Software Libre tras una
+conversaci&oacute;n durante una comida con Stallman. Chassell
+tambi&eacute;n ejerci&oacute; como tesorero de la
+organizaci&oacute;n, un papel que comenz&oacute; siendo
+peque&ntilde;o, pero r&aacute;pidamente creci&oacute;.</p>
+<p>"Cre&oacute; que en el a&ntilde;o 85 nuestros gastos e ingresos
+totales fueron del orden de $23,000, m&aacute;s o menos," recuerda
+Chassell. "Richard ten&iacute;a su oficina, y nosotros
+tom&aacute;bamos espacio prestado. Yo puse todas las cosas,
+especialmente las cintas, baj&oacute; mi escritorio. No fue sino
+hasta alg&uacute;n tiempo despu&eacute;s que LMI nos prest&oacute;
+algo de espacio para almecenar cintas y cosas de ese tipo."</p>
+<p>Adem&aacute;s de proporcionar un rostro, la Fundaci&oacute;n
+para el Software Libre proporcion&oacute; un centro de gravedad
+para otros programadores desencantados. El mercado de Unix, que
+hab&iacute;a parecido tan colegial, incluso en el momento del
+anuncio inicial de GNU, estaba volvi&eacute;ndose cada vez
+m&aacute;s competitivo. En un intento por aferrarse de manera mas
+segura a sus clientes, las compa&ntilde;&iacute;as hab&iacute;an
+comenzado a cerrar el acceso al c&oacute;digo fuente de Unix. Esta
+tendencia no hizo m&aacute;s que aumentar el n&uacute;mero de
+solicitudes para los proyectos de software de GNU. Los magos de
+Unix que alguna vez hab&iacute;an visto a Stallman como un ruidoso
+agitador de los grupos de noticias, sin demasiados v&iacute;nculos
+con la realidad, ahora lo ve&iacute;an como un profeta, una especie
+de Cassandra del software.</p>
+<p>"Mucha gente no se da cuenta, hasta que le toca padecerlo, que
+tan frustrante pude ser gastar varios a&ntilde;os trabajando en un
+proyecto de software, solo para que te lo quiten despu&eacute;s,"
+dice Chassell, resumiendo los sentimientos y opiniones de los
+corresponsales que escrib&iacute;an a la FSF durante los primeros
+a&ntilde;os. "Despu&eacute;s de que eso sucede un par de veces,
+empiezas a decirte a ti mismo, `Oye, espera un momento.'"</p>
+<p>Para Chassell, la decisi&oacute;n de participar en la
+Fundaci&oacute;n para el Software Libre se origin&oacute; en su
+propio sentimiento personal de p&eacute;rdida. Antes de trabajar en
+LMI, Chassell hab&iacute;a estado trabajando como empleado,
+escribiendo un libro introductorio de Unix para Cadmus, Inc. una
+compa&ntilde;&iacute;a de Software del &aacute;rea de Cambridge.
+Cuando Cadmus quebr&oacute;, arrastrando los derechos del libro
+consigo, Chassell dice que intent&oacute; recomprar los derechos de
+libro de vuelta, sin ning&uacute;n &eacute;xito.</p>
+<p>"Hasta donde yo se, ese libro esta a&uacute;n apilado en un
+estante en alguna parte, inutilizable, incopiable, simplemente
+sustra&iacute;do del sistema," dice Chassell. "Era una muy buena
+introducci&oacute;n, si me permiten decirlo. Habr&iacute;a tomado
+tal vez tres o cuatro meses convertir [el libro] en una
+introducci&oacute;n a GNU/Linux perfectamente utilizable. La
+experiencia, con excepci&oacute;n de lo que tengo en mi memoria, se
+perdi&oacute;."</p>
+<p>Obligado a ver su trabajo hundirse mientras su antiguo empleador
+pasaba por la bancarrota, Chassell dice que tuvo una idea de la
+furia que llev&oacute; a Stallman al borde de la apoplej&iacute;a.
+"La noci&oacute;n m&aacute;s clara, para mi, era el saber que si
+uno desea llevar una vida decente, entonces no puede tener partes
+de ella cerradas," dice Chassell. "La idea de tener la libertad de
+ir y arreglar o modificar una cosa, cualquiera que esta sea,
+realmente hace la diferencia. Lo hace a uno pensar con
+alegr&iacute;a que despu&eacute;s de haber vivido unos a&ntilde;os
+lo que se ha hecho vale la pena. Porqu&eacute; de otra manera
+simplemente se pierde y alg&uacute;n otro se lo lleva y lo
+deshecha, o lo abandona, y, en el mejor de los casos, uno ya no
+tiene ninguna relaci&oacute;n con eso. Es como perder una parte de
+la vida."</p></div>
+<h3 class="FOOTNOTES">Notas</h3>
+<table border="0" class="FOOTNOTES" width="100%">
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1358"
+   href="chapter-7.html#AEN1358">[1]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman, "Anuncio Inicial de GNU" (Septiembre
+1983).
+http://www.gnu.ai.mit.edu/gnu/initial-announcement.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1367"
+   href="chapter-7.html#AEN1367">[2]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman, "Anuncio Inicial de GNU" (Septiembre
+1983).
+http://www.gnu.ai.mit.edu/gnu/initial-announcement.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1374"
+   href="chapter-7.html#AEN1374">[3]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman, "Anuncio Inicial de GNU" (Septiembre
+1983).
+http://www.gnu.ai.mit.edu/gnu/initial-announcement.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1399"
+   href="chapter-7.html#AEN1399">[4]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Vea Marshall Kirk McKusick, "Twenty Years of Berkeley Unix,"
+[<span class="CITATION">Open Sources</span>] (O'Reilly &amp;amp;
+Associates, Inc., 1999): 38.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1411"
+   href="chapter-7.html#AEN1411">[5]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1424"
+   href="chapter-7.html#AEN1424">[6]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1431"
+   href="chapter-7.html#AEN1431">[7]</a></td>
+<td align="left" valign="top" width="95%">
+<p>M&uacute;ltiples fuentes: vea la entrevista con Richard
+Stallman, el correo de Gerald Sussman, y el Jargon File 3.0.0.
+http://www.clueless.com/jargon3.0.0/TWENEX.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1439"
+   href="chapter-7.html#AEN1439">[8]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver
+http://www.as.cmu.edu/~geek/humor/See_Figure_1.txt</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1446"
+   href="chapter-7.html#AEN1446">[9]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1458"
+   href="chapter-7.html#AEN1458">[10]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver "MIT AI Lab Tourist Policy."
+http://catalog.com/hopkins/text/tourist-policy.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1460"
+   href="chapter-7.html#AEN1460">[11]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1463"
+   href="chapter-7.html#AEN1463">[12]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1488"
+   href="chapter-7.html#AEN1488">[13]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver H. P. Newquist, [<span class="CITATION">The Brain Makers:
+Genius, Ego, and Greed in the Quest for Machines that Think</span>]
+(Sams Publishing, 1994): 172.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1507"
+   href="chapter-7.html#AEN1507">[14]</a></td>
+<td align="left" valign="top" width="95%">
+<p>[<span class="CITATION">Ibid.</span>]: 196.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1512"
+   href="chapter-7.html#AEN1512">[15]</a></td>
+<td align="left" valign="top" width="95%">
+<p>[<span class="CITATION">Ibid.</span>] Newquist, qui&eacute;n
+dice que esta an&eacute;cdota fue confirmada por varios ejecutivos
+de Symbolics, escribe, "El mensaje caus&oacute; una breve
+r&aacute;faga de excitaci&oacute;n y especulaci&oacute;n por parte
+de los empleados de Symbolics, pero al fin y al cabo, nadie tomo el
+estallido de Stallman tan seriamente."</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1515"
+   href="chapter-7.html#AEN1515">[16]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver
+http://www.as.cmu.edu/~geek/humor/See_Figure_1.txt</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1535"
+   href="chapter-7.html#AEN1535">[17]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Vea Steven Levy, [<span class="CITATION">Hackers</span>]
+(Penguin USA [paperback], 1984): 426.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1567"
+   href="chapter-7.html#AEN1567">[18]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Bill Gates, "An Open Letter to Hobbyists" (Febrero 3, 1976).
+Para ver una copia en l&iacute;nea dir&iacute;jase a
+http://www.blinkenlights.com/classiccmp/gateswhine.html.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1584"
+   href="chapter-7.html#AEN1584">[19]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman, [<span class="CITATION">Open
+Sources</span>] (O'Reilly &amp; Associates, Inc., 1999): 56.
+Stallman agrega su propia nota de pie de p&aacute;gina,
+escribiendo, "Como un ateo no sigo ning&uacute;n l&iacute;der
+religioso, pero algunas veces encuentro que admiro algo que alguno
+de ellos ha dicho."</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1608"
+   href="chapter-7.html#AEN1608">[20]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1656"
+   href="chapter-7.html#AEN1656">[21]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Vea Richard Stallman (1986).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN1667"
+   href="chapter-7.html#AEN1667">[22]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Richard Stallman, "El Manifesto GNU" (1985).
+http://www.gnu.org/manifesto.html</p></td></tr></table>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+       cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="chapter-6.html"
+accesskey="P">Anterior</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Inicio</a></td>
+<td width="33%" align="right" valign="top"><a href="chapter-8.html"
+accesskey="N">Siguiente</a></td></tr>
+<tr>
+<td width="33%" align="left" valign="top">La comuna de Emacs</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">St.
+Ignucius</td></tr></table></div>
+</body>
+</html>

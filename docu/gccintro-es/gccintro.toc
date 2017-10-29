@@ -1,0 +1,106 @@
+\unnchapentry{Foreword}{10001}{Foreword}{1}
+\numchapentry{Introduction}{1}{Introduction}{3}
+\numsecentry{A brief history of GCC}{1.1}{A brief history of GCC}{3}
+\numsecentry{Major features of GCC}{1.2}{Major features of GCC}{4}
+\numsecentry{Programming in C and C++}{1.3}{Programming in C and C++}{5}
+\numsecentry{Conventions used in this manual}{1.4}{Conventions used in this manual}{5}
+\numchapentry{Compiling a C program}{2}{Compiling a C program}{7}
+\numsecentry{Compiling a simple C program}{2.1}{Compiling a simple C program}{7}
+\numsecentry{Finding errors in a simple program}{2.2}{Finding errors in a simple program}{8}
+\numsecentry{Compiling multiple source files}{2.3}{Compiling multiple source files}{9}
+\numsecentry{Compiling files independently}{2.4}{Compiling files independently}{11}
+\numsubsecentry{Creating object files from source files}{2.4.1}{Creating object files from source files}{11}
+\numsubsecentry{Creating executables from object files}{2.4.2}{Creating executables from object files}{12}
+\numsecentry{Recompiling and relinking}{2.5}{Recompiling and relinking}{12}
+\numsecentry{A simple makefile}{2.6}{A simple makefile}{13}
+\numsecentry{Linking with external libraries}{2.7}{Linking with external libraries}{15}
+\numsubsecentry{Link order of libraries}{2.7.1}{Link order of libraries}{17}
+\numsecentry{Using library header files}{2.8}{Using library header files}{18}
+\numchapentry{Compilation options}{3}{Compilation options}{21}
+\numsecentry{Setting search paths}{3.1}{Setting search paths}{21}
+\numsubsecentry{Search path example}{3.1.1}{Search path example}{22}
+\numsubsecentry{Environment variables}{3.1.2}{Environment variables}{23}
+\numsubsecentry{Extended search paths}{3.1.3}{Extended search paths}{24}
+\numsecentry{Shared libraries and static libraries}{3.2}{Shared libraries and static libraries}{25}
+\numsecentry{C language standards}{3.3}{C language standards}{28}
+\numsubsecentry{ANSI/ISO}{3.3.1}{ANSI/ISO}{28}
+\numsubsecentry{Strict ANSI/ISO}{3.3.2}{Strict ANSI/ISO}{30}
+\numsubsecentry{Selecting specific standards}{3.3.3}{Selecting specific standards}{31}
+\numsecentry{Warning options in \code {-Wall}}{3.4}{Warning options in -Wall}{32}
+\numsecentry{Additional warning options}{3.5}{Additional warning options}{33}
+\numsecentry{Recommended warning options}{3.6}{Recommended warning options}{37}
+\numchapentry{Using the preprocessor}{4}{Using the preprocessor}{39}
+\numsecentry{Defining macros}{4.1}{Defining macros}{39}
+\numsecentry{Macros with values}{4.2}{Macros with values}{40}
+\numsecentry{Preprocessing source files}{4.3}{Preprocessing source files}{42}
+\numchapentry{Compiling for debugging}{5}{Compiling for debugging}{45}
+\numsecentry{Examining core files}{5.1}{Examining core files}{45}
+\numsecentry{Displaying a backtrace}{5.2}{Displaying a backtrace}{48}
+\numsecentry{Setting a breakpoint}{5.3}{Setting a breakpoint}{48}
+\numsecentry{Stepping through the program}{5.4}{Stepping through the program}{49}
+\numsecentry{Modifying variables}{5.5}{Modifying variables}{49}
+\numsecentry{Continuing execution}{5.6}{Continuing execution}{50}
+\numsecentry{More information}{5.7}{More information about GDB}{50}
+\numchapentry{Compiling with optimization}{6}{Compiling with optimization}{51}
+\numsecentry{Source-level optimization}{6.1}{Source-level optimization}{51}
+\numsubsecentry{Common subexpression elimination}{6.1.1}{}{51}
+\numsubsecentry{Function inlining}{6.1.2}{}{52}
+\numsecentry{Speed-space tradeoffs}{6.2}{Speed-space tradeoffs}{54}
+\numsubsecentry{Loop unrolling}{6.2.1}{}{54}
+\numsecentry{Scheduling}{6.3}{Scheduling}{55}
+\numsecentry{Optimization levels}{6.4}{Optimization levels}{56}
+\numsecentry{Examples}{6.5}{Optimization examples}{57}
+\numsecentry{Optimization and debugging}{6.6}{Optimization and debugging}{59}
+\numsecentry{Optimization and compiler warnings}{6.7}{Optimization and compiler warnings}{60}
+\numchapentry{Compiling a C++ program}{7}{Compiling a C++ program}{63}
+\numsecentry{Compiling a simple C++ program}{7.1}{Compiling a simple C++ program}{63}
+\numsecentry{C++ compilation options}{7.2}{C++ compilation options}{65}
+\numsecentry{Using the C++ standard library}{7.3}{Using the C++ standard library}{66}
+\numsecentry{Templates}{7.4}{Templates}{66}
+\numsubsecentry{Using C++ standard library templates}{7.4.1}{Using C++ standard library templates}{67}
+\numsubsecentry{Providing your own templates}{7.4.2}{Providing your own templates}{68}
+\numsubsecentry{Explicit template instantiation}{7.4.3}{Explicit template instantiation}{70}
+\numsubsecentry{The \code {export} keyword}{7.4.4}{The export keyword}{71}
+\numchapentry{Platform-specific options}{8}{Platform-specific options}{73}
+\numsecentry{Intel and AMD x86 options}{8.1}{Intel and AMD x86 options}{73}
+\numsubsecentry{x86 extensions}{8.1.1}{x86 extensions}{74}
+\numsubsecentry{x86 64-bit processors}{8.1.2}{x86 64-bit processors}{74}
+\numsecentry{DEC Alpha options}{8.2}{DEC Alpha options}{75}
+\numsecentry{SPARC options}{8.3}{SPARC options}{76}
+\numsecentry{POWER/PowerPC options}{8.4}{POWER/PowerPC options}{76}
+\numsecentry{Multi-architecture support}{8.5}{Multi-architecture support}{77}
+\numsecentry{Floating-point issues}{8.6}{Floating-point issues}{78}
+\numsecentry{Portability of signed and unsigned types}{8.7}{Portability of signed and unsigned types}{80}
+\numchapentry{Troubleshooting}{9}{Troubleshooting}{85}
+\numsecentry{Help for command-line options}{9.1}{Help for command-line options}{85}
+\numsecentry{Version numbers}{9.2}{Version numbers}{85}
+\numsecentry{Verbose compilation}{9.3}{Verbose compilation}{86}
+\numsecentry{Stopping a program in an infinite loop}{9.4}{Stopping a program in an infinite loop}{89}
+\numsecentry{Preventing excessive memory usage}{9.5}{Preventing excessive memory usage}{90}
+\numchapentry{Compiler-related tools}{10}{Compiler-related tools}{93}
+\numsecentry{Creating a library with the GNU archiver}{10.1}{Creating a library with the GNU archiver}{93}
+\numsecentry{Using the profiler \code {gprof}}{10.2}{Using the profiler gprof}{95}
+\numsecentry{Coverage testing with \code {gcov}}{10.3}{Coverage testing with gcov}{98}
+\numchapentry{How the compiler works}{11}{How the compiler works}{101}
+\numsecentry{An overview of the compilation process}{11.1}{An overview of the compilation process}{101}
+\numsecentry{The preprocessor}{11.2}{The preprocessor}{102}
+\numsecentry{The compiler}{11.3}{The compiler}{102}
+\numsecentry{The assembler}{11.4}{The assembler}{103}
+\numsecentry{The linker}{11.5}{The linker}{103}
+\numchapentry{Examining compiled files}{12}{Examining compiled files}{105}
+\numsecentry{Identifying files}{12.1}{Identifying files}{105}
+\numsecentry{Examining the symbol table}{12.2}{Examining the symbol table}{106}
+\numsecentry{Finding dynamically linked libraries}{12.3}{Finding dynamically linked libraries}{107}
+\numchapentry{Common error messages}{13}{Common error messages}{109}
+\numsecentry{Preprocessor error messages}{13.1}{Preprocessor error messages}{109}
+\numsecentry{Compiler error messages}{13.2}{Compiler error messages}{110}
+\numsecentry{Linker error messages}{13.3}{Linker error messages}{119}
+\numsecentry{Runtime error messages}{13.4}{Runtime error messages}{120}
+\numchapentry{Getting help}{14}{Getting help}{123}
+\unnchapentry{Further reading}{10002}{Further reading}{125}
+\unnchapentry{Acknowledgements}{10003}{Acknowledgements}{127}
+\unnchapentry{Other books from the publisher}{10004}{Other books from the publisher}{129}
+\unnchapentry{Free software organizations}{10005}{Free software organizations}{131}
+\unnchapentry{GNU Free Documentation License}{10006}{GNU Free Documentation License}{133}
+\unnsecentry{ADDENDUM: How to use this License for your documents}{10006.1}{}{138}
+\unnchapentry{Index}{10007}{Index}{139}

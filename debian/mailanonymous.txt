@@ -1,0 +1,18 @@
+
+Para mandar un mail anonimo debes tener instalado Postfix, Sendmail u otro mail agent.
+
+Despues ejecutar:
+
+telnet IP num_puerto_postfix
+
+En general num_puerto_postfix es el numero 25.
+
+Despues los siguientes comandos
+
+helo nombrehost
+mail from: diredcorreo@suplantar.com
+rcpt to: diredcorreo@bromear.com
+data
+El contenido del mensaje
+.
+

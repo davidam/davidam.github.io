@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Un alegato a favor del Software Libre en Ciencias Sociales</title>
+<!-- 2014-10-18 sáb 09:47 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Un alegato a favor del Software Libre en Ciencias Sociales</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introducción</a></li>
+<li><a href="#sec-2">2. Contexto donde detecté la actitud de Ciencias Sociales de extrema izquierda con Software Fascista</a></li>
+<li><a href="#sec-3">3. La problemática de la migración al software libre</a></li>
+<li><a href="#sec-4">4. Licencia</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introducción</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+En este pequeño artículo trataré de explicar que usar software
+privativo en Ciencias Sociales, no puede ser Ciencia.
+</p>
+
+<p>
+La Ciencia debe poder ser reproducible, un científico hace un
+experimento y otro científico debe venir a cotejarlo, reproducirlo y
+darle la credibilidad científica de que el experimento es bueno,
+novedoso y está bien hecho. Con el software privativo hay una parte
+del experimento a cotejar que los científicos sociales confían
+ciegamente en las corporaciones que les suministran el software. 
+</p>
+
+<p>
+Por ejemplo, en un software estadístico hay muchos cálculos algunos
+los eligen quien usa la herramienta, pero hay mucho cálculo por abajo
+de esos cálculos que quien usa el software no tiene control, si es
+software privativo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Contexto donde detecté la actitud de Ciencias Sociales de extrema izquierda con Software Fascista</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+En esta sección, llamo software fascista, al software privativo puesto
+que priva de libertades. Esto se explicará más extensamente en otro
+artículo aún no publicado.
+</p>
+
+<p>
+En la universidad donde veía la fe ciega en el software privativo, he
+llegado a oir comentarios de "en la próxima versión de nuestro programa
+estadístico solo meteremos los datos y nos creará los artículos". Es
+bastante bestia ver que dicha universidad estaba a rebosar de pintadas
+de extrema izquierda, algunas revindican el valor del terrorismo. El
+enfado de izquierda es fuerte, pero no se enfadan mucho con el
+software fascista que utilizan todos los días es su herramienta y
+listo.
+</p>
+
+<p>
+Antes que el terrorismo las personas que habitan las aulas podrían
+pedir hacer ciencia social y explicar a sus profesores que no quieren
+creer en el software fascista de las grandes corporaciones que tienen
+que usar todos los días para hablar desde los datos de los problemas
+de la sociedad.
+</p>
+
+<p>
+En la actualidad española la ciudadanía <a href="http://www.cis.es/opencms/-Archivos/Indicadores/documentos_html/TresProblemas.html">detecta como problemas
+sociales graves tanto las estafas, como la falta de validez de los
+partidos</a> y en esa desesperación hay personas españolas que quieren
+pagar al problema de los partidos creando a otro nuevo. Yo pienso que
+el problema que detecta la ciudadanía en los partidos, puede mejorarse
+con el software libre, porque los análisis de nuestros científicos
+sociales serían más críticos, con menos fe ciega en las corporaciones
+de software privativo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> La problemática de la migración al software libre</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+En las ciencias sociales hay dos metodologías importantes la
+cuantitativa y la cualitativa. Para cualquiera de las dos
+problemáticas es necesario cambiar la filosofía con la que se mira al
+científico social, como una persona incapaz de programar.
+</p>
+
+<p>
+Los científicos sociales sí escriben sus pequeños programas, pero en
+un alarde de llamarles tontos, las empresas de software privativo
+hacen que lo tengan que llamar sintaxis.
+</p>
+
+<p>
+En la cuestión cualitativa es más sencillo no usar software privativo,
+solo es necesario organizar los discursos con software libre, se puede
+usar hasta Libreoffice y que el científico social tenga su método
+personal. Yo para esa tarea utilicé <a href="https://www.gnu.org/software/emacs/">GNU/Emacs</a> que lleva una filosofía
+de ir haciendo pequeñas programaciones fácilmente y ser más productivo
+en tus pequeñas tareas.
+</p>
+
+<p>
+En la cuestión cuantitativa entiendo que hay una inercia social más
+fuerte para usar software privativo, pero también hay reemplazos
+libres (<a href="http://gretl.sourceforge.net/">Gretl</a>, <a href="https://www.gnu.org/software/pspp/">PSPP</a>, <a href="http://www.r-project.org/">GNU R</a>, etc.). Quienes estudian y trabajan en los
+temas de la políticia deberían saber cambiar esa inercia social es muy
+importante para la ciencia y la libertad en la sociedad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Licencia</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/es/deed.es">Licencia Creative Commons Atribución 3.0 España</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/es/deed.es"><img src="../img/licenses/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2014-10-18 sáb 09:47</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

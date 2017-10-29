@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Software Adaptativo</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Sistemas Expertos"
+HREF="sist-exp.html"><LINK
+REL="NEXT"
+TITLE="Agentes Inteligentes"
+HREF="agent-intel.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="sist-exp.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="agent-intel.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="sw-adapt"
+>4. Software Adaptativo</A
+></H1
+><P
+>Cuando aprendemos a programar, enseguida aprendemos ciertos
+    principios básicos que hacen que nuestro software aumente
+    su valor de uso: reutilización, abstracción, que sea
+    usable para el usuario final, ... Sin embargo, no nos suelen
+    preparar para que el software se adapte de manera
+    automática a los cambios en las necesidades de usuario, en
+    sus objetivos, ó en el entorno.</P
+><P
+>Según <A
+HREF="http://www.norvig.com"
+TARGET="_top"
+>Peter
+    Norvig</A
+> director de calidad de búsqueda de Google:
+    [<SPAN
+CLASS="citation"
+>El software adaptativo usa información disponible
+    acerca de cambios en su entorno para mejorar su
+    comportamiento</SPAN
+>]. Es decir, el software tiene capacidad
+    de adaptarse al comportamiento del usuario sin que éste lo pida de
+    una manera explícita, entendiendo como usuario a una
+    persona u otro sistema.</P
+><P
+>El software adaptativo ha tenido su caldo de cultivo en la
+    minería de datos (data mining), esto es, la
+    extracción no trivial, implícita, previamente
+    desconocida y potencialmente usable de información de
+    interés en grandes cantidades de datos. El proceso de
+    extraer esa información se basa en aplicar algoritmos de
+    aprendizaje automático.</P
+><P
+>Todo esto que puede estar pareciendo un poco de ciencia
+    ficción está teniendo una fuerte eclosión en
+    aplicaciones populares para el usuario final. Fijémonos,
+    por ejemplo, en el problema del spam, actualmente evolution,
+    mozilla, kmail y otros lectores de correo están
+    introduciendo facilidades para separar el spam del ham, es decir,
+    el correo electrónico "no" deseado, del "sí" deseado. Para ello
+    normalmente se aplica un algoritmo de aprendizaje
+    automático denominado Naive Bayes. Muchos sitios web
+    también están incorporando estos métodos para
+    incrementar ventas ó visitas. Es conocido el caso de Amazon
+    que utiliza filtrado colaborativo para encontrar usuarios con
+    perfiles de compra similares y recomendar productos
+    personalizados. Un ejemplo un poco más hispano es la <A
+HREF="http://www.guiacampsa.com"
+TARGET="_top"
+>Guia Campsa</A
+> que utiliza
+    una neurona articial para ordenar el orden de rutas que prefieren
+    los usuarios.</P
+><P
+>Ahora que se tiene un poco más claro para que puede
+    ser útil hoy el aprendizaje automático, se
+    verá cómo crear un sistema que aprenda a decidir si
+    es un buen día para jugar al tenis en función de una
+    serie de atributos: fuerza del viento (wind), humedad (humidity),
+    temperatura (temperature) y previsión del cielo
+    (outlook). Para ello vamos a utilizar el algoritmo ID3
+    implementado en lisp por Tom Mitchell, uno de los padres del
+    aprendizaje automático. Para ello es necesario instalar un
+    intérprete de lisp (si usamos debian y queremos cmucl)
+    <B
+CLASS="command"
+>apt-get install cmucl</B
+> y ahora se descarga el
+    programa lisp en cuestión <B
+CLASS="command"
+>wget -c
+    http://www-2.cs.cmu.edu/afs/cs/project/theo-11/www/decision-trees.lisp</B
+>.
+    Finalmente, se ejecuta la traza que viene en el propio
+    fichero:</P
+><DIV
+CLASS="example"
+><A
+NAME="AEN89"
+></A
+><P
+><B
+>Ejemplo 3. Traza de ID3 dada</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><FONT
+COLOR="#000000"
+><PRE
+CLASS="programlisting"
+>&#13;[18:41][darroyo@turing:~/programacion/lisp]$ lisp
+CMU Common Lisp CVS release-19a 19a-release-20040728 + minimal debian patches, running on turing
+With core: /usr/lib/cmucl/lisp.core
+Dumped on: Fri, 2004-10-08 11:51:05+02:00 on turing
+For support see http://www.cons.org/cmucl/support.html Send bug reports to the debian BTS.
+or to pvaneynd@debian.org
+type (help) for help, (quit) to exit, and (demo) to see the demos
+
+Loaded subsystems:
+    Python 1.1, target Intel x86
+    CLOS based on Gerd's PCL 2004/04/14 03:32:47
+* (load "decision-trees.lisp")
+
+; Loading #p"/home/darroyo/programacion/lisp/decision-trees.lisp".
+Warning:  Declaring *DATA* special.
+T
+* *training.examples*
+
+(D14 D13 D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1)
+* (print.entity 'd6)
+
+(PLAY.TENNIS? NO WIND STRONG HUMIDITY NORMAL TEMPERATURE COOL OUTLOOK RAIN)
+(PLAY.TENNIS? NO WIND STRONG HUMIDITY NORMAL TEMPERATURE COOL OUTLOOK RAIN)
+* (setq tree (id3 *training.examples*
+                'play.tennis?
+                '(outlook temperature humidity wind)))
+Warning:  Declaring TREE special.
+
+(OUTLOOK (SUNNY (HUMIDITY (NORMAL YES) (HIGH NO))) (OVERCAST YES)
+ (RAIN (WIND (STRONG NO) (WEAK YES))))
+* (print.tree tree)
+OUTLOOK
+ = SUNNY
+     HUMIDITY
+      = NORMAL =&#62; YES
+      = HIGH =&#62; NO
+ = OVERCAST =&#62; YES
+ = RAIN
+     WIND
+      = STRONG =&#62; NO
+      = WEAK =&#62; YES
+NIL
+* (classify 'd6 tree)
+
+NO
+      </PRE
+></FONT
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>Este algoritmo de clasificación va construyendo un
+    árbol de clasificación escogiendo en cada paso el
+    atributo que tiene una mayor entropía, es decir, el
+    atributo que tiene valores más variados. Después de
+    haber recibido los ejemplos de entrenamiento ya podemos saber si,
+    por ejemplo, la variable d6 es un ejemplo de día para jugar al
+    tenis ó no: <B
+CLASS="command"
+>(classify 'd6 tree)</B
+>.</P
+><P
+>Os animo a modificar un poco el código, cambiando los
+    ejemplos de entrenamiento, para familiarizarse con el
+    mecanismo. El lector interesado en librerías de aprendizaje
+    automático, puede visitar las siguientes referencias que,
+    además, son libres:</P
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="http://www.torch.ch/"
+TARGET="_top"
+>Torch</A
+>:
+	librería escrita en C++ con licencia BSD, implementa
+	una gran cantidad de algoritmos de aprendizaje: redes
+	neuronales, K-nearest-neighbors, modelos de Markov,
+	clasificadores bayesianos, ...</P
+></LI
+><LI
+><P
+><A
+HREF="http://www.cs.waikato.ac.nz/~ml/weka/"
+TARGET="_top"
+>Weka</A
+>:
+	librería escrita en Java con licencia GPL, es bastante
+	popular en el mundo académico y tiene un interfaz
+	gráfico bastante amigable.</P
+></LI
+><LI
+><P
+><A
+HREF="http://www-2.cs.cmu.edu/~mccallum/bow/"
+TARGET="_top"
+>Bow</A
+>:
+	herramienta escrita en C con licencia GPL para el
+	análisis estadístico de textos,
+	clasificación automática de documentos
+	desarrollada en Carnegie Mellon.</P
+></LI
+><LI
+><P
+>Russell y Norvig desarrollaron para el libro
+	"Inteligencia Artificial: Un Enfoque Moderno" una buena
+	cantidad de código lisp con una licencia similar a una
+	BSD, entre el que hay bastantes <A
+HREF="http://www.di.unipi.it/~simi/AIMA/doc/overview-LEARNING.html"
+TARGET="_top"
+>algoritmos
+	de aprendizaje automático</A
+>. Si usas debian
+	puedes descargártelos mediante <B
+CLASS="command"
+>apt-get install
+	cl-aima</B
+>.</P
+></LI
+></UL
+><P
+>El software adaptativo permite solucionar problemas
+    dónde el conocimiento estático no llega. El caso del
+    spam es tal vez el más popular, no obstante, sistemas
+    expertos, sistemas web, firewalls, encaminadores,
+    etc. están incluyendo enfoques adaptativos para mejorar la
+    eficacia de sus sistemas.</P
+><P
+>El objetivo de este apartado ha sido vislumbrar el modo en
+    que puede aprender una máquina y, la aplicación que
+    tiene este aprendizaje de máquinas en el software que
+    utilizamos en nuestra vida cotidiana.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="sist-exp.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="agent-intel.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Sistemas Expertos</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Agentes Inteligentes</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Aprendiendo NLTK</title>
+<!-- 2014-06-01 dom 16:37 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Aprendiendo NLTK</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Instalar NLTK</a></li>
+<li><a href="#sec-2">2. Practicando con gutenberg</a></li>
+<li><a href="#sec-3">3. Clasificando de Manera Supervisada</a></li>
+<li><a href="#sec-4">4. Licencia</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Instalar NLTK</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+En la documentación de <a href="http://nltk.org/install.html">http://nltk.org/install.html</a> no está muy bien
+documentado cómo instalar nltk en debian, pero es fácil:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">$ sudo apt-get install python-pip
+$ sudo pip install -U numpy
+$ sudo pip install -U pyyaml nltk
+$ python
+&gt;&gt;&gt; import nltk
+&gt;&gt;&gt; nltk.download()
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Practicando con gutenberg</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Lo primero es familiarizarse un poco con la clase FreqDist
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">&gt;&gt;&gt; from nltk.tokenize import word_tokenize
+&gt;&gt;&gt; from nltk.probability import FreqDist
+&gt;&gt;&gt; sent = 'is This is an example sentence'
+&gt;&gt;&gt; fdist1 = FreqDist(word.lower() for word in word_tokenize(sent))
+&gt;&gt;&gt; fdist1.N
+&lt;bound method FreqDist.N of &lt;FreqDist with 5 samples and 6 outcomes&gt;&gt;
+</pre>
+</div>
+
+<p>
+Como se puede observar los samples son las palabras únicas del texto y
+los outcomes el total de palabras. De este modo, ahora tenemos en un
+vector el número de ocurrencias de cada palabra, veamos:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">&gt;&gt;&gt; from nltk.book import *
+&gt;&gt;&gt; fdist1 = FreqDist(text1) 
+&gt;&gt;&gt; fdist1 
+&lt;FreqDist with 260819 outcomes&gt;
+&gt;&gt;&gt; fdist1['whale']
+906
+&gt;&gt;&gt; fdist1['I']
+2124
+</pre>
+</div>
+
+<p>
+En el punto 2.1 Accessing Text Corpora de la documentación hay algunos
+errores en los ejemplos de código que he considerado interesante
+documentar:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">&gt;&gt;&gt; for file in gutenberg.fileids():
+     num_chars = len(gutenberg.raw(file))
+     num_words = len(gutenberg.words(file))
+     num_sents = len(gutenberg.sents(file))
+     num_vocab = len(set(w.lower() for w in gutenberg.words(file)))
+     print num_chars/num_words, num_words/num_sents, num_words/num_vocab, file
+</pre>
+</div>
+
+<p>
+También podemos encontrar palabras similares de un texto concreto de
+gutenberg de la siguiente manera:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">&gt;&gt;&gt; import nltk.corpus
+&gt;&gt;&gt; from nltk.text import Text
+&gt;&gt;&gt; moby = Text(nltk.corpus.gutenberg.words('melville-moby_dick.txt'))
+&gt;&gt;&gt; moby.similar('woman')
+Building word-context index...
+man king ahab as baby bildad bird boat bull calf camel captain
+carpenter cobbler cod condor corpse craft darkey day
+&gt;&gt;&gt; moby.similar('bought')
+figures floats held hunted luffs put sat stole stood threw
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Clasificando de Manera Supervisada</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Teniendo instalado nltk en debian/ubuntu la documentación se encuentra en
+/usr/local/lib/python2.7/dist-packages/nltk/test/classify.doctest.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Licencia</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Este documento está bajo la <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+</p>
+
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png" alt="200px-GFDL_Logo.svg.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2014-06-01 dom 16:37</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.6)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

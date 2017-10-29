@@ -1,0 +1,675 @@
+#+OPTIONS *:t
+* Introducción
+*entrevistador*: En primer lugar, gracias por haber accedido a hacer
+la entrevista. Como ya te he dicho es sobre movimientos sociales y
+nuevas tecnologías. Entonces, la entrevista se divide en dos partes
+principales: una de los flujos de información que tenéis en tu
+colectivo y otra sobre factores de cambio tecnológico. Entonces la
+primera es un poco más larga que la segunda. Entonces entiendo que
+estás solo en Traficantes de Sueños ¿o estás en otro tipo de
+colectivo?
+
+*hombre4*: Solo.
+
+*entrevistador*: Vale, entonces todas las preguntas irán referidas a
+Traficantes de Sueños.
+* Flujos de información:
+** comunicación interna
+
+*entrevistador*: Entonces, empiezo con los flujos de información. El
+primer apartado es comunicación interna. Pues eso de cara a
+comunicaros internamente en el grupo ¿qué flujos de comunicación
+tenéis? ya sea correo electrónico, listas de correo, eeh, reuniones.
+
+*hombre4*: Vale, pues vamos a empezar con lo esencial que es la
+reunión semanal de todo el proyecto, la reunión de coordinación, ehm,
+todos los lunes por la mañana. Y luego cada área de trabajo de
+Traficantes de Sueños tiene también su propia reunión, la librería
+también semanalmente cada 2 martes y las otras partes en función de
+sus ritmos y necesidades.
+
+*entrevistador*: Aha.
+
+*hombre4*: ¿Vale? También existen otros espacios que hemos ido
+articulando para digamos que toda esa información o todas esas
+necesidades de comunicación o de toma de decisiones que no se pueden
+dar en la asamblea de coordinación, decisiones muy prácticas, de
+tiempos y de intentar optimizar los recursos hemos habilitado también
+otro tipo de reuniones extraordinarias, anualmente hacemos lo que
+llamamos el plenario que son 4 o 5 días fuera de aquí, de la librería
+para poder centrarnos y hacer valoración del año, los presupuestos, o
+las *no se entiende* con las que vamos a trabajar. Ahí estaría tanto
+lo que es el nivel de organización interna, que es lo que podríamos
+llamar la actividad económica como la parte política del proyecto.
+
+*entrevistador*: Y a los plenarios vais tanto ¿las mismas personas que
+soléis ir a las reuniones semanales?
+
+*hombre4*: Vamos todos. Nosotros somos 10, ahora mismo ¿vale?
+
+Y luego hay otro tipo de reuniones también que son puntuales más
+mezcladas con la formación cuando hay un tema de difusión que se queda
+atascado y luego hay diferencias a la hora del conocimiento que tiene
+cada uno de ellos y luego hacer una difusión más igualitarias pues se
+hace reuniones de formación y también otras que son únicas de
+compartir espacios.
+
+Luego todo lo que sería la información de toma de decisiones y de
+formación que no está ceñida a la presencia física utilizamos dos
+herramientas principales: una es la lista de correo de Traficantes de
+Sueños en Google Groups y la otra es a través del redmine, con el
+redmine nos coordinamos y digamos obtenemos casi toda la documentación
+de todo el mundo. Ahí está cada área del proyecto y nuestro trabajo
+desde casa y eso serían.
+
+** colaboración interna
+*** redacción en común?
+
+*entrevistador*: Vale, pues la siguiente pregunta sería esa:
+documentación interna ¿cómo buscáis consensos en la documentación
+interna? redacción de textos en común.
+
+*hombre4*: Bueno, digamos que la lista de correo es más a título
+informativo, que no hay conocimiento del resto del grupo, bien
+propuestas que nos puedan llegar o cuestiones que están atascadas y
+que luego se llevan a la asamblea física, o sea que en gran medida
+sería establecer el orden del día a priori que no sea tan explícito
+pero que si llega una propuesta, rápidamente la lanzamos a la lista,
+no suele haber grandes digamos discusiones ni intercambios entre la
+propia lista, sino que la gente se da por enterada y o bien se ha
+hablado un poco del cotidiano o hay que tomar una decisión como tal
+iría perfectamente a la asamblea.
+
+Y con respecto al redmine pues sobre todo es una cuestión de
+coordinación interna ahí tenemos todo tipo de documentación desde la
+que es más contable, por ejemplo, la que atañiría más a la editorial o
+la promoción, otra serie de documentos. Lo que se trata es de
+alimentar toda esa herramienta para que en cualquier lugar y momento
+no tengamos que depender digamos de localizar a una persona o demás,
+de ponerlo en común básicamente. Pero no lo utilizamos como una
+herramienta de coordinación en sí ¿sabes lo que quiero decirte? que no
+se producen ahí discusiones ... Es más una, como una base de datos
+propia de Traficantes de Sueños.
+
+** búsqueda de consensos
+
+*entrevistador*: Vale, imagino que soléis tomar las decisiones por
+consenso normalmente o ...
+
+*hombre4*: Sí.
+
+*entrevistador*: Sí.
+
+** gestión de tareas
+
+*entrevistador*: Vale. Ya que estábamos hablando del redmine, si
+quieres cuéntame un poco la gestión de tareas ¿cuáles se deciden en
+asamblea?  ¿cuáles se hacen directamente por el redmine o ...?
+
+*hombre4*: Ya te digo, todo se coordina desde cada uno de los grupos,
+o sea prácticamente no hay a nivel del redmine o de la propia lista
+ahí no se toman decisiones. Quiero decir, hay que entender que dentro
+del colectivo hay una diversidad bastante rica e interesante y también
+hay ciertas capacidades o conocimientos a la hora del manejo de las
+herramientas en un entorno virtual, web o en red y demás. Entonces no
+existe no sé cual sería la palabra, la costumbre digamos de
+habilitación de estas herramientas en los miembros del colectivo, está
+todo muy ceñido al intercambio de información cara a cara más que en
+la propia red puesto que no todo el mundo está hiperconectado las 24
+horas ni tiene las mismas dinámicas de consulta del correo, de
+información, ni de las demás cuestiones ¿no? ... Entonces ya vimos que
+si dependíamos exclusivamente de las herramientas surgían
+problemáticas que son bastante comunes en los grupos. Si tu envías una
+cuestión a la lista de correo automáticamente das por hecho que todo
+el mundo está en conocimiento de ella, no de manera inmediata, pero tu
+ya te despreocupas, lo has lanzado allí ... Luego cuando se produce el
+encuentro físico te das cuenta que no es así. Entonces digamos que hay
+bastante diversidad en la manera de relacionarse con los entornos
+dentro del grupo y en haras de mantener digamos el ... los ritmos de
+cada persona y la toma de decisiones y el control de la información
+sea más o menos igual por parte de todos los miembros del grupo de
+Traficantes de Sueños seguimos funcionando de manera cara a cara
+
+** gestión de eventos
+
+*entrevistador*: Aha. Hay aquí un punto de cómo gestionais eventos,
+jornadas, o alguna charla de algún libro, alguna cosa, si lo hacéis
+también de manera telemática, lo hacéis también presencial.
+
+*hombre4*: Bueno, ahí lo diferenciaría una cosa es la coordinación de
+los eventos y otra es la organización.
+
+*entrevistador*: Claro.
+
+*hombre4*: Lo que quiero decir, yo me encargo de lo que sería
+principalmente la gestión de toda esa parte ¿no? o sea nosotros
+diferenciamos lo que es ... no sé si entra, tu me dices,
+
+*entrevistador*: Sí, sí, tranquilo.
+
+*hombre4*: Si me voy ciñiendo más, pero de cara a las actividades que
+se realizan en nuestro local, las externas, hay como cuatro tipos
+¿eh?: una sería naturaleza y desarrollo de Traficantes de Sueños como
+colectivo y eso requiere una mayor implicación de todo el colectivo,
+esta semana hoy es jueves y ha entrado una semana de tres días o hay
+invitados de toda la Península, ahí se implica todo el colectivo. Las
+actividades que realiza exclusivamente la librería relacionadas con
+los libros, un poco el interés que vaya despertando y demás cuestiones
+y eso solo se ciñe al ámbito de la librería. Y digamos las peticiones
+del espacio por parte de otras organizaciones, en ese sentido digamos
+la tarea fundamental en ese último campo sería la de la coordinación,
+la difusión de la información sería más o menos ver que cumpla toda
+una serie de campos y de requisitos una vez que se ha visto el
+interés, o la posibilidad de ceder el espacio y la coordinación con
+esa persona, obviamente eso se realiza a través de principalmente de
+correo electrónico y demás cuestiones. Se tramita exclusivamente a
+través de una persona que en este caso soy yo que sería la
+coordinación de todo el espacio social. No hemos visto una herramienta
+que pudiera ser un calendario en la red ¿no? lo hemos intentado en
+varias ocasiones, pero no termino de ...
+
+*entrevistador*: de cuajar ¿no?
+
+*hombre4*: de cuajar mucho y de cara a evitar cualquier tipo de
+problemas con la organización del espacio ¿qué quiere decir?. Nosotros
+ahora mismo contamos con dos espacios públicos en el local: la sala de
+reuniones y el salón de actos. A la hora de posibilitar que cualquier
+persona del colectivo pueda digamos actualizar o introducir en el
+calendario digamos la gestión de alguno de esos espacios sí que
+necesitamos alguien que coordine. Y como digamos el espacio público
+per se en el que atendemos a toda la gente que llega, está en librería
+tenía que caer en alguien del colectivo de la librería toda esa
+coordinación y al mismo tiempo como no estamos ni conectados las 24h,
+ni estamos aquí las 24h aunque lo parezca pues hemos optado por una
+herramienta absolutamente analógica que es un calendario en papel y
+así cualquiera que quiera saber si un determinado día está reservado a
+una actividad o hay algún espacio libre pues ahí está y eso hasta
+ahora no ha fallado cuando intentamos implementar algún tipo de
+herramienta hemos tenido problemas de coordinación hay que tener en
+cuenta que tu recibes bastantes peticiones a lo largo de la semana y
+no todas entran por los mismos canales: llamadas de teléfono, correo
+electrónico, cualquier persona,...
+
+*entrevistador*: ¿Pero tu por qué crees que ha sido un problema con la
+descoordinación con la agenda virtual? ¿por qué no conocían la
+herramienta? es decir ¿dificultades de uso? ¿falta de costumbre?
+
+*hombre4*: Sí, yo creo que va a ser por falta de costumbre y también y
+quizá en ese sentido no compartas o lo que sea se verá lo que quiero
+decir es que por la propia dinámica de trabajo de la librería per se
+es más practico tener un cuaderno siempre a mano que ir a conectar un
+ordenador. A veces es una cuestión de recursos, quiero decir, nosotros
+tenemos un ordenador en la parte de abajo que es el mismo para
+atención al público, gestión de pedidos y demás cuestiones ¿no? Luego
+en las oficinas de arriba hay más ordenadores, pero cuando te llega
+algún tipo de propuesta tienes que ser muy resolutivo: una llamada,
+estás atendiendo a cuatro personas y tienes un gasto con 50 en la
+sala, igual en ese momento no tienes acceso, o no puedes ponerte a
+mirarlo.
+
+*entrevistador*: Ya.
+
+*hombre4*: Lo apuntas en un papel y el papel se acaba
+perdiendo. Tenemos un cuaderno que ya sobre la marcha lo hemos ido
+diseñando: tenemos un cuadrante con toda una serie de campos que
+tienen que estar rellenos y que nos permiten en cualquier momento,
+tanto saber si hay algo ese día, la próxima semana, o meses, tanto la
+persona que lo organiza, el colectivo y el contacto de esa persona o
+colectivo. Vamos que tampoco tienes que consultar algo parecido un
+calendario o una carpeta en el correo electrónico y la herramienta de
+búsqueda ¿Qué se podía implementar la herramienta exclusivamente
+digital? desde luego, pero lo que hemos visto es que eso no nos ha
+fallado.
+
+** comunicación con el exterior
+*** captación de voluntarios/colaboradores
+
+*entrevistador*: Aha, muy bien, vale. Yo no sé si vosotro tenéis
+... porque Traficantes de Sueños es un proyecto de autoempleo también
+entonces no sé si tenéis colaboradores externos que sea voluntarios.
+
+*hombre4*: Sí. Tanto de manera puntual como ...
+
+*entrevistador*: ¿Y cómo gestionais esa colaboración? ¿A través de
+personas concretas en las áreas de trabajo o ...?
+
+*hombre4*: Exactamente, sí. Yo creo que Traficantes de Sueños se
+compone de ... como cuando tiras una piedra a un lago se van ampliando
+en círculos concéntricos ¿no? Desde el núcleo de la gente que tiene
+responsabilidad en todas las áreas del colectivo y a partir de ahí
+como pequeñas capas de colaboradores ¿no?. Hay algunos que son muy
+cercanos y en la vida del colectivo si no en el día a día sí con una
+gran profundidad. Hay gente que colabora por ejemplo una vez a la
+semana: un día, una serie de horas. Hay otra gente que colabora
+digamos de manera puntual como puede ser las traducciones o
+correcciones en la editorial, o en momentos determinados en el área de
+diseño, en el taller de diseño, o gente que tiene un conocimiento muy
+específico: consultas, cuestiones. Pero digamos nosotros trabajamos en
+un entorno muy, muy dentro sin el cual el proyecto tampoco podría
+existir en ese sentido tampoco es que haya ningún tipo de herramienta
+ni demás cuestiones. Ahora en esta semana lo que estamos poniendo en
+marcha es un proyecto de traducción colaborativa, uno de los textos de
+la editorial que hemos publicado recientemente y es ver un poquito
+como va ir funcionando los diferentes wikis en n-1.
+
+*entrevistador*: Aha.
+
+*hombre4*: Digamos que es una colaboración de gente totalmente, no es
+cercana, por decirlo de algún modo, tengo relación con algunos, pero
+también hay gente que se presta y se ha prestado voluntariamente y
+tiene interés en participar en ese proyecto ¿no? Ese en concreto tiene
+un wiki y una persona que coordina esa labor.
+
+*** comunicación con otros colectivos
+*** formar alianzas/coaliciones/movimientos/plataformas
+
+*entrevistador*: Vale, ¿y la comunicación con otros colectivos?
+¿participación en plataformas, movimientos? ... yo que sé
+
+*hombre4*: Vale, hay que tener en cuenta que Traficantes de Sueños es
+un nodo importante en la red de movimientos sociales, entorno
+político, en la ciudad de Madrid, también a nivel nacional y en
+ciertos aspectos también a nivel internacional, entonces digamos que
+nosotros como funcionamos también en muchas ocasiones es como
+interconector. Entonces nosotros el volumen de información que
+recibimos de los distintos colectivos es muy alto, muy alto, muy
+alto. Y en cierta medida, uno de nuestros objetivos es servir de
+difusor y altavoz y también de puesta de relación de diferentes
+experiencias de los colectivos para que generen otros proyectos, o al
+menos en potencia y es una de las bazas fundamentales de Traficantes
+de Sueños con todas sus áreas porque eso es una de sus esencias de
+Traficantes de Sueños. Y luego la librería, insisto en la librería
+porque es el espacio que tienes abierto durante X horas a lo largo del
+día y hay que es la cara visible y donde puedes dirigirte ¿no? en ese
+sentido también se podrían establecer como diferentes niveles: uno que
+es el entorno más cercano que podría ser el barrio, en ese sentido,
+tenemos una relación con muchísimos colectivos y experiencias, se
+puede decir, desde las mismas clases de castellano para inmigrantes
+sin papeles, el ajedrez para niños de aquí del barrio, o gestionar las
+llaves de los centros sociales, recibimos el correo de colectivos o
+particulares, los pagos de los grupos de consumo de Lavapiés, digamos
+que ha generado ese nodo que hay una experiencia a la hora de
+gestionar procesos de este tipo y al mismo tiempo hay una
+responsabilidad y una seriedad por eso la gente confía y usa esto como
+un recurso propio. Traficantes es no la gente que está aquí en el día
+a día y es la gente que participa y lo alimenta de mil maneras. Luego
+a nivel nacional también estamos coordinados con muchísimos otros
+grupos, tanto en el ámbito de librerías similares a la nuestra como
+proyectos de todo ámbito, uno de los proyectos esenciales es una
+plataforma per se digamos que la dinámica del colectivo es otra no
+digamos, nosotros somos más un emisor propio, desarrollamos nuestra
+actividad entorno al mundo del libro y entonces no solo participar de
+campañas así concretas, nos apoyamos, poniendo a disposición nuestra
+infraestructura, conocimiento y recursos del movimiento, pero
+Traficantes de Sueños es digamos una línea que sería la labor
+editorial y actividades que nosotros organizamos como colectivo.
+Aparte de eso, en el ámbito de la economía solidaria participamos de
+la Red de Economía Solidaria a nivel estatal, Coop57 (la cooperativa
+de ahorro), no sé, muchísimos sitios.
+
+*entrevistador*: Aha, vale
+
+*hombre4*: Donde participamos activamente tenemos responsabilidades.
+
+*entrevistador*: ¿Y participáis a veces yendo a asambleas, otras
+veces...?
+
+*hombre4*: Exactamente, no se puede. Por ejemplo, en este ámbito de la
+economía solidaria, pues en Coop57 participamos tanto en el Consejo
+Rector, como en la Comisión Social. En la medida, o sea más que la
+figura tenemos una responsabilidad y hacemos un trabajo que luego hay
+que desarrollar.
+
+*entrevistador*: Y, por ejemplo, la gente que colabora de manera más
+puntual ¿a veces viene a las asambleas?.
+
+*hombre4*: No, las asambleas son cerradas.
+
+*entrevistador*: Las asambleas son cerradas.
+
+*hombre4*: Si es necesario, digamos se abren otros canales para
+digamos gestionar esa participación, o el conocimiento, anuncios de
+Traficantes o la línea en la que estamos trabajando, pero lo que son
+las asambleas semanales son cerradas porque a niveles prácticos sería
+inviable hacerlo de otra manera. No se consigue digamos una
+colaboración o participación invitando a venir a una asamblea que a
+veces de tan técnica que es no sabrías ni como cogerla, si no tienes
+una actividad cotidiana dentro del colectivo o una responsabilidad no
+vas a encontrar mayor interés ahí porque yo qué sé es como si un
+desarrollador informático estuviera enseñando el código constantemente
+a alguien que solo aparece ahí ...
+
+*entrevistador*: Igual el símil no es del todo ...
+
+*hombre4*: No pero sabes qué.
+
+** documentación interna
+
+*entrevistador*: Vale ¿tenéis documentación interna? Imagino que sí
+¿no? Pues yo que sé desde cuentas, eh, documentos que no estáis
+poniendo en la página web, sino que son vuestros.
+
+*hombre4*: Sí, vale, vale.
+
+*entrevistador*: Vale, pues que me cuentes un poco cuáles son esos
+documentos, o sea qué tipo de documentos son esos.
+
+*hombre4*: Pues hay de todo tipo, digamos desde las mismas actas de
+las asambleas y reuniones, la documentación contable y fiscal, las
+propias memorias de actividades del proyecto, eso son un poco los
+documentos que compartimos.
+
+** gestión económica
+
+*entrevistador*: Vale, si quieres te pregunto un poco sobre gestión
+económica, imagino que no sé si tenéis donaciones o recibís solo por
+la venta de los libros, o hay contribuciones, hay personas que pueden
+ser socios y hacen sus contribuciones.
+
+*hablan a la vez*
+
+*hombre4*: El grueso de los ingresos que puede tener Traficantes de
+Sueños se debe a la labor que desarrollamos en el ámbito del libro, la
+distribución, la librería, la editorial y demás cuestiones ¿vale?. La
+librería tiene un sistema de socios, por el cual cada dos meses el
+compromiso del socio es ingresar una cuota, 30 euros cada dos meses, y
+a cambio tiene una serie de ventajas en la compra de libros. La
+editorial tiene también un sistema propio de inscripción, 150€ al año
+y recibes todas las publicaciones de ese año más dos a escoger del
+catálogo de Traficantes de Sueños, que en el total son 15 o 16 libros
+al año y también llevamos ahí un apartado de donaciones en la página
+web, que va vinculado a la descarga de los textos libres pero es muy
+anecdótico.
+
+No dependemos de ninguna otra organización.
+
+Hay otras vías digamos de obtención de recursos, como puede ser la
+formación, como puede ser la organización de seminarios, conferencias,
+cosas de ese estilo.
+
+*entrevistador*: No recibís subvenciones, entonces...
+
+*** gestión de donaciones
+*** formas de financiación
+*** contribuciones de miembros
+*** gastos/ingresos
+** toma de decisiones
+
+*entrevistador*: Bueno, entiendo que la toma de decisiones ya me la
+has ido contando un poco que es mediante asambleas la gente que estáis
+más implicados.
+
+** movilización
+
+*entrevistador*: No sé, si alguna vez habéis participado en
+movilizaciones o...
+
+*hombre4*: ¿Cómo colectivo? ¿Cómo Traficantes de Sueños?
+
+*entrevistador*: Sí
+
+*hombre4*: No, no. Obviamente como individuos desde luego, pero no
+utilizamos el nombre de Traficantes de Sueños como una entidad digamos
+que en un determinado pueda convocar, participar en algún tipo de
+movilizaciones. Es un papel como muchísimo más difuso.
+
+** gestión de nuevos colaboradores
+** reuniones/asambleas
+*** facilitadores/moderadores, anotadores, otros roles
+
+*entrevistador*: Vale, ahora te voy a preguntar un poco sobre las
+asambleas. Si los diferentes roles que hay, si por ejemplo, hay pues
+una persona que toma actas, una persona que coge los turnos de
+palabra, los diferentes roles que hay y un poco eso, su estructura.
+
+*hombre4*: Digamos que la asamblea no tiene una metodología demasiado
+establecida, más allá de los usos y costumbres ¿no? Hay que tener en
+cuenta en ese sentido que es una experiencia que ya tiene más de 15
+años de desarrollo y como tal ha ido adoptando y formulando digamos
+diferentes dinámicas hasta qué ha encontrado una estabilidad. Hay una
+persona rotativa que recoge las actas, de lo que se habla y cómo se
+construye el orden del día de la reunión. Y luego a partir de ahí hay
+turnos de palabra que digamos es la discusión especialmente de esa,
+jaja, hay digamos autorregulación nos conocemos mucho, dentro del
+colectivo, hay muchísimas diferencias a nivel personal, pero digamos
+lo que son las dinámicas de trabajo lo que prima de un modo u otro es
+ser lo más resolutivos posible, siempre y cuando el conjunto de los
+que han tomado esa decisión se la ... la compartan y se la apropien
+para llevarla a cabo porque sino no tiene ningún sentido. En realidad
+no tiene mayor articulación la reunión de Traficantes de Sueños, no
+tiene unos mecanismos muy claros, más allá de ...
+
+*entrevistador*: Tendrá sus órdenes del día que se van haciendo
+durante la semana ...
+
+*hombre4*: Sí, se van. No se propone igual explícitamente, pero va
+quedando un poco reflejo de cuáles son digamos los temas a tratar ¿no?
+Y luego en el principio de la reunión se establece cuál va a ser la
+prioridad.
+
+Muchas ocasiones, lo que hacemos también son reuniones monográficas en
+las que se va a prestar atención a determinada cuestión temática o
+problema que pueda surgir, y eso va a ocupar el grueso de la asamblea,
+a no ser lo que se hace es preparar un tipo, un informe, un documento,
+para que la gente uno u otro anticipe cuales son los asuntos a tratar,
+las temáticas en las cual centrarnos y también intentar ser
+resolutivos.
+
+** visibilidad exterior
+
+*entrevistador*: Vale. Ahora el siguiente punto es de visibilidad con
+el exterior. Bueno sé que tenéis una web con información o cómo
+difundís cualquier actividad de cara a darle visibilidad pues ponerlo
+en medios de contrainformación o
+
+*hombre4*: Bueno digamos que toda la actividad de Traficantes de
+Sueños, independientemente de si sea el lanzamiento de un nuevo libro,
+una actividad concreta, una jornada, o una charla que vayamos a dar
+por ahí, se difunde por diferentes canales: el físico aquí en la
+librería, cartelería y demás cuestiones clásico, clásico y luego a
+través de la red. A través de nuestra propia página web, a través de
+las redes sociales en las que estamos activos, a través de un boletín
+semanal de novedades, actividades y demás cuestiones que se envía
+desde la librería. Y luego ... yo creo que eso serían los, lo que
+estamos utilizando en la actualidad.
+
+*entrevistador*: Aha. Y Indymedia ...
+
+*hombre4*: Sí, bueno, luego están los medios de contrainformación que
+consideramos oportunas que serían las vinculadas con las actividades o
+los lanzamientos editoriales, pero digamos el grueso de la información
+lo concentramos en el boletín semanal que se envía, pero no toda la
+información la difundimos y luego nosotros dirigimos desde los
+indymedia, principalmente Madrid, OtroMadrid, Kaos en la Red,
+Rebelión, Tercera Información, Rojo y Negro, Diagonal, todos los
+medios de contrainformación para poder divulgar específicamente las
+actividades o un lanzamiento editorial, no vamos más allá de eso, no
+se trata tampoco de colgar catálogos y demás.
+
+*entrevistador*: Vale.
+
+*hombre4*: Y luego puntualmente todo el ámbito más centrado en lo que
+sería la labor editorial en labores de promoción: radio, prensa, ...
+
+** participación en iniciativas de terceros
+
+*entrevistador*: La siguiente pregunta es que tu antes me has
+preguntado que a veces viene gente a vuestro local a hacer charlas y
+tal y cual.
+
+*hombre4*: Aha
+
+*entrevistador*: que terceros vienen a vuestro local, pero yo ahora os
+lo pregunto al revés si vosotros participáis a veces en eventos que
+organizan, que organizan otras personas, otros colectivos.
+
+*hombre4*: Aha.
+
+*entrevistador*: Y eso ¿cómo se gestiona o ..? supongo que de la misma
+manera ¿no?.
+
+*hombre4*: Si no sé en concreto a qué te puedes referir, nosotros nos
+llega una invitación, una propuesta,
+
+*entrevistador*: de participar en una mesa redonda o ...
+
+*hombre4*: dependiendo del área temática o de las necesidades que
+tenga la gente que nos hace la invitación y la organización,
+colectivo, experiencia, pues en función de eso vemos quien va a
+participar en ella. En principio, cada uno de nosotros tiene su
+especialidad, todas son compartidas porque digamos el colectivo tomó
+la decisión de no centralizar en una persona que tuviera más
+conocimientos y en la medida de lo posible compartimos y entonces
+llega una propuesta, si nos interesa o no participar y en función de
+eso quien está disponible.
+
+** Compartición de recursos
+*** ¿licencias libres?
+
+*entrevistador*: Vale, me has hablado de que hay libros en los que
+utilizáis licencias libres, pero no en todos ¿no? en algunos sí. Ah
+¿en todos?
+
+*hombre4*: Debería haber metido, dime.
+
+*entrevistador*: Sí que ¿cuál es vuestro criterio con respecto a las
+licencias libres? ¿lo utilizáis en todos los libros? ¿unos sí y otros
+no?  ¿también los artículos que publicáis en vuestro blog? ¿cuál es el
+criterio?
+
+*hombre4*: Sí, digamos toda la documentación o toda la información que
+genera o que edita Traficantes de Sueños aparece con licencias libres.
+
+*entrevistador*: Aha.
+
+*hombre4*: Con Creative Commons, desde lo mínimo a lo más abierto,
+incluso dominio público. O sea no hay, no es negociable. Al igual que
+todo lo que tu decías artículos, entrevistas o contenidos de ese tipo,
+imágenes o demás todo está con Creative Commons. El proyecto de la
+editorial en su segunda etapa que comienza en el 2003 es una de sus
+señas de identidad.
+
+*** transparencia de métodos, de acciones, de cuentas
+** Planificación
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: Vale. ¿Y tenéis algún tipo de planificación? Me has
+hablado antes de que tenés reuniones anuales, pues ¿ahí planificáis
+para todo el año? ¿a medio y largo plazo? o como ...
+
+*hombre4*: Sí, una reunión anual sirve para hacer una valoración del
+curso actual y una planificación del siguiente. Pero sobre todo se
+trata de organizarnos no solo el trabajo, sino las líneas en las que
+vamos a intentar incidir más a lo largo del año. En función de la
+experiencia acumulada trabajamos desde lo que serían las líneas más
+políticas (conceptual y teóricas) a lo que sería la visión del trabajo
+más práctico y quién lo va a llevar a cabo. Luego estarían las líneas
+bases para trabajar el resto del año y todo se puede reformular un
+poco en función de lo que vamos viendo, va avanzando o no, los
+problemas que han surgido y no hemos tenido en cuenta, pero eso ya se
+trabaja desde cada una de las áreas y desde la asamblea de
+coordinación.
+
+* Factores de Cambio
+
+*entrevistador*: Bueno, pues ya hemos terminado la parte de flujos de
+información y ahora vamos a la de factores de cambio que son cuatro
+preguntas nada más. Y además son muy concretas.
+
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: ¿Qué herramientas te vienen a la cabeza, herramientas
+tecnológicas, que has usado en el último mes?
+
+*hombre4*: El redmine, las listas de correo, los wikis, luego no sé si
+estaría las páginas web, toda la estructura de las páginas web,
+modificación y demás cuestiones, streaming, sound cloud.
+
+*entrevistador*: ¿Eso qué es?
+
+*hombre4*: Sound Cloud es para subir los audios, digamos la audioteca
+que tiene Traficantes de Sueños. Edición de audio y demás cuestiones,
+pero eso ya es la plataforma que alberga
+
+*entrevistador*: Sound Cloud, sonido en nube ¿no?
+
+*hombre4*: Sí. Es la herramienta que hay y demás cuestiones.
+
+Eh, luego ya el propio programa de gestión de la librería, y un poco
+más lo habitual, pero eso sería lo que me viene ahora a la cabeza.
+
+** Cuáles son las herramientas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: Vale. ¿Cuáles son las herramientas que has dejado de
+usar si miras 5 años atrás?
+
+*hombre4*: Espera un poco ...
+
+*entrevistador*: Jaja
+
+*silencio*
+
+*hombre4*: No sabría decirte con sinceridad. ¿El Access?
+
+*entrevistador*: Jaja
+
+*hombre4*: Jajaja. ¡Sí! Acosado por el Software Libre, más que el
+Access sería la versión del OpenOffice, base de datos, hace años que
+no utilizo absolutamente nada. Pero otras herramientas, la verdad es
+que no sabría decirte.
+
+** Qué herramientas has incorporado si miras 5 años atrás
+
+*entrevistador*: Vale ¿y al revés? ¿Qué herramientas has incorporado
+si miras 5 años atrás?
+
+*hombre4*: Pues todas las que te acabo de decir posiblemente.
+
+*entrevistador*: O sea, listas de correo, por ejemplo, no usabas.
+
+*hombre4*: No, las listas de correo son relativamente novedosas dentro
+de Traficantes de Sueños. No tienen más de cuatro años, o tres años.
+
+*entrevistador*: Aha.
+
+*hombre4*: El flujo de información ha aumentado muchísimo desde los
+últimos tiempos, igual que la actividad del proyecto, al estar en
+ámbitos tan diferentes ha habido una necesidad importante de compartir
+ese volumen de información en cierta medida, uno no se puede leer
+todo, ni tampoco creo yo que sea práctico para el colectivo. Para eso
+están las áreas de responsabilidad de cada grupo para poder
+gestionarlo, no se puede volcar todo para todos, en un momento
+determinado, digamos, *no se entiende*. Yo estaba en la librería, pero
+también participaba en la editorial, para que cada pata o área de
+trabajo, pudiera evolucionar, o para tener un trabajo más efectivo se
+decidió separarlas, para ganar en nivel de actividad y resolución,
+entonces ... ¿cuál era la pregunta? jajaja
+
+*entrevistador*: ¿Qué herramientas habías incorporado?
+
+*hombre4*: Sí, pues todas.
+
+** Qué herramientas has incorporado debido a tu activismo político
+
+*entrevistador*: Vale, ¿Qué herramientas has incorporado debido a tu
+activismo político? Imagino que las mismas igual ¿no?
+
+*hombre4*: Sí. Es que no se puede diferenciar. Yo estoy en
+exclusividad en Traficantes de Sueños. Bueno, todos estamos en
+exclusividad en lo que podría ser trabajo, remuneración económica y
+proyecto político. Pero muchos o casi todos los miembros de
+Traficantes de Sueños participan en otros colectivos y lo que ellos
+añaden es una perspectiva externa y tener una participación como muy
+fluida. Yo también participo para otras cuestiones ¿no?
+
+*entrevistador*: Esto está pensado, porque igual es gente que está en
+un colectivo, pero tiene luego su trabajo...
+
+*hombre4*: Sí, sí, ya.
+
+*Hablan a la vez y no se entiende*
+
+*entrevistador*: Vale, pues ya hemos terminado. Muchas gracias por
+hacer la entrevista.
+
+*hombre4*: No, no, nada.

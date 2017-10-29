@@ -1,0 +1,159 @@
+
+Indirect:
+gccintro.info-1: 0
+gccintro.info-2: 237993
+
+Tag Table:
+(Indirect)
+Node: Top0
+Node: Introducción1122
+Node: Una breve historia de GCC2241
+Node: Importantes características de GCC4261
+Ref: Importantes características de GCC-Footnote-16928
+Node: Programación en C y C++7008
+Node: Convenciones usadas en este manual8249
+Ref: Convenciones usadas en este manual-Footnote-110261
+Node: Compilando un programa C10318
+Node: Compilando un pequeño programa C11446
+Node: Encontrando errores en un pequeño programa13561
+Node: Compilando múltiples archivos fuentes16334
+Node: Compilando archivos independientes19598
+Node: Creando archivos objeto desde archivos fuente21172
+Node: Creando ejecutables desde archivos objeto22659
+Node: Recompilando y reenlazando24216
+Ref: Recompilando y reenlazando-Footnote-126061
+Node: Un pequeño makefile26185
+Ref: Un pequeño makefile-Footnote-130275
+Node: Enlazando con librerías externas30445
+Ref: Enlazando con librerías externas-Footnote-135311
+Node: Orden de enlace de librerías35530
+Node: Usando librerías de archivos de cabeceras37589
+Ref: Usando librerías de archivos de cabeceras-Footnote-139546
+Node: Opciones de compilación39651
+Node: Asignando rutas de búsqueda40373
+Ref: Asignando rutas de búsqueda-Footnote-142499
+Node: Ejemplo de ruta de búsqueda42805
+Node: Variables de entorno46072
+Ref: Variables de entorno-Footnote-148571
+Node: Rutas de búsqueda extendidas48652
+Ref: Rutas de búsqueda extendidas-Footnote-150610
+Node: Librerías compartidas y librerías estáticas50753
+Ref: Librerías compartidas y librerías estáticas-Footnote-157536
+Node: Estándares del lenguaje C57857
+Node: ANSI/ISO58788
+Ref: ANSI/ISO-Footnote-162772
+Node: ANSI/ISO estricto62880
+Node: Seleccionando estándares específicos64534
+Node: Opciones de aviso en -Wall65624
+Node: Opciones de aviso adicionales69222
+Ref: Opciones de aviso adicionales-Footnote-176460
+Node: Opciones de aviso recomendadas76630
+Node: Usando el preprocesador77130
+Ref: Usando el preprocesador-Footnote-177706
+Node: Definiendo macros77861
+Node: Macros con valor80208
+Node: Preprocesando archivos fuentes83653
+Node: Compilando para depuración86569
+Node: Examinando archivos core88213
+Ref: Examinando archivos core-Footnote-193122
+Ref: Examinando archivos core-Footnote-293198
+Ref: Examinando archivos core-Footnote-393467
+Ref: Examinando archivos core-Footnote-493673
+Ref: Examinando archivos core-Footnote-593975
+Node: Mostrando un rastreo94102
+Node: Poniendo un punto de ruptura94948
+Node: Paso a paso a través de un programa96421
+Node: Modificando variables97246
+Node: Continuando la ejecución98552
+Node: Más información de GDB99381
+Ref: Más información de GDB-Footnote-1100083
+Node: Compilando con optimización100136
+Node: Optimización a nivel de fuentes101788
+Ref: Optimización a nivel de fuentes-Footnote-1106999
+Ref: Optimización a nivel de fuentes-Footnote-2107083
+Ref: Optimización a nivel de fuentes-Footnote-3107355
+Node: Dilema velocidad-espacio107483
+Node: Planificación110618
+Node: Niveles de optimización111607
+Node: Ejemplos de optimización115506
+Node: Optimización y depuración118808
+Node: Optimización y avisos del compilador119898
+Node: Compilando un programa C++122364
+Node: Compilando un pequeño programa C++123302
+Ref: Compilando un pequeño programa C++-Footnote-1126586
+Node: Opciones de compilación en C++126720
+Node: Usando la librería estándar de C++129079
+Node: Plantillas130283
+Node: Usando plantillas de librerías estándar de C++131017
+Node: Proporcionando sus propias plantillas132824
+Node: Instanciación explícita de plantillas136365
+Node: La palabra reservada export139919
+Node: Opciones específicas de plataforma140712
+Node: Opciones para Intel y AMD x86142060
+Ref: Opciones para Intel y AMD x86-Footnote-1144124
+Node: Extensiones x86144256
+Ref: Extensiones x86-Footnote-1145635
+Node: Procesadores x86 de 64 bits145731
+Ref: Procesadores x86 de 64 bits-Footnote-1147413
+Node: Opciones para DEC Alpha147529
+Node: Opciones para SPARC149962
+Node: Opciones para POWER/PowerPC150924
+Node: Soporte de múltiples arquitecturas152854
+Ref: Soporte de múltiples arquitecturas-Footnote-1154508
+Node: Usos de coma flotante154573
+Ref: Usos de coma flotante-Footnote-1160237
+Ref: Usos de coma flotante-Footnote-2160337
+Ref: Usos de coma flotante-Footnote-3160617
+Node: Portabilidad de los tipos con signo y sin signo160774
+Ref: Portabilidad de los tipos con signo y sin signo-Footnote-1165157
+Ref: Portabilidad de los tipos con signo y sin signo-Footnote-2165264
+Ref: Portabilidad de los tipos con signo y sin signo-Footnote-3165432
+Node: Resolución de problemas165514
+Node: Opciones de ayuda en línea de comandos166119
+Node: Números de versión166984
+Node: Compilación verbosa169122
+Node: Parando un programa en un bucle infinito174078
+Ref: Parando un programa en un bucle infinito-Footnote-1176993
+Node: Previniendo un uso excesivo de memoria177120
+Node: Utilidades relativas al compilador178909
+Node: Creando una librería con el archivador de GNU179477
+Ref: Creando una librería con el archivador de GNU-Footnote-1183255
+Node: Usando el profiler gprof183328
+Ref: Usando el profiler gprof-Footnote-1187818
+Node: Coverage testing with gcov187880
+Node: Como funciona el compilador191023
+Node: Una vista de los procesos de compilación191777
+Node: El preprocesador193137
+Ref: El preprocesador-Footnote-1193939
+Node: El compilador194168
+Node: El ensamblador195811
+Node: El enlazador196587
+Ref: El enlazador-Footnote-1197963
+Node: Examinado archivos compilados198176
+Node: Identificando archivos198624
+Ref: Identificando archivos-Footnote-1201099
+Ref: Identificando archivos-Footnote-2201289
+Node: Examinando la tabla de símbolos201343
+Node: Encontrando librerías dinámicas enlazadas202819
+Node: Mensajes comunes de error204694
+Node: Mensajes de error del preprocesador205439
+Node: Mensajes de error del compilador207726
+Node: Mensajes de error del enlazador222015
+Node: Mensajes de error en tiempo de ejecución224242
+Node: Obteniendo ayuda226510
+Ref: Obteniendo ayuda-Footnote-1228259
+Ref: Obteniendo ayuda-Footnote-2228306
+Node: Lectura adicional228359
+Ref: Lectura adicional-Footnote-1232693
+Ref: Lectura adicional-Footnote-2232725
+Node: Reconocimientos232778
+Node: Otros libros del editor233788
+Node: Organizaciones de software libre235658
+Node: Índice237993
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

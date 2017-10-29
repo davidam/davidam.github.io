@@ -1,0 +1,46 @@
+#!/bin/sh
+# Copyright © 2003, David Arroyo Menéndez
+# El contenido listado aquí abajo es software libre. Puede ser utilizado, modificado y distribuído libremente bajo los términos de la GNU General Public License (http://www.gnu.org/copyleft/gpl.html). 
+
+# Algunos comandos para iniciarse en el mundo UNIX de las expresiones regulares
+
+# Para cambiar todas ocurrencias de una expresion regular por otra en un fichero ...
+
+perl -p -i -e 's/this/that/g' filename 
+
+# Para poner las url de los href con parentesis
+
+perl -p -i -e 's/a href=(http:\/\/.*)>(.*)<\/a>/a href="$1">$2<\/a>/g' index.php3           # con los parentesis pillo la 
+# expresion regular y con $1 la recuerdo
+
+# Para dejar las direcciones de correo electronico a modo anti-spam
+
+perl -p -i -e 's/mailto:(.*)@(.*)\.(.*)">/mailto:$1 arroba $2 punto $3\">/g' responsables.php 
+
+# con lo de arriba cambiamos lo de dentro del mailto
+
+perl -p -i -e 's/>(.*)@(.*)\.(.*)</>$1 arroba $2 punto $3</g' responsables.php 
+
+# con lo de arriba cambiamos lo de fuera
+# usa estos dos comandos en ficheros donde la única aparición de la "@" sean en los correos electrónicos, de otro modo, tendrás que retocar después .
+
+
+# Todos estos ejercicios pueden realizarse con sed que en general es mas estandar
+
+sed -i 's/this/that/g' filename 
+
+# Otra manera de aprovechar el potencial de las expresiones regulares es desde el propio editor de textos, por ej., emacs:
+
+# Para poner las url de los href con parentesis
+
+
+
+# Para renombrar una serie de ficheros usando el patron de como se llamaba anteriormente
+
+mmv "*.JPEG" "#1.jpg"
+
+# Para cambiar la terminación .htm por .html en todos los ficheros que existan con esa terminación en el directorio actual y en todos sus subdirectorios.
+
+mmv ";*.htm" "#1#2.html" # el #1 es el directorio y el #2 es el fichero
+
+# el comando mmv se encuentra en el paquete debian mmv :D

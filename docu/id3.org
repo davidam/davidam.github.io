@@ -1,0 +1,7 @@
+#+TITLE: Explicando ID3
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+ID3 es uno de los primeros algoritmos que aparecieron en el mundo del
+machine learning en este artículo trataré de explicar cómo funciona.
+

@@ -1,0 +1,167 @@
+#+TITLE: drupal-el tutorial
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+drupal-el has some specific functions to develop fast, and hundreds of
+functions to generate code from M-x
+
+* Video overview
+
+You can watch videos overview about this software:
+
++ [[http://davidam.com/video/video-drupal-el-page.mkv][How can I create a simple drupal project using drupal-el?]]
++ [[http://davidam.com/video/drupal-el-tags.mkv][How can I browse through the source code?]]
+
+* Installation
+
+** You can download the source so:
+
+#+BEGIN_SRC bash
+$ cd ~/.emacs.d
+$ bzr branch bzr://bzr.savannah.nongnu.org/drupal-el
+#+END_SRC
+
+** Add melpa to your .emacs
+
+#+BEGIN_SRC lisp
+;; MELPA
+(require 'package) ;; You might already have this line
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize) ;; You might already have this line
+#+END_SRC
+
+** Execute package-install-file to install dependencies
+
+You can install it, with:
+
+#+BEGIN_SRC lisp
+M-x package-list-packages
+M-x package-install-file ~/.emacs.d/drupal-el/drupal-pkg.el
+#+END_SRC
+
+** To activate drupal-el
+
+You can adapt the next lines in your .emacs
+#+BEGIN_SRC lisp
+(setq drupal-el-path "~/.emacs.d/drupal-el")
+(load (concat drupal-el-path "drupal.el"))
+#+END_SRC
+
+
+* drupal-el
+
+#+BEGIN_SRC bash
+M-x drupal-create-etags
+M-x drupal-drush-cache-clear
+M-x drupal-kill-project-buffers
+M-x drupal-save-project-buffers
+#+END_SRC
+
+* Skeletons
+
+This tutorial only intends to become a walk through the main drupal-el
+features, highlighting some famous drupal functions 
+
+** bootstrap.el
+
+#+BEGIN_SRC bash
+M-x drupal_set_message
+M-x drupal-arg
+M-x drupal_set_message
+M-x drupal_set_title
+M-x drupal-t
+M-x drupal-variable_set
+M-x drupal-watchdog
+#+END_SRC
+
+** control-structure.el
+
+#+BEGIN_SRC bash
+M-x drupal-if
+M-x drupal-foreach
+M-x drupal-for
+M-x drupal-switch
+M-x drupal-switch-case
+M-x drupal-goto
+#+END_SRC
+
+** common.el
+#+BEGIN_SRC bash
+M-x drupal-l
+M-x drupal-l-extended
+M-x drupal_parse_url
+M-x drupal_json_decode
+M-x drupal_json_encode
+M-x drupal_clear_css_cache
+M-x drupal_add_js
+M-x drupal-base_path
+#+END_SRC
+
+** db.el
+#+BEGIN_SRC bash
+M-x drupal-db_query-foreach
+M-x drupal-db_query
+M-x drupal-db_select
+#+END_SRC
+
+** field.el
+#+BEGIN_SRC bash
+M-x drupal-field_get_items
+M-x drupal-field_has_data
+#+END_SRC
+
+** file.el
+#+BEGIN_SRC bash
+M-x drupal_chmod
+M-x drupal_dirname
+M-x drupal_mkdir
+M-x drupal_realpath
+M-x drupal_rmdir
+M-x drupal_unlink
+M-x drupal-file_save
+#+END_SRC
+** globals.el
+#+BEGIN_SRC bash
+M-x drupal-$base_path
+M-x drupal-$base_root
+M-x drupal-$base_url
+M-x drupal-$user 
+#+END_SRC
+
+** hooks.el
+#+BEGIN_SRC bash
+M-x drupal-hook_hook
+M-x drupal-hook_menu
+M-x drupal-hook_block_info
+M-x drupal-hook_block_save
+M-x drupal-hook_block_view
+M-x drupal-hook_entity_info
+#+END_SRC
+
+** info.el
+#+BEGIN_SRC bash
+M-x drupal-info-project-7
+M-x drupal-info-theme-7
+#+END_SRC
+
+** menu.el
+#+BEGIN_SRC bash
+M-x drupal-menu_cache_clear
+M-x drupal-menu_cache_clear_all
+M-x drupal-menu_get_active_breadcrumb
+M-x drupal-menu_get_active_trail
+#+END_SRC
+
+
+* License
+This document is under a [[http://creativecommons.org/licenses/by-sa/4.0/deed][Creative Commons Attribution-ShareAlike 4.0 International]]
+
+[[http://creativecommons.org/licenses/by-sa/4.0/deed][file:http://i.creativecommons.org/l/by-sa/3.0/80x15.png]]

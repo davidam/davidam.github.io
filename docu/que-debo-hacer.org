@@ -1,0 +1,73 @@
+#+TITLE: Sobre Fundamentos Éticos y Morales de Vida ¿Qué debo hacer?
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+#+DATE: 01/05/2001
+
+
+* ¿Qué debo hacer?
+
+En este pequeño artículo trato de responder con mis propias palabras a
+una de las preguntas que se han planteado muchos filósofos ¿qué debo
+hacer?.
+
+Bien en primer lugar, toda persona busca su propia felicidad
+individual, ser felices es lo que en realidad buscamos en cada una de
+nuestras pequeñas acciones, otra cosa sería engañarnos a nosotros
+mismos.
+
+Sin embargo, algunas personas pensamos que la felicidad individual
+está mejor guardada dentro de la felicidad colectiva, esto es así
+porque el ser humano es un ser social. Así si los que nos rodean no
+son felices difícilmente lo seremos nosotros.
+
+Muchas veces haciendo felices a los demás nos hacemos felices a
+nosotros mismos. Si tratamos de hacer felices a la humanidad no hemos
+de esperar nada de ella y la felicidad que nos da será más eficiente.
+Sin embargo, la felicidad de los que nos rodea es la que más
+influencia en la propia. Esto no debe preocuparnos demasiado, ya que
+muchas veces cambiamos de personas cercanas y si hemos invertido en
+felicidad colectiva aparece nuevas personas que te quieren hacer
+feliz.
+
+Más fácil le será llegar a la felicidad a aquel que menos cosas
+necesita. ¿Cómo podemos averiguar lo que realmente necesitamos y lo
+que no?. Pues bien en la sociedad de consumo esto es bastante
+complejo, ya que el sistema nos induce a estar constatemente
+consumiendo cosas que realmente no necesitamos a través de cosas como
+los medios de comunicación de masas, la publicidad, los discursos de
+los políticos, etc. De este modo, deberíamos producir y consumir en un
+mismo sentido, en el sentido en que haya una felicidad sostenible, la
+felicidad sostenible solo es posible si eliminamos todas las
+sugestiones que nos llevan a consumir o producir cosas que no
+necesitamos.
+
+Hay una diferencia clara entre dar a conocer algo y convertirlo en
+humo comercial. El márketing enseña a engañar a la gente para que
+consuman cosas que no necesitan. Si tu explicas o publicas de manera
+sincera (dando datos objetivos y demostraciones) de para que sirve una
+herramienta pues estás dando a conocer algo, pero si creas sugestiones
+emocionales estás creando márketing y eso es malo para la felicidad
+colectiva, pero en general es bueno para la felicidad de algún
+individuo.
+
+Los expertos en márketing analizan las necesidades de la gente desde
+métodos más o menos objetivos como encuestas o entrevistas y crean
+sugestiones para explicar que el producto las satisface, ya sean
+políticos, medios de comunicación de masas, redes sociales, o
+vendedores de cualquier tipo de producto.
+
+Para vencer las sugestiones del sistema en el que cada vez los ricos
+son menos y más ricos y los pobres son más y más pobres hay que evitar
+el sugestionamiento de políticos y medios de comunicación, estudiar y
+publicar los datos de la realidad social en la que vivimos y crear
+producción que satisfaga las necesidades reales de las personas:
+vivienda, comida, salud, etc.
+
+* Licencia
+
+Este documento está bajo una [[http://creativecommons.org/licenses/by-nd/3.0/es/deed][Licencia Creative Commons
+Atribución-SinDerivadas 3.0]]
+
+[[file:http://i.creativecommons.org/l/by-nd/3.0/88x31.png]]

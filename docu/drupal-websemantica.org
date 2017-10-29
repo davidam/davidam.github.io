@@ -1,0 +1,26 @@
+#+TITLE: Web Semántica en Drupal
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+Este artículo trata de ser un recetario de mejoras que se pueden hacer
+en el ámbito de la web semántica con drupal.
+
+* OpenID
+
+OpenID es un estándar que nos permitirá tener un solo usuario y
+contraseña para distintos sitios web.
+
+#+BEGIN_SRC bash
+$ drush dl openid_provider
+$ drush en openid_provider
+#+END_SRC
+
+Se consigue un identificador de openid, por ejemplo, en [[https://pip.verisignlabs.com/][Verisign]]
+(listado completo: http://openid.net/get-an-openid/). En este caso
+conseguiríamos un uri parecido a davidam.pip.verisignlabs.com. Este
+será el uri que introduciremos en el login, que tras habilitar el
+módulo nos da la opción de escoger openid.
+
+* Microformatos

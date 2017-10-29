@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Funciones Primitivas de Lisp</title>
+<!-- 2014-07-05 sáb 09:33 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Funciones Primitivas de Lisp</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Ayuda on-line en common lisp</a></li>
+<li><a href="#sec-2">2. Debug</a></li>
+<li><a href="#sec-3">3. Moviéndonos con emacs</a></li>
+<li><a href="#sec-4">4. Asignación</a></li>
+<li><a href="#sec-5">5. Aritméticas</a></li>
+<li><a href="#sec-6">6. Comparación</a></li>
+<li><a href="#sec-7">7. Lógicas</a></li>
+<li><a href="#sec-8">8. Manejo de Secuencias (son tanto listas como cadenas)</a></li>
+<li><a href="#sec-9">9. Manejo de cadenas</a></li>
+<li><a href="#sec-10">10. Manejo de listas</a></li>
+<li><a href="#sec-11">11. Funciones que tienen funciones como argumentos</a></li>
+<li><a href="#sec-12">12. Iteración sobre números y listas</a></li>
+<li><a href="#sec-13">13. Funciones de Lectura y Escritura</a></li>
+<li><a href="#sec-14">14. Propiedades</a></li>
+<li><a href="#sec-15">15. Arreglos</a></li>
+<li><a href="#sec-16">16. Estructuras</a></li>
+<li><a href="#sec-17">17. Funciones y Macros</a></li>
+<li><a href="#sec-18">18. Entorno</a></li>
+<li><a href="#sec-19">19. Port</a></li>
+<li><a href="#sec-20">20. Licencia</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Ayuda on-line en common lisp</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Esto es un resumen con ejemplo de unas cuantas primitivas de lisp, por
+lo que en ocasiones será necesario ir a la ayuda
+</p>
+
+<p>
+describe: es útil si quieres saber qué argumentos tiene una función, ó a qué paquete corresponde
+Ejemplo de uso: (describe 'first)
+</p>
+
+<p>
+apropos: lista el conjunto de símbolos relativos al argumento del que queremos información.
+Ejemplo de uso: (apropos 'first)
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Debug</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+C-u C-M x nombre-funcion
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Moviéndonos con emacs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Esc-x lisp-mode: entramos en el modo lisp
+Ctl+Alt+n: vas al siguiente parentesis
+Ctl+Alt+p: vas al anterior parentesis
+Ctl+Alt+d: te introduces en la siguiente funcion
+Ctl+Alt+u: te sales de la funcion actual
+Ctl+Alt+t: intercambia la funcion anterior a la posicion de la actual
+Esc+Ctl+k: borra el argumento de la funcion
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Asignación</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+setq: Asiga valores a una variable
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (setq nueve '9)
+		(setq l '(a b c))
+</pre>
+</div>
+
+<p>
+let y let*: Asigna valores a variables y genera listas de tal modo que en let las modificaciones en la muestra de datos en pantalla de los valores son locales y en let* son globales 
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (setq nueve '9)
+		(let ((nueve 'interior)
+		       (y nueve))
+		      (list nueve y))
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (setq nueve '9)
+		(let* ((nueve 'interior)
+		       (y nueve))
+		      (list nueve y))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Aritméticas</h2>
+<div class="outline-text-2" id="text-5">
+<p>
++, -, *, / : Son las operaciones para sumar, restar, multiplicar y dividir
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Un ejemplo de uso es: (+ (* 2 3) 5)
+</pre>
+</div>
+
+<p>
+% : Esta no funciona en clisp, venía en el libro de emacs
+</p>
+
+<p>
+1+, 1- : Incrementa/Decrementa en uno el valor. Es una operación unaria.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Un ejemplo de uso es: (1+ 9)
+</pre>
+</div>
+
+<p>
+max, min : Devuelve el valor máximo de una lista
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Un ejemplo de uso es: (max 23 4 5 234 654)
+</pre>
+</div>
+
+<p>
+float: Devuelve el valor en coma flotante
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (float (/ 22 7))
+</pre>
+</div>
+
+<p>
+round: redondea un valor al entero más cercano
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (round (/ 22 7))
+</pre>
+</div>
+
+<p>
+expt: calcula potencias elevando su primer argumento a su segundo
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (expt 2 3)
+</pre>
+</div>
+
+<p>
+sqrt: calcula raices cuadradas
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (sqrt 9)
+</pre>
+</div>
+
+<p>
+abs: calcula el valor absoluto
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (abs -3)
+</pre>
+</div>
+
+<p>
+random: calcular un número aleatorio de 0 a N-1
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (random '5)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Comparación</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+&gt;, &lt;, &gt;=, &lt;= : Mayor que, Menor que, Mayor o igual que, Menor o igual que. Sólo números
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Un ejemplo de uso: (&lt; (max 5 6) 6)
+</pre>
+</div>
+
+<p>
+/= : Distinto que. Sólo para números
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (/= 5 4)
+</pre>
+</div>
+
+<p>
+equal: Evalúa si el valor de los dos argumentos es la misma expresión
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:  (equal (+ 2 2) 4)
+</pre>
+</div>
+
+<p>
+eql: Evalúa si el valor de los dos argumentos es el mismo símbolo o número.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo: Fallará si intentamos (eql '(x y) '(x y))
+</pre>
+</div>
+
+<p>
+eq: Evalúa si el valor de los dos argumentos es el mismo símbolo.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo: Fallará si intentamos (eq '(x y) '(x y))
+</pre>
+</div>
+
+<p>
+= : Evalúa si el valor de los dos argumentos es el mismo número.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo: Falla si intentamos ver si (= 'x 'x)
+</pre>
+</div>
+
+<p>
+zerop: Evalúa si un número es cero.
+</p>
+
+<p>
+plusp: Evalúa si un número es positivo.
+</p>
+
+<p>
+listp: Evalúa si el argumento es una lista.
+</p>
+
+<p>
+evenp: Evalúa si un número es par.
+</p>
+
+<p>
+oddp: Evalúa si un número es impar.
+</p>
+
+<p>
+numberp: Evalúa si es un número.
+</p>
+
+<p>
+symbolp: Evalúa si es un símbolo.
+</p>
+
+<p>
+if, when, unless y case: Sirven para ejecutar o no acciones si se
+cumple una condición.  
+</p>
+<div class="org-src-container">
+
+<pre class="src src-nillangnilswitchesnilflags">nilbody
+</pre>
+</div>
+
+<p>
+sort: ordena una lista en el orden que se le dicta como argumento
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (sort '(3 1 4 1 5 9) #'&lt;)
+Al igual que nconc y delete sort altera el contenido de la lista.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Lógicas</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+and, or y not: Son las expresiones lógicas de toda la vida
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (and (&lt; 5 6) T)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Manejo de Secuencias (son tanto listas como cadenas)</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+elt: devuelve el elemento que ocupa la posición x de la secuencia.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (elt '(a b c) 0)
+</pre>
+</div>
+<p>
+length: cuenta el número de elementos de nivel superior que hay en una lista.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (length '(platon socrates aristóteles))
+</pre>
+</div>
+<p>
+reverse: invierte el orden de los elementos de nivel superior de la secuencia.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (reverse '(platon socrates aristóteles))
+</pre>
+</div>
+<p>
+replace: reemplaza los elementos de la seq1 con los elementos de seq2. seq1 se modifica de manera destructiva
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:
+(defvar sent '(1 2 3 4 5 6 7 8 9 0))
+(replace sent '("Second" "Third") :start1 1 :end1 9)
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:
+(defvar from '(1 2 3))
+(defvar to '(a b c))
+(replace from to :start1 1 :end1 2)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Manejo de cadenas</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+string=, string-equal: nos dice si dos cadenas son iguales, la diferencia entre uno y otro es que string= diferencia minúsculas y mayúsculas y string-equal, no.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (string= "abc" "ABC")
+</pre>
+</div>
+<p>
+char=, char-equal: nos dice si dos caracteres son iguales, la diferencia entre uno y otro es que char= diferencia minúsculas y mayúsculas y char-equal, no.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (char= #\a #\a)
+</pre>
+</div>
+<p>
+search: nos sirve para determinar si una cadena está contenida en otra. Si lo está devolverá la posición donde empieza la correspondencia, en otro caso devuelve NIL.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (search "Márquez" "García Márquez")
+Ejemplo de uso: (search "MÁRQUEZ" "García Márquez" :test #'char-equal) ;; así se evita que distinga entre mayúsculas y minúsculas.
+</pre>
+</div>
+<p>
+concatenate: concatena cadenas
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (concatenate 'string "hola" "adios")
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Manejo de listas</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+setq: Asigna valores a una lista   
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (setq amigos '(samer vicente elisa jorge luismi))
+</pre>
+</div>
+<p>
+let: Asigna valores a una lista 
+</p>
+
+<p>
+atom: Nos dice si el elemento es un átomo o si es una lista.
+</p>
+
+<p>
+endp: Comprueba si la lista está vacía
+</p>
+
+<p>
+first: Devuelve el primer elemento de una lista. Es lo mismo que car
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (first amigos)
+</pre>
+</div>
+<p>
+rest: Devuelve la lista sin el primer elemento. Es lo mismo que cdr
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (rest amigos)
+</pre>
+</div>
+<p>
+cadr: Entre c y r puede haber una combinación a y d que denotan el encadenamiento de first y rest.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (caddr amigos) = (first (rest (rest amigos)))
+</pre>
+</div>
+<p>
+second, third, fourth,&#x2026;: Devuelve el segundo, tercer, o cuarto elemento de una lista (hay hasta el tenth)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (third amigos)
+</pre>
+</div>
+<p>
+cons: Inserta un nuevo elemento en la primera posición de una lista.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (cons 'lucas amigos) 
+;;  Lo que realmente hace cons es hacer que el primer apuntador de la lista sea 'lucas.
+</pre>
+</div>
+<p>
+append: Combina dos listas en una
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (setq friends (append amigos '(b c)))
+;;      Lo que realmente hace append es copiar amigos en la nueva lista (en nuestro caso friends) y, luego anexa '(b c).
+</pre>
+</div>
+
+<p>
+nconc: fusiona dos listas en una. La diferencia con append es que nconc lo hace haciendo que el último apuntador de la primera lista apunte al primero de la segunda.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (nconc amigos '(b c))
+;;      Si ahora llamamos a amigos desde clisp el resultado no es el que tal vez esperábamos.
+</pre>
+</div>
+
+<p>
+list: Elabora una lista con sus argumentos
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (list '1 '2 '3)
+</pre>
+</div>
+
+<p>
+push y pop: meter y sacar un elemento a una lista. Fíjate que podemos usar cons y rest para esos menesteres, la diferencia es que aquí los cambios alteran el contenido de la variable.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (pop amigos)
+</pre>
+</div>
+
+<p>
+nthcdr: elimina los n primeros elementos de una lista
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (nthcdr 3 amigos)
+</pre>
+</div>
+
+<p>
+butlast: elimina los n últimos elementos de una lista
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (butlast amigos 2)
+</pre>
+</div>
+
+<p>
+last: devuelve una lista en la que se han eliminado todos los elementos menos el último.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (last amigos)
+</pre>
+</div>
+
+<p>
+assoc: Sirve para recuperar elementos de una lista de asociación. Una lista de asociación es una lista de sublistas, en la que el primer elemento de cada sublista se utiliza como una clave para recuperar la sublista completa. 
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">   Ejemplo de uso: (setq sara '((estatura 1.7) (peso 65)))
+		   (assoc 'peso sara)
+(setq fechas '((startyear 2013) (startmonth 06) (endyear 2013) (endmonth 12)))
+(assoc 'startyear fechas)
+</pre>
+</div>
+
+<p>
+member: comprueba si un elemento pertenece a una lista y devuelve una lista con los elementos que hay desde el elemento coincidente
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (member 'c '(b c a))
+</pre>
+</div>
+
+<p>
+delete: se deshace de las ocurrencias del primer argumento que aparezcan en el nivel superior del segundo.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (delete 'jorge amigos)
+	Nótese que delete ha borrado del todo a jorge de amigos.
+</pre>
+</div>
+
+<p>
+remove: se deshace de las ocurrencias del primer argumento que aparezcan en el nivel superior del segundo. Aparentemente hace lo mismo que delete, pero en la práctica delete cambia el contenido de la lista y remove no.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (remove 'jorge amigos)
+Ejemplo avanzado de uso: (remove '(cara cruz) '((alfa omega) (cara cruz) (zenit nadir)) :test #'equal)
+Ejemplo avanzado de uso: (remove 'cruz '((alfa omega) (cara cruz) (zenit nadir)) :test #'member)
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> Funciones que tienen funciones como argumentos</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+mapcar: Simplifica las operaciones de transformación de listas. Se proporciona el procedimiento de transformación y la lista de elementos a transformar.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (mapcar #'oddp '(1 2 3))
+		(mapcar #'- '(1 2 3 4))
+</pre>
+</div>
+
+<p>
+remove-if, remove-if-not: Simplifica las operaciones de filtración de listas. De esta manera, remove-if elimina todos elementos que satisfacen un predicado dado.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (remove-if #'evenp '(1 2 3 4))
+</pre>
+</div>
+
+<p>
+reduce: Similar a mapcar, simplifica operaciones de filtrado de secuencias.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">Ejemplo de uso: 
+   (reduce (lambda (best item) 
+       (if (and (oddp item) (&gt; item best)) 
+	   item
+	 best))
+     '(1 4 6 5 8 2 7))
+</pre>
+</div>
+
+<p>
+count-if, find-if: Simplifican las operaciones de conteo y localización.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (count-if #'evenp '(1 2 3 4))
+		(find-if #'evenp '(1 2 3 4))
+</pre>
+</div>
+
+<p>
+funcall: Permite definir procedimientos que tengan procedimientos como argumentos.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (funcall #'first '(1 2 3))
+</pre>
+</div>
+
+<p>
+apply: usa el valor de su primer argumento sobre los elementos de su segundo argumento, el cual debe ser una lista.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (apply #'append '((e1 e2) (e3 e4)))
+		(apply #'+ 1 2 3 '(4 5 6))
+</pre>
+</div>
+
+<p>
+lambda: define procedimientos anónimos, es un defun sin nombre del procedimiento, útil para dejar más claro lo que va a hacer el procedimiento. No debe usarse si el procedimiento puede usarse unas cuantas veces.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (mapcar #'(lambda (x) (eq x 2)) '(3 4 2 5)) 
+Ejemplo de uso: (defun igualdad (y list) (mapcar #'(lambda (x) (eq x y)) list)) -&gt; Ej. anterior llevado a función
+Ejemplo de uso: ((lambda (x) (list x x)) '(lambda (x) (list x x))) -&gt; programa q se escribe a si mismo
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Iteración sobre números y listas</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+DOTIMES:
+    (dotimes (&lt;contador&gt; &lt;límite-superior&gt; &lt;resultado&gt;)
+              &lt;cuerpo del bucle&gt;)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">   Ejemplo de uso:
+(dotimes (i (length '(2 3 4 5)))
+  (if (= 5 (elt '(2 3 4 5) i))
+      (print "encontrado 5")))
+</pre>
+</div>
+
+<p>
+DOLIST:
+    (dolist (&lt;contador&gt; &lt;lista&gt; &lt;resultado&gt;)
+             &lt;cuerpo del bucle&gt;)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:
+	(dolist (i '(2 3 5 6))
+		(if (equal 5 i) (format t "encontrado ~a" i)))
+</pre>
+</div>
+
+<p>
+DO: es mas general que dolist y dotimes
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:
+	(defun nuevo-expt (m n)
+	       (do ((resultado 1)                ;;se inicializa parámetros
+		    (exponente n))
+		     (when (zerop exponente)       ;;condición de terminación
+		       (return resultado))
+		    (setq resultado (* m resultado))  ;;cuerpo del bucle
+		    (setq exponente (- exponente 1))))
+</pre>
+</div>
+
+<p>
+LOOP: Sólo se detiene al encontrarse con un return
+      (loop &lt;cuerpo&gt;)
+</p>
+
+<p>
+PROG1 y PROGN: ambos interpretan secuencias, progn devuelve el resultado de la n-ésima función y prog1 de la primera.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (progn (setq a 'x) (setq b 'y) (setq c 'z))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Funciones de Lectura y Escritura</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+print, format: son operaciones de salida de texto.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:  (format t "~%¡Hola!~%Estoy listo para empezar.")
+</pre>
+</div>
+
+<p>
+read: es una operación de lectura de texto.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (setq dato-usuario (read))
+</pre>
+</div>
+
+<p>
+read-line: absorve caracteres hasta donde aparece un retorno de carro o un fin de archivo. Luego produce una cadena con los caracteres q preceden el retorno de carro o el final del archivo, seguido de NIL, al menos que read-line encuentre el final del archivos mientras está leyendo una línea, en ese caso es T.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">   Ejemplo de uso: (read-line)
+   Ejemplo de uso: 
+	   (with-open-file (flujo-de-pacientes "pacientes.lsp" :direction :input)
+	   (dotimes (n 4) (print (read-line flujo-de-pacientes))))
+   Ejemplo de uso:
+	   (setq a "line 1 
+line2")
+	   (read-line (setq input-stream (make-string-input-stream a)))
+</pre>
+</div>
+
+<p>
+read-char: lee un carácter
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (read-char)
+</pre>
+</div>
+
+<p>
+with-open-file: permite leer y escribir en archivos
+plantilla:
+     (with-open-file (&lt;nombre del flujo&gt;
+                     &lt;"ruta del archivo"&gt;
+</p>
+<p>
+             :direction &lt;:input o :output&gt;)
+&#x2026;)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso:
+    (with-open-file (flujo-de-pacientes "pacientes.lsp" 
+					**:direction :input) 
+		    (do ((paciente (read flujo-de-pacientes nil 'eof) 
+				   (read flujo-de-pacientes nil 'eof))) 
+			((eq paciente 'eof)) 
+			(format t "~%¡Hola!~%Estoy listo para empezar. ~a" (first paciente))))
+</pre>
+</div>
+
+<p>
+open: permite escribir en archivos
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (defvar *st-local* (open "/tmp/local1" :direction :output :if-exists :rename-and-delete))
+</pre>
+</div>
+
+<p>
+eval: es una operación que lee y evalúa.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (eval (read))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> Propiedades</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+get: establece (con setf) y recupera el valor de una propiedad de un símbolo.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">   Ejemplo de uso: (setf (get 'luis 'padres) '(alfonso monica)) ;; establece
+		   (get 'luis 'padres)                          ;; recupera
+(setf (get 'fechas 'startyear) '2013)
+(setf (get 'fechas 'startmonth) '06)
+(setf (get 'fechas 'endyear) '2013)
+(setf (get 'fechas 'endmonth) '12)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> Arreglos</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+make-array: crea un arreglo en common lisp con la ayuda de setq
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso (common lisp): (setq matriz-cl (make-array '(4 4)))
+Ejemplo de uso (emacs lisp): (setq matriz-el '[[1 1 0 1] [0 1 0 1] [0 0 0 0] [0 1 0 0]])
+</pre>
+</div>
+
+<p>
+aref: sirve para recuperar un valor del arreglo
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso (common lisp): (setq (aref matriz-cl 0 0) 3)
+Ejemplo de uso (emacs lisp): (aref (aref matriz-el 0) 0)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16"><span class="section-number-2">16</span> Estructuras</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+defstruct: define una estructura lisp
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (defstruct q (key #'identity) (last nil) (elements nil))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-17" class="outline-2">
+<h2 id="sec-17"><span class="section-number-2">17</span> Funciones y Macros</h2>
+<div class="outline-text-2" id="text-17">
+<p>
+defun: crea funciones
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (defun square (x) (* x x))
+</pre>
+</div>
+
+<p>
+defmacro: crea macros
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (defmacro square (X) `(* ,X ,X))
+Ejemplo de uso: (defmacro square2 (X) `(let ((Temp ,X)) (* Temp Temp)))
+</pre>
+</div>
+
+<p>
+macroexpand-1: devuelve la forma lisp del macro con sus argumentos
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (macroexpand-1 '(square 9))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-18" class="outline-2">
+<h2 id="sec-18"><span class="section-number-2">18</span> Entorno</h2>
+<div class="outline-text-2" id="text-18">
+<p>
+get-universal-time: nos devuelve la fecha actual en formato unix
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (get-universal-time)
+</pre>
+</div>
+
+<p>
+machine-type: nos devuelve la familia de maquina que usamos
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (machine-type)
+</pre>
+</div>
+
+<p>
+time: nos devuelve el coste computacional en common lisp
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (time (+ 2 3))
+</pre>
+</div>
+
+<p>
+benchmark: es la función en elisp que devuelve el coste computacional
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (benchmark 4 (+ 2 3))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-19" class="outline-2">
+<h2 id="sec-19"><span class="section-number-2">19</span> Port</h2>
+<div class="outline-text-2" id="text-19">
+<p>
+getenv: nos devuelve el valor de una variable de entorno
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">Ejemplo de uso: (port:getenv "HOME")
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-20" class="outline-2">
+<h2 id="sec-20"><span class="section-number-2">20</span> Licencia</h2>
+<div class="outline-text-2" id="text-20">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/deed">Licencia Creative Commons Reconocimiento Unported 3.0</a>
+</p>
+
+
+<div class="figure">
+<p><img src="http://i.creativecommons.org/l/by/3.0/88x31.png" alt="88x31.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2014-07-05 sáb 09:33</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode beta_8.3)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

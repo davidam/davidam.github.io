@@ -1,0 +1,136 @@
+#+TITLE: Práctica de SIEA
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+* Introducción
+
+El objetivo de esta práctica es realizar un sistema adaptativo que ayude al alumnado de la asignatura Sistemas Interactivos de Enseñanza Aprendizaje (en adelante SIEA) a interactuar tanto con compañeros y profesores, como con las actividades de la asignatura y la plataforma que la soporta.
+
+Debido a la experiencia que ya tenía con aLF2 se acordó con el equipo docente que podía ser interesante hacer la práctica con esta plataforma en lugar de con alguna de las propuestas de manera oficial.
+
+He dividido la práctica en las siguientes secciones:
+
+/Características del Curso/: Se explican los objetivos del curso y brevemente las características de la plataforma sobre la que se hará la adaptación.
+
+/Tareas de Adaptación/: Se describen las tareas de adaptación a realizar según la teoría del capítulo 5 del libro base de la asignatura. Esta sección tiene las siguientes subsecciones: Modelo pedagógico y del dominio, modelo del estudiante, objetivos de la adaptación y métodos y técnicas de adaptación.
+
+/Datos a Recoger/: Aquí se desarrolla qué datos se recogerán en funció del tipo de adaptación propuesta.
+
+* Características del Curso
+
+La plataforma elegida para el curso sería [[http://www.innova.uned.es][aLF2]]. Esta plataforma tiene una serie de aplicaciones adecuadas para la enseñanza/aprendizaje a través de internet (foros, calendario, actividades, área de almacenamiento, etc.), tanto en un área personal como de grupo (curso, comunidad, ...). Es, por tanto, una herramienta de soporte a la colaboración, también conocida como CSCL (Computer Support Collaborative Learning).
+
+Las interacciones de los usuarios con la plataforma son almacenadas en una base de datos
+
+El objetivo de SIEA es (cito textualmente de la guía didáctica) conseguir que los alumnos del segundo curso del Segundo Ciclo de la Escuela Superior de de Ingeniería Informática de la UNED que lo deseen sean capaces de adquirir las bases que fundamentan el desarrollo y uso de estos sistemas.
+
+A modo de introducción se puede decir que entendemos como SIEA a los sistemas que en el campo de la educación utilizan fundamentalmente las técnicas y los recursos provenientes del campo de la Inteligencia Artificial (IA) para adaptar la respuesta que le proporciona al usuario/alumno (por ejemplo, a modo de recomendaciones de navegación).
+
+Los objetivos principales de esta asignatura son:
+
++ Describir los puntos fundamentales que han de considerarse a la hora de realizar un software educativo
++ Destacar los aspectos metodológicos del desarrollo de estos sistemas
++ Mostrar cómo pueden combinarse en el desarrollo de los SIEAs principios y modelos provenientes del campo de la educación con herramientas y técnicas (fundamentalmente del campo de la IA)
++ Describir los procesos de adaptación en los SIEAs
+
+En la asignatura SIEA existen unos contenidos en formato libro, no obstante, para un mejor aprovechamiento de la práctica supondré que también existen vía web. Así mismo, es necesario entregar un trabajo evaluable y, finalmente, realizar un examen que solo puede realizarse tras haber superado el trabajo. También hay otros medios de apoyo como un sitio web de la asignatura, un teléfono de contacto en unas determinadas horas y dirección de correo electrónico y postal.
+
+Los contenidos pueden accederse en cualquier orden tanto a través del libro como del sitio web.
+
+* Tareas de Adaptación
+
+Antes de entrar de lleno en las tareas de adaptación definiremos el modelo pedagógico y de dominio (de manera muy breve), así como el modelo del estudiante (dónde se fijarán las características del usuario a adaptar). Seguidamente, fijaremos los objetivos de la adaptación. Finalmente, especificaremos los métodos y técnicas de adaptación a utilizar.
+
+** Modelo Pedagógico y del Dominio
+
+En las características del curso ya hemos hablado someramente acerca del dominio. En nuestro caso, éste es básicamente los capítulos del libro "Sistemas Interactivos de Enseñanza/Aprendizaje, Editorial Sanz y Torres". El dominio es demasiado amplio para hacer una representación uml, ó mediante algún otro lenguaje formal. Destacaré que nos encontramos ante un dominio no cerrado que es un campo abierto de investigación
+
+Por todo lo dicho en el párrafo anterior parece interesante diseñar una herramienta de enseñanza/aprendizaje mediante las aproximaciones más constructivistas (se permitirá el acceso a múltiples recursos, se facilitará la comunicación con otros alumnos, etc.), aunque en mi diseño no eliminaré las posibilidades de tutorización convencional (sigue existiendo la figura del docente, existe un examen, etc.) y tutorización mediante aprendizaje automático (se realizarán consejos vía web y vía mail, habrá adaptación de enlaces e incluso de contenido, todo ello sólo cuando se vea necesario tratando de no molestar al estudiante.).
+
+** Modelo del Estudiante
+
+Un modelo es una representación formal de una realidad, cada estudiante tiene cientos de atributos (peso, nombre, edad, amigos, etc.) que le caracterizan, sin embargo, nosotros tan solo formalizaremos aquellos que más adelante nos puedan servir para hacer adaptación.
+
+He dividido los atributos posibles en: conocimientos, objetivos, procedencia y experiencia en el hiperespacio.
+
+/Conocimientos/: Aquí me refiero a la parte del modelo del dominio que el sistema le da por al alumno como asimilada. Como ya hemos dicho éstos podrían ser los capítulos del libro y/o los conceptos que en él se explican. Estos datos podrían inferirse en base a páginas visitadas, test realizados, otras interacciones en la plataforma, ...
+
+/Objetivos/: Los objetivos que un/a alumno/a de la asignatura tiene son básicamente aprobar la práctica, maximizar su nota en el examen y adquirir el mayor número de conocimientos acerca de SIEA. Para aprobar la práctica el/la estudiante tendrá subobjetivos como entender la especificación, adquirir los conocimientos necesarios y realizar la práctica en sí. Para maximizar la nota del examen el/la alumno/a tendrá subobjetivos como adquirir conocimientos necesarios y destrezas adecuadas resolviendo exámenes de SIEA.
+
+/Procedencia/: Nos interesará saber quizás mediante un test ó de algún otro modo si el alumno ha tenido algún tipo de experiencia previa con los contenidos que se imparten en la asignatura, ya sea por motivos profesionales ó académicos.
+
+/Experiencia en el hiperespacio/: También parece interesante la experiencia que pueda tener el/la estudiante en internet, no tendrá el mismo comportamiento el alumno no familiarizado con el medio que aquel que lo utiliza a diario y, que tal vez es su trabajo.
+
+* Objetivos de la Adaptación
+
+En un SIEA es posible hacer adaptación a la presentación (el modo en
+el que se muestran los contenidos), la navegación (qué enlaces
+aparecerán y cómo), ó la colaboración (cómo y con quién interactuar).
+
+** Presentación Adaptativa
+
+Una de las técnicas típicas de los Sistemas Tutoriales Inteligentes (STI) es hacer sistemas basados en reglas para adaptar la presentación. Es decir, es posible afirmar que para poder entender una lección ó un concepto, era necesario haber asimilado otro u otros. Para evaluar si el alumno había asimilado un determinado concepto es posible examinar las trazas de navegación y/ó realizar test ó ejercicios de autoevaluación. Esta técnica tiene una buena aplicación en áreas de conocimiento fuertemente estructuradas como las matemáticas, la programación, la física, ... Pero no parece demasiado útil en el dominio que nos ocupa.
+
+No obstante, parece útil aprovechar el conocimiento adquirido y experiencia previa del alumno para mostrar unos contenidos u otros. Por lo que no se descarta la utilización de alguna técnica “suave” de presentación adaptativa.
+
+** Navegación Adaptativa
+
+El elemento principal de adaptación será un /espacio de consejos/ que aparecerá tanto desde el área del alumno, como desde el área del curso, aunque con diferentes objetivos. En el área del alumno aparecerían consejos de cualquier comunidad ó curso al que pertenezca y los consejos del curso serían específicos de éste. En dicha área se recomendaría una parte del curso a trabajar, realizar una tarea ó actividad, investigar acerca de un recurso externo, etc.
+
+Otro elemento interesante de adaptación con un objetivo similar al anterior (consejos acerca de una próxima tarea pedagógica) puede ser el /envío de correo electrónico/.
+
+Para este curso también puede ser interesante hacer adaptación a /enlaces locales no contextuales/ (independientes del contenido, como por ej. recursos externos), al /índice del curso/, ó a /mapas/ del curso si los hubiera. Lo que no se hará es adaptación a enlaces locales (me refiero a enlaces que están embebidos en el contenido del curso).
+
+** Colaboración Adaptativa
+
+Los elementos principales de adaptación serán de nuevo el /correo electrónico/ y el /espacio de consejos/. Pero en este caso los consejos serían del tipo /le recomendamos que visite / intervenga en este hilo / mensaje del foro, es posible que le resulte interesante visitar la página de interacciones de este usuario/ (por ej: a un usuario inactivo recomendarle la de un usuario activo, ó a un usuario activo, pero poco colaborativo, la de uno activo y colaborativo). Ó consejos más genéricos como /utilice más el foro, suba documentos al área del curso/, etc.
+
+* Métodos de Adaptación
+
+Ahora que ya sabemos qué adaptar puede ser interesante empezar a pensar en cómo adaptar.
+
+** Presentación Adaptativa
+
+Para el dominio en el que estamos trabajando la técnica que parece más interesante utilizar es la de texto expansible. Esto es que en función de la actividad del usuario al pasar el puntero por un determinado concepto se expandirá un texto explicativo del mismo.
+
+Aunque a priori no se vea demasiado interés, tampoco estaría de más experimentar con técnicas de texto condicional ó de variantes de fragmentos y páginas.
+
+** Adaptación a la Navegación
+
+Los consejos comentados en el apartado anterior servirán de /guía global/ al alumno. Esto es ayudar al usuario a encontrar el camino más corto para conseguir sus objetivos. Estos consejos se ordenarán según la relevancia que tengan para el usuario, haciendo uso de la técnica de /ordenación de enlaces/.
+
+Mediante /ocultación de enlaces/, así como cambios de tamaño ó color se realizarán ayudas a la orientación local. Esto es, ayudar al usuario a orientarse localmente en el hiperespacio, por ejemplo limitando el número de opciones de navegación. Especialmente útil para los usuarios que no están demasiado familiarizados con el medio.
+
+* Licencia
+Copyright (C)  2004 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.2
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][/home/davidam/public_html/img/licenses/by/3.0/gfdl.png]]
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:/home/davidam/public_html/img/licenses/by/3.0/gfdl.png]]
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:~/public_html/img/licenses//gfdl.png]]

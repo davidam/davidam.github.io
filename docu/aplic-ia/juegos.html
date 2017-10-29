@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Juegos</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Introducción"
+HREF="intro.html"><LINK
+REL="NEXT"
+TITLE="Sistemas Expertos"
+HREF="sist-exp.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="intro.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sist-exp.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="juegos"
+>2. Juegos</A
+></H1
+><P
+>La mayoría de los juegos de mesa y una gran cantidad
+    de problemas informáticos pueden resolverse mediante una
+    adecuada modelización en estados y aplicar un algoritmo de
+    búsqueda entre estos estados.</P
+><P
+>Para acotar el problema, pensemos en un juego de tablero de
+    2 jugadores, por ejemplo, las tres en raya, las damas, el ajedrez,
+    el othello, etc. ¿Cómo podría programarse un
+    juego de este tipo?:</P
+><P
+>Bien, en primer lugar, un tablero es una estructura de datos
+    de tipo matriz donde cada elemento puede ser ocupado por el
+    jugador 1, ocupado por el jugador 2, ó vacio (en juegos como el
+    ajedrez donde cada jugador tiene diferentes fichas habría
+    que completar el enfoque). Una partida es una secuencia de estados
+    por los que pasa un tablero. Ahora veamos cómo
+    debería actuar nuestro sistema inteligente para ganarnos en
+    una partida.</P
+><P
+></P
+><UL
+><LI
+><P
+>Una primera aproximación podría ser tener
+	todas las posibles partidas en memoria y aplicar solo los
+	movimientos que han llevado a partidas victoriosas.</P
+></LI
+><LI
+><P
+>Otro enfoque sería actuar en cada turno, teniendo
+	en cuenta ciertas reglas estáticas (ej: ciertos if). Un
+	ejemplo de reglas en las tres en raya puede ser: si tengo dos
+	fichas alineadas entonces ocupa el último lugar
+	vacío y gana la partida, si el oponente tiene 2 fichas
+	alineadas ocupa el lugar vacío y evita la victoria del
+	oponente, en cualquier otro caso mueve de manera
+	aleatoria.</P
+></LI
+><LI
+><P
+>En general, para este tipo de juegos se utiliza la
+	estrategia minimax que imita el comportamiento humano de
+	examinar por anticipado un cierto número de jugadas,
+	explorando el grafo de tableros que se generarían tras
+	un movimiento dado. En este enfoque existe una función
+	de evaluación que da un valor a cada posible
+	movimiento.</P
+></LI
+></UL
+><P
+>Para ilustrar la implementación de estos enfoques
+    recomiendo instalar el paquete tictactoe que implementa las 3 en
+    raya con 2 niveles de dificultad easy (implementa reglas tontas) y
+    hard (implementa minimax). Dejo el código de las funciones
+    clave al lector:</P
+><DIV
+CLASS="example"
+><A
+NAME="AEN49"
+></A
+><P
+><B
+>Ejemplo 1. Extracto de código de tictactoe</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><FONT
+COLOR="#000000"
+><PRE
+CLASS="programlisting"
+>&#13;
+  # implements a simple win/block/random-move AI
+  def move_ai_easy
+    if (m = blockWin) &#62;= 0
+      @gamefield.field[m] = 2
+    else
+      # set random point
+      while true
+	x = rand(3)
+	y = rand(3)
+	if @gamefield.get(x,y) == 0
+	  @gamefield.set(x,y)
+	  break
+	end
+      end
+    end
+    @nmoves += 1
+  end
+
+  # implements a more clever AI using the negamax tree search method
+  def move_ai_hard
+    best = -Inf
+    besti = -1
+    @gamefield.player = 1
+
+    order = [4,0,2,6,8,1,3,5,7] # see text
+    0.upto(8) do |ctr|
+      i = order[ctr]
+      if @gamefield.field[i] == 0
+	@gamefield.field[i] = 2
+	value = -@gamefield.negamax
+	@gamefield.field[i] = 0
+	if value &#62; best
+	  best = value
+	  besti = i
+	end
+      end
+      
+      break if (@nmoves == 0) &#38;&#38; (best == 0) # see text
+    end
+    
+    @gamefield.player = 2
+    @gamefield.field[besti] = 2
+
+    @nmoves += 1
+  end
+      </PRE
+></FONT
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>De este modo, queda brevemente ilustrado el modo en que se
+    pueden aplicar técnicas de Inteligencia Artificial en los
+    juegos.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="intro.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sist-exp.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Introducción</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Sistemas Expertos</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

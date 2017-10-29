@@ -1,0 +1,211 @@
+#+TITLE: Búsquedas con Emacs Lisp
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+Hoy nos divertiremos aprendiendo a hacer búsquedas en emacs lisp,
+antes de nada veamos el grafo sobre el que estas se harán:
+
+[[file:busquedas/grafo.png]]
+
+* Estructura de Datos
+
+Se puede ver la estructura de datos sobre la que se realizarán las
+búsquedas:
+
+#+BEGIN_SRC lisp
+(setq vecinos '((a . (b c d)) (b . (a h)) (c . (a g)) (d . (g)) (g . (c d k)) (h . (b)) (g . (k))))
+#+END_SRC
+
+Podemos entender el nivel de punteros de este grafo mirando la figura
+1:
+
+#+CAPTION: Grafo sobre el que ejecutar las búsquedas
+#+LABEL:   figura 1
+[[file:busquedas/cajas-busquedas.png]]
+
+Para recuperar los vecinos de a se puede hacer de la siguiente manera:
+
+#+BEGIN_SRC lisp
+(cdr (assoc 'a vecinos))
+#+END_SRC
+
+Se puede construir una macro para realizar esto de una manera más
+elegante:
+
+#+BEGIN_SRC lisp
+(defmacro get.value (X vecinos) `(cdr (assoc ,X ,vecinos)))
+#+END_SRC
+
+Ahora podemos saber los vecinos de a de la siguiente manera:
+
+#+BEGIN_SRC lisp
+(get.value 'a vecinos)
+#+END_SRC
+
+* Función Extiende
+
+El siguiente paso es crear una función extiende en la que dada una
+ruta proponga un nodo siguiente:
+
+#+BEGIN_SRC emacslisp
+(defun extiende (trayectoria)
+  (mapcar #'(lambda (nuevo-nodo) (append trayectoria (list nuevo-nodo)))
+	  (remove-if #'(lambda (vecino) (member vecino trayectoria)) 
+		     (get.value (car (last trayectoria)) vecinos))))
+#+END_SRC
+
+Esta función primero invierte el orden de la lista trayectoria y
+después añade un nuevo nodo a la lista, siendo un nuevo nodo la lista
+resultado de vecinos que no son ya miembros de la lista trayectoria.
+
+Si queremos extender el nodo a se puede hacer del siguiente modo
+teniendo b, c y d:
+
+#+BEGIN_SRC lisp
+(extiende '(a))
+#+END_SRC
+
+* Primero en Profundidad
+
+Ahora podemos programar primero-en-profundidad
+
+#+BEGIN_SRC lisp
+(defun primero-en-profundidad (inicial final)
+  (primero-en-profundidad-aux inicial final (list (list inicial))))
+
+(defun primero-en-profundidad-aux (inicial final abierta)
+  (cond ((eq inicial final)
+	 (print (list inicial)))
+	((member (list inicial final) (extiende (list inicial)))
+	 (print (list inicial final)))
+        ((member final (first abierta))
+         (print (first abierta)))
+        (t (primero-en-profundidad-aux inicial final (append (extiende (first abierta)) (rest abierta))))
+))
+
+(primero-en-profundidad 'a 'a)
+(primero-en-profundidad 'a 'k)
+
+#+END_SRC
+
+Veamos cómo sería la traza de (primero-en-profundidad 'a 'k):
+
+#+BEGIN_SRC lisp
+;; abierta: '(a)
+;; (extiende '(a))
+;; abierta: '((a b) (a c) (a d))
+;; (extiende '(a b))
+;; abierta: '((a b h) (a c) (a d))
+;; (extiende '(a b h))
+;; abierta: '((a c) (a d))
+;; (extiende '(a c))
+;; abierta: '((a c g) (a d))
+;; (extiende '(a c g))
+;; abierta: '((a c g d) (a c g k) (a d))
+;; (print '(a c g k))
+#+END_SRC
+
+* Primero en Anchura
+
+Ahora vamos a pensar primero cómo sería la traza de (primero-en-anchura 'a 'k):
+
+#+BEGIN_SRC lisp
+;; abierta: '(a)
+;; (extiende '(a))
+;; abierta: '((a b) (a c) (a d))
+;; (extiende '(a b))
+;; (extiende '(a c))
+;; (extiende '(a d))
+;; abierta: '((a b h) (a c g) (a d g))
+;; (extiende '(a b h))
+;; abierta: '((a c g) (a d g))
+;; (extiende '(a c g))
+;; abierta: '((a c g d) (a c g k) (a d g))
+;; (print '(a c g k))
+#+END_SRC
+
+Ahora ya estamos en disposición de programar el algoritmo:
+
+#+BEGIN_SRC lisp
+(defun end-path (x listoflist)
+  (cond 
+   ((endp listoflist) nil)
+   ((equal (last (first listoflist)) (list x))
+    (first listoflist))
+   (t (end-path x (rest listoflist)))))
+
+;;(listp (end-path 'h '((a b h) (a c g) (a d g))))
+;;(listp nil)
+;;(listp 'a)
+
+(defun primero-en-anchura (inicial final)
+  (primero-en-anchura-aux inicial final (list inicial)))
+
+(defun primero-en-anchura-aux (inicial final abierta)
+  (cond 
+   ((eq inicial final) 
+    (print (list inicial)))
+   ((and (= 1 (length abierta)) (member (list inicial final) (extiende (list inicial))))
+    (print (list inicial final)))
+   ((and (= 1 (length abierta)) (not (member (list inicial final) (extiende (list inicial))))) 
+    (primero-en-anchura-aux inicial final (extiende abierta)))
+   ((> 1 (length (end-path final abierta)))
+    (end-path final abierta))
+;;   ((eq abierta nil)
+;;    nil)
+   (t
+    (primero-en-anchura-aux inicial final (mapcar #'(lambda (x) (first (extiende x))) abierta)))))
+
+(primero-en-anchura 'a 'h)
+#+END_SRC
+
+* Búsqueda binaria
+
+Si tenemos una lista ordenada podemos probar a hacer búsquedas binarias, por ejemplo,
+
+#+BEGIN_SRC lisp
+(setq ordenada '(11 22 30 33 40 44 55 60 66 77 80 87 90))
+#+END_SRC
+
+Con esta lista podríamos implementar nuestra búsqueda de la siguiente manera:
+
+#+BEGIN_SRC lisp
+(defun binaria (x lista)
+  "return if x is member of the sorted list"
+  (let* ((max (length lista))
+	 (pos (/ max 2))
+	 (elem (elt lista pos)))
+    (cond
+     ((and (= max 1) (not (= x elem)))
+      nil)
+     ((= x elem)
+      t)
+     ((> x elem)
+      (binaria x (nthcdr pos lista)))
+     ((< x elem)
+      (binaria x (butlast lista pos)))
+)))
+
+(binaria '40 ordenada)
+#+END_SRC
+
+* Agradecimientos
+
+Gracias a #emacs-es por los ánimos y en especial a [[http://davazp.net/][David Vázquez Pérez]] por los buenos consejos.
+
+* Bibliografía
+
+Algunas fuentes que me han servido para realizar este artículo son:
+
++ Chassell, R. J. (2009) "/An Introduction to Programming in Emacs Lisp/". GNU Press.
++ S. F. Galán, J. G. Boticario, and J. Mira (1998) "/Solved Exercises of Applied Artificial Intelligence: Search and Representation/" (In Spanish). Addison-Wesley, 1998, Madrid, Spain
++ 
+
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed][Licencia Creative Commons Reconocimiento Unported 3.0]]
+
+[[http://creativecommons.org/licenses/by/3.0/deed][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]
+

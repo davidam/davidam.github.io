@@ -1,0 +1,119 @@
+#+TITLE: Sobre la Autoridad
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Hoy me gustaría reflexionar sobre las diferentes formas de autoridad
+que he encontrado en la sociedad y para que sirve cada una.
+
+* La Autoridad Física o Militar
+
+Esta es la forma de autoridad más evidente el pueblo que somete a otro
+por tener mejores armas, el hombre que pega a su mujer, el mayor que
+pega al menor, el policía que pega al manifestante, etc. Todos nos
+hemos visto sometidos a esta autoridad en algún momento de nuestras
+vidas y, a veces, aunque no se ejerza queda latente que quien tiene
+mejor armamento o fuerza puede pegar.
+
+Los movimientos pacifistas tienen la convicción de que esta forma de
+autoridad es inmoral y, así desde este punto de vista, puede tratar de
+ser vencida. Esto es en parte cierto, sin embargo, es necesario que
+otras autoridades como la económica que apoyen el punto de vista moral
+
+* La Autoridad Estructural
+
+La forma autoridad que vemos más de cerca diariamente es la
+estructural, todo el mundo critica las dictaduras militares como
+formas opresivas, sin embargo, lo cotidiano es recibir o dar órdenes
+en una empresa por el hecho de que se posee un cargo estructural que
+puede ser mantenido por amiguismos, o por cualquier otra razón,
+algunas mejores.
+
+De hecho, en las familias está el hecho de que tenemos que obedecer a
+nuestros padres y esto va desapareciendo en el momento en el que
+mejoramos nuestra autoridad económica y de otro tipo.
+
+Luego está el tema de la política remunerada que nos golpea con sus
+comunicados en medios de comunicación de masas y con sus leyes que
+obligan a obedecer mediante la autoridad física.
+
+La autoridad estructural puede ser eliminada por dos vías
+deslegitimarla por la vía moral y crear estructuras dónde se elimine.
+
+* La Autoridad de la Popularidad
+
+Las personas que tienen popularidad tienen también una forma de
+autoridad esta no es tanto de dar órdenes, sino que sus ideas o su
+forma de actuar se popularizan porque ellos son populares, a veces,
+uno recibe popularidad de manera honesta, como publicar un artículo
+científico, o publicar software libre, pero también se puede ver el
+camino de recibir popularidad tras un escándalo sexual, un crimen, un
+atentado, etc. 
+
+Esta forma de autoridad es muchas veces impulsada por la dialéctica o
+el márketing que para mí no es tanto una forma de autoridad, sino una
+característica de la propia popularidad que provoca determinados
+sentimientos a quien es dirigida.
+
+Como consumidores de información debemos ser sensatos a la hora de a
+quien dar popularidad y estaría bien minimizar las fuentes de
+información que dan popularidad a cuestiones poco éticas (por ej: no
+pasarse el día leyendo prensa del corazón) y ser críticos en cuanto a
+la veracidad de las fuentes (por ej: cada publicación tiene una
+ideología).
+
+Evidentemente, hay un trasvase claro de la autoridad económica a la
+autoridad de la popularidad (ej: uno puede invertir dinero en
+anuncios, por ejemplo).
+
+* La Autoridad Técnica
+
+La autoridad técnica es la capacidad de hacer tareas prácticas que
+satisfagan de alguna manera el bien común desde construir un puente, a
+limpiar zapatos, o programar software. Con esta forma de autoridad uno
+se puede ganar un puesto de trabajo de una manera digna.
+
+* La Autoridad Moral
+
+La autoridad moral es tener actos y discursos que si todo el mundo los
+repitiera se aumentaría bastante la felicidad colectiva. 
+
+Esto tiene bastantes resbalones, ya que no todo el mundo tiene
+energías o conocimientos para hacer las mismas cosas, pero sí hay
+actitudes más ó menos éticas en cada una de las profesiones y hay
+profesiones menos éticas que otras. Por ejemplo, un psiquiatra puede
+utilizar su autoridad técnica para ayudar a una persona a salir de una
+situación mentalmente difícil, o para encerrarla para siempre y, un
+programador puede utilizar su capacidad para liberar mentes, o para
+poseerlas.
+
+* La Autoridad Económica
+
+La autoridad económica se basa en tener dinero o posesiones
+materiales. En la sociedad actual las desigualdades económicas baten
+récords históricos y es la principal forma de dominación actual. Si
+bien no se han abandonado otras viejas fórmulas como la autoridad
+esctructural.
+
+Para vivir en la sociedad actual se necesita una economía que te
+permita tener casa, comida y salud. Hay economías que subsisten sin
+dinero, bien en sociedades primitivas, bien en sociedades anarquistas.
+
+* La Creatividad
+
+Quienes poseen creatividad tienen capacidad de pensar ideas diferentes
+a las corrientes y esto puede generar cambios de estructuras y de
+poder, por ello mismo se podría ver como una especie de autoridad, si
+bien hay que compaginarla con otras formas de autoridad para que
+llegue a implementarse, como una cierta autoridad económica (para
+financiar la idea), una autoridad técnica (para implementarla) y una
+popularidad para que la idea se propague.
+
+* Licencia
+
+Este documento está bajo una [[http://creativecommons.org/licenses/by-nd/3.0/es/deed][Licencia Creative Commons Atribución-SinDerivadas 3.0]]
+
+[[http://creativecommons.org/licenses/by-nd/3.0/es/deed][file:http://i.creativecommons.org/l/by-nd/3.0/80x15.png]]

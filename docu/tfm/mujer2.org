@@ -1,0 +1,462 @@
+#+OPTIONS *:t
+* Introducción
+
+*entrevistador*: Gracias por acceder a hacer la entrevista. Ya te he
+comentado sobre nuevas tecnologías y movimientos sociales. Y la
+entrevista está dividida en 2 partes principales: uno que son los
+flujos de información de tu organización que en este caso es
+Comisiones Obreras y otra sobre los factores de cambio de unas
+tecnologías a otras.
+
+*mujer2*: Muy bien.
+
+* Flujos de información:
+** comunicación interna
+*** flujo de comunicación? flujos horizontales/verticales?
+*** sincronización interna
+
+*entrevistador*: Bueno pues empiezo por la primera que son los flujos
+de información. Entonces de cara a la comunicación interna ¿cuáles son
+los flujos de información que tenéis? ¿cómo recibís la información de
+cualquier cosa que llegue del sindicato?
+
+*mujer2*: A nivel sindical, normalmente tenemos página web del
+sindicato, correo electrónico (información directa que nos llega desde
+Madrid a las secciones sindicales, en este caso a mi a la universidad)
+y luego pues también hacemos reuniones (tenemos una agenda en la que
+se hacen reuniones en las cuales se participa físicamente, o sea
+presencial ¿no?
+
+*entrevistador*: Aha
+
+*mujer2*: Eso sería la información de los grupos básicos, pero es
+básicamente vía Internet. Tenemos una revista también que salen
+publicaciones y
+
+*entrevistador*: ¿Quincenal?
+
+** colaboración interna
+*** redacción en común?
+
+*entrevistador*: Vale, y de cara a la comunicación interna ¿tenéis
+alguna forma de redactar textos en común? ¿o simplemente hay una
+persona que es quien redacta textos que van a ser generales del
+sindicato? ¿o cómo ...?
+
+*mujer2*: Hay varios aspectos, en principio, Comisiones siempre entra
+primero un debate en el que se establecen qué criterios, pero hay
+siempre un responsable de cada área, hay un responsable de prensa y
+hay un responsable de definición de la información, entonces es tanto
+a nivel jerárquico *suena un claxón y no se entiende* entonces en
+Madrid hay las mismas categorías y cuando llegamos a la sección
+sindical las mismas y tenemos un responsable de información y un
+responsable de la página web, entonces cada uno se encarga de ello,
+aunque todos podemos participar y colaborar, pero hay una persona que
+es la que se encarga de ser la que lo distribuye.
+
+** búsqueda de consensos
+** gestión de tareas
+
+*entrevistador*: Aha, vale. Mmmm, entonces entiendo que esta parte que
+es la gestión de tareas también habría responsables de cada sección,
+de cada área que se responsabilizarían de las tareas, pero mi pregunta
+es también si hay algún o alguna herramienta en la que podáis ver qué
+tareas hay disponibles igual para militancia, o afiliados que puedan
+colaborar de alguna manera, si te suena a tí que la haya o simplemente
+desde las reuniones se dice hay que hacer esto tal y cual
+
+*mujer2*: No, en la página de Comisiones si que hay, hay cada área no
+sé como se llama los enlaces, pero hay uno para los afiliados, uno
+para cada área de responsabilidad de todo, de la fiesta de la Mujer,
+de laborales, de Madrid, de Enseñanza, en general, a nivel genérico. Y
+luego ya nosotros en la universidad hemos hecho sección sindical y
+tenemos una vinculación de todos los trabajadores en la que establece
+cual es estos enlaces, de manera que cada trabajador puede contactar
+con nosotros y darnos su opinión, de manera que, cada afiliado, a
+nivel trabajador, pues para una consulta, para una duda, para
+información de legislación, tenemos colgado una especie de tabla (no
+sé si es lo que me estás preguntando) una información que la gente
+puede acceder a ver, entonces hay legislación, hay normativas.
+
+*entrevistador*: Claro, yo me refiero a cuestiones de tareas, por
+ejemplo, hay que redactar un texto, o hay que repartir octavillas
+cuando ha sido la huelga del metro a todos los trabajadores, o sea
+hacer piquetes informativos, pues ese tipo de tareas al final, pues yo
+me asigno a estas tareas o yo voy a participar en esta tarea. Si hay
+alguna herramienta telemática ...
+
+*mujer2*: Tan puntual no, lo que sí que hemos, por ejemplo, lanzado es
+una que ha sido casual, yo pertenezco a la ejecutiva del sindicato en
+la sección sindical de la Comunidad, entonces hemos mandado un correo
+electrónico a todos los afiliados para que ellos que quieran
+participar en los grupos de trabajo o como delegados de centro,
+entonces ellos se ponen en contacto con nosotros vía correo
+electrónico y miran los planes de trabajo que hay para cada tarea,
+para cada área de responsabilidad: laborales, mujer, salud laboral, en
+fin, si es docente, lo que corresponda ¿no? porque tenemos muchas
+tareas son 8 en total. Entonces esas personas que quieren
+comprometerse o trabajar voluntariamente acceden, se ponen en contacto
+con nosotros y dicen que quieren colaborar, trabajar en una u otra
+área y luego a partir de ahí hacemos reuniones presenciales. Y luego
+la información, pues si tiene que hacer un reglamento de bolsas de
+trabajo pues por ejemplo, nos mandamos el correo o el borrador por
+correo electrónico de las personas que están involucradas en este
+equipo de trabajo y luego hacemos reunión presencial pues para
+terminar de pulirlo.
+
+*entrevistador*: Aha, vale, o sea para resumir entiendo que
+normalmente hay un responsable que es quien gestiona, que hace la
+gestión de las tareas y es un poco decisión suya de cómo se hace así,
+en un momento es correo electrónico, otro momento dado a través de
+reuniones, telefonazos, o lo que sea. Vale.
+
+** gestión de eventos
+
+*entrevistador*: ¿Y con la gestión de eventos? Por ejemplo, si se van
+a hacer unas jornadas de dar difusión al sindicato o alguna cosa así
+...
+
+*mujer2*: Por correo electrónico y se hace un lanzamiento masivo de
+por ejemplo si es de panfletos, si es una concentración, una
+manifestación, una asamblea, se distribuye a todas aquellas personas
+que no tienen porque todavía la universidad incluso hay personas que
+no tienen acceso a correo electrónico; se les manda por correo
+ordinario, por correo interno para que les llegue. Y luego a los que
+no se les puede hacer llegar de ninguna manera por teléfono se pone en
+contacto con ellos. Y si se hacen en principio con carácter masivo, es
+decir, de información general. Y luego nosotros al trimestre solemos
+hacer una asamblea, para informar hacer resúmenes de cada una de las
+áreas.
+
+*entrevistador*: Y esto es para todos los afiliados ...
+
+*mujer2*: Es para todos los afiliados y en principio ahí lo que hacen
+es pues aparte de hacer un resumen, de lo que se ha hecho del trabajo,
+pues exponerlo a los afiliados, en qué consiste la labor que hacemos
+en el sindicato, pues también es para que ellos, pues tener un ... que
+sea recíproco, que ellos nos digan cuales son sus planteamientos, sus
+dudas y que nos digan que estamos haciendo bien, pues para ir
+mejorando ¿no?
+
+*entrevistador*: Muy bien.
+
+*mujer2*: Hay personas que piensan que la informática es buena, es
+necesaria, porque hoy en día es lo que funciona, pero es vital yo creo
+el contacto personal.
+
+** comunicación con el exterior
+
+*entrevistador*: Ahora hay un punto de comunicación con el exterior
+que está dividido en 3 puntos: captación de voluntarios/colaboradores,
+comunicación con otros colectivos, formar alianzas, coaliciones con
+plataformas.
+
+*mujer2*: Eso también tenemos, eeh, una, la información nos ponemos en
+contacto con otros sindicatos, intentamos llevar consensos y acuerdos
+generalizados, y lo hacemos también, eso ya no es tanto a nivel masivo
+vía Internet, sino más bien a nivel de reuniones, pero si que es
+verdad que para toda la plantilla, para todos los trabajadores, los
+diferentes sindicatos lo que hacemos es una información divulgativa
+que se llama comité informa, por ejemplo, para que haga *no se
+entiende* de los sindicatos y ahí se lleva por carteles a todos los
+centros y por Internet con un correo electrónico y a nivel exterior
+pues por ejemplo, para contactar una ONG suele ser más por cada área
+de responsabilidad te pones en contacto con alguna persona para hacer
+una jornada, hacer alguna información y eso se distribuye con un
+lanzamiento por Internet, por correo electrónico.
+
+*** captación de voluntarios/colaboradores
+
+*mujer2*: Antiguamente se hacían campañas de afiliación, es decir, que
+se hacían con carácter masivo y genérico, para captar afiliados, todos
+los años se mandaba propaganda y el sindicato se pedía en boletines
+para rellenar una solicitud a la gente que se quisiera apuntar y se
+lanzaba a través de Internet por correos electrónicos y por papel,
+pero ahora con la Ley de Protección de Datos, eso ya no se puede
+hacer, entonces eso porque protege, ya no se puede con un documento
+público con un papel captarlos mediante envíos masivos y captar,
+entonces la gente así que está interesada normalmente se pone en
+contacto y tu le direccionas a la persona correspondiente en lo que le
+llega al responsable por correo electrónico.
+
+*entrevistador*: ¿No puedes enviar una carta a los trabajadores de una
+empresa donde tienes una sección ...?
+
+*mujer2*: Sí, sí, sí, nosotros lo mandamos y no hay ningún problema,
+incluso por correo interno tienen obligación de distribuirlo y
+nosotros incluso a través de la universidad tenemos capacidad para
+ofrecer, para hacer un lanzamiento a todos los trabajadores como
+sindicato, en eso no hay ningún problema. No sé como se llama cuando
+te permite utilizar toda la infraestructura de la red para poder
+lanzar el documento, eso sí, nos permiten hacer eso. Pero luego para
+la selección en concreto el trabajador tiene que ir con carácter
+individual al sindicato a ... No vale que a tí te vieran como
+responsable, o como sindicalista que te den los datos y tu los lleves
+como se hacía antiguamente.
+
+*entrevistador*: Ah, bien, bien. Ya lo entiendo.
+
+*mujer2*: La protección de datos, ahora eso se protege y nosotros nos
+tenemos que regular a lo que hay. Entonces esos datos no pasan por
+nosotros van directamente a la persona que lleva todo el tema de
+afiliación a nivel sindical.
+
+*entrevistador*: O sea que no van tanto a las secciones, como al
+sindical.
+
+*mujer2*: Eso es, van a lo que delegan, no van a la sección sindical
+de cada empresa.
+
+*entrevistador*: Vale.
+
+*mujer2*: Se ha centralizado ... por seguridad
+
+*** comunicación con otros colectivos
+*** formar alianzas/coaliciones/movimientos/plataformas
+** documentación interna
+
+*entrevistador*: Bueno aquí hay dos puntos que son bastante similares
+que es documentación interna y gestión económica. Pues como se hacen
+las gestiones de donaciones, los fondos de financiación,
+contribuciones, como se gestiona todo esa documentación, quien tiene
+acceso ...
+
+*mujer2*: Pues en principio, como te he dicho al ser un sindicato
+jerárquico tenemos un responsable de organización que lleva el tema de
+finanzas y la estructura. A ese nivel, esa persona se encarga de
+llevar los presupuestos anuales, se comunican a los afiliados en las
+asambleas correspondientes, se dice en qué está fundamentado el
+presupuesto y como se va a distribuir en qué se va hacer. Y luego las
+cuotas de cada afiliado se llevan directamente al sindicato, no se
+reciben en la sección y se informa que puede ser o bien que tu las
+hagas a cargo de la cuenta o te las quitan de la nómina que eso está
+establecido, cada uno cede a la opción que quiera. Y luego no se hacen
+campañas de recogida económica en principio. Si hay algo puntual yo no
+recuerdo lo que es eso de cuotas o de dinero.
+
+*entrevistador*: ¿Y el afiliado puede pedir las cuentas del sindicato?
+
+*mujer2*: Sí. Eso son públicas el afiliado puede.
+
+*entrevistador*: ¿Y qué se le daría un documento en excel o en pdf?
+
+*mujer2*: En principio, es un documento en pdf está ... si alguien
+quiere acceder a ello va a la sección y lo puede consultar.
+
+*entrevistador*: Vale.
+
+*mujer2*: Porque por lo mismo, por la protección de datos, los
+documentos de la sección, no salen de la sección. Pero la afiliación
+puede acudir allí y verlo, o por ejemplo, cuando hemos tenido
+elecciones, cuando estaba el censo que es público, pero para proteger
+los datos que vienen estaban digamos que custodiados por el
+responsable de organización, que estaban en la gestión, de esa manera
+el que quería ir a ver el censo para ver si estaba o no estaba para
+poder votar en las elecciones iba allí y lo veía pero no se podía ni
+fotocopiar, ni mandar, ni ... para proteger los datos.
+
+*entrevistador*: Aha.
+
+*mujer2*: Como la ley dice.
+
+** gestión económica
+*** gestión de donaciones
+*** formas de financiación
+*** contribuciones de miembros
+*** gastos/ingresos
+** toma de decisiones
+
+*entrevistador*: Aha. Bueno aquí hay un apartado de toma de decisiones
+que más o menos sé como funciona, pero si quieres contármelo
+brevemente ...
+
+*mujer2*: La toma de decisiones normalmente en un sindicato funciona
+por su ejecutiva. Tiene un secretario de sección, que es digamos el
+máximo responsable y el que lleva, digamos, la responsabilidad de toda
+la sección y luego se distribuyen por áreas, el de organización,
+... el que te he dicho y luego va por sectores, nosotros tenemos el de
+pdi, el de laboral y el de funcionarios y luego hay transversales que
+son, por ejemplo, el de la mujer, el de salud laboral, mmm, el de
+información y no sé si me dejo alguno, yo creo que están
+todos. Entonces en principio las ejecutivas, lo que organizan son las
+directrices de la sección y las políticas que se tienen que llevar a
+cabo y luego los diferentes miembros que estamos distribuidos o en el
+Comité de Empresa, o en los órganos de representación trasladamos las
+políticas de nuestro sindicato para llevarla a cabo como
+representantes de los trabajadores.
+
+*entrevistador*: Vale, entonces eso se divide también a nivel de ramo
+y de ...
+
+*mujer2*: Claro, viene
+
+*entrevistador*: Territorial
+
+*mujer2*: Claro, efectivamente, territorial y luego por área, nosotros
+estamos en la enseñanza, lo que es nacional, Madrid y luego las
+secciones.
+
+*entrevistador*: Vale.
+
+*mujer2*: Y luego específicas de los congresos cada cuatro años.
+
+
+** movilización
+** gestión de nuevos colaboradores
+** reuniones/asambleas
+*** facilitadores/moderadores, anotadores, otros roles
+
+*entrevistador*: Ah. Luego aquí has comentado que cada tres meses
+hacéis reuniones con todos los afiliados que supongo que las
+directivas tienen sus propias reuniones
+
+*mujer2*: Sí.
+
+*entrevistador*: Eeeh,
+
+*mujer2*: Se levanta acta.
+
+*entrevistador*: Sí, pero también supongo que hay personas encargadas
+de levantar acta, personas encargadas del turno de palabra...
+
+*mujer2*: Sí, mira en todas las reuniones está establecido quien se
+encarga de cada tarea, y luego eso, lo que se puede hacer público de
+acuerdos o los acuerdos a los que se ha llegado o se han decidido
+normalmente se cuelga en la página web.
+
+*entrevistador*: Aha ... ¿Se cuelga en la página web para que lo vea
+todo el mundo o solo los afiliados?
+
+*mujer2*: Los afiliados.
+
+** visibilidad exterior
+*** web con información
+*** actividades de promoción/visibilidad
+** participación en iniciativas de terceros
+** Compartición de recursos
+*** ¿licencias libres?
+
+*entrevistador*: Vale, aquí hay un punto de visibilidad exterior que
+ya me has contado que hay página web. Hay un punto aquí que es
+compartición de recursos ¿qué tipo de licencias se usan para los
+documentos que se hacen públicos si es que se usa alguna? Por ejemplo,
+los informes, un informe de no sé, cualquier informe estadístico que
+hace el sindicato, cualquier documento que se hace público, ¿se usa
+algún tipo de licencia permisiva o una licencia que solo pueden
+copiarlo determinadas personas? ¿conoces más o mnos Creative Commons o
+licencias copyleft?  *dice no con la cabeza* entonces no te lo
+pregunto.
+
+*mujer2*: No, pero sí sé que documentación que se cuelga, se pone
+normalmente en pdf y se consulta, no sé ...
+
+*** transparencia de métodos, de acciones, de cuentas
+** Planificación
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: Vale y la planificación en el corto o medio plazo de
+los sindicatos ¿se hace también desde secciones sindicales y comités?
+¿qué ámbitos le deja a cada ...?
+
+*mujer2*: Pues en principio, cada sección puede funcionar, pero sí que
+responde de su inmediato superior, en este caso sería Madrid, para
+cada área, para cada rama, como has comentado antes, por ejemplo, en
+enseñanza digamos hay unas pautas que marcan entonces nosotros en
+principio funcionamos lo que pasa es que somos muy suigéneris,
+precisamente por su casuística es muy irregular a los estándares
+normales que hay en otras secciones sindicales, de otras empresas,
+podríamos hablar ¿no? Entonces sí tenemos bastante gestión y
+autonomía.
+
+*entrevistador*: Aha.
+
+*mujer2*: Y funcionamos con nuestras reuniones y las demandas que la
+propia universidad crea ¿no?
+
+*entrevistador*: Con los conflictos que surjen en cada momento.
+
+*mujer2*: Para negociar, pues el tema de las RPT, de los acuerdos,
+también tenemos secciones sindicales que participan tanto la empresa,
+la universidad o el Ministerio, la Comunidad de Madrid y nosotros. La
+parte social porque afecta, quiero decir, es muy peculiar. Hay
+diferentes ámbitos, de foros, de trabajo.
+
+* Factores de Cambio
+
+*entrevistador*: Vale, pues ya entramos en el punto grande de factores
+de cambio. Bueno son cuatro preguntas. Son preguntas no tanto de cómo
+funciona el sindicato, sino de cómo utilizas tu las herramientas.
+
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: Entonces la primera preguntas es ¿qué herramientas
+has usado en el último mes? ¿qué herramientas tecnológicas recuerdas
+que te vengan a la cabeza?
+
+*mujer2*: Pero ¿a qué te refieres? ¿a los programas?
+
+*entrevistador*: Sí
+
+*mujer2*: Acrobat para los pdf; excel para las tablas de trabajo; base
+de datos para lo que es el catálogo de las bajas, por ejemplo; Word
+para los documentos de modificaciones y de acuerdos; y poco más yo a
+mi nivel no recuerdo
+
+*entrevistador*: Correo electrónico?
+
+*mujer2*: Sí claro, correo electrónico
+
+*entrevistador*: Lo que no sé es si usas redes sociales
+... Básicamente no ¿no?
+
+*mujer2*: Básicamente no las uso. Para mí son más asociales que
+sociales, jaja Me parece una intromisión en la privacidad.
+
+*entrevistador*: En la privacidad ¿no?
+
+** Cuáles son las herramientas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: Vale y ¿Cuáles son las herramientas que has dejado de
+usar si miras 5 años atrás?
+
+*mujer2*: Ninguna, las sigo usando todas yo soy muy de persona del
+trato de la conversación, de la explicación bis a bis, viéndote eeh,
+uso mucho las anotaciones escritas y luego ya las paso al ordenador,
+yo tomo mucha nota, uso anotaciones escritas y uso el teléfono, hago
+muchas gestiones telefónicas previas a los correos. Los correos es
+para confirmar la asistencia a las reuniones las fechas, tal. Pero
+muchos primeros contactos son telefónicos y sigo usando lo mismo que
+antes.
+
+*entrevistador*: O sea que igual vas actualizando las diferentes
+versiones del sistema operativo, o de los programas, pero no has
+dejado de utilizar ninguna aplicación en concreta.
+
+** Qué herramientas has incorporado si miras 5 años atrás
+
+*entrevistador*: Vale y al revés ¿recuerdas alguna herramienta que has
+incorporado en los últimos cinco años?
+
+*mujer2*: La base de datos principalmente. Esa yo no la usaba
+
+*entrevistador*: La base de datos Access.
+
+*mujer2*: Sí, y ahora pues casi todo mi trabajo como responsable
+laboral es documentos en BBDD, mirar tablas y eso me obliga a
+actualizarme. Es que me he apuntado a un curso, jaja
+
+*entrevistador*: Ah, muy bien.
+
+** Qué herramientas has incorporado debido a tu activismo político
+
+*entrevistador*: ¿Y qué herramientas has incorporado debido a tu
+actividad sindical?
+
+*mujer2*: El llevar un portátil debajo del brazo que yo antes
+nunca... Usaba muy poco el ordenador excepto para sentarme y terminar
+de pulir los documentos, ahora lo llevo a todos los sitios, pues para
+poder estar conectado al correo electrónico, para poder ver la agenda,
+para poder tomar algunas notas, tengo de momento consultar y antes
+pues no
+
+*entrevistador*: Vale, pues hemos terminado jaja. Muchas gracias.

@@ -1,0 +1,62 @@
+#+TITLE: Ejemplos de Uso de Drush
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+STYLE: <link rel="stylesheet" type="text/css" href="org.css" />
+
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+En este tutorial se trata de explicar algunos ejemplos de uso de una
+herramienta muy útil para agilizar tareas en Drupal llamada drush.
+
+* Para descargar y habilitar módulos:
+
+#+BEGIN_SRC bash
+$ drush dl modulo
+$ drush en proyecto-del-modulo
+#+END_SRC
+
+Lo bueno es que si tuviera alguna dependencia la baja también.
+
+* Para copias de seguridad.
+
+#+BEGIN_SRC bash
+$ drush sql-dump --result-file="dump.sql"                                                                       
+$ drush sql-cli < sites/all/database/development.sql                                                            
+$ drush site-alias --with-db --show-passwords --with-optional @self                                             
+$ drush sql-sync @matttarsi.stage @matttarsi.dev                                                                
+#+END_SRC
+
+* Para resetear la contraseña de admin
+
+#+BEGIN_SRC bash
+# Get an admin login link
+drush uli
+# Set the password for any user
+drush upwd admin --password="admin"
+#+END_SRC
+
+* Y otras diabluras
+
+#+BEGIN_SRC bash
+$ drush @dev status                                                                                             
+$ drush vset --always-set site_offline 1                                                                        
+$ drush vset --always-set maintenance_mode 1                                                                    
+$ drush @dev status                                                                                             
+$ drush rsync @dev @stage --simulate                                                                            
+$ drush rsync @matttarsi.stage:%files @matttarsi.dev:%files                                                     
+$ drush sa                                                                                                      
+# creo que no funciona bien:                                                                                    
+$ drush -l http://localhost/tveo test-run setUpInstall -v  
+#+END_SRC
+
+* Licencia
+Copyright (C) 2014  David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:../img/licenses/gfdl/gfdl.png]]

@@ -1,0 +1,122 @@
+#+TITLE: Drupal Commerce
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Drupal es una herramienta extremadamente configurable y una de las
+funcionalidades donde destaca es en las tiendas de comercio electrónico,
+debido a la gran cantidad de módulos con los que puede integrarse.
+
+* Tutorial
+
+En este tutorial se explica cómo hacer una tienda on-line sencilla.
+
+1. Se descargan los módulos
+#+BEGIN_SRC bash
+$ drush dl commerce commerce_paypal
+#+END_SRC
+
+2. Se habilitan
+#+BEGIN_SRC bash
+$ drush en cart checkout commerce commerce-ui customer customer-ui commerce_line-item line-items order payment payment-methods price product product-pricing product-reference 
+$ drush en commerce_paypal_wps commerce_paypal_wpp commerce_paypal_ec commerce_payflow commerce_paypal
+#+END_SRC
+
+3. Se Crea un tipo de Producto
+
+#+BEGIN_SRC bash
+admin/commerce/products/add/product
+#+END_SRC
+
+4. Se Crea un Product Display
+
+#+BEGIN_SRC bash
+admin/structure/types/add
+#+END_SRC
+
+5. Se Añade un método de pago (por ej. Paypal)
+
+#+BEGIN_SRC bash
+admin/commerce/config/payment-methods/add
+#+END_SRC
+
+Se podría añadir el evento /Completing the checkout process/ y la
+acción /Enable payment method: PayPal WPP - Credit Card/.
+
+6. Configura el método de pago 
+
+#+BEGIN_SRC bash
+admin/commerce/config/payment-methods/manage/rules_paypal/edit/3
+#+END_SRC
+
+En el caso de querer utilizar tarjetas de crédito es bastante probable
+que te interese usar sermepa:
+
+#+BEGIN_SRC bash
+drush dl commerce_sermepa
+drush en commerce_sermepa
+#+END_SRC
+
+Luego se habilita la regla Sermepa via Store > Configuration > Payment settings
+
+En el caso de no querer dar de alta Sermepa, se puede habilitar
+ simplemente Paypal o similar.
+
+En tal caso, la configuración de sandbox seria la siguiente (sacado de
+https://developer.paypal.com/webapps/developer/docs/classic/express-checkout/integration-guide/ECGettingStarted/)
+
+#+BEGIN_SRC bash
+USER=sdk-three_api1.sdk.com
+PWD=QFZCWN5HZM8VBG7Q
+SIGNATURE=A-IzJhZZjhg29XQ2qnhapuwxIDzyAZQ92FRP5dqBzVesOkzbdUONzmOU
+#+END_SRC
+
+Si se quiere una configuración completa los pasos son:
+
+#+BEGIN_SRC bash
+1. Mi Cuenta -> Perfil -> Acceso a API
+2. Solicitar Credenciales API
+3. Solicite una Firma API
+#+END_SRC
+
+Una vez creado se vuelve a ver del siguiente modo: Mi Cuenta -> Perfil
+-> Acceso a API -> Ver Firma API
+
+Una versión en inglés sacada de
+http://www.putler.com/support/faq/how-to-get-paypal-api-username-password-and-signature-information/
+es:
+
+#+BEGIN_SRC bash
+1. Log in to your PayPal Premier or Business account.
+2. Click the Profile subtab located in the top navigation area.
+3. Click the API Access link under the Account Information header.
+4. Click the Get Started link under the Request API Credentials heading.
+5. Click the My selling preferences sub option in left sidebar.
+6. Click the Update option for API access item
+7. Complete the API Credential Request form by clicking the agreement checkbox and clicking Submit.
+8. You will now get the API username, password and signature.
+9. Copy the values from this page into Putler Settings – Accounts.
+10. Click Test to verify the settings work.
+#+END_SRC
+
+
+7. Se Crea una Vista
+
+A veces me he perdido un poco buscando el botón de añadir al carrito
+(add button cart form), o campos como el precio está en el field
+product. Obviamente para que el add button no de errores el producto
+debe tener un precio.
+
+8. Errores
+
+En cierta ocasión al visualizar productos he tenido algunos problemas
+[[http://www.unknownerror.org/Problem/index/1231344521/error-when-create-drupal-commerce-product-display/][para los que era bueno commerce_repair]]. Una vez habilitado hay que ir
+a /admin/commerce/config/repair.
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]

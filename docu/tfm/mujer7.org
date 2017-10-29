@@ -1,0 +1,298 @@
+#+OPTIONS *:t
+
+* Introducción
+*entrevistador*: Bueno, pues eso, que muchas gracias por haber accedido a hacer la entrevista. Que es acerca de movimientos sociales y nuevas tecnologías. Y está en el marco de un trabajo de fin de máster de la Universidad Complutense. Entonces, la entrevista se divide en dos apartados grandes; que uno es de flujos de información de los colectivos a los que perteneces; y otro es de factores de cambio tecnológico, que son más preguntas individuales. Entonces, bueno, me comentabas que estabas en la Comisión de Feminismo del 15M, no sé si hacer toda la entrevista o si perteneces a otras organizaciones y te apetece que...
+*mujer7*: A ver, eh...  Yo llevo mucho tiempo en el movimiento feminista, pero ahora mismo estoy en un colectivo que se llama Las Tejedoras, colectivo feminista autónomo, y en la comisión de feminismos del 15M de Sol. Sabes que hay feminismos en barrios y en pueblos, o sea que... Y la de sol es la que quedó de la acampada. Entonces eh... no sé, llevo más tiempo de tejedora.
+*entrevistador*: *asiente* Bueno, hay muchas entrevistas que lo que hemos ido haciendo es que cada pregunta, pues nos las contestaban para los dos colectivos, porque es muy normal también varios...
+*mujer7*: Vale
+*entrevistador*: Entonces si quieres pues te lo voy haciendo y si te sientes más cómoda hablando solo de una de ellas porque lo conoces mejor o porque tienes más afinidad por algún tipo pues, pues...
+*mujer7*: Vale
+* Flujos de Información
+*entrevistador*: Bueno, la primera pregunta es acerca de la comunicación interna. Cómo funcionan los flujos de información... 
+*mujer7*: ¿Y el perfil?
+*entrevistador*: ¿Cómo?
+*mujer7*: El perfil mío.
+*entrevistador*: No eso es... eso... no...
+*mujer7*: Ah vale, eso luego lo rellenamos, vale.
+*entrevistador*: Eh...
+*mujer7*: Perdona, que te he...
+*entrevistador*: Nada, nada, nada. Eso, cómo funcionan los flujos de comunicación interna, pues desde asambleas, mails que se envían a las personas que están particiàndo en el colectivo... todo lo que son flujos de comunicación interna ¿cuáles son y cómo...?
+*mujer7*: Vale, ehm... En ambos casos, tanto en Tejedoras como en Comisión de Feminismo se hace a través de correo electrónico.
+*entrevistador*:  *asiente*
+*mujer7*: ¿Vale? *medita* En Tejedoras somos quince, dieciséis personas, o sea que, en cierto modo es más sencillo aunque no tenemos ningún grupo ni un... ¿sabes? Como poner los mails de todas y darle a responder a todas y de la manera como más...
+*entrevistador*: Al igual es un poco precipitado, si quieres cuéntame un poco cuáles son los objetivos un poco de Tejedoras.
+*mujer7*: Bueno, objetivos... como cualquier colectivo feminista es de alguna manera transmitir, o sea trabajar a nivel interno posicionamiento y pensamiento feminista y transmitirlo hacia afuera para reivindicar, producir cambios, transformación y hacer pedagogía sobre el feminismo y... reivindicar en la calle a través de distintas formas en manifiestos, artículos, documentos, performance...
+*entrevistador*: ¿Pero es un colectivo que está localizado en Madrid o...?
+*mujer7*: En Madrid.
+*entrevistador*: Vale, vale. Y... entonces... ¿hacéis reuniones periódicas?
+*mujer7*: Sí, nos reunimos todos los lunes por la tarde. Tenemos un local que nos han cedido de una cooperativa ahí en Delicias, y luego hacemos encuentros de fines de semana, un par de ellos al año, y... no sé qué más decirte...
+*entrevistador*: *asiente*
+*mujer7*: Llevamos desde el año noventa y seis, antes estábamos más localizadas en el barrio de Vicálvaro, que es dónde surgió la organización, y ahora ya bueno, pues nos hemos ampliado y ya hemos salido del barrio y estamos aquí en el centro, en Delicias, porque la gente antes vivía allí en el barrio y ahora ya somos gente de muy distintos barrios, ¿no? Entonces de alguna manera no estábamos trabajando tanto hacia el barrio, sino pues en redes y más amplio, entonces de alguna manera decidimos salirnos de ahí. Y...
+*entrevistador*: Vale, entonces entiendo que tenéis asamblea y luego igual las asambleas extraordinarias las comunicáis por email, eh... información que os llega acerca de noticias y tal y cual la compartís a través del email también entre vosotras... vale.
+*mujer7*: O sea, no es que tengamos... No hablamos tanto de asambleas, reuniones, encuentros... Y sí, todas las convocatorias son por correo electrónico. Hemos puesto como una especia de..., porque a... bueno es que a lo mejor eso luego me lo preguntas, pero que a veces había problemas de que la gente contestaba que no iba a ir a la reunión de hoy, mandaba un mail de última hora casi cercano a la reunión, entonces, o varias lo mandaban y la una que llegaba pues se encontraba con que estaba sola. Entonces hemos puesto como un tope de hasta las dos de la tarde, porque las reuniones son a las siete y media, a las dos de la tarde se puede decir que no se va, o que no..., y si no pues luego tienes que hacerlo por teléfono, llamando por teléfono a alguna de las que vayan. Pero eso son las formas de comunicarnos que tenemos.
+*entrevistador*:  Vale, pues ahora lo del 15M.
+*mujer7*: El 15M lo mismo. En realidad es... las convocatorias se hacen por co... ¿sabes? El 15M, la Comisión de Feminismo de Sol somos doscientas personas en una lista de correos, entonces mucha más gente. Las que luego vamos a las asambleas de manera, o sea, semanalmente somos menos, como veinte o así. Entonces hay una lista de esas doscientas personas, ahí se difunde se manda la convocatoria de las asambleas que tiene cierto lío porque es los miércoles una semana y los jueves la siguiente, o sea, cambiamos de día para que pueda asistir más gente. Y se hace la convocatoria y cualquier consulta o propuesta que nos llega hay una comisión de comunicación que mira el correo todos los días y todo lo que va llegando hacen como una especie de boletín de qué hay esta semana, qué solicitudes hay... pues nos han pedido hacer una entrevista en El País, o tenemos que ir a la Asamblea General del 15M, o quién va hoy a la Asamblea de la Escalera de Caracol... así. Entonces todo eso se va mandando y la comunicación es por correo.
+*entrevistador*:   *asiente*
+*mujer7*: Luego hay una lista, que es aparte, que es de difusión, dónde sólo se difunden noticias. No es tanto de intercambio, de consulta, de convocatoria, sino...
+*entrevistador*: Ya, pero eso no sería de comunicación interna, sino más...
+*mujer7*: No.
+*entrevistador*: Vale. 
+*mujer7*: Pero, o sea, no externo hacia el 15M, sino interno de feminismos del 15M, pero sólo parta difundir qué se está haciendo o tal. O sea en cierto modo...
+*entrevistador*: Ah, o sea, que sí que es interno, ¿no?
+*mujer7*: *asiente* Pero para todo feminismos 15M
+*entrevistador*: O sea, no sólo para Madrid, si no...
+*mujer7*: No sólo para Sol. Es que el Feminismo 15M Sol, somos unas cuantas, pero luego hay feminismos en Rivas, en tal...
+*entrevistador*:  ¿Entonces para ellas también hay una lista que...?
+*mujer7*: Sí.
+*entrevistador*: Vale. Vale. Entonces, si por ejemplo tenéis que hacer una redacción de textos en común en cualquiera de los dos colectivos, ¿utilizáis alguna herramienta tipo wiki o simplemente vais intercambiando ficheros?
+*mujer7*: Utilizamos el Piratepad.
+*entrevistador*: Ah, el Piratepad.
+*mujer7*: O el Google docs. Pero principalmente el Piratepad.
+*entrevistador*: *asiente* ¿Y por qué preferís uno u otro?
+*mujer7*:Bueno pues porque... Nos funcionaba mejor, yo no sé muy bien, porque parece que funciona mejor el Piratepad, no sé muy bien tampoco. Y no sé si... No sé de dónde surge el Piratepad si te digo la verdad. Creo también que Google nos interesaba menos usarlo porque bueno, pues en cierto modo es como Microsoft, ¿no? También intentas hacerlo por otros alternativos. No sé si Piratepad es muy alternativo, me parece que no.*ambos ríen*. Yo creo que porque funcionaba mejor. Nos funcionaba mejor, pero no sé.
+*entrevistador*:  Vale, eh... ¿Para esto es Sol..?
+*mujer7*: En las dos casas.
+*entrevistador*: En las dos casas.
+*mujer7*:  En Tejedoras y en... en...
+*entrevistador*: Vale. A la hora de tomar decisiones, ¿se buscan consensos, o hay veces que se votan las cosas, o...?
+*mujer7*: Consenso.
+*entrevistador*: Consenso. 
+*mujer7*: *asiente*
+*entrevistador*: En ambas, ¿no?
+*mujer7*: *asiente*
+*entrevistador*:  Eh... La gestión... Cuando hay que hacer cualquier tipo de tarea, desde hacer una traducción, o poner información en una página web, o difundir carteles, o todo eso, ¿esas tareas cómo se gestionan? ¿vienen desde asambleas o vienen... tenéis alguna herramienta para gestionar esas tareas y gente que igual no ha podido venir, pero que se apunte a una herramienta telemática?
+*mujer7*: ¿cómo? A ver...
+*entrevistador*: ¿Cómo se realiza la gestión de cualquier tipo de tarea?
+*mujer7*: Pues en las reuniones presenciales principalmente y luego si alguna cosa es más urgente y no se puede esperar a la semana siguiente pues por correo electrónico.
+*entrevistador*: *asiente*
+*mujer7*:Principalmente. Y luego, por ejemplo, para fechas... o sea, para elegir fechas y tal a veces que no... pues la gente que no tiene la agenda en el momento de la reunión, se utiliza lo del calendario este del Google, ¿no? Y... y sobre todo por correo electrónico.
+*entrevistador*:  Vale.
+*mujer7*: Por chat a veces también. Ehm, a través del chat de gmail por ejemplo, pues varias que tenemos el chat de gmail pues nos consultamos cosas por el chat.
+*entrevistador*: ¿Y suelen ser comunicaciones uno a uno, o hay veces que os juntáis igual cinco o seis o...?
+*mujer7*: No, cinco o seis no. Lo máximo tres a lo mejor. Pero es para cosas muy puntuales, eh. O sea como para... vamos a ir a una entrevista y bueno, qué tres ideas vamos a sacar y estamos tres en una entrevista, pues de momento nos ponemos con el chat, o...
+*entrevistador*: ¿Y las dos cosas que me has dicho, en los dos colectivos también?
+*mujer7*: Sí. 
+*entrevistador*: Vale. Vale. ¿Cómo os comunicáis con el exterior? Entonces, esto sería tanto tareas de tratar de hacer crecer los proyectos, como comunicación con otros colectivos, como formar alianzas, plataformas...
+*mujer7*: Pues mira, en Tejedoras no tenemos ni blog, ni web, ni nada de nada, porque no nos da la vida y aunque siempre hemos pensado que estaría bien tener una página web, luego decimos, joe, quién la va a poder alimentar, hay que estarle dedicando mucho tiempo, tal. Entonces es eso, es principalmente cosas que nos llegan a través del correo electrónico y que las difundimos a las demás y que se tratan en las reuniones. O sea que eso otra vez también más a través del correo electrónico. Nos llegan convocatorias pues de nos gustaría que participarais en un foro presentando una ponencia, o que llevarais un taller o algo así , pues es eso, lo llevamos a la reunión y lo... Luego para difundir cosas nuestras pues por ejemplo utilizamos, hacemos, últimamente hacemos más cosas de vídeo y tal, ¿no? Pues de grabar performance o acciones que hacemos, las colgamos en youtube o las difundimos por correo electrónico.
+*entrevistador*: *asiente*
+*mujer7*: Y... artículos y tal pues... pues cosas que nos piden pues a lo mejor para boletines digitales, pero otros también son pues revistas físicas y tal, pues eso a través del correo electrónico. Y luego en Feminismo Sol eh... hay una comisión dentro del Feminismo Sol que es Comisión de Comunicación. Entonces esa sí hay una página web, pero está un poco... no funciona muy bien, porque nos la propuso una mujer cuando estábamos en Sol en la acampada, que nos hacía la página web y tal, pero luego desapareció un poco y tampoco tenemos mucho tiempo para mantenerla, entonces está un poco abandonada. Luego tenemos la del Nmenos1, que ahí difundimos todo, mandamos las cosas y tal...
+*entrevistador*: Oye, ¿no habéis pensado en abrir un espacio y por qué *no se entiende* y todo eso con la gente...?
+*mujer7*: Tenemos, bueno también Toma la Plaza colgamos las cosas. Entiendo que... pero vamos... pero... Es como hacen todas las comisiones, ¿no?
+*entrevistador*: Sí.
+*mujer7*: Y...  y más allá de eso no tenemos... O sea, tenemos el espacion Toma la Plaza, Nmenos1 y la página web que está un poco de bajón. No es como por ejemplo Feministas Indignadas en Barcelona tienen ahí un blog que lo tienen super al día, muy... Es una pena, porque estaría muy bien, pero es que no tenemos tiempo. No nos da la vida.
+*ambos ríen*
+*entrevistador*:  Vale. ¿En estos... en estos colectivos se maneja documentación interna o todo... o todo lo que hay se pone... bueno, viene en la web, viene en el Nmenos1 pero puede acceder cualquiera, o...?
+*mujer7*: No. Hay documentos que, o sea, en el caso de Feminismo Sol hay documentos que no sacamos hacia afuera porque... o sea las actas y eso sí se cuelga, no ponemos nombres personales ni nada y algunas decisiones que no se ponen para que no se sepan, y... pero hay documentos también que... internos que no los colgamos a... o sea, hacia público. Los manifiestos, los comunicados, todo, los documentos, el dossier, todo eso sí. Y luego Tejedoras hacia afuera nada, porque como no tenemos ni web, ni blog, ni nada de nada, vamos guardando nuestros archivos cada una en su ordenador y ya está, no hay una cosa común.
+*entrevistador*: ¿Hay algún tipo de gestión económica?
+*mujer7*: Ah, y en Comisión Feminismo Sol hay facebook también.
+*entrevistador*: Ajá.
+*mujer7*: En tejedoras no.
+*entrevistador*: Vale.
+*mujer7*: ¿Alguna qué?
+*entrevistador*:  Algún tipo de gestión económica, ¿se maneja...?
+*mujer7*: ¿Dinero?
+*entrevistador*: Sí.
+*mujer7*: *rie* Sí, bueno en Tejedoras todos los años hacemos una fiesta en Vicálvaro, en las fiestas de Vicálvaro y ponemos un puesto. Vendemos comida y bebida y tal, y son cinco días. Entonces ahí sí que sacamos dinero y... pues lo utilizamos luego para nuestras acciones, para eh... pues esos fines de semana
+*entrevistador*:  Para imprimir carteles...
+*mujer7*:Para carteles y para todo ese tipo de cosas. Y para materiales, para las performance, para lo que necesitemos de materiales... Entonces sí ahí tenemos unos ingresos, lo que pasa es que probablemente este año ya dejemos de hacerlo porque como nos hemos ido del barrio de Vicálvaro nos parece un poco jeta que ya no estemos allí y sigamos poniendo un puesto de un colectivo que no está en el barrio, porque son fiestas de Vicálvaro, ¿sabes? 
+*entrevistador*: Ya.
+*mujer7*: Y además suponía un montón de trabajo. O sea, era cinco días a full, por las noches hasta las tres de la mañana haciendo bocadillos de panceta, de chorizo y de lomo y entonces... mucho curro. Y hemos pensado que no nos hace falta, en realidad no nos hace falta tanto dinero, porque bueno, pues al final sí donábamos a otros colectivos o hacíamos cosas, pero, entonces hemos pensado más... hacer dos o tres fiestas a lo largo del año más pequeñas en... por ejemplo en la Escalera de Caracola, o Tabacalera o así y sacar algo de dinero para nuestras acciones y... Y luego en Feminismo Sol eh... gestionamos pues por ejemplo venta de chapas en la mani del 8 de marzo, o si nos invitan a una acción que nos pagan algo, o sea, alguna charla o asi que nos pagan algo, pero vamos, pueden ser... poquito. O sea, estamos hablando de gestionar muy bajos. Muy bajito, muy bajito.
+*entrevistador*: *asiente*
+*mujer7*:  Y eso lo utilizamos luego pues para lo mismo, los materiales, fotocopias... todo ese tipo de cosas. En carteles...
+*entrevistador*: Vale, eh... oye una cosa que estaba pensando... vosotros, vosotras llamáis reuniones en vez de asambleas...
+*mujer7*: En las Tejedoras 
+*entrevistador*: Vale, sí.
+*mujer7*: Sí porque nosotras... no sé. Es que toda la cuestión asamblearia ha sido más a raíz del 15M. Nosotras antes no hablábamos de asambleas. Como colectivo nos reuníamos. En la Comisión del feminismo sí se habla de asamblea.
+*entrevistador*: Pero al final es lo mismo, porque buscáis consensos y tal y cual...
+*mujer7*: Sí, es lo mismo.
+*entrevistador*: O sea, que tampoco es una cosa como muy pensada, ¿no? Que es una cosa más de inercia...
+*mujer7*: Sí. Sí.
+*entrevistador*:  Vale. Eh.. Tanto en uno como en otro colectivo se participa movilizaciones, bueno entiendo que en el 15M sí, pero igual en el otro no, o...
+*mujer7*: Tejedoras movilizaciones en la calle, ¿manifestaciones?
+*entrevistador*: Sí.
+*mujer7*: Sí. Sí, sí.
+*entrevistador*:  O sea, con el nombre Tejedoras...
+*mujer7*: Sí, sí, sí.
+*entrevistador*: Y dentro de plataformas y todo esto, ¿no?
+*mujer7*: Exacto.
+*entrevistador*: Vale.
+*mujer7*: Lo que pasa es que bueno, ahora por ejemplo dentro del 15M muchas participamos pero no como Tejedoras, porque sabes que 15M no es un espacio para colectivos.
+*entrevistador*: Claro.
+*mujer7*: Es un espacio libre de... alguna manera, de grupos. Y entonces vamos, pero no reivindicamos como Tejedoras. Luego sí, por ejemplo vamos a la mani del 8 de marzo y somos Tejedoras, o depende, hay veces que decidimos queremos ir a esta manifestación como Tejedoras, pues vamos como tal. Ahora mismo con el 15M es que han cambiado un poco las cosas, pero antes siempre íbamos como Tejedoras. 
+*entrevistador*: Vale. Y cuando viene una nueva colaboradora ¿Cómo es la cuestión? ¿hay alguien que la coge y la explica cómo funciona el grupo y tal?
+*mujer7*: Bueno, colaboradora... Una nueva participante, sí. Ehm... En Tejedoras no es tan, así tan protocolario...
+*entrevistador*:  Igual como es más pequeño, ¿no?
+*mujer7*: Sí. Es que en realidad, pues si alguien se incorpora es porque alguna de nosotras ya la conocemos y le hemos explicado qué es Tejedoras. Pero sí suele, o sea, pues si entra una compañera nueva pues en esa reunión ella pues se presenta, nos dice quién es, no sé qué, no sé cuánto... y nosotras le contamos un poco, pues mira las Tejedoras somos esto, que ya te lo habrá contado quien te ha traído, pero vamos, hacemos este tipo de cosas, o sea, un poco ahí como que nos presentamos mutuamente tanto nosotros el colectivo y como ella. Pero no es muy protocolario.
+*entrevistador*: Es que lo estoy pensando, cómo te hago las preguntas. ¿Sois todas chicas tanto en Tejedoras como en el 15M?
+*mujer7*: En Tejedoras sí.
+*entrevistador*: En Tejedoras sí, ¿no?
+*mujer7*:En.. en el 15M hay un par de chicos que vienen de Indignados *no se entiende*. Pero la mayor parte somos mujeres.
+*entrevistador*: O sea, como un noventa por ciento mujeres...
+*mujer7*: O personas trans, o...
+*entrevistador*: Ajá.
+*mujer7*: Y en el 15M no hay un protocolo de presentación, la verdad. O sea, es eso, es un poco que si llega gente nueva, pues más... ahí a lo mejor tendríamos que tener un poco más establecido, pero es más que nada que te cuentan, quien te lleva te cuenta un poco qué se está haciendo, cómo va la cosa y tú te vas enterando más o menos como puedes, o después de las asambleas pues nos quedamos a tomar cañas, pues ahí un poco se explica. Pero no está tan establecido. Es que va y viene mucha gente.
+*entrevistador*: Claro. Vale, a ver, cuando hacéis una reunión Tejedoras, ¿Hay gente que asume el rol de tomar actas, por ejemplo, o de dar turnos de palabra y esas cosas?
+*mujer7*: Sí. Se toma acta en un cuaderno que tenemos allí en el local. Eh... Si son reuniones así como que se han tomado decisiones y que han faltado varias personas y que creemos que son importantes pues también se pasa por correo electrónico y se envía, o sea, se pica y se envía por correo electrónico. Y luego el turno de palabra pues depende, si somos pocas y estamos charlando tranquilamente y no hay tal, pues no hace falta. Pero si a lo mejor es un día en que estamos todas y es un tema muy candente y vemos que nos estamos pisando un poco las palabras, pues ahí sí, oye voy a tomar turno de palabra. Pero no suele ser muy necesario, no es tanta gente y somos muy respetuosas, la verdad. En el 15M una toma acta y se ocupa de picarla y pasarla por el correo electrónico y sí hay turno de palabra también. Y luego hay otra que se ocupa de hacer el orden del día y de dinamizarlo.
+*entrevistador*:  Y luego las actas se aprueban al... al día, a la siguiente reunión...
+*mujer7*: No. No, se hace el acta, se envía.
+*entrevistador*: Igual, o igual... y si alguien ve algo que no está bien igual lo dice por la lista de correo...
+*mujer7*: Sí, por la lista de correo. Oye esto... Sí, pues igual la que ha hecho el acta pues dice oye os mando el borrador si alguien tiene algo que comentar que lo diga y si no la subo ya... o lo que sea.
+*entrevistador*: *asiente* Eh... a ver, actividades para dar visibilidad a los colectivos, pues...
+*mujer7*: Todo el tiempo.
+*entrevistador*: Ya, ya, pero ¿qué tipo de actividades? 
+*mujer7*: ¿Qué tipo de actividades? Pues eh... Pues podemos hacer performance, eh, acciones en la calle de todo tipo. O sea, no tanto para dar a conocer el colectivo sino para dar a conocer lo que nostras reivindicamos. Sí, sobre todo eso. Artículos, documentos, manifiestos... que se leen, o se cuelgan o se mandan. Y performance, acciones de calle...
+*entrevistador*: *asiente* O sea que...
+*mujer7*: Talleres
+*entrevistador*: Yo entiendo que una performance igual puede ser una obra de teatro en la calle o una cosa así.
+*mujer7*: O pintadas por la calle, o... También talleres pedagógicos de formación o de generación de debate. Eh... participación en jornadas o en foros o en seminarios, Tejedoras sobre todo.
+*entrevistador*: Vale. Y... claro, entonces sí que participáis en iniciativas de todo tipo de colectivos, ¿no? Que os invitan y todo esto, ¿no? Como Tejedoras. 
+*mujer7*: Sí, sí. Bueno, de todo tipo no.
+*entrevistador*: Bueno, que entren de acuerdo con vuestras...
+*mujer7*: Sí, con nuestras...
+*entrevistador*: Vuestras ideas, ¿no? Vale. Cuando... compartís de alguna manera documentos o materiales que generéis ¿utilizáis algún tipo de licencia creative commons o alguna cosa así?
+*mujer7*: *no se escucha nada, parece que dice que no*
+*entrevistador*: Vale. Y... Bueno, si esto más o menos lo tengo claro. Eh... ¿Realizáis planificación de... de objetivos dentro de los colectivos a corto, medio o largo plazo, o es algo que va surgiendo a nivel de las necesidades y apetencias de las personas que participan?
+*mujer7*: A ver, en Tejedoras lo que solemos hacer es después del verano, tenemos una primera reunión de qué nos apetece hacer este año. Entonces nos ponemos cierta, o sea, debatimos un poco qué tema nos apetece trabajar, si queremos trabajar un solo tema y cómo lo vamos a desarrollar, si primero lo trabajamos a nivel interno, luego hacemos, pues queremos hacer alguna acción hacia la calle o sacar un documento, un artículo o publicarlo el algún sitio o que acabe en una performance, o algo así. Luego si queremos seguir participando en los espacios en los que estábamos participando, si queremos seguir funcionando de la misma manera, si vemos que necesitamos más espacio hacia dentro, más formación hacia dentro, si queremos dar más charlas hacia afuera o más formación hacia afuera. O sea, es un poco... se decide lo que se va a hacer el año.
+*entrevistador*: *asiente*
+*mujer7*: Pero tampoco es que lo pongamos como muy así en plan organizado de objetivos, metas, no sé qué no sé cuánto. Lo que sí cada vez estamos aprendiendo más es que si nos llegan cosas de fuera que no nos, de alguna manera, que no nos entorpezca en lo que hemos decidido que íbamos a hacer a lo largo de año.
+*entrevistador*: Claro.
+*mujer7*: O sea, valoramos mucho si nos da tiempo a hacer cosas que nos demandan eh... en función de que continuamos con nuestra agenda, como quien dice ¿no? Y... en Feminismo Sol las cosas van un poco de otra manera, porque ahí como que se dan demandas más a menudo ¿no?, eh... de queremos que nos contéis qué es lo que hacéis o entrevistas, o que vengáis a otra comisión a contarnos que... o a darnos un taller sobre nuevos feminismos o micromachismos o... o un montón de temas. Y luego pues por ejemplo la agenda que va de lo que va sucediendo nos marca mucho. Pues de repente se producen recortes en los centros de atención a mujeres víctimas de violencia, entonces tenemos que dar alguna respuesta, entonces paramos rápidamente lo que estábamos haciendo y venga, un comunicado, salir a la calle a reivindicar tal. O... la reforma de la ley del aborto, pues hay que parar y dar respuesta. Pero también ahora por ejemplo estamos haciendo un... pensarnos, que es a nivel interno, de cómo queremos seguir trabajando, de qué nos apetece trabajar, cómo nos apetece trabajar, desde qué lugar, hacia dónde, tal... Y ahí estamos intentado ser un poco más organizados porque veíamos que era como un devenir todo el rato atendiendo a lo que nos marcan desde fuera. Y nosotros que también pues eh... pues por ejemplo hemos tomado la decisión de formarnos en temas legales con toda la cuestión de que si ahora estamos en la calle y nos movilizamos en la calle qué nos puede pasar. O hemos hecho un taller de portavocía pata hablar con los medios, o para hablar con... en espacios o lo que sea, pues que no fuéramos siempre las mismas las que vamos a hablar sino que todas vayan un poco cada vez sintiéndose más seguras y puedan ir a hacerlo. O sea, también cosas hacia dentro que vemos que nos hacen falta y que no siempre fuera lo que nos demandan desde fuera.
+*entrevistador*:  *asiente*
+*mujer7*: Y luego por ejemplo participamos en unos encuentros de feminismos 15M de todo Madrid, que es cuando nos juntamos todos los barrios, los pueblos y todo. Eso se hace cada dos meses y medio, se organiza como una pequeña comisión que está conformada por gente de distintos feminismos de distintos barrios, se suele hacer en una casa ocupada, suele ser un día entero, un domingo y ahí pues de manera asamblearia elegimos un tema que vamos a tratar, luego hay una parte que ahí se hace trabajo en grupos y debate y luego hay una parte que es como de contarnos que estamos haciendo en cada espacio, si nos podemos ayudar unas a otras, apoyar, se hacen alianzas y tal. Y... eso sí, eso sí está muy organizado, muy establecido... tomamos ya una decisión cuando se pusieron en marcha y estamos yendo como al mismo... o sea, como la misma estructura ¿no? de los encuentros.
+* Factores de Cambio Tecnológico
+*entrevistador*: Vale, pues... Ahora ya son cuatro preguntas muy cortas. Eh... factores del cambio tecnológicos, bueno hay una que igual es un poco más larga. Herramientas tecnológicas que recuerdes haber usado en el último mes.
+*mujer7*: Herramientas tecnológicas... El correo electrónico, eh.... El Facebook... no sé, el móvil ¿también?
+*entrevistador*: *asiente* 
+*mujer7*: El móvil, eh... Nmenos1
+*entrevistador*: *asiente*
+*mujer7*: Eh.... El Piratepad. Es que no sé si son *ríen ambos*, por eso te miro.
+*entrevistador*: Sí. No, no, si no me tienes que mirar, o sea, todas las respuestas son válidas. Es para ver lo que la gente contesta también a la pregunta, lo que la gente también considera herramienta tecnológica.
+*mujer7*: Internet, claro. Eh... Yo creo que... ya está.
+*entrevistador*: *asiente* Vale.
+*mujer7*: El portátil. *ambos ríen*
+*entrevistador*: ¿Cuáles son las herramientas que has dejado de usar si miras cinco años atrás? Herramientas tecnológicas.
+*mujer7*: Que he dejado de usar...
+*entrevistador*: *asiente*
+*mujer7*: Ninguna.
+*entrevistador*: Ninguna. 
+*mujer7*: De las que te he nombrado ninguna.
+*entrevistador*: No, y de las que no hayas nombrado, pero que digas no la estoy usando en el último mes, pero es que hace cinco años sí las usaba.
+*mujer7*: Hace cinco años... yo creo que usaba, o sea, no lo mismo que ahora pero... lo que uso lo usaba hace cinco años... no recuerdo haber dejado de usar nada.
+*entrevistador*: Vale. ¿Qué herramientas has incorporado si miras cinco años atrás?
+*mujer7*: El Facebook maldito *ríen*, eh... si a lo mejor estos procesadores de documentos colectivos, que no los conocía... Ah, el Dropbox también lo he utilizado, eh... y ya está.
+*entrevistador*: Vale.
+*mujer7*: El Nmenos1 tampoco lo usaba.
+*entrevistador*: ¿Qué herramienta has incorporado debido a tu activismo político?
+*mujer7*: Nmenos1, Piratepad... Pero es que eso también, o sea, el Piratepad también por curro, o sea que...
+*entrevistador*:  ¿Ah, sí?
+*mujer7*: Sí.
+*entrevistador*:  Puede que no sea ninguna, hay gente que dice que ninguna, o sea que todas las respuestas son válidas.
+*mujer7*: Ya está, yo creo que ya.
+*entrevistador*: Vale. Y... otra pregunta, ¿dirías que... pues eso, tus reflexiones acerca del feminismo y todo eso influyen a la hora de elegir unas tecnologías u otras o piensas que la tecnología no tiene nada que ver con las cuestiones del género que...?
+*mujer7*: Sí tiene que ver. Claramente. O sea, yo creo que también el hecho de que... o sea me da la sensación de que las mujeres también por el hecho de ser mujeres nos hemos acercado menos a las tecnologías porque parecía que era una cuestión como más de... de los hombres, ¿no? Como una cuestión más vinculada a saberes o conocimientos masculinos y que nosotras es como ay es que yo eso no lo entiendo, o que tal y teníamos cierta inseguridad. Eh... creo que ahora eso también se está rompiendo, porque cada vez más las mujeres se están incorporando, pero de manera más lenta, creo que de manera más lenta, claramente. Las mujeres, entonces sí que por supuesto está cruzado por una cuestión de género, eh... nosotras como que a lo mejor pensamos que no tenemos una mente tan matemática, o que no lo entiendo, o que no lo vemos, que no entendemos la complejidad del asunto o que... y que a lo mejor también eh... yo creo que tiene que ver con el hecho de qué tiempo tienes para dedicarte a estas cosas, pues hay un montón de mujeres que se ocupan de trabajo de cuidado, de tareas de cuidados y no pueden estar tanto tiempo delante de un ordenador porque tienen que hacer la comida, ir a la compra y ocuparse de los niños o del abuelo que está enfermo.
+*entrevistador*: *asiente*
+*mujer7*: Y en cambio los hombre, a lo mejor, pues como no se ocupan tanto d esas tareas pues dedican más tiempo a navegar por Internet o a conocer esa nueva herramienta que tal, ¿no? Entonces eso también es una cuestión que está ahí... desde la perspectiva de género.
+*entrevistador*: Entonces, la actitud desde una perspectiva feminista
+hacia las nuevas tecnologías ¿cuál es la que debería ser? ¿Tratar de
+acercase entonces un poco?
+*mujer7*: O sea, yo creo que es una herramienta, a mi me parece que
+las nuevas tecnologías son una herramienta y como herramienta nos
+tienen que servir para hacernos más fácil la vida. Más fácil quiero
+decir, pues... de que a lo mejor de ahorrar tiempo, de tal... eh... si
+en vez de eso, al final lo que sucede es que te atrapan, te sientes
+como de alguna que entras en una dinámica de dependencia de las nuevas
+tecnologías y de tal. A mí me parece que ese no sería el objetivo, o
+sea, yo creo que tienen que facilitarnos en darnos más tiempo libre,
+en que las cosas las podamos hacer antes para terminar y tener ocio,
+cuidado, poder leer un libro, lo que sea. Ahora, yo por ejemplo pues
+me da mucha rabia cuando de repente me doy cuenta de que estoy delante
+del correo electrónico y me tiro dos horas contestando mails, que
+dices ¿pero por qué hemos hecho esto?
+*entrevistador*: *ríe*
+*mujer7*: O sea, hemos entrado en una dinámica que es una puta locura. O sea, además de mi trabajo me tiro una hora más sólo contestando mails, que claro, es muy cómodo, pero también hemos entrado en unas dependencias...
+*entrevistador*: Se pierde como contacto cara a cara, ¿no? Porque ya lo hablas por mail y entonces luego no quedas para hablarlo, ¿no?
+
+*mujer7*: Claro, por ejemplo. O el tema del chat, es una cosa muy
+compleja, ¿no? Como... al final resuelves lo que antes se resolvía
+pues viéndote tomándote una caña, un café o lo que fuera y además era
+una manera como con más tiempo, no es todo inmediato ahí "oye
+tatatatata". Luego está la cuestión de la ruptura de las tareas, ¿no?
+Tú te pones a hacer un documento, a escribir algo y tienen al mismo
+tiempo el móvil, el correo electrónico, el chat y tal y te está
+contantemente como interrumpiendo, ¿no? Entonces eso también es como
+trabajamos ahora, que es mucho más agotador ¿no? Te cambia la manera y
+además pierdes la concentración más a menudo ¿no? No te pones a una
+sola tarea sino que estás en mil y eso genera mucho estrés, que
+también pues... creo que no es positivo. Luego, como te va atrapando,
+parece como que la historia de... yo me acuerdo de cuando no tenía
+móvil, era como "joer Rocío, que no podemos contactar contigo, te
+tienes que hacer con un móvil, no se qué", o sea, de alguna manera te
+sientes presionada.
+
+*entrevistador*:  Sí, que la sociedad te obliga.
+
+*mujer7*: Sí. O tú también llega un momento que dices "jo, ¿cómo no
+voy a tener móvil?, tal", entonces dices "a ver me voy a comprar un
+móvil pero yo no lo voy a usar, no lo voy a tener todo el día
+encendido..." y de repente ya el móvil es una parte de tu vida, como
+tu brazo, vamos.
+
+*entrevistador*: *ríe*
+*mujer7*: Y yo por ejemplo me he estado resistiendo al Facebook
+mogollón de tiempo. Yo el Facebook me lo he abierto hace meses. Y de
+repente ya estoy empezando a ver que me está atando el Facebook y que
+paso más tiempo del que me gustaría. Entonces es como joder, y la
+gente me dice "¿Y no tienes whatsapp, y el twitter y tal?"... Y es
+como "no me habléis, no quiero saber más" O sea, ya demasiado tiempo
+con las tecnologías ahí, ¿no? Entonces yo creo que joer, de una mirada
+feminista que lo que justamente se está reivindicando poner la vida en
+el centro de... no de... o sea, la sostenibilidad de la vida en el
+centro, no tanto el mercado, lo que fuera pues claro, todo esto es una
+forma de mantenernos ocupados con otras historias y que no nos estemos
+dedicando a las necesidades reales de la vida ¿no? De que... de tener
+tiempo para hablar con alguien, de dedicarle tiempo para el cuidado,
+para el intercambio, para el conocimiento, para... pues... pues eso,
+para cocinar de una manera más tranquila, más relajada, para tener
+tiempo para charlar con alguien, para tener tiempo para acompañar a
+una amiga al médico, para... ¿sabes? Ese tipo de cosas. Que al final
+mucho tiempo lo estamos dedicando a eso ¿no? Que ya... nos
+atrapan. Las nuevas tecnologías nos han atrapado, nos han atado ahí
+como a muchas cosas, ¿no? Y dependemos, se han generado muchas
+dependencias muy tontas, ¿no? como... si no miro un día el correo
+parece que va a pasar algo, que te vas a salir de lo que sucede, ¿no?
+Que no vas a estar al tanto de la vida.
+
+*entrevistador*:  Igual alguien se enfada por...
+
+*mujer7*: Claro, y la vida sigue y luego te das cuenta que a lo mejor
+te vas de viaje una semana y no puedes mirar el correo porque estás
+liada esa semana fuera y cuando vuelves, pues mira no pasa nada, tengo
+ocho mil quinientos correos pero no se ha hundido el mundo porque no
+he contestado, ¿sabes? O eso... joer yo cuando veo toda la cuestión  de
+estar hablando con alguien tomándote un café o una caña y que esté
+todo el rato atendiendo el móvil, mirando el *no se entiende* ... me
+parece una putada, o sea, es que es la inmediatez, es el sistema, es
+cómo el sistema nos ha metido en la inmediatez absoluta de estar cada
+segundo recibiendo una información, o sea, es loco ¿para qué quiero yo
+tanta información al minuto? No me interesa para nada. Y yo veo a
+chicas que están en la comisión y estamos en una manifestación y están
+contándolo por Twitter, en vez de estar ahí disfrutando de la acción
+que estamos haciendo, hablando con otras, no, es que están como
+pumpumpumpum. No le acabo yo de encontrar el punto.
+
+*entrevistador*: *ríe*
+
+*mujer7*: Que luego vas cayendo en esas cosas, es una pena. Caes y te
+generas necesidades, por lo menos ser consciente y decir "ostia, esto
+me está atrapando, voy a dejarlo". Luego hay cuestiones, por ejemplo
+el Piratepad me parece muy útil, pero bueno ¿podemos vivir sin ello?
+Pues sí, perfectamente. Ya teníamos lo del control de cambios, nos
+pasábamos documentos con tu control de cambios y... lo haces así, ¿no?
+
+*entrevistador*:  *asiente*
+
+*mujer7*: No sé, como que hay que ir valorando... y un poco viendo qué
+te oferecen, qué te dan y qué te quitan, sobre todo. Soy muy crítica
+con lo que nos quitan... y eso.
+
+*entrevistador*:  Pues nada, muchas gracias, ha terminado la entrevista. *ríen*

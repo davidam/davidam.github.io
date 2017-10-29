@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-19 18:00+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: tex
+#, no-wrap
+msgid ""
+"\\gdef\\paperbackbook{{\\globaldefs = 1\n"
+"  \\parskip = 2pt plus 1pt\n"
+"  \\textleading = 12pt\n"
+"  \\setleading{12pt}%\n"
+"  %\n"
+"  \\internalpagesizes{180mm}{112mm}{20mm}{20.2mm}{5mm}{12pt}{9in}{6in}%\n"
+"  % correction for conversion from USletter=8.5x11 to TradePaper=6x9\n"
+"  \\advance\\voffset by -1in\n"
+"  \\advance\\normaloffset by -1in\n"
+"  \\special{papersize=6in,9in}\n"
+"  %\n"
+"  \\lispnarrowing=0.3in%\n"
+"  \\tolerance = 700%\n"
+"  \\hfuzz = 1pt%\n"
+"  \\contentsrightmargin = 0pt%\n"
+"  %\\deftypemargin = 0pt%\n"
+"  \\defbodyindent = .5cm%\n"
+"  %\\raggedbottom\n"
+"}}\n"
+msgstr ""
+
+#. type: Plain text
+msgid "@paperbackbook"
+msgstr ""
+
+#. type: Plain text
+msgid "@raggedbottom"
+msgstr ""

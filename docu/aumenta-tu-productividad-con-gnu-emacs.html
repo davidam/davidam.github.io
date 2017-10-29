@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Aumenta tu Productividad con GNU/Emacs</title>
+<!-- 2013-08-18 dom 22:47 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Aumenta tu Productividad con GNU/Emacs</h1>
+'<div class="title"><p>¿Te gusta el artículo?</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="NCGZ9KGTSL4UU"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1"></form></div>'
+<p>
+<a href="file:////home/davidam/public_html/index.html">Volver a davidam.com</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Introducción</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+La primera herramienta que basa su desarrollo en compartir código
+dentro de una comunidad, sigue teniendo una comunidad fuerte que lleva
+el uso de este editor hasta límites insospechados. En un momento en el
+que se mueven cifras millonarias alrededor del Software Libre, este
+editor se sigue manteniendo por aportaciones desinteresadas, ó más
+bien interesadas en cuestiones culturales y, de productividad personal
+y profesional. Así mismo, la historia de GNU Emacs es la historia de
+los hackers de la IA, de Lisp y de la investigación, pero también es
+usado en entornos donde se busca la rentabilidad económica.
+</p>
+
+<p>
+En este artículo vislumbraremos cómo ser productivo con GNU Emacs,
+tanto en tareas exclusivas de programación, de uso general del editor
+y, casi cualquier tarea que se necesite hacer delante de un ordenador.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Conceptos Generales de Uso del Editor</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Antes de ahondar en temas más avanzados abramos un emacs y aprendamos
+a diferenciar window, buffer, mini-buffer, puntero y marca.
+</p>
+
+<p>
+<b>Buffer</b>: Podemos decir que un buffer es una lupa a un fichero
+emacs. Desde un mismo buffer podemos diferenciar una parte de un solo
+fichero. Desde distintos buffers podemos ver uno ó varios
+ficheros. Desde un buffer se muestra contenido para ser editado, si
+bien también tenemos buffers de solo lectura.
+</p>
+
+<p>
+<b>Window</b>: El concepto de ventana en emacs es similar al mismo en otros
+entornos. Esto es, un elemento de información que es gestionada por un
+gestor de ventanas. Un proceso puede tener asociado a un numero n de
+ventanas y buffers.
+</p>
+
+<p>
+<b>Mini-buffer</b>: Es el lugar donde se envían comandos al editor y se sitúa
+en el pie de la ventana (window).
+</p>
+
+<p>
+<b>Puntero</b>: Es un diminuto rectángulo parpadeando que se sitúa donde
+estás escribiendo.
+</p>
+
+<p>
+<b>Marca</b>: A veces, es necesario dejar una marca con C-SPACE para cortar,
+copiar, o invocar una función en una determinada región.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Productividad con GNU/Emacs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+En esta sección se mostrarán algunas características para volverte
+productivo usando GNU Emacs. Debemos pensar que un programador pasa
+muchas horas delante de un editor de textos, tener un solo editor que
+te libere de tareas monótonas es claramente beneficioso.
+</p>
+
+<p>
+Si nunca has usado Emacs lo primero que tendrás que empezar a aprender
+serán atajos de teclado, ¿has probado a bajarte un quicksheet?. Si ya
+conoces atajos de teclado de bash, prueba con esos y si no puedes
+hazlo al revés. En cualquier caso con C-h t abres un tutorial con el
+que te divertiras aprendiendo atajos comunes
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Modos</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Una de las características que hacen a Emacs interesante es que hay
+modos para casi cualquier lenguaje de programación por raro que éste
+sea. Esto es, colorines, atajos de teclado, plantillas, etc. De este
+modo, sabiendo usar de manera eficaz el editor y sabiendo programar
+puedes programa muy rápido en cualquier lenguaje. Hay otros
+programadores que prefieren aprender un entorno en función del
+lenguaje que vayan a usar …
+</p>
+
+<p>
+Con M-x sql-mode, por ejemplo, estaríamos invocando al modo sql, si no
+nos gusta el modo en el que nos toca programar podemos volver a
+fundamental-mode que es el modo que nos permite escribir texto de la
+manera más simple posible.
+</p>
+
+<p>
+Para conocer los atajos del modo mayores en el que se está se puede
+utilizar C-h m y para conocer atajos disponibles en ese momento C-h
+b. Esto es distinto debido a que aparte de modos mayores hay modos
+menores, la diferencia estriba en que un modo mayor se adapta a la
+tarea general que estás desarrollando mientras que un modo menor se
+adapta a una tarea específica dentro de la tarea general. Por ejemplo,
+si estamos escribiendo un programa en c, podemos usar c-mode, pero
+dentro de los comentarios podría
+</p>
+
+<p>
+Si bien la instalación de nuevos modos no es difícil y, hay paquetería
+de éstos para muchas distribuciones, también existe una manera
+estándar de instalar paquetes en GNU Emacs llamada ELPA
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Variables</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Lo primero que se hace cuando te enfrentas a una nueva herramienta, ya
+sea un editor de textos, un servidor o cliente de correo, jabber, ó lo
+que sea es hacer pequeñas personalizaciones. Esto en emacs suele ser
+equivalente a asignar un valor a una variable. Veamos algunas
+personalizaciones simples que pueden ser añadidas a un .emacs:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp"><span style="color: #b22222;">;;; </span><span style="color: #b22222;">quitar la barra de navegaci&#243;n</span>
+
+(tool-bar-mode nil)
+
+<span style="color: #b22222;">;;; </span><span style="color: #b22222;">introducir colorines</span>
+
+(global-font-lock-mode)
+</pre>
+</div>
+
+<p>
+C-h v describe el valor de una variable dada. Una variable interesante
+es auto-mode-alist esta variable nos dice que modos están asociados a
+que extensiones de ficheros, así si queremos asociar ficheros html a
+html-helper-mode podemos hacer lo siguiente:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(setq auto-mode-alist (cons '(<span style="color: #8b2252;">"\\.htm$"</span> . html-helper-mode) auto-mode-alist))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Macros</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Si hacemos una tarea de manera repetitiva (ir al comienzo de un
+párrafo, cortar la primera palabra, pegarlo al final del párrafo, ir
+al siguiente párrafo, …), nos puede resultar interesante grabarlo para
+llamar a esa tarea con un atajo de teclado. La manera de hacer esto es
+comenzar a grabar con C-(, después ejecutas las acciones: (ir al
+comienzo de un párrafo, cortar la primera palabra, ir al final del
+párrafo y pegarlo) y paras la grabación. Cuando quieras utilizarlo
+puedes llamarlo con C-x e, por ejemplo, desde el siguiente párrafo
+donde quieres introducir la acción.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Funciones</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Si tenemos una macro que queremos seguir utilizando en futuras
+sesiones de emacs, lo más cómodo es guardarlo como una función y
+añadirla a tu .emacs.
+</p>
+
+<p>
+Algo similar a lo que se ha explicado en la sección de macros sería
+decidir que lo que se acaba de escribir es un subtítulo en formato
+emacswiki, para ello se puede recurrir a la siguiente función:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">subtitle</span>()
+  (interactive)
+  (beginning-of-line)
+  (insert <span style="color: #8b2252;">"=="</span>)
+  (end-of-line)
+  (insert <span style="color: #8b2252;">"=="</span>)
+  (forward-line 1))
+</pre>
+</div>
+
+<p>
+Para ejecutar la función se podría llamar a M-x subtitle. Después
+puede resultar interesante asociar un atajo de teclado con el
+siguiente código:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(global-set-key <span style="color: #8b2252;">"\C-c\st"</span> 'subtitle)
+</pre>
+</div>
+
+<p>
+También es posible ir desde el atajo de teclado a la función C-h k y
+de la función al código fuente C-h f.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Expresiones Regulares</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Emacs también tiene un buen soporte para expresiones regulares, como
+muchos otro editores. Para usarlos mientras estamos escribiendo y
+queremos buscar haciendo uso de expresiones regulares se puede usar
+isearch-forward-regexp (C-M s), o reemplazar con query-replace-regexp
+(C-M %).
+</p>
+
+<p>
+Puede utilizar las funciones antes mencionadas para actuar sobre
+buffers, pero para actuar sobre cadenas también puede utilizar
+replace-regexp-in-string. Ejemplo de uso: (replace-regexp-in-string
+“foo*” “fu” “Fight foo for food!)”
+</p>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Autoinsert</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Con autoinsert al abrir un fichero de una determinada extensión
+incluiremos algún texto en dicho fichero. Por ejemplo:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">autoinsert</span>)
+    (auto-insert-mode)  <span style="color: #b22222;">;;; </span><span style="color: #b22222;">Adds hook to find-files-hook</span>
+    (setq auto-insert-directory <span style="color: #8b2252;">"~/.mytemplates/"</span>) 
+    (setq auto-insert-query nil) 
+    (define-auto-insert <span style="color: #8b2252;">"\.txt"</span> <span style="color: #8b2252;">"txttemplate"</span>)
+</pre>
+</div>
+
+<p>
+Así, estamos insertando el contenido de txttemplate al abrir un
+fichero de extensión .txt. También es posible usar autoinsert en
+combinación con skeleton. Esto evita el tedioso trabajo de añadir nota
+de copyright, librerías a cargar u otras líneas que suelen cambiar
+poco mientra se programa.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">Skeleton</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+La finalidad de skeleton es dar unas plantillas para las que solo hay
+que rellenar algún dato. Por ejemplo,
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #a020f0;">define-skeleton</span> <span style="color: #0000ff;">primitiva</span>
+  <span style="color: #8b2252;">"Declare a primitive function and an example to use it."</span>
+  nil
+  (read-string <span style="color: #8b2252;">"Nombre de la Primitiva Lisp: "</span>)
+  <span style="color: #8b2252;">": "</span>
+  (read-string <span style="color: #8b2252;">" Descripci&#243;n de la Primitiva Lisp: "</span>) \n
+  <span style="color: #8b2252;">"Ejemplo de Uso: "</span>)
+</pre>
+</div>
+
+<p>
+Este código no es más que un formulario para ir haciendo una chuleta
+de primitivas lisp y, así vamos poniendo el nombre de la primitiva, la
+descripción y un ejemplo de uso. Una vez que está cargado y/o añadido
+a nuestro .emacs se llama con M-x primitiva.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">Abbrevs</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+En ocasiones, resulta útil construir alguna abreviación que por larga
+resulta molesta de escribir entera. Ésta es la utilidad de
+abbrev. Veamos como se define una tabla de abbrevs:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(setq-default abbrev-mode t)
+(define-abbrev-table 'text-mode-abbrev-table '(
+    (<span style="color: #8b2252;">"foriter"</span> <span style="color: #8b2252;">""</span> java-iter-skeleton 0)
+    (<span style="color: #8b2252;">"iternext"</span> <span style="color: #8b2252;">""</span> java-iter-next-skeleton 0)
+    <span style="color: #b22222;">;; </span><span style="color: #b22222;">...</span>
+    (<span style="color: #8b2252;">"logdebug"</span>
+     <span style="color: #8b2252;">"org.apache.log4j.Logger.getLogger(getClass().getName()).debug()"</span>
+      nil 1)
+    <span style="color: #b22222;">;; </span><span style="color: #b22222;">...</span>
+    (<span style="color: #8b2252;">"ctc"</span> <span style="color: #8b2252;">"true"</span> nil 1)
+    (<span style="color: #8b2252;">"cfc"</span> <span style="color: #8b2252;">"false"</span> nil 1)
+    (<span style="color: #8b2252;">"cnc"</span> <span style="color: #8b2252;">"null"</span> nil 1)
+    (<span style="color: #8b2252;">"&#225;"</span> <span style="color: #8b2252;">"&#225;"</span> nil 1)
+    ))
+</pre>
+</div>
+
+<p>
+A la izquierda de la tabla encontramos las abreviaturas y a la derecha
+el texto o función al que estamos llamando. Una vez cargado en el
+emacs el texto abreviado con C-x a e se expande el texto, también
+podemos expandir una región con M-x expand-region-abbrevs.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12">Funciones que llaman a comandos unix</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+En otras ocasiones nos interesa que el poder de la conocida línea de
+comandos llegue hasta nuestro emacs, podemos ver un par de ejemplos
+para entender a qué nos referimos
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">insert-output</span> (command)
+   (interactive <span style="color: #8b2252;">"sCommand: "</span>)
+   (insert (shell-command-to-string command)))
+
+ (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">output-to-buffer</span> (buffer command)
+   (interactive <span style="color: #8b2252;">"sBuffer name: \nsCommand: "</span>)
+   (get-buffer-create buffer)
+   (call-process command nil buffer)
+   (switch-to-buffer (get-buffer buffer)))
+</pre>
+</div>
+
+<p>
+En ambos ejemplos podemos insertar la salida de un proceso dentro de
+nuestro buffer. Hay otras maneras de interactuar con unix desde emacs
+como M-x shell ó M-x ansi-term o M-!, y así evitamos salir de emacs,
+pero así no extendemos nuestro emacs.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13">Conclusión</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+Emacs tiene poderosos y simples mecanismos de extensibilidad que hacen
+que tu editor se comporte tal y como tu quieres realmente. En este
+artículo, solo hemos visto unas pocas herramientas, sin embargo,
+quedaría mucho por aprender. Así mismo, tiene una comunidad fuerte:
+listas, irc, manuales, … que sigue creciendo según pasan los
+años. Así, las posibilidades de Emacs son tan sorprendentes, útiles y
+divertidas que es interesante en invertir algún tiempo en usarlo para
+siempre.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14">Referencias</h2>
+<div class="outline-text-2" id="text-14">
+<ul class="org-ul">
+<li><i>Página Oficial de GNU Emacs</i>
+</li>
+<li><a href="http://www.gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html">An Introduction to Programming in Emacs Lisp</a>
+</li>
+<li><a href="http://www.gnu.org/software/emacs/emacs-faq.text">Emacs FAQ</a>
+</li>
+<li><a href="http://www.emacswiki.org/">Emacs Wiki</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15">Licencia</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+Este documento está bajo la <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+</p>
+
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png" alt="200px-GFDL_Logo.svg.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2013-08-18 dom 22:47</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

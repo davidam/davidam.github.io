@@ -1,0 +1,76 @@
+#+TITLE: Traduciendo Documentación en Texinfo con emacs y po4a
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+Texinfo es el formato de marcas estándar para documentación de GNU. Permite crear manuales en formato pdf, info, html, etc. desde un solo fichero fuente .texi con las características avanzadas que debería tener un buen manual.
+
+Antes de familiarizarnos con los comandos del proceso de traducción instalemos los paquetes debian que vamos a utilizar:
+
+#+BEGIN_SRC bash
+apt-get install texlive texinfo texi2html emacs23 gettext-el po4a aspell-es dict dict-freedict-eng-spa dict-freedict-spa-eng dictionary-el dict-gcide
+#+END_SRC
+
+Si tenemos un fichero texinfo y queremos convertirlo a pdf se puede usar el siguiente comando:
+
+#+BEGIN_SRC bash
+texi2pdf myfile.texi
+#+END_SRC
+
+El problema con texi2pdf es que a veces no ofrece buenos mensajes de depuración, para depurar es mejor hacerlo con:
+
+#+BEGIN_SRC bash
+makeinfo myfile.texi
+#+END_SRC
+
+Además con este comando se crea el fichero .info
+
+Si queremos crear un sitio web con nuestro documento podemos usar:
+
+#+BEGIN_SRC bash
+texi2html myfile.texi
+#+END_SRC
+
+Si se desea traducir el fichero del inglés al español u otras lenguas es posible utilizar gettext gracias a po4a. Siguiendo estos pasos:
+
+#+BEGIN_SRC bash
+    po4a-gettextize -f texinfo -m myfile.texi -p myfile.pot # Crea un fichero .pot a partir de un .texi
+    cp myfile.pot myfile.es.po
+    # Se traduce del inglés al español abriendo myfile.es.po con emacs en modo po-mode
+    po4a-translate -f texinfo -m myfile.texi -p myfile.es.po -l myfile.es.texi # Creamos myfile.es.texi, el texi traducido
+#+END_SRC
+
+Es probable que con el tiempo salgan nuevas actualizaciones del fichero .texi original, podemos actualizarnos con msgmerge del siguiente modo:
+
+#+BEGIN_SRC bash
+    po4a-gettextize -f texinfo -m myupdated.texi -p myupdated.pot # Crea el fichero .pot actualizado a partir del nuevo .texi
+    msgmerge myold.es.po myupdated.pot > myupdated.es.po
+#+END_SRC
+
+Las frases en las que haya habido variaciones aparecerán como fuzzy debiendo ser debidamente revisadas.
+
+Y ahora vemos algo de configuración del .emacs para hacer más fácil y divertida la traducción:
+
+#+BEGIN_SRC emacs-lisp
+;;;; PO-MODE ;;;;
+(require 'po-mode)
+(defun iacute()
+(interactive)
+(insert "@'{@dotless{i}}"))
+;; El atajo C-i insertará i acentuada, a la manera nativa de texinfo
+(define-key po-subedit-mode-map "\C-i" 'iacute)
+
+;; Debe cortar las líneas automáticamente
+(add-hook 'po-subedit-mode-hook 'auto-fill-mode)
+
+;;;; ASPELL ;;;;
+;; Para que avise
+(setq ispell-program-name "aspell"
+ispell-extra-args '("--lang=es"))
+(add-hook 'po-subedit-mode-hook
+(lambda()
+(flyspell-mode 1)))
+
+;;;; Dictionary ;;;;
+(global-set-key "\C-cs" 'dictionary-search)
+(global-set-key "\C-cm" 'dictionary-match-words)
+#+END_SRC

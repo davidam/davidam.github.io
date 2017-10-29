@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Computación Neuronal</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Procesamiento de Lenguaje Natural"
+HREF="nlp.html"><LINK
+REL="NEXT"
+TITLE="Robótica"
+HREF="robot.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="nlp.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="robot.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="neuronal"
+>8. Computación Neuronal</A
+></H1
+><P
+>Bien, hasta aquí hemos visto que las máquinas
+    pueden imitar comportamientos humanos para un gran número
+    de tareas. De hecho, incluso pueden aplicarse algoritmos de
+    aprendizaje que, para ciertas tareas como el spam, dan muy buenos
+    resultados. La siguiente cuestión entonces es
+    ¿pueden las máquinas pensar tal y como lo hacemos
+    los humanos?</P
+><P
+>La naturaleza nos ha dotado con un sistema de cómputo
+    basado en una enorme red de neuronas. Si las máquinas
+    pudieran simular tal sistema de cómputo ¿no
+    estarían entonces en condiciones de pensar tal y como lo
+    hacemos las personas?</P
+><P
+>En primer lugar, pensemos qué es una neurona. Una
+    neurona está formada por el cuerpo celular y diferentes
+    prolongaciones: el axón, por el que transitan los impulsos
+    nerviosos o potenciales de acción desde el cuerpo celular hacia la
+    siguiente célula, y la/s dendritas, con número y estructura
+    variable según el tipo de neurona, y que transmiten los
+    potenciales de acción desde las neuronas adyacentes hacia el
+    cuerpo celular. Se podría decir que las dendritas son
+    entradas y el axón es la salida.</P
+><P
+>Ahora bien, ¿cómo se decide si tras recibir
+    entradas se produce o no una salida, y qué salida se
+    produce? Pues bien, la salida es la suma ponderada de las entradas
+    seguida de una función umbral. Esto puede parecer un diodo:
+    si el potencial de las entradas alcanza un cierto valor, entonces
+    se produce la salida, y sino no. Sin embargo, difiere en ser
+    ponderado. Se refiere a que no todos los valores de las entradas
+    van a tener la misma importancia de cara a decidir si se produce o
+    no la salida.</P
+><P
+>Si nuestra neurona no es más que un diodo con
+    entradas ponderadas, entonces juntando unos diodos con otros en
+    forma de red ¿hará el tipo de procesos que realizamos los
+    humanos como, por ejemplo, aprender? Es curioso que para aprender
+    solo es necesaria una neurona, y el aprendizaje consiste en
+    modificar el valor de los pesos (la importancia de cada entrada)
+    aplicando un algoritmo a nuestro valor de salida. ¿Y cual
+    será ese algoritmo? Un psicólogo llamado Donald
+    O. Hebb enunció una regla que dice que "las conexiones que
+    unen diferentes neuronas que se encuentran activas en un instante
+    dado se fortalecen". Se refiere a que si la neurona está
+    transmitiendo, las entradas que est&aacute;n activas tendrán
+    más importancia de la que ya tenían. Y esto es
+    más ó menos la esencia de la computación
+    neuronal, especialmente la no supervisada (que no requiere de un
+    tutor), y esta es la que nos encontramos en la naturaleza.</P
+><P
+>Pero en la práctica las redes neuronales artificiales
+    no han creado en las máquinas comportamientos similares a
+    los de las personas. Sin embargo, lo cierto es que los problemas
+    que tradicionalmente son más complejos para las
+    máquinas (visión artificial, reconocimiento del
+    habla, etc.), se resuelven mejor utilizando redes neuronales que
+    mediante otras perspectivas simbólicas.</P
+><P
+>La computación neuronal tiene como tarea
+    genérica la clasificación. Por ejemplo, pensemos que
+    queremos averiguar en qué imágenes está Wally
+    y en qué im&aacute;genes no. Nuestras entradas serían
+    las intensidades RGB de cada pixel de cada una de las
+    imágenes, y tendría una única salida que nos
+    diría si está o no.</P
+><P
+>Las redes neuronales tienen un modelo inherentemente
+    distribuido, puesto que un procesador puede simular una
+    neurona. Así mismo, son autoprogramables. La
+    programación pasa por elegir un número de neuronas,
+    las conexiones entre las mismas, un número de salidas, un
+    número de entradas y una configuración inicial de
+    pesos. Después bastaría con alimentarla
+    correctamente y, si el aprendizaje es supervisado, darle la
+    adecuada realimentación humana</P
+><P
+>Como siempre, para profundizar recomiendo jugar con el
+    software libre disponible. Lo que he encontrado ha sido <A
+HREF="http://fann.sourceforge.net/intro.html"
+TARGET="_top"
+>Fast Artificial
+    Neural Network Library (fann)</A
+>, <A
+HREF="http://www.genesis-sim.org/GENESIS/"
+TARGET="_top"
+>Genesis</A
+> y,
+    aunque no totalmente libre, también creo importante
+    destacar <A
+HREF="http://www-ra.informatik.uni-tuebingen.de/SNNS/"
+TARGET="_top"
+>SNNS</A
+>.</P
+><P
+>Finalizar diciendo que, si bien los algoritmos de redes
+    neuronales no son otra cosa que algoritmos de aprendizaje
+    automático, debido a las implicaciones filosóficas
+    que tienen he decidido tratarlo aparte.</P
+><DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="img/fann.gif"><DIV
+CLASS="caption"
+><P
+>Pantallazo de fann en ejecución</P
+></DIV
+></P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="nlp.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="robot.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Procesamiento de Lenguaje Natural</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Robótica</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

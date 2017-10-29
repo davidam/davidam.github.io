@@ -1,0 +1,372 @@
+#+TITLE: Installing Drupal in Debian/Ubuntu GNU/Linux
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+LANGUAGE: en
+
+* Installing Debian Packages
+
+A fast way to do it with mysql may be the next:
+
+#+BEGIN_SRC bash
+$ sudo apt-get install drupal7 drush
+#+END_SRC
+
+Drush is an useful tool to facilitate the manage of our drupal by
+command line, by example, updates of modules, backups, etc.
+
+Really, it's better download the last version of drupal that the
+debian package, due to my policy of use drush to upgrades. But install
+drupal7 as debian package is a good idea to install depedencies.
+
+#+BEGIN_SRC bash
+$ cd /var/www/
+$ sudo wget -c http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz
+$ sudo tar -xvzf drupal-7.32.tar.gz
+$ sudo chown -R www-data.www-data drupal-7.32
+$ sudo chmod g+w -R drupal-7.32
+$ sudo mv drupal-7.32 mysite
+#+END_SRC
+
+* Configuring Apache 
+
+To install a drupal site, I would like enable clean urls, to it I will
+create the file mysite in /etc/apache2/sites-available/mysite.conf, with
+the next content:
+
+#+BEGIN_SRC bash
+<VirtualHost *:80>
+
+  ServerAdmin webmaster@localhost
+  ServerName mysite
+
+  DocumentRoot /var/www/mysite
+
+  <Directory /var/www/mysite>
+                RewriteEngine on
+                RewriteBase /
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteCond %{REQUEST_FILENAME} !-d
+        	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+  </Directory>
+
+</VirtualHost>
+#+END_SRC
+
+Due to in this moment don't have the domain of the site it will be
+possible enable the host in /etc/hosts
+
+#+BEGIN_SRC bash
+127.0.0.1	localhost
+127.0.1.1	mysite
+#+END_SRC
+
+Later, we can enable it so:
+
+#+BEGIN_SRC bash
+$ sudo a2enmod rewrite
+$ sudo a2ensite mysite
+#+END_SRC
+
+* Configuring Nginx
+
+To install it:
+
+#+BEGIN_SRC bash	
+$ sudo apt-get install nginx*
+#+END_SRC
+
+
+An alternative solution to apache is to serve Nginx in sites-available:
+
+#+BEGIN_SRC bash	
+server {
+	listen 80;
+	server_name mysite;
+	root /var/www/mysite/;
+	include /etc/nginx/sites-available/drupal.include;
+}
+#+END_SRC
+
+In /etc/nginx/sites-available/drupal.include:
+
+#+BEGIN_SRC bash	
+# Drupal config
+
+location = /favicon.ico {
+        access_log off;
+	log_not_found off;
+}
+
+# Pls read
+# http://nginx.org/en/docs/http/ngx_http_core_module.html#location
+
+# Default location
+location / {
+	try_files $uri /index.php?q=$uri&$args;
+}
+
+        # Not a regexp, but a prefix match that prevents execution of regexps
+location ^~ /sites/default/files/private {
+        deny all;
+}
+
+location ~ /\. {
+	deny all;
+}
+
+location ~ \.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl|sw[op]|bak|orig|save)$ {
+        deny all;
+}
+
+# PHP via FGCI protocol
+location ~* /index.php {
+	try_files $uri =404;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_index index.php;
+        include fastcgi_params;
+}
+
+#+END_SRC
+
+Restart nginx:
+
+#+BEGIN_SRC bash
+$ sudo /etc/init.d/nginx restart
+#+END_SRC
+
+
+It's a good idea make your own benchmarks ;-)
+
+#+BEGIN_SRC bash
+$ ab -n 1000 -c 100 http://mysite
+#+END_SRC
+
+
+* Creation of the database in Mysql
+
+#+BEGIN_SRC bash
+$ mysql -u root -p 
+mysql> create database drupal7;
+mysql> create user 'drupal7'@'localhost' identified by 'lapasswd';
+mysql> grant all privileges on drupal7.* to 'drupal7'@'%' with grant option;
+#+END_SRC
+
+* Creation of the database in Postgresql
+
+First of all, you must install the needed debian packages:
+
+#+BEGIN_SRC bash
+$ sudo apt-get install postgresql-9.1 postgresql-client php5-pgsql
+#+END_SRC
+
+Now, you can create the database and the user to postgres.
+
+#+BEGIN_SRC bash
+$ createuser dpsql --pwprompt --encrypted
+$ createdb dpsql --owner=dpsql
+#+END_SRC
+
+To use the psql client on local you can modify the line local in
+/etc/postgresql/9.1/main/pg_hba.conf:
+
+#+BEGIN_SRC bash
+local             all            all                   trust 
+#+END_SRC
+
+If you want change the pass you can do:
+
+#+BEGIN_SRC bash
+$ psql -U dpsql dpsql -W
+dpsql=> ALTER USER dpsql with password 'thepassword';
+#+END_SRC
+
+* Web install
+
+First, you can remove permissions to CHANGELOG.txt to avoid security
+problems:
+
+#+BEGIN_SRC bash
+$ cd /var/www/mysite/
+$ chmod 600 CHANGELOG.txt 
+#+END_SRC
+
+So enabled the site, you can go to http://mysite/install.php and the
+installation is done step by step
+
+In the step 4 (Set up database) you can find database name, database
+username and database password with the data provided.
+
+* Drush install
+
+Alternatively, you can use drush instead of a web installation
+
+#+BEGIN_SRC bash
+$ drush site-install standard --account-name=admin --account-pass=admin 
+  --db-url=mysql://YourMySQLUser:RandomPassword@localhost/YourMySQLDatabase
+#+END_SRC
+
+* Simple backup system
+You can do a tar file every day at 13:00 with:
+#+BEGIN_SRC bash
+$ crontab -e 
+#+END_SRC
+
+And introducing a line such as
+#+BEGIN_SRC bash
+0 13 * * * /bin/tar -cvzf /var/backups/drupal7-$(date "+%Y-%m-%d").tar.gz /var/www/drupal7
+0 13 * * * cd /var/www/drupal7; drush sql-dump > /var/backups/drupal7-$(date "+%Y-%m-%d").sql
+#+END_SRC
+
+You must check if the cron user has permissions to make the backup,
+sure. Perhaps, you need create a sh script, if you have troubles.
+
+* Postfix
+
+You will need send emails from drupal, an unix solution is postfix
+
+#+BEGIN_SRC bash
+$ sudo apt-get install postfix
+#+END_SRC
+
+* Ssl
+
+The first steps is enable ssl in apache and create the ssl certificates.
+
+#+BEGIN_SRC bash
+$ sudo a2enmod ssl
+$ sudo service apache2 restart
+$ sudo mkdir /etc/apache2/ssl
+$ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
+#+END_SRC
+
+Later, we can create virtualhost mysite-ssl.conf
+
+#+BEGIN_SRC bash
+<VirtualHost *:443>
+
+  ServerAdmin webmaster@localhost
+  ServerName mysite:443
+
+  DocumentRoot /var/www/mysite
+
+  <Directory /var/www/mysite>
+                RewriteEngine on
+                RewriteBase /mysite
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteCond %{REQUEST_FILENAME} !-d
+        	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+  </Directory>
+
+SSLEngine on
+SSLCertificateFile /etc/apache2/ssl/apache.crt
+SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+
+</VirtualHost>
+#+END_SRC
+
+We can enable the virtualhost
+
+#+BEGIN_SRC bash
+$ sudo a2ensite default
+$ sudo service apache2 reload
+#+END_SRC
+
+Modify $base_url in settings.php. For example, $base_url =
+htts://mysite.com
+
+And enable securelogin
+
+#+BEGIN_SRC bash
+$ cd /var/www/mysite/
+$ drush dl securelogin
+$ drush en securelogin
+#+END_SRC
+
+Finally, I use go to the configuration to request https in forms.
+
+* Mongodb as cache
+** Install mongo
+#+BEGIN_SRC bash
+apt-get install mongodb mongodb-clients mongodb-server
+#+END_SRC
+
+** Install mongo in php
+#+BEGIN_SRC bash
+pecl install mongo
+#+END_SRC
+
+** Install mongo in drupal
+#+BEGIN_SRC bash
+cd /var/www/mysite
+drush dl mongodb 
+drush en mongodb_cache mongodb_migrate mongodb_session mongodb_field_storage mongodb_queue mongodb
+#+END_SRC
+
+* Nagios
+
+#+BEGIN_SRC bash
+$ sudo apt-get install nagios3
+$ sudo htpasswd -c htpasswd.users nagiosadmin
+#+END_SRC
+
+Go to http://localhost/nagios3/
+* Memcache
+** Installing debian packages
+#+BEGIN_SRC bash
+$ sudo apt-get install memcached libmemcached-tools
+$ sudo apt-get install php5-dev php-pear make php5-memcache
+#+END_SRC
+** Check memcached
+You can take a look to /etc/memcached.conf, try allocating as much as 1/4 of your total available RAM.
+
+Restart Memcached and Apache for these change to go into effect: 
+
+#+BEGIN_SRC bash
+$ sudo /etc/init.d/memcached restart
+$ sudo /etc/init.d/apache2 restart
+#+END_SRC
+
+To check if memcached is running:
+
+#+BEGIN_SRC bash
+$ sudo netstat -tap | grep memcached
+#+END_SRC
+
+You must see something such as:
+
+#+BEGIN_SRC bash
+tcp 0 0 localhost:11211 *:* LISTEN 25266/memcached
+#+END_SRC
+** Installing Memcached for Drupal 7
+
+You can use drush, or from /admin 
+
+#+BEGIN_SRC bash
+$ drush en memcache memcache_admin
+#+END_SRC
+
+Finally, you must add the next lines in settings.php 
+
+#+BEGIN_SRC bash
+$conf['cache_backends'][] = 'sites/all/modules/memcache/memcache.inc';
+$conf['cache_default_class'] = 'MemCacheDrupal';
+$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+$conf['page_cache_without_database'] = TRUE;
+$conf['page_cache_invoke_hooks'] = FALSE;
+#+END_SRC
+
+* References
+
++ https://drupal.org/documentation/install
+
+* License
+Copyright (C)  2013 David Arroyo Menéndez
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]
+

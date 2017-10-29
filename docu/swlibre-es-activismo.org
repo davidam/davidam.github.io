@@ -1,0 +1,116 @@
+#+TITLE: Software Libre es Activismo
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+
+* Introducción
+
+Este artículo fué originalmente publicado en el periódico Diagonal,
+ahora contiene algunas mejoras.
+
+En Septiembre de 2012 presenté un trabajo fin de máster publicado en
+http://www.davidam.com/docu/tfm.pdf
+
+Una de las preguntas de las entrevistas era "¿Qué herramientas
+tecnológicas has incorporado debido a tu activismo político?"
+
+Solo las personas muy relacionadas con el hacktivismo relacionaron
+esta pregunta con herramientas de software libre como gimp, o gnupg y
+nadie añadió usar o desarrollar software libre en general. La
+respuesta más amplia con diferencia fué el uso de redes sociales en
+concreto Facebook o Twitter.
+
+Como militante de GNU y anarquista me gustaría hacer una reflexión
+acerca de la peligrosidad que supone para los movimientos sociales la
+relación entre activismo y el uso de redes sociales centralizadas y
+privativas como (Twitter y Facebook) y olvidar que promocionar el
+software libre es la mejor forma de hacer activismo político usando
+tecnología, eso sí de manera inteligente.
+
+* No odies los medios llega a ser los medios
+
+Este era el lema con el que surgieron los blogs de contrainformación
+en los 90 y principios del 2000: periódicos en una red llamada
+Internet en el que cualquiera pasaba de ser consumidor a constructor
+de manera rápida y proyectos como sindominio, ourproject, riseup, etc
+lo ponían en práctica. Aunque fué la red Indymedia la forma por
+excelencia de contar las cosas en una lucha global contra el
+capitalismo.
+
+Sin embargo, ¿qué ocurre con Facebook y Twitter?. Ahora el lema es del
+capitalismo y puede decir algo como "Si ellos son los medios que sean
+el producto". Y eso es exactamente lo que pasa la gente retwittea,
+pone likes de facebook y todo el mundo encantado, hay revueltas el
+mundo árabe que pasan a democracias que como mucho se parecen en lo
+malo a las occidentales y en otros casos acaban en cruentas guerras
+civiles ¿y en occidente? en España hemos tenido 15M que se infló y se
+desinfló como un globo especulativo más y ahora le toca el turno a
+sindicatos y huelgas que puede pasar tres cuartos de lo mismo.
+
+Pero ¿es realmente esto por las redes sociales o por los brutales
+ataques del capitalismo a la clase trabajadora?. El problema es que
+con las redes sociales quienes las controlan especulan más y mejor,
+criticar a un partido es como la bolsa que sube y baja y los expertos
+en minería de datos de quienes nos gobiernan: ricos, banqueros,
+políticos, etc. hacen sus apuestas y cada vez el 1% es más rico y el
+99% más pobre.
+
+¿Cómo se sale del bucle? rompiendo con el capitalismo y creando
+colectividades anarquistas como ya se hizo en los años 30. Pero claro
+que las reglas del juego han cambiado ahora hay tecnología ¿qué
+hacemos con ello?. Pues si para difundir el mensaje tenemos tecnología
+podemos usarla como en los 90, pero siendo los medios no los
+productos. En este sentido usar redes sociales libres y federativas
+(identi.ca, n-1.cc, etc) es lo coherente para los tiempos que corren.
+
+* ¿Qué es el Software Libre? ¿Cuál es su papel?
+
+El Software Libre se define como aquel software que otorga una serie
+de libertades a sus usuarios/as: uso, copia, modificación y
+redistribución de lo modificado. De este modo, el software libre se
+puede entender como propiedad colectiva generada por sus usuarios/as y
+productoras/es.
+
+Sin embargo, desde la aparición de la filosofía Open Source, esto ha
+venido cambiando paulatinamente hasta el punto de que si bien el
+Software Libre sigue siendo propiedad colectiva, cada vez menos es
+generada por los intereses reales de usuarios y productores, sino por
+intereses del mercado capitalista, con criterios de especulación y
+burbujas financieras dignas de cualquier otro producto bursátil.
+
+De este modo, la filosofía Open Source, expropia las argumentaciones
+éticas del discurso de si es razonable o no utilizar Software Libre,
+el único argumento válido será si técnicamente es o no una buena
+opción, si es o no rentable y argumentos de este estilo. Pero no se
+plantea lo que es adecuado para el bien común, eso se sale del
+discurso. Muchas empresas han hecho contribuciones al mundo del
+Software Libre desde ese discurso, creando productos mayoritariamente
+de Software Libre desde esa filosofía, pero muchas veces mezclada con
+la filosofía del software privativo: Ubuntu, Android, etc.
+
+En un mundo capitalista el triunfo de la rentabilidad y la tecnicidad
+es fuerte, pero finalmente se ha abandonado la argumentación original
+de crear software no buscando una rentabilidad económica, sino social,
+es decir, crear software de una manera que sea útil para quien lo
+genera y lo usa.
+
+Aun quedan muchas comunidades como Debian, GNU, etc. que siguen fieles
+a la producción de software buscando la utilidad social, antes que la
+rentabilidad económica cortoplacista. No es fácil pensar a largo plazo
+y salirse del capitalismo en lo tecnológico o en cualquier otro
+aspecto, pero es lo correcto y es el objetivo para conseguir la
+felicidad colectiva y acabar con la desigualdad exacerbada actual.
+
+Así que cuando alguien te pregunte ¿Qué herramientas tecnológicas has
+incorporado debido a tu activismo político? por favor, responde uso
+software libre basado en comunidad como [[http://www.gnu.org/software/emacs][GNU Emacs]], [[http://www.debian.org][Debian]], [[http://www.trisquel.info][Trisquel]],
+[[http://www.gimp.org][Gimp]], o [[http://www.gnupg.org][GPG]] porque aspiro a que el mundo del software se organicen
+como colectividades anarquistas.
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by-sa/3.0/deed][Licencia Creative Commons Reconocimiento
+Unported 3.0]]
+
+[[http://creativecommons.org/licenses/by-sa/3.0/deed][file:http://i.creativecommons.org/l/by-sa/3.0/80x15.png]]
+

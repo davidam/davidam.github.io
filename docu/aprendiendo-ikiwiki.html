@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Aprendiendo Ikiwiki</title>
+<!-- 2013-08-19 lun 04:59 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Aprendiendo Ikiwiki</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">¿Qué es ikiwiki?</a></li>
+<li><a href="#sec-2">Instalación</a></li>
+<li><a href="#sec-3">Instalar plugins</a></li>
+<li><a href="#sec-4">Habilitar multilenguaje con po</a></li>
+<li><a href="#sec-5">Habilitando búsquedas</a></li>
+<li><a href="#sec-6">Habilitando barra lateral</a></li>
+<li><a href="#sec-7">Modificando el aspecto</a></li>
+<li><a href="#sec-8">Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com">Volver a davidam.com</a>
+</p>
+
+<p>
+Recientemente he descubierto ikiwiki. Y diréis ¿para qué otro wiki?
+pues bien a mi me resuelve muchos problemas, pero hay uno que es
+importante y es poder editar las entradas de mi sitio web personal
+directamente con mi emacs y poder administrarlas con un sistema de
+control de versiones, sin el desfase de usar un sitio html estático,
+ni el atraso de usar herramientas privativas como disqus. Así que es
+probable que este sitio en un futuro esté construido con ikiwiki, pero
+por ahora solo lo estoy evaluando. Dejo aquí mis impresiones:
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">¿Qué es ikiwiki?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+ikiwiki is un compilador wiki. Construye páginas html para un wiki
+desde un fuente en el lenguajes de marcas ikiwiki (u otros).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Instalación</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Muy sencillo en debian/ubuntu: 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">sudo apt-get install ikiwiki apache2
+</pre>
+</div>
+
+<p>
+Y seguir los pasos de debconf para el tipo de control de version, la
+carpeta donde se situará el repositorio, etc.
+</p>
+
+<p>
+Por tanto, también habrá que instalar un sistema de control de
+versiones, por defecto se usa git, aunque yo también he testeado bzr y
+funciona sin problemas.
+</p>
+
+<p>
+En caso de elegir git: 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">sudo apt-get install git gitweb
+</pre>
+</div>
+
+<p>
+Después habra que compilar un wiki local:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">ikiwiki --setup /etc/ikiwiki/auto.setup
+</pre>
+</div>
+
+<p>
+Es posible que tengas que configurar mínimamente el apache. Por
+ejemplo, habilitar el módulo userdir:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">a2enmod userdir
+</pre>
+</div>
+
+<p>
+O habilitar el uso de cgi.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Instalar plugins</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>Descargar plugins desde <a href="http://ikiwiki.info/plugins/">http://ikiwiki.info/plugins/</a> a la carpeta
+~/.ikiwiki/IkiWiki/Plugin/
+</li>
+<li>Especificar el lugar del fichero de configuración del wiki desde
+~/.ikiwiki/wikilist (En mi caso es ~/wiki.setup)
+</li>
+<li>Aplicar los cambios con ikiwiki -setup /home/davidam/wiki.setup
+-rebuild -v
+</li>
+</ol>
+
+<p>
+A modo de ejercicio, os proponemos que también instaleis el plugin de
+org-mode y de <a href="http://git.savannah.gnu.org/cgit/hurd/web.git/plain/.library/IkiWiki/Plugin/texinfo.pm">texinfo</a> ue a pesar de no ser plugins estables son
+poderosos :-) .
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Habilitar multilenguaje con po</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Quienes estén familiarizados con el proceso de traducción en gnu estarán familiarizados con gettext y los ficheros .po, sino es posible echar un vistazo a Traduciendo Documentación en Texinfo con emacs y po4a
+</p>
+
+<p>
+Para que nuestro sitio sea multilingüe usando ficheros .po es necesario modificar la configuración de ikiwiki y el apache.
+</p>
+
+<p>
+Primero modifiquemos la configuración de ikiwiki:
+</p>
+
+<ol class="org-ol">
+<li>Habilito po en la configuración
+</li>
+<li>master language: en|English
+</li>
+<li>slave languages: es|Español
+</li>
+<li>PageSpec controlling which pages are translatable: index or po-test (dos páginas para comprobar que todo va bien)
+</li>
+<li>internal linking behavior: default
+</li>
+</ol>
+
+<p>
+Después la configuración de Apache:
+</p>
+
+<ol class="org-ol">
+<li>Añadir la siguiente línea a por ejemplo /etc/apache2/sites-available:
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">DirectoryIndex index.html index.htm index.en.html index.es.html
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Añadir a /etc/apache2/httpd.conf lo siguiente: 
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">AddType application/rss+xml;qs=0.8 .rss 
+AddType application/atom+xml;qs=0.8 .atom
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Habilitando búsquedas</h2>
+<div class="outline-text-2" id="text-5">
+<ol class="org-ol">
+<li>Se habilita search en la configuración
+</li>
+<li>Al aplicar los cambios encuentro el siguiente error:
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">Can't locate Search/Xapian.pm in @INC (@INC contains: /home/davidam/.ikiwiki /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at (eval 342) line 2.
+BEGIN failed--compilation aborted at (eval 342) line 2.
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Lo soluciono con: 
+</li>
+</ol>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">sudo apt-get install libsearch-xapian-perl xapian-omega
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Habilitando barra lateral</h2>
+<div class="outline-text-2" id="text-6">
+<ol class="org-ol">
+<li>Habilitar sidebar en la configuración
+</li>
+<li>Crear una página sidebar.mdwn con el contenido que se desee
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Modificando el aspecto</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Lo más  sencillo es habilitar themes  en la configuración y  elegir un
+tema. Pero para  afinar más se puede crear un  fichero local.css en el
+directorio raíz  subirlo al repositorio e  (importante) reconstruir el
+wiki con:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">ikiwiki -setup /home/davidam/wiki.setup -rebuild
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Licencia</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Este documento está bajo la <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+</p>
+
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png" alt="200px-GFDL_Logo.svg.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2013-08-19 lun 04:59</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

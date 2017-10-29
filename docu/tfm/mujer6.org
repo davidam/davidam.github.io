@@ -1,0 +1,179 @@
+#+OPTIONS *:t
+#+LANGUAGE: es
+
+* Introducción
+*entrevistador*: Bueno, pues nada, muchas gracias por haber accedido a hacer la entrevista. Esta entrevista está en el marco de un trabajo final de máster de metodología e investigación de ciencias sociales, de la Complutense. Entonces, es sobre movimientos sociales y nuevas tecnologías, entonces, en la entrevista hay dos partes que son: los factores de cambio tecnológico y los flujos de información. Entonces… voy a cambiar un poco el orden, que yo normalmente primero pregunto los flujos de información, pero yo creo que en tu caso nos puedes dar un montón de información acerca de cuáles son los factores de cambio tecnológico en los movimientos sociales porque pienso que tienes una visión más… porque muchas veces entrevisto a gente joven que lleva uno o dos años en una determinada organización y todo esto. Entonces, voy a ir por ahí. Entonces… te voy a hacer las preguntas que tengo en el guión y luego te voy a hacer otras adaptadas un poco a lo que pienso que tú nos puedes aportar. 
+*mujer6*: Vale.
+* Factores de Cambio Tecnológico
+*entrevistador*: Entonces… herramientas tecnológicas que recuerdas haber utilizado en el último mes.
+*mujer6*: ¿En el último mes?
+*entrevistador*: *asiente el moderador*
+*mujer6*: ¿Eso, por ejemplo, sería Twitter?
+*entrevistador*:  Sí.
+*mujer6*: Correo electrónico, listas de correo, publicación en blog,
+publicación de comentarios, podcast… *reflexiona la entrevistada*
+*entrevistador*: Muy bien. Herramientas tecnológicas que hayas dejado de usar si miras cinco años atrás.
+*mujer6*: Ninguna.
+*entrevistador*: ¿Ninguna?
+*mujer6*: ¿Se te ocurre alguna?
+*entrevistador*: No *ríe el entrevistador* No pasa nada, hay gente que sí se le ocurren algunas y gente que no…
+*mujer6*: Yo diría que no.
+*entrevistador*: Vale. Herramientas tecnológicas que has incorporado si miras cinco años atrás.
+*mujer6*: Las redes sociales *reflexiona la entrevistada*
+*entrevistador*: ¿Qué redes sociales?
+*mujer6*: Twitter. Yo, en mi caso, Twitter.
+*entrevistador*: Twitter.
+*mujer6*: Y… es que ya el podcast ya lo hacía antes…
+*entrevistador*: Vale. Herramientas tecnológicas que has incorporado debido a activismo político.
+*mujer6*: A ver… Todas. O sea, mi vida está mezclada activismo,
+profesión y vida cotidiana y todo, entonces, correo sirve para todo.
+*entrevistador*: Claro. *ríe el moderador*
+*mujer6*: O sea, todas las que uso tienen que ver con el activismo.
+*entrevistador*: ¿Y cuál es tu impresión de cómo ha evolucionado la actitud
+hacia las tecnologías dentro de los movimientos sociales, igual en los
+últimos diez años? O sea, ¿dirías, por ejemplo, que antes era la gente
+igual más reticente a utilizar la tecnología o siempre se ha visto
+como un factor para la transformación social? O…
+*mujer6*: A ver, hace diez años había… ¿cómo se llamaba…? Tecnófobos y
+tecnófilos. Y había una división muy clara. Y… *no se entiende* igual
+que hay veganos y carnívoros, una cosa así como que todo el mundo
+sabía en qué lugar estaba, ¿no?, algo muy marcado. Pero, los
+tecnófilos no eran solo usuarios de las tecnologías sino también
+constructores de las propias tecnologías que usaban. O sea, hacían un
+uso avanzado pero… es que no es la palabra uso, no sé qué palabra es,
+más bien como prosumidor.
+*entrevistador*: *asiente el moderador*
+*mujer6*: Bien. Ahora yo creo que tecnófilos es muy residual. Sí que
+hay personas tecnófilas, pero yo creo que están en extinción. Y el uso
+es masivo, el uso de las tecnologías es masivo. Y en el otro plato de
+la balanza, lo que es residual es ese uso avanzado, que construya a la
+vez.
+*entrevistador*: O sea, que parece como que hay una masa muy grande
+que simplemente usa mucho la tecnología, pero igual…
+*mujer6*: No se hace preguntas al respecto, no cuestiona, hace un uso
+de usuario, facilitado, o sea, que necesitas una cuenta, pues te metes
+en Google y ya está, no te complicas la vida. Yo qué sé, tiene
+sentido, ¿no? Es como… necesito dinero, saco la tarjeta y ya lo tengo,
+entonces no preguntas sobre si la banca, o la visa, o todo eso, el
+dinero, nos está matando y ese flujo. No hago preguntas. ¿Me han dado
+un dispositivo facilitador? Pues yo lo uso y punto. Luego puedo ir a
+manifestaciones contra la banca, pero en mi monedero llevo mi conexión
+con la banca, que es la VISA, ¿no?, o llámalo como quieras, es
+igual. Pues en tecnologías estás un poco así, o sea, cuando un grupo
+necesita una herramienta de publicación, pues abre una lista, un grupo
+Google y ya está, se lo abre en cinco minutos, no le cuesta dinero, es
+fácil… no es que sea fácil, pero cuando el conocimiento está
+finalizado es fácil, porque unas personas enseñan a otras de una
+manera informal. Se ha masificado, y entonces es gratis, es
+relativamente fácil, y entonces no me hago preguntas. Entonces, el
+grupo que se hace preguntas es muy pequeño.
+* Flujos de Información
+*entrevistador*: *asiente el moderador* Vale, pues ahora voy a hacer la de los flujos de información. Bueno, tenemos que elegir una o varias organizaciones, que tú pertenezcas en la actualidad y entonces me cuentas a cuáles perteneces y lo vemos en función de…
+*mujer6*: *reflexiona la entrevistada*
+*entrevistador*: De movimientos…
+*mujer6*: ¿Sindominio?
+*entrevistador*: Sí, Sindominio sería una, por ejemplo.
+*mujer6*: Sindominio.
+*entrevistador*: Vale, vale. Pues te pregunto acerca de Sindominio. ¿Cómo funciona la comunicación interna en Sindominio? Acerca de… pues eso, los flujos de información, de cómo se coordina internamente el colectivo.
+*mujer6*: Pues creo que básicamente hay tres niveles, que se corresponden con las listas. No sé si está muy activa, pero una es la del café. El café sería el plano de la conversación informal acerca de asuntos *no se entiende*, cualquier asunto, sería una tertulia de café. La asamblea, la lista de la asamblea, sería el órgano de deliberación y decisión y ahí solo se llevan temas que afectan al proyecto.
+*entrevistador*: *asiente el moderador*
+*mujer6*: Y luego está la lista de administración, en la que se discuten los temas técnicos.
+*entrevistador*: *asiente el moderador*
+*mujer6*: La lista de administración no está sometida a la lista de asamblea, no es exactamente… la asamblea decide y la administración ejecuta, sino que las personas que hacen la administración también tienen iniciativas, sobre “hacemos esto o lo otro, o actualizamos, o este servicio lo tiramos abajo”, luego, algunas van a la asamblea y otras no. Y después, lo que yo conozco, entre administradores, cuando hay que hacer una acción muy concentrada en el tiempo y se tenga un cierto riesgo, se comunica por Chat.
+*entrevistador*: ¿Por Jabber o…?
+*mujer6*: No, no. Una herramienta interna sin dominio.
+*entrevistador*: Ah. ¿Ytalk?
+*mujer6*: Ytalk. Eso es, Ytalk. También se habla, y mientras se va operando, se va coordinando.
+*entrevistador*: Vale. Eh… colaboración interna, por ejemplo, si hay que redactar algún texto en común, ¿se utiliza alguna herramienta de tipo Wiki o la gente coge un documento, un procesador de textos, y va haciendo comentarios, o cualquier otra cosa? ¿Cómo se coordina eso?
+*mujer6*: Mmm… no tengo en mente que se haya hecho. Pero yo creo que si se tuviera que hacer algo así, saldría con un… etherpad. ¿Sabes? etherpad ¿Lo conoces?
+*entrevistador*: Explícame un poco.
+*mujer6*: Es como un blog de notas, en el que… es un servicio web, entras con el navegador, y es como un blog de notas pero en el que pueden escribir varias personas a la vez y lo que aporta cada persona queda coloreado. 
+*entrevistador*: *asiente el moderador*
+*mujer6*: Entonces, es parecido al Google Docs, en el sentido de que puede escribir simultáneamente, varias personas a la vez.
+*entrevistador*: Sí, que la gente está viendo lo que está escribiendo el otro, ¿no?
+*mujer6*: Sí. La diferencia es que *no se entiende*  es más block de notas, no te permite poner más titulares, y luego poner más formatos, y luego crear bolos, las funcionalidades de edición son muy limitadas. Es más bien para algo ligero, tipo borrador. Yo creo que se usaría ése.
+*entrevistador*: *asiente el moderador*
+*mujer6*: Yo creo que se usaría ése.
+*entrevistador*: Vale. ¿Hasta qué punto hay una búsqueda de consensos en Sindominio? Hay algún momento en que hay que llegar a votaciones porque  no se llegan a acuerdos, o si no se llega a acuerdos, ¿se dilata en el tiempo el acuerdo que se toma? 
+*mujer6*: Votaciones no hay. Creo que lo que ha ocurrido… O sea, como el ideal es buscar consenso. Creo que lo que ha ocurrido en Sindominio que, entre a las dificultades de encontrar consenso, algunas personas se han distanciado y se ha reducido mucho los asuntos sobre los que se delibera. O sea, en realidad se deciden muy pocas cosas, ahora mismo.
+*entrevistador*: ¿Dónde? ¿En la lista de asamblea, dices?
+*mujer6*: En la asamblea y en el proyecto. Creo que sería un poco difícil decidir algo importante, importante es todo, pero algo que supusiera un cambio, que rompiera la inercia de lo que… Dudo que se pudiera decidir.
+*entrevistador*: Porque ahora Sindominio, ¿qué se aloja, en un servidor de alguna cooperativa? Creo que ha estado en algún momento…
+*mujer6*:Sí, en Xstoinfo.
+*entrevistador*: Ah, en Xstoinfo. O sea, que es gente que está dentro del proyecto, ¿no?, que también aloja el servidor.
+*mujer6*: Sí.
+*entrevistador*: Vale. De gestión de tareas. Cuando hay que repartir trabajos, bueno, has hablado que hay un grupo general de trabajo de todo el servidor, pero, ¿cómo se coordina? ¿Hay algún tipo de herramienta telemática, como en cualquier proyecto, de software?
+*mujer6*: No, que yo sepa no. Se discute por correo en la lista y las tareas se autoasignan, o sea, se dice: “lo hago yo”, “lo hago yo”. Trabajas cuando puedes y ya está.
+*entrevistador*: Vale. Bueno, en la historia de Sindominio a veces se han hecho jornadas, cumpleaños, cosas, ¿no? Entonces, ¿cómo se gestionan esos eventos? ¿También a través de la lista? ¿Cómo se difunden? ¿Cómo se dan a conocer?
+*mujer6*: *reflexiona la entrevistada* Es que… yo creo que Sindominio, los eventos que organiza son muy… no internos, porque son públicos, pero muy enfocados a la vida de Sindominio. Entonces la difusión yo creo que se hace por el boca a boca espontaneo de las personas que se sienten concernidas en la convocatoria. Normalmente las convocatorias no se deciden en asamblea sino que… o sea, no hay nadie en contra de que se celebre una jornada. O sea, forma como un agregado, como un grupo de personas que van a colaborar para llevar eso adelante y ya está, y el resto lo consiente.
+*entrevistador*: *asiente el moderador* O sea, que tampoco es una cosa que se hable mucho en la asamblea, ni nada, ¿no? O sea, que es más, la gente local que está en Sindominio se coordinan entre ellos y ya está.
+*mujer6*: Sale en la asamblea para que no… sobre todo yo creo que es para que no haya nadie en contra.
+*entrevistador*: *asiente el moderador*
+*mujer6*: Y para captar un poco el conseguir las alianzas. “¿Qué os parece hacer esto?” Pues a lo mejor hacen falta cuatro o cinco personas que digan: “Vale”, “vale”. Entonces tienes esas cuatro o cinco, pues ya tienes…
+*entrevistador*: Porque Sindominio también estaba muy ligado a todo el tema de lo de los Hackmeeting, ¿no? Y todo esto, pero luego ya se diferenciaron los proyectos.
+*mujer6*: Sí. Espera, voy a ver si me han llamado, ¿vale?
+*entrevistador*: Vale, te espero.
+*mujer6*: A ver.
+*entrevistador*: Estábamos en la gestión de eventos… Ah, te estaba preguntando por los Hackmeeting, porque el Hackmeeting ha sido un evento que ha tenido mucha difusión a nivel de prensa y todo eso, entonces, que expliques un poco el nacimiento de los Hackmeeting y todo esto y la relación con Sindominio. Estábamos en el punto de gestión de eventos.
+*mujer6*: Es que no me acuerdo muy bien, ¿eh? Porque los Hackmeeting… A ver, estábamos en el centro social ocupado Laboratorio 1 y entonces eso podría… Eso es hace quince años, por tanto, sería el año 97. Y sabíamos que en Italia se celebraban Hackmeeting, entonces algunas personas fueron a Italia a ver qué era eso de los Hackmeeting. Y al año siguiente se organizó… No, el primer Hackmeeting se organizó en el año 2000, y se organizó en Barcelona. Bueno, total, que fueron allí a Italia, vieron más o menos de qué iba y a la vez se estaba construyendo Sindominio, a la vez, coincidía, y más menos, como eran esas personas que me hemos dicho antes de los grupos tecnófilos, que unían lo técnico con lo social y eran muy activos, las mismas personas hacíamos muchas cosas a la vez. Entonces, el primer Hackmeeting se celebró en Barcelona en el año 2000, en el centro social ocupado Les Naus, y el fruto de los Hackmeeting, uno de ellos, eran los hacklabs, es decir que para formar un Hackmeeting en una ciudad hacía falta formar un grupo promotor que trabajara durante meses haciendo el trabajo técnico y social. Entonces, ese grupo, después de que se había celebrado el Hackmeeting, pues no se quería disolver, quería continuar haciendo más o menos lo mismo, pero lo mismo no podía ser. Entonces, se solian transformar en Hacklabs. Los Hacklabs eran unos lugares físicos, unos locales, a veces dentro de centros sociales ocupados y a veces no, en los que las personas se reunían para compartir conocimiento, para hackear, para dar a conocer nuevas tecnologías, o sea, para transferir conocimiento y para, también, luchar a favor del software libre y todo eso. Y creo, no lo sé muy bien, pero creo que entre los Hacklabs, o sea, cada año, había un Hackmeeting nuevo y había más Hacklabs, y los Hacklabs tendieron a formar redes informales, pues para también coordinarse y, también, empezar a hacer acciones, acciones de… o sea, campañas de comunicación y acciones locales a favor del uso social de las nuevas tecnologías y del software libre, y creo que de esas redes informales surgió Activistas.
+*entrevistador*: Hacktivistas.net, ¿estás diciendo?
+*mujer6*: Hacktivistas.net, sí, Hacktivistas.net. Entonces, ahora no estoy seguro de si los Hackmeeting… Yo creo que los Hackmeeting se organizan a través de Hacktivistas, la verdad es que tendría que mirar en las listas que me llegan, porque yo miro quién me habla pero…
+*entrevistador*: *ríe el moderador*
+*mujer6*: Pero yo diría que no tienen un lugar especifico sino que Hacktivistas es el espacio que… o sea, Hacktivistas es una organización de personas, ya, porque algunas de esas personas ya no están en Sindominio, otras ya no están en los Hacklabs, y otras… Bueno, con tantos años, con quince años, claro, las cosas cambian. Entonces es un grupo, un colectivo de personas. Pero creo que es quien asume más formalmente el mantenimiento del sitio web de los Hackmeeting y la organización. La organización base, porque luego se forma el grupo local.
+*entrevistador*: *asiente el moderador* Y, claro, porque Sindominio yo lo veo como un proyecto para los movimientos sociales, en el sentido de que le da unas herramientas telemáticas. ¿Dirías tú que los Hacklabs también están al servicio de los movimientos sociales o es un movimiento diferenciado?
+*mujer6*: Yo lo veo un movimiento especifico, que contaminan los movimientos sociales. La palabra de “estar al servicio”… No. Los Hacklabs se autorealizan, no están al servicio de nadie. Siguen su línea y hacen lo que creen que tienen que hacer. O sea, porque el movimiento de los huertos verdes diga que hay que usar Google, pues si un Hacklab no quiere usar Google pues no lo va a usar. O sea, esa concepción de que otros… del servicio, no se tiene. En mi opinión muy acertadamente, porque nadie somos servidores de nadie, sino que cada uno hace lo que quiere, ¿no?
+*entrevistador*: Vale. Eh… bueno, estamos con gestión de eventos, que se ha alargado un poco. Entonces, la comunicación con el exterior, ¿cómo se difunde el proyecto?
+*mujer6*: ¿Sindominio?
+*entrevistador*: Sí. Y si se coordina o no con otros colectivos similares o qué plataformas hay, que bueno, ya me has explicado un poco lo del los Hacklabs, pero para hacer la pregunta un poco más abierta.
+*mujer6*: Sindominio ahora no crece, no crece mucho. Y no está interesado en la difusión, porque, en mi opinión, es un proyecto un poco estancado. Estuvo en su momento y ahora se tendría que actualizar y sería muy difícil, como he dicho antes, que en las asambleas hubiera una actualización, creo que eso llevaría unas rupturas, sería un poco doloroso y, entonces, se queda así como está. Las peticiones de entrar llegan solas, se hace solo. Porque, aunque no quiere crecer, pero está en red, sobre todo a través de las personas que están en Sindominio y también están otros sitios, entonces se hace de forma natural, no sé, como natural, como salen las flores en el campo. 
+*entrevistador*: *ríe el moderador*
+*mujer6*: Entonces, hay un contexto en que eso pasa. Pero no hay un trabajo intenso de comunicación. Entonces, nada. Tiene la web, y ya está. Pero siguen llegando peticiones para entrar a formar parte, porque es un proyecto muy singular, no hay muchos Sindominios. Entonces, no ha proliferado.
+*entrevistador*: Muy bien. Eh… ¿se maneja documentación interna? ¿O toda la documentación que tiene Sindominio la publica en la web o en cualquier sitio?
+*mujer6*: Hay una zona privada, en la web, donde se publican los acuerdos, bueno, cosas más internas.
+*entrevistador*: Las actas y cosas de esas, ¿es privado, no?
+*mujer6*: Sí, es privado. Está en la zona privada de la web, y también algunos materiales, además, que documentan cómo se hizo esto y lo otro, para que quien luego quiera administrar sepa lo que pasó… Está en la zona privada.
+*entrevistador*: Vale. La gestión económica, ¿cómo se financia el proyecto? Y…
+*mujer6*: Pues el proyecto se financia con aportaciones voluntarias de personas o grupos, y la gente que lleva lo del dinero, que creo que es *no se entiende el nombre*, pues cuando ve que va bajando el dinero de la cuenta en la asamblea dice “Hace falta dinero”, y entonces de algún lado viene avalancha de dinero, y con eso se va sosteniendo. También, o sea, el único gasto es el alojamiento, porque luego nadie cobra por lo que hace.
+*entrevistador*: Bueno, ya hemos hablado sobre la toma de decisiones, entonces no lo voy a… Vale, ¿ha participado alguna vez en algún tipo de movilización?
+*mujer6*: Como tal no. Como Sindominio no. Siempre se ha… O sea, como es una agregación de colectivos y de personas, pues eso llevaría a discusiones, a deliberaciones que tensarían mucho la asamblea, porque, yo qué sé, pues si uno quiere ser pacifista, otro quiere quemar contenedores, pues… no sé qué hacemos. Pero todos estamos de acuerdo en practicar software libre, en que la tecnología tiene que tener un uso social, en que hay que apropiarse del ciberespacio, entonces, en lo que estamos de acuerdo, que tiene una dimensión muy virtual, pues es difícil hacer… ¿cómo me has dicho?
+*entrevistador*: Movilizaciones.
+*mujer6*: Movilizaciones, eso es, es difícil hacer movilizaciones.
+*entrevistador*: No, pero, por ejemplo, un tema como el de las patentes de software, que creo que sí que hubo alguna pequeña concentración en algunas ciudades del Estado cuando se supo que las patentes se iban a incorporar a Europa.
+*mujer6*: Sindominio, que yo sepa, no ha firmado ni firmará esas clásicas sopas de letras de “Todos estamos en contra de no sé qué”. Otra cosa es que algún colectivo quiera poner esa convocatoria en la página de inicio y luego vayamos mucha gente. Pero, o sea, al final, si hay una movilización, Sindominio no es nadie, ¿no? Tenemos que ir las personas. Entonces, ese poder simbólico que tiene “Pues esto lo apoya Sindominio”, “Esto lo apoya el partido comunista”. Pues no.
+*entrevistador*: Claro, hay muchas movilizaciones que veis una *no se entiende*.
+*mujer6*: Es que yo creo que hay un acuerdo explicito de Sindominio de no firmar nada. Lo cual no quiere decir que no se apoye, pero si lo apoyas, pues vas.
+*entrevistador*: Vale. Cuando entra alguien nuevo en Sindominio que no conoce muy bien los mecanismos o algo, ¿eso cómo se gestiona?
+*mujer6*: Hay un grupo de… no sé cómo llamarlo, anfitriones o… que les hace la acogida, se les explica cómo va, y todo eso.
+*entrevistador*: Vale.
+*mujer6*: Un grupo voluntario, claro, como todos.
+*entrevistador*: Claro, este es un punto más para colectivos presenciales, que era un poco los roles que suele haber en las asambleas, pero igual en una asamblea telemática hay alguna gente que luego, igual, resume los acuerdos…
+*mujer6*: Hay unas personas encargadas del boletín.
+*entrevistador*: Habla un poco del boletín.
+*mujer6*: Ah. El boletín… bueno, pues había gente que entraba en Sindominio y se quejaba de que le llegaban mucho mails. Quizás ahora eso ya no pasa pero a lo mejor hace cinco años sí pasaba, la conectividad, tampoco había ADSL, la conectividad era peor. Entonces, se resolvió que tienes dos maneras de estar en la asamblea: una, que te llega por los mails; y otra, que te llega al boletín. Entonces, el boletín es un compendio de lo que necesariamente tienes que saber para pertenecer activamente al proyecto, que lo hacen unas personas, y eso te llega una vez al mes. Y luego, en la lista de asamblea…
+*entrevistador*: Entonces, se requiere una militancia activa para estar en Sindominio.
+*mujer6*: Bueno… Sí. Virtualmente activa, porque no es un proveedor de servicios. Es un sitio autoorganizado. Entonces, sí. Se requiere firmar un acuerdo, firmar y dar tu fotocopia del DNI conforme te responsabilizas de todos los contenidos publicados por Sindominio, que no son muchos, pero podría ser alguno. Es decir, si viene un juez y dice: “¿Y esto quién lo dice?”. Pues todos los DNI tenemos, ¿vale? Porque lo que dice Sindominio lo decimos todos. Por eso he dicho antes que el nivel de lo que se dice colectivamente es un poco bajo, porque ha de incluir, o sea, nos responsabilizamos todo el mundo, y todo el mundo somos cientos de personas, entonces, no se puede afinar mucho en una palabra que uno diría y otro no, porque va a ser muy influyente. Y entonces, cada colectivo o… Sí, todos son colectivos. Hay unas personas que se responsabilizan específicamente de lo que diga su colectivo. Entonces, si viene un juez y dice: “¿Quién es el responsable de lo que se ha dicho en sindominio.net/…?”. Pues saldremos Raquel y yo, que somos las responsable de lo que se dice, para que haya una corresponsabilización de que, bueno, lo que pueda pasar se asume, lo que pueda pasar a efectos de represión se asume corresponsablemente. Y, por eso, en cada colectivo, hay como mínimo una persona, como mínimo una, que se responsabiliza de los contenidos de su colectivo, y como mínimo una, que puede ser la misma u otra, que se responsabiliza de todos esos contenidos genéricos. Y después sobre los roles no tengo ahora en mente si siempre los ofrecen las mismas personas pero los hilos de discusión a veces se tensan, entonces hay el rol de tensar y el rol de destensar.
+*entrevistador*: ¿Pero es gente que se asigna esa tarea? Como… “Yo soy destensador”,  *ríe el moderador* de alguna manera.
+*mujer6*: Se lo autoasignan, claro. Si ves que aquello está llegando, aquel debate se está saliendo de… que a lo mejor lo que se discute no es tan importante como para que nos insultemos, y entonces, pues un correo y dices: “Chicos, ¿no os parece que esto…?
+*entrevistador*: Yo lo que me refiero es si eso es una actitud *no se entiende* o que si es como un rol que dices: “Yo asumo tratar de ser destensador en las asambleas a partir de ahora hasta que me canse.”
+*mujer6*: No, no es un rol. Es una actitud, pero que… o sea, la duda que tengo es si es una actitud que va por unas personas que siempre tienen esa actitud o va a momentos, en momentos tienes una actitud y en momentos tienes otra, eso no estoy segura.
+*entrevistador*: Vale. *reflexiona el moderador* Esto no te lo voy a preguntar, porque ya me lo has preguntado. Bueno, entonces, entiendo que si no… que Sindominio, puesto que no participa, como ya me has comentado, en… o sea, que no toma muchas decisiones como colectivo a nivel político, tampoco participa en iniciativas de terceros y cosas de esas, ¿no?, que es otro de los puntos que tenía.
+*mujer6*: *reflexiona la entrevistada*
+*entrevistador*: Como Sindominio.
+*mujer6*: ¿Cómo han hecho…? O sea, hace poco secuestraron un servidor,
+*entrevistador*: *no se entiende* ¿no?
+*mujer6*: Claro, entonces se escribió… Se quería hacer un acto de apoyo, pero claro, ¿qué se resolvió?, publicar el mismo manifiesto que habían publicado las personas a las cuales se les había secuestrado el servidor. En vez de hacer un propio, porque si haces uno propio, te tienes que poner de acuerdo, mientras que si transmites el que están haciendo ellos, lo que dicen ellos, es un poco diferente. Puedes responder con más velocidad. Lo otro pues a lo mejor llega en una semana. Porque, claro, algo crítico que se debate por correo electrónico, hay que aceptar la baja conectividad de algunas personas, no todo el mundo está todo el día conectado, entonces les tienes que dar lo menos dos o tres días para que se enteren, “Oye, ¿estáis de acuerdo en…?”. Entonces, eso es demasiado lento para dar una respuesta *no se entiende*,  son muy rápidos.
+*entrevistador*: Claro.
+*mujer6*:Pues, entonces, yo creo que inteligentemente la gente entiende más o menos lo que se puede consultar y lo que no y se decide. En este caso, por ejemplo, se decidió publicar el manifiesto.
+*entrevistador*: *asiente el moderador* Vale. A ver, tema de compartición de recursos, ¿utilizáis? No sé si… Claro, todo el servidor entiendo que es con software libre, con licencias libres, ¿no? Y cuando se publica… Es que no sé si como Sindominio se publican How Took o cosas así con algún tipo de licencia también, o…
+*mujer6*: *reflexiona la entrevistada* O sea, si se publicara algo, pues claro se haría en Copyleft, eso ya viene suyo. Creo que una de las grandes singularidades de Sindominio es que cualquier persona se autoelige en administradora. Entonces tú dices: “Yo quiero administrar”. Entonces se te dan privilegios de administración. Y eso hace que cualquier persona pueda tener como un ascenso social, en lo técnico, porque no pasas un examen, sino que… “Yo quiero administrar y no tengo ni idea”. Y entonces te dicen: “Ah, pues muy bien, claro, estas cosas no las puedes hacer”, pero ya entras a formar parte del grupo de administración, y ahí la transferencia de conocimientos es muy abierta. Creo que eso no es lo habitual, que te autoelijas en administrador. 
+*entrevistador*: *asiente el moderador*
+*mujer6*: Normalmente una administración, digamos… hay que hacer méritos.
+*entrevistador*: Y los que están administrando, o sea, surgen, por ejemplo, parches o cosas así desde el grupo de administración a las comunidades se software libre, las que utilizan… 
+*mujer6*: No. Que yo sepa no.
+*entrevistador*: Vale. Bueno, dentro de esto de compartición de recursos está el tema de la transparencia pues de métodos, de acciones y cuentas que hay desde dentro de Sindominio hacia los Sindominiantes y hacia… pues el exterior. ¿Cómo…?
+*mujer6*:O sea, hacia dentro es total, porque, ya te digo, todo se habla en la asamblea, tú te apuntas en la asamblea y ya está. Si quieres más, administras. Si quieres más, te apuntas al grupo de cuentas. Si quieres más, te apuntas al grupo de altas. Y si quieres más, lo haces todo y todo. Yo muy contenta de que lo hagas tú todo. O sea, la transferencia es total. Y hacia fuera… 
+*entrevistador*: Sí, lo que has dicho antes de documentación en internet.
+*mujer6*: No hay mucha relación con lo de fuera. Es un proyecto que se diseñó para abastecerse a sí mismo, o sea, no es exactamente cerrado, porque se puede entrar y continuamente entra gente, pero no es proyecto… no es como un periódico, como Diagonal, que se hace de cara a la audiencia, y sin audiencia no tendría sentido. Sindominio tiene sentido sin audiencia, porque sobre todo trabaja en la capacitación técnico-social de algunas personas, o sea, es como una escuela de capacitación técnico-social. Y eso tiene sentido porque esas personas quieren hacer eso porque ellas ya están haciendo otras cosas, no hace falta que Sindominio haga otras cosas, sino que a través de las personas, o sea, todos los colectivos que están en Sindominio, su *no se entiende* no es estar en Sindominio, sino que es hacer algo y a la vez estar en Sindominio.
+*entrevistador*: Vale. Y ya la última pregunta es acerca de la planificación. Si se planifican cosas a corto, medio o largo plazo, o sea, si se ponen como objetivos a cumplir.
+*mujer6*: Cosas técnicas sí. Sí, sí. Si hay que comprar un disco duro, pues eso hay que recoger el dinero, ver dónde se compra, hay que instarlo. Luego se supone que algunos datos se tendrán que, o sea, discernir si este disco sustituye al anterior, o qué *no se entiende* hay ahí, o no, entonces eso se planifica, sí. Si hay cosas que *no se entiende* Sí, las técnicas.
+*entrevistador*: Vale, pues muchas gracias, muy amable por hacer la entrevista.

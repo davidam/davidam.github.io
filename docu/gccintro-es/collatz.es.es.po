@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-11-09 18:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "#include <stdio.h>\n"
+msgstr ""
+
+#. type: Plain text
+msgid "/* Calcula el tamaño de secuencias Collatz */"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"unsigned int\n"
+"step (unsigned int x)\n"
+"{\n"
+"  if (x % 2 == 0)\n"
+"    {\n"
+"      return (x / 2);\n"
+"    }\n"
+"  else\n"
+"    {\n"
+"      return (3 * x + 1);\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"unsigned int\n"
+"nseq (unsigned int x0)\n"
+"{\n"
+"  unsigned int i = 1, x;\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  if (x0 == 1 || x0 == 0)\n"
+"    return i;\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "  x = step (x0);\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  while (x != 1 && x != 0)\n"
+"    {\n"
+"      x = step (x);\n"
+"      i++;\n"
+"    }\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  return i;\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"int\n"
+"main (void)\n"
+"{\n"
+"  unsigned int i, m = 0, im = 0;\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  for (i = 1; i < 500000; i++)\n"
+"    {\n"
+"      unsigned int k = nseq (i);\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"      if (k > m)\n"
+"        {\n"
+"          m = k;\n"
+"          im = i;\n"
+"          printf (\"tamaño de secuencia = %u para %u\\n\", m, im);\n"
+"        }\n"
+"    }\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  return 0;\n"
+"}\n"
+msgstr ""

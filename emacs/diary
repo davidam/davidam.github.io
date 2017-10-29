@@ -1,0 +1,60 @@
+
+;;; EVENTOS ;;;
+Oct 21, 2005 	Hackmeeting!
+Oct 22, 2005 	Hackmeeting!
+Oct 23, 2005 	Hackmeeting!
+%%(diary-block 11 4 2005 11 6 2005) Hurdmeeting!!
+
+;;; CUMPLEAÑOS ;;;
+Jul 31 Cumple de Nacho
+Oct 7 Día del Rosario
+Nov 16 Cumpleaños de Inés!
+Nov 25 Cumple de Luismi
+Dic 16 Mi Cumple!!
+Dic 19 Cumple de Gonzalo
+Dic 15 Cumple de mi padre
+Dic 5 Cumple de mi madre
+Jul 28 Cumple de Bea
+Sep 22 Cumpleaños de Jesús González Boticario
+Sep 12 Cumpleaños de mi abuela
+
+;;; TAREAS PERIÓDICAS ;;;
+;;* 1 Dia de copias de seguridad: openacs y home
+;;Jueves Sistemas Informáticos II de 19:00-20:30
+;;Miercoles Sistemas Distribuidos de 20:00-21:30 
+
+
+;;; CITAS IMPORTANTES ;;;
+Ene 28, 2006 Comida en casa de Carlota
+Nov 18, 2005 Elecciones a Rector
+Ene 23, 2006 Procesadores de Lenguaje (11:30)
+Ene 24, 2006 Sistemas distribuidos (9:00)
+Ene 26, 2006 Sistemas informáticos II (9:00)
+Ene 26, 2006 Optimización discreta (11:30)
+
+Feb 6, 2006 Procesadores de Lenguaje (11:30)
+Feb 7, 2006 Sistemas distribuidos (9:00)
+Feb 9, 2006 Sistemas informáticos II (9:00)
+Feb 9, 2006 Optimización discreta (11:30)
+Nov 8, 2005 Carlota celebra su cumple
+
+Feb 25, 2006 Taller de Lisp en wh2001
+%%(diary-block 3 10 2006 3 12 2006) Jornadas Criticas de Propiedad Intelectual en Malaga
+Feb 23, 2006 En el Pais "Y tu mama tb"
+Marzo 2, 2006 En el Pais "Un lugar en el mundo"
+;;Abr 6, 2006 En el Pais "El viaje a ninguna parte"
+%%(diary-block 3 17 2006 3 19 2006) Jornadas GNU Emacs
+Feb 21, 2006 A las 19:00 Taller de Ruby On Rails
+%%(diary-block 3 31 2006 4 2 2006) Jornadas Interhacklabs
+Jul 21, 2006 Se va mi padre
+Jul 30, 2006 Vuelve mi padre
+Ago 12, 2006 Me voy a la India
+Ago 27, 2006 Vuelvo de la India
+Jul 27, 2006 Quedada de emacs
+%%(diary-block 10 13 2006 10 15 2006) Hackmeeting
+%%(diary-block 11 24 2006 11 25 2006) Conferencias Rails
+Sep 25, 2006 A las 19h he quedado con Jesús G. Boticario
+%%(diary-block 8 10 2008 8 16 2008) Debian Conference
+Feb 14, 2008 Feature Freeze
+Ene 24, 2008 Ubuntu Massachussetts Meeting
+Ene 16, 2008 Come back to Boston

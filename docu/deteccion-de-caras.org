@@ -1,0 +1,17 @@
+ #+TITLE: Detección de Caras con Gimp
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+* Instalación de Paquetes debian
+
+#+BEGIN_SRC bash
+$ sudo apt-get install libopencv-dev libgimp2.0-dev
+#+END_SRC
+
+* Referencias
+
++ http://registry.gimp.org/node/24397

@@ -1,0 +1,19 @@
+#+TITLE: La Asombrosa Evolución del Uso de Sistemas Operativos de 2009 a 2013
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+* Introducción
+
+Con la llegada de nuevos dispositivos a la clase obrera se está viviendo una 
+asombrosa revolución en el mundo del uso de los sistemas operativos. Para estudiar
+este fenómeno he decidido usar Wikimedia Traffic Analysis Report. Estas fuentes 
+nos dan el porcentaje del número de clicks según el sistema operativo que se está 
+usando en cada momento en Wikipedia, teniendo en cuenta que Wikipedia es el séptimo 
+sitio en Internet, éste es un buen indicador para entender la realidad del uso de 
+los sistemas operativos.
+
+En los últimos 3 años se ha vivido un asombroso cambio tecnológico, 
+que revela que Windows ha caido de un 80.08% a un 56.10%, iPhone/iPad pasa 
+de 4.39% a 24.29%, Mac pasa de 7.60% a 15.53% y el kernel Linux pasa de 2.98% 
+a 7.78%.
+

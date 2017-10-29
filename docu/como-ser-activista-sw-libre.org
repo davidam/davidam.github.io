@@ -1,0 +1,14 @@
+#+TITLE: Cómo ser Activista del Software Libre y no Morir en el Intento
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+LANGUAGE: en
+
+En algunos movimientos sociales no entienden que el Movimiento del
+Software Libre también hay represión por parte de los estados y el
+capitalismo global. En general, esa represión suele venir por parte de
+leyes injustas para que el movimiento del software libre pueda crecer
+con naturalidad: patentes, drm, etc. Pero también ha habido casos en
+los que se ha atacado al activista y no al movimiento en general, el
+caso de Julian Assange es de un hacker del movimiento del software
+libre que quiso llevar la ideología de la libertad de la información a
+liberar secretos de estado y tiene que vivir con esa persecución política 

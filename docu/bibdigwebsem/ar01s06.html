@@ -1,0 +1,93 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"><title>Proyectos</title><meta name="generator" content="DocBook XSL Stylesheets V1.64.1"><link rel="home" href="index.html" title="Biblioteca Digital y Web Semántica"><link rel="up" href="index.html" title="Biblioteca Digital y Web Semántica"><link rel="previous" href="ar01s05.html" title="Licencias"><link rel="next" href="ar01s07.html" title="GNU Free Documentation License"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Proyectos</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ar01s05.html">Anterior</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="ar01s07.html">Siguiente</a></td></tr></table><hr></div><div class="sect1" lang="es"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="proyectos"></a>Proyectos</h2></div></div><div></div></div><p>Hasta ahora hemos estado viendo aspectos parciales de las tecnologías y licencias acerca de la biblioteca digital y la web semántica. En este apartado trataremos de acercar algunos de los proyectos ó aplicaciones que podemos encontrar a día de hoy para vislumbrar cómo se va a transformar la publicación de contenidos en Internet bajo los impulsos de la biblioteca digital y la web semántica.</p><div class="sect2" lang="es"><div class="titlepage"><div><div><h3 class="title"><a name="proyectos-gfdd"></a>GNU Free Documentation Database (GFDD)</h3></div></div><div></div></div><p><a href="http://www.gfdd.org" target="_top">GFDD</a> es un
+      subproyecto de <a href="http://www.gnutemberg.org" target="_top">GNUtemberg</a> para
+      coleccionar y clasificar documentación libre. Cada recurso en la
+      base de datos es descrito por una serie de campos, utilizando
+      los estándares del Dublin Core. Cada recurso puede tener
+      ediciones publicadas y traducciones, con una serie de campos
+      específicos. </p><p>La aportación de este proyecto es la fácil recuperación de
+      documentos mediante vistas atendiendo a un determinado
+      descriptor y búsquedas por cualquiera de los campos de cada
+      recurso. Y la posibilidad de que cualquiera puede proponer vía
+      web un nuevo documento para esta base de datos, tras un sencillo
+      registro que consiste en dar un login/identificador, una
+      dirección de correo electrónico y un nombre. Después un
+      moderador aprobará ó no la inclusión de ese documento en la base
+      de datos. Este proceso de moderación se basa prácticamente en
+      verificar que los incluidos son correctos</p></div><div class="sect2" lang="es"><div class="titlepage"><div><div><h3 class="title"><a name="proyectos-biblioweb"></a>Biblioweb en SD</h3></div></div><div></div></div><p>Biblioweb es un proyecto
+      amplio para simplemente crear una biblioteca de documentos
+      interesantes sobre muchos temas en la web. Es decir, es una
+      biblioteca pública que reune documentos sobre los temas que
+      preocupan a quienes participan/participamos en ese
+      proyecto.</p><p>Hasta ahora todos lo documentos que se han publicado en la
+      biblioweb son como mínimo de libre copia. Por lo que puede ser
+      una herramienta muy interesante de cara a la catalogación y, por
+      tanto, facilidad de recuperación de documentos libres.</p><p> Alex es una herramienta gráfica de
+      catalogación de esa biblioteca, herramienta que está
+      desarrollando algunas personas del proyecto SinDominio, que está
+      a punto de quedar disponible públicamente bajo GPL y, por lo
+      tanto lista para ser modificada, copiada y aprovechada para
+      muchos otros proyectos. "Alex" (escrito en perl/tk) ayuda a los
+      catalogadores a decidir el tema, los subtemas y a rellenar los
+      demás campos necesarios para identificar un documento y ponerlo
+      en relación con todos los demás documentos de la biblioweb. Toda
+      información sobre todos los documentos se recoge en una base de
+      datos (motor Postgresql) residente en fanelli que se llama
+      "Alejandria".</p><p>Los catalogadores de la biblioteca
+      usarán Alex para catalogar, mantener la base de datos, buscar
+      documentos por multiples parámetros, leer los documentos
+      mediante su visor HTML o publicarlos cuando les interese (y para
+      muchas cosas más a medida que le incorporemos otras
+      funcionalidades). Dado que Perl/Tk está disponible para casi
+      todas las plataformas imaginables, los catalogadores podrán usar
+      PCs o Macs o Alphas o lo que sea corriendo con GNU/Linux o con
+      cualquier otra cosa que les venga bien... eso incluye
+      ms-windows, aunque ya sabemos que todas estamos
+      migrando a sistemas libres ¿verdad? ;-).</p><p>Hay que destacar que al contrario que otros proyectos de
+      bibliotecas digitales, gracias a Alex la Biblioweb se convierte
+      en un proyecto distribuido, es decir, posibilita que haya
+      multitud de personas catalogando textos mediante esta
+      herramienta.</p><p>
+      Evidentemente el usuario normal y sin interés en colaborar en la
+      catalogación o aumento de la biblioteca no tiene por qué usar
+      "Alex". Lo que si va a tener que usar es Alejandria, que es
+      solamente la base de datos Postgres creada mediante "Alex" y a
+      la que accederá mediante un navegador y una sencilla interfaz
+      web que le permitirá buscar (mediante un potente motor de
+      búsqueda) los documentos por multitud de campos y criterios (los
+      mismos que habrán creado y utilizado los catalogadores con
+      "Alex"), examinar los resultados de su búsqueda leyendo los
+      resúmenes (creados por otros mediante "Alex") y decidiendo
+      entonces qué documento leer o tal vez entretenerse mirando qué
+      documento tiene que ver con qué otro y por qué... por ejemplo
+      ¿que tiene que ver un programa informático como fetchmail con la
+      catedral de Burgos o con una bazar de Marrakesh?</p><p></p><p>Si esta pequeña introducción al proyecto os ha abierto el interés y queréis saber más podéis visitar <a href="http://www.sindominio.net/biblioweb" target="_top">http://www.sindominio.net/biblioweb</a> y comprobar como va el trabajo de catalogación, así como disfrutar de los textos que allí ya se recogen. Así mismo, podéis bajaros alex desde <a href="http://www.sindominio.net/~kiko/" target="_top">http://www.sindominio.net/~kiko/</a> si tenéis prisa en probarlo. Puesto que aún no se ha generado mucha documentación acerca del proyecto, es probable que tengáis muchas más dudas acerca de él, para ello podéis preguntar en biblioweb@sindominio.net.</p></div><div class="sect2" lang="es"><div class="titlepage"><div><div><h3 class="title"><a name="proyectos-wikipedia"></a>Wikipedia/Gnupedia</h3></div></div><div></div></div><p>Los wiki se han descubierto como una maravillosa herramienta para producir textos mediante interfaces web de una manera totalmente distribuida. Cualquiera que visite un wiki puede modificarlo en el mismo instante en el que lo visita. Pero también puede acceder a versiones anteriores de la página que va a modificar ó a modificado, así si ve que alguien ha puesto una burrada, ó ha destruido el trabajo de alguien pues puede recuperar el trabajo anterior</p><p>A partir de esta herramienta han surgido al menos tres proyectos para desarrollar una enciclopedia libre, estos son: </p><div class="itemizedlist"><ul type="disc"><li><p><a href="http://es.wikipedia.com/" target="_top">wikipedia</a></p></li><li><p><a href="http://www.nupedia.com/es/" target="_top">gnupedia</a></p></li><li><p><a href="http://www.forpas.us.es/enciclopedia/cgibin/wiki.pl" target="_top">enciclopedia</a></p></li></ul></div><p>Los tres proyectos se basan en la conferencia de Richard
+      Stallman, <span class="emphasis"><em>Enciclopedia Universal y Recursos de
+      enseñanza Libres</em></span> que comienza con las
+      siguientes palabras:</p><p>[<span class="citation">La World Wide Web tiene el potencial de
+      desarrollarse hacia una enciclopedia universal que cubra todas
+      las áreas del conocimiento, y hacia una biblioteca
+      completa de cursos de instrucción. Este resultado se
+      podría obtener sin ningún esfuerzo especial, si
+      nadie interfiere. Pero las corporaciones se están
+      movilizando ahora para dirigir el futuro en otro sentido, un
+      sentido en el que ellos controlan y restringen el acceso a los
+      materiales de aprendizaje, de tal manera que pueden extraer
+      dinero de las personas que quieren aprender.</span>]</p><p>[<span class="citation">Para asegurarnos que la red se desarrolle hacia el
+    mejor y más natural resultado, en el que ésta se convierte en una
+    enciclopedia libre, debemos realizar un esfuerzo consciente para
+    evitar el secuestro deliberado de la información educacional y
+    enciclopédica de la red. No podemos evitar que los negocios
+    restrinjan la información que ellos publican en la red; lo que sí
+    podemos hacer es proveer una alternativa. Debemos lanzar un
+    movimiento para desarrollar una enciclopedia universal libre, de
+    manera similar como el movimiento del software libre nos proveyó
+    del sistema operativo libre GNU/Linux. La enciclopedia libre
+    proveerá una alternativa a aquellas restringidas que serán
+    escritas por las corporaciones.</span>]</p><p>Si bien estos proyectos de enciclopedias libres no tiene
+      una relación directa con lo que hemos entendido con biblioteca
+      digital, o web semántica, sí refuerzan la idea de la necesidad 
+      de cambiar el modo de producción de la documentación electrónica,
+      lo cual puede cambiar también el mismo concepto de biblioteca
+      digital.</p><p>Tal vez estos artículos que se generan por la
+      cooperación voluntaria de la gente se organicen por aquellos que los 
+      generan ó se organicen mediante proyectos como la Biblioweb</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ar01s05.html">Anterior</a> </td><td width="20%" align="center"><a accesskey="u" href="index.html">Subir</a></td><td width="40%" align="right"> <a accesskey="n" href="ar01s07.html">Siguiente</a></td></tr><tr><td width="40%" align="left" valign="top">Licencias </td><td width="20%" align="center"><a accesskey="h" href="index.html">Inicio</a></td><td width="40%" align="right" valign="top"> GNU Free Documentation License</td></tr></table></div></body></html>

@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Agentes Inteligentes</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Software Adaptativo"
+HREF="sw-adapt.html"><LINK
+REL="NEXT"
+TITLE="Planificacion"
+HREF="planific.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="sw-adapt.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="planific.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="agent-intel"
+>5. Agentes Inteligentes</A
+></H1
+><P
+>Para Russell y Norvig un agente es cualquier cosa capaz de
+    percibir su medioambiente mediante sensores y actuar en ese medio
+    mediante actuadores. Todo agente tiene una función u
+    objetivo. Por ejemplo, un agente humano de bolsa tiene el objetivo
+    de comprar y vender acciones respondiendo a los estímulos
+    iniciados por su cliente y captados por sus sentidos. Una
+    aspiradora tiene la función de aspirar cuando capta que ha
+    sido encendida y no aspirar cuando es apagada.</P
+><P
+>Un agente inteligente ó racional trata de maximizar
+    el valor de una medida de rendimiento, dada la secuencia de
+    percepciones que ha observado hasta el momento.</P
+><P
+>Repitamos lo dicho ejemplificándolo. Un agente
+    inteligente tiene un objetivo abstracto (ej: "ofrecer a un usuario
+    información interesante"), tiene una forma de evaluar si
+    esa información es interesante (ej: "el usuario lee la
+    información sugerida"), tiene unos actuadores (ej: "una
+    caja html donde presenta enlaces interesantes") y  tiene unos
+    sensores (ej: "un conjunto de sitios web para recoger
+    información y filtrar la que sea interesante y el conjunto
+    de clicks que puede hacer ó no el usuario de todos esos
+    sitios web"). La pregunta ahora es ¿cómo mejorar ese
+    rendimiento?.</P
+><P
+>Para Peter Norvig la programación estructurada tiene
+    asociadas las aplicaciones basadas en entrada/salida, la
+    programación orientada a objetos las aplicaciones basadas
+    en eventos y la programación adaptativa las aplicaciones
+    basadas en agentes inteligentes. Es decir, la respuesta a nuestra
+    pregunta es usamos aprendizaje automático para mejorar el
+    rendimiento.</P
+><P
+>No obstante, el deseo de desarrollar software adaptativo no
+    es la única razón para utilizar una
+    metodología de programación orientada a agentes. Los
+    agentes tienen su campo de cultivo en la Inteligencia Artificial
+    Distribuida (IAD) que, como su nombre indica, es la rama de la
+    Inteligencia Artificial que trata de resolver de manera
+    distribuida sus problemas, aprovechando así las ventajas
+    propias de la programación distribuida: robustez,
+    paralelismo y escalabilidad.</P
+><P
+>Desde un punto de vista de ingeniería de software
+    este paradigma también supone una evolución a las
+    necesidades de reutilización y encapsulamiento del
+    código. Partiendo de la programación orientada a
+    objetos, el mundo está compuesto por elementos llamados
+    objetos que tienen atributos a los que es posible aplicarles
+    métodos y estos pueden abstraerse a clases y estas clases
+    pueden abstraerse en otras clases de las que heredan
+    métodos y/o atributos ó de las que se componen. Sin
+    embargo, este modelo del mundo es incompleto, pues en el mundo
+    también existen agentes con capacidades de aprendizaje y
+    autonomía.</P
+><P
+>También podemos usar agentes inteligentes para
+    entender mejor el conocimiento ó para poder hacer
+    simulación.</P
+><DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="img/jade.png"><DIV
+CLASS="caption"
+><P
+>Pantallazo de jade en ejecución</P
+></DIV
+></P
+></DIV
+><P
+>Hay bastante software denominado como <A
+HREF="http://linuxselfhelp.com/HOWTO/AI-Alife-HOWTO-6.html"
+TARGET="_top"
+>software
+    de agentes</A
+> para gnu/linux, sin embargo, no siempre se
+    entiende la filosofía de agentes que subyace. La
+    herramienta para desarrollar agentes más extendida y
+    utilizada es <A
+HREF="http://jade.tilab.com/"
+TARGET="_top"
+>JADE</A
+>
+    gracias a sus buenas herramientas gráficas,
+    documentación, soporte, licencia LGPL, ... por desgracia
+    para quienes no queremos caer en la <A
+HREF="http://gnu.fyxm.net/philosophy/java-trap.es.html"
+TARGET="_top"
+>"Trampa de
+    Java"</A
+> requiere JDK 1.4 ó posteriores.</P
+><P
+>Para ampliar información acerca de teoría de
+    agentes recomiendo: <A
+HREF="http://www-2.cs.cmu.edu/afs/cs/usr/pstone/public/papers/97MAS-survey/revised-survey.html"
+TARGET="_top"
+>Multiagent
+    Systems: A Survey from a Machine Learning
+    Perspective</A
+>. Aunque leer <A
+HREF="http://www.norvig.com/adapaper-pcai.html"
+TARGET="_top"
+>Adaptive
+    Software</A
+> es un excelente complemento que aclara muchas
+    ideas.</P
+><P
+>Tal vez este apartado no debería estar en este
+    artículo, ya que no hay una aplicación
+    práctica a los agentes inteligentes, debido a que es una
+    cuestión más metodológica que facilita, entre
+    otras cosas, poder hacer adaptación.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="sw-adapt.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="planific.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Software Adaptativo</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Planificacion</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

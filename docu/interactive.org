@@ -1,0 +1,17 @@
+
+Emacs is shortest way to go from high level to low level or reverse. 
+
+(defun multiply-by-seven (number)       ; Interactive version.
+  "Multiply NUMBER by seven."
+  (interactive "nThe number: ")
+  (message "The result is %d" (* 7 number)))
+
+(defun guess-my-number(x)
+  (interactive "nGuess my number: ")
+  (cond 
+   ((> x 5)
+    (message "Smaller"))
+   ((= x 5)
+    (message "Congratulations!"))
+   ((< x 5)
+    (message "Bigger"))))

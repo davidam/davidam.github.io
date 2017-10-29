@@ -1,0 +1,225 @@
+#+OPTIONS *:t
+
+* Introducción
+*entrevistador*: Bueno pues eso, vamos a empezar. Ya lo he puesto a grabar.
+*hombre6*: Tu después vas cortando y pegando ¿no?
+*entrevistador*: Si
+*entrevistador*: Eso, que la entrevista es sobre nuevas tecnologías y movimientos sociales. Entonces, bueno, empezó siendo una práctica del master de metodología e investigación social de la Complutense pero ahora va a ser un trabajo de fin de master. Y entonces, bueno, la entrevista se divide en dos bloques principales. Uno es de, bueno, sobre organizaciones entonces a ti te lo hacemos sobre la CNT que es dónde dices que tú militas principalmente. Y entonces se divide en dos partes principales. Una sobre flujos de información que hay dentro de la organización y otra sobre factores de cambio tecnológico. Entonces la primera parte es bastante más larga.
+*hombre6*: ujumm
+*entrevistador*: Y luego la segunda pues más cortita.
+Entonces la idea es que me lo cuentes como si no supiera nada de la CNT y todo esto. Y entonces te voy a ir preguntando varias cosas sobre los flujos de información. Uno es comunicación interna que es como fluye la información dentro del sindicato, o sea, la información del propio sindicato hacia su propia militancia. Entonces, bueno, pues como la organización de la CNT es muy grande pues si quieres vete comentándome, si quieres a nivel de secciones, federación local, confederal o algo así.
+*hombre6*: Vale.
+*entrevistador*: Me siento como un *no se entiende* (risas)
+*hombre6*: Pues bueno, a ver, comento un poco cómo es la CNT, en general, de la estructura. La CNT es un sindicato federalista y esto quiere decir que estamos federados primero por regiones ¿no?, por regiones que no se corresponden al mapa peninsular, sino que se corresponden más bien a hechos históricos. Entonces, eeh, más fácil de explicarlo yo creo con un ejemplo práctico. Aquí en Madrid por ejemplo eeh, yo pertenezco a la sección de informática y esta sección esta adherida al sindicato de Oficios varios de Madrid, a su vez el Sindicato de Oficios Varios de Madrid está federado con otros sindicatos en Madrid de otros ramos como son metal, construcción, enseñanza, transportes y artes gráficas y estos seis sindicatos componen la fracción local de Madrid. A su vez la fracción local de Madrid está federada con otras federaciones locales y compone, en este caso, pues la federación, la confederación regional centro y a su vez la confederación regional centro  está confederada con otras confederaciones regionales que componen ya lo que es la CNT.
+
+* Flujos de información:
+
+** comunicación interna
+*** flujo de comunicación? flujos horizontales/verticales?
+*** sincronización interna
+*hombre6*: Eeh, entonces, ¿la pregunta era canales de comunicación interna?
+*entrevistador*: Flujos de información desde la organización hacia la propia militancia y de la, de la propia militancia entre si.
+*hombre6*: Vale, pues la CNT es un sindicato asambleario con lo cual todas las decisiones se toman en la asamblea de, pues de cada ámbito. En este caso yo acudo a mi asamblea de la sección de informática y ahí es dónde tomamos todas las decisiones, cara a cara. No mantenemos asambleas on-line. Entonces la primera comunicación directa es cara a cara. Tomamos una serie de actas y ahí es un, digamos el primer canal que hay entre la militancia. Después para comunicar, como no todo el mundo acude a las asambleas, para comunicar las decisiones que se toman en las asambleas al resto de la militancia pues se utiliza el, principalmente el e-mail. En este caso, si, pongamos que, tomamos eh , no se ,vamos a hacer una manifestación de uno de mayo en tal sitio como sección de informática o bueno en este caso otra manifestación cualquiera. Pues vamos los informáticos a la asamblea de  la sección, tomamos el acuerdo que sea, y entonces ya, informamos por e-mail a toda la militancia de la sección de informática y también en este caso a , por estar adheridos al sindicato de oficios varios, pues también a la militancia del sindicato de oficios varios. Este sería una primera, un primer flujo de información de la militancia.
+Después también utilizamos eehh, canales on-line para transmitir los acuerdos de las asambleas pues, a otros sindicatos de la CNT de fuera de Madrid y bueno, y también de Madrid, y eso sería básicamente un poco, una primera...
+*entrevistador*: Quieres...? como ha venido...
+
+** colaboración interna
+*** redacción en común?
+
+*entrevistador*: Bueno pues pasamos a la siguiente pregunta que es un poco como se gestiona la colaboración interna en CNT y entonces en un ejemplo práctico sería por ejemplo como se redacta un texto en común o cosas así.
+*hombre6*: Vale, pues, hombre esto ya es un poco de cada sindicato, de cada localidad su forma de funcionar. Pero bueno que básicamente lo que, lo que se hace es que, digamos que ante, pongamos una nueva actuación del gobierno entonces la CNT se , un sindicato de la CNT o la gente en general se quiere posicionar. Pongamos que, yo que se,  una nueva política del gobierno afecta al sector de la informática. Ponemos el ejemplo de la sección de informática. Pues en este caso, bien, básicamente la propuesta es, los afiliados, o un afiliado o que sea de la sección le parece importante responder a cierto hecho. Y entonces lo que hace es, digamos, un pequeño esbozo, no?. Entonces este escrito, este esbozo lo lleva a la asamblea, lo comenta, se debate. Y si la asamblea ve positivo el, bueno se discute y si lo ve positivo pues se lanza el escrito, no? Entre todos digamos se añaden ideas pero al final, claramente para no liarlo, suelen ser un par de personas las encargadas en, digamos en,  cerrar un poco el escrito. Siempre y cuando, por supuesto siempre siguiendo los acuerdos que se han tomado en la asamblea. 
+
+Y este escrito pues una vez que se ha redactado, un poco más lo mismo que con otro tipo de convocatorias. Se informa a la afiliación por e-mail y al resto de los sindicatos también por nuestros cauces orgánicos  on-line, vamos.
+
+*entrevistador*: Y los sindicatos, o sea, los escritos que firma la CNT como CNT en general?
+
+*hombre6*: En este caso ya es un poco más tedioso, eeh, digamos que hay dos maneras eeh, pongamos que, vamos a, realizamos una campaña a largo plazo pues, la CNT funciona, es un sindicato, una confederación de sindicatos y federalista pues funciona de abajo a arriba, esto quiere decir que, un sindicato de la CNT de cualquier punto de España, propone, hace una propuesta de *rezar* una campaña, X campaña. Entonces redacta una propuesta en esa asamblea eeh, de que pretende a una campaña, no? con un escrito de denuncia o de lo que sea, no? Y entonces lo eleva a ámbitos superiores y esto quiere decir pues que al resto se lo hace saber, al resto de sindicatos de su localidad. Entonces, se convoca un pleno local y ahí se debate la propuesta del sindicato y en el caso de aprobarse, junto con el escrito y demás, pues se eleva al siguiente nivel que sería ya al pleno confederal. Y de nuevo en la confederación se vuelve a debatir entre todos los sindicatos que hay adheridos a la confederación, en este caso sería la de centro y se eleva al  siguiente nivel que sería ya al pleno confederal de todas las confederaciones regionales. Y entonces de ahí pues saldría ya hecho el escrito y todas las, y se comunicaría pues, se comenzariá a gestionar el acuerdo pues, respecto a convocar manifestaciones y una serie de piquetes, lo que sea.
+Después también estaría otro caso, digamos, para actuar rápido,
+los comités son los responsable, como decirlo, no es gente que toma decisiones, son los encargados de ejecutar los acuerdos que de las asambleas. Y en caso de que haya urgencia pues digamos que tienen también la potestad de, pues de actuar sin tener que pasar por las asambleas. Por supuesto después tienen que responder ante las asambleas, si la actuación de ese comité no, a la asamblea no le ha parecido correcta pues se toman las medidas, no?
+
+** búsqueda de consensos
+
+*entrevistador*: Vale. Eehh, bueno, eeh, esta pregunta es búsqueda de consensos, ya me has dicho que la CNT es asamblearia y entonces la pregunta es más si siempre se funciona con, por consenso o...
+
+*hombre6*: La CNT siempre busca consenso en todas sus asambleas, plenos locales, plenos regionales o confederales. Pero si que es verdad que nosotros al final si vemos que es imposible llegar al consenso terminamos votando. Entonces digamos que es una ley de mayorías, al final. Pero siempre el, para nosotros lo mejor es siempre buscar el consenso, vamos, es lo que pretendemos, que no siempre es posible.
+
+
+
+** gestión de tareas
+
+*entrevistador*: La siguiente pregunta es de gestión de tareas. Cuando hay tareas que hacer se busca un responsable, hay una herramienta de gestión de tareas pública que cualquier militante puede...
+
+*hombre6*: Si depende un poco de la, de la tarea en sí. Como te he comentado existen los comités. Por ejemplo en la sección de informática existe un pequeño comité no? digamos que, puede estar encargado, o sea,  puede estar compuesto por un secretario general, un tesorero, un secretario de acción sindical, un secretario de propaganda... depende un poco  también del tamaño de la sección o del sindicato. Lo mismo para los sindicatos, y lo mismo para las confederaciones locales, cada confederación local tiene un comité, lo mismo para las confederaciones regionales y por supuesto también la confederación nacional digamos, no?.  Entonces esta gente se encarga un poco, como te he comentado antes, de llevar a cabo, de cumplir con los acuerdos de las asambleas. Ya un poco a nivel más, bajando un poco, no? en la estructura de la CNT, pues pongamos que el comité de un sindicato cualquiera se encargaría por ejemplo de, de gestionar pues por ejemplo  las llaves de los locales, o cuando se abren los locales o también pues ehhh... como comentaba un comité suele estar compuesto por un secretario general, un secretario de prensa, uno de, un tesorero y uno de organización. Pues el tesorero por ejemplo, se encargaría de gestionar los fondos del sindicato y ese tipo de cosas.
+Después ya hay temas más puntuales pues yo que sé, ante una manifestación, como pegar carteles y demás, pues simplemente se informa a la afiliación que hay una serie de carteles y a pegar, y lo mismo con panfletos y demás.
+
+** gestión de eventos
+
+*entrevistador*: Ujum. Ehhh La gestión de eventos. Esto es un poco, tanto de cómo se organiza un evento concreto que puede ser una charla, o unas jornadas o alguna cosa así. Y también un poco y la difusión del evento como se gestiona y qué relación tiene con la tecnologías.
+
+*hombre6*: Pues...bueno para no repetirme, viene todo relacionado con lo que he comentado antes. Ante un evento cualquiera pues, en un principio, es el comité, el encargado de informar a los medios de comunicación, en este caso sería el secretario de prensa del comité el que informaría a los medios de comunicación. Respecto a los canales, bueno también si se quiere analizar la manifestación o presentación o lo que sea, pues sería el secretario general o cualquiera del comité, el que se encargaría.
+Y tema de difusión, como he comentado antes, de la propaganda más genérica, carteles y demás pues sería la propia militancia. La difusión de internet es un poco parecida, es el comité también el que lleva la difusión, después ya claro, cada militante pues lo mueve por donde vea más, por dónde quiera básicamente, pues bien sea por foros y tal, desde el anonimato o no, vamos. Oficialmente son los *no se entiende* de la CNT los que online, los que están moviendo,  la noticia.
+
+** comunicación con el exterior
+
+*** captación de voluntarios/colaboradores
+
+*entrevistador*: De hecho este punto es comunicación exterior, te estás adelantando un poco. Aquí las preguntas si hay... como se amplía la militancia, si hay alguna forma de dar a conocer el sindicato, comunicación con otros colectivos,  alianzas con otros movimientos o plataformas...
+
+*hombre6*: Bueno, la CNT es un sindicato abierto. Somos un sindicato anarcosindicalista, eso quiere decir que somos un sindicato que funciona con los principios básicos del anarquismo. Pero no pedimos *no se entiende* a ningún trabajador, simplemente que respete nuestro pacto federativo. Entonces cualquier trabajador, bueno, trabajador o persona en paro, jubilado, estudiante... que esté dispuesto a aceptar el pacto federativo puede federarse en la CNT. Al ser un sindicato abierto, si no me equivoco, creo que cualquier trabajador puede acudir a las asambleas, no tiene derecho a voto, pero sí que puede participar incluso, si la asamblea lo ve bien, vamos. Entonces en ese sentido no somos un sindicato cerrado en absoluto, vamos. Respecto, me has preguntado también..
+
+*entrevistador*: Si bueno la pregunta era un poco más si había, por ejemplo greenpeace, pues está siempre en Moncloa o en esos sitios buscando nuevos miembros, o sea si, es un poco como se amplía la militancia o cual era el mecanismo de la militancia.
+
+*hombre6*: Bueno eso depende un poco de cada localidad y de su manera de funcionar y, porque no es lo mismo, yo que sé, en Madrid que en un pueblo, no? que te conoce todo el mundo, por ejemplo ahí cambian mucho los cauces de información. En Madrid lo que se hace, lo que hacemos es repartir muchos comunicados, mover mucha información on-line, pegamos muchos carteles también...pero no vamos buscando afiliación. O sea, yo no, nadie va a ninguna persona, le entrega un comunicado o un panfleto y le dice “oye, afiliate” eso no lo hacemos. Nosotros optamos más por lo que, yo entiendo que es la propaganda por el hecho, nosotros llevamos a cabo una serie de acciones, funcionamos de cierta manera, hacemos propaganda de nuestro propio funcionamiento y si la gente lee lo que hacemos, ellos verán si se quieren afiliar o no, o si quieren trabajar con nosotros sin afiliarse o demás. Entonces no solemos utilizar el cartel de “afiliate”, preferimos un poco que la gente, bueno, que nos conozca y que decida, a fin y al cabo forzar a alguien  a afiliarse como pueden hacer otros sindicatos no lleva a ningun lado, vamos. Queremos militantes no queremos cotizaciones.
+
+
+*** comunicación con otros colectivos
+*** formar alianzas/coaliciones/movimientos/plataformas
+
+
+*entrevistador*: Y entonces, luego las otras preguntas en todo este punto era eso, como se gestiona la comunicación con otros colectivos, sindicatos,	 plataformas...
+
+*hombre6*: Eso se suele hacer todo on-line. Antes supongo que también sería por teléfono pero ** online pues bien por correo electrónico, correo electrónico principalmente. Entonces ante, yo que sé, la última huelga por ejemplo, llega un correo electrónico de X organización, entonces el correo se traslada a las asambleas las que, las cuales deciden que hacer, si  **de ir en un conjunto o no con otras organizaciones para, frente a cualquier ataque de la patronal o del  gobierno, o ir por separado o no, no sé si era eso lo que querías saber...
+
+** documentación interna
+
+*entrevistador*: Vale, bueno aquí hay un punto de documentación interna, gestión económica  y todo esto, no? Yo entiendo que si que, que sí que hay documentos que son públicos y otros que son privados, no?
+y luego como se financia la CNT, contribuciones de miembros...
+
+*hombre6*: Si, como te he dicho las asambleas de la CNT suelen ser abiertas entonces, pues hay esta el primer canal de comunicación, no?. Después si *no se entiende*  las actas no se suelen publicar, sea raro es el sindicato, creo yo, que publica las actas, como mucho se mandan por e-mail a la afiliación y también, y no, no suele ser muy habitual.
+
+** gestión económica
+*** gestión de donaciones
+*** formas de financiación
+*** contribuciones de miembros
+*** gastos/ingresos
+
+
+*entrevistador*: Si la comunicación interna y la gestión económica.
+
+*hombre6*: La CNT no recibe subvenciones, nosotros únicamente nos financiamos por medio de las cuotas de nuestros afiliados. Básicamente queremos que sea así para no depender de nadie, no? ni del estado, ni de ninguna entidad empresarial que pueda tener intereses en el sindicato, para mantener la independencia del sindicato y bueno.
+
+
+
+** gestión de nuevos colaboradores
+
+*entrevistador*: Vale, bueno, aquí hay un par de puntos que ya me has hablado un poco que es de toma de decisiones y me los voy a saltar y luego hay un punto de gestión de nuevos colaboradores cuándo alguien entra en la organización pues como se le explica cómo funciona como, si hay alguien que, encargado de explicarle un poco el funcionamiento...
+
+*hombre6*: Hombre eso depende un poco de la gente que se acerca. Hay gente que se acerca porque tiene un conflicto y lo comenta y se trabaja sobre el conflicto y, bueno pues digamos que ese afiliado se dedica más al conflicto igual después vuelve o no vuelve eso depende mucho de la gente. Otros no tienen ningún problema y se acercan porque quieren cambiar la sociedad y esa suele ser la gente, bueno hay de todo, tampoco voy a generalizar, solidaria. Básicamente depende del afiliado,  de la nueva persona, pues empieza...acude a las asambleas, que es donde mejor se puede informar, acude a los piquetes. Y bueno aparte de eso siempre está, como te he dicho antes, el comité que también es  el encargado un poco de informar a la nueva afiliación de, tener preparados pues todos los escritos que... básicos para la gente que se acerca, para que entienda como funcionamos y demás pero al final lo mejor es siempre acudir a las asambleas y conocer de primera mano lo que es la CNT, porque por mucho que leas en casa nuestras páginas web y demás pues al final no la conoces del todo hasta que no te acercas y lo ves con tus propios ojos.
+
+** reuniones/asambleas
+*** facilitadores/moderadores, anotadores, otros roles
+
+
+*entrevistador*: Vale, aquí hay un punto de como se gestionan las asambleas si suele haber moderadores, gente que toma actas, que roles hay en una asamblea normal de CNT.
+
+*hombre6*: Si, en cualquier sindicato medianamente grande siempre suele haber una mesa que se constituye antes de cada asamblea, esa asamblea está formada por un moderador y uno que toma actas. Entonces esa gente es elegida en la propia asamblea, o sea no sale de antemano sino que ahí los que se reúnen en asamblea son los que deciden quién quiere, quién va tomar la mesa. Y eso es básicamente, si la asamblea ve que la mesa está haciendo un uso indebido de su posición pues que se está tomando mal las actas, no está moderando o está moderando a favor de unos o de otros, cosas que pasan en cualquier movimiento social, siempre se puede revocar en el momento, no hay ningún problema. No acostumbramos a hacer asambleas on-line, vamos *no se entiende*
+
+** visibilidad exterior
+*** web con información
+*** actividades de promoción/visibilidad
+
+
+*entrevistador*: Vale. Va, esto es un punto de visibilidad exterior, entiendo que tenéis una web con información, cómo se visibiliza exteriormente la CNT en relación a nuevas tecnologías y todo eso
+
+*hombre6*: La imagen que proyectamos respecto a nuestro uso de las TIC, o cómo...
+
+*entrevistador*: No, más bien es cómo se visibilizan las actividades a partir de las nuevas tecnologías. 
+
+*hombre6*: Pues, principalmente, como te he comentado antes, el correo electrónico para la afiliación otros cauces on-line también para la propia afiliación... 
+
+*entrevistador*: Si pero es más exterior más que para la afiliación, si no a la sociedad
+
+*hombre6*: Para hacer comunicados públicos e informar de cualquier actividad pues principalmente se utiliza canales web o bien también trasladamos escritos a otros medios de comunicación, contrainformación sobre todo. Para las web, cada sindicato tiene su propia web, o no, no todos la tienen vamos, digamos que es una labor que poco a poco los sindicatos se están trabajando. Y yo creo que es una tarea un poco pendiente de la CNT mejorar un poco los portales
+
+*entrevistador*: Y se usa entonces facebook por ejemplo o...
+
+*hombre6*: Depende un poco de la *no se entiende* como siempre, no somos estrictos en ello, entonces sí, hay algunos que si que tienen pues yo que sé sus cuentas de facebook, de twitter o de lo que sea, y otros que están totalmente opuestos a este tipo de redes sociales no? considerándolas contraproducentes para los propios movimientos sociales, vamos. En la CNT siempre ha habido tendencia a hablar todo cara a cara y, bueno yo creo que todo el mundo sigue prefiriendo hablar las cosas cara a cara.  Pero bueno, sí que es verdad que las nuevas, estas nuevas herramientas on-line son muy potentes y, pues, puede ser que bien utilizadas puede que merezca la pena, es un poco una lotería.
+
+** participación en iniciativas de terceros
+
+
+*entrevistador*: ¿Y se participa a iniciativas de terceros?
+
+*hombre6*: ¿A qué te refieres?
+
+*entrevistador*: Pues alguien convoca una manifestación y la CNT se suma como CNT
+
+*hombre6*: Si, como te he comentado antes, pues ante un evento o cualquier atco de cualquier otra organización afín entre comillas no?, o no afín vamos. Pues eso se traslada, la información, el comité es el responsable de transladarlo a la asamblea, la cual debate si se posiciona frente a esa actuación.
+Entonces, la CNT en los conflictos laborales no suele tener problemas en ir puntualmente con otros sindicatos, por ejemplo, por muy en contra que estemos de ellos o la crítica constante que hagamos de su modelo de sindicalismo amarillo, pues ante yo que sé, un caso de un ERE o algo así, pues la CNT no tiene problema en estar a la calle junto a otras organizaciones sindicales pues bien sean CCOO o UGT, vamos. No somos partidarios tampoco, no solemos serlo desde luego, de hacer campañas a largo plazo, porque al fin y al cabo nuestro movimiento sindical es totalmente opuesto, entonces  no va a ningún lado. Como decía un compañero el otro día: lo que podemos hacer es juntarnos todos en una manifestación y dar vueltas alrededor de la plaza Cibeles y ya está, y ahí acaba la unidad de acción.
+
+** Compartición de recursos
+
+*** ¿licencias libres?
+
+*entrevistador*: Vale. En cuanto a compartición de recursos se utilizan licencias libres cuando se presenta un estudio o cualquier cosa, una noticia o...
+
+*hombre6*: ¿Si las herramientas del sindicato son libres?
+
+*entrevistador*: Por ejemplo, si
+
+*hombre6*: Pues, Reconozco que es una labor pendiente de la CNT entonces tampoco te voy a engañar, de hecho hay sindicatos de la CNT que manejan Windows, por ejemplo. Pero vamos, al menos volviendo un poco a mi situación, desde la sección de informática intentamos cambiar eso. Entendemos que hay muchos sindicatos, por ejemplo como el de construcción, que no tenga nociones de informática, ni comparación con las de un sindicato de informática, no? por ejemplo, es obvio Entonces intentamos influenciarlos otros sindicatos, de convencerles para el beneficio de utilizar herramientas libres. De cara al público la CNT, por supuesto, apoya el software libre y bueno se trabaja sobre ello en todo lo que se puede. Pero es una tarea pendiente de la CNT.
+
+*entrevistador*: Sí, yo me refería también a cuando se publica eso, un estudio o algún documento si se pone el Creative Commons...
+
+*hombre6*: No, no lo suelo ver. En portales web sí, pero no hay…
+
+*otro* Si hombre, sí que hay. Hay, la fundación Anselmo Lorenzo desde hace dos   tiene acordado que toda la documentación *no se entiende* todos aquellos estudios que son realizados, todas las obras que son editadas a través de la fundación Anselmo Lorenzo que es la fundación digamos que tiene la labor cultural que la CNT trata de incentivar, todo se realiza bajo licencias no comerciales de Creative Common y lo único es que por ejemplo buena parte del material que edita la CNT, la mayoría de los sindicatos no hablan de ninguna licencia porque no lo consideran tan relevante como para que tenga ese **porque el fin suele ser un fin que está limitado al aquí y al ahora, entonces todo ello lo que les gustaría es que la gente lo utilizara libremente sin necesidad de, sin que explícitamente se diga.
+
+*** transparencia de métodos, de acciones, de cuentas
+
+*entrevistador*: Si bueno, o sea, esto de compartición de recursos también había como un subpunto que es de transparencia de métodos y si por ejemplo la afiliación conoce el estado de las cuentas de CNT y este tipo de cosas.
+
+*hombre6*: Sí, sí, eso. La CNT es un sindicato transparente y horizontal, y al ser horizontal, eso quiere decir que cualquiera, entre otras muchas cosas, cualquiera puede tener acceso a la información del sindicato y por supuesto a las cuentas de su propio sindicato, de su propia sección, de su propio sindicato de su propia confederación regional y de la propia CNT a nivel nacional, vamos.
+
+** Planificación
+
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: ¿Se establece algún tipo de planificación de objetivos a corto, medio y largo plazo? ¿Hay mecanismos para ello? No tanto cuáles son los objetivos si no si se establece, si se realiza  una planificación o más o menos según van viniendo conflictos se va actuando a nivel tanto de las secciones como del propio sindicato
+
+*hombre6*: Vale, eh.. La CNT tiene, como sindicato anarcosindicalista tiene una doble finalidad. Uno es, digamos, que defender los derechos de los trabajadores, no? Eso digamos que sería una finalidad a corto plazo, bueno a largo plazo también. Y otra que sería la transformación radical de la sociedad que culminaría con la implantación del comunismo libertario, tal como está recogido en los acuerdos de congreso. Pongamos...A corto plazo es obvio la CNT, se le hace cualquier ataque a los trabajadores, siempre actúa, por medio de los mecanismos que he comentado antes. Depende un poco también del ámbito de esa agresión por parte del estado del capital, si es una nueva normativa que sale en Madrid actúa a nivel de los sindicatos locales en Madrid. Si es a nivel nacional como pasó con la última reforma laboral pues la CNT llega a un acuerdo, llega a un consenso y actúa en consecuencia.  Eh, entonces... No es lo mismo igual defender a un trabajador que ha sido despedido y que pide la readmisión, que esto digamos que sería un objetivo a corto plazo: se comenta a la asamblea, se organiza la gente del sindicato y se acude al piquete, se habla con la empresa y demás. Y otro más a largo plazo desde el tema laboral pues sería como, para retirar una reforma laboral, eso ya sería una campaña un poco más a largo plazo y que funcionaría pues ya un poco, pues eso, con toda la CNT y puede durar semanas, meses o incluso años. Y por otro lado, como te comentaba antes, respeto a la transformación de la sociedad, la CNT como sindicato anarcosindicalista no abandona la, digamos que, la formación anarquista. La CNT Todo sindicato de la CNT paralelo a su acción sindical siempre llevan a cabo talleres, charlas y actividades de formación anarquista pues... Por ejemplo aquí en Madrid tenemos el Otoño libertario que dura un mes y medio, y durante este mes y medio hay una serie de charlas y talleres con temática anarquista o afines, no? también. Entonces eso digamos también sería la actividad tomada más a largo plazo, una formación constante no solo pública de cara al exterior sino interna también, porque como te he dicho antes, no tenemos carnet de anarquista nadie, entonces también el propio afiliado se tiene que formar y la CNT tiene eso también, esos mecanismos para formar a la propia afiliación.
+
+*entrevistador*: Otra pregunta ¿hay gente con posturas del anarquismo primitivista dentro de la CNT o algo así con rechazo a las nuevas tecnologías.
+
+Si, por supuesto. Me atrevería a decir que no son mayoría, que son una minoría, bueno, tampoco lo sé realmente. Pero sí, conozco casos por supuesto. Yo claro, como militante, como afiliado a la sección de informática pues obviamente, yo creo que todos los que componemos la sección apostamos por las herramientas TIC,no? Y bueno creemos que bien empleadas pueden ser una herramienta muy importante.
+
+* Factores de Cambio Tecnológico
+
+*entrevistador*: Vale pues pasamos ya al siguiente gran apartado de la entrevista 
+
+Como lo ves que tal estaré hablando
+
+Bastante bien, bastante bien
+
+
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: que es de factores de cambio tecnológico que son cuatro preguntas muy concretas:
+¿Qué herramientas tecnológicas recuerdas haber usado el último mes?
+*hombre6*: En CNT?
+*entrevistador*: No, tu como persona.
+*hombre6*: como individuo, pero en el trabajo en casa, en la militancia...
+
+*hombre6*: Yo soy diseñador web, utilizo, acostumbro, trabajo con sistema Linux de la distribución de Ubuntu pues imagínate, todas las herramientas ligadas al mundo del desarrollo web navegables libres como Firefox, utilizo Apache como servidor no sé que *no se entiende* como herramienta gráfica. ¿te refierias a eso o algo más crítico…
+*entrevistador*: Sí,sí,sí las herramientas tecnológicas que se te vengan a la cabeza. Es un poco, lo que conteste el entrevistado está bien. 
+*hombre6*: Vale, vale
+
+** Cuáles son las herramientas tecnológicas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: O sea no, no quiero forzar. ¿Cuáles son las herramientas que has dejado de usar si miras 5 años atrás?
+*hombre6*: Pues Windows, sistema operativo Windows sin lugar a dudas. Eh, bueno por motivos obvios Al principio lo dejé de utilizar solamente porque vi que Linux, bueno no, por aquello que se comenta, de que no tiene virus, es más rápido bueno en aquel tiempo yo no tenía mucha idea, tampoco la tengo ahora, pero bueno ahora un poco más y ese fue el primer motivo porque abandoné Windows. Con el tiempo me dado cuenta ya de otras muchas ventajas que tiene y ya por supuesto cuando entro en CNT pues también lo vi por el lado ético de porque utilizar software libre, de las ventajas que tiene y por la libertad que te da porque al final me he dado cuenta de que no eres esclavo de ninguna empresa sino que tienes la libertad siempre de utilizar Linux y nadie te pide nada a cambio.
+
+** Qué herramientas tecnológicas has incorporado si miras 5 años atrás
+
+*entrevistador*: Vale. ¿Qué herramientas has incorporado si miras 5 años atrás? O sea, antes te estaba preguntando cuáles has dejado de usar, ahora cuales has incorporada, que bueno ya me lo has estado contestando,no? Has cambiado Windows por Linux, no?
+
+** Qué herramientas tecnológicas has incorporado debido a tu activismo político
+
+*entrevistador*: ¿qué herramientas has incorporado debido a tu activismo político?
+*hombre6*: Pues por ejemplo el gimp como herramienta gráfica para diseño de carteles y comunicados, es una buena herramienta. Liberofficce ahora *no se entiende* Y creo que eso básicamente.
+*entrevistador*:Bueno pues ya hemos terminado.
+
+
+
+
+

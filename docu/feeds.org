@@ -1,0 +1,47 @@
+#+TITLE: Tutorial de Feeds
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+La migración de bases de datos de otro cms a Drupal es algo que a día
+de hoy se hace bastante rápido con el módulo feeds.
+
+* Instalación
+
+#+BEGIN_SRC bash
+$ drush dl feeds
+$ drush en feeds_ui feeds_import feeds
+#+END_SRC
+
+* Creación de los CSV
+
+#+BEGIN_SRC bash
+mysql> select id, title, description 
+from posts into outfile '/tmp/lacabaposts.csv' 
+fields terminated by '|' escaped by '\\' lines terminated by '\n';
+
+mysql> select id, title, description, body, start_at, end_at 
+from events into outfile '/tmp/lacabaevents.csv' 
+fields terminated by '|' escaped by '\\' lines terminated by '\n';
+#+END_SRC
+
+* Importar
+
+#+BEGIN_SRC bash
+?q=import/node
+#+END_SRC
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]
+
+

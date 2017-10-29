@@ -1,0 +1,156 @@
+% Created 2015-08-22 sáb 14:27
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[spanish]{babel}
+\author{David Arroyo Menéndez}
+\date{\today}
+\title{Traduciendo Documentación en Texinfo con emacs y po4a}
+\hypersetup{
+ pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.3beta)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Instalación}
+\label{sec-1}
+
+Texinfo es el formato de marcas estándar para documentación de
+GNU. Permite crear manuales en formato pdf, info, html, etc. desde un
+solo fichero fuente .texi con las características avanzadas que
+debería tener un buen manual.
+
+Antes de familiarizarnos con los comandos del proceso de traducción
+instalemos los paquetes debian que vamos a utilizar:
+
+\begin{verbatim}
+apt-get install texlive texinfo texi2html emacs gettext-el po4a
+aspell-es dict dict-freedict-eng-spa dict-freedict-spa-eng
+dictionary-el dict-gcide
+\end{verbatim}
+
+\section{Comandos}
+\label{sec-2}
+
+Si tenemos un fichero texinfo y queremos convertirlo a pdf se puede usar el siguiente comando:
+
+\begin{verbatim}
+texi2pdf myfile.texi
+\end{verbatim}
+
+El problema con texi2pdf es que a veces no ofrece buenos mensajes de depuración, para depurar es mejor hacerlo con:
+
+\begin{verbatim}
+makeinfo myfile.texi
+\end{verbatim}
+
+Además con este comando se crea el fichero .info
+
+Si queremos crear un sitio web con nuestro documento podemos usar:
+
+\begin{verbatim}
+texi2html myfile.texi
+\end{verbatim}
+
+Si se desea traducir el fichero del inglés al español u otras lenguas es posible utilizar gettext gracias a po4a. Siguiendo estos pasos:
+
+\begin{verbatim}
+po4a-gettextize -f texinfo -m myfile.texi -p myfile.pot # Crea un fichero .pot a partir de un .texi
+cp myfile.pot myfile.es.po
+# Se traduce del inglés al español abriendo myfile.es.po con emacs en modo po-mode
+po4a-translate -f texinfo -m myfile.texi -p myfile.es.po -l myfile.es.texi # Creamos myfile.es.texi, el texi traducido
+\end{verbatim}
+
+\section{Actualizando}
+\label{sec-3}
+
+Es probable que con el tiempo salgan nuevas actualizaciones del fichero .texi original, podemos actualizarnos con msgmerge del siguiente modo:
+
+\begin{verbatim}
+po4a-gettextize -f texinfo -m myupdated.texi -p myupdated.pot # Crea el fichero .pot actualizado a partir del nuevo .texi
+msgmerge myold.es.po myupdated.pot > myupdated.es.po
+\end{verbatim}
+
+Las frases en las que haya habido variaciones aparecerán como fuzzy debiendo ser debidamente revisadas.
+
+\section{GNU Emacs}
+\label{sec-4}
+
+Y ahora vemos algo de configuración del .emacs para hacer más fácil y divertida la traducción:
+
+\begin{verbatim}
+;;;; PO-MODE ;;;;
+(require 'po-mode)
+(defun iacute()
+(interactive)
+(insert "@'{@dotless{i}}"))
+;; El atajo C-i insertará i acentuada, a la manera nativa de texinfo
+(define-key po-subedit-mode-map "\C-i" 'iacute)
+
+;; Debe cortar las líneas automáticamente
+(add-hook 'po-subedit-mode-hook 'auto-fill-mode)
+
+;;;; ASPELL ;;;;
+;; Para que avise
+(setq ispell-program-name "aspell"
+ispell-extra-args '("--lang=es"))
+(add-hook 'po-subedit-mode-hook
+(lambda()
+(flyspell-mode 1)))
+
+;;;; Dictionary ;;;;
+(global-set-key "\C-cs" 'dictionary-search)
+(global-set-key "\C-cm" 'dictionary-match-words)
+\end{verbatim}
+\section{Algunos Criterios Personales de Traducción}
+\label{sec-5}
+Estos son algunos buenos acuerdos que sin tratar de ser completos sí
+son útiles para otros hackers con quienes he compartido tiempo traduciendo.
+\subsection{Capitalización}
+\label{sec-5-1}
+En títulos y subtítulos solo aparecerá en mayúscula la primera letra.
+\subsection{Traducción de Código}
+\label{sec-5-2}
+Para evitar problemas, solo se traducirán comentarios y cadenas de
+texto que se deban imprimir por pantalla. No variables, ni funciones.
+\subsection{Impersonal}
+\label{sec-5-3}
+Las frases se escribirán de manera impersonal. Es decir, no se dirá
+"prueba este código", sino "se va a probar este código"
+\subsection{Una palabra dos idiomas}
+\label{sec-5-4}
+A veces ayuda a la comprensión lectora el aparte de traducir la
+palabra dejarla en el idioma original. En este caso se dejará con la
+etiqueta texi @samp.
+
+\section{Licencia}
+\label{sec-6}
+Copyright (C) 2015  David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en \href{https://www.gnu.org/copyleft/fdl.html}{GNU Free Documentation License}.
+
+\href{https://www.gnu.org/copyleft/fdl.html}{\includegraphics[width=.9\linewidth]{https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png}}
+% Emacs 24.3.1 (Org mode 8.3beta)
+\end{document}

@@ -1,0 +1,287 @@
+#+TITLE: Aumenta tu Productividad con GNU/Emacs
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML: '<div class="title"><p>¿Te gusta el artículo?</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="NCGZ9KGTSL4UU"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1"></form></div>'
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+
+[[file:///home/davidam/public_html/index.html][Volver a davidam.com]]
+
+* Introducción
+
+La primera herramienta que basa su desarrollo en compartir código
+dentro de una comunidad, sigue teniendo una comunidad fuerte que lleva
+el uso de este editor hasta límites insospechados. En un momento en el
+que se mueven cifras millonarias alrededor del Software Libre, este
+editor se sigue manteniendo por aportaciones desinteresadas, ó más
+bien interesadas en cuestiones culturales y, de productividad personal
+y profesional. Así mismo, la historia de GNU Emacs es la historia de
+los hackers de la IA, de Lisp y de la investigación, pero también es
+usado en entornos donde se busca la rentabilidad económica.
+
+En este artículo vislumbraremos cómo ser productivo con GNU Emacs,
+tanto en tareas exclusivas de programación, de uso general del editor
+y, casi cualquier tarea que se necesite hacer delante de un ordenador.
+
+* Conceptos Generales de Uso del Editor
+
+Antes de ahondar en temas más avanzados abramos un emacs y aprendamos
+a diferenciar window, buffer, mini-buffer, puntero y marca.
+
+*Buffer*: Podemos decir que un buffer es una lupa a un fichero
+emacs. Desde un mismo buffer podemos diferenciar una parte de un solo
+fichero. Desde distintos buffers podemos ver uno ó varios
+ficheros. Desde un buffer se muestra contenido para ser editado, si
+bien también tenemos buffers de solo lectura.
+
+*Window*: El concepto de ventana en emacs es similar al mismo en otros
+entornos. Esto es, un elemento de información que es gestionada por un
+gestor de ventanas. Un proceso puede tener asociado a un numero n de
+ventanas y buffers.
+
+*Mini-buffer*: Es el lugar donde se envían comandos al editor y se sitúa
+en el pie de la ventana (window).
+
+*Puntero*: Es un diminuto rectángulo parpadeando que se sitúa donde
+estás escribiendo.
+
+*Marca*: A veces, es necesario dejar una marca con C-SPACE para cortar,
+copiar, o invocar una función en una determinada región.
+
+* Productividad con GNU/Emacs
+
+En esta sección se mostrarán algunas características para volverte
+productivo usando GNU Emacs. Debemos pensar que un programador pasa
+muchas horas delante de un editor de textos, tener un solo editor que
+te libere de tareas monótonas es claramente beneficioso.
+
+Si nunca has usado Emacs lo primero que tendrás que empezar a aprender
+serán atajos de teclado, ¿has probado a bajarte un quicksheet?. Si ya
+conoces atajos de teclado de bash, prueba con esos y si no puedes
+hazlo al revés. En cualquier caso con C-h t abres un tutorial con el
+que te divertiras aprendiendo atajos comunes
+
+* Modos
+
+Una de las características que hacen a Emacs interesante es que hay
+modos para casi cualquier lenguaje de programación por raro que éste
+sea. Esto es, colorines, atajos de teclado, plantillas, etc. De este
+modo, sabiendo usar de manera eficaz el editor y sabiendo programar
+puedes programa muy rápido en cualquier lenguaje. Hay otros
+programadores que prefieren aprender un entorno en función del
+lenguaje que vayan a usar …
+
+Con M-x sql-mode, por ejemplo, estaríamos invocando al modo sql, si no
+nos gusta el modo en el que nos toca programar podemos volver a
+fundamental-mode que es el modo que nos permite escribir texto de la
+manera más simple posible.
+
+Para conocer los atajos del modo mayores en el que se está se puede
+utilizar C-h m y para conocer atajos disponibles en ese momento C-h
+b. Esto es distinto debido a que aparte de modos mayores hay modos
+menores, la diferencia estriba en que un modo mayor se adapta a la
+tarea general que estás desarrollando mientras que un modo menor se
+adapta a una tarea específica dentro de la tarea general. Por ejemplo,
+si estamos escribiendo un programa en c, podemos usar c-mode, pero
+dentro de los comentarios podría
+
+Si bien la instalación de nuevos modos no es difícil y, hay paquetería
+de éstos para muchas distribuciones, también existe una manera
+estándar de instalar paquetes en GNU Emacs llamada ELPA
+
+* Variables
+
+Lo primero que se hace cuando te enfrentas a una nueva herramienta, ya
+sea un editor de textos, un servidor o cliente de correo, jabber, ó lo
+que sea es hacer pequeñas personalizaciones. Esto en emacs suele ser
+equivalente a asignar un valor a una variable. Veamos algunas
+personalizaciones simples que pueden ser añadidas a un .emacs:
+
+#+BEGIN_SRC emacs-lisp
+;;; quitar la barra de navegación
+
+(tool-bar-mode nil)
+
+;;; introducir colorines
+
+(global-font-lock-mode)
+#+END_SRC
+
+C-h v describe el valor de una variable dada. Una variable interesante
+es auto-mode-alist esta variable nos dice que modos están asociados a
+que extensiones de ficheros, así si queremos asociar ficheros html a
+html-helper-mode podemos hacer lo siguiente:
+
+#+BEGIN_SRC emacs-lisp
+(setq auto-mode-alist (cons '("\\.htm$" . html-helper-mode) auto-mode-alist))
+#+END_SRC
+
+* Macros
+
+Si hacemos una tarea de manera repetitiva (ir al comienzo de un
+párrafo, cortar la primera palabra, pegarlo al final del párrafo, ir
+al siguiente párrafo, …), nos puede resultar interesante grabarlo para
+llamar a esa tarea con un atajo de teclado. La manera de hacer esto es
+comenzar a grabar con C-(, después ejecutas las acciones: (ir al
+comienzo de un párrafo, cortar la primera palabra, ir al final del
+párrafo y pegarlo) y paras la grabación. Cuando quieras utilizarlo
+puedes llamarlo con C-x e, por ejemplo, desde el siguiente párrafo
+donde quieres introducir la acción.
+
+* Funciones
+
+Si tenemos una macro que queremos seguir utilizando en futuras
+sesiones de emacs, lo más cómodo es guardarlo como una función y
+añadirla a tu .emacs.
+
+Algo similar a lo que se ha explicado en la sección de macros sería
+decidir que lo que se acaba de escribir es un subtítulo en formato
+emacswiki, para ello se puede recurrir a la siguiente función:
+
+#+BEGIN_SRC emacs-lisp
+(defun subtitle()
+  (interactive)
+  (beginning-of-line)
+  (insert "==")
+  (end-of-line)
+  (insert "==")
+  (forward-line 1))
+#+END_SRC
+
+Para ejecutar la función se podría llamar a M-x subtitle. Después
+puede resultar interesante asociar un atajo de teclado con el
+siguiente código:
+
+#+BEGIN_SRC emacs-lisp
+(global-set-key "\C-c\st" 'subtitle)
+#+END_SRC
+
+También es posible ir desde el atajo de teclado a la función C-h k y
+de la función al código fuente C-h f.
+
+* Expresiones Regulares
+
+Emacs también tiene un buen soporte para expresiones regulares, como
+muchos otro editores. Para usarlos mientras estamos escribiendo y
+queremos buscar haciendo uso de expresiones regulares se puede usar
+isearch-forward-regexp (C-M s), o reemplazar con query-replace-regexp
+(C-M %).
+
+Puede utilizar las funciones antes mencionadas para actuar sobre
+buffers, pero para actuar sobre cadenas también puede utilizar
+replace-regexp-in-string. Ejemplo de uso: (replace-regexp-in-string
+“foo*” “fu” “Fight foo for food!)”
+
+* Autoinsert
+
+Con autoinsert al abrir un fichero de una determinada extensión
+incluiremos algún texto en dicho fichero. Por ejemplo:
+
+#+BEGIN_SRC emacs-lisp
+(require 'autoinsert)
+    (auto-insert-mode)  ;;; Adds hook to find-files-hook
+    (setq auto-insert-directory "~/.mytemplates/") 
+    (setq auto-insert-query nil) 
+    (define-auto-insert "\.txt" "txttemplate")
+#+END_SRC
+
+Así, estamos insertando el contenido de txttemplate al abrir un
+fichero de extensión .txt. También es posible usar autoinsert en
+combinación con skeleton. Esto evita el tedioso trabajo de añadir nota
+de copyright, librerías a cargar u otras líneas que suelen cambiar
+poco mientra se programa.
+
+* Skeleton
+
+La finalidad de skeleton es dar unas plantillas para las que solo hay
+que rellenar algún dato. Por ejemplo,
+
+#+BEGIN_SRC emacs-lisp
+(define-skeleton primitiva
+  "Declare a primitive function and an example to use it."
+  nil
+  (read-string "Nombre de la Primitiva Lisp: ")
+  ": "
+  (read-string " Descripción de la Primitiva Lisp: ") \n
+  "Ejemplo de Uso: ")
+#+END_SRC
+
+Este código no es más que un formulario para ir haciendo una chuleta
+de primitivas lisp y, así vamos poniendo el nombre de la primitiva, la
+descripción y un ejemplo de uso. Una vez que está cargado y/o añadido
+a nuestro .emacs se llama con M-x primitiva.
+
+* Abbrevs
+
+En ocasiones, resulta útil construir alguna abreviación que por larga
+resulta molesta de escribir entera. Ésta es la utilidad de
+abbrev. Veamos como se define una tabla de abbrevs:
+
+#+BEGIN_SRC emacs-lisp
+(setq-default abbrev-mode t)
+(define-abbrev-table 'text-mode-abbrev-table '(
+    ("foriter" "" java-iter-skeleton 0)
+    ("iternext" "" java-iter-next-skeleton 0)
+    ;; ...
+    ("logdebug"
+     "org.apache.log4j.Logger.getLogger(getClass().getName()).debug()"
+      nil 1)
+    ;; ...
+    ("ctc" "true" nil 1)
+    ("cfc" "false" nil 1)
+    ("cnc" "null" nil 1)
+    ("á" "á" nil 1)
+    ))
+#+END_SRC
+
+A la izquierda de la tabla encontramos las abreviaturas y a la derecha
+el texto o función al que estamos llamando. Una vez cargado en el
+emacs el texto abreviado con C-x a e se expande el texto, también
+podemos expandir una región con M-x expand-region-abbrevs.
+
+* Funciones que llaman a comandos unix
+
+En otras ocasiones nos interesa que el poder de la conocida línea de
+comandos llegue hasta nuestro emacs, podemos ver un par de ejemplos
+para entender a qué nos referimos
+
+#+BEGIN_SRC emacs-lisp
+(defun insert-output (command)
+   (interactive "sCommand: ")
+   (insert (shell-command-to-string command)))
+
+ (defun output-to-buffer (buffer command)
+   (interactive "sBuffer name: \nsCommand: ")
+   (get-buffer-create buffer)
+   (call-process command nil buffer)
+   (switch-to-buffer (get-buffer buffer)))
+#+END_SRC
+
+En ambos ejemplos podemos insertar la salida de un proceso dentro de
+nuestro buffer. Hay otras maneras de interactuar con unix desde emacs
+como M-x shell ó M-x ansi-term o M-!, y así evitamos salir de emacs,
+pero así no extendemos nuestro emacs.
+
+* Conclusión
+
+Emacs tiene poderosos y simples mecanismos de extensibilidad que hacen
+que tu editor se comporte tal y como tu quieres realmente. En este
+artículo, solo hemos visto unas pocas herramientas, sin embargo,
+quedaría mucho por aprender. Así mismo, tiene una comunidad fuerte:
+listas, irc, manuales, … que sigue creciendo según pasan los
+años. Así, las posibilidades de Emacs son tan sorprendentes, útiles y
+divertidas que es interesante en invertir algún tiempo en usarlo para
+siempre.
+
+* Referencias
+
++ [[www.gnu.org/software/emacs/][Página Oficial de GNU Emacs]]
++ [[http://www.gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html][An Introduction to Programming in Emacs Lisp]]
++ [[http://www.gnu.org/software/emacs/emacs-faq.text][Emacs FAQ]]
++ [[http://www.emacswiki.org/][Emacs Wiki]]
+
+* Licencia
+Este documento está bajo la [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]]
+
+[[file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]
+

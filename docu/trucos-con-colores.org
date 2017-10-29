@@ -1,0 +1,7 @@
+
+
+Cambiar el puntero de color
+emacs -ms coral -cr 'slate blue' &
+
+M-x list-colors-display
+

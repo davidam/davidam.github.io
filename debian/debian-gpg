@@ -1,0 +1,13 @@
+# If you are seeing ...
+
+Reading package lists... Done
+W: GPG error: http://security.debian.org stable/updates Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A70DAF536070D3A1
+W: GPG error: http://http.us.debian.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A70DAF536070D3A1 NO_PUBKEY B5D0C804ADB11277
+W: You may want to run apt-get update to correct these problems
+
+# You can try
+
+debian:~# gpg --keyserver pgp.rediris.es --recv-keys A70DAF536070D3A1
+debian:~# gpg --keyserver pgp.rediris.es --recv-keys B5D0C804ADB11277
+debian:~# gpg --armor --export A70DAF536070D3A1 | sudo apt-key add -
+debian:~# gpg --armor --export B5D0C804ADB11277 | sudo apt-key add -

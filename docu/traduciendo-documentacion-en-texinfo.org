@@ -1,0 +1,128 @@
+#+TITLE: Traduciendo Documentación en Texinfo con emacs y po4a
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+
+* Instalación
+
+Texinfo es el formato de marcas estándar para documentación de
+GNU. Permite crear manuales en formato pdf, info, html, etc. desde un
+solo fichero fuente .texi con las características avanzadas que
+debería tener un buen manual.
+
+Antes de familiarizarnos con los comandos del proceso de traducción
+instalemos los paquetes debian que vamos a utilizar:
+
+#+BEGIN_SRC bash
+  apt-get install texlive texinfo texi2html emacs gettext-el po4a
+  aspell-es dict dict-freedict-eng-spa dict-freedict-spa-eng
+  dictionary-el dict-gcide
+#+END_SRC
+
+* Comandos
+
+Si tenemos un fichero texinfo y queremos convertirlo a pdf se puede
+usar el siguiente comando:
+
+#+BEGIN_SRC bash
+texi2pdf myfile.texi
+#+END_SRC
+
+El problema con texi2pdf es que a veces no ofrece buenos mensajes de
+depuración, para depurar es mejor hacerlo con:
+
+#+BEGIN_SRC bash
+makeinfo myfile.texi
+#+END_SRC
+
+Además con este comando se crea el fichero .info
+
+Si queremos crear un sitio web con nuestro documento podemos usar:
+
+#+BEGIN_SRC bash
+texi2html myfile.texi
+#+END_SRC
+
+Si se desea traducir el fichero del inglés al español u otras lenguas
+es posible utilizar gettext gracias a po4a. Siguiendo estos pasos:
+
+#+BEGIN_SRC bash
+# Crea un fichero .pot a partir de un .texi
+po4a-gettextize -f texinfo -m myfile.texi -p myfile.pot 
+
+# Se traduce del inglés al español abriendo myfile.es.po con emacs en modo po-mode
+cp myfile.pot myfile.es.po
+# Creamos myfile.es.texi, el texi traducido
+po4a-translate -f texinfo -m myfile.texi -p myfile.es.po -l myfile.es.texi 
+#+END_SRC
+
+* Actualizando
+
+Es probable que con el tiempo salgan nuevas actualizaciones del
+fichero .texi original, podemos actualizarnos con msgmerge del
+siguiente modo:
+
+#+BEGIN_SRC bash
+# Crea el fichero .pot actualizado a partir del nuevo .texi
+po4a-gettextize -f texinfo -m myupdated.texi -p myupdated.pot 
+msgmerge myold.es.po myupdated.pot > myupdated.es.po
+#+END_SRC
+
+Las frases en las que haya habido variaciones aparecerán como fuzzy
+debiendo ser debidamente revisadas.
+
+* GNU Emacs
+
+Y ahora vemos algo de configuración del .emacs para hacer más fácil y divertida la traducción:
+
+#+BEGIN_SRC emacs-lisp
+;;;; PO-MODE ;;;;
+(require 'po-mode)
+(defun iacute()
+(interactive)
+(insert "@'{@dotless{i}}"))
+;; El atajo C-i insertará i acentuada, a la manera nativa de texinfo
+(define-key po-subedit-mode-map "\C-i" 'iacute)
+
+;; Debe cortar las líneas automáticamente
+(add-hook 'po-subedit-mode-hook 'auto-fill-mode)
+
+;;;; ASPELL ;;;;
+;; Para que avise
+(setq ispell-program-name "aspell"
+ispell-extra-args '("--lang=es"))
+(add-hook 'po-subedit-mode-hook
+(lambda()
+(flyspell-mode 1)))
+
+;;;; Dictionary ;;;;
+(global-set-key "\C-cs" 'dictionary-search)
+(global-set-key "\C-cm" 'dictionary-match-words)
+#+END_SRC
+* Algunos Criterios Personales de Traducción
+Estos son algunos buenos acuerdos que sin tratar de ser completos sí
+son útiles para otros hackers con quienes he compartido tiempo traduciendo.
+** Capitalización
+En títulos y subtítulos solo aparecerá en mayúscula la primera letra.
+** Traducción de Código
+Para evitar problemas, solo se traducirán comentarios y cadenas de
+texto que se deban imprimir por pantalla. No variables, ni funciones.
+** Impersonal
+Las frases se escribirán de manera impersonal. Es decir, no se dirá
+"prueba este código", sino "se va a probar este código"
+** Una palabra dos idiomas
+A veces ayuda a la comprensión lectora el aparte de traducir la
+palabra dejarla en el idioma original. En este caso se dejará con la
+etiqueta texi @samp.
+
+* Licencia
+Copyright (C) 2015  David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

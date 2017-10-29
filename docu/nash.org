@@ -1,0 +1,266 @@
+#+TITLE: Games Theory
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Come back to davidam.com]]
+
+* Introduction
+
+This article intends explain with emacs lisp examples the basis of the
+game theory.
+
+In the games theory the economical agents has strategies and each
+agent earns something depending of his own strategy and the strategy
+of the adversary. 
+
+For instance, the game of stone, paper and scissor. There are two
+players. Paper wins versus stone, scissor versus paper, and stone
+versus scissor. We can represent this game with the next list.
+
+#+BEGIN_SRC lisp
+;;                               PLAYER 1            PLAYER 2
+;;                         Stone  Paper  Scissor
+(setq stonePaperScissor '(
+                          ((0 0)  (1 -1) (-1 1))     ;; Stone
+			  ((-1 1) (0 0)  (1 -1))     ;; Paper
+                          ((1 -1) (-1 1) (0 0))))    ;; Scissor
+#+END_SRC
+
+We can write a function to know who wins with a specific strategy in
+any game:
+
+#+BEGIN_SRC lisp
+(defun profit (i j player game)
+  (interactive)
+  (elt (elt (elt game i) j) player))
+#+END_SRC
+
+In stone, paper and scissor, if i=0 and j=0 and player=0, we want know
+how many earns the player 1 if both players chose stone. So, we have
+coded stone=0, paper=1 and scissor=2 in our game. We can execute it:
+
+#+BEGIN_SRC lisp
+(profit 0 0 0 stonePaperScissor)
+#+END_SRC
+
+* Equilibrium Concept
+
+Players with strategies, such as no player has incentives to change
+the strategy. In stone, paper and scissor, change the strategy is
+change from stone to scissor, for instance. 
+
+We can represent the calculus if is profitable change of strategy for
+a player in a specific position with the function equilibrium:
+
+#+BEGIN_SRC lisp
+(defun equilibrium (i j player game)
+  (interactive)
+  ;; corners in the matrix
+  (cond 
+    ((and (= i 0) (= j 0))
+     (and (>= 0 (- (profit (+ i 1) j player game)
+                 (profit i j player game)))
+	 (>= 0 (- (profit i (+ j 1) player game)
+                 (profit i j player game)))))
+    ((and (= i (- (length game) 1)) (= j 0))
+     (and (>= 0 (- (profit (- i 1) j player game)
+                 (profit i j player game)))
+	 (>= 0 (- (profit i (+ j 1) player game)
+                 (profit i j player game)))))
+    ((and (= i 0) (= j (- (length game) 1)))
+     (and (>= 0 (- (profit (+ i 1) j player game)
+                 (profit i j player game)))
+	 (>= 0 (- (profit i (- j 1) player game)
+                 (profit i j player game)))))
+    ((and (= i (- (length game) 1)) (= j (- (length game) 1)))
+     (and (>= 0 (- (profit (- i 1) j player game)
+                 (profit i j player game)))
+	 (>= 0 (- (profit i (- j 1) player game)
+                 (profit i j player game)))))
+    ;; awns 
+    ((and (= i 0) (> j 0) (not (= j (- (length game) 1))))  ;; left
+     (and (>= 0 (- (profit (+ i 1) j player game)
+                 (profit i j player game)))
+	 (>= 0 (- (profit i (- j 1) player game)
+                 (profit i j player game)))
+	 (>= 0 (- (profit i (+ j 1) player game)
+                 (profit i j player game)))))
+    ((and (= i (- (length game) 1)) (> j 0) (not (= j (- (length game) 1)))) ;; right
+     (and (>= 0 (- (profit (- i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit i (- j 1) player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit i (+ j 1) player game)
+		 (profit i j player game)))))
+    ((and (= j 0) (> i 0) (not (= i (- (length game) 1)))) ;; down
+     (and (>= 0 (- (profit (+ i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit (- i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit i (+ j 1) player game)
+		 (profit i j player game)))))
+    ((and (= j (- (length (elt game 0)) 1)) (> i 0) (not (= i (- (length game) 1)))) ;; up
+     (and (>= 0 (- (profit (+ i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit (- i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit i (- j 1) player game)
+		 (profit i j player game)))))
+;; rest
+    ((and (> j 0) (> i 0) (not (= i (- (length game) 1))) (not (= j (- (length game) 1)))) ;; left
+     (and (>= 0 (- (profit (+ i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit (- i 1) j player game)
+		 (profit i j player game)))
+	 (>= 0 (- (profit i (+ j 1) player game)
+		 (profit i j player game)))
+         (>= 0 (- (profit i (- j 1) player game)
+		 (profit i j player game)))))
+))
+
+;; (equilibrium 0 1 0 stonePaperScissor) OK Equilibrio
+;; (equilibrium 0 2 1 stonePaperScissor) OK Equilibrio
+;; (equilibrium 1 0 1 stonePaperScissor) OK Equilibrio  
+;; (equilibrium 1 2 0 stonePaperScissor) OK Equilibrio
+;; (equilibrium 2 0 0 stonePaperScissor) OK Equilibrio 
+;; (equilibrium 2 1 1 stonePaperScissor) OK Equilibrio
+#+END_SRC
+
+In (0, 1), the player J1 has not incentive to change if the oponent
+maintains the strategy (he earns 0 with (0, 0) or (1, 0) and -1 with
+(2, 0). In this situation, we say there are an equilibrium in (0, 1)
+for the player 1.
+
+* Non Cooperative Games
+
+A game is cooperative if the players are able to form binding
+commitments. For instance, the legal system requires them to adhere to
+their promises. In noncooperative games, this is not possible.
+
+To understand the equilibrium concept and some application of the
+games theory, we can expose some classical cooperative games
+
+In this games, we can ponderate some preferences to change the scenario:
+
+R = Reward
+T = Temptation
+P = Penalization
+S = Sucker
+
+If both player are cooperating, both obtain a reward. If one player
+decides traitionate to the another one, he has a temptation if wins,
+and a penalization if he fails. A player sucker is a player who has
+been traitionated.
+
+| Order of preferences | Game               |
+| T > R > P > S        | Prisoner's Dilemma |
+| R > T > P > S        | Security           |
+| T > R > S > P        | Chiken             |
+| R > T > S > P        | Privileged         |
+
+** Priviliged Game
+
+This game is the best game to the cooperation between the
+examples. Take a look to the table:
+
+|    |    C   |     D  |
+| C  | (3, 3) | (1, 2) |
+| D  | (2, 1) | (0, 0) |
+
+If both are cooperating the earning is strong, who wins defraudin is
+not winning too much, and if both defrauds the punishing is strong.
+
+#+BEGIN_SRC lisp
+(setq priviliged '( ;; Cooperate  Defraud
+                       ((3 3)     (1 2))    ;; Cooperation
+		       ((2 1)     (0 0))    ;; Defraud
+                       ))
+;; (elt (first (first priviliged)) 0)
+;; (equilibrium 0 0 0 priviliged) OK Equilibrium
+;; (equilibrium 0 0 1 priviliged) OK Equilibrium
+
+#+END_SRC
+
+The equilibrium is in (C, C).
+
+** Prisioner's Dilemma 
+
+This game is the opposite, where the cooperation is the worst
+strategy.
+
+|   | C      | D      |
+| C | (2, 2) | (0, 3) |
+| D | (3, 0) | (1, 1) |
+
+Really, if both defrauds both is earning a little bit, the worst
+punishing is when one player wants cooperate and the another one wants
+to defraud.
+
+#+BEGIN_SRC lisp
+(setq prisioner '( ;; Cooperate  Defraud
+                       ((2 2)     (0 3))    ;; Cooperation
+		       ((3 0)     (1 1))    ;; Defraud
+                       ))
+
+;; (equilibrium 1 0 0 prisioner) OK Equilibrium
+;; (equilibrium 0 1 1 prisioner) OK Equilibrium
+#+END_SRC
+
+The equilibrium is in (C, C).
+
+** Security Game
+
+In this game the best strategy is the imitation, if the opponent is
+cooperative, you can cooperate, and if the opponent is a fraud, you
+must be a fraud.
+
+|   | C      | D      |
+| C | (3, 3) | (0, 2) |
+| D | (2, 0) | (1, 1) |
+
+#+BEGIN_SRC lisp
+(setq security '( ;; Cooperate  Defraud
+                       ((3 3)     (0 2))    ;; Cooperation
+		       ((2 0)     (1 1))    ;; Defraud
+                       ))
+
+;; (equilibrium 0 0 0 security) OK Equilibrium
+;; (equilibrium 0 0 1 security) OK Equilibrium
+#+END_SRC
+
+The equilibrium is in (C, C) for both players.
+
+** Chicken Game
+
+In this game is a good strategy cooperate, but the best option is to
+be a fraud if the another player is a cooperative player.
+
+|   | C      | D      |
+| C | (2, 2) | (1, 3) |
+| D | (3, 1) | (0, 0) |
+  
+#+BEGIN_SRC lisp
+(setq chicken '( ;; Cooperate  Defraud
+                       ((2 2)     (1 3))    ;; Cooperation
+		       ((3 1)     (0 0))    ;; Defraud
+                       ))
+
+;; (equilibrium 0 1 1 chicken) OK Equilibrium
+;; (equilibrium 1 0 0 chicken) OK Equilibrium
+#+END_SRC
+
+The equilibrium is in (C, D) for player 2 and (D, C) for player 1.
+
+
+* Bibliography
+
++ Sánchez-Cuenca, I. (2009). "/Teoría de Juegos/" Centro de Investigaciones Sociológicas. 
+
+* Code
++ Version ruby of this tutorial
+* License
+This document is under a [[http://creativecommons.org/licenses/by/3.0/en/deed.en][Creative Commons Attribution 3.0]]
+
+[[http://creativecommons.org/licenses/by/3.0/en/deed.en][file:../img/licenses/by/3.0/80x15.png]]

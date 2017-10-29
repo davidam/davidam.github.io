@@ -1,0 +1,11 @@
+
+= CONFIGURAR LA RED WIFI DESDE LÍNEA DE COMANDOS =
+
+
+iwconfig: detecta interfaces wireless
+
+iwlist wlan0_rename sxs: detecta redes wireless
+
+iwconfig wlan0_rename essid emacswifi: asocia interfaz de red a red wifi
+
+dhclient wlan0_rename: consigue IP

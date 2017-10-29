@@ -1,0 +1,106 @@
+@unnchapentry{Una Introducci@'on a GCC}{10001}{Top}{1}
+@unnchapentry{Prefacio}{10002}{Prefacio}{3}
+@numchapentry{Introducci@'on}{1}{Introducci@'on}{5}
+@numsecentry{Una breve historia de GCC}{1.1}{Una breve historia de GCC}{5}
+@numsecentry{Importantes caracter@'{@dotless {i}}sticas de GCC}{1.2}{Importantes caracter@'{@dotless {i}}sticas de GCC}{6}
+@numsecentry{Programaci@'on en C y C++}{1.3}{Programaci@'on en C y C++}{7}
+@numsecentry{Convenciones usadas en este manual}{1.4}{Convenciones usadas en este manual}{7}
+@numchapentry{Compilando un programa C}{2}{Compilando un programa C}{9}
+@numsecentry{Compilando un peque@~no programa C}{2.1}{Compilando un peque@~no programa C}{9}
+@numsecentry{Encontrando errores en un peque@~no programa}{2.2}{Encontrando errores en un peque@~no programa}{10}
+@numsecentry{Compilando m@'ultiples archivos fuentes}{2.3}{Compilando m@'ultiples archivos fuentes}{11}
+@numsecentry{Compilando archivos independientes}{2.4}{Compilando archivos independientes}{13}
+@numsubsecentry{Creando archivos objeto desde archivos fuente}{2.4.1}{Creando archivos objeto desde archivos fuente}{13}
+@numsubsecentry{Creando ejecutables desde archivos objeto}{2.4.2}{Creando ejecutables desde archivos objeto}{14}
+@numsecentry{Recompilando y reenlazando}{2.5}{Recompilando y reenlazando}{15}
+@numsecentry{Un peque@~no makefile}{2.6}{Un peque@~no makefile}{16}
+@numsecentry{Enlazando con librer@'{@dotless {i}}as externas}{2.7}{Enlazando con librer@'{@dotless {i}}as externas}{18}
+@numsubsecentry{Orden de enlace de librer@'{@dotless {i}}as}{2.7.1}{Orden de enlace de librer@'{@dotless {i}}as}{20}
+@numsecentry{Usando librer@'{@dotless {i}}as de archivos de cabeceras}{2.8}{Usando librer@'{@dotless {i}}as de archivos de cabeceras}{21}
+@numchapentry{Opciones de compilaci@'on}{3}{Opciones de compilaci@'on}{23}
+@numsecentry{Asignando rutas de b@'usqueda}{3.1}{Asignando rutas de b@'usqueda}{23}
+@numsubsecentry{Ejemplo de ruta de b@'usqueda}{3.1.1}{Ejemplo de ruta de b@'usqueda}{24}
+@numsubsecentry{Variables de entorno}{3.1.2}{Variables de entorno}{26}
+@numsubsecentry{Rutas de b@'usqueda extendidas}{3.1.3}{Rutas de b@'usqueda extendidas}{27}
+@numsecentry{Librer@'{@dotless {i}}as compartidas y librer@'{@dotless {i}}as est@'aticas}{3.2}{Librer@'{@dotless {i}}as compartidas y librer@'{@dotless {i}}as est@'aticas}{28}
+@numsecentry{Est@'andares del lenguaje C}{3.3}{Est@'andares del lenguaje C}{31}
+@numsubsecentry{ANSI/ISO}{3.3.1}{ANSI/ISO}{31}
+@numsubsecentry{ANSI/ISO estricto}{3.3.2}{ANSI/ISO estricto}{33}
+@numsubsecentry{Seleccionando est@'andares espec@'{@dotless {i}}ficos}{3.3.3}{Seleccionando est@'andares espec@'{@dotless {i}}ficos}{34}
+@numsecentry{Opciones de aviso en @code {-Wall}}{3.4}{Opciones de aviso en -Wall}{35}
+@numsecentry{Opciones de aviso adicionales}{3.5}{Opciones de aviso adicionales}{37}
+@numsecentry{Opciones de aviso recomendadas}{3.6}{Opciones de aviso recomendadas}{41}
+@numchapentry{Usando el preprocesador}{4}{Usando el preprocesador}{43}
+@numsecentry{Definiendo macros}{4.1}{Definiendo macros}{43}
+@numsecentry{Macros con valor}{4.2}{Macros con valor}{44}
+@numsecentry{Preprocesando archivos fuentes}{4.3}{Preprocesando archivos fuentes}{46}
+@numchapentry{Compilando para depuraci@'on}{5}{Compilando para depuraci@'on}{49}
+@numsecentry{Examinando archivos core}{5.1}{Examinando archivos core}{49}
+@numsecentry{Mostrando un rastreo}{5.2}{Mostrando un rastreo}{52}
+@numsecentry{Poniendo un punto de ruptura}{5.3}{Poniendo un punto de ruptura}{53}
+@numsecentry{Paso a paso a trav@'es de un programa}{5.4}{Paso a paso a trav@'es de un programa}{53}
+@numsecentry{Modificando variables}{5.5}{Modificando variables}{54}
+@numsecentry{Continuando la ejecuci@'on}{5.6}{Continuando la ejecuci@'on}{54}
+@numsecentry{M@'as informaci@'on}{5.7}{M@'as informaci@'on de GDB}{55}
+@numchapentry{Compilando con optimizaci@'on}{6}{Compilando con optimizaci@'on}{57}
+@numsecentry{Optimizaci@'on a nivel de fuentes}{6.1}{Optimizaci@'on a nivel de fuentes}{57}
+@numsubsecentry{Eliminaci@'on de subexpresi@'on com@'un}{6.1.1}{}{57}
+@numsubsecentry{Expansi@'on de funci@'on en l@'{@dotless {i}}nea}{6.1.2}{}{58}
+@numsecentry{Dilema velocidad-espacio}{6.2}{Dilema velocidad-espacio}{60}
+@numsubsecentry{Desenrollado de bucle}{6.2.1}{}{60}
+@numsecentry{Planificaci@'on}{6.3}{Planificaci@'on}{61}
+@numsecentry{Niveles de optimizaci@'on}{6.4}{Niveles de optimizaci@'on}{62}
+@numsecentry{Ejemplos}{6.5}{Ejemplos de optimizaci@'on}{63}
+@numsecentry{Optimizaci@'on y depuraci@'on}{6.6}{Optimizaci@'on y depuraci@'on}{66}
+@numsecentry{Optimizaci@'on y avisos del compilador}{6.7}{Optimizaci@'on y avisos del compilador}{66}
+@numchapentry{Compilando un programa C++}{7}{Compilando un programa C++}{69}
+@numsecentry{Compilando un peque@~no programa C++}{7.1}{Compilando un peque@~no programa C++}{69}
+@numsecentry{Opciones de compilaci@'on en C++}{7.2}{Opciones de compilaci@'on en C++}{71}
+@numsecentry{Usando la librer@'{@dotless {i}}a est@'andar de C++}{7.3}{Usando la librer@'{@dotless {i}}a est@'andar de C++}{72}
+@numsecentry{Plantillas}{7.4}{Plantillas}{72}
+@numsubsecentry{Usando plantillas de librer@'{@dotless {i}}as est@'andar de C++}{7.4.1}{Usando plantillas de librer@'{@dotless {i}}as est@'andar de C++}{73}
+@numsubsecentry{Proporcionando sus propias plantillas}{7.4.2}{Proporcionando sus propias plantillas}{74}
+@numsubsecentry{Instanciaci@'on expl@'{@dotless {i}}cita de plantillas}{7.4.3}{Instanciaci@'on expl@'{@dotless {i}}cita de plantillas}{76}
+@numsubsecentry{La palabra reservada @code {export}}{7.4.4}{La palabra reservada export}{77}
+@numchapentry{Opciones espec@'{@dotless {i}}ficas de plataforma}{8}{Opciones espec@'{@dotless {i}}ficas de plataforma}{79}
+@numsecentry{Opciones para Intel y AMD x86}{8.1}{Opciones para Intel y AMD x86}{79}
+@numsubsecentry{Extensiones x86}{8.1.1}{Extensiones x86}{80}
+@numsubsecentry{Procesadores x86 de 64 bits}{8.1.2}{Procesadores x86 de 64 bits}{81}
+@numsecentry{Opciones para DEC Alpha}{8.2}{Opciones para DEC Alpha}{81}
+@numsecentry{Opciones para SPARC}{8.3}{Opciones para SPARC}{83}
+@numsecentry{Opciones para POWER/PowerPC}{8.4}{Opciones para POWER/PowerPC}{83}
+@numsecentry{Soporte de m@'ultiples arquitecturas}{8.5}{Soporte de m@'ultiples arquitecturas}{84}
+@numsecentry{Usos de coma flotante}{8.6}{Usos de coma flotante}{84}
+@numsecentry{Portabilidad de los tipos con signo y sin signo}{8.7}{Portabilidad de los tipos con signo y sin signo}{87}
+@numchapentry{Resoluci@'on de problemas}{9}{Resoluci@'on de problemas}{91}
+@numsecentry{Opciones de ayuda en l@'{@dotless {i}}nea de comandos}{9.1}{Opciones de ayuda en l@'{@dotless {i}}nea de comandos}{91}
+@numsecentry{N@'umeros de versi@'on}{9.2}{N@'umeros de versi@'on}{91}
+@numsecentry{Compilaci@'on verbosa}{9.3}{Compilaci@'on verbosa}{92}
+@numsecentry{Parando un programa en un bucle infinito}{9.4}{Parando un programa en un bucle infinito}{95}
+@numsecentry{Previniendo un uso excesivo de memoria}{9.5}{Previniendo un uso excesivo de memoria}{97}
+@numchapentry{Utilidades relativas al compilador}{10}{Utilidades relativas al compilador}{99}
+@numsecentry{Creando una librer@'{@dotless {i}}a con el archivador de GNU}{10.1}{Creando una librer@'{@dotless {i}}a con el archivador de GNU}{99}
+@numsecentry{Usando el profiler @code {gprof}}{10.2}{Usando el profiler gprof}{101}
+@numsecentry{Test de cobertura con @code {gcov}}{10.3}{Coverage testing with gcov}{104}
+@numchapentry{Como funciona el compilador}{11}{Como funciona el compilador}{107}
+@numsecentry{Una vista de los procesos de compilaci@'on}{11.1}{Una vista de los procesos de compilaci@'on}{107}
+@numsecentry{El preprocesador}{11.2}{El preprocesador}{108}
+@numsecentry{El compilador}{11.3}{El compilador}{108}
+@numsecentry{El ensamblador}{11.4}{El ensamblador}{109}
+@numsecentry{El enlazador}{11.5}{El enlazador}{109}
+@numchapentry{Examinado archivos compilados}{12}{Examinado archivos compilados}{111}
+@numsecentry{Identificando archivos}{12.1}{Identificando archivos}{111}
+@numsecentry{Examinando la tabla de s@'{@dotless {i}}mbolos}{12.2}{Examinando la tabla de s@'{@dotless {i}}mbolos}{112}
+@numsecentry{Encontrando librer@'{@dotless {i}}as din@'amicas enlazadas}{12.3}{Encontrando librer@'{@dotless {i}}as din@'amicas enlazadas}{113}
+@numchapentry{Mensajes comunes de error}{13}{Mensajes comunes de error}{115}
+@numsecentry{Mensajes de error del preprocesador}{13.1}{Mensajes de error del preprocesador}{115}
+@numsecentry{Mensajes de error del compilador}{13.2}{Mensajes de error del compilador}{116}
+@numsecentry{Mensajes de error del enlazador}{13.3}{Mensajes de error del enlazador}{125}
+@numsecentry{Mensajes de error en tiempo de ejecuci@'on}{13.4}{Mensajes de error en tiempo de ejecuci@'on}{127}
+@numchapentry{Obteniendo ayuda}{14}{Obteniendo ayuda}{129}
+@unnchapentry{Lectura adicional}{10003}{Lectura adicional}{131}
+@unnchapentry{Reconocimientos}{10004}{Reconocimientos}{133}
+@unnchapentry{Organizaciones de software libre}{10005}{Organizaciones de software libre}{135}
+@unnchapentry{Licencia para documentaci@'on libre GNU}{10006}{Licencia para documentaci@'on libre GNU}{137}
+@unnsecentry{ADDENDUM: How to use this License for your documents}{10006.1}{}{142}
+@unnchapentry{@'Indice}{10007}{@'Indice}{143}

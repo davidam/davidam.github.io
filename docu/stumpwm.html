@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Stumpwm: lisp en el gestor de ventanas</title>
+<!-- 2013-10-27 dom 20:06 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Stumpwm: lisp en el gestor de ventanas</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com">Volver a davidam.com</a>
+</p>
+
+<p>
+Stumpwm es un gestor de ventanas atilado escrito en common lisp. Esto
+le hace ser considerablemente más rápido que utilizar gnome, unity o
+kde. Si lo que sueles hacer la mayor parte de tu tiempo es usar un
+editor de textos, un navegador y alguna otra aplicación se hace
+realmente productivo.
+</p>
+
+<p>
+Pero empecemos por la instalación en debian/ubuntu basta con:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">apt-get install stumpwm
+</pre>
+</div>
+
+<p>
+Pero después es necesario crear el fichero
+/usr/share/xsessions/stumpwm.desktop con el siguiente contenido:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">[Desktop Entry]
+Encoding=UTF-8
+Name=StumpWM
+Comment=Tiling Window Manager
+Exec=/usr/bin/stumpwm
+Icon=
+Type=Application
+</pre>
+</div>
+
+<p>
+Una vez hecho esto deberíamos poder elegir stumpwm, por ejemplo, en el
+gdm. Al arrancar stumpwm vemos una pequeña ventana que nos invita a
+ejecutar C-t ? para conocer los atajos.
+</p>
+
+<p>
+Los importantes para empezar son:
+</p>
+
+<ul class="org-ul">
+<li>C-t c: abrir una consola
+</li>
+<li>C-t e: abrir el emacs
+</li>
+<li>C-t !: ejecutar un comando de consola
+</li>
+<li>C-t C-t: volver a la ventana anterior
+</li>
+<li>C-t w: listar las ventanas abiertas
+</li>
+<li>C-t 0: ir a la ventana número 0 (con otros números iremos a ventanas distintas)
+</li>
+<li>C-t h f: describe función lisp de stumpwm
+</li>
+<li>C-t h ?: lista atajos de C-t h (describr variable, describir
+función, describir tecla, describir comando, donde está)
+</li>
+</ul>
+
+<p>
+Para evaluar código lisp se usa C-t :. Así, podemos evaluar:
+</p>
+
+<ul class="org-ul">
+<li>(+ 2 2): evalúa una suma de dos más dos.
+</li>
+<li>(loadrc): evalúa el fichero .stumpwmrc
+</li>
+<li>(quit): sale de la sesión
+</li>
+</ul>
+
+<p>
+Mi .stumpwmrc es realmente simple, ya que llevo muy poco tiempo
+utilizando este entorno, pero puede ser útil para otros principiantes
+como yo:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #a020f0;">in-package</span> <span style="color: #483d8b;">:stumpwm</span>)
+
+(setf *default-package* <span style="color: #483d8b;">:stumpwm</span>)
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Cambio el prefijo </span>
+(set-prefix-key (kbd <span style="color: #8b2252;">"C-t"</span>))
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Creo el comando iceweasel</span>
+(defcommand iceweasel () ()
+  <span style="color: #8b2252;">"Start/Switch to Iceweasel."</span>
+  (run-or-raise <span style="color: #8b2252;">"iceweasel"</span> '(<span style="color: #483d8b;">:class</span> <span style="color: #8b2252;">"Iceweasel"</span>)))
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Ahora con C-t C-i ir&#233; al iceweasel</span>
+(<span style="color: #a020f0;">stumpwm:define-key</span> stumpwm:*root-map* (stumpwm:kbd <span style="color: #8b2252;">"C-i"</span>) <span style="color: #8b2252;">"iceweasel"</span>)
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Creo el comando xterm</span>
+(defcommand xterm () ()
+  <span style="color: #8b2252;">"Start to Xterm."</span>
+  (run-or-raise <span style="color: #8b2252;">"xterm"</span> '(<span style="color: #483d8b;">:class</span> <span style="color: #8b2252;">"Xterm"</span>)))
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Atajo xterm</span>
+(<span style="color: #a020f0;">stumpwm:define-key</span> stumpwm:*root-map* (stumpwm:kbd <span style="color: #8b2252;">"C-c"</span>) <span style="color: #8b2252;">"xterm"</span>)
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Creo el comando wikipedia</span>
+(defcommand wikipedia (search)
+  ((<span style="color: #483d8b;">:string</span> <span style="color: #8b2252;">"Search in Wikipedia for: "</span>))
+  <span style="color: #8b2252;">"docstring"</span>
+  (<span style="color: #ff0000; font-weight: bold;">check-type</span> search string)
+  (substitute #\+ #\Space search)
+  (run-or-raise 
+     (concat <span style="color: #8b2252;">"iceweasel http://www.wikipedia.org/wiki/"</span> search) 
+     '(<span style="color: #483d8b;">:class</span> <span style="color: #8b2252;">"Wikipedia"</span>)))
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">Arranca el network-manager al iniciar (para conectar v&#237;a wifi)</span>
+(run-shell-command <span style="color: #8b2252;">"nm-applet --sm-disable"</span>)
+</pre>
+</div>
+
+<p>
+Las cosas que he encontrado útiles de stumpwm son:
+</p>
+
+<ul class="org-ul">
+<li>tener atajos para ir directamente al emacs, ó al navegador independientemente de cuantas ventanas tengo abiertas, no como con Alt+TAB que le tienes que dar unas cuantas veces
+</li>
+<li>tener el fichero de configuración en lisp
+</li>
+<li>su rapidez, especialmente vital en máquinas lentas
+</li>
+</ul>
+
+<p>
+¿A vosotras/os que os parece?
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Licencia</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+
+<div class="figure">
+<p><a href="https://www.gnu.org/copyleft/fdl.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png" alt="200px-GFDL_Logo.svg.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2013-10-27 dom 20:06</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.1)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

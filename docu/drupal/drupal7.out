@@ -1,0 +1,41 @@
+\BOOKMARK [1][-]{section.1}{API de Drupal}{}
+\BOOKMARK [2][-]{subsection.1.1}{db\137query}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{node\137load}{section.1}
+\BOOKMARK [2][-]{subsection.1.3}{user\137load}{section.1}
+\BOOKMARK [2][-]{subsection.1.4}{Aplicando funciones de la API a nuestro proyecto Drupal}{section.1}
+\BOOKMARK [2][-]{subsection.1.5}{Views php}{section.1}
+\BOOKMARK [2][-]{subsection.1.6}{Templates de nuestro tema instalado}{section.1}
+\BOOKMARK [2][-]{subsection.1.7}{Templates de m\363dulos instalados}{section.1}
+\BOOKMARK [2][-]{subsection.1.8}{Templates que modifican views}{section.1}
+\BOOKMARK [2][-]{subsection.1.9}{drupal\137set\137message}{section.1}
+\BOOKMARK [2][-]{subsection.1.10}{node\137save}{section.1}
+\BOOKMARK [2][-]{subsection.1.11}{user\137save}{section.1}
+\BOOKMARK [2][-]{subsection.1.12}{watchdog}{section.1}
+\BOOKMARK [2][-]{subsection.1.13}{t}{section.1}
+\BOOKMARK [2][-]{subsection.1.14}{db\137insert}{section.1}
+\BOOKMARK [2][-]{subsection.1.15}{db\137update}{section.1}
+\BOOKMARK [2][-]{subsection.1.16}{db\137delete}{section.1}
+\BOOKMARK [1][-]{section.2}{Desarrollo de M\363dulos}{}
+\BOOKMARK [2][-]{subsection.2.1}{Arquitectura de los M\363dulos de Drupal}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{M\363dulos del N\372cleo}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Hooks}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Creaci\363n de Bloques}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{Creando un fichero .info}{section.2}
+\BOOKMARK [2][-]{subsection.2.6}{Un fichero .module}{section.2}
+\BOOKMARK [2][-]{subsection.2.7}{Nuestro objetivo: Dos Block Hook}{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Empezando el .module}{section.2}
+\BOOKMARK [2][-]{subsection.2.9}{La implementaci\363n de hook\137block\137info\(\)}{section.2}
+\BOOKMARK [2][-]{subsection.2.10}{La implementaci\363n de hook\137block\137view\(\)}{section.2}
+\BOOKMARK [2][-]{subsection.2.11}{Instalaci\363n de M\363dulos}{section.2}
+\BOOKMARK [2][-]{subsection.2.12}{Form API}{section.2}
+\BOOKMARK [2][-]{subsection.2.13}{Formulario B\341sico}{section.2}
+\BOOKMARK [2][-]{subsection.2.14}{Formulario B\341sico con Bot\363n Submit}{section.2}
+\BOOKMARK [2][-]{subsection.2.15}{Un formulario b\341sico con fieldset}{section.2}
+\BOOKMARK [2][-]{subsection.2.16}{Formulario B\341sico con Campos Obligatorios}{section.2}
+\BOOKMARK [2][-]{subsection.2.17}{Formulario B\341sico con Atributos de Elementos Adicionales}{section.2}
+\BOOKMARK [2][-]{subsection.2.18}{Formulario B\341sico con Manejador de la Validaci\363n}{section.2}
+\BOOKMARK [2][-]{subsection.2.19}{Formulario con un manejador de submit}{section.2}
+\BOOKMARK [2][-]{subsection.2.20}{Un Formulario de M\372ltiples Pasos}{section.2}
+\BOOKMARK [2][-]{subsection.2.21}{Un Formulario con Campos Din\341micos}{section.2}
+\BOOKMARK [2][-]{subsection.2.22}{Formulario para Subir un Fichero a Drupal}{section.2}
+\BOOKMARK [2][-]{subsection.2.23}{Mail API}{section.2}

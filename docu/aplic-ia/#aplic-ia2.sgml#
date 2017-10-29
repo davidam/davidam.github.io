@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+               "/usr/share/sgml/docbook/dtd/xml/4.2/docbookx.dtd">
+
+<article lang="es">
+  <articleinfo>
+    <title>Aplicaciones Pr&aacute;cticas de Inteligencia Artificial</title>
+    <author>
+      <firstname>David</firstname>
+      <surname>Arroyo Menéndez</surname>
+    </author>
+    <legalnotice>
+      <para>Derecho de Autor (c) 2005 David Arroyo Men&eacute;ndez.
+Transcurridos cuatro meses tras su publicaci&oacute;n este art&iacute;culo podr&aacute; copiarlo y modificarlo libremente, siempre y cuando se haga expl&iacute;cito que el original fue publicado en Mundo Linux Nº 77.
+      </para>
+    </legalnotice>
+  </articleinfo>
+
+  <sect1>
+    <title>Introducci&oacute;n</title>
+
+    <para>En la primera parte de este art&iacute;culo se comenz&oacute; realizando una peque&ntilde;a introducci&oacute;n a las problem&aacute;ticas que se abordaban en la inteligencia artificial y se expusieron algunas de ellas: juegos, sistemas expertos, software adaptativo y agentes inteligentes.</para>
+
+    <para>En este art&iacute;culo se mostrar&aacute;n algunos temas pendientes: c&oacute;mo conseguir que las m&aacute;quinas hagan planes, c&oacute;mo pueden comprender el lenguaje humano, c&oacute;mo pueden pensar con neuronas y c&oacute;mo aplicar todas estas cuestiones a tareas tales como la rob&oacute;tica, entre otras cosas. Todo ello viendo la utilidad de estas soluciones y enlazado con un mont&oacute;n de software libre con el que experimentar.</para>
+
+  </sect1>
+
+
+  <sect1>
+    <title>Planificacion</title>
+
+    <para>Llamaremos planificaci&oacute;n al proceso de b&uacute;squeda y articulaci&oacute;n de una secuencia de acciones que permitan alcanzar un objetivo. Por ejemplo, si nuestro objetivo es viajar desde un pueblo perdido de Asturias y queremos llegar a Guatemala la secuencia de acciones ser&iacute;an los distintos transportes que se deben tomar para llegar. Otro ejemplo podr&iacute;a ser que tuvi&eacute;ramos un robot en un laberinto y nuestro objetivo fuera sacarle de &eacute;l; en tal caso, nuestras acciones ser&iacute;an los tramos recorridos en l&iacute;nea recta y los giros dados por el robot.</para> 
+
+    <para>Para formalizar el problema de la planificaci&oacute;n existen 2 notaciones principales: ADL y <ulink url="http://www.rci.rutgers.edu/~cfs/472_html/Planning/STRIPS_plan_472.html">STRIPS</ulink>. Ambas coinciden en utilizar la l&oacute;gica para representar estado inicial, objetivo y acciones. Tambi&eacute;n coinciden en que, para aplicar una acci&oacute;n, es necesario cumplir unas precondiciones y, tras haber ejecutado la acci&oacute;n, habr&aacute; provocado unos efectos.</para>
+
+    <para>Para obtener la secuencia de acciones, es decir, el resultado al problema de la planificaci&oacute;n, existen varios enfoques:</para>
+    <itemizedlist>
+      <listitem>
+	<para>B&uacute;squedas en el espacio de estados que operan hacia adelante (desde el estado inicial), o hacia atr&aacute;s (desde el objetivo) aplicando las acciones. Tambi&eacute;n existen heur&iacute;sticas (estrategias) eficaces que nos ayudan en la b&uacute;squeda. Estos enfoques funcionan bien cuando los subobjetivos son independientes.</para>
+      </listitem>
+      <listitem>
+	<para>Si los subobjetivos no son independientes suele ser buena idea utilizar algoritmos de Planificaci&oacute;n de Orden Parcial (POP), que exploran el espacio de planes sin comprometerse con una secuencia de acciones totalmente ordenada. Trabajan hacia atr&aacute;s, desde el objetivo y a&ntilde;aden acciones para planificar c&oacute;mo alcanzar cada subobjetivo.</para>
+      </listitem>
+      <listitem>
+	<para>Otras estrategias prometedoras son el algoritmo <ulink url="http://www-2.cs.cmu.edu/~avrim/graphplan.html">GRAPHPLAN</ulink> y el algoritmo <ulink url="http://www.cs.washington.edu/homes/kautz/satplan/">SATPLAN</ulink>.</para>
+      </listitem>
+      <listitem>
+	<para>Cuando no se trabaja en mundos cerrados, sino en el mundo real, debemos tener en cuenta varias consideraciones. Muchas acciones consumen recursos: tiempo, dinero, materias primas, etc. por lo que debemos tener en cuenta medidas num&eacute;ricas. Las <ulink url="http://www.cs.umd.edu/projects/plus/HTN/">redes jer&aacute;rquicas de tareas (HTN)</ulink> permiten tener sugerencias sobre el dominio por parte del dise&ntilde;ador. La informaci&oacute;n incompleta puede ser manejada mediante planificaci&oacute;n que utilice acciones sensoriales para obtener la informaci&oacute;n que necesita. La planificaci&oacute;n multiagente es necesaria cuando existen otros agentes en el entorno con los que cooperar, competir, o coordinarse.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Los problemas y soluciones que se abordan en planificaci&oacute;n tienen aplicaciones directas en gesti&oacute;n de tareas (workflow), control de misiones complejas (espaciales, sat&eacute;lites, militares, etc.), turismo (visitas a ciudades, planificar rutas, ...), procesos de ense&ntilde;anza/aprendizaje, rob&oacute;tica (planificar caminos), ...</para>
+
+    <para>Para la problem&aacute;tica de la planificaci&oacute;n, las licencias libres han brillado por su ausencia. No obstante, todos los algoritmos se distribuyen con su c&oacute;digo, lo cual tambi&eacute;n es cierto en arquitecturas integradas como <ulink url="http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/prodigy/Web/prodigy-home.html">PRODIGY</ulink>, muy usadas en planificaci&oacute;n.</para>
+
+  </sect1>
+
+
+  <sect1>
+    <title>Procesamiento de Lenguaje Natural</title>
+
+    <para>Antes de abordar qu&eacute; es el procesamiento del lenguaje natural (&oacute lenguaje humano), pensemos por un momento qu&eacute; es la compresi&oacute;n. Seg&uacute;n Rich y Knigth "comprender algo es transformarlo de una representaci&oacute;n a otra, en donde la segunda representaci&oacute;n se ha elegido para que se corresponda con un conjunto de acciones posibles que podr&iacute;an llevarse a cabo, y en donde se ha dise&ntilde;ado la correspondencia de forma que para cada suceso se realice una acci&oacute;n apropiada". En definitiva, comprender algo es transformarlo en una representaci&oacute;n que nos sea m&aacute;s &uacute;til para lograr nuestro objetivo.</para>
+
+
+    <para>&iquest;Para qu&eacute; podemos querer que una m&aacute;quina comprenda lo que pone en un texto? Lo primero que se nos puede ocurrir es que sirva para comunicarnos con ella como si de una persona se tratara, pero para ello no solo requerir&iacute;a comprender nuestras palabras, sino tambi&eacute;n las emociones con las que las expresamos, lo cual es algo m&aacute;s complejo. La traducci&oacute;n autom&aacute;tica desde un lenguaje natural a otro es algo para lo que solo necesitamos comprender el significado neutral de las palabras. Si conseguimos que un ordenador comprenda, tambi&eacute;n nos va a ayudar en tareas de recuperaci&oacute;n de la informaci&oacute;n; me refiero a buscadores m&aacute;s eficaces que sepan relacionar mejor unas palabras o frases con otras, e incluso independientemente del idioma.</para>
+
+    <para>Para realizar estas tareas es necesario comprender un texto; esto es lo que nos proporciona el procesamiento del lenguaje natural. Veamos las fases de las que se compone <citation>Rich y Knight, 1994</citation>:</para>
+
+    <itemizedlist>
+      <listitem>
+	<para>An&aacute;lisis morfol&oacute;gico: Se analizan los componentes de las palabras individuales y se separan de las palabras los constituyentes que no forman parte de ellas, como los s&iacute;mbolos de puntuaci&oacute;n</para>
+      </listitem>
+      <listitem>
+	<para>Análisis sintáctico: Se transforman las secuencias lineales de palabras en ciertas estructuras que muestran la forma en que las palabras se relacionan entre sí. Se pueden rechazar algunas secuencias de palabras si infringen las reglas del lenguaje sobre la forma en que las palabras pueden combinarse. Ej: "ni&ntilde;a la come mucho" se rechazaría.</para>
+      </listitem>
+      <listitem>
+	<para>Análisis semántico: Se asigna significado a las estructuras creadas por el analizador sintáctico. Es decir, se hace una correspondencia entre las estructuras sintácticas y los objetos del dominio de la tarea. Las estructuras en las que no se pueda realizar tal correpondecia se rechazan. Ej: "Las ideas verdes incoloras duermen furiosamente" se rechazaría</para>
+      </listitem>
+      <listitem>
+	<para>Integración del discurso: El significado de una frase individual puede depender de las frases precedentes y puede influenciar el significado de las frases posteriores. Por ejemplo, la palabra "lo" en  "Jaime lo quiso" depende del contexto del discurso, mientras que la palabra "Jaime" puede influenciar el significado de frases posteriores como "&Eacute;l vive en Madrid".</para>
+      </listitem>
+      <listitem>
+	<para>Análisis de la pragmática: La estructura que representa qué se ha dicho se reinterpreta para determinar su significado actual. Ej: "¿Sabe qué hora es?" se reintepreta como petición de hora.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Hasta ahora hemos estado hablando del procesamiento del lenguaje escrito, si quisi&eacute;ramos realizar procesamiento del lenguaje oral, necesitar&iacute;amos conocimiento adicional sobre fonología, así como suficiente información adicional para manejar las posibles ambigüedades que pudieran surgir.</para>
+
+    <para>Existen varias herramientas libres para tratar el procesamiento del lenguaje natural. Podemos encontrar malaga-bin y mmorph. Sin embargo, creo que para juguetear y/o iniciarse en este campo es m&aacute;s adecuado <ulink url="http://nltk.sourceforge.net/">nltk</ulink> (Natural Language Toolkit), escrito en python y con una <ulink url="http://creativecommons.org/licenses/by-nc-sa/1.0/">licencia de creative commons</ulink>.</para>
+
+  </sect1>
+
+  <sect1>
+    <title>Computaci&oacute;n Neuronal</title>
+
+    <para>Bien, hasta aqu&iacute; hemos visto que las m&aacute;quinas pueden imitar comportamientos humanos para un gran n&uacute;mero de tareas. De hecho, incluso pueden aplicarse algoritmos de aprendizaje que, para ciertas tareas como el spam, dan muy buenos resultados. La siguiente cuesti&oacute;n entonces es &iquest;pueden las m&aacute;quinas pensar tal y como lo hacemos los humanos?</para>
+
+    <para>La naturaleza nos ha dotado con un sistema de c&oacute;mputo basado en una enorme red de neuronas. Si las m&aacute;quinas pudieran simular tal sistema de c&oacute;mputo &iquest;no estar&iacute;an entonces en condiciones de pensar tal y como lo hacemos las personas?</para>
+
+    <para>En primer lugar, pensemos qu&eacute; es una neurona. Una neurona est&aacute; formada por el cuerpo celular y diferentes prolongaciones: el axón, por el que transitan los impulsos nerviosos o potenciales de acción desde el cuerpo celular hacia la siguiente célula, y la/s dendritas, con número y estructura variable según el tipo de neurona, y que transmiten los potenciales de acción desde las neuronas adyacentes hacia el cuerpo celular. Se podr&iacute;a decir que las dendritas son entradas y el ax&oacute;n es la salida.</para>
+
+    <para>Ahora bien, &iquest;c&oacute;mo se decide si tras recibir entradas se produce o no una salida, y qu&eacute; salida se produce? Pues bien, la salida es la suma ponderada de las entradas seguida de una funci&oacute;n umbral. Esto puede parecer un diodo: si el potencial de las entradas alcanza un cierto valor, entonces se produce la salida, y sino no. Sin embargo, difiere en ser ponderado. Se refiere a que no todos los valores de las entradas van a tener la misma importancia de cara a decidir si se produce o no la salida.</para>
+
+    <para>Si nuestra neurona no es m&aacute;s que un diodo con entradas ponderadas, entonces juntando unos diodos con otros en forma de red ¿har&aacute; el tipo de procesos que realizamos los humanos como, por ejemplo, aprender? Es curioso que para aprender solo es necesaria una neurona, y el aprendizaje consiste en modificar el valor de los pesos (la importancia de cada entrada) aplicando un algoritmo a nuestro valor de salida. &iquest;Y cual ser&aacute; ese algoritmo? Un psic&oacute;logo llamado Donald O. Hebb enunci&oacute; una regla que dice que "las conexiones que unen diferentes neuronas que se encuentran activas en un instante dado se fortalecen". Se refiere a que si la neurona est&aacute; transmitiendo, las entradas que est&acute;n activas tendr&aacute;n m&aacute;s importancia de la que ya ten&iacute;n. Y esto es m&aacute;s &oacute; menos la esencia de la computaci&oacute;n neuronal, especialmente la no supervisada (que no requiere de un tutor), y esta es la que nos encontramos en la naturaleza.</para>
+
+    <para>Pero en la pr&aacute;ctica las redes neuronales artificiales no han creado en las m&aacute;quinas comportamientos similares a los de las personas. Sin embargo, lo cierto es que los problemas que tradicionalmente son m&aacute;s complejos para las m&aacute;quinas (visi&oacute;n artificial, reconocimiento del habla, etc.), se resuelven mejor utilizando redes neuronales que mediante otras perspectivas simb&oacute;licas.</para>
+
+    <para>La computaci&oacute;n neuronal tiene como tarea gen&eacute;rica la clasificaci&oacute;n. Por ejemplo, pensemos que queremos averiguar en qu&eacute; im&aacute;genes est&aacute; Wally y en qu&eacute; im&acute;genes no. Nuestras entradas ser&iacute;an las intensidades RGB de cada pixel de cada una de las im&aacute;genes, y tendr&iacute;a una &uacute;nica salida que nos dir&iacute;a si est&aacute; o no.</para>
+
+    <para>Las redes neuronales tienen un modelo inherentemente distribuido, puesto que un procesador puede simular una neurona. As&iacute; mismo, son autoprogramables. La programaci&oacute;n pasa por elegir un n&uacute;mero de neuronas, las conexiones entre las mismas, un n&uacute;mero de salidas, un n&uacute;mero de entradas y una configuraci&oacute;n inicial de pesos. Despu&eacute;s bastar&iacute;a con alimentarla correctamente y, si el aprendizaje es supervisado, darle la adecuada realimentaci&oacute;n humana</para>
+
+    <para>Como siempre, para profundizar recomiendo jugar con el software libre disponible. Lo que he encontrado ha sido <ulink url="http://fann.sourceforge.net/intro.html">Fast Artificial Neural Network Library (fann)</ulink>, <ulink url="http://www.genesis-sim.org/GENESIS/">Genesis</ulink> y, aunque no totalmente libre, tambi&eacute;n creo importante destacar <ulink url="http://www-ra.informatik.uni-tuebingen.de/SNNS/">SNNS</ulink>.</para>
+
+    <para>Finalizar diciendo que, si bien los algoritmos de redes neuronales no son otra cosa que algoritmos de aprendizaje autom&aacute;tico, debido a las implicaciones filos&oacute;ficas que tienen he decidido tratarlo aparte.</para>
+
+  </sect1>
+
+
+  <sect1>
+    <title>Rob&oacute;tica</title>
+
+    <para><citation>Russell y Norvig, 2004</citation>Los robots son agentes f&iacute;sicos que realizan tareas mediante la manipulaci&oacute;n f&iacute;sica del mundo. Para ello se dotan de efectores, como pinzas, ruedas, brazos mec&aacute;nicos, etc. Tambi&eacute;n se equipan de sensores que les permiten percibir el entorno, como visores, sistemas de ultrasonidos, giroscopios, etc.</para>
+
+    <para>El inter&eacute;s de la IA en la rob&oacute;tica se centra en los agentes inteligentes que manipulan el mundo f&iacute;sico. No obstante, tambi&eacute;n es un campo de gran inter&eacute;s para aplicar otras ideas de IA como planificaci&oacute;n o visi&oacute;n artificial (aplicar algoritmos de aprendizaje para el reconocimiento de formas).</para>
+
+    <para>Las &aacute;reas de aplicaci&oacute;n de la rob&oacute;tica son m&uacute;ltiples: industria, agricultura, transporte, entornos peligrosos (donde no deber&iacute;a haber humanos), exploraci&oacute;n (ej: viajes al espacio), salud (ej: cirug&iacute;a gracias a la precisi&oacute;n milim&eacute;trica), entretenimiento, ... </para>
+
+    <para>Para experimentar en este &aacute;rea respetando nuestras
+    libertades es posible encontrar programas divertidos para la
+    simulaci&oacute;n de comportamientos rob&oacute;ticos, como por
+    ejemplo <ulink
+    url="http://directory.fsf.org/GNU/gnurobots.html">gnurobots</ulink>
+    o <ulink
+    url="http://robocode.alphaworks.ibm.com/home/home.html">robocode</ulink>.
+    Este tipo de programas pueden llegar a dar mucho juego en la IA,
+    recordad que los bots del quake han sido materia de <ulink url="http://www.kbs.twi.tudelft.nl/Publications/MSc/2001-VanWaveren-MSc.html">tesis doctoral</ulink>.</para>
+
+    <para>Tambi&eacute;n es interesante salirnos un poco del software y meternos en alg&uacute;n proyecto de hardware abierto, como <ulink url="http://www.microbotica.es/web/ha.htm)">Microb&oacute;tica.</ulink></para>
+
+<!-- meter imágenes de robocode -->
+
+  </sect1> 
+
+
+
+  <sect1>
+    <title>Agradecimientos y Conclusiones</title>
+
+    <para>En primer lugar, agradecer a Ramiro Pareja, miembro de la <ulink url="http://www.ieeesb.etsit.upm.es/ieee/index2.php?ojo=1">rama de rob&oacute;tica del grupo agassi</ulink> sus orientaciones acerca de los usos de este &aacute;rea. As&iacute; mismo, agradecer a <ulink url="http://www.ia.uned.es/personal/arodriguez/">Antonio Rodr&iacute;guez Anaya</ulink> sus comentarios acerca de planificaci&oacute;n.</para>
+
+    <para>Un afectuoso agradecimiento a todo el equipo de Mundo Linux por la oportunidad de escribir este art&iacute;culo y de poder hacerlo aplicando una licencia libre y muy especialmente a Margarita Padilla.</para>
+
+    <para>En el anterior art&iacute;culo se trataron aplicaciones m&aacute;s tradicionales &oacute; conocidas de la inteligencia artificial. En este segundo art&iacute;culo, se desarrollan aplicaciones de mayor actividad investigadora. En ambos el software libre est&aacute; presente con una fuerza notable dotando de herramientas al investigador &oacute; estudiante en m&uacute;ltiples &aacute;reas.</para>
+
+    <para>Si bien la inteligencia artificial aporta soluciones para casi todos las cuestiones que nos caracterizan como humanos e inteligentes, a&uacute;n dista bastante para que realice dichas tareas de la misma manera y con la misma eficacia que lo hacen las personas. Sin embargo, las soluciones aportadas para resolverlos tienen aplicaci&oacute;nes interesantes en m&uacute;ltiples &aacute;reas de nuestra vida cotidiana que nos hacen la vida m&aacute;s f&aacute;cil.</para>
+
+    <para>Espero que este art&iacute;culo ayude a despertar el inter&eacute;s por la IA entre los usuarios de software libre y, a que la comunidad que existe alrededor de la inteligencia artificial se interese a&uacute;n m&aacute;s por el software libre. Al menos, s&iacute; espero que los lectores hayais disfrutado tanto ley&eacute;ndo el presente art&iacute;culo como yo escribi&eacute;ndolo.</para>
+
+
+  </sect1>
+
+  <sect1>
+    <title>Referencias</title>
+
+    <itemizedlist>
+      <listitem>
+	<para>Rich, E. y Knight K. (1994). Inteligencia Artificial. Madrid: McGraw Hill </para>
+      </listitem>
+      <listitem>
+	<para>Russell, S. J. y Norvig P. (2004). Inteligencia Artificial. Un Enfoque Moderno. Segunda ed. Madrid: Pearson Educaci&oacute;n S.A.</para>
+      </listitem>
+      <listitem>
+	<para><ulink url="http://linuxselfhelp.com/HOWTO/AI-Alife-HOWTO.html">Howto de inteligencia y vida artificial</ulink></para>
+      </listitem>
+      <listitem>
+	<para><ulink url="http://www.wikipedia.org/">Wikipedia</ulink></para>
+      </listitem>
+      <listitem>
+	<para><ulink url="http://www.norvig.com/">Página personal de Peter Norvig</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect1>
+
+  <sect1>
+    <title>Sobre el autor</title>
+    <para><ulink url="http://davidam.no-ip.info">David Arroyo Men&eacute;ndez</ulink> es Ingeniero T&eacute;cnico en Inform&aacute;tica de Sistemas por la UNED, donde estudia el segundo ciclo de dicha titulaci&oacute;n. Actualmente trabaja en el Proyecto Europeo de Investigaci&oacute;n <ulink url="http://alfanet.ia.uned.es">Alfanet</ulink>.</para>
+  </sect1>
+
+</article>

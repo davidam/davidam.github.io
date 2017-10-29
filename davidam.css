@@ -1,0 +1,104 @@
+
+/* ##### Common Styles ##### */
+
+body {
+/*  font-family: "Trebuchet MS", verdana, helvetica, arial, sans-serif; */
+  font-family: "Palatino Linotype","Book Antiqua","Palatino","URW Palladio L","FreeSerif",serif;
+  min-width: 20em;
+/*  background-color: #b9fbb9; */
+  background-color: transparent; 
+/*  background-color: #F1F1F1;*/
+}
+
+img {
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 31pt;
+}
+
+/* #### Header Box #### */
+
+.header-right {
+  position: absolute;
+  right: 3.5mm;
+  top: 2mm;
+  text-align: center;
+}
+
+.header-center {
+  text-align: center;
+  border: 1px solid #999999;
+  color: white;
+  background-color: #6487dc;
+}
+
+/* #### Content Box #### */
+
+.content-left {
+  left: 25px;
+  float: left;
+  width:45%;
+  padding: 3px;
+  margin: 15px 15px 5px 15px;
+  font-size: 90%;
+}
+
+.content-right {
+  float: right;
+  width:45%;
+  padding: 3px;
+  margin: 15px 15px 5px 15px;
+  font-size: 90%;
+}
+
+@media (max-width: 850px) {
+
+  .content-left {
+      width: 100%;
+      font-size: 20px;
+  }
+
+  .content-right {
+      width: 100%;
+      font-size: 20px;
+  }
+
+}
+
+
+.box { 
+  border: 1px solid #999999;
+  margin: 0px 15px 15px 0px;
+  background-color: white;
+}
+
+.box-title { 
+  border-bottom: 1px solid #999999;
+  color: white;
+/*  background-color: #96c2d9;*/
+  background-color: black;
+/*  background-color: #532150;*/
+  /* background-color: #009900; */
+/*  background-color: #6487dc;*/
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+
+.box-fsf {
+    padding: 0 10px 15px 10px;
+    margin-left: 75px;
+}
+
+.box-paypal {
+    float: left;
+}
+
+.box-img {
+    float: left;
+    margin-left: 15px;
+}
+

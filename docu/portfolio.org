@@ -1,0 +1,226 @@
+#+TITLE: Web Developer Portfolio
+#+AUTHOR: David Arroyo Menéndez
+#+LANGUAGE: es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/portfolio.css" />
+
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Algunas veces me piden que enseñe y cuente un poco qué proyectos he
+trabajado con drupal u otras herramientas. En este artículo lo explico
+un poco en orden cronológico inverso. Si ves algún enlace roto, por
+favor, házmelo saber, en general, no tengo por qué mantenerlos yo,
+pero me gusta saberlo para quitarlos de aquí.
+
+Me alegra decir que todos los proyectos que tengo en esta página
+fueron lanzados en servidores gnu/linux o freebsd.
+
+* Año 2017
+
+Más trabajo en el [[https://www.bsc.es][Barcelona Supercomputing Center]].
+
+#+ATTR_HTML: width="50px"
+[[http://era4cs.bsc.es][http://www.davidam.com/img/portfolio/era4cs.png]]
+
+[[https://earth.bsc.es/gitlab/darroyo/era4cs-responsive][Tema redmine liberado en gitlab]]
+
+#+ATTR_HTML: width="50px"
+[[http://www.bsc.es/ESS][http://www.davidam.com/img/portfolio/ess-front.png]]
+
+[[https://earth.bsc.es/gitlab/darroyo/ess_theme][Tema drupal liberado en gitlab]].
+
+#+ATTR_HTML: width="50px"
+[[http://www.bsc.es/caliope][http://www.davidam.com/img/portfolio/caliope.png]]
+
+[[https://earth.bsc.es/gitlab/darroyo/caliope_theme][Tema drupal liberado en gitlab]]
+
+* Año 2016
+
+Después del período en Telefónica y algunos proyectos de corta
+duración, (por ej: la web del [[http://ajuntament.barcelona.cat/imi/ca][IMI]]) comienzo a trabajar en el [[https://www.bsc.es][Barcelona
+Supercomputing Center]].
+
+#+ATTR_HTML: width="50px"
+[[https://www.bsc.es/arroyo-menendez-david][http://www.davidam.com/img/portfolio/bsc.jpg]]
+
+#+ATTR_HTML: width="50px"
+[[http://www.davidam.com/img/portfolio/imi.png][http://www.davidam.com/img/portfolio/imi.png]]
+
+
+* Año 2015
+
+Después del período en [[http://es.idoctus.com][iDoctus]] he estado trabajando en varios
+proyectos freelance:
+
++ [[https://savannah.nongnu.org/projects/php-ext-el/][Extensions to PHP Mode]]
++ [[https://savannah.nongnu.org/projects/drupal-el/][Drupal Mode]]
++ [[https://www.drupal.org/project/ocrad][Ocrad for Drupal]]
+
+Empiezo a trabajar en Telefónica como ingeniero de QA. Algunos
+proyectos en los que colaboré fueron:
+
+#+ATTR_HTML: width="100px"
+[[http://voluntarios.telefonica.com][http://www.davidam.com/img/portfolio/voluntarios-telefonica.jpg]]
+
+#+ATTR_HTML: width="100px"
+[[https://extranet.fundaciontelefonica.com/][http://www.davidam.com/img/portfolio/extranet-telefonica.png]]
+
+
+* Año 2014
+
+Hasta el verano he estado desarrollando proyectos privados para Drupal
+y algo de Zend en BBVA.
+
+Desde otoño trabajo en [[http://es.idoctus.com][iDoctus]], programando con Drupal.
+
+#+ATTR_HTML: width="100px"
+[[http://es.idoctus.com/][http://www.davidam.com/img/portfolio/idoctus.png]]
+
+
+* Año 2013
+** Tveo
+
+Este año estuve más con temas de administración de sistemas, pero hice
+un proyecto bonito que luego compró Telemadrid de televisión a la
+carta, era bastante interesante, había que hackear una versión inicial
+de Miguel Ángel Villacañas de un módulo privado para conectar con
+mongo y redis, así como entender e integrar en servidores y drupal
+tecnologías relacionadas con televisión a la carta para disparar
+eventos (por ej. anuncios) reconociendo el audio. También migré a
+postgresql la aplicación reescribiéndola desde cero. Este proyecto lo
+desarrollé con un contrato de la UPM.
+
+#+ATTR_HTML: width="100px"
+[[http://www.davidam.com/docu/portfolio.html][http://www.davidam.com/img/portfolio/tveo.png]]
+
+** Orgmode
+
+Empiezo mi primer módulo contribuido a [[http://www.drupal.org][Drupal]], se llama [[http://orgmode.org/][Orgmode]].
+
+#+ATTR_HTML: width="50px"
+[[http://orgmode.org/][http://www.davidam.com/img/portfolio/org-mode-unicorn-logo.png]]
+
+** Drupalaton
+
+Me dejé fotografiar allí :)
+
+#+ATTR_HTML: width="100px"
+http://www.davidam.com/img/portfolio/drupalaton.jpeg
+
+** Open Praxis
+
+Favoreciendo la libertad en los artículos científicos.
+
+#+ATTR_HTML: width="100px"
+[[http://openpraxis.org/][http://www.davidam.com/img/portfolio/openpraxis.png]]
+
+
+
+* Año 2012
+
+** Web de los Máster de Informática de la UNED
+
+Esto es un proyecto que me encargó la UNED y ahora mantiene otra
+gente. La idea que había que reforzar en este proyecto era el tema
+semántico con microformatos y esas cosas.
+
+#+ATTR_HTML: width="100px"
+[[http://posgrados.informatica.uned.es][http://www.davidam.com/img/portfolio/master-ia.png]]
+
+** Alagua
+
+Esto es un proyecto de comercio electrónico, con un formulario de
+compra bastante avanzado para lo que hay en el mercado de drupal,
+teniendo que elegir en varios pasos bañador, tela y otras opciones que
+hacen modificar el precio.
+
+#+ATTR_HTML: width="100px"
+[[http://www.alaguanatacion.com/][http://www.davidam.com/img/portfolio/alagua.png]]
+
+** Comunidad de Studiolab 
+
+En este proyecto había que integrar funcionalidades de red social,
+junto con otras más tradicionales como wikis, foros, documentos, etc.
+
+Quedó bastante chulo fué un proyecto bonito con financiación de un
+proyecto europeo.
+
+#+ATTR_HTML: width="100px"
+[[http://community.studiolabproject.eu/][http://www.davidam.com/img/portfolio/studiolab.png]]
+
+* Año 2011
+
+Este año estuve con un máster, pero también tuve tiempo de un proyecto.
+
+** Neomed
+
+Es una red social de médicos, con funcionalidades similares a facebook.
+
+#+ATTR_HTML: width="100px"
+[[https://www.neomed.es/][http://www.davidam.com/img/portfolio/neomed.png]]
+
+* Año 2010
+
+Este año estuve en [[http://www.iddeasp.com/][Iddeasp]], tenían muchos proyectos y había que
+modificar pequeñas cosas a veces de proyectos antiguos, aquí solo
+citaré los que desarrollé yo, aunque siempre con mayor o menor apoyo
+del otro desarrollador y el diseñador gráfico, ya que éramos un
+equipo.
+
+** La Sección Gourmet de El Periodico de Catalunya
+
+Aquí hubo que hacer un desarrollo desde cero hablando bastante con el
+cliente definir secciones, usabilidad, qué es lo que se quiere
+comunicar, cómo hacerlo desde un formato periodístico, etiquetar bien,
+etc. En este proyecto aprendí el poder de [[https://drupal.org/project/imagecache][Imagecache]].
+
+#+ATTR_HTML: width="100px"
+[[https://gourmets.elperiodico.com/][http://www.davidam.com/img/portfolio/gourmets.png]]
+
+** Web de Iddeasp
+
+En este proyecto me pareció graciosa la historia del menú, nuestro
+jefe quería algo que se pareciera a los nuevos dispositivos y al
+diseñador se le ocurrieron esos logos tan divertidos y lo
+implementamos con css y va muy rápido. Aparte aprendí el poder de
+migrate para volcar la base de datos de la antigua web a la nueva.
+
+#+ATTR_HTML: width="100px"
+[[http://www.iddeasp.com/][http://www.davidam.com/img/portfolio/iddeasp.png]]
+
+** Fuentes del Encinar
+
+Me resulto interesante entender las necesidades de una comunidad de
+vecinos y plasmarlas en un sitio web: reservar una pista de padel, un
+tablón de anuncios, mensajes internos, etc.
+
+#+ATTR_HTML: width="100px"
+[[http://www.fuentesdelencinar.com][http://www.davidam.com/img/portfolio/fuentes-del-encinar.png]]
+
+* Año 2009
+
+** Antonio Salas
+
+A esta web le tengo un cariño especial, fué mi primer proyecto drupal
+y aprendí bastante: instalación, configuración y desarrollo de módulos
+y themes. A partir de entonces lo que he hecho es afianzar y mejorar
+en esos conocimientos.
+
+#+ATTR_HTML: width="100px"
+http://www.davidam.com/img/portfolio/antoniosalas.png
+
+
+
+
+* Años 2000 - 2004
+
+Desde la UNED creamos una herramienta de e-learning para toda la
+universidad, que es la que se usa actualmente.
+
+#+ATTR_HTML: width="100px"
+[[https://innova.uned.es/][http://www.davidam.com/img/portfolio/innova.png]]
+
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]

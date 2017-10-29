@@ -1,0 +1,140 @@
+#+TITLE: Instalar Drupal en Debian/Ubuntu
+#+AUTHOR: David Arroyo Menéndez
+#+LANGUAGE: es
+
+* Instalación de Paquetes
+Una manera rápida para hacerlo con mysql puede ser la siguiente:
+
+#+BEGIN_SRC bash
+sudo apt-get install drupal7
+#+END_SRC
+
+Drush es una herramienta útil para facilitar la administración de
+nuestra línea de comandos, por ejemplo, actualizaciones de módulos,
+copias de seguridad, etc.
+
+Realmente, es mejor descargar la última versión de drupal en vez de
+utilizar el código dado por el paquete debian de drupal, debido mi
+política de usar drush para actualizaciones. Pero instalar drupal7
+como paquete debian es una buena idea para instalar dependencias.
+
+#+BEGIN_SRC bash
+$ cd /var/www/
+$ sudo wget -c http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz
+$ sudo tar -xvzf drupal-7.32.tar.gz
+$ sudo chown -R www-data.www-data drupal-7.32
+$ sudo chmod g+w -R drupal-7.32
+$ sudo mv drupal-7.32 mysite
+#+END_SRC
+
+
+* Configurar Apache
+
+Al instalar un sitio drupal, me gusta habilitar urls bonitas, para
+ello creo el fichero mysite en /etc/apache2/sites-available/mysite,
+con el siguiente contenido:
+
+#+BEGIN_SRC bash
+<VirtualHost *:80>
+
+  ServerAdmin webmaster@localhost
+  ServerName mysite
+
+  DocumentRoot /var/www/mysite
+
+  <Directory /var/www/mysite>
+                RewriteEngine on
+                RewriteBase /mysite
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteCond %{REQUEST_FILENAME} !-d
+        	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+  </Directory>
+
+</VirtualHost>
+#+END_SRC
+
+Puesto que en un principio igual no tendremos el dominio del sitio se
+puede habilitar el host en /etc/hosts
+
+#+BEGIN_SRC bash
+127.0.0.1	localhost
+127.0.1.1	mysite
+#+END_SRC
+
+Después se puede habilitar de la siguiente manera:
+
+#+BEGIN_SRC bash
+$ sudo a2ensite mysite
+#+END_SRC
+
+* Creación de la base de datos en Mysql
+
+#+BEGIN_SRC bash
+$ mysql -u root -p 
+mysql> create database mysite;
+mysql> create database drupal7;
+mysql> create user 'drupal7'@'localhost' identified by 'lapasswd';
+mysql> grant all privileges on drupal7.* to 'drupal7'@'%' with grant option;
+#+END_SRC
+
+* Creación de la base de datos en postgresql
+
+Primero, instalar los paquetes debian:
+
+#+BEGIN_SRC bash
+$ sudo apt-get install postgresql-9.1 postgresql-client php5-pgsql
+#+END_SRC
+
+Después, crear la base de datos y el usuario a postgres.
+
+#+BEGIN_SRC bash
+$ createuser dpsql --pwprompt --encrypted
+$ createdb dpsql --owner=dpsql
+#+END_SRC
+
+Para usar el cliente psql en local se puede modificar la línea local en
+/etc/postgresql/9.1/main/pg_hba.conf:
+
+#+BEGIN_SRC bash
+local             all            all                   trust 
+#+END_SRC
+
+Si se quiere cambiar la contraseña se puede hacer:
+
+#+BEGIN_SRC bash
+$ psql -U dpsql dpsql -W
+dpsql=> ALTER USER dpsql with password 'thepassword';
+#+END_SRC
+
+* Instalación Web
+
+Una vez habilitado el sitio se puede ir a http://mysite/install.php y
+la instalación es seguir un paso a paso.
+
+Primero, se pueden eliminar permisos a CHANGELOG.txt para evitar problemas de seguridad:
+
+#+BEGIN_SRC bash
+$ cd /var/www/mysite/
+$ chmod 600 CHANGELOG.txt 
+#+END_SRC
+
+Así habilitado el sitio, se puede ir a http://mysite/install.php y la
+instalación es hecha paso a paso.
+
+En el paso 4 (Configurar la base de datos) se puede encontrar el
+nombre de la base de datos, username de la base de datos y contraseña
+de la base de datos con los datos provistos.
+
+* Referencias
+
++ https://drupal.org/documentation/install
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

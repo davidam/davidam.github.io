@@ -1,0 +1,47 @@
+
+He seguido http://www.debian.org/doc/manuals/reference/ch-vcs.es.html#s-svn-inst
+
+1) Instalo desde testing/unstable
+
+apt-get install libapache2-svn subversion-tools
+apt-get remove apache
+
+2) Toco los ficheros de configuración para que el apache2 se comporte como se estaba comportando apache
+
+3) Pongo NO_START=0 en /etc/default/apache2 e inicio apache2 con /etc/init.d/apache2 start y hago las pruebas necesarias
+
+4) Configuro el repositorio
+
+mkdir -p /var/local/repos/
+svnadmin create /var/local/repos/
+chown -R www-data:www-data /var/local/repos       # (con otro usuario no te funcionará)
+
+
+5) Configuro Apache2
+
+Inserto en :
+<Location /repos>
+       DAV svn
+       /var/local/repos
+       AuthType Basic
+       AuthName "Repositorio Subversion"
+       AuthUserFile /etc/subversion/passwd
+       <LimitExcept GET PROPFIND OPTIONS REPORT>
+           Require valid-user
+       </LimitExcept>
+</Location>
+
+htpasswd2 -c /etc/subversion/passwd darroyo
+
+6) Comprueba que ha funcionado accediendo con un navegado a http://localhost/repos
+
+
+
+
+
+
+
+
+
+
+

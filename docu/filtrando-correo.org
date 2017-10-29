@@ -1,0 +1,28 @@
+#+TITLE: Filtrando listas de correo con procmail en es.gnu.org
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+Esta receta es personal para mi correo de es.gnu.org, pero le valdrá a
+cualquiera que tenga instalado procmail en su propio servidor. El
+.procmailrc situado en $HOME sería algo como:
+
+#+BEGIN_SRC bash
+PATH=/usr/bin:/usr/local/bin
+LOGFILE=$HOME/mail.log
+SHELL=/bin/bash
+:0:
+ * ^(From|Cc|To).*emacs-orgmode@gnu.org
+$HOME/emacs-orgmode
+:0:
+ * ^(From|Cc|To).*emacs-es@es.gnu.org
+$HOME/emacs-es
+#+END_SRC
+
+En gnu-es usamos squirrelmail y es posible suscribirse a ficheros
+desde el enlace Carpetas. Una vez suscrito ya es posible acceder a la
+carpeta desde vuestro cliente de correo preferido, en caso de gnus
+presionando U desde el Summary.
+
+Esta página está bajo una [[http://creativecommons.org/licenses/by/3.0/deed.es_ES][Licencia Creative Commons Reconocimiento Unported 3.0]]
+
+[[file:http://i.creativecommons.org/l/by/3.0/88x31.png]]

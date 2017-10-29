@@ -1,0 +1,6 @@
+
+Un truco que siempre se me olvida son los siguientes atajos:
+
+C-c C-y
+C-c C-r
+C-c C-q

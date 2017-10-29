@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Imagina que la Bibliografía Básica de la UNED fuera Libre</title>
+<!-- 2013-08-18 dom 12:06 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Imagina que la Bibliografía Básica de la UNED fuera Libre</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Dedicatoria</a></li>
+<li><a href="#sec-2">2. Prólogo</a></li>
+<li><a href="#sec-3">3. Los Inicios (El Proyecto GNU)</a></li>
+<li><a href="#sec-4">4. La Documentacion Libre en la Uned (Historia)</a></li>
+<li><a href="#sec-5">5. Los Problemas</a></li>
+<li><a href="#sec-6">6. Juntando Las Piezas</a></li>
+<li><a href="#sec-7">7. Un Nuevo Modelo Educativo</a></li>
+<li><a href="#sec-8">8. Licencia</a></li>
+</ul>
+</div>
+</div>
+<div class="abstract">
+<p>
+Elisa y Luis dos estudiantes de la UNED del futuro deciden hacer unas
+jornadas en su Centro Asociado sobre el proyecto GNU para informar al
+alumnado de lo importante que fue éste proyecto para la sociedad en
+general y la UNED, en particular a partir de ahí se genera un debate
+sobre lo que verdaderamente supuso un gran avance para ésta
+universidad: la documentación libre.
+</p>
+
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Dedicatoria</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Esta historia está dedicada a tod@s aquell@s que entregan su tiempo y
+esfuerzo a mejorar la UNED y la transmisión libre del conocimientos,
+pues sin ell@s no hubiera sido posible esta obra.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Prólogo</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Suena el despertador, Luis se levanta fatigado, desayuna y camina somnoliento hacia la ducha. Después enciende el ordenador y enseguida ve como Elisa le dice sonriente:
+</p>
+
+<ul class="org-ul">
+<li>¡Vaya! ya se ha despertado mi dormilón preferido
+</li>
+
+<li>Sí bueno, supongo que no debí quedarme en el irc hasta tan tarde, pero cuando estás manteniendo una conversación con 15 personas y más de 10 con sexo femenino no resulta tan fácil decir oye que me voy ;-D
+</li>
+
+<li>¿te salen ya los enlaces de integrales impropias?
+</li>
+
+<li>Estoy un poco dormido te refieres en el curso de Análisis Matemático ¿no?
+</li>
+
+<li>Sí, claro.
+</li>
+
+<li>Pues, espera un momento &#x2026; No. La verdad es que no me extraña no he sido muy activo últimamente y lo de las integrales no es lo mío, de cualquier manera no entiendo como es que todavía te queda esta asignatura no parece tan difícil.
+</li>
+
+<li>Se nota que no eres muy activo. Ya me lo repetirás en Febrero.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Los Inicios (El Proyecto GNU)</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Elisa es el segundo año que estudia en la UNED, Luis es su vecino y se
+metió en la UNED confiando que viviendo por sí mismo una enseñanza
+virtual podría luego ser un mejor profesional de la informática, o al
+menos eso le dice a la gente que le pregunta, aunque la auténtica
+razón era la de tener de compañera de estudios a su vecinita ;-)
+Además Luis siempre ha sido muy crítico con la enseñanza a distancia y
+la virtualización que ha sufrido la sociedad, debido a la pérdida de
+contacto humano que genera este proceso, por ello nuestro amigo
+siempre trata de participar (también en la organización) de
+actividades que en el Centro Asociado de su barrio promueve aluned.
+</p>
+
+<ul class="org-ul">
+<li>Por cierto, Luis terminaste de generar los ejercicios resueltos de
+Fundamentos Físicos de la Informática. Es una aberración que aún
+siga habiendo libros de Sáinz y Castillos. Pronto esa editorial
+pasara la historia como un punto más del pasado corrupto de nuestra
+universidad.
+</li>
+
+<li>Bufff, aún me queda darle unos retoques.
+</li>
+
+<li>Es muy importante que vayas publicando lo que hagas, sino la gente
+no va a poder ir revisando los errores.
+</li>
+
+<li>Vaaale, ahora mismo lo haré.
+</li>
+
+<li>¿Has votado ya para que salga la asignatura sobre el proyecto GNU
+como obligatoria en primero?.
+</li>
+
+<li>No sabían que hubieran salido tales votaciones.
+</li>
+
+<li>Bueno, después de 1 mes de intenso debate en la lista de propuestas
+al MEC al fin se ha perfilado una que convencía a todo el mundo más
+o menos. Si la apoya al menos el 80% de la comunidad universitaria,
+el MEC no debería oponerse a que se traslade al resto de la
+sociedad.
+</li>
+
+<li>La última vez que un ministerio se opuso a una propuesta
+universitaria se armó una tan gorda que hubo movilizaciones y todo.
+</li>
+
+<li>No creo que se atrevan a repetir el escándalo de tener al 90% de la
+población en la calle. Y pensar que en antaño la gente se molestaba
+en convocar movilizaciones de 100 ó 200 personas.
+</li>
+
+<li>¡y no hace tanto tiempo!
+</li>
+
+<li>Estaba pensando &#x2026;
+</li>
+
+<li>¿qué?
+</li>
+
+<li>que podríamos proponer hacer unas jornadas del proyecto GNU en el
+Centro Social.
+</li>
+
+<li>En el Centro Social sería redundante mejor en el Centro Asociado,
+allí la gente no está tan concienciada y el coordinador siempre nos
+dice que a ver si le damos un poco de vidilla.
+</li>
+
+<li>Tienes razón además podríamos relacionarlo con lo que significaron
+las licencias libres para la mejora de la UNED.
+</li>
+
+<li>Eso sería genial, además a raíz de participar en el foro para la
+propuesta de GNU en primero de Informática he tenido la oportunidad
+de conocer a uno de los promotores de la implantación de la GFDL en
+la bibliografía básica, le podría animar a que viniera.
+</li>
+
+<li>¿Te encargas tú de meterlo en el foro de propuestas del Centro
+Asociado?
+</li>
+
+<li>Vale, pero la próxima propuesta te toca redactarla a tí :-)
+</li>
+</ul>
+
+<p>
+Y así, diez días después se realizó la ponencia, en ésta básicamente
+se explicó lo siguiente:
+</p>
+
+<p>
+Al principio el software, los programas de ordenador eran
+propietarios, que cuando alguien compraba un producto tal y como
+Windown no podía modificarlo, pues no había manera de obtener el
+código y si se lo copiaba a algún amigo cometería un delito y le
+llamarían pirata.
+</p>
+
+<p>
+Richard Stallman entendió que eso atentaba contra las cuatro
+libertades básicas que se debían cumplir en el usuario de un programa
+para que ese fuera software libre:
+</p>
+
+<ul class="org-ul">
+<li>Usted tiene libertad para ejecutar el programa con cualquier
+propósito.
+</li>
+<li>Usted tiene libertad para modificar el programa para adaptarlo a sus
+necesidades.
+</li>
+<li>Usted tiene libertad para redistribuir copias, tanto gratis como por
+un precio.
+</li>
+<li>Usted tiene libertad para distribuir versiones modificadas del
+programa, de tal manera que la comunidad pueda beneficiarse con sus
+mejoras.
+</li>
+</ul>
+
+<p>
+Para preservar estas libertades en el software se inventó una licencia
+(la Licencia General Pública o GPL) que garantizara tales libertades,
+en esa licencia básicamente se decía que tal programa se podía
+distribuir y modificar libremente con la única restricción de que las
+modificaciones y mejoras del programa debían seguir teniendo licencia
+GPL.
+</p>
+
+<p>
+Pero esos programas libres requerían de documentación libre, pues el
+copyright de los libros y documentación de aquella época atentaba
+contra las libertades que Stallman había señalado en el software
+trasladadas a la documentación. La documentación de aquel entonces no
+podía ser modificada o distribuida sin permiso expreso del autor/a y/o
+la editorial. Este hecho implicaba que si alguien quería actualizar un
+libro de ciencia o historia y no tenía los derechos de autor debía
+volver a escribir el libro entero, esto retrasaba enormemente el
+desarrollo de la ciencia pero en el campo de la informática la impedía
+avanzar.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> La Documentacion Libre en la Uned (Historia)</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Al terminar la conferencia se armó un debatillo con el tema, viendo la
+importancia de que l@s estudiantes de informática estudiaran los
+principios, problemas y desarrollo del movimiento GNU. Para que no se
+volviera a caer en errores tales como patentar algoritmos y otra serie
+de problemas que casi tiraron por la borda los esfuerzos del software
+libre.
+</p>
+
+<p>
+Finalmente, todo el mundo salió satisfecho e ilusionado Elisa y Luis
+estaban eufóricos y no paraban de hacerse preguntas entre ellos, al
+ponente, a otros oyentes, etc.
+</p>
+
+<ul class="org-ul">
+<li>Pero entonces ¿por qué se empezó a usar documentación libre en la
+UNED? - preguntó Luis al ponente.
+</li>
+
+<li>Bueno todo empezó porque un grupo de alumn@s que querían mejorar las
+condiciones en que estudiaban y que conocían los beneficios que el
+proyecto GNU estaba trayendo a la comunidad de usuari@s y
+desarrolladores de software pensaron que si se trasladaran las
+ventajas de la licencia GPL al resto de ciencias y de materias del
+conocimiento, eso sería algo maravilloso para la humanidad. :-)
+</li>
+
+<li>A tu parecer ¿cuáles crees que eran las ventajas de utilizar la FDL
+(Free Documentacion License)? - inquirió Elisa.
+</li>
+
+<li>Puff, no es una pregunta fácil ¿realmente tenéis interés?.
+</li>
+
+<li>Sí, sí, venga - le dijo la gente que formaba el corro de gente que
+ya se había formado.
+</li>
+
+<li>Bueno debemos pensar en la situación en que se encontraba la UNED en
+aquel entonces:
+</li>
+</ul>
+
+<p>
+El estudiante de la UNED realizaba por sí solo todo el esfuerzo del
+aprendizaje (estudio, planificación, el proceso de evaluación
+continua, elecció de materiales, etc.) ni siquiera contaba con el
+apoyo del grupo. Estaba aislado en su aprendizaje, era una tarea
+terriblemente alienante.
+</p>
+
+<p>
+También empezaban a darse los primeros pasos hacia la tarifa plana y
+conexiones permanentes.
+</p>
+
+<p>
+El software libre estaba haciendo sus primeras mellas en la sociedad
+española y había algunos profesores de la Escuela de Informática, que
+entendían perfectamente sus ventajas.
+</p>
+
+<p>
+La bibliografía básica de las asignaturas muchas veces estaba
+desfasada y ponía en vergüenza a los responsables de dichas
+asignaturas.
+</p>
+
+<p>
+La UNED comenzaba a virtualizarse y surgía la necesidad de plantearse
+qué licencia dar a la documentación que se subía a la Red.
+</p>
+
+<p>
+Quienes formábamos aluned por aquel entonces comprendimos que éramos
+las personas adecuadas en el momento adecuado para sacar el proyecto
+adelante: la documentación libre.
+</p>
+
+<ul class="org-ul">
+<li>¡¡Te estás yendo por las ramas!! -gritó alguien que estaba en las
+últimas posiciones del corro.
+</li>
+
+<li>Si no entendéis el contexto, no entenderéis las ventajas. - dijo el
+ponente algo molesto. - El caso es que empezamos a divulgar la idea
+y los/as profesores/as que habían comprendido las ventajas de la
+GPL, también comprendieron las ventajas de la FDL, así es que
+abrieron proyectos para liberar su bibliografía básica. El resultado
+fue extraordinario.
+</li>
+</ul>
+
+<p>
+Por un lado, el alumnado se encontró a sí mismo en el estudio, pues
+para aprender y aprobar ya no estudiaban sino generaban documentación,
+solucionaban problemas, hacían compendios de lo que encontraban en
+libros, revistas, etc. y ¡compartían dudas y soluciones!. Esto ahora
+nos parece trivial pero hasta entonces nunca se había hecho. Como
+podéis imaginar las notas y la motivación de est@s estudiantes mejoró
+una barbaridad.
+</p>
+
+<p>
+Por otro lado, el profesor bueno encontró la oportunidad de asistir a
+sus alumnos entusiasmados en una lista de distribución, algunos
+comenzaron a comprender que enseñar no es otra cosa que hacer que un
+alumno se ilusione con lo que aprende. Además estos profesores/as
+fueron los primeros en el mundo en dar una información totalmente
+actualizada a los nuevos/as estudiantes y esto repercutía en su
+reputación. También repercutía en su reputación el tener datos reales,
+de primera mano y en lo que ellos habían participado directamente: el
+aprendizaje cooperativo y colaborativo. Aunque personalmente creo que
+aquello que verdaderamente les dió prestigio a esos profesores y
+profesoras pioneros y pioneras fue el agradecimiento que los alumnos y
+alumnas sentían por haberse sentido atendidos por primera vez en su
+estudios en la UNED.
+</p>
+
+<p>
+Luego cada caso era un mundo había proyectos en los que el profesor
+era muy activo en la lista, también había otros en los que lo era muy
+poco, en algunas listas había dos o tres alumnos que hacían todo el
+trabajo, en otras eran 15 ó 20 muy bien coordinados, cada caso era un
+mundo. Había casos en los que el trabajo venía sobre todo con tutores
+y tutoras en vez de con profesores.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Los Problemas</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>¡vaya!- dijo de pronto Luis - fue un tanto heroico por lo que veo. Y
+¿nada de lo que hacíais os contaba en la nota?
+</li>
+
+<li>Fueron muy raros los casos, hombre, cuando el profesor de la
+asignatura te conoce y sabe que te has currado el tema y suspendes
+por unas décimas pues al final te aprobaba, pero vamos contaba muy
+poco.
+</li>
+
+<li>pues no sé de que me quejaba con lo de Fundamentos Físicos - susurró
+Luis a Elisa.
+</li>
+
+<li>Lo importante - comenzó a comentar el ponente - es que hoy en todas
+las carreras hay documentación libre y en Informática toda la
+bibliografía básica lo es. Si no se hubiera hecho de ese modo,
+seguramente no se hubiera hecho de ninguna manera. Pero es que
+además para nosotros el cambio de estar estudiando sólos en nuestras
+casas a aprender con un montón de gente en la Red con un objetivo
+concreto y apoyados de vez en cuando por un profesor o tutor, fue
+genial, una maravilla.
+</li>
+
+<li>¿Por qué no les cuentas las zancadillas que nos pusieron? - dijo de
+pronto alguien que había permanecido hasta entonces en la
+retaguardia.
+</li>
+
+<li>Bueno, tampoco fueron tantas - respondió el ponente quitándole
+importancia - Por un lado, las editoriales ingresaban importantes
+cantidades económicas por sus libros, algunas vivían de los libros
+que vendían a la UNED. Si un libro estaba en la Red dejaría de
+venderse (o al menos eso pensaban) por eso impidieron incluso con
+denuncias que los libros no estuvieran en Internet, por otro lado
+algunos profesores cobraban algún dinero por derechos de autor y no
+querían renunciar a tales dineros. Esto realmente no suponía serios
+problemas para la gente que empezamos a generar documentación libre,
+pero sí suponía un problema para la virtualización de la enseñanza,
+me explico:
+</li>
+</ul>
+
+<p>
+Los primeros documentos que adoptaron la GFDL en la UNED eran
+colecciones de ejercicios y bibliografías básicas compuestas por
+apuntes y materiales cogidos de la Red, no hubo mucha dificultad en
+que esos documentos adoptaran la licencia que proponíamos, el
+agradecimiento de l@s alumn@s, las rápidas mejoras, actualizaciones y
+correcciones de erratas fueron suficiente como para convencer a l@s
+profesor@s encargados, quienes se veían como mejoraba su asignatura,
+el aprendizaje de sus alumn@s, su prestigio, ¡incluso sus ingresos!
+</p>
+
+<p>
+Sin embargo, la UNED que se encontraba en un fuerte proceso de
+virtualización veía cómo se impedía y atrasaba ese proceso al no poder
+estar el material docente que seguía estando exclusivamente en forma
+de libros, en la Red, lo cual llevó a más de un ultimátum :-(
+Simplemente se veía con envidia la facilidad con que se virtualizaban
+las asignaturas con documentación libre.
+</p>
+
+<p>
+Por otro lado, empezaron a surgir alumn@s y pequeñas editoriales que
+vendían esos libros libres y gratuitos, ¡qué absurdo! decían muchos
+¿por qué alguien va a querer comprar un libro que ya es gratuito?
+Bueno, no todo el mundo quiere hacer el tedioso y no siempre accesible
+trabajo de bajarse un libro e imprimírselo, por otro lado un lector
+suele preferir una buena encuadernación a una impresión casera. Yo
+también compré y vendí libros :-). En fin las editoriales
+tradicionales se acabaron dando cuenta de que es rentable vender
+libros libres y que no había que tener miedo de ello, lo que sí se
+aseguró es que esos libros no podían ser caros, porque si no la gente
+se los bajaría de la Red, no se obtenían grandes márgenes por cada
+libro pero sí se vendían muchos.
+</p>
+
+<p>
+A medio plazo, las editoriales que vendieron libros libres vieron como
+sus libros eran conocidos por muchísima gente y mejorados también por
+gran cantidad de personas, por tanto mucha gente quería esos libros
+con su buena encuadernación y se los compraban a las editoriales que
+mejor sabían aprovechar las mejoras que se hacían a esos libros, las
+que llevaban desde el principio vendiéndolos.
+</p>
+
+<ul class="org-ul">
+<li>y ¿qué decían l@s profesor@s de sus derechos de autor? - preguntó
+alguien.
+</li>
+
+<li>como ya he dicho antes - comenzó el ponente - el prestigio que
+ganaron los autores que se dedicaron a liberar la bibliografía
+básica de sus asignaturas dejaba en ridículo el escaso dinero que
+percibían de las editoriales, además en la GFDL se tiene un especial
+cariño y respeto hacia los autores de la obra, nunca se olvida quién
+ha realizado la obra y quién la ha modificado.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Juntando Las Piezas</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Unas estrellas comenzaron a hacerse hueco en aquel cielo de verano
+tratando de hacer recordar a las (cada vez más) personas que
+conformaban el corro que la noche estaba llegando y que podría ser
+hora de ir recogiendo los bártulos y de que cada uno fuese a su casa a
+descansar, sin embargo, la expectación que generaba el escuchar de
+primera mano la transformación que vivió la UNED de una manera tan
+positiva y radical como rápida, era algo que hacía olvidar lo que
+significaba el día y la noche. Y así, continuando con la magia que el
+diálogo había hecho despertar en los corazones de los asistentes, una
+nueva pregunta surgió de los labios de Elisa:
+</p>
+
+<ul class="org-ul">
+<li>Nos has repetido ya varias veces que la bibliografía libre surgió
+casi al mismo tiempo de iniciarse el proceso de virtualización que
+sufrió la UNED, pero ¿cómo y cuándo la UNED de manera institucional
+adoptó este modelo como propio?
+</li>
+
+<li>Pues nunca y siempre. Es decir, en el momento en que algun@s
+profesor@s promovieron los primeros proyectos para liberar su
+bibliografía básica, pues supuso un apoyo institucional muy
+fuerte :-). Al mismo tiempo, el equipo de gobierno de la UNED nunca
+impuso un modelo u otro, aunque dentro del mismo sí hubo personas
+que apoyaban el modelo, así como quien lo paraba y, al principio la
+mayoría no comprendía sus ventajas o inconvenientes, con el tiempo
+sí fueron asimilando lo que esto suponía y bueno pues hoy creo que
+nadie lo cuestiona :-)
+</li>
+
+<li>Lo que quiero decir es que ¿cómo se integró todo esto en el modelo
+educativo?
+</li>
+
+<li>Bien, pues de la misma manera que se juntan las piezas de un puzzle,
+primero coges las esquinas &#x2026; imaginemos que nuestras esquinas eran
+1)la ayuda mutua entre l@s estudiantes 2)la virtualización de la
+enseñanza 3)la defensa de lo público 4)la vocación transmisora del
+conocimiento de la universidad.
+</li>
+</ul>
+
+<p>
+A lo mejor desde la esquina de ayuda mutua hasta la de virtualización
+hay un montón de piezas que son grupos de estudiantes en la Red, hasta
+la decisión que toma el equipo de gobierno de la UNED sobre cómo se
+debe virtualizar, pasando por grupos de alumn@s que colaboran con
+profesor@s, grupos de profesor@s, programas geniales (plataformas
+educativas, sistemas tutores inteligentes, adaptativa, etc.) que
+ayudan a virtualizar la enseñanza, todo se acaba juntando si te fijas
+cómo son las piezas, a veces unas se parecen a otras, te equivocas, te
+bloqueas, hay que fijarse bien.
+</p>
+
+<p>
+Pero desde la esquina de ayuda mutua entre l@s estudiantes, también
+había piezas que son grupos de alumn@s que no están en la Red y que si
+vas juntando piezas se acercan a la esquina de la vocación transmisora
+del conocimiento de la universidad donde estarían los libros, la gente
+que se entrega en su trabajo y estudio, etc.
+</p>
+
+<p>
+En la esquina de la defensa de lo público estaban algunos sindicatos
+no mayoritarios, Centros Sociales Okupados y Autogestionados, el
+proyecto GNU, etc.
+</p>
+
+<p>
+La documentación libre e Internet, simplemente eran las piezas claves
+del puzzle del nuevo modelo educativo y estaban en el corazón del
+mismo.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Un Nuevo Modelo Educativo</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+En realidad, el modelo de la UNED no es muy distinto del que había en
+el siglo XX, entonces l@s alumn@s tenían un material con el que
+estudiar, hoy también lo tienen sólo que en vez de libros propietarios
+hay libros libres, ya que es fundamental que el/la estudiante tenga un
+medio secuencial donde pueda ver el orden lógico de las ideas, pero
+puesto que el aprendizaje es algo que se adquiere relacionando ideas y
+poniendo al alumn@ en un proceso activo, éste tiene la posibilidad de
+acceder a la información en formato de hipermedia (páginas web), pero
+esta información está totalmente personalizada y adaptada para que su
+aprendizaje sea máximo al acceder a ella, puesto que el sistema conoce
+y comprende las aportaciones que el individuo ha hecho en foros, la
+navegación que ha seguido desde que comenzó la carrera y todos esos
+datos no pueden ser accedidos por nadie más que por los agentes y
+procesos que gobiernan el sistema.
+</p>
+
+<p>
+Así mismo, sigue habiendo tutorías dónde l@s alumn@s comparten sus
+dudas y reciben ayuda de tutor@s, cumpliendo los estatutos de nuestra
+universidad (y no como antes que era todo una utopía ;-). Aunque lo
+verdaderamente importante de los Centros Asociados es la posibilidad
+de otorgar un espacio físico dónde l@s alumn@s puedan hacer algo tan
+humano e importante como tocarse :-)
+</p>
+
+<p>
+Si nos ponemos a pensar lo único que ha cambiado radicalmente en el
+modelo es el sistema de evaluación. Por un lado, el alumno o alumna
+tiene la posibilidad de someterse a pruebas de autoevaluación a
+petición suya y/o sugerencia del sistema hipermedia, así mismo, éstas
+pruebas están pensadas para que el aprendizaje sea máximo tanto en la
+formulación de preguntas como las sugerencias que se reciben, como las
+razones que se dan para determinar si una respuesta está bien o
+mal. De esta manera, el alumno o alumna está sometid@ a una constante
+autoevaluación en la que conoce sus fallos y aciertos. Así mismo, la
+evaluación final en la que obtiene esa nota tiene en cuenta esos
+datos, pero lo que realmente tiene peso son las acciones de otros
+alumn@s derivadas de las que él ha realizado, si sus comentarios en
+los foros generan debates, si la documentación que realiza es muy
+visitada, encuestas a los compañeros, etc. No se nos olvide que el
+tutor telemático es un compañer@ más especialmente querido por sus
+amplios conocimientos, intervenciones y generación de material y si es
+superado por un alumn@ puede que tenga que cambiar de trabajo :-D
+</p>
+
+<p>
+Ahora bien, ¿cómo se dió este cambio? bueno, pues después de largos
+debates, estudios sobre experiencias similares, creación de
+experiencias piloto, etc.
+</p>
+
+<p>
+¡Demonios! - exclamó repentinamente el cuentacuentos ;-) al tiempo que
+miraba el reloj - tengo que irme pues de otro modo ni siquiera voy a
+llegar a dar un beso a mis niñas, antes de que se acuesten.
+</p>
+
+<p>
+Y así, recogió sus cosas como si le fuera la vida de en ello y
+desapareció, dejando a l@s asistentes como flotando en una nube
+&#x2026; Poco a poco comenzaron a hablar entre ell@s y a abandonar la
+sala. Al rato todo el mundo se había ido a sus hogares contentos de
+vivir en una sociedad dónde se compartía el conocimiento, contentos de
+participar en la comunidad universitaria que tenía por siglas
+UNED. Los críticos con el modelo decían que la educación a distancia
+separaba a las personas, pero quienes salían de esa sala aquella noche
+sabían que quizás había sido así en un pasado pero que ahora no.
+</p>
+
+<p>
+Esa misma noche nuestro amigo Luis terminó de generar ejercicios
+resueltos para la asignatura de Fundamentos Físicos de la
+Informática. Y así se acababa de materializar un nuevo granito de
+arena en la difusión del conocimiento.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Licencia</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Copyright (C)  2002 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+
+<div class="figure">
+<p><a href="https://www.gnu.org/copyleft/fdl.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png" alt="200px-GFDL_Logo.svg.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2013-08-18 dom 12:06</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

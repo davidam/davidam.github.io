@@ -1,0 +1,19 @@
+
+# SOME TRICKS BEFORE TO INSTALL UBUNTU 7.10 ON AN IMAC
+
+# to fix wireless:
+
+sudo apt-get install bcm43xx-fwcutter
+sudo modprobe bcm43xx
+sudo iwlist eth1 scan
+
+# to fix the screen configuration
+
+sudo aptitude install 915resolution
+
+# set emacs like default editor
+
+sudo apt-get install emacs22
+sudo apt-get remove gedit
+sudo update-alternatives --config editor
+

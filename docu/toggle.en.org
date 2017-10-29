@@ -1,0 +1,54 @@
+#+TITLE: Toggle
+#+LANGUAGE: en
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+Today, I will comment how to make the typical toggle function to make
+to appear and disappear a div on different ways:
+
+* Using Pure Javascript
+
+This is the best option if we don't want to be dowloading the jquery o simply we don't want use it.
+
+#+BEGIN_SRC javascript
+function toggle-js(div){
+var div = document.getElementById(div)
+if (div.style.display == 'none') {
+div.style.display = 'block'
+} else {
+div.style.display = 'none'
+}
+}
+#+END_SRC
+
+* Using Jquery
+
+That's the same that we have done using jquery selectors
+
+#+BEGIN_SRC javascript
+function toggleJquery() {
+if ($('#div').css('display') == 'none') {
+$('#div').css('display', 'block');
+} else {
+$('#div').css('display', 'none');
+}
+}
+#+END_SRC
+
+Although if we want jquery the best comfortable is use the function
+toggle that is predefined. We can use it that it's predefined. We can
+use it on the next way:
+
+#+BEGIN_SRC javascript
+$('#div').toggle();
+#+END_SRC
+
+It deserves the take a look to the documentation of the toggle
+function, because this function is very powerful and it presents many
+options.
+
+* License
+This document is under a [[http://creativecommons.org/licenses/by/3.0/deed][Creative Commons Attribution Unported 3.0]]
+
+[[http://creativecommons.org/licenses/by/3.0/deed][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]

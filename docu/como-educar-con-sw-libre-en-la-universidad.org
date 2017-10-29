@@ -1,0 +1,24 @@
+#+TITLE: Cómo Enseñar a Programar con Software Libre en la Universidad
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+Primero es necesario aprender a utilizar un editor de textos decente
+como por ejemplo GNU Emacs, empieza por los atajos de teclado, sigue
+familiarizándote con la auto-ayuda (C-h ?), luego haz pequeñas
+funciones leyendo "An Introduction to Programming in Emacs Lisp",
+pensando si estas son útiles, o al menos divertidas para tí.
+
+Te resultará muy útil tener un grupo de amigos con intereses e ideales
+comunes con quienes programar, así puedes compartir trucos y bromas
+con el código.
+
+Empieza con cosas pequeñas de programas grandes, pero habiendo
+entendido antes las primitivas del lenguaje.
+
+Trata de evitar distracciones mientras estás concentrado programando y
+ten claro tus pequeños objetivos y el objetivo final de lo que estás
+programando.
+
+En la Universidad hay muchas asignaturas de programación, debes tratar
+de mirar siempre el código fuente de aplicaciones libres de lo que
+estás estudiando.

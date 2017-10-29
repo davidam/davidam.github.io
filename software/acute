@@ -1,0 +1,23 @@
+#!/bin/sh
+# Éste script reemplaza acentos por acutes y otros caracteres especiales por su equivalente en XML/HTML usando sed
+#
+# GeoX fecit 18-7-2002
+#
+tmp="/tmp/xmltemporal"
+clear
+echo "Cambiando acentos por acutes ..."
+sed -e 's/á/\&aacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/é/\&eacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/í/\&iacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/ó/\&oacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/ú/\&uacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/Á/\&Aacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/É/\&Eacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/Í/\&Iacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/Ó/\&Oacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/Ú/\&Uacute;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/ñ/\&ntilde;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/Ñ/\&Ntilde;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/ü/\&uuml;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/Ü/\&Uuml;/g' $1 > $tmp && cp $tmp $1
+sed -e 's/¿/\&iquest;/g' $1 > $tmp && cp $tmp $1 && rm /tmp/xmltemporal

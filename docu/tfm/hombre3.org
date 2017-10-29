@@ -1,0 +1,288 @@
+#+OPTIONS *:t
+* Introducción
+*entrevistador*: Bueno pues muchas gracias por haber accedido a hacer
+la entrevista. La entrevista va sobre nuevas tecnologías y movimientos
+sociales y entonces te vamos a hacer una serie de preguntas sobre los
+colectivos a los que perteneces. ¿Qué colectivos perteneces?
+
+*hombre3*: Bueno pues a día de hoy estoy participando en una
+Asociación de vecinos del barrio Valle Inclán, estoy participando
+también en un grupo del 15M que ha hecho un huerto urbano en el barrio
+de la Concepción, estoy también pero de manera más marginal en otros
+dos colectivos. Uno que se llama Científicos por el medio ambiente
+pero está bastante mal la cosa y luego otra que es la Fundación Manuel
+Moliere que es un grupo así de análisis social, filosófico y bueno y
+ya está.  
+
+*entrevistador*: Vale pues si te parece hacemos la entrevista
+centrados en las asociaciones que me has dicho. Excepto la asociación
+de vecinos que ya hemos entrevistado antes.
+
+*hombre3*: Vale muy bien.
+
+*entrevistador*: La entrevista esta divida en dos parte
+fundamentales. Una es de flujos de información que hay relativos a los
+colectivos que participas y otra es de factores de cambio de
+tecnológico. 
+
+* Flujos de Información
+** comunicación interna
+
+*entrevistador*: Entonces empezamos por la primera parte. Entonces el
+primer punto es relativo a la comunicación interna entonces si te
+parece pues me vas contando los flujos de comunicación interna que hay
+en los colectivos que participas. Pues flujos de comunicación interna,
+pues desde actas que se envían, órdenes del día, actividades que se
+van a realizar. Todo lo que es más relativo a los socios,
+convocatorias, cualquier cosa.
+
+*hombre3*: hombre pues se usa mucho la comunicación por email
+prácticamente en todas que hemos hablado menos (...)  que la dejamos a
+un lado toda la comunicación se hace por medio de email. Bueno
+dependiendo de una u otra hay más flujos o menos. Entonces te describo
+las tres... bueno digamos la que más flujo tiene con diferencia de
+email es la de, por medio de una lista de distribución de correo, es
+la del huerto urbano entonces eso es así porque necesita mucha
+comunicación interna y como es algo que hay que cuidar todos los días
+y surgen muchas cosas pues hay mucho tráfico de correos
+electrónicos. Las otras dos ha habido sus épocas y ahora no hay tanta
+comunicación interna de correos y mientras que en la del huerto urbano
+es una comunicación completamente abierta es decir o sea es una lista
+de correo tu mandas un correo a doscientos o más, en las otras dos es
+más oficialista hay una especie de junta directiva o similar y son lo
+que mandan la información no puedes tú mandar un correo que lo vean el
+resto de socios de la asociación. Entonces yo creo que hay una
+diferencia importante, en una es completamente horizontal y la otra es
+más formal, ¿no? Pero vamos que en todas ellas es ya por correo
+electrónico toda la comunicación no hay apenas carta ni demás, ni
+teléfono es extraño. Lo mayoritario por email.
+
+*entrevistador*: Hay puntos de información...
+
+*hombre3*: Puntos de información...digamos... ¿con vista a los
+socios...? Con vistas a los socios no porque más o menos nos conocemos
+y las cosas que se tienen que comunicar pues se comunica con el email
+y ya está si tu quieres hablar con alguien pues quedas con alguien
+pero el día a día se hace con los correos electrónicos
+
+** colaboración interna
+
+*entrevistador*: Mmm...Hay punto de colaboración interna. Si hay
+redacción de textos en común por ejemplo o esto es también la junta
+directiva que es la que redacta los textos. Eso cómo...
+
+*hombre3*: Pues bueno el tema por ejemplo de la asociación de huertos
+urbanos allí realmente no ha habido mucha elaboración de textos
+realmente tengo que decir que llevamos solo dos meses un texto y
+entonces solo ha habido la redacción de un texto y sí que se hizo de
+manera comunitaria, entre todos...
+
+*entrevistador*: Un texto fundacional
+
+*hombre3*: Bueno es un decálogo de buenas prácticas en el huerto para
+gente que pudiese en un futuro pero bueno fue una cosa, vamos, no muy
+desarrollada. Y en las otras dos sí que, en la de científicos por el
+medio ambiente sí que ha habido alguna vez discusión de... de un
+manifiesto o de algún texto pero como se ha hecho es que alguien
+dentro de la asociación crea un primer borrador, lo manda al resto y
+hace sugerencias o pequeños cambios, normalmente es algo ya más hecho,
+más trabajado y a nivel individual y solo se dedica una a pequeñas
+aportaciones, no? En la de Moliere cada vez que ha habido reuniones
+físicas para discutir algún texto, de manera común y tal, pero bueno
+tampoco mucho-
+
+*entrevistador*: Vale o sea que normalmente las asociaciones que me
+has contado, por resumir, alguien toma la iniciativa de crear un texto
+y luego se le manda al resto y van...
+
+*hombre3*: Sí eso sería el patrón común
+
+** búsqueda de consensos
+
+*entrevistador*: Pues... búsqueda de consensos. Cuando hay necesidades
+de tomar las decisiones por consenso o solo en determinadas ocasiones,
+cómo se hace esto
+
+*hombre3*: Bueno hay diferencias entre las asociaciones que te comento
+la primera la de los huertos se está trabajando bastante las
+decisiones por consenso a expensas de que igual el proceso sea muy
+lento pero sí que se está trabajando bastante en eso. No en cuestiones
+del día a día que tienes que tomar decisiones como regar un día o dos
+pues no... en ese tipo de cosas no se trabaja sobre consenso pero
+decisiones más generales como crear un nuevo bancal, un terreno donde
+vas a cultivar o si se va a hacer un compostaje nuevo eso sí que se
+intenta llegar a un consenso que normalmente se hace en las reuniones
+generales los sábado, hay una reunión los sábado y ahí es donde se
+decide eso.
+
+*entrevistador*: ¿Son reuniones físicas no?
+*hombre3*: Son reuniones físicas. En las otros dos es que por su naturaleza tampoco existe esa necesidad hay una asamblea general, son asociaciones más a nivel nacional, a nivel nacional son personas que están por todo el estado entonces no hay esa necesidad de desarrollar consensos más allá de la asamblea que se hace anual pues de hecho en científicos por el medio ambiente no es anual, se hace bianual, no hay esa necesidad de tomar decisiones, ¿no?. Entonces no se trabaja tanto en eso... no hay esa necesidad. Están estipulado desde el principio los mecanismos de funcionamiento entonces pues no... no se da esa necesidad.
+
+** gestión de tareas
+
+*entrevistador*: Vale, gestión de tareas. ¿Hay comisiones para realizar determinadas tareas hay algún mecanismo online de gestión de tareas si están hechas o no están hechas, hay... cómo se gestionan las tareas?
+*hombre3*: Bueno aquí también hay diferencias entre los colectivos, por ejemplo en el colectivo del huerto sí que se utilizan mecanismos de gestión de tareas por internet en concreto se usa la herramienta doodle para fijar los turnos de riego, en grupos de dos o tres personas para regar entonces en la herramienta de doodle tú vas y te apuntas el día que quieras y que no haya nadie ya apuntado. Entonces en ese sentido sí que se está usando. En la de científicos por medio ambiente que sí que yo tuve alguna participación más activa en cuanto a tareas en concreto me encargaba de un boletín que ya no me encargo pues la distribución de tareas se decidió en una Junta directitva, digamos en una junta directiva de la asociación. Y en la otra, la fundación Moliere pues las tareas ahí es que estoy bastante menos involucrado, las tareas es también un poco a través de las tareas anuales es una distribución más acotado entonces no se usa tanto, tanto en científicos por el medio ambiente como en la Fundación Moulier no se usan herramientas electrónicas. Es más por contacto directo.
+*entrevistador*: La fundación Moulier en nacional
+*hombre3*: Sí
+*entrevistador*: Y la de científicos
+*hombre3*: También. Las dos son nacionales
+*entrevistador*: ¿Y son las asambleas nacionales las que deciden las tareas? 
+*hombre3*: Sí.
+
+** gestión de eventos
+
+*entrevistador*: Vale, Gestión de eventos. Pues se va a hacer unas jornadas o algo o alguna asamblea. Eso cómo se gestiona... se manda por correo electrónico...
+*hombre3*: Bueno pues de nuevo hay diferencias sobre todo entre la primera y las otras dos. En la de huertos se hace la gestión de eventos se hace mayoritariamente con la herramienta de internet, hay que decir que es una asociación bastante joven, la media de edad es en torno a los treinta años. Gente que está muy habituada a usar las herramientas de internet. Entonces normalmente cuando se prepara un evento pues se habla en la reunión semanal y cuando se aprueba se manda básicamente email las otras dos un poco o que comentaba antes a nivel de junta directiva se toman un tipo de decisiones y luego hay una difusión más generalista, tanto por medio de emails, por medio de cartas, por medio de comunicaciones, por medios de comunicación. Por ejemplo en científicos por el medio ambiente cuya función es principalmente de cara al exterior, de cara al público general pues sí que se suele mandar muchas noticias a gente de prensa o a medios de comunicación
+
+** comunicación con el exterior
+
+*entrevistador*: Ya que estamos con eso de comunicación con el exterior quería que me hicieras un poco más de información... comunicación con otros colectivos forman alianzas coaliciones, cómo va todo eso
+*hombre3*: Hay... si quieres hablo sobre todo más de las tres asociaciones hay una que sí que tiene un componente más de búsqueda de alianzas de participación con el exterior que es la de científicos por el medio ambiente. En este colectivo en concreto sí que por su naturaleza lo que se trata es de participar de otros colectivos, de otras asociaciones para la creación de un manifiesto común, para trata de asesorar los objetivos de la asociación sobre todo desde el punto de vista científico tratar de ayudar a otros colectivos a la hora de valorar situaciones dentro del punto de vista ecológico entonces sí que hay una continua labor de buscar alianzas y buscar sinergias con otros colectivos eso se hace fundamental a través de socios concretos que tengas relaciones con otros colectivos relaciones o sea ya relaciones personales u oficiales a través ya de la junta directiva que tenga una representación de todo el colectivo, no?
+
+** documentación interna
+
+*entrevistador*: ¿Hay documentación interna en los colectivos a los que perteneces?
+*hombre3*: Sí, claro en los tres colectivos. Quizás en el primero, el de lo huertos al ser algo más dinámico, más de trabajo diario de la huerta pues hay muy pocos documentos externos, hay algún documento de objetivos generales del huerto, otro de buenas prácticas y otro de los que han puesto dinero para iniciar el proyecto y ya está se limita a eso. Las otras dos tienen una cantidad inmensa de documentos tanto fundacionales como manifiestos, como de asambleas bueno en el de huertos también están las actas de las asambleas, sí eso es común interno
+*entrevistador*: Es interna?
+*hombre3*: sí es interna en el sentido en que solo tienen acceso a ella los socios
+*entrevistador*: Pero por ejemplo en el 15M hay muchas actas que las puedes encontrar en los blogs
+- No, no aquí son internas. Aunque lo que pasa es que espérate que en la fundación Moulier tienes que depositar una copia de las actas de las asambleas creo que hay esa obligación, ahora no estoy seguro igual lo sabes tú  mejor que yo...
+*entrevistador*: Bueno que tienes que depositar las actas en un sitio determinado.
+*hombre3*: Pero en general son documentos internos de acceso solo para los socios
+
+** gestión económica
+
+*entrevistador*: Vale la gestión económica igual es otro ejemplo de documentos internos, no? La cuentas...
+*hombre3*: Sí, sí
+*entrevistador*: Cómo funciona la gestión de donaciones, cuáles son las formas de financiación de los diferentes colectivos, si hay contribuciones de miembros o no, si hay para hacer gastos e ingresos
+*hombre3*: Bueno es que aquí de nuevo la diferencia es importante. La fundación Moulier edita muchos libros y tiene una revista y demás y entonces buena parte de su financiación es a través de las ventas de esta material, no? A parte de las cuotas de los socios. El grupo de científicos por medio ambiente únicamente es por cuotas de socios, esas cuotas son bastante elevadas y la asociación de huertos urbanos se puso un dinero inicial, no mucho, y a partir de ahí se comenzó a trabajar no hace falta un cantidad de dinero muy grande y hay muchas donaciones por parte de vecinos del barrio que da igual un poco de abono, de plantas... se trabaja bastante con donaciones. Pero bueno las tres... ninguna dispone de subvenciones públicas, es todo financiación interna
+*entrevistador*: Contribuciones de dentro, no
+*hombre3*: Contribuciones de dentro
+*entrevistador*: Vale y donaciones
+*hombre3*: Donaciones sí, en el caso de la fundación Moulier si ha habido alguna donación que sepa y en la de científicos por el medio ambiente ahora mismo no lo sé. Ah bueno y en la de huertos no donaciones mate... económicas pero sí materiales o como te decía antes alguna planta, sí que ha habido alguna donación.
+
+** toma de decisiones
+
+*entrevistador*: Pasamos ya al punto de toma de decisiones, cómo se toman decisiones en los diferentes colectivos
+*hombre3*: Bueno pues de nuevo hay diferencias... por separar la de huertos urbanos con las otras dos. Las otras dos igual la toma de decisiones, los mecanismos son muy parecidos pero difiere de la primera. En la asociación de huertos urbanos la toma de decisiones es bastante directa, de democracia directa, todas las reuniones se toman semanales y luego hay cierta autonomía en las decisiones del día a día de las personas que están trabajando en el huerto.
+*entrevistador*: Por ejemplo si hay una decisión que hay que tomar de manera urgente, que no da tiempo a llegar a la asamblea semanal. Se toma la decisión, no se toma.
+*hombre3*: Si son decisiones que hay que tomar porque el huerto lo necesita porque ejemplo si hay una planta que hay que regarla más o menos se toma en el acto, si son decisiones a largo plazo se espera a la reunión semanal. O sea que dependiendo de la urgencia de la acción a tomar pues se espera o se toma en el acto
+*entrevistador*: Y si se toma en el acto. La toma la persona que ve la necesidad.
+*hombre3*: Sí. Eso es. También hay que decir que no todas las personas tienen los mismos conocimientos, entonces lo que he podido detectar es que cuando alguien no sabe algo pregunta a alguien que sabe algo más y con lo que le diga esa persona toma la decisión. Porque claro no todos saben lo mismo. Y en las otras dos pues...
+*entrevistador*: Espera un momento vamos a terminar con esta parte. ¿Alguna vez han tomado decisiones a través de una lista de correoelectrónico?
+*hombre3*: No, no.. ha habido muchas discusiones, debates internos pero nunca se ha llegado a tomar una decisión vía correos electrónicos, siempre se ha dejado a la asamblea semanal, siempre, siempre...
+*entrevistador*: Ahora cuéntame las otras dos.
+*hombre3*: Pues las otras dos... el mecanismo pues es más eh de por son asociaciones nacionales entonces las decisiones los encargados pues por ejemplo la fundación Moulier si hay un encargado de las ventas de los libros pues es el que tomar más o menos las decisiones y luego pues las otras directivas que llevan día a día. Es una estructura que ya está organizada y es desde esta estructura donde se pueden tomar las decisiones del día a día. Entonces no es tan democrático directo la toma de decisiones por la propia forma que tiene 
+
+** movilización
+
+*entrevistador*: Eh se participa en algún tipo de movilizaciones o asociaciones?
+*hombre3*: Pues poco, la verdad quizás la que más ha participado pero de manera muy indirecta, es decir a nivel de colectivo ninguna porque su naturaleza tampoco es participar de manera directa en movilizaciones. Otra cosa es que se fomente la participación en movilizaciones pero a nivel individual, siempre se va a fomentar que se participe en movilizaciones en la asociación de huertos urbanos, en la de científicos por el medio ambiente en su área de trabajo, pero no hay una participación directa en movilizaciones.
+*entrevistador*: Por ejemplo hay movilizaciones que igual participan un montón de colectivos, asociaciones, plataformas que convocan. Se hacen tres líneas de colectivos o lo que sea...
+*hombre3*: Sí, pero a ese nivel no. Es extraño. Así como en el manifiesto sí se ha participado, no en convocatorias de movilizaciones tipo manifestación o marcha. Es más en un plano ideológico, apoyamos tal manifiesto o otras cosa, pero no con una convocatoria. Porque ninguna de las tres tienen esa característica.
+
+** gestión de nuevos colaboradores
+
+*entrevistador*: Hay mecanismos de gestión de nuevos colaboradores.
+*hombre3*: Nuevos socios
+*entrevistador*: Sí, mecanismos de manera formal no, es una carencia de las tres asociaciones y de hecho hecha en falta. De manera informal sí, siempre hay alguien que te ayuda que te echa una mano cuando te incorporas de nuevo pero no hay un protocolo o unas personas encargadas de eso es bastante informal
+
+** reuniones/asambleas
+*** facilitadores/moderadores, anotadores, otros roles
+
+*entrevistador*: Bueno me has comentado que en algunas de las asociaciones sí que hay, bueno en todas, entonces me gustaría que me contases un poco cuál es la estructura y que problemas hay dentro de esas asambleas sí hay por ejemplo, moderadores, gente que toma actas o un tipo de presidente.
+*hombre3*: Hombre lo que es el funcionamiento de la asamblea es bastante parecido hombre obviamente como en todas las asambleas siempre hay gente que tiene más carisma que tiene más capacidad de convicción que otras pero eso es algo común y en cuanto al formalismo es muy parecido quizás el grupo de huertos urbanos no es tan formal a la hora de redacción de las actas, a lo mejor no se pueden calificar de actas si no más bien de notas informativas sobre lo que se ha hablado o decidido, pero no tiene un carácter formal en el sentido de asistente y demás las otras son más formales que las... tienen una entidad jurídicas. Así como la asociación de huerto no tiene entidad jurídica las otras sí... lo que es el discurrir de la asamblea como tal es muy similiar en todas siempre hay alguien que plantea el orden del día y se va produciendo la asamblea con las dinámicas de cualquier grupo social.
+*entrevistador*: Vale pero no me queda claro. ¿Hay gente que toma actas?
+*hombre3*: Sí, sí, en las tres hay gente que toma actas.
+*entrevistador*: Pero igual en las que son asociaciones nacionales se hace de manera que una persona siempre es la misma. Tiene ese rol dentro de la estructura de la organización.
+*hombre3*: Hombre es que tampoco llevo tanto tiempo como para...
+*entrevistador*: Tenía la duda. Por ejemplo las reuniones que se hacen en las asociaciones nacionales son siempre la misma ciudad?
+*hombre3*: En la de científicos por el medio ambiente no, se va rotando y lo que pasa es que está un poco en crisis y no se sabe si va a seguir. Pero la Moulier siempre es en el mismo sitio,
+*entrevistador*: En Madrid?
+*hombre3*: Sí, en Colmenar Viejo. Y la de huerto urbano es en el propio huerto
+*entrevistador*: Claro es más pequeño. Vale, Y gente que toma eh... turno de palabras
+*hombre3*: Turno de palabra... no,. Es bastante espontáneo. En las tres.
+
+** visibilidad exterior
+
+*entrevistador*: Visibilidad con el exterior. Supongo que habrá web con información o algo así en las tres...
+*hombre3*: En las nacionales sí que hay una web de información externa. En la de huertos como es muy recién de todo pues hay un blog, se ha hecho un blog y todavía no está operativo por así decirlo
+*entrevistador*: Vale cuando se hace una actividad se promociona la actividad.
+*hombre3*: Sobre todo por medio de correos electrónicos, comunicaciones personales, a gente conocida o del entorno o incluso a veces por ejemplo en la asociación de científicos por el medio ambiente pues sí hay difusión de comunicaciones nacionales.
+*entrevistador*: ¿Se utilizan redes sociales?
+*hombre3*:Redes sociales tipo facebook. Mmm... en la de científicos por el medio ambiente sí un poco, pero no mucho. Un poco marginales en las tres lo de las redes sociales
+*entrevistador*: Vale, y cuál es la edad que tienen, la media...
+*hombre3*: En las otras dos (no huertos) pues la verdad es que son gente muy diversa pero por lo general la media de edad es más bien elevada. 40 o 50 años.
+*entrevistador*: Me has comentado que no se participaba mucho en movilizaciones pero igual sí que se participan en otras iniciativas de terceros. Como pueden ser jornadas u otros eventos.
+*hombre3*: Sí, sí. Eso sí que hay más participación.
+*entrevistador*: Cómo se gestiona esa participación
+*hombre3*: Bueno en la de huertos como es una iniciativa muy joven tampoco ha habido oportunidad de eso, bueno mañana de hecho hay un evento organizado con otro colectivo de manera conjunta que hubo un acercamiento del otro colectivo hacia el nuestro y se llegó al acuerdo de hacer una (…)
+en las otras dos se participaba con el apoyo o contactos personales pues se acuden pero no se ha hecho muchas actividades conjuntas de eventos y tal. Más bien personal o un apoyo  más o menos explícito.
+
+** participación en iniciativas de terceros
+** Compartición de recursos
+
+*entrevistador*: Vale hay un punto de compartición de recursos por ejemplo. Si cuando se publican cosas en la web se necesita algún tipo de licencia libre o 
+*hombre3*: Pues la verdad es que eso lo desconozco porque no estoy yo de encargado. Las dos asociaciones nacionales tienen página web y muy bien son bastante eficientes. Muy buena presentación, las hacen socios pero no te puedo decir si utilizan software libre o no. No tengo ni idea,
+*entrevistador*: Bueno, pero una cosa es el software que me interesa también en este punto y otra es los documentos si tienen algún copyright o utilizar alguna creative commons...
+*hombre3*: Ah! Vale... tanto bueno en la fundación Manuel Moulier, no hay documentos la página web es solo informativa y se muestran los libros y revistas
+*entrevistador*: Y qué licencias tienen los libros...
+*hombre3*: Son convencional
+*entrevistador*: Descriptivo, que no puedes ni copiar ni...
+*hombre3*: Sí vamos, normal. Y en la de científicos por el medio ambiente no hayun matrialque saque específicas salvo artículos, … documentos es a títulos individual. Si un socio saca un libro lo saca con el copyright que el estima adecuado. Los documentos que sacan o manifiestos o tal no están sujetos a ningún tipo de propiedad, son comunicados... no tienen esa necesidad y bueno y luego ya más allá de un comunicados
+
+** Planificación
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: Vale, bueno aquí había un subpunto de transperencia de documentos, métodos, cuentas. Por ejemplo a nivel de cuentas que ya hemos hablado antes es a nivel de socios
+*hombre3*: sí, claro.
+*entrevistador*: Bueno, planificación. O sea corto, medio y largo plazo.
+*entrevistador*: Se hace planificación, no se hace. Se hace solo a corto plazo.
+*hombre3*: Pues de nuevo hay diferncia. En la fundación Moulier que es la que tiene una historia mayo, que tiene muchos años pues sí que tiene una planificación a largo plazo, unos objetivos determinados, unas líneas editoriales determinadas. La de científicos por el medio ambiente hay poca planificación porque es algo que según va surgiendo las necesidades, es una asociación cuyo objetivo es sobre todo apoyar con informes o mediante conocimiento y la de huerto pues por la propia naturaleza tiene que haber una planificación sobre cómo llevar el huerto, plantas... porque es que si no no podemos, no sería viable. Entonces en el día a día hay una planificación
+
+* Factores de Cambio Tecnológico
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: Pues aquí hemos terminado el apartado de flujos de información y entonces ahora vamos con el de factores de cambio tecnológicos que es más corto. La primera pregunta sería qué herramientas recuerdas haber usado en el último mes. Herramientas tecnológicas.
+*hombre3*: Te refieres a las herramientas tecnológicas que yo he usado en mi relación con estas tres asociaciones. No?
+*entrevistador*: No necesariamente.
+*hombre3*: Ah no. yo de manera individual.
+*entrevistador*: A Nivel individual y en las asociaciones.
+*hombre3*: Ah vale... Pues yo lo que usa habitualmente es internet. Las web para la búsqueda de información. Navegadores y el correo electrónico. De hecho son las dos únicas herramientas que utilizo son webs y email, no uso otra cosa en ese sentido soy bastante...
+*entrevistador*: Y no sé por ejemplo para tú trabajo qué programas utilizas.
+*hombre3*: Ah bueno también en mi trabajo.
+*entrevistador*: Qué herramientas... o sea la intención es conocer los conocimientos tecnológicos que tiene la persona
+*hombre3*: Pues en mi trabajo sí que tengo la necesidad de usar herramientas tecnológicas más científicas de cálculo matemático, programas de diseño. Ahí sí que hago un uso masivo de herramientas tecnológicas, en mi trabajo.
+
+** Cuáles son las herramientas tecnológicas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: Vale, ¿Cuáles son las herramientas que has dejado de usar si mirar cinco años atrás?
+*hombre3*: ¿Herramientas tecnológicas que he dejado de utilizar? Pues es que en mi trabajo he dejado de usar un programa concreto, en su día sí que sabía programar un poco, ya sé me ha olvidado. Más en mi entorno del trabajo... alguna herramienta concreta, software científico cosas muy concretas vamos.
+*entrevistador*: Por ejemplo has dejado de utilizar el Fax
+*hombre3*: Nunca lo he usado, bueno el fax
+*entrevistador*: La radio?
+*hombre3*: La radio es que yo no la entiendo como una herramienta tecnológica
+*entrevistador*: Sí el móvil también sería
+*hombre3*: Ah bueno... eh... no, el fax lo he usado siempre de manera muy marginal. El teléfono fijo sí que ya no lo uso, qué más...
+
+** Qué herramientas tecnológicas has incorporado si miras 5 años atrás
+
+*entrevistador*: Vale,,, si no se te ocurre nada más... ¿Qué herramientas has incorporado si miras cinco años atrás?
+*hombre3*: Quizás más eh... programas concretos científicos algunos que he empezado a usar más de matemáticas, eh... un programa que he aprendido también hace mucho de diseño 3D. Algun programa de diseño óptico nuevo. Son programas muy técnicos o muy específicos para mi trabajo o... porque dentro de mi relación con los grupos sociales siempre he usado lo mismo que es internet y email
+*entrevistador*: Igual llevas diez años utilizándolo...
+*hombre3*: Sí desde su creación
+
+** Qué herramientas tecnológicas has incorporado debido a tu activismo político
+
+*entrevistador*: Vale, y qué herramientas has incorporado debido a tu activismo político.
+*hombre3*: Herramientas tecnológicas pues sinceramente siempre he utilizado las mismas que han sido internet y correos electronicos. No, no uso las redes sociales, no me convencen mucho.
+*entrevistador*: Por ejemplo la herramienta esta de doodle...
+*hombre3*: Ah bueno la de doodle sí es verdad es nueva. Es nueva la aprendí hace un par de años.. Fue con unos amigos en el trabajo.
+*entrevistador*: O sea que tampoco
+*hombre3*: Tampoco la he usado mucho, bueno para el tema de los riego de la asociación de riegos.... de huertos urbanos, ahí sí. Se me había olvidado.
+*entrevistador*: Sí claro. Por eso como lo has comentado antes y me ha llamado la atención que igual no es una herramienta tan conocida como Facebook o así, igual ha sido por activismo político pero sí dices que ya la has usado para otra cosa.
+*hombre3*: Sí, claro digamos que yo la conocía antes por cuestiones personales pero a la hora de participar en la asociación de huertos urbanos, no es que yo la propuse sino que ellos la propusieron esta herramienta y yo ya lo conocía y ahora la estamos utilizando también allí.
+*entrevistador*: ¿Y por ejemplo cosas como google-docs? No la has incorporado.
+*hombre3*: No, no. Sé lo que es pero no lo he usado nunca y vamos...
+*entrevistador*: Pues nada pues muchas gracias ya hemos terminado.
+*hombre3*: Bueno...

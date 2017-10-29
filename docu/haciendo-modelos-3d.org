@@ -1,0 +1,55 @@
+#+TITLE: Abriendo Modelos para Impresoras 3D en GNU/Linux
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+* Instalación de Printrun
+
+Últimamente se están popularizando las impresoras 3D en este tutorial
+se enseñará a construir modelos 3D en GNU/Linux.
+
+Lo primero es descargar las herramientas, se puede hacer con la
+siguiente línea de comandos:
+
+#+BEGIN_SRC python
+ $ git clone https://github.com/kliment/Printrun.git
+#+END_SRC
+
+Ahora podemos abrir la herramienta de diseño con el siguiente comando:
+
+#+BEGIN_SRC python
+ $ python pronterface.py
+#+END_SRC
+
+* Abriendo Modelos
+
+Para probar diseños podemos ir a http://www.thingiverse.com y
+descargar cualquier fichero .srt. Después debemos abrir el fichero con
+File -> Open, a mi me dió algunos problemas y tuve que adaptar las
+rutas en pronsole.py, reemplacé:
+
+#+BEGIN_SRC python
+ self.slicecommand = "python skeinforge/skeinforge_application/skeinforge_utilities/skeinforge_craft.py $s"
+ self.sliceoptscommand = "python skeinforge/skeinforge_application/skeinforge.py"
+#+END_SRC
+
+por:
+
+#+BEGIN_SRC python
+ self.slicecommand = "python /home/davidam/git/skeinforge/skeinforge_tools/craft.py $s"
+ self.sliceoptscommand = "python /home/davidam/git/skeinforge/skeinforge.py"
+#+END_SRC
+
+Una vez reemplazado al abrir el modelo, me tardó un poco, así que
+mejor tener paciencia. Una vez abierto, podemos modificarlo a nuestro
+antojo, o incluso crear otros nuevos.
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]
+

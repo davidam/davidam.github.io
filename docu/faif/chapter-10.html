@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta content=
+"HTML Tidy for Linux/x86 (vers 1st December 2002), see www.w3.org"
+name="generator">
+<title>GNU/Linux</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.76b+">
+<link rel="HOME" title="Libre como en Libertad" href="index.html">
+<link rel="PREVIOUS" title="La Licencia P&uacute;blica General GNU"
+href="chapter-9.html">
+<link rel="NEXT" title="Open Source" href="chapter-11.html">
+<link rel="STYLESHEET" type="text/css" href="base.css">
+</head>
+<body class="CHAPTER" bgcolor="#FFFFFF" text="#000000" link=
+"#0000FF" vlink="#840084" alink="#0000FF">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+       cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">Libre como en Libertad:</th></tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"chapter-9.html" accesskey="P">Anterior</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"chapter-11.html" accesskey="N">Siguiente</a></td></tr></table>
+<hr align="left" width="100%"></div>
+<div class="CHAPTER">
+<h1><a name="CHAPTER-10">Cap&iacute;tulo 10. GNU/Linux</a></h1>
+<p>Para 1993, el movimiento del software libre se encontraba en un
+cruce de caminos. Para los optimistas, todos los signos apuntaban
+hac&iacute;a el &eacute;xito de la cultura hacker. La revista
+[<span class="CITATION">Wired</span>], una publicaci&oacute;n
+nueva, con historias sobre encripci&oacute;n de datos, Usenet y
+libertad se software estaba desapareciendo de los estantes en las
+tiendas de revistas. Internet, alguna vez un t&eacute;rmino de la
+jerga de los hackers y los investigadores cient&iacute;ficos, se
+hab&iacute;a abierto camino y ya formaba parte del l&eacute;xico de
+la gente com&uacute;n. Incluso el presidente Clinton estaba
+utilizando el t&eacute;rmino. El computador personal, que alguna
+vez fue un juguete de aficionados, hab&iacute;a obtenido respeto en
+todos los estamentos, d&aacute;ndole a toda una nueva
+generaci&oacute;n de usuarios acceso a software construido por
+hackers. Aunque el Proyecto GNU no hab&iacute;a alcanzado
+a&uacute;n su objetivo de un sistema operativo gratis completamente
+intacto, los usuarios curiosos pod&iacute;an probar Linux mientras
+que esto ocurr&iacute;a.</p>
+<p>De cualquier manera que se vieran, las noticias eran buenas, o
+por lo menos as&iacute; parec&iacute;a. Despu&eacute;s de una
+d&eacute;cada de lucha, los hackers y sus valores finalmente
+estaban ganando aceptaci&oacute;n dentro de la sociedad.
+<span class="SYSTEMITEM">Finalmente, el mensaje estaba
+lleg&aacute;ndole a la gente.</span></p>
+<p>&iquest;Realmente lo estaba haciendo? Para los pesimistas, cada
+se&ntilde;al de aceptaci&oacute;n inclu&iacute;a su propia
+se&ntilde;al contraria. Claro, ser un hacker estaba de repente de
+moda, pero &iquest;Era bueno estar de moda en una comunidad que
+siempre hab&iacute;a crecido en la alienaci&oacute;n? Cierto, la
+Casa Blanca estaba diciendo las cosas correctas respecto al
+Internet, llegando hasta el punto de registrar su propio nombre de
+dominio, <i class="FOREIGNPHRASE">whitehouse.gov</i>, pero
+tambi&eacute;n estaba reuni&eacute;ndose con las
+compa&ntilde;&iacute;as, los representantes de la censura y los
+oficiales de las entidades policivas que intentaban poner freno a
+la cultura del salvaje oeste que reinaba en Internet. Seguro, los
+computadores personales eran poderosos, pero en el proceso de
+convertir a los PCs en un bien de consumo con sus chips, Intel
+hab&iacute;a creado una situaci&oacute;n en la que los vendedores
+de software propietario detentaban el poder. Por cada nuevo usuario
+ganado para la causa del software libre gracias a Linux cientos,
+quiz&aacute;s miles, estaban utilizando <i class=
+"FOREIGNPHRASE">Microsoft Windows</i> por primera vez.</p>
+<p>Finalmente, era necesario tener en cuenta la naturaleza curiosa
+de Linux mismo. Sin restricciones de dise&ntilde;o (como GNU) y
+disputas legales (como BSD), la evoluci&oacute;n a toda velocidad
+de Linux hab&iacute;a sido tan poco planificada, y su &eacute;xito
+tan fortuito, que los programadores m&aacute;s cercanos al mismo
+c&oacute;digo del software no sab&iacute;an que hacer con
+&eacute;l. Mas un <span class="SYSTEMITEM">disco de
+recopilaciones</span> que un sistema operativo, estaba compuesto de
+una mezcla hacker de grandes &eacute;xitos: todo desde GCC, GDB y
+glibc (la librer&iacute;a de C reci&eacute;n desarrollada por el
+Proyecto GNU) pasando por X (una interfaz gr&aacute;fica para el
+usuario basada en Unix y desarrollada por el Laboratorio de
+Ciencias de la Computaci&oacute;n de MIT) y herramientas
+desarrolladas por BSD como BIND (el Demonio de Nombres de Berkeley
+para Internet o <i class="FOREIGNPHRASE">Berkeley Internet Naming
+Daemon</i>, que permite a los usuarios utilizar nombres de dominio
+de Internet sencillos de recordar, como sustituto de las
+direcciones IP) y TCP/IP. La piedra angular de los arquitectos, por
+supuesto, era el mismo kernel de Linux. Una versi&oacute;n
+arreglada y supercargada de Minix. En lugar de construir su sistema
+operativo de la nada, Torvalds y el siempre creciente equipo de
+desarrollo de Linux hab&iacute;an seguido el adagio de Picasso,
+"Los buenos artistas toman prestado, los grandes artistas roban" O,
+como Torvalds mismo lo dir&iacute;a mas tarde, al describir el
+secreto de su &eacute;xito: "Yo soy b&aacute;sicamente una persona
+muy perezosa a la que le gusta llevarse el cr&eacute;dito por cosas
+que otra gente hace realmente." <a name="AEN2200" href=
+"#FTN.AEN2200">[1]</a></p>
+<p>Esta pereza era tan admirable desde el punto de vista de la
+eficiencia, como problem&aacute;tica a nivel pol&iacute;tico. Con
+ella quedaba demostrada la carencia de una agenda ideol&oacute;gica
+de parte de Torvalds. A diferencia de los desarrolladores de GNU,
+Torvalds no hab&iacute;a construido el sistema operativo
+porqu&eacute; deseara darle a sus compa&ntilde;eros hackers algo
+para trabajar; Lo hab&iacute;a hecho para poder tener algo con lo
+que &eacute;l mismo pudiera jugar. El genio de Torvalds estaba
+menos en su visi&oacute;n de la estructura y m&aacute;s en su
+capacidad para reclutar otros hackers para acelerar el proceso.</p>
+<p>Que Torvalds y sus reclutas hayan tenido &eacute;xito donde
+otros no lo hab&iacute;an echo trae su propia pregunta intrigante:
+&iquest;Qu&eacute; era, exactamente, Linux? &iquest;Era una
+manifestaci&oacute;n de la filosof&iacute;a de software libre
+articulada por primera vez por Stallman en el Manifiesto GNU?
+&iquest;O era simplemente una agregaci&oacute;n de herramientas de
+software interesantes que cualquier usuario, igualmente motivado,
+podr&iacute;a crear en la m&aacute;quina de su casa?</p>
+<p>Para finales de 1993, un n&uacute;mero creciente de usuarios de
+Linux hab&iacute;an comenzado a inclinarse por la segunda
+definici&oacute;n, creando variaciones privadas sobre el tema de
+Linux. Llegaron hasta el punto de embotellar y vender sus
+variaciones-- o "distribuciones"-- a sus compa&ntilde;eros
+aficionados a Linux. Los resultados fueron <span class=
+"SYSTEMITEM">mediocres, en el mejor de los casos</span>.</p>
+<p>"Todo esto suced&iacute;a antes de que existieran Red Hat y las
+otras distribuciones comerciales," recuerda Ian Murdock,
+qui&eacute;n en ese entonces era un estudiante de ciencias de la
+computaci&oacute;n en la Universidad de Purdue. "Hojeando en las
+revistas de Unix era posible encontrar muchos avisos del
+tama&ntilde;o de una tarjeta de presentaci&oacute;n que proclamaban
+`Linux'. La mayor&iacute;a de estas compa&ntilde;&iacute;as eran
+<span class="SYSTEMITEM">operaciones nocturnas</span> que no
+ve&iacute;an nada malo en agregarle su propio c&oacute;digo fuente
+a la mezcla.</p>
+<p>Murdock, un programador de Unix recuerda haberse "dejado llevar"
+por Linux cuando lo consigui&oacute; e instal&oacute; en el
+computador de su casa por primera vez. "Era simplemente una cosa
+muy divertida", dice. "Hac&iacute;a que yo quisiera involucrarme".
+A pesar de eso, la explosi&oacute;n de distribuciones pobremente
+construidas comenz&oacute; a hacer mella en su entusiasmo inicial.
+Tras haber decidido que la mejor forma de involucrarse era
+construir una versi&oacute;n de Linux libre de aditivos Murdock
+comenz&oacute; a elaborar una lista con las mejores herramientas de
+software gratis disponible, con la intenci&oacute;n de agruparlas
+en su propia distribuci&oacute;n. "Quer&iacute;a algo que estuviera
+a la altura del nombre de Linux", dice Murdock.</p>
+<p>En una intento por generar inter&eacute;s Murdock public&oacute;
+sus intenciones en Internet, incluyendo el grupo de noticias de
+Usenet comp.os.linux. Uno de los primeros mensajes de respuesta
+proven&iacute;a de <a href="mailto:rms@ai.mit.edu" target=
+"_top">mailto:rms@ai.mit.edu</a>. Como hacker que era, Murdock
+reconoci&oacute; instant&aacute;neamente la direcci&oacute;n. Era
+Richard M. Stallman, fundador del Proyecto GNU y un hombre que
+Murdock conoc&iacute;a incluso entonces como "el hacker de los
+hackers". Viendo esta direcci&oacute;n en su correo entrante,
+Murdock estaba desconcertado. &iquest;Por qu&eacute; estar&iacute;a
+algui&eacute;n como Stallman, que dirig&iacute;a su propio proyecto
+de sistema operativo, interesado en las gestiones de Murdock en el
+mundo Linux?</p>
+<p>Murdock abri&oacute; el mensaje.</p>
+<p>"El dec&iacute;a que la Fundaci&oacute;n para el Software Libre
+estaba empezando a observar de cerca a Linux y que la FSF estaba
+tambi&eacute;n interesada, posiblemente, en hacer un sistema Linux.
+B&aacute;sicamente, a Stallman le parec&iacute;a que nuestros
+objetivos estaban alineados con su filosof&iacute;a."</p>
+<p>El mensaje representaba un <span class=
+"SYSTEMITEM">cambio</span> dram&aacute;tico para Stallman. Hasta
+1993, Stallman se hab&iacute;a conformado con mantenerse apartado
+de los asuntos de la comunidad Linux. De hecho, <span class=
+"SYSTEMITEM">casi hab&iacute;a ignorado</span> el sistema operativo
+renegado cuando apareci&oacute; por primera vez en el entorno de
+los programadores de Unix. Despu&eacute;s de recibir la primera
+noticia de un sistema parecido a Unix que corr&iacute;a en
+computadores personales, Stallman dice que deleg&oacute; la tarea
+de examinar el nuevo sistema operativo a un amigo; como lo recuerda
+Stallman, "El report&oacute; que el sistema se hab&iacute;a
+modelado siguiendo a <i class="FOREIGNPHRASE">System V</i>, que era
+la versi&oacute;n inferior de Unix. Tambi&eacute;n me dijo que no
+era portable."</p>
+<p>El reporte del amigo de Stallman era correcto. Creado para
+ejecutarse en m&aacute;quinas basadas en el 386 de Intel, Linux
+estaba firmemente arraigado a esta plataforma de hardware de bajo
+costo. Lo que el amigo no report&oacute;, sin embargo, fue la
+enorme ventaja de la que gozaba Linux como el &uacute;nico sistema
+operativo libremente modificable del mercado. En otras palabras,
+mientras que Stallman emple&oacute; los tres a&ntilde;os siguientes
+ocupado en los reportes de errores de su equipo de HURD, Torvalds
+se ganaba a los programadores que mas tarde tomar&iacute;an el
+sistema operativo para llevarlo a otras plataformas.</p>
+<p>Para 1993, la inhabilidad del Proyecto GNU para despachar un
+kernel de sistema operativo que funcionar&aacute; estaba generando
+problemas tanto dentro del Proyecto GNU mismo como en el movimiento
+de software libre como un todo. En marzo de 1993 un art&iacute;culo
+de de la revista [<span class="CITATION">Wired</span>] escrito por
+Simson Garfinkel se refer&iacute;a al GNU como un proyecto
+"estancado" a pesar del &eacute;xito de la gran cantidad de
+herramientas del proyecto. <a name="AEN2242" href=
+"#FTN.AEN2242">[2]</a> Aquellos que hac&iacute;an parte del
+proyecto y de su organizaci&oacute;n sin &aacute;nimo de lucro, la
+Fundaci&oacute;n para el Software Libre, recuerdan que los
+&aacute;nimos estaban a&uacute;n peor de lo que hac&iacute;a
+entrever el art&iacute;culo. "Era muy claro, por lo menos para mi
+en ese momento, que hab&iacute;a una ventana de oportunidad para
+introducir un nuevo sistema operativo", dice Chassell. "Y una vez
+esa ventana se cerrar&aacute;, la gente se interesar&iacute;a mucho
+menos. Que es exactamente lo que sucedi&oacute;". <a name="AEN2245"
+href="#FTN.AEN2245">[3]</a></p>
+<p>Mucho se ha dicho acerca de los problemas del Proyecto GNU
+durante el periodo que va de 1990 a 1993. Aunque muchos culpan a
+Stallman por esos problemas, Eric Raymond, uno de los primeros
+miembros del equipo de GNU Emacs, y m&aacute;s tarde un
+cr&iacute;tico de Stallman dice que el problema fue, en su
+mayor&iacute;a institucional. "La FSF se volvi&oacute; arrogante",
+dice Raymond. "Se alejaron del de sistemas operativos." A&uacute;n
+peor, "Ellos pensaban que nada fuera de la FSF podr&iacute;a
+afectarlos."</p>
+<p>Murdock, una persona menos involucrada con los asuntos internos
+del Proyecto GNU, ve las cosas de una manera m&aacute;s
+condescenciente. "Creo que parte del problema es que fueron
+demasiado ambiciosos <span class="SYSTEMITEM">y malgastaron su
+dinero</span>", dice. "Los micro-kernels eran el tema de moda a
+finales de los 80 y principios de los 90. Desafortunadamente, ese
+fue el momento en el que el proyecto GNU comenz&oacute; a
+dise&ntilde;ar su kernel. Al final ten&iacute;an gran cantidad de
+complicaciones innecesarias y habr&iacute;a sido necesario
+devolverse demasiado para deshacerse de ellas."</p>
+<p>Stallman cita varias circunstancias cuando explica la demora.
+Las demandas de Lotus y Apple hab&iacute;an creado distracciones
+pol&iacute;ticas que, sumadas con la incapacidad de Stallman para
+teclear, hac&iacute;an dif&iacute;cil para &eacute;l darle una mano
+al equipo de HURD. Stallman tambi&eacute;n habla de una falta de
+comunicaci&oacute;n entre los diversos componentes del Proyecto
+GNU. "Tuvimos que trabajar mucho para que el ambiente de
+depuraci&oacute;n funcionara", recuerda. "Y la gente encargada del
+mantenimiento de GDB en ese momento no cooperaba demasiado". Sin
+embargo Stallman afirma que la mayor&iacute;a de los retrasos se
+debieron a la posici&oacute;n de Stallman y otros miembros del
+equipo de GNU, que subestimaron la dificultad involucrada en
+convertir el micro kernel de Mach en un kernel de Unix
+completo.</p>
+<p>"Yo pens&eacute;: bueno, la parte [de Mach] que tiene que hablar
+con la m&aacute;quina ya fue depurada", dice Stallman, recordando
+los problemas del equipo HURD en un discurso. "Con esa ventaja,
+deber&iacute;amos ser capaces de lograrlo m&aacute;s r&aacute;pido.
+Pero en lugar de eso, result&oacute; que depurar estos programas
+as&iacute;ncronos con varios hilos era muy dif&iacute;cil.
+Hab&iacute;an <i class="FOREIGNPHRASE">timing books that would
+clobber the files</i>, y eso no tiene nada de gracioso. El
+resultado final fue que se necesitaron muchos, muchos a&ntilde;os
+para producir una versi&oacute;n de prueba." <a name="AEN2259"
+   href="#FTN.AEN2259">[4]</a></p>
+<p>Cualquiera que fuera la excusa, o excusas, el &eacute;xito
+simult&aacute;neo del equipo del kernel de Linux cre&oacute; una
+situaci&oacute;n muy tensa. Seguro, el kernel de Linux hab&iacute;a
+sido licenciado con la licencia GPL, pero, como Murdock mismo lo
+hab&iacute;a dicho, el deseo de tratar a Linux como un sistema
+operativo puramente libre distaba mucho de ser un&aacute;nime. Para
+finales de 1993, la poblaci&oacute;n total de usuarios de Linux
+hab&iacute;a crecido de una docena de entusiastas de Minix a entre
+20,000 y 100,000 usuarios. <a name="AEN2262" href=
+"#FTN.AEN2262">[5]</a> Lo que alguna vez hab&iacute;a sido un
+pasatiempo era ahora un mercado maduro para ser explotado. Como
+Winston Churchill al ver a las tropas sovi&eacute;ticas
+tom&aacute;ndose Berlin, Stallman sent&iacute;a una mezcla,
+bastante entendible, de emociones contradictorias en el momento de
+celebrar la "victoria" de Linux. <a name="AEN2264" href=
+"#FTN.AEN2264">[6]</a></p>
+<p>A pesar de llegar tarde a la fiesta, Stallman a&uacute;n
+ten&iacute;a poder. Tan pronto como la FSF anunci&oacute; que le
+dar&iacute;a su dinero y su soporte moral al proyecto de software
+de Murdock, otras ofertas de ayuda empezaron a llegar, Murdock
+llam&oacute; al nuevo proyecto Debian-- una compresi&oacute;n de su
+propio nombre y el de su esposa, Deborah -- y unas semanas
+m&aacute;s tarde estaba entregando la primera distribuci&oacute;n.
+"La ayuda de Richard catapult&oacute; a Debian casi de un
+d&iacute;a para otro de un peque&ntilde;o proyecto interesante,
+para convertirlo en algo a lo que la gente de la comunidad
+deb&iacute;a prestarle atenci&oacute;n" dice Murdock.</p>
+<p>En enero de 1994, Murdock hizo p&uacute;blico el "Manifiesto
+Debian". Escrito con el esp&iacute;ritu del "Manifiesto GNU" de
+Stallman, que le preced&iacute;a diez a&ntilde;os, explicaba la
+importancia de trabajar de manera muy cercana con la
+Fundaci&oacute;n para el Software Libre. Murdock
+escribi&oacute;:</p>
+<a name="AEN2276"></a>
+<blockquote class="BLOCKQUOTE">
+<p>La Fundaci&oacute;n pare el Software Libre tiene un papel
+extremadamente importante en el futuro de Debian. Por el simple
+hecho de ser ellos quienes lo distribuyen, se env&iacute;a un
+mensaje al mundo; se le dice que Linux no es un producto comercial
+y que nunca deber&iacute;a serlo, sin que esto signifique que Linux
+nunca ser&aacute; capaz de competir comercialmente. Para aquellos
+de ustedes que esten en desacuerdo, los reto a racionalizar el
+&eacute;xito de GNU Emacs y GCC, que no son software comercial,
+pero que a pesar de ello han tenido un impacto importante en el
+mercado comercial. Ha llegado la hora de concentrarse en el futuro
+de Linux, en lugar de buscar el objetivo destructivo de
+enriquecerse a uno mismo a costa de la comunidad de Linux y de su
+futuro. El desarrollo y distribuci&oacute;n de Debian pueden no ser
+la soluci&oacute;n a los problemas que he descrito en el
+Manifiesto, pero espero que por lo menos atraigan la suficiente
+atenci&oacute;n a estos problemas como para permitir que sean
+resueltos. <a name="AEN2278" href=
+"#FTN.AEN2278">[7]</a></p></blockquote>
+<p>Poco despu&eacute;s de la publicaci&oacute;n del Manifiesto la
+Fundaci&oacute;n para el Software Libre hizo su primera solicitud
+importante. Stallman quer&iacute;a que Murdock llamar&aacute; a su
+distribuci&oacute;n "GNU/Linux". En un principio, dice Murdock,
+Stallman quer&iacute;a usar el t&eacute;rmino "Lignux", para decir
+"Linux con GNU en el coraz&oacute;n"-- pero una prueba del
+t&eacute;rmino en Usenet y en varios grupos de hackers hab&iacute;a
+motivado la suficiente cantidad de mociones de desaprobaci&oacute;n
+como para convencer a Stallman de inclinarse por el menos
+extravagante GNU/Linux.</p>
+<p>A pesar de que algunos tomar&iacute;an el intento de Stallman de
+adicionar el prefijo "GNU" como una b&uacute;squeda tard&iacute;a
+de cr&eacute;dito, Murdock lo percibi&oacute; de manera diferente.
+En perspectiva, Murdock lo vi&oacute; como un intento para
+contrarrestar la creciente tensi&oacute;n entre el Proyecto GNU y
+los desarrolladores del kernel de Linux. "Hab&iacute;a una
+separaci&oacute;n en ciernes", recuerda Murdock. "Richard estaba
+preocupado."</p>
+<p>La diferencia m&aacute;s profunda, seg&uacute;n Murdock, se
+refer&iacute;a a glibc. Abreviatura para <i class=
+"FOREIGNPHRASE">GNU C Library</i> (Librer&iacute;a de C de GNU),
+glibc es el paquete que les permite a los programadores hacer
+"llamadas del sistema" dirigidas hac&iacute;a el kernel. Durante
+los a&ntilde;os 1993-1994, glibc se convirti&oacute; en un
+problem&aacute;tico cuello de botella en el desarrollo de Linux.
+Como hab&iacute;a muchos nuevos usuarios adicionando funciones al
+kernel de Linux los encargados de mantener glibc en el Proyecto GNU
+pronto se vieron superados por la cantidad de cambios sugeridos.
+Frustrados por las demoras y por la creciente reputaci&oacute;n del
+Proyecto GNU de "arrastrar los pies", algunos de los
+desarrolladores sugirieron crear una bifurcaci&oacute;n, es decir,
+una Librer&iacute;a de C espec&iacute;fica a Linux y paralela a
+glibc.</p>
+<p>En el mundo de los hackers los llamados <i class=
+"FOREIGNPHRASE">"forks"</i> o bifurcaciones son un fen&oacute;meno
+interesante. A pesar de que la &eacute;tica hacker le permite a un
+programador hacer lo que desee con el c&oacute;digo fuente de un
+programa cualquiera, la mayor&iacute;a de los hackers prefieren
+vertir sus innovaciones en un archivo central de c&oacute;digo
+fuente, o &aacute;rbol, para asegurar la compatibilidad con los
+programas de otras personas. Bifurcar glibc en un estado tan
+temprano del desarrollo de Linux habr&iacute;a significado perder
+los aportes de cientos, si no miles, de desarrolladores de Linux.
+Tambi&eacute;n habr&iacute;a significado una incompatibilidad
+creciente entre Linux y el sistema GNU que Stallman y el equipo GNU
+a&uacute;n esperaban desarrollar.</p>
+<p>Como l&iacute;der del proyecto GNU, Stallman ya hab&iacute;a
+experimentado los efectos negativos de una bifurcaci&oacute;n del
+c&oacute;digo en 1991. Un grupo de desarrolladores de Emacs
+trabajando para una compa&ntilde;&iacute;a de software llamada
+Lucid hab&iacute;an discutido con Stallman cuando este no
+hab&iacute;a incluido los cambios de vuelta en el c&oacute;digo
+principal de Emacs. La bifurcaci&oacute;n hab&iacute;a dado origen
+a una versi&oacute;n paralela, Lucid Emacs, y hab&iacute;a
+resentimiento en el ambiente. <a name="AEN2302" href=
+"#FTN.AEN2302">[8]</a></p>
+<p>Murdock dice que Debian estaba comenzando a trabajar en una
+bifurcaci&oacute;n similar en el c&oacute;digo fuente de glibc que
+motiv&oacute; a Stallman a insistir en adicionar el prefijo GNU
+cuando Debian entreg&oacute; su distribuci&oacute;n de software.
+"La bifurcaci&oacute;n ha vuelto a converger desde entonces. Sin
+embargo, en ese momento hab&iacute;a preocupaci&oacute;n
+porqu&eacute; si la comunidad Linux se ve&iacute;a a si misma como
+algo distinto de la comunidad GNU entonces habr&iacute;a una fuerza
+que podr&iacute;a llevar a la separaci&oacute;n."</p>
+<p>Stallman esta de acuerdo con la forma de ver los hechos de
+Murdock. De hecho, el dice que hab&iacute;an grandes bifurcaciones
+en ciernes en cada uno de los proyectos importantes de GNU. En un
+principio, Stallman dice que consider&oacute; las bifuraciones como
+el producto de <span class="SYSTEMITEM">algunos miembros
+inconformes</span>. A diferencia de la din&aacute;mica veloz e
+informal del equipo del kernel de Linux, los encargados de
+mantenimiento del c&oacute;digo fuente de GNU tend&iacute;an a ser
+mas lentos y mas reflexivos al hacer cambios que pudieran afectar
+la viabilidad a largo plazo de un programa. Adem&aacute;s, no
+ten&iacute;an miedo de criticar duramente el c&oacute;digo de otras
+personas. Con el paso del tiempo, Stallman comenz&oacute; a sentir
+que hab&iacute;a una falta de conciencia latente sobre el proyecto
+GNU y sus objetivos cuando le&iacute;a los correos de los
+desarrolladores de Linux.</p>
+<p>"Descubrimos que a las personas que se consideraban a si mismas
+como usuarios de Linux no les importaba el Proyecto GNU", dice
+Stallman. "Ellos dec&iacute;an: `&iquest;Por qu&eacute;
+deber&iacute;a preocuparme haciendo estas cosas? No me importa el
+Proyecto GNU. Las cosas funcionan para m&iacute;. Las cosas
+funcionan para nosotros, los usuarios de Linux, y nada mas nos
+importa.' Este fen&oacute;meno era bastante sorprendente, ya que la
+gente estaba esencialmente usando una variante del sistema GNU, y
+les importaba muy poco. Les importaba GNU menos que a cualquier
+otro."</p>
+<p>Mientras que algunos ve&iacute;an las descripciones de Linux
+como una "variante" del proyecto GNU como pol&iacute;ticamente
+<span class="SYSTEMITEM">tentadoras</span>, Murdock, que ya
+simpatizaba con la causa del software libre, vi&oacute; la
+solicitud de Stallman para llamar a la versi&oacute;n de Debian
+GNU/Linux como algo razonable. "Era m&aacute;s por la unidad que
+por quedarse con el cr&eacute;dito", dice.</p>
+<p>Solicitudes de una naturaleza m&aacute;s t&eacute;cnica
+inmediatamente se hicieron presentes. A pesar de que Murdock se
+hab&iacute;a adaptado en los temas pol&iacute;ticos, tuvo una
+posici&oacute;n mucho m&aacute;s firme en cuanto se refiere al
+dise&ntilde;o y al modelo del desarrollo del software como tal. Lo
+que hab&iacute;a comenzado como una muestra de solidaridad pronto
+se convirti&oacute; en un modelo para otros proyectos de GNU.</p>
+<p>"Puedo decirte que he tenido varios desacuerdos con el," dice
+Murdock con una sonrisa. "Siendo honesto, Richard es a veces una
+persona con la que es bastante dif&iacute;cil trabajar."</p>
+<p>En 1996, Murdock, tras graduarse de Purdue decidi&oacute;
+entregar las riendas del creciente proyecto Debian. Ya hab&iacute;a
+estado cediendo tareas de gerencia a Bruce Perens, el hacker mejor
+conocido por su trabajo en Electric Fence, una utilidad de Unix
+distribuida bajo la GPL. Perens, como Murdock, era un programador
+de Unix que se hab&iacute;a enamorado de Linux tan pronto como las
+habilidades Unix del programa se hicieron manifiestas. Al igual que
+Murdock, Perens se identificaba con los ideales pol&iacute;ticos de
+Stallman y la Fundaci&oacute;n para el Software Libre, aunque desde
+lejos.</p>
+<p>"Recuerdo que luego de que Stallman ya hab&iacute;a hecho el
+Manifiesto GNU, GNU Emacs y GCC, le&iacute; un art&iacute;culo en
+el que se dec&iacute;a que el estaba trabajando para Intel cmo
+consultor," dice Perens, recordando su primer contacto con
+Stallman, a finales de los ochentas. "Le escrib&iacute;
+pregunt&aacute;ndole como pod&iacute;a estar apoyando el software
+libre con una mano y trabajando para Intel con la otra. El
+devolvi&oacute; el mensaje diciendo, `Yo trabajo como consultor
+para crear software libre.' Fue tolatmente cortes al respecto, y yo
+pens&eacute; que su respuesta ten&iacute;a mucho sentido."</p>
+<p>Como un desarrollador prominente de Debian, sin embargo Perens
+ve&iacute;a las batallas de dise&ntilde;o de Murdock con Stallman
+con desgano. Al asumir el liderazgo del equipo de desarrollo,
+Perens dice que tom&oacute; la decisi&oacute;n de distanciar a
+Debian de la Fundaci&oacute;n para el Software Libre.
+"Decid&iacute; que no quer&iacute;amos el estilo de micro-gerencia
+de Richard", dice.</p>
+<p>Seg&uacute;n Perens, Stallman estaba sorprendido con la noticia
+pero tuvo la suficiente sabidur&iacute;a como para aceptarla. "El
+le di&oacute; algo de tiempo para que se enfriara y envi&oacute; un
+mensaje diciendo que realmente necesit&aacute;bamos alg&uacute;n
+tipo de relaci&oacute;n. &Eacute;l solicit&oacute; que lo
+llamaramos GNU/Linux y lo dej&aacute;ramos as&iacute;. Yo
+decid&iacute; que estaba bien. Tom&eacute; esa decisi&oacute;n de
+manera unilateral, todos suspiraron aliviados."</p>
+<p>Con el tiempo, Debian se formar&iacute;a una reputaci&oacute;n
+como la versi&oacute;n de Linux de los hackers, junto a Slackware,
+otra distribuci&oacute;n popular creada durante el periodo
+1993-1994. Fuera del reino de los sistemas orientados hac&iacute;a
+los hackers, Linux estaba comenzando a ser noticia en el mercado de
+Unix Comercial. En Carolina del Norte una compa&ntilde;&iacute;a
+que se llamaba a si misma Red Hat estaba reinventando su esquema de
+negocios para concentrarse en Linux. El CEO de esa
+compa&ntilde;&iacute;a era Robert Young, el antiguo editor de
+[<span class="CITATION">Linux Journal</span>] que hab&iacute;a
+preguntado en 1994 a Linus Torvalds si se arrepent&iacute;a de
+haber distribuido el kernel de Linux con la licensia GPL. Para
+Young la respuesta de Torvalds tuvo un impacto "profundo" en su
+forma de ver Linux. En lugar de buscar una manera de arrinconar el
+mercado, por medio de t&aacute;cticas de software tradicionales,
+Young comenz&oacute; a pensar que suceder&iacute;a si una
+compa&ntilde;&iacute;a hac&iacute;a lo mismo que Debian --es decir,
+construir un sistema operativo basado completamente en partes de
+software libre. Cygnus Solutions, la compa&ntilde;&iacute;a fundada
+por Michael Tiemann y John Gilmore en 1990, ya estaba demostrando
+su capacidad para vender software libre bas&aacute;ndose en la
+calidad y en la flexibilidad. &iquest;Qu&eacute; suceder&iacute;a
+si Red Hat hac&iacute;a lo mismo con GNU/Linux?</p>
+<p>"En la tradici&oacute;n cient&iacute;fica occidental nos
+apoyamos en los hombros de gigantes," dice Young, retomando tanto a
+Torvalds como a Sir Isaac Newton como ejemplo. "En los negocios,
+eso significa to tener que reinventar la rueda a medida que vamos
+andado. La belleza del modelo [GPL] es que cada uno hace que su
+c&oacute;digo sea del dominio p&uacute;blico. <a name="AEN2333"
+href="#FTN.AEN2333">[9]</a> Si usted es un vendedor de software
+independiente que esta tratando de crear una aplicaci&oacute;n y
+necesita un marcador de modem, pues &iquest;Para que reinventar los
+marcadores de modem? Puede simplemente robarle PPP a Red Hat Linux
+y usar eso como la base para su herramienta de marcado de modem. Si
+necesita un conjunto de herramientas gr&aacute;ficas, usted no
+tiene que escribir su propia librer&iacute;a. Simplemente baje GTK.
+De repente usted tiene la posibilidad de reutilizar lo mejor de lo
+que se hizo antes. Y de repente su objetivo como vendedor de
+aplicaciones se centra menos en la gesti&oacute;n del software y
+m&aacute;s en escribir aplicaciones espec&iacute;ficas a las
+necesidades de sus clientes."</p>
+<p>Young no era el &uacute;nico ejecutivo del software intrigado
+con las eficiencias de negocios del software libre. Para finales de
+1996, la mayor&iacute;a de las compa&ntilde;&iacute;as de Unix
+estaban comenzando a <span class="SYSTEMITEM">darse cuenta de la
+existencia de todo ese c&oacute;digo fuente</span>. El sector de
+Linux a&uacute;n estaba a un a&ntilde;o o dos de su
+explosi&oacute;n comercial completa, pero aquellos lo
+suficientemente cercanos a la comunidad hacker lo pudieron sentir:
+algo grande estaba ocurriendo. El chip 386 de Intel, la Internet, y
+la web hab&iacute;an golpeado el mercado como un conjunto de olas
+gigantes, y Linix-- y el grupo de programas que lo
+acompa&ntilde;aban en t&eacute;rminos de accesibilidad del
+c&oacute;digo y permisividad de las licencias-- parec&iacute;an ser
+la ola m&aacute;s grande hasta entonces.</p>
+<p>Para Ian Murdock, el programador buscado por Stallman y
+despu&eacute;s decepcionado por el estilo de microgerencia de este,
+la ola parec&iacute;a tanto un tributo como un castigo justo para
+el hombre que hab&iacute;a empleado tanto tiempo d&aacute;ndole al
+movimiento de software libre una identidad. Como muchos aficionados
+a Linux, Murdock hab&iacute;a visto los anuncios originales.
+Hab&iacute;a visto la propuesta inicial de Torvalds en la que
+dec&iacute;a que Linux era "solo un pasatiempo". Tambi&eacute;n
+hab&iacute;a sido testigo de la "confesi&oacute;n" de Torvalds
+frente al creador de Minix, Andrew Tannenbaum en la que
+dec&iacute;a "Si el kernel de GNU hubiera estado listo la primavera
+pasada, yo ni siquiera me habr&iacute;a molestado en iniciar mi
+proyecto." <a name="AEN2341" href="#FTN.AEN2341">[10]</a> Como
+muchos, Murdock sab&iacute;a de las oportunidades que se
+hab&iacute;an desperdiciado. Tambi&eacute;n conoc&iacute;a la
+emoci&oacute;n de ver las nuevas oportunidades emerger del tejido
+mismo de la Internet.</p>
+<p>"Estar involucrado con Linux en esos primeros d&iacute;as fue
+muy divertido", recueda Murdock. "Al mismo tiempo, era algo para
+hacer, algo para pasar el tiempo. Si usted vuelve a leer aquellos
+viejos [comp.os.minix] intercambios, usted ver&aacute; el
+sentimiento general: esto es algo con lo que podemos jugar hasta
+que HURD este listo. La gente estaba ansiosa. Es divertido pero, de
+muchas maneras, sospecho que Linux nunca habr&iacute;a ocurrido si
+HURD hubiera aparecido mas r&aacute;pidamente."</p>
+<p>Para finales de 1996, sin embargo, todas esa preguntas de "que
+pasar&iacute;a si" ya estaban debatidas. Ll&aacute;melo Linux,
+ll&aacute;melo GNU/Linux; los usuarios ya hab&iacute;an hablado. La
+ventana de 36 meses se hab&iacute;a cerrado, por lo que incluso si
+el Proyecto GNU hubiera publicado su kernel HURD, las
+probabilidades de que algui&eacute;n fuera de la comunidad de los
+hackers m&aacute;s dedicados se hubiera dado cuenta, eran remotas.
+El primer sistema operativo libre parecido a Unix hab&iacute;a
+llegado, y ya ten&iacute;a momento. Todo lo que ten&iacute;an que
+hacer los hackers era relajarse y esperar que la pr&oacute;xima
+gran ola viniera a estrellarse contra sus cabezas. Incluso en la
+revuelta cabellera de un tal Richard M. Stallman.</p>
+<p>Listos o no.</p></div>
+<h3 class="FOOTNOTES">Notas</h3>
+<table border="0" class="FOOTNOTES" width="100%">
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2200"
+   href="chapter-10.html#AEN2200">[1]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Torvalds ha dicho esta frase en entornos muy diferentes. A la
+fecha, sin embargo, la aparici&oacute;n m&aacute;s notable de esta
+cita se encuentra en el ensayo de Eric Raymond, "La Catedral y el
+Bazar" (Mayo de 1997)
+http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2242"
+   href="chapter-10.html#AEN2242">[2]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Simson Garfinkel, "Is Stallman Stalled?" [<span class=
+"CITATION">Wired</span>] (Marzo, 1993).</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2245"
+   href="chapter-10.html#AEN2245">[3]</a></td>
+<td align="left" valign="top" width="95%">
+<p>La preocupaci&oacute;n de Chassell acerca de la existencia de
+una "ventana" de 36 meses para un nuevo sistema operativo no es
+exclusiva del Proyecto GNU. A comienzos de los noventa, versiones
+libres de la Distribuci&oacute;n de Software de Berkley (BSD)
+estuvieron restringidas por la demanda de Unix System Laboratories
+que restring&iacute;a la publicaci&oacute;n de software derivado de
+BSD. A&uacute;n cuando muchos usuarios consideran a los
+subproductos de BSD, como FreeBSD y OpenBSD como sistemas
+demostrablemente superiores a GNU/Linux tanto en t&eacute;rminos de
+desempe&ntilde;o como en t&eacute;rminos de seguridad, el
+n&uacute;mero de usuarios de ambos sistemas permanece como tan solo
+una fracci&oacute;n del total de usuarios de GNU/Linux. Para ver un
+an&aacute;lisis muestral del &eacute;xito relativo de GNU/Linux
+comparado con otros sistemas operativos libres, vea el ensayo del
+hacker neozeland&eacute;s, Liam Greenwood <i class=
+"FOREIGNPHRASE">"Why is Linux Successful"</i>(&iquest;Por
+qu&eacute; Linux es exitoso?), publicado en 1999.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2259"
+   href="chapter-10.html#AEN2259">[4]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver el discurso en el Centro de Computaci&oacute;n de Alto
+Rendimiento de Maui.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2262"
+   href="chapter-10.html#AEN2262">[5]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Los datos sobre la cantidad de usuarios de GNU/Linux son ,en el
+mejor de los casos, bastante inexactos. Por esos es que he
+mencionado un rango tan amplio. El total de 100,000 viene del sitio
+de "Marcas" de Red Hat,
+http://www.redhat.com/about/corporate/milestones.html.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2264"
+   href="chapter-10.html#AEN2264">[6]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Escrib&iacute; esta analog&iacute;a con Winston Churchill antes
+de que Stallman mismo me enviara su propio comentario no solicitado
+sobre Churchill:</p>
+<a name="AEN2266"></a>
+<blockquote class="BLOCKQUOTE">
+<p>La Segunda Guerra Mundial y la fuerza de voluntan necesaria para
+ganarla fueron un pensamiento muy fuerte durante mi crecimiento.
+Declaraciones como, "Pelearemos de igual manera en las playas como
+en tierra firme, en los campos y llanos como en las calles."
+siempre han estado presentes para
+m&iacute;.</p></blockquote></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2278"
+   href="chapter-10.html#AEN2278">[7]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Ver Ian Murdock, "A Brief History of Debian" (Una Breve Historia
+de Debian), agosto 6 de 1994: Ap&eacute;ndice A, "The Debian
+Manifesto."
+http://www.debian.org/doc/manuals/project-history/apA.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2302"
+   href="chapter-10.html#AEN2302">[8]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Jamie Zawinski, un antiguo programador de Lucid, que
+despu&eacute;s saldr&iacute;a a encabezar el equipo de desarrollo
+de Mozilla, tiene un sitio web que documenta la bifurcaci&oacute;n
+Lucid/GNU Emacs, llamado <i class="FOREIGNPHRASE">"The
+Lemacs/FSFmacs Schism."</i>
+http://www.jwz.org/doc/lemacs.html</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2333"
+   href="chapter-10.html#AEN2333">[9]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Young usa el t&eacute;rmino "dominio p&uacute;blico" de manera
+incorrecta aqu&iacute;. De dominio p&uacute;blico significa que no
+esta protegido por derechos de autor. Los programas amparador por
+la GPL est&aacute;n, por definici&oacute;n, protegidos por derechos
+de autor.</p></td></tr>
+<tr>
+<td align="left" valign="top" width="5%"><a name="FTN.AEN2341"
+   href="chapter-10.html#AEN2341">[10]</a></td>
+<td align="left" valign="top" width="95%">
+<p>Esta cita fue tomada de la muy publicitada "guerra de insultos"
+(<i class="FOREIGNPHRASE">flame war</i>) que sigui&oacute; al
+lanzamiento inicial de Linux. En el proceso de defender su
+elecci&oacute;n de un dise&ntilde;o monol&iacute;tico y no portable
+dek kernelm, Torvalds dice que comenz&oacute; a trabajar en Linux
+como una manera de aprender m&aacute;s acerca de su nuevo PC 386.
+"Si el kernel de GNU hubiera estado listo la primavera pasada, yo
+ni siquiera me habr&iacute;a molestado en iniciar mi proyecto." Ver
+Chris DiBona et al., [<span class="CITATION">Open Sources</span>]
+(O'Reilly &amp; Associates, Inc., 1999): 224.</p></td></tr></table>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+       cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="chapter-9.html"
+accesskey="P">Anterior</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Inicio</a></td>
+<td width="33%" align="right" valign="top"><a href=
+"chapter-11.html" accesskey="N">Siguiente</a></td></tr>
+<tr>
+<td width="33%" align="left" valign="top">La Licencia
+P&uacute;blica General GNU</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Open
+Source</td></tr></table></div>
+</body>
+</html>

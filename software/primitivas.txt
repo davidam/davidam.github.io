@@ -1,0 +1,351 @@
+Nota: Este documento es libre puedes copiarlo y modificarlo siempre y cuando mantegas esta nota.
+
+= FUNCIONES PRIMITIVAS DE LISP =
+
+
+== Ayuda on-line en lisp ==
+   Esto es un resumen con ejemplo de unas cuantas primitivas de lisp, por lo que en ocasiones será necesario ir a la ayuda
+
+   describe: es útil si quieres saber qué argumentos tiene una función, ó a qué paquete corresponde
+   Ejemplo de uso: (describe 'first)
+
+   apropos: lista el conjunto de símbolos relativos al argumento del que queremos información.
+   Ejemplo de uso: (apropos 'first)
+
+== Moviéndonos con emacs ==
+   Esc-x lisp-mode: entramos en el modo lisp
+   Ctl+Alt+n: vas al siguiente parentesis
+   Ctl+Alt+p: vas al anterior parentesis
+   Ctl+Alt+d: te introduces en la siguiente funcion
+   Ctl+Alt+u: te sales de la funcion actual
+   Ctl+Alt+t: intercambia la funcion anterior a la posicion de la actual
+   Esc+Ctl+k: borra el argumento de la funcion
+
+== Asignación ==
+   setf: Asiga valores a una variable
+   Ejemplo de uso: (setf nueve '9)
+		   (setf l '(a b c))
+
+   let y let*: Asigna valores a variables y genera listas de tal modo que en let las modificaciones en la muestra de datos en pantalla de los valores son locales y en let* son globales 
+   Ejemplo de uso: (setf nueve '9)
+		   (let ((nueve 'interior)
+			  (y nueve))
+			 (list nueve y))
+
+   Ejemplo de uso: (setf nueve '9)
+		   (let* ((nueve 'interior)
+			  (y nueve))
+			 (list nueve y))
+
+
+== Aritméticas ==
+   +, -, *, / : Son las operaciones para sumar, restar, multiplicar y dividir
+   Un ejemplo de uso es: (+ (* 2 3) 5)
+
+   % : Esta no funciona en clisp, venía en el libro de emacs
+
+   1+, 1- : Incrementa/Decrementa en uno el valor. Es una operación unaria.
+   Un ejemplo de uso es: (1+ 9)
+
+   max, min : Devuelve el valor máximo de una lista
+   Un ejemplo de uso es: (max 23 4 5 234 654)
+
+   float: Devuelve el valor en coma flotante
+   Ejemplo de uso: (float (/ 22 7)) 
+   
+   round: redondea un valor al entero más cercano
+   Ejemplo de uso: (round (/ 22 7)) 
+
+   expt: calcula potencias elevando su primer argumento a su segundo
+   Ejemplo de uso: (expt 2 3)
+
+   sqrt: calcula raices cuadradas
+   Ejemplo de uso: (sqrt 9)
+
+   abs: calcula el valor absoluto
+   Ejemplo de uso: (abs -3)
+
+   random: calcular un número aleatorio de 0 a N-1
+   Ejemplo de uso: (random '5)
+
+== Comparación ==
+   >, <, >=, <= : Mayor que, Menor que, Mayor o igual que, Menor o igual que. Sólo números
+   Un ejemplo de uso: (< (max 5 6) 6)
+
+   /= : Distinto que. Sólo para números
+   Ejemplo de uso: (/= 5 4)
+
+   equal: Evalúa si el valor de los dos argumentos es la misma expresión
+   Ejemplo de uso:  (equal (+ 2 2) 4)
+
+   eql: Evalúa si el valor de los dos argumentos es el mismo símbolo o número.
+   Ejemplo: Fallará si intentamos (eql '(x y) '(x y))
+
+   eq: Evalúa si el valor de los dos argumentos es el mismo símbolo.
+   Ejemplo: Fallará si intentamos (eq '(x y) '(x y))
+
+   =: Evalúa si el valor de los dos argumentos es el mismo número.
+   Ejemplo: Falla si intentamos ver si (= 'x 'x)   
+
+   zerop: Evalúa si un número es cero.
+
+   plusp: Evalúa si un número es positivo.
+
+   evenp: Evalúa si un número es par.
+   
+   oddp: Evalúa si un número es impar.
+
+   numberp: Evalúa si es un número.
+
+   symbolp: Evalúa si es un símbolo.
+
+   if, when, unless y case: Sirven para ejecutar o no acciones si se cumple una condición.
+   Ejemplos de uso:
+	    (setf dia-o-fecha 'lunes)
+	    (if (symbolp dia-o-fecha) 'dia 'fecha)
+	    (when (symbolp dia-o-fecha) 'dia)
+	    (cond ((symbolp dia-o-fecha) 'dia)
+		  ((numberp dia-o-fecha) 'fecha))
+	    (case figura 
+		  (circulo (* pi r r))
+		  (esfera (* 4 pi r r)))
+
+   sort: ordena una lista en el orden que se le dicta como argumento
+   Ejemplo de uso: (sort '(3 1 4 1 5 9) #'<)
+	   Al igual que nconc y delete sort altera el contenido de la lista.
+
+== Lógicas ==
+   and, or y not: Son las expresiones lógicas de toda la vida
+   Ejemplo de uso: (and (< 5 6) T)
+
+
+== Manejo de Secuencias (son tanto listas como cadenas) ==
+
+   elt: devuelve el elemento que ocupa la posición x de la secuencia.
+   Ejemplo de uso: (elt '(a b c) 0)
+
+   length: cuenta el número de elementos de nivel superior que hay en una lista.
+   Ejemplo de uso: (length '(platon socrates aristóteles))
+
+   reverse: invierte el orden de los elementos de nivel superior de la secuencia.
+   Ejemplo de uso: (reverse '(platon socrates aristóteles))
+
+
+
+=== Manejo de cadenas ===
+
+   string=, string-equal: nos dice si dos cadenas son iguales, la diferencia entre uno y otro es que string= diferencia minúsculas y mayúsculas y string-equal, no.
+   Ejemplo de uso: (string= "abc" "ABC")
+     
+   char=, char-equal: nos dice si dos caracteres son iguales, la diferencia entre uno y otro es que char= diferencia minúsculas y mayúsculas y char-equal, no.
+   Ejemplo de uso: (char= #\a #\a)
+
+   search: nos sirve para determinar si una cadena está contenida en otra. Si lo está devolverá la posición donde empieza la correspondencia, en otro caso devuelve NIL.
+   Ejemplo de uso: (search "Márquez" "García Márquez")
+   Ejemplo de uso: (search "MÁRQUEZ" "García Márquez" :test #'char-equal) ;; así se evita que distinga entre mayúsculas y minúsculas.
+   concatenate: concatena cadenas
+   Ejemplo de uso: (concatenate 'string "hola" "adios")
+
+
+=== Manejo de listas ===
+   setf: Asigna valores a una lista   
+   Ejemplo de uso: (setf amigos '(ines elisa jorge luismi))
+
+   let: Asigna valores a una lista 
+
+   atom: Nos dice si el elemento es un átomo o si es una lista.
+
+   endp: Comprueba si la lista está vacía
+
+   first: Devuelve el primer elemento de una lista. Es lo mismo que car
+   Ejemplo de uso: (first amigos)
+
+   rest: Devuelve la lista sin el primer elemento. Es lo mismo que cdr
+   Ejemplo de uso: (rest amigos)
+
+   cadr: Entre c y r puede haber una combinación a y d que denotan el encadenamiento de first y rest.
+   Ejemplo de uso: (caddr amigos) = (first (rest (rest amigos)))
+
+   second, third, fourth,...: Devuelve el segundo, tercer, o cuarto elemento de una lista (hay hasta el tenth)
+   Ejemplo de uso: (third amigos)
+
+   cons: Inserta un nuevo elemento en la primera posición de una lista.
+   Ejemplo de uso: (cons 'edu amigos) 
+	   Lo que realmente hace cons es hacer que el primer apuntador de la lista sea 'edu.
+
+   append: Combina dos listas en una
+   Ejemplo de uso: (setf friends (append amigos '(b c)))
+	   Lo que realmente hace append es copiar amigos en la nueva lista (en nuestro caso friends) y, luego anexa '(b c).
+
+   nconc: fusiona dos listas en una. La diferencia con append es que nconc lo hace haciendo que el último apuntador de la primera lista apunte al primero de la segunda.
+   Ejemplo de uso: (nconc amigos '(b c))
+	   Si ahora llamamos a amigos desde clisp el resultado no es el que tal vez esperábamos.
+
+   list: Elabora una lista con sus argumentos
+   Ejemplo de uso: (list '1 '2 '3)
+
+   push y pop: meter y sacar un elemento a una lista. Fíjate que podemos usar cons y rest para esos menesteres, la diferencia es que aquí los cambios alteran el contenido de la variable.
+   Ejemplo de uso: (pop amigos)
+
+   nthcdr: elimina los n primeros elementos de una lista
+   Ejemplo de uso: (nthcdr 3 amigos)
+
+   butlast: elimina los n últimos elementos de una lista
+   Ejemplo de uso: (butlast amigos 2)
+
+   last: devuelve una lista en la que se han eliminado todos los elementos menos el último.
+   Ejemplo de uso: (last amigos)
+
+   assoc: Sirve para recuperar elementos de una lista de asociación. Una lista de asociación es una lista de sublistas, en la que el primer elemento de cada sublista se utiliza como una clave para recuperar la sublista completa. 
+   Ejemplo de uso: (setf sara '((estatura 1.7) (peso 65)))
+		   (assoc 'peso sara)
+ 
+   member: comprueba si un elemento pertenece a una lista y devuelve una lista con los elementos que hay desde el elemento coincidente
+   Ejemplo de uso: (member 'c '(b c a))
+   
+   delete: se deshace de las ocurrencias del primer argumento que aparezcan en el nivel superior del segundo.
+   Ejemplo de uso: (delete 'jorge amigos)
+	   Nótese que delete ha borrado del todo a jorge de amigos.
+   
+   remove: se deshace de las ocurrencias del primer argumento que aparezcan en el nivel superior del segundo. Aparentemente hace lo mismo que delete, pero en la práctica delete cambia el contenido de la lista y remove no.
+   Ejemplo de uso: (remove 'jorge amigos)
+   Ejemplo avanzado de uso: (remove '(cara cruz) '((alfa omega) (cara cruz) (zenit nadir)) :test #'equal)
+   Ejemplo avanzado de uso: (remove 'cruz '((alfa omega) (cara cruz) (zenit nadir)) :test #'member)
+
+== Funciones que tienen funciones como argumentos ==
+   mapcar: Simplifica las operaciones de transformación de listas. Se proporciona el procedimiento de transformación y la lista de elementos a transformar.
+   Ejemplo de uso: (mapcar #'oddp '(1 2 3))
+		   (mapcar #'- '(1 2 3 4))
+
+   remove-if, remove-if-not: Simplifica las operaciones de filtración de listas. De esta manera, remove-if elimina todos elementos que satisfacen un predicado dado.
+   Ejemplo de uso: (remove-if #'evenp '(1 2 3 4))
+                   (remove-if #'(lambda (x) (eq x 5)) '(1 2 3 4 5 6))         
+   count-if, find-if: Simplifican las operaciones de conteo y localización.
+   Ejemplo de uso: (count-if #'evenp '(1 2 3 4))
+		   (find-if #'evenp '(1 2 3 4))
+
+   funcall: Permite definir procedimientos que tengan procedimientos como argumentos.
+   Ejemplo de uso: (funcall #'first '(1 2 3))
+
+   apply: usa el valor de su primer argumento sobre los elementos de su segundo argumento, el cual debe ser una lista.
+   Ejemplo de uso: (apply #'append '((e1 e2) (e3 e4)))
+		   (apply #'+ 1 2 3 '(4 5 6))
+
+   lambda: define procedimientos anónimos, es un defun sin nombre del procedimiento, útil para dejar más claro lo que va a hacer el procedimiento. No debe usarse si el procedimiento puede usarse unas cuantas veces.
+   Ejemplo de uso: (mapcar #'(lambda (x) (eq x 2)) '(3 4 2 5)) -> haz la macro memberp
+   Ejemplo de uso: ((lambda (x) (list x x)) '(lambda (x) (list x x))) -> programa q se escribe a si mismo
+
+== Iteración sobre números y listas ==
+   DOTIMES:
+       (dotimes (<contador> <límite-superior> <resultado>)
+		 <cuerpo del bucle>)
+   DOLIST:
+       (dolist (<contador> <lista> <resultado>)
+		<cuerpo del bucle>)
+   Ejemplo de uso:
+	   (dolist (i '(2 3 5 6))
+		   (if (equal 5 i) (format t "encontrado ~a" i)))
+   DO: es mas general que dolist y dotimes
+   Ejemplo de uso:
+	   (defun nuevo-expt (m n)
+		  (do ((resultado 1)		    ;;se inicializa parámetros
+		       (exponente n))
+		        (when (zerop exponente)       ;;condición de terminación
+			  (return resultado))
+		       (setf resultado (* m resultado))  ;;cuerpo del bucle
+		       (setf exponente (- exponente 1))))
+
+   LOOP: Sólo se detiene al encontrarse con un return
+	 (loop <cuerpo>)
+
+   PROG1 y PROGN: ambos interpretan secuencias, progn devuelve el resultado de la n-ésima función y prog1 de la primera.
+   Ejemplo de uso: (progn (setf a 'x) (setf b 'y) (setf c 'z))
+
+
+== Funciones de Lectura y Escritura ==
+   print, format: son operaciones de salida de texto.
+   Ejemplo de uso:  (format t "~%¡Hola!~%Estoy listo para empezar.")
+
+   read: es una operación de lectura de texto.
+   Ejemplo de uso: (setf dato-usuario (read))
+
+   read-line: absorve caracteres hasta donde aparece un retorno de carro o un fin de archivo. Luego produce una cadena con los caracteres q preceden el retorno de carro o el final del archivo, seguido de NIL, al menos que read-line encuentre el final del archivos mientras está leyendo una línea, en ese caso es T.
+   Ejemplo de uso: (read-line)
+   Ejemplo de uso: 
+	   (with-open-file (flujo-de-pacientes "pacientes.lsp" :direction :input)
+	   (dotimes (n 4) (print (read-line flujo-de-pacientes))))
+   Ejemplo de uso:
+	   (setq a "line 1 
+line2")
+	   (read-line (setq input-stream (make-string-input-stream a)))
+   read-char: lee un carácter
+   Ejemplo de uso: (read-char)
+
+   with-open-file: permite leer y escribir en archivos
+   plantilla:
+	(with-open-file (<nombre del flujo>
+			<"ruta del archivo">
+			:direction <:input o :output>)
+	   ...)
+   Ejemplo de uso:
+       (with-open-file (flujo-de-pacientes "pacientes.lsp" 
+					   :direction :input) 
+		       (do ((paciente (read flujo-de-pacientes nil 'eof) 
+				      (read flujo-de-pacientes nil 'eof))) 
+			   ((eq paciente 'eof)) 
+			   (format t "~%¡Hola!~%Estoy listo para empezar. ~a" (first paciente))))
+
+   open: permite escribir en archivos
+   Ejemplo de uso: (defvar *st-local* (open "/tmp/local1" :direction :output :if-exists :rename-and-delete))
+
+   eval: es una operación que lee y evalúa.
+   Ejemplo de uso: (eval (read))
+   
+
+== Propiedades ==
+
+   get: establece (con setf) y recupera el valor de una propiedad de un símbolo.
+   Ejemplo de uso: (setf (get 'luis 'padres) '(alfonso monica)) ;; establece
+		   (get 'luis 'padres)				;; recupera
+
+
+== Arreglos ==
+
+   make-array: crea un arreglo con la ayuda de setf
+   Ejemplo de uso: (setf matriz (make-array '(4 4)))
+
+   aref: sirve para recuperar un valor del arreglo
+   Ejemplo de uso: (setf (aref matriz 0 0) 3)
+
+== Funciones y Macros ==
+
+   defun: crea funciones
+   Ejemplo de uso: (defun square (x) (* x x))
+
+
+   defmacro: crea macros
+   Ejemplo de uso: (defmacro square (X) `(* ,X ,X))
+   Ejemplo de uso: (defmacro square2 (X) `(let ((Temp ,X)) (* Temp Temp)))
+
+   macroexpand-1: devuelve la forma lisp del macro con sus argumentos
+   Ejemplo de uso: (macroexpand-1 '(square 9))
+
+
+== Entorno ==
+
+   get-universal-time: nos devuelve la fecha actual en formato unix
+   Ejemplo de uso: (get-universal-time)
+
+   machine-type: nos devuelve la familia de maquina que usamos
+   Ejemplo de uso: (machine-type)
+
+   time: nos devuelve el coste computacional de una funcion
+   Ejemplo de uso: (time (+ 2 3))
+
+
+== Port ==
+
+   getenv: nos devuelve el valor de una variable de entorno
+   Ejemplo de uso: (port:getenv "HOME")	
+
+

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-11-22 18:41+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "#ifndef BUFFER_H\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "#define BUFFER_H\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"template <class T> \n"
+"class Buffer\n"
+"{\n"
+"public:\n"
+"  Buffer (unsigned int n);\n"
+"  void insert (const T & x);\n"
+"  T get (unsigned int k) const;\n"
+"private:\n"
+"  unsigned int i;\n"
+"  unsigned int size;\n"
+"  T *pT;\n"
+"};\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"template <class T> \n"
+"Buffer<T>::Buffer (unsigned int n)\n"
+"{\n"
+"  i = 0;\n"
+"  size = n;\n"
+"  pT = new T[n];\n"
+"};\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"template <class T> \n"
+"void \n"
+"Buffer<T>::insert (const T & x)\n"
+"{\n"
+"  i = (i + 1) % size;\n"
+"  pT[i] = x;\n"
+"};\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"template <class T> \n"
+"T \n"
+"Buffer<T>::get (unsigned int k) const\n"
+"{\n"
+"  return pT[(i + (size - k)) % size];\n"
+"};\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "#endif /* BUFFER_H */\n"
+msgstr ""

@@ -1,0 +1,29 @@
+#+TITLE: Crear una tienda online con Drupal 7
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Con Drupal 7 es fácil crear una pequeña tienda on-line sencilla,
+dentro de un sitio ya instalado. Veamos los pasos:
+
+1. Se descarga el commerce 
+#+BEGIN_SRC bash
+$ drush dl commerce commerce_paypal views
+#+END_SRC
+
+2. Se habilitan todos los módulos o los que se necesiten
+#+BEGIN_SRC bash
+$ drush en $ sudo drush en commerce commerce_cart commerce_order 
+commerce_order_ui commerce_checkout commerce_line_item 
+commerce_line_item_ui commerce_product_reference commerce_payment
+commerce_paypal
+#+END_SRC
+
+3. Desde /admin/structure/types/add se crea el tipo producto y
+   añadimos los campos precio e imagen. En el caso del precio nos
+   vendrá bien ir a admin/commerce/config/currency y elegir euro, en
+   vez de dólar.
+

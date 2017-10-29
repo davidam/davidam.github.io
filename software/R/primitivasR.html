@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Primitivas en GNU R</title>
+<!-- 2016-10-05 mié 12:02 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Primitivas en GNU R</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Básicas</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Configuración del Entorno</a></li>
+<li><a href="#sec-1-2">1.2. Ayuda on-line en R</a></li>
+<li><a href="#sec-1-3">1.3. Operaciones Aritméticas</a></li>
+<li><a href="#sec-1-4">1.4. Asignacion de valores a variables</a></li>
+<li><a href="#sec-1-5">1.5. Funciones</a></li>
+<li><a href="#sec-1-6">1.6. Listar y Eliminar Objetos del Espacio de Trabajo</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Tipos de Datos</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Booleanos</a></li>
+<li><a href="#sec-2-2">2.2. Arrays</a></li>
+<li><a href="#sec-2-3">2.3. Conversiones de Tipo</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Vectores</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Básico</a></li>
+<li><a href="#sec-3-2">3.2. Calculo vectorizado. Equivale a un bucle implicito</a></li>
+<li><a href="#sec-3-3">3.3. Generacion de secuencias regulares</a></li>
+<li><a href="#sec-3-4">3.4. Ordenacion de vectores</a></li>
+<li><a href="#sec-3-5">3.5. Operadores comparativos: &lt;, &lt;=, &gt;, &gt;=, <code>=, !</code></a></li>
+<li><a href="#sec-3-6">3.6. Operadores logicos: &amp;,|, !, xor()</a></li>
+<li><a href="#sec-3-7">3.7. Identificacion y sustitucion de valores perdidos. Funciones is.na() y which()</a></li>
+<li><a href="#sec-3-8">3.8. Indeterminaciones e infinito</a></li>
+<li><a href="#sec-3-9">3.9. Manipulacion de vectores de caracteres</a></li>
+<li><a href="#sec-3-10">3.10. Indexacion de vectores mediante variables de caracteres. Funcion names()</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Factores</a></li>
+<li><a href="#sec-5">5. Matrices</a>
+<ul>
+<li><a href="#sec-5-1">5.1. Función matrix()</a></li>
+<li><a href="#sec-5-2">5.2. Concatenación de matrices</a></li>
+<li><a href="#sec-5-3">5.3. Indexacion de matrices</a></li>
+<li><a href="#sec-5-4">5.4. Operaciones con matrices</a></li>
+<li><a href="#sec-5-5">5.5. Algunas funciones que operan sobre filas o columnas completas</a></li>
+<li><a href="#sec-5-6">5.6. Apply</a></li>
+<li><a href="#sec-5-7">5.7. Matrices multidimensionales (arrays)</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6. Listas</a>
+<ul>
+<li><a href="#sec-6-1">6.1. Indexacion, nombres y atributos</a></li>
+<li><a href="#sec-6-2">6.2. Attach</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7. Hojas de datos (data frames)</a>
+<ul>
+<li><a href="#sec-7-1">7.1. Algunos atributos</a></li>
+<li><a href="#sec-7-2">7.2. Particiones de una hoja de datos segun un factor, funcion split()</a></li>
+<li><a href="#sec-7-3">7.3. Filtrado segun condiciones logicas. Función subset()</a></li>
+<li><a href="#sec-7-4">7.4. Transformaciones de datos, funcion transform()</a></li>
+<li><a href="#sec-7-5">7.5. Edición manual de bases de datos</a></li>
+</ul>
+</li>
+<li><a href="#sec-8">8. Cargar datos nativos de R</a></li>
+<li><a href="#sec-9">9. Paquetes R</a>
+<ul>
+<li><a href="#sec-9-1">9.1. Ruta de busqueda (search path).</a></li>
+<li><a href="#sec-9-2">9.2. ACERCA de attach()</a>
+<ul>
+<li><a href="#sec-9-2-1">9.2.1. Retirar paquetes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-10">10. Escritura de datos en un archivo</a>
+<ul>
+<li><a href="#sec-10-1">10.1. Guardar en un archivo de texto plano una hoja de datos. Funcion write.table()</a></li>
+<li><a href="#sec-10-2">10.2. Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames</a></li>
+</ul>
+</li>
+<li><a href="#sec-11">11. Lectura de datos desde un archivo</a>
+<ul>
+<li><a href="#sec-11-1">11.1. Informacion completa en el manual "R Data Import/Export" accesible desde la ayuda</a></li>
+<li><a href="#sec-11-2">11.2. Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</a></li>
+<li><a href="#sec-11-3">11.3. Funcion scan().</a></li>
+</ul>
+</li>
+<li><a href="#sec-12">12. Gráficos</a>
+<ul>
+<li><a href="#sec-12-1">12.1. Gestion de ventanas graficas</a></li>
+<li><a href="#sec-12-2">12.2. Funcion plot(). Es la función gráfica basica.</a></li>
+<li><a href="#sec-12-3">12.3. Plot a Png</a></li>
+<li><a href="#sec-12-4">12.4. Funcicion coplot(). Matriz de graficos de dispersion separados segun factores</a></li>
+<li><a href="#sec-12-5">12.5. Funcion pairs(). Ejemplo con datos simulados de los "Big Five" de personalidad</a></li>
+<li><a href="#sec-12-6">12.6. Funcion hist(). Histogramas</a></li>
+<li><a href="#sec-12-7">12.7. Funcion boxplot()</a></li>
+<li><a href="#sec-12-8">12.8. Funciones qqnorm() y qline</a></li>
+<li><a href="#sec-12-9">12.9. Catalogo de nombres de color</a></li>
+<li><a href="#sec-12-10">12.10. Parametros gráficos. Funcion par()</a></li>
+<li><a href="#sec-12-11">12.11. Representacion de funciones</a></li>
+</ul>
+</li>
+<li><a href="#sec-13">13. Muestreo y probabilidad</a>
+<ul>
+<li><a href="#sec-13-1">13.1. Muestreo</a></li>
+<li><a href="#sec-13-2">13.2. Distribuciones de probabilidad</a></li>
+</ul>
+</li>
+<li><a href="#sec-14">14. Definicion de funciones</a></li>
+<li><a href="#sec-15">15. Descriptivos</a></li>
+<li><a href="#sec-16">16. Licencia</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Básicas</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Configuración del Entorno</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+
+<pre class="src src-R">getwd()                                       # Devuelve el 
+					      # directorio de trabajo 
+setwd("/home/davidam/public_html/software/R") # Cambia el directorio 
+					      # de trabajo (debe 
+					      # existir previamente)
+list.files()                                  # Lista el contenido 
+					      # del directorio
+					      # de trabajo. Tambien ls()
+
+source("/home/davidam/public_html/software/R/ejercicios-descriptivos.R")
+
+q()                                           # Salir del entorno
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Ayuda on-line en R</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+
+<pre class="src src-R">help (aov)
+?mean
+help.search('mean')
+??'standard deviation'
+help.start()                         # abre una ventana del navegador
+example (mean)                       # ejemplos del uso de mean
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Operaciones Aritméticas</h3>
+<div class="outline-text-3" id="text-1-3">
+<div class="org-src-container">
+
+<pre class="src src-R">5+7          # se evalua y el resultado se imprime 
+	     # por pantalla pero no se guarda
+5**7
+5-7
+5/7
+5^7          # elevado a
+51 %% 7      # modulo (resto de una division entera)
+51 %/% 7     # division entera
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Asignacion de valores a variables</h3>
+<div class="outline-text-3" id="text-1-4">
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- 1       # asigna el valor 1 a la variable x
+x            # lo escribe por pantalla
+y &lt;- x^2
+x = 1        # una alternativa
+1 -&gt; x       # otra alternativa
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Funciones</h3>
+<div class="outline-text-3" id="text-1-5">
+<div class="org-src-container">
+
+<pre class="src src-R">q    # Muestra informacion de la funcion
+?q
+# Algunas funciones elementales: log(), log10(), 
+# exp(), sqrt(), sin(), cos(), tan()
+# Mas funciones basicas: c(), max(), min(), 
+# pmax(), pmin(), range(), length(), sort() 
+# sum(), rowSums(), prod(), mean(), colMeans(), 
+# var(), cumsum(), etc.
+c(2,69,5,47,3647)
+sum(1,3,5,7)
+raiz64 &lt;- sqrt(64)   # el resultado de una funcion 
+		     # puede guardarse en una variable
+print(x)
+print(pi,digits=16); print(pi,digits=5)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Listar y Eliminar Objetos del Espacio de Trabajo</h3>
+<div class="outline-text-3" id="text-1-6">
+<div class="org-src-container">
+
+<pre class="src src-R">ls()
+rm(x,raiz64)
+ls()
+rm(list=ls())
+ls()
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Tipos de Datos</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Booleanos</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+
+<pre class="src src-R">verdad &lt;- T
+mentira &lt;- F
+edad &lt;- c(27,30,29);
+is.numeric(edad)
+is.integer(edad)
+is.double(edad) # tambien existen is.complex(), 
+		# is.logical(), is.character()...
+typeof(edad)    # devuelve el tipo del objeto 
+		# introducido como argumento
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Arrays</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="org-src-container">
+
+<pre class="src src-R">calle &lt;- c("c/ rue del percebe","28013");
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Conversiones de Tipo</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="org-src-container">
+
+<pre class="src src-R">as.character(verdad)
+as.numeric(verdad)              # doble precision por defecto
+y &lt;- c(0,1,27,14.9,NA,-3.2);y   # ojo, trunca en vez de redondear
+as.logical(y)
+as.character(y)
+as.integer(y)
+y&lt;-c("hola", "adios","true","TRUE", "T", "F","129",NA ,"6");y
+as.logical(y)
+as.numeric(y)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Vectores</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Básico</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- c(1,4,6,3,7); x
+x[3]                    # devuelve el valor guardado en 3a posicion
+x[-4]                   # devuelve todo excepto el valor 
+			# guardado en 4a posicion
+x[1] &lt;- 35              # guarda el valor 35 en la primer posicion
+length(x)               # devuelve la longitud de x
+x[11] &lt;- 99; x
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Calculo vectorizado. Equivale a un bucle implicito</h3>
+<div class="outline-text-3" id="text-3-2">
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- c(1,2,3,4,5)
+y &lt;- c(5,4,3,2,1)
+x+y
+y &lt;- c(1,2,3);y
+suma &lt;- x+y; suma               # recicla el vector mas corto
+suma2 &lt;- x-1                    # con escalares parece mas natural
+x &lt;- c(0.0001, 0.001, 0.01, 0.1, 1)
+log10(x)                        # muchas funciones tambien se 
+				# aplican vectorizadamente
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Generacion de secuencias regulares</h3>
+<div class="outline-text-3" id="text-3-3">
+<div class="org-src-container">
+
+<pre class="src src-R">1:10
+1:10-1                          # el operador ':' tiene maxima prioridad
+1:{10-1}
+#funcion seq(from, to, by, length)
+x &lt;- seq (-3,3,0.5);x           # valores desde -3 hasta 3 a intervalos de 0.5  
+seq (-3,3,length=10)            # 10 valores equiespaciados desde -3 hasta 3
+seq (-3, by=0.5,length=10)      # 10 valores a intervalos de 0.5 desde -3
+seq(along=x)                    # Genera la secuencia 1, 2, 3,..., length(x)
+#funcion rep(x, times, each)
+x &lt;- 1:4
+rep(x,times=3)                  # repite el contenido de x tres veces
+rep(x,each=3)                   # repite cada elemento de x tres veces
+rep(x,times=2,each=3)
+rep(c(0,1),times=c(4,3))        # 'times' puede ser un vector. Aqui ya no cabe 'each'
+x &lt;- seq(19,6,-3);x
+rep(x,1:length(x))              # 'times' puede estar implicito times={1:length(x)}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Ordenacion de vectores</h3>
+<div class="outline-text-3" id="text-3-4">
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- c(20,80,30,50,0)
+order (x, decreasing=F)         # devuelve las posiciones del vector ordenadas segun su contenido
+sort (x, decreasing=F)          # devuelve el contenido del vector ordenado
+rank(x)                         # devuelve el orden de cada posicion segun su contenido
+min(x)
+which.min(x)                    # equivale a which(x == min(x))
+x &lt;- c(1,1,3:1,1:4,3); y &lt;- c(0,9:1)
+x.ord &lt;- order(x,y)             # ordena los valores de x y, en caso de empate, utiliza los valores de y en las posiciones correspondientes. Ambos, x e y deben tener la misma longitud
+x.ord;x;y
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Operadores comparativos: &lt;, &lt;=, &gt;, &gt;=, <code>=, !</code></h3>
+<div class="outline-text-3" id="text-3-5">
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- c(1:10); x
+valor.verdad &lt;- x&gt;5; valor.verdad
+x &lt;- 1:10
+x[x &gt;= 5] &lt;- 20; x      # condicional implicito
+x[x == 1] &lt;- 25; x
+x &lt;- 1:3; y &lt;- 1:3
+x == y                  # equivalente a identical(x, y) o all.equal(x, y, tol=0)
+y &lt;- y+0.001; y
+identical(x, y)
+all.equal(x, y, tol=0.001)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Operadores logicos: &amp;,|, !, xor()</h3>
+<div class="outline-text-3" id="text-3-6">
+<div class="org-src-container">
+
+<pre class="src src-R">a&lt;-c(TRUE,TRUE,FALSE,FALSE) 
+b&lt;-c(F, T, F, T)
+a&amp;b
+a|b
+!(a&amp;b)
+(!a)|(!b)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7"><span class="section-number-3">3.7</span> Identificacion y sustitucion de valores perdidos. Funciones is.na() y which()</h3>
+<div class="outline-text-3" id="text-3-7">
+<div class="org-src-container">
+
+<pre class="src src-R">rm(list=ls())
+x &lt;- c(3,6,4,2,8,9)
+print (x); length(x)
+x[8:10] &lt;- 3;x
+is.na(x)
+!is.na(x)
+which(is.na(x))
+x[is.na(x)]&lt;-999;x      # codifica como 999 los valores perdidos
+x==NA                   # la expresion logica x == NA sa un resultado muy distinto de
+is.na(x)
+</pre>
+</div>
+
+<p>
+Entonces si tenemos data$q<sub>005</sub> como un frame con algunos datos
+perdidos y queremos solo los datos no perdidos podemos hacer
+</p>
+
+<pre class="example">
+data5 &lt;- data$q_005[!is.na(data$q_005)]
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-3-8" class="outline-3">
+<h3 id="sec-3-8"><span class="section-number-3">3.8</span> Indeterminaciones e infinito</h3>
+<div class="outline-text-3" id="text-3-8">
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- c(0,7,8); x/x
+1/x
+-1/x
+is.nan(x)
+is.nan(x/x)
+is.nan(1/x)
+# Hay que tener cuidado con los NaN porque cualquier operacion con un NaN resulta en un NaN
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-9" class="outline-3">
+<h3 id="sec-3-9"><span class="section-number-3">3.9</span> Manipulacion de vectores de caracteres</h3>
+<div class="outline-text-3" id="text-3-9">
+<div class="org-src-container">
+
+<pre class="src src-R"># Concatena objetos en un vector de caracteres. Funcion paste(..., sep = " ", collapse = NULL)
+juntar &lt;- paste("Una ", "frase ", "cualquiera",  collapse ="");juntar
+v1&lt;-c("A","B")
+v2&lt;-2:3
+codigos &lt;- paste(v1,v2, sep = "");print(codigos)
+codigos &lt;- paste(v1,v2, sep = ".");print(codigos)
+x &lt;- paste(LETTERS[1:5]);x
+x &lt;- paste(LETTERS[1:5], collapse="");x
+
+# Concatena e imprime. Funcion cat(... , file = "", sep = " ", fill = F, labels = NULL, append = F)
+verano &lt;- month.abb[7:9]; verano
+cat(verano)                     # el resultado no puede guardarse en ua variable
+cat(verano,"\n")
+cat(verano, sep=',')            # concatena separando con comas e imprime
+cat(verano, sep=';', fill=3)
+cat("Estaciones:","\t","Moncloa","\n", "\t", "\t","Aluche","\n")
+
+#Todo junto: cat() y paste()
+x&lt;-2/3; cat(paste("resultado", signif(x,2), sep=" : " ),"\n")
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-10" class="outline-3">
+<h3 id="sec-3-10"><span class="section-number-3">3.10</span> Indexacion de vectores mediante variables de caracteres. Funcion names()</h3>
+<div class="outline-text-3" id="text-3-10">
+<div class="org-src-container">
+
+<pre class="src src-R">edad &lt;- c(12,22,15,16,10)
+names(edad)                                             # por defecto no se asignan nombres
+names(edad) &lt;- paste("suj#", sep = "",length(edad):1); edad
+names(edad)
+edad["suj#2"]                                   # devuelve la edad de Sujeto #2 (almacenado en la penultima posicion)
+edad[length(edad)-1]
+names(edad) &lt;- NULL; edad       # elimina los nombre asignados
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Factores</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Son vectores para datos categoricos. Permiten prescindir de la
+codificacion numerica y referirse a los niveles mediante nombres
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">estudios &lt;- c(1,3,1,1,3,4,3)
+factor(estudios)
+nivel.estudios &lt;- factor(estudios, levels=1:4,labels=c("primarios", "secundarios", "superiores", "doctorado"), ordered=T)
+nivel.estudios
+factor(c(5,2,2,4,5,4,3,3,1), 2:5, exclude=4) # los valores 1 y 4 se consideran valores perdidos
+# OJO. Internamente R siempre se asigna 1 al primer nivel del factor, 2 al segundo etc.
+levels(nivel.estudios)                       # levels() extrae los posibles niveles de un factor
+as.numeric(nivel.estudios)           # recodifica el factor numericamente
+codigo.postal &lt;- factor(c('28011', '28044', '28011','28013', '28013','28023'))
+equipo.futbol &lt;- factor(c('VAL', 'VAL', 'FCB','VAL', 'FCB','ATM'))
+equipo.futbol                                                # ordena los factores alfabeticamente
+as.numeric(equipo.futbol)
+as.character(equipo.futbol)  # convierte en cadenas de caracters no en factor de nuevo
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Matrices</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Suponen la generalizacion de vectores a 2D.
+Todos los elementos de una matriz deben ser del mismo tipo.
+Una convencion relativamente extendida es cmenzar con mayuscula el nombre de una matriz
+</p>
+</div>
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Función matrix()</h3>
+<div class="outline-text-3" id="text-5-1">
+<div class="org-src-container">
+
+<pre class="src src-R">X &lt;- 1:12
+dim(X) &lt;- c(4,3); X # los elementos se organizan por columnas
+matrix(1:12,nrow=3,ncol=4,byrow=T)
+matrix(1:12,nrow=4,byrow=T)
+Mi.matriz &lt;- matrix(1:12,3,4,F); Mi.matriz
+tamano &lt;- dim(Mi.matriz)             # otro uso de dim(); devuelve las dimensiones de la matriz
+rownames(Mi.matriz) &lt;- LETTERS[1:tamano[1]]; Mi.matriz
+colnames(Mi.matriz) &lt;- paste("Var",1:tamano[2], sep=""); Mi.matriz
+dimnames(Mi.matriz)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Concatenación de matrices</h3>
+<div class="outline-text-3" id="text-5-2">
+<div class="org-src-container">
+
+<pre class="src src-R">X1 &lt;- c(3,7,5)
+X2 &lt;- c(8,3,1)
+Xx &lt;- cbind(X1,X2);Xx
+Yy &lt;- rbind(X2,X1);Yy
+Zz &lt;- cbind(X1,Xx);Zz
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Indexacion de matrices</h3>
+<div class="outline-text-3" id="text-5-3">
+<div class="org-src-container">
+
+<pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2);X
+X[1,2]                               # elemento guardado en la 1a fila, 2da columna
+X[1, ]                               # todos los elementos de la primera fila
+X[ ,2]                               # todos los elementos de la segunda columna
+X[3]                                 # para pensar un poco...
+Mi.matriz['B',]      #tambien se pueden usar los nombres (se han asignado)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Operaciones con matrices</h3>
+<div class="outline-text-3" id="text-5-4">
+<div class="org-src-container">
+
+<pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2); X
+Y &lt;- matrix(1:4,2,2); Y
+X+Y
+X-Y
+X%*%Y                                                # producto matricial
+X*Y                                          # producto elemento por elemento
+t(X)                                         # traspuesta
+det(X)                                       # determinante
+X.inv &lt;- solve (X)   # inversa de X (siempre que X sea cuadrada no singular, claro)
+X.inv
+X%*%X.inv                            # Comprueba el resultado. Ojo a los errores de redondeo
+# En general, solve(a,b) es una funcion que resuelve a %*% x = b para x, donde b puede ser un vector o una matriz. Si no se explicta se asume que es la matriz identidad y la funcion devuelve la inversa de a
+A &lt;- matrix(c(1,4,12,15),2,2); A
+B &lt;- matrix(c(5,2),2,1);B
+X &lt;- solve(A,B); X
+A%*%X                        # comprueba que el resultado es efectivamente B
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Algunas funciones que operan sobre filas o columnas completas</h3>
+<div class="outline-text-3" id="text-5-5">
+<div class="org-src-container">
+
+<pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2); X
+rowSums(X)
+colSums(X)
+rowMeans(X)
+colMeans(X)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Apply</h3>
+<div class="outline-text-3" id="text-5-6">
+<div class="org-src-container">
+
+<pre class="src src-R">apply(X,1,sum)               # suma por filas; equivale a rowSums(X)
+apply(X,2,mean)      # media por columnas; equivale a colMeans(X)
+apply(X,1,sd)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-7" class="outline-3">
+<h3 id="sec-5-7"><span class="section-number-3">5.7</span> Matrices multidimensionales (arrays)</h3>
+<div class="outline-text-3" id="text-5-7">
+<div class="org-src-container">
+
+<pre class="src src-R">A &lt;- array(1:24, c(3, 4, 2)); A
+dimnames(A) &lt;- list(c("fila1", "fila2", "fila3"), c("col1", "col2", "col3", "col4"), c("capa 1", "capa 2"));A
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Listas</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Son una especie de contenedores generales donde pueden mezclarse todo
+tipo de componentes (objetos de cualquier tipo y cualquier longitud)
+</p>
+
+<p>
+Son unos objetos poco estructurados y, por tanto, muy flexibles.
+</p>
+
+<p>
+Muchas funciones nativas de R devuelven el resultado en forma de
+lista
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">rm(list=ls())
+mis.num &lt;- seq(1.0, 2.0, 0.1); mis.num2 &lt;- 2:4
+Mi.matriz &lt;- matrix(1:12,3,4); Mi.matriz
+mis.caracteres &lt;- paste(LETTERS[1:5]);mis.caracteres
+mis.logicos &lt;- mis.num &gt; 1.65; mis.logicos
+lista1 &lt;- list(mis.num, mis.num2, Mi.matriz, mis.caracteres,mis.logicos)
+lista1
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Indexacion, nombres y atributos</h3>
+<div class="outline-text-3" id="text-6-1">
+<div class="org-src-container">
+
+<pre class="src src-R">length(lista1)               # devuelve el numero de componentes de la lista
+str(lista1)          # devuelve informacion sobre la estructura de la lista
+a &lt;- lista1[[1]]     # devuelve el 1er objeto de la lista en forma de vector/matriz (y nombre  excluido)
+a; typeof(a)
+b &lt;- lista1[1]               # devuelve una sublista compuesta por los elementos de la 1a entrada de la lista (nombre incluido)
+b; typeof(b)
+
+nomb &lt;- c("reales","enteros", "matriz", "caracteres", "logicos")
+names(lista1) &lt;- nomb;       # asigna nombres a los componenes de la lista 
+names(lista1)                                # devuelve los nombres de los componentes (si los hay)
+lista1[["reales"]]
+lista1$logicos                       # equivalente a lista1[["logicos"]] y a lista[[5]]
+
+# Otro modo de definir una lista que incluye nombres para los componentes
+lista2 &lt;- list(A=mis.num, B=mis.num2); lista2
+names(lista2)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Attach</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Las funciones attach() y detach () "cargan" listas y simplifican las referencias. 
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">attach(lista1, warn.conflicts = T)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Hojas de datos (data frames)</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Son un tipo especial de lista:
+</p>
+<ul class="org-ul">
+<li>con estructura tabular
+</li>
+<li>donde las columnas pueden ser de distinto tipo
+</li>
+<li>suelen utilizarse como bases de datos donde cada fila representa una unidad de observacion y cada columna una variable 
+</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="src src-R">var1 &lt;- seq(150,700,50); var2 &lt;- 6:17; var3 &lt;- c(10, 35, 17); var4 &lt;- 2:8
+data.frame(var1, var2) 
+data.frame(var1, var3) # recicla var3
+data.frame(var1, var4) # mensaje de error porque la longitud var1 no es multiplo de la de var4
+var5 &lt;- factor(rep(c(2,1,1,1), times=3), levels=1:2, labels=c("UsaTwitter", "NoUsaTwitter"));var5
+mis.datos &lt;- data.frame(var5, var1, var2, var3);mis.datos # por defecto los nombres de las columnas corresponden a los nombres de los objetos
+# para nombrar las filas (no siempre necesario)
+row.names(mis.datos) &lt;- paste("suj",1:max(length(var1),length(var2),length(var3)), sep='');mis.datos # Equivale a rownames(mis.datos)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Algunos atributos</h3>
+<div class="outline-text-3" id="text-7-1">
+<div class="org-src-container">
+
+<pre class="src src-R">rownames(mis.datos); colnames(mis.datos)
+dim(mis.datos)                               # dimensiones
+str(mis.datos)                               # estructura
+attributes(mis.datos)        # clase y nombres de fila y columna
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> Particiones de una hoja de datos segun un factor, funcion split()</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+Uso: split (x, factor). unsplit(x, factor)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">trozos &lt;- split (mis.datos, mis.datos$var5); trozos          # devuelve una lista "trozos" con los valores de var1 segregados segun var5
+typeof(trozos)
+junto.otravez &lt;- unsplit(trozos, mis.datos$var5); junto.otravez
+
+# el 2do argumento funciona como factor, no es necesario que este definido como tal.
+# Ademas se pueden seleccionar solo algunas variables (ej, var2 y var3)
+trozos &lt;- split (c(mis.datos$var1,mis.datos$var2), mis.datos$var3); trozos
+
+# lo mismo podria conseguirse con una sucesion de instrucciones como esta:
+twitter.si &lt;- mis.datos[mis.datos$var5=="UsaTwitter",];twitter.si
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-3" class="outline-3">
+<h3 id="sec-7-3"><span class="section-number-3">7.3</span> Filtrado segun condiciones logicas. Función subset()</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+Uso: subset(x, subset, select)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">subset(mis.datos, var3 &gt;= 15)
+subset(mis.datos, var3 &gt;= 15, select=c(var1,var2))
+subset(mis.datos, var3 &gt;= 15, select=-var3)
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-R">subset(data$q_005, (data$q_005 &gt; 1900) &amp; (data$q_005 &lt; 2013))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-4" class="outline-3">
+<h3 id="sec-7-4"><span class="section-number-3">7.4</span> Transformaciones de datos, funcion transform()</h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+Uso: transform()
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">mis.datos2 &lt;- transform (mis.datos, log.var1= log(var1)); mis.datos2
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-5" class="outline-3">
+<h3 id="sec-7-5"><span class="section-number-3">7.5</span> Edición manual de bases de datos</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+R dispone de una utilidad de aspecto sejemante a una hoja de calculo para:
+</p>
+<ul class="org-ul">
+<li>introducir datos manualmente
+</li>
+<li>modificar unos pocos elementos de bases de datos existentes
+</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="src src-R">edit(data.frame())                    # abre el editor con una 'hoja de datos' vacia
+					      # los huecos se rellenaran solos con NA
+					      # doble click en "var?" para cambiar el nombre de la variable
+					      # ¿que ha pasado?, ¿donde estan los datos?
+ respuestas &lt;- edit(data.frame())     # Es esencial asignarle un nombre a la hoja de datos
+ respuestas
+ respuestas2 &lt;- edit(respuestas)      # guarda los cambios en una nueva hoja de datos (y conserva la antigua)
+ respuestas;respuestas2
+ fix(respuestas)                                              # sobreescribe los cambios. Es equivalente a respuestas &lt;- edit(respuestas)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Cargar datos nativos de R</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+La instalacion basica de R incluye el paquete 'datasets'.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">data()                                                                       # lista todas las bases de datos disponibles en datasets'
+help(women)                                                          # informacion sobre ese conjunto de datos concreto
+data(women, package="datasets")      # carga esos datos
+# Si el paquete de procedencia esta cargado basta simplemente:
+women        
+data(women)                                                          # Equivalente data('women')
+</pre>
+</div>
+<p>
+Muchos paquetes adicionales tambien vienen con sus datos de ejemplo
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Paquetes R</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Cargar un paquete. Requiere instalarlo previamente bien:
+</p>
+<ul class="org-ul">
+<li>descargandolo en www.r-project.org y siguiendo las instrucciones
+</li>
+<li>utilizando el menu windows de RGui y eligiendo un repositorio
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-R">library (foreign)                    # o mediante el menu windows de RGui
+library(help=foreign)        # informacion sobre el paquete 'foreign'
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> Ruta de busqueda (search path).</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+Puede haber muchos objetos con el mismo nombre en distintos paquetes.
+La ruta de busqueda explicita el orden en que se van a recorrer los
+paquetes para buscar objetos partes deOrden en el que R
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">search()             # muestra la ruta de busqueda
+# Cuidado con los nombres de las variables del espacio de trabajo: Tienen prioridad
+rm(list=ls())
+women
+attach(women)
+mean(weight)
+weight &lt;- 0; mean(weight)
+mean(women$weight)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> ACERCA de attach()</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+attach() inserta el paquete en la ruta de busqueda de R de modo que todos los objetos del paquete estan accesibles mediante sus nombres
+Uso: attach(what, pos = 2, name = deparse(substitute(what)), warn.conflicts = TRUE)
+Precauciones:
+</p>
+<ul class="org-ul">
+<li>Cuidado con el enmascaramiento (nombres duplicados)
+</li>
+<li>attach no proporciona actualizacion dinamica de los objetos
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-9-2-1" class="outline-4">
+<h4 id="sec-9-2-1"><span class="section-number-4">9.2.1</span> Retirar paquetes</h4>
+<div class="outline-text-4" id="text-9-2-1">
+<div class="org-src-container">
+
+<pre class="src src-R">detach (package:ISwR)
+detach()             # elimina el paquete que haya en 2a posicion
+plot(c(1,2,5,6), c(2,5,6,7)) # representa un diagrama de dispersion (vease la seccion 'Graficos')
+detach()             # elimina el nuevo 2do paquete
+plot(c(1,2,5,6), c(2,5,6,7))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Escritura de datos en un archivo</h2>
+<div class="outline-text-2" id="text-10">
+</div><div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1"><span class="section-number-3">10.1</span> Guardar en un archivo de texto plano una hoja de datos. Funcion write.table()</h3>
+<div class="outline-text-3" id="text-10-1">
+<div class="org-src-container">
+
+<pre class="src src-R">rm(list=ls())
+data(women)
+write.table(women, "../datos/mujeres.dat", append=T) # Si la carpeta datos no existe previamente dara un mensaje de error
+?write.table
+write.table(women, "../datos/mujeres.dat", append=T, row.names=F, col.names= F, sep='', dec=',')
+write.table(women, "../datos/mujeres.dat", append=F,quote=F)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2"><span class="section-number-3">10.2</span> Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames</h3>
+<div class="outline-text-3" id="text-10-2">
+<div class="org-src-container">
+
+<pre class="src src-R">x&lt;-seq(1,3,0.1) 
+write(x,"../datos/numeros.dat", ncolumns=1,append=T)
+write(x,"../datos/numeros.dat", ncolumns=length(x),append=F)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> Lectura de datos desde un archivo</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-sec-11-1" class="outline-3">
+<h3 id="sec-11-1"><span class="section-number-3">11.1</span> Informacion completa en el manual "R Data Import/Export" accesible desde la ayuda</h3>
+<div class="outline-text-3" id="text-11-1">
+<div class="org-src-container">
+
+<pre class="src src-R">?read.table
+rm(list=ls())
+mis.datos &lt;- read.table("../datos/mujeres.dat", header=T, check.names=T, sep=" ",na.strings=999, comment.char = "#")
+edit(mis.datos)
+median(mis.datos$weight)
+colMeans(mis.datos)
+attach(mis.datos)
+sum(weight &gt;=125)/length(weight)             # calcula la proporcion de individuos que pesan al menos 125 lb
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-11-2" class="outline-3">
+<h3 id="sec-11-2"><span class="section-number-3">11.2</span> Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</h3>
+<div class="outline-text-3" id="text-11-2">
+<p>
+Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc., 
+aunque resulta mas comodo usar esos programas para guardar los datos en texto plano y usar read.table para importar a R
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">library(foreign)     # En primer lugar hay que cargar el paquete
+mi.encuesta.spss &lt;- read.spss("../datos/SurveyStatisticsI.sav", to.data.frame=T)
+edit(mi.encuesta.spss)
+</pre>
+</div>
+
+<p>
+Mas informacion sobre el uso de foreign en el pdf descargable junto
+con el paquete.
+</p>
+
+<p>
+Paquete para importar y exportar datos de excel: ‘xlsReadWrite’ (no
+incluido en el sistema base; hay que importarlo)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-11-3" class="outline-3">
+<h3 id="sec-11-3"><span class="section-number-3">11.3</span> Funcion scan().</h3>
+<div class="outline-text-3" id="text-11-3">
+<p>
+Mas flexible pero mas complicada de utilizar. Permite especificar el modo de las variables
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">?scan
+mis.datos &lt;- scan("../datos/mujeres.dat", what = list(character(), numeric(),numeric()), skip=1);mis.datos
+mis.datos2 &lt;- scan("../datos/mujeres.dat", what = list(0,0,0), skip=3)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Gráficos</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+R tiene un sistema de graficos muy completo que permite producir graficos con calidad de publicacion
+Hay múltiples funciones, parametros y paquetes graficos. Se van aprendiendo a medida que se van utilizando
+Para una buena introduccion: R for Beginners de E. Paradis (citado en la documentacion)
+</p>
+</div>
+<div id="outline-container-sec-12-1" class="outline-3">
+<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Gestion de ventanas graficas</h3>
+<div class="outline-text-3" id="text-12-1">
+<div class="org-src-container">
+
+<pre class="src src-R">x11()                                                                        # abre una nueva ventana grafica (Unix y Wndows)
+windows(width=15, height=15, title='Figura 1')       # abre una nueva ventana grafica (Windows)
+quartz()                                                             # abre una nueva ventana grafica (Mac OS)
+pdf("prueba.pdf")                                    # abre un pdf de nombre "prueba.pdf" y redirige el output gráfico al archivo pdf
+postscript("prueba.eps")             # abre un archivo de postscript encapsulado de nombre "prueba.eps" y redirige el output gráfico
+
+dev.list()   # lista todos los dispositivos grafico abiertos. Los nums son los identificadores
+dev.cur()    # devuelve el identificador del dispositivo grafico activo
+dev.set(2)   # establece como dispositivo gráfico activo el dispositivo num 2
+dev.off()    # cierra el dispositivo grafico activo; dev.off(3) cierra el dispositivo grafico num 3
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-2" class="outline-3">
+<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Funcion plot(). Es la función gráfica basica.</h3>
+<div class="outline-text-3" id="text-12-2">
+<p>
+Segun los argumentos puede generar un diagrama de dispersion, de barras, caja y bigotes etc.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- 1:15; y &lt;- 30:16
+# con datos cuantitativos produce diagramas de dispersion
+plot (x,y, pch=2)
+plot(women)          # puede usarse una hoja de datos o matriz. OJO solo toma las 2 primeras columnas
+plot(y)                      # representa los valores de 'y' en funcion de su posicion en el vector
+
+# plot (factor) produce un diagrama de barras
+f &lt;- factor(rep(c(1,2,2,1,1,3), each=2), levels=1:3, labels=c("No fumador", "Fumador", "NS/NC"))
+plot(f)
+# tambien existe la funcion barplot para crear diagramas de barras
+
+# plot (var.cuant, factor) produce diagramas de caja organizados según los niveles del factor
+entorno &lt;- factor(rep(c(1,2,2), each=5), levels=1:2, labels=c("Urbano", "Rural"))
+plot(entorno,y)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-12-3" class="outline-3">
+<h3 id="sec-12-3"><span class="section-number-3">12.3</span> Plot a Png</h3>
+<div class="outline-text-3" id="text-12-3">
+<p>
+Se usa la función png para almacenar la salida en un fichero de imagen.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- 1:15; y &lt;- 30:16
+# con datos cuantitativos produce diagramas de dispersion
+png(filename="/tmp/figure.png", height=295, width=300, bg="white")
+plot (x,y, pch=2)
+dev.off()
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-12-4" class="outline-3">
+<h3 id="sec-12-4"><span class="section-number-3">12.4</span> Funcicion coplot(). Matriz de graficos de dispersion separados segun factores</h3>
+<div class="outline-text-3" id="text-12-4">
+<div class="org-src-container">
+
+<pre class="src src-R">datos2 &lt;- data.frame(entorno,women)
+coplot(women$weight ~ women$height | entorno) # representa peso en funcion de altura separando segun entorno
+socioeconomico&lt;- factor(c(3,3,2,2,2,2,1,1,1,1,1,1,1,2,2), levels=1:3, labels=c("bajo","medio","alto"))
+plot(socioeconomico)
+coplot(women$weight ~ women$height | entorno+socioeconomico)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-5" class="outline-3">
+<h3 id="sec-12-5"><span class="section-number-3">12.5</span> Funcion pairs(). Ejemplo con datos simulados de los "Big Five" de personalidad</h3>
+<div class="outline-text-3" id="text-12-5">
+<div class="org-src-container">
+
+<pre class="src src-R">pers &lt;- matrix(rnorm(1000), ncol = 5)        # genera 1000 datos con distribucion normal. Vease seccion 'Muestreo y probabilidad'
+colnames(pers) &lt;- c("extraversion", "estabilidad", "apertura", "responsabilidad", "amabilidad")
+pairs(pers)
+# Nótese la diferencia con el resultado de plot()
+x11(); plot(pers)                    # usa solo las 2 primeras variables
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-6" class="outline-3">
+<h3 id="sec-12-6"><span class="section-number-3">12.6</span> Funcion hist(). Histogramas</h3>
+<div class="outline-text-3" id="text-12-6">
+<div class="org-src-container">
+
+<pre class="src src-R">pers &lt;- as.data.frame(matrix(rnorm(1000), ncol = 5))
+colnames(pers) &lt;- c("extraversion", "estabilidad", "apertura", "responsabilidad", "amabilidad")
+cor(pers, method='pearson')  # matriz de correlaciones. Otros metodos: 'spearman' y 'kendall'
+round(cor(pers),3)   # la misma matriz de antes, pero con solo 3 decmales
+attach(pers)
+hist(extraversion)
+x11(); hist(extraversion, labels=T, col= "gray", xlim=c(-4,4), ylab="Frecuencia absoluta", sub= "Figura 1. Ejemplo de histograma", main= "Extraversión")
+hist(amabilidad, col= "red", border="white", add=T, xlim=c(-4,4), sub= "Figura 2. Otro ejemplo de histograma", main= c("Extraversión  Amabilidad superpuestos"))
+x11(); hist(extraversion,freq=F, labels=T, col= "light blue",xlim=c(-4,4),ylab="Frecuencia relativa", las=1,sub= "Figura 1b. Ejemplo de histograma", main= "Extraversión")
+hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color") 
+
+pdf("ejemplos_histograma.pdf")
+hist(extraversion, nclas=3, col= "light blue", sub= "Figura 3. Ejemplo de histograma", main= "Extraversión")
+hist(extraversion, breaks=seq(-4,4,0.5),col= "pink",main= "Figura 3. Ejemplo de histograma")
+dev.off()
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-7" class="outline-3">
+<h3 id="sec-12-7"><span class="section-number-3">12.7</span> Funcion boxplot()</h3>
+<div class="outline-text-3" id="text-12-7">
+<div class="org-src-container">
+
+<pre class="src src-R">boxplot(extraversion, main= "Diagrama de caja de extraversión")
+text(locator(5),"más outliers", adj=0) 
+boxplot(pers)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-8" class="outline-3">
+<h3 id="sec-12-8"><span class="section-number-3">12.8</span> Funciones qqnorm() y qline</h3>
+<div class="outline-text-3" id="text-12-8">
+<div class="org-src-container">
+
+<pre class="src src-R">qqnorm(extraversion, col="red")
+qqline(extraversion)
+</pre>
+</div>
+<p>
+Tambien existe qqplot(), que permite utilizar otras distribuiones distintas de la normal
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-12-9" class="outline-3">
+<h3 id="sec-12-9"><span class="section-number-3">12.9</span> Catalogo de nombres de color</h3>
+<div class="outline-text-3" id="text-12-9">
+<div class="org-src-container">
+
+<pre class="src src-R">colors()
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-10" class="outline-3">
+<h3 id="sec-12-10"><span class="section-number-3">12.10</span> Parametros gráficos. Funcion par()</h3>
+<div class="outline-text-3" id="text-12-10">
+<p>
+Produce cambios permanentes en el dispositivo gráfico activo
+Permite contral cada elemento del grafico final
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">   ?par
+   par.actual &lt;- par()          # guarda los valores actuales (para poder reestablecerlos posteriormente)
+   par(font.main=4, las=1, xaxs= "r", col.lab="blue", col="skyblue3",lwd=3)
+   hist(extraversion,xlim=c(-4,4))
+   plot(extraversion, amabilidad)
+#   par(par.actual)                     # reestablece los valores guardados
+   par(mfrow=c(2,1))            # distribuye el espacio grafico e dos filas
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-11" class="outline-3">
+<h3 id="sec-12-11"><span class="section-number-3">12.11</span> Representacion de funciones</h3>
+<div class="outline-text-3" id="text-12-11">
+<div class="org-src-container">
+
+<pre class="src src-R">curve(x^2)
+curve(x^2, from=-3, to=3) # los cambios introducidos a traves de par no tienen efecto en la nueva ventana
+# tambien podria haberse hecho con plot
+x11()
+x &lt;- seq(-3,3,0.25)
+y &lt;- x^2
+plot(x,y)
+plot (x,y, type="o") # 'p': puntos, "l": lines, 'b': puntos conectados mediante lineas, etc.
+# un ultimo ejemplo
+hist(extraversion, freq=F)
+curve(dnorm(x), add=T)
+detach(pers)
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Muestreo y probabilidad</h2>
+<div class="outline-text-2" id="text-13">
+</div><div id="outline-container-sec-13-1" class="outline-3">
+<h3 id="sec-13-1"><span class="section-number-3">13.1</span> Muestreo</h3>
+<div class="outline-text-3" id="text-13-1">
+<div class="org-src-container">
+
+<pre class="src src-R">datos &lt;- c(1,5,9,8,52,2,4)
+sample(datos,3)                              # toma 3 elementos de 'datos'. Por defecto, muestrea SIN reposición
+
+dado &lt;- 1:6                                          # para simular el lanzamiento de 5 dados hace falta muestreo CON reposición
+sample(dado,5,replace=T)
+# sample() tambien permite incluir un vector de pesos si los sucesos no son equiprobables
+</pre>
+</div>
+<p>
+Otro ejemplo: extracción simultánea de dos cartas de una baraja española.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">baraja &lt;- paste(rep(c("As",2:7,"Sota","Caballo","Rey"),4),rep(c("Oros","Copas","Espadas","Bastos"),each=10));baraja
+sample(baraja,2)
+</pre>
+</div>
+<p>
+Generacion de numeros pseudo-aleatorios.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">#  set.seed() # inicializa el generador de aleatorios con una semilla concreta (reproductibilidad)
+   set.seed(-98)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-13-2" class="outline-3">
+<h3 id="sec-13-2"><span class="section-number-3">13.2</span> Distribuciones de probabilidad</h3>
+<div class="outline-text-3" id="text-13-2">
+<p>
+Funciones de generacion de numeros pseudo-aleatorios conforme a una distrbucion dada
+Estructura: rfunc(n, par1, par2,&#x2026;)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-R">datos.gauss &lt;- rnorm (100, mean=5, sd=2)     # genera 100 numeros ~N(5,2)
+runif (4,-10,10)                                                                     # genera 4 numeros ~U(-10, 10)
+</pre>
+</div>
+
+<p>
+Tambien existen rbinom, rpois, rt, rf, rchisq, rbeta, rgamma, etc en
+ocasiones conviene mantener la semilla estable.
+</p>
+
+<p>
+Funciones de densidad. Devuelven la ordenada de la funcion (de
+densidad) de probabilidad para un vector de valores de la V.A.
+</p>
+
+<p>
+Estructura: dfunc(n, par1, par2,&#x2026;, log=FALSE)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">x1 &lt;- seq(-5,5,0.01)
+gauss &lt;-dnorm(x1)
+plot (x1,gauss,"l", lwd=2, col="blue")
+student &lt;- dt(x1, df=4)
+x11();
+plot (x1,student,"l", lwd=2,col="green")
+x2 &lt;- seq(0,10,0.01)
+chi2 &lt;-dchisq(x2,df=3)
+x11();
+plot (x2,chi2,"l",lwd=2,col="red")
+</pre>
+</div>
+
+<p>
+Funciones de distribucion probabilidad
+Estructura: pfunc(n, par1, par2,&#x2026;, lower.tail = TRUE, log.p = FALSE)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">pnorm(0.7)                                                           # devuelve la prob de que una V.A.con distribución N(0,1) tome un valor menor o igual que 0.7
+pnorm(0.7, mean=10, sd=0.5)
+pchisq(3.84, df=3, lower.tail=F)     # devuelve la probabilidad de que una V.A.~ Chi2 con 3gl tome un valor mayor que 3.84
+</pre>
+</div>
+
+<p>
+Funciones que devuelven cuantiles
+Estructura: qfunc(n, par1, par2,&#x2026;, lower.tail = TRUE, log.p = FALSE)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">qnorm(0.025)                                          # devuelve el cuantil 2.5 (valor de la V.A. que deja por debajo el 2.5% de la distribución)
+qf(0.975, df1=4, df2=53)              # se puede usar para obtener los puntos de corte de la región de rechazo en un contraste de hipótesis
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> Definicion de funciones</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+Estructura: nombre.funcion &lt;- function(argumento1, argumento2){
+                instruccion1; instruccion2; &#x2026;;
+                return(variable.resultado)}
+Las llaves no son necesarias si la funcion se define en una sola linea
+</p>
+
+<p>
+Ejemplo: Definicion de una funcion que calcula la media
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">media &lt;- function(datos){               # pueden darse valores por defecto a los argumentos
+	numerador &lt;-sum(datos)
+	denominador &lt;- length(datos)
+	xm &lt;- numerador/denominador                             # podriamos llamar "media" a la variable de retorno
+	return(xm)}                                                                             # devuelve al programa principal el VALOR de xm (pero la variable xm es local y sale)
+</pre>
+</div>
+
+<p>
+Utilizacion de la funcion una vez definida (y cargada en memoria)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">x &lt;- rnorm(100)
+media(x)             # la llamada se hace mediante el nombre de la función
+mi.media &lt;- media(datos=x);mi.media
+</pre>
+</div>
+
+<p>
+Recomendaciones: 
+</p>
+<ul class="org-ul">
+<li>crear un directorio especifico para funciones propias
+</li>
+<li>guardar cada funcion en un script independiente
+</li>
+</ul>
+
+<p>
+Cargar una funcion en el espacio de trabajo, funcion source()
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">source("../funciones/descriptivos.r") # carga la funcion 'descriptivos' que esta en el subdirectorio 'funciones'
+resultados &lt;- descriptivos(x)                         # devuelve una LISTA de elementos que se almacenan en la variable 'resultados'
+</pre>
+</div>
+
+<p>
+Para crear funciones minimamente complejas hace falta aquirir unos
+minimos conocimientos de programación.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> Descriptivos</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+Cuando vamos a analizar unos datos lo primero que debemos mirar
+normalmente son los descriptivos, veamos cómo:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">library(foreign)
+# descriptivos de paises. Ejercicio 2.1
+paises.csv &lt;- read.csv('paises.csv', sep=';', na.strings=999)
+media &lt;- mean(paises.csv$Porcentaje)
+mediana &lt;- median(paises.csv$Porcentaje)
+desviacionTipica &lt;- sd(paises.csv$Porcentaje)
+varianza &lt;- var(paises.csv$Porcentaje)
+cuantil &lt;- quantile(paises.csv$Porcentaje)
+todos &lt;- summary(paises.csv$Porcentaje)
+</pre>
+</div>
+
+<p>
+En nuestro ejemplo utilizaremos los datos de <a href="file:///home/davidam/public_html/software/R/paises.csv">paises.csv</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16"><span class="section-number-2">16</span> Licencia</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/deed">Licencia Creative Commons Reconocimiento Unported 3.0</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/deed"><img src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2016-10-05 mié 12:02</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

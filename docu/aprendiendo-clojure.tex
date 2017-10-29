@@ -1,0 +1,88 @@
+% Created 2013-03-12 mar 02:20
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[spanish,spain]{babel}
+\tolerance=1000
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Aprendiendo Clojure}
+\author{David Arroyo Menéndez}
+\date{\today}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.8.11}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+
+Lisp es habitualmente experto y puntero en la creación de nuevas
+características de lenguajes de programación, sin embargo, otros
+lenguajes como Java suelen tener librerías que en ocasiones son útiles
+para los programadores, con Clojure es posible utilizar las librerías
+Java desde Lisp.
+
+\section{Instalación y Primeros Pasos}
+\label{sec-1}
+
+
+Instalar Clojure en Debian es sencillo
+
+
+\begin{verbatim}
+sudo apt-get install clojure1.4
+\end{verbatim}
+
+También es fácil hacer un ``Hello World'' desde la típica gui de Java:
+
+
+\begin{verbatim}
+(javax.swing.JOptionPane/showMessageDialog nil "Hello World" )
+\end{verbatim}
+
+Si nuestras líneas clojure están en un fichero también podemos
+interpretarlas desde bash. Pongamos que nuestro fichero transforma de
+grados fahrenheit a celsius:
+
+
+\begin{verbatim}
+#! /usr/bin/env clojure
+(def fahrenheit (first *command-line-args*))
+(println (* 0.556 (- (read-string fahrenheit) 32)))
+\end{verbatim}
+
+En tal caso podemos ejecutar el siguiente comando:
+
+
+\begin{verbatim}
+$ ./fahrenheit2celsius.clj 5
+-15.012
+\end{verbatim}
+\section{Próximo Día, profundizar android y clojure}
+\label{sec-2}
+
+
+\begin{itemize}
+\item \href{https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md}{https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md}
+\item \href{https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial}{https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial}
+\end{itemize}
+
+\end{document}

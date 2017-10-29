@@ -1,0 +1,82 @@
+#+TITLE: Por qué es interesante programar con Drupal
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
+#+BABEL: :results output :session
+
+* El lenguaje.
+
+Un criterio para entender si un lenguaje es popular es hacer búsquedas
+en un buscador y ver el número de resultados. Esto no establece si hay
+mucha programación, o si hay muchos puestos de trabajo, pero sí es un
+indicador de que hay interés en Internet en hablar de ello. He escrito
+una pequeña tabla de búsquedas en Google con "web programming" +
+lenguaje para ver la tendencia:
+
+| Lenguaje | Resultados |
+| PHP      |  1.120.000 |
+| Java     |    802.000 |
+| Python   |    415.000 |
+| Perl     |    382.000 |
+| Ruby     |    385.000 |
+(Fuente: Google. Búsquedas hechas a 2014/09/27)
+
+Me gustaron mucho las ideas de [[http://www.paulgraham.com/avg.html][Paul Graham acerca de programación web
+en Lisp]], quizás un día quiera programarme un framework entero y quizás
+sí escogería Lisp para hacerlo si quisiera ser ambicioso y entrar de
+una manera fuerte en el mercado con ideas originales.
+
+[[http://php.net/][PHP]] es el lenguaje de programación web más demandado del mercado. A
+pesar de las innovaciones de los bajos nivel del lenguaje que nos trae
+Lisp, desde la máquina de Turing no se ha creado nada con mayor poder
+de cómputo. Lisp nos traerá cuestiones más declarativas decir más con
+menos, pero cualquier cosa programada en Lisp, se puede programar en
+PHP. Y seguramente sea programado porque la comunidad de programadores
+web es más grande. Python y Ruby también son lenguajes elegantes, no
+tanto, como Lisp, no con tantas innovaciones del bajo, tienen
+comunidades más grandes, pero PHP sigue siendo líder en programadores,
+supongo que por la inercia de sintaxis del C y derivados en la
+programación en general. Yo recomiendo jugar con las elegancias en el
+editor, en [[http://www.gnu.org/software/emacs/][GNU Emacs]], el editor en cualquier empresa que no sea
+excesivamente autoritaria es una elección del programador. Java no es
+elegante, pero aunque tenga la sintaxis similar a C, tiene la mala
+idea de ser un lenguaje que tiene que compilarse y no se ha
+especializado en programación web aunque tenga un buen mercado. Yo
+pienso como qqGreenspun que lo más importante es la API, si las APIs
+de los CMS más importantes: [[http://www.drupal.org][Drupal]], [[http://www.joomla.org][Joomla]], [[http://www.wordpress.org][Wordpress]], [[https://www.mediawiki.org/wiki/MediaWiki][Mediawiki]],
+[[https://savannah.gnu.org/][Savannah]], etc. están en PHP todo seguirá en PHP. Especialmente si hay
+un proceso de estandarización de APIs.
+
+La manera de programar web con Lisp, sería tener clientes que o bien
+lo pidan (rarísimo) o clientes que solo entiendan de lo que les das
+por arriba. Eso como programador web me reduce oportunidades de
+negocio. Y como programador me restringe el no estar todo el día con
+Lisp, pero si en vez de dinero quiero Lisp, tengo Emacs ¿no?. Quizás
+llegue un día que al haber ganado tanto dinero con PHP, en vez de
+comprar helicópteros invierta en programar en Lisp.
+
+Drupal es uno de los tres CMS más usados. Lo bueno de los CMS
+es que piensas es que piensas en darle la solución al cliente y los
+clientes quieren soluciones a sus problemas. Los clientes pagan por
+soluciones no por frameworks. Un CMS en realidad es más declarativo,
+tardas menos en hacer más si lo conoces un poco.
+
+* Framework versus CMS
+
+Hay quien piensa que es más rápido un framework, debido a que
+programar es en realidad más rápido que configurar interfaces web. Lo
+cierto es que un CMS atrae 2 tipos de usuarios los que piensan que se
+tarda menos con el interfaz y los que piensan que se tarda menos con
+la programación. Yo cuando me enfrento a una tarea decido por mí mismo
+si tardo menos programando o por interfaz y la gente que va a mirar
+eso qué prefiere, para ayudarle o no.
+
+Drupal 8 ya trae un framework estándar: [[http://www.getsymphony.com/][Symphony]]. Esto nos dará un
+pequeño cambio de filosofía, pero seremos más competitivos a los
+vaivenes nuestro bajo nivel, será más trabajado por una comunidad más
+fuerte y grande.
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:../img/licenses/by/3.0/80x15.png]]

@@ -1,0 +1,57 @@
+#+TITLE: Administrando Granjas GNU/Linux
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Hoy he estado aprendiendo a administrar varias máquinas al
+tiempo. Para ello he estado mirando 2 herramientas clusterssh y dish.
+
+* Clusterssh
+
+Clusterssh sirve para tener N terminales abiertos a la vez y
+ejecutando los mismos comandos en todos. Pero primero es necesario
+editar el /etc/clusters:
+
+#+BEGIN_SRC bash
+clusters = oficina servidores
+oficina = marcos hector elena
+servidores = yoda darthvader luke
+#+END_SRC
+
+Una vez hecho esto ya podemos ejecutar el siguiente comando
+
+#+BEGIN_SRC bash
+clusterssh -l usuario oficina
+#+END_SRC
+
+* Dish
+
+Con dish también podemos ejecutar varios comando, por ejemplo, de la
+siguiente manera:
+
+#+BEGIN_SRC bash
+dish -e 'date \; uptime' usuario@marcos usuario@elena
+#+END_SRC
+
+Lo bonito del paquete dish es que también trae dicp que nos permite
+hacer un scp a diferentes máquinas sin necesidad de hacer un for en
+bash:
+
+#+BEGIN_SRC bash
+dicp -g "darthvader luke" $HOME/.profile $HOME/.bashrc usuario@:
+#+END_SRC
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]
+
+

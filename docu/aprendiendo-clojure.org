@@ -1,0 +1,62 @@
+#+TITLE: Aprendiendo Clojure
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Lisp es habitualmente experto y puntero en la creación de nuevas
+características de lenguajes de programación, sin embargo, otros
+lenguajes como Java suelen tener librerías que en ocasiones son útiles
+para los programadores, con Clojure es posible utilizar las librerías
+Java desde Lisp.
+
+* Instalación y Primeros Pasos
+
+Instalar Clojure en Debian es sencillo
+
+#+BEGIN_SRC bash
+sudo apt-get install clojure1.4
+#+END_SRC
+
+También es fácil hacer un "Hello World" desde la típica gui de Java:
+
+#+BEGIN_SRC lisp
+ (javax.swing.JOptionPane/showMessageDialog nil "Hello World" )
+#+END_SRC
+
+Si nuestras líneas clojure están en un fichero también podemos
+interpretarlas desde bash. Pongamos que nuestro fichero transforma de
+grados fahrenheit a celsius:
+
+#+BEGIN_SRC lisp
+#! /usr/bin/env clojure
+(def fahrenheit (first *command-line-args*))
+(println (* 0.556 (- (read-string fahrenheit) 32)))
+#+END_SRC
+
+En tal caso podemos ejecutar el siguiente comando:
+
+#+BEGIN_SRC bash
+$ ./fahrenheit2celsius.clj 5
+-15.012
+#+END_SRC
+
+* Próximo Día, profundizar android y clojure
+
++ https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md
++ https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial
++ http://appinventor.mit.edu/ (esto no es clojure, pero es otra
+  estrategia de lisp para el android)
++ https://github.com/clojure/clojurescript
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

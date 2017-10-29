@@ -1,0 +1,886 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdfetex 2011.9.25)  8 NOV 2011 04:29
+entering extended mode
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\catcode126=12 \def\normaltilde{~}\catcode126=13 \let~\normaltilde  \input ./
+gccintro.texi
+(./gccintro.texi (./texinfo.tex Loading texinfo [version 2004-04-07.08]:
+Basics,
+\bindingoffset=\dimen16
+\normaloffset=\dimen17
+\pagewidth=\dimen18
+\pageheight=\dimen19
+\outerhsize=\dimen20
+\outervsize=\dimen21
+\cornerlong=\dimen22
+\cornerthick=\dimen23
+\topandbottommargin=\dimen24
+\headlinebox=\box16
+\footlinebox=\box17
+\margin=\insert252
+\EMsimple=\toks13
+\groupbox=\box18
+\groupinvalidhelp=\toks14
+\mil=\dimen25
+\exdentamount=\skip18
+\inmarginspacing=\skip19
+ pdf,
+\tempnum=\count27
+\lnkcount=\count28
+\filename=\toks15
+\filenamelength=\count29
+\pgn=\count30
+\toksA=\toks16
+\toksB=\toks17
+\toksC=\toks18
+\toksD=\toks19
+\boxA=\box19
+\countA=\count31
+ (/usr/share/texmf-texlive/tex/plain/misc/pdfcolor.tex) fonts,
+\sffam=\fam8
+\textleading=\dimen26
+\mainmagstep=\count32
+\fontdepth=\count33
+
+page headings,
+\titlepagetopglue=\skip20
+\titlepagebottomglue=\skip21
+\evenheadline=\toks20
+\oddheadline=\toks21
+\evenfootline=\toks22
+\oddfootline=\toks23
+ tables,
+\tableindent=\dimen27
+\itemindent=\dimen28
+\itemmargin=\dimen29
+\itemmax=\dimen30
+\itemno=\count34
+\multitableparskip=\skip22
+\multitableparindent=\skip23
+\multitablecolspace=\dimen31
+\multitablelinespace=\skip24
+\colcount=\count35
+\everytab=\toks24
+ conditionals,
+\doignorecount=\count36
+ indexing,
+\secondaryindent=\skip25
+\partialpage=\box20
+\doublecolumnhsize=\dimen32
+ sectioning,
+\unnumberedno=\count37
+\chapno=\count38
+\secno=\count39
+\subsecno=\count40
+\subsubsecno=\count41
+\appendixno=\count42
+\absseclevel=\count43
+\secbase=\count44
+\chapheadingskip=\skip26
+\secheadingskip=\skip27
+\subsecheadingskip=\skip28
+ toc,
+\tocfile=\write0
+\contentsrightmargin=\skip29
+\savepageno=\count45
+\lastnegativepageno=\count46
+\tocindent=\dimen33
+ environments,
+\errorbox=\box21
+\lispnarrowing=\skip30
+\envskipamount=\skip31
+\circthick=\dimen34
+\cartouter=\dimen35
+\cartinner=\dimen36
+\normbskip=\skip32
+\normpskip=\skip33
+\normlskip=\skip34
+\lskip=\skip35
+\rskip=\skip36
+\tabw=\dimen37
+
+defuns,
+\defbodyindent=\skip37
+\defargsindent=\skip38
+\deflastargmargin=\skip39
+\parencount=\count47
+\brackcount=\count48
+ macros,
+\paramno=\count49
+\macname=\toks25
+ cross references,
+\auxfile=\write1
+\savesfregister=\count50
+ insertions,
+\footnoteno=\count51
+\SAVEfootins=\box22
+\SAVEmargin=\box23
+
+(/usr/share/texmf-texlive/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.3 <23 July 2005>
+\epsffilein=\read1
+\epsfframemargin=\dimen38
+\epsfframethickness=\dimen39
+\epsfrsize=\dimen40
+\epsftmp=\dimen41
+\epsftsize=\dimen42
+\epsfxsize=\dimen43
+\epsfysize=\dimen44
+\pspoints=\dimen45
+)
+\noepsfhelp=\toks26
+\appendtomacroAtoks=\toks27
+\appendtomacroBtoks=\toks28
+ localization,
+\nolanghelp=\toks29
+\defaultparindent=\dimen46
+ and turning on texinfo input format.) (./config-local.texi)
+(./gccintro.aux)
+\openout1 = `gccintro.aux'.
+
+@cpindfile=@write2
+@fnindfile=@write3
+@vrindfile=@write4
+@tpindfile=@write5
+@kyindfile=@write6
+@pgindfile=@write7
+ [1
+Non-PDF special ignored!
+\openout2 = `gccintro.cp'.
+
+\openout3 = `gccintro.fn'.
+
+\openout4 = `gccintro.vr'.
+
+\openout5 = `gccintro.tp'.
+
+\openout6 = `gccintro.ky'.
+
+\openout7 = `gccintro.pg'.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (./gccintro.toc [-1] [-2] [-3]) [-4] (./gccintro.toc) (./gccintro.toc)
+(./rms.texi (Foreword)
+\openout0 = `gccintro.toc'.
+
+) Chapter 1 [1] [2] [3] [4] [5] Chapter 2 [6] (./hello.c) [7] (./bad.c)
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+ [8] (./main.c) [9] (./hello1.h) (./hello_fn.c) [10] [11]
+(./main2.c) [12] [13] (./c1makefile2) [14] [15] (./calc.c) [16] [17]
+(./badconv.c) [18] Chapter 3 [19] [20] [21] (./dbmain.c
+Overfull \hbox (15.14566pt too wide) in paragraph at lines 8--8
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 29.13606
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x304.68045
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt d
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.64304pt too wide) in paragraph at lines 9--9
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 29.13606
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x316.17783
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt d
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) [22] [23]
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 1455--1455
+ []@texttt $ C_INCLUDE_PATH=.:/opt/gdbm-1.8.3/include:/net/include[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+[24] [25] [26]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 1621--1621
+ []@texttt $ LD_LIBRARY_PATH=/opt/gdbm-1.8.3/lib:/opt/gtk-1.4/lib[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1624--1629
+@textrm us-ing the syn-tax @texttt LD_LIBRARY_PATH=@textttsl NEWDIRS@texttt :$L
+D_LIBRARY_
+
+@hbox(7.60416+2.12917)x318.67085, glue set 5.09586
+.@textrm u
+.@textrm s
+.@discretionary
+..@textrm -
+.@textrm i
+.@textrm n
+.etc.
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 1654--1659
+@textrm This cre-ates an ex-e-cutable linked with the static li-brary
+
+@hbox(7.60416+2.12917)x318.67085, glue set 3.433
+.@textrm T
+.@textrm h
+.@textrm i
+.@textrm s
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+[27] (./ansi.c [28])
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 1748--1748
+ []@texttt ansi.c:6:14: error: expected identifier or ( before asm[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt a
+.@texttt n
+.@texttt s
+.etc.
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+(./pi.c)
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 1790--1790
+ []@texttt pi.c:7:38: note: each undeclared identifier is reported[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt p
+.@texttt i
+.@texttt .
+.etc.
+
+[29] (./gnuarray.c [30]) [31] [32] (./main4.c)
+Underfull \hbox (badness 2469) in paragraph at lines 1995--2002
+ @textrm be the re-sult of an ac-ci-den-tal omis-sion by the
+
+@hbox(7.60416+2.12917)x318.67085, glue set 2.91466
+.@glue(@leftskip) 57.81621
+.@textrm b
+.@kern0.30417
+.@textrm e
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+[33] (./w.c)
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+Overfull \hbox (25.2662pt too wide) in paragraph at lines 2060--2060
+ []@texttt expression < 0 is always false [-Wtype-limits][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 79.49742
+.@hbox(0.0+0.0)x0.0
+.@texttt e
+.@texttt x
+.@texttt p
+.etc.
+
+(./wabs.c [34]
+Overfull \hbox (26.97237pt too wide) in paragraph at lines 8--8
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x258.69095
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt d
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+)
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+ (./shadow.c [35]) (./shadow2.c) (./castqual.c) [36] Chapter 4 [37] [38]
+(./dtest.c) [39] (./dtestval.c) [40] (./dtestval2.c) (./dtestval3.c) [41]
+Underfull \hbox (badness 2990) in paragraph at lines 2414--2423
+@textrm quote char-ac-ters. For ex-am-ple, the command-line op-tion
+
+@hbox(7.60416+2.12917)x318.67085, glue set 3.10474
+.@textrm q
+.@textrm u
+.@textrm o
+.@textrm t
+.@textrm e
+.etc.
+
+(./test.c) [42] (./hello.c) [43] Chapter 5 [44] (./null.c [45]) [46]
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 2696--2696
+ []@texttt Program terminated with signal 11, Segmentation fault.[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt P
+.@texttt r
+.@texttt o
+.etc.
+
+[47] [48] [49]
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 2858--2858
+ []@texttt Run till exit from #0  0x08048400 in foo (p=0x40013f98)[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt R
+.@texttt u
+.@texttt n
+.etc.
+
+Chapter 6 [50] [51] [52] [53] [54] [55] [56] (./optim.c [57]) [58] [59]
+(./uninit.c) [60]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+ Chapter 7 [61] [62] (./hello.cc) [63]
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 3528--3528
+ []@texttt hello.o(.text+0x1b): undefined reference to `std::cout'[] 
+
+@hbox(7.60416+0.91246)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt h
+.@texttt e
+.@texttt l
+.etc.
+
+
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 3560--3560
+ []@texttt hello.o(.text+0x1b): undefined reference to `std::cout'[] 
+
+@hbox(7.60416+0.91246)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt h
+.@texttt e
+.@texttt l
+.etc.
+
+[64] [65] (./hellostr.cc) [66] (./string.cc) [67] (./buffer.h [68]) (./tprog.cc
+) [69] (./templates.cc) [70] (./templates2.cc) Chapter 8 [71] [72] [73]
+[74] (./alpha.c) [75] [76] [77] [78] (./setfpu.c) (./fptest2.c
+Overfull \hbox (26.64304pt too wide) in paragraph at lines 14--14
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 29.13606
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x316.17783
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt s
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[79]) [80] (./signed.c)
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 4458--4458
+ []@texttt signed.c:7: warning: comparison is always false due to[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt s
+.@texttt i
+.@texttt g
+.etc.
+
+[81] (./testgetc.c) (./testgetc2.c [82]) Chapter 9 [83] [84] [85] [86]
+Overfull \hbox (24.93687pt too wide) in paragraph at lines 4658--4658
+ []@texttt -mtune=generic -march=i586 -auxbase hello -Wall -version[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt -
+.@texttt m
+.@texttt t
+.etc.
+
+
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 4663--4663
+ []@texttt warning: GMP header version 5.0.1 differs from library[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt w
+.@texttt a
+.@texttt r
+.etc.
+
+
+Overfull \hbox (24.93687pt too wide) in paragraph at lines 4674--4674
+ []@texttt /usr/lib/i386-linux-gnu/gcc/i486-linux-gnu/4.6.1/include[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt /
+.@texttt u
+.@texttt s
+.etc.
+
+
+Overfull \hbox (13.4395pt too wide) in paragraph at lines 4683--4683
+ []@texttt warning: GMP header version 5.0.1 differs from library[] 
+
+@hbox(6.69167+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt w
+.@texttt a
+.@texttt r
+.etc.
+
+[87]
+Overfull \hbox (24.93687pt too wide) in paragraph at lines 4690--4690
+ []@texttt '-march=i586' as --32 -o /tmp/ccQxW8a5.o /tmp/cchpM0t3.s[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt '
+.@texttt -
+.@texttt m
+.etc.
+
+[88] (./loop.c) [89]
+Overfull \hbox (19.18819pt too wide) in paragraph at lines 4794--4794
+ []@texttt Reading symbols from /lib/ld-linux.so.2...(no debugging[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt R
+.@texttt e
+.@texttt a
+.etc.
+
+[90] Chapter 10 [91] [92] (./hello_fn.c) (./bye_fn.c) (./hello.h) [93]
+(./main3.c) [94] (./collatz.c [95] [96]) [97] (./cov.c) [98] (./cov_c_gcov
+Overfull \hbox (15.14566pt too wide) in paragraph at lines 11--11
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 29.13606
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x304.68045
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.89435pt too wide) in paragraph at lines 13--13
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 29.13606
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x310.42914
+..@texttt #
+..@texttt #
+..@texttt #
+..@texttt #
+..@texttt #
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) Chapter 11 [99] [100] (./hello.c) [101] [102]
+Overfull \hbox (111.16719pt too wide) in paragraph at lines 5374--5374
+ []@texttt $ ld -dynamic-linker /lib/ld-linux.so.2 /usr/lib/crt1.o /usr/lib/crt
+i.o[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt $
+.@penalty 10000
+.@glue 5.74869
+.etc.
+
+
+Overfull \hbox (139.91063pt too wide) in paragraph at lines 5375--5375
+ []@texttt /usr/lib/gcc/i486-linux-gnu/4.3/crtbegin.o -L/usr/lib/gcc/i486-linux
+-gnu/4.3[] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt /
+.@texttt u
+.@texttt s
+.etc.
+
+
+Overfull \hbox (88.17244pt too wide) in paragraph at lines 5376--5376
+ []@texttt hello.o -lgcc -lgcc_eh -lc /usr/lib/gcc/i486-linux-gnu/4.3/crtend.o[
+] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@texttt h
+.@texttt e
+.@texttt l
+.etc.
+
+[103] Chapter 12 [104]
+Underfull \hbox (badness 4518) in paragraph at lines 5475--5477
+ @texttt linked[] @textrm in-di-cates pro-grams linked stat-i-cally, for
+
+@hbox(7.60416+2.12917)x318.67085, glue set 3.56525
+.@glue(@leftskip) 57.81621
+.@texttt l
+.@texttt i
+.@texttt n
+.@texttt k
+.etc.
+
+[105] [106] Chapter 13 [107] [108] (./msg-file.c) (./msg-nest1.h)
+(./msg-nest2.h) [109] (./msg-invalidpp.c) (./msg-undeclared.c [110])
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+(./msg-parse.c
+Overfull \hbox (38.46974pt too wide) in paragraph at lines 6--6
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x270.18832
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt p
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) (./msg-eoi.c) [111] (./msg-implicitdecl.c
+Overfull \hbox (26.97237pt too wide) in paragraph at lines 4--4
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x258.69095
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt p
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) (./msg-unterm.c
+Overfull \hbox (61.4645pt too wide) in paragraph at lines 6--6
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x293.18307
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt p
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) [112] (./msg-string2.c
+Overfull \hbox (44.21843pt too wide) in paragraph at lines 6--6
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x275.93701
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt p
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) (./msg-string2.cc
+Overfull \hbox (49.96712pt too wide) in paragraph at lines 6--6
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x281.6857
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt s
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+)
+Underfull \hbox (badness 2443) in paragraph at lines 5813--5822
+ @textrm the value of a char-ac-ter con-stant that con-tains
+
+@hbox(7.60416+0.0)x318.67085, glue set 2.90485
+.@glue(@leftskip) 57.81621
+.@textrm t
+.@textrm h
+.@textrm e
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 5813--5822
+ @textrm warn-ings @texttt multiple-character character constant[]
+
+@hbox(7.31305+2.43333)x318.67085, glue set 3.46858
+.@glue(@leftskip) 57.81621
+.@textrm w
+.@kern-0.30418
+.@textrm a
+.@textrm r
+.etc.
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 5813--5822
+ @textrm or @texttt warning: character constant too long for its
+
+@hbox(6.69167+2.43333)x318.67085, glue set 3.88538
+.@glue(@leftskip) 57.81621
+.@textrm o
+.@textrm r
+.@glue 3.65 plus 1.825 minus 1.21666
+.@texttt w
+.etc.
+
+[113] (./msg-char.c) (./msg-null.c) [114] (./msg-derefincomplete.c)
+(./msg-unknownesc.c) [115] (./msg-assign.c) (./msg-control.c [116])
+(./msg-unused.c) [117] (./msg-const.c
+Overfull \hbox (26.97237pt too wide) in paragraph at lines 4--4
+ [][] 
+
+@hbox(7.60416+2.43333)x318.67085
+.@glue(@leftskip) 86.95227
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x258.69095
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@texttt *
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+) (./msg-init.c) [118] (./msg-ext) (./msg-undef.c [119]) [120] Chapter 14
+[121] [122] (Further reading) [123] [124] [125] (Acknowledgements) [126]
+Underfull \hbox (badness 10000) in paragraph at lines 6449--6451
+[]@textrm Thanks to David Edel-sohn, for in-for-ma-tion on the
+
+@hbox(7.60416+2.12917)x318.67085, glue set 4.70735
+.@hbox(0.0+0.0)x15.0
+.@textrm T
+.@textrm h
+.@textrm a
+.@textrm n
+.etc.
+
+[127] (Other books from the publisher) [128] (./books.texi)
+(Free software organizations) [129] [130] (./associations.texi)
+(GNU Free Documentation License) [131] [132] (./fdl.texi [133] [134] [135]
+[136] [137]) (Index) [138] (./gccintro.cps [139] [140] [141] [142] [143]
+[144] [145] [146] [147] [148] [149] [150] [151]) [152] [153] [154] ) 
+Here is how much of TeX's memory you used:
+ 2507 strings out of 497129
+ 31814 string characters out of 1207599
+ 57896 words of memory out of 3000000
+ 3187 multiletter control sequences out of 15000+50000
+ 32127 words of font info for 112 fonts, out of 3000000 for 9000
+ 51 hyphenation exceptions out of 8191
+ 15i,7n,16p,318b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmsl9.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt
+9.pfb>
+Output written on gccintro.pdf (160 pages, 920147 bytes).
+PDF statistics:
+ 2267 PDF objects out of 2487 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 849 words of extra memory for PDF output out of 10000 (max. 10000000)
+

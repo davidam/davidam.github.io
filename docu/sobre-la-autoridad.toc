@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}La Autoridad F\IeC {\'\i }sica o Militar}{1}{section.1}
+\contentsline {section}{\numberline {2}La Autoridad Estructural}{1}{section.2}
+\contentsline {section}{\numberline {3}La Autoridad de la Popularidad}{2}{section.3}
+\contentsline {section}{\numberline {4}La Autoridad T\IeC {\'e}cnica}{2}{section.4}
+\contentsline {section}{\numberline {5}La Autoridad Moral}{2}{section.5}
+\contentsline {section}{\numberline {6}La Autoridad Econ\IeC {\'o}mica}{3}{section.6}
+\contentsline {section}{\numberline {7}La Creatividad}{3}{section.7}
+\contentsline {section}{\numberline {8}Licencia}{3}{section.8}

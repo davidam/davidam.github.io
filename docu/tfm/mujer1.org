@@ -1,0 +1,646 @@
+#+OPTIONS *:t
+
+* Introducción
+
+*entrevistador*: Bueno, pues muchas gracias por haber accedido a hacer
+la entrevista. Eh, bueno, la entrevista está enmarcada en un estudio
+sobre movimientos sociales y nuevas tecnologías. Entonces la
+asociación tiene mucho interés en saber cómo están usando los
+movimientos sociales las nuevas tecnologías para poder ... *corte*
+
+Bueno, vuelvo a empezar, bueno da igual. Bueno, ya te he explicado en
+qué consite la entrevista, no lo voy a volver a repetir, entonces tu
+has dicho, tu estás en una asociación de vecinos y en el sindicato de
+CCOO ¿no?
+
+*mujer1*: Yo ahora no estoy en la asociación de vecinos porque no
+... como no soy propietaria no ... estoy en la asociación de vecinos
+en el sindicato sí.
+
+*entrevistador*: Vale, es porque las preguntas van a ir muy enfocadas
+a cómo se toman las decisiones en cada organización, da igual, nos
+centramos en lo del sindicato las preguntas y ...
+
+*mujer1*: En la asociación de vecinos sí que se puede hablar también
+porque he participado en reuniones de las asociaciones de vecinos, las
+que ha habido ...
+
+*entrevistador*: ¿Lo del 15M?
+
+*mujer1*: No. En lo del 15M yo participo, vamos a ver, participo como
+receptora yo entro en las páginas que hay de lo del 15M, miro las
+cosas si hay que apoyar alguna cosa o firmar, firmo. Pero no estoy
+dentro de aportar otro tipo de cosas. Vamos que funciono más como
+interesada en el tema y participante en el tema, pero a nivel más de
+información.
+
+*entrevistador*: Aha.
+
+*mujer1*: No de aportar ningún tipo de cosa al 15M, por ejemplo.
+
+*entrevistador*: Vale, pues como te decía si quieres lo hacemos más
+simple solo para el sindicato o si quieres añadimos la asociación de
+vecinos, eso va a ser un poco más largo si hacemos una cosa o las dos.
+
+*mujer1*: Como tu veas.
+
+*entrevistador*: Vale, pues yo creo que mejor con lo del sindicato
+porque es lo que estás más activa ahora.
+    
+* Flujos de información:
+** comunicación interna
+
+*entrevistador*: Vale, pues la primera pregunta de comunicación
+interna ¿cómo recibes tu información de cosas que se hacen en el
+sindicato o cómo funciona la comunicación interna dentro del
+sindicato? si se mandan mails de correos, si llegan por carta,
+
+*mujer1*: Se mandan mails de correo, se puede acceder a toda las
+publicaciones a través de, de electrónicamente y además se envía por
+correo, lo cual es una duplicidad, pero es verdad que no todo el mundo
+que está en el sindicato tiene acceso fácil a Internet, la mayoría de
+la gente sí, pero bueno hay gente mayor que no ... bueno digo gente
+mayor como si yo fuera muy joven
+
+*entrevistador*: jeje
+
+*mujer1*: Bueno, yo sí estoy al tanto de las nuevas tecnologías,
+entonces viene por las tres vías, a parte de las reuniones que hay,
+que son presenciales y demás, estoy por las tres vías.
+
+Comisiones tiene una página web donde puedes mirar multitud de cosas
+se accede a todas las publicaciones que se acceden a través del
+sindicato y sistemáticamente se mandan comunicaciones, bueno
+comunicados para hacer llegar si hay convocatorias de reuniones, si
+hay convocatorias de manifestaciones, si hay convocatorias de no sé
+qué llega al correo.
+
+*entrevistador*: O sea página web, correo electrónico y correo postal
+¿no?
+
+*mujer1*: Sí.
+
+*entrevistador*: Vale.
+
+*mujer1*: Las tres vías.
+
+*** flujo de comunicación? flujos horizontales/verticales?
+*** sincronización interna
+
+*entrevistador*: Luego, mmm, el tema de colaboración interna de cómo
+se participa en el sindicato, cómo se buscan consensos, cómo se
+redactan textos en común, imagino que se usa un secretario ¿no?
+
+*mujer1*: Es esencial. Para los diferentes comités, para los
+diferentes órganos de representación, pues en general se hace
+presencial, hombre, luego entre los miembros sí que puedes comunicar
+pero digamos ya no tanto institucionalmente, como a nivel personal
+hacer llegar cosas, opiniones, o no sé qué para discutirlo, pero
+digamos que este tipo de cosas llega, se hace de forma directa.
+
+** colaboración interna
+*** redacción en común?
+** búsqueda de consensos
+** gestión de tareas
+
+*entrevistador*: ¿Y hay algún mecanismo de gestión de tareas? Por
+ejemplo, hay que hacer esto se buscan voluntarios para hacer tareas ¿o
+la gestión de tareas viene definida ya a personas definidas que pueden
+ser o no liberados pero que tienen un rol definido ... ?
+
+*mujer1*: Digamos que eso depende de los temas. Hay determinados temas
+que hay personas encargadas de su gestión, de hacerlo legal, ... desde
+los secretarios de las secciones sindicales hasta niveles más altos
+dentro de los organismos de representación que están encargados de
+diferentes tareas ¿eh? y eso son personas concretas que pueden ser
+colaboradores, pero hay personas concretas que *no se entiende*. ¿A
+niveles más bajos? pues hay tareas que ... digamos el responsable en
+los diferentes niveles del sindicato plantean qué hay que hacer y
+entonces sí se piden voluntarios. La mayor carga de los temas los
+llevan desde los secretarios a los liberados que es lógico, que se
+dedican en exclusiva a funcionar para el sindicato y, entonces son los
+que llevan la mayor carga, hacen trabajo de llevar las comunicaciones,
+de hablar con la gente de no sé qué, lo llevan ellos, pero para otras
+muchas cosas que sí piden colaboración lógicamente a los afiliados.
+
+*entrevistador*: Y ¿hay alguna herramienta telemática para esa
+asignación de tareas? o normalmente suele ser presencial?
+
+*mujer1*: Generalamente, generalmente esas cosas o se hablan en las
+diferentes reuniones o si nos comunicamos por correo eletrónico "oye,
+necesito a alguien que no sé qué" entonces la gente dice "pues yo
+puedo, pues yo no" unos colaboran más, otros se escaquean más como en
+todos los colectivos.
+
+*entrevistador*: Claro.
+
+*mujer1*: Pero eso generalmente, es o a nivel de llamada de teléfono o
+a nivel de correo electrónico, o a nivel presencial ¿uhm? sobre todo a
+los niveles digamos más básicos: representación en las empresas, pues
+muchos temas son personales, personales en reuniones, personales a
+través de teléfono, o personales a través del correo electrónico.
+
+** gestión de eventos
+
+*entrevistador*: Vale. Y la gestión de eventos imagino que es lo
+mismo: se decide en reuniones y luego se hace publicidad a través de
+los medios de información que me has comentado antes
+
+*mujer1*: Sí.
+
+** comunicación con el exterior
+
+*entrevistador*: Bueno, había un punto aquí, ahora de comunicación con
+el exterior que se divide en subcategorías: captación de
+voluntarios/colaboradores, comunicación con otros colectivos, formar
+alianzas/coaliciones/ con otros movimientos, otras plataformas, tal y
+cual.
+
+*mujer1*: Pero eso funciona, yo creo que todo eso funciona por las
+mismas vías. A nivel de los órganos de dirección, los *no se entiende*
+son los que se encargan de conectar, digo institucionalmente, de una
+forma un poco organizada, los colectivos, luego personalmente cada uno
+de los miembros sí puede, sí puede tener contactos o pasarlos y
+conocer gente en otras organizaciones, entonces puede sugerir "pues
+oye, pues aquí, pues hay gente, pues no sé qué, interesada" pero luego
+digamos las conversaciones, o las negociaciones generalmente las lleva
+gente que tiene suficiente nivel de representatividad en la
+organización de sindicatos --- que yo hable con la gente del 15M, lo
+hago a nivel personal, no tendría capacidad para negociar, sí para
+poner en contacto, no para negociar temas, eso hay personas encargadas
+de ello.
+
+*entrevistador*: Eso son los secretarios normalmente ¿no?
+
+*mujer1*: En general, sí, en general, pero en determinadas cosas, ni
+siquiera los secretarios, los secretarios a nivel de de organización
+empresarial, o sectorial, o no sé qué, sino a nivel de algún lazo ¿eh?
+representación nacional, representación de la comunidad en concreto,
+del ayuntamiento en concreto.
+
+*entrevistador*: Porque Comisiones imagino que se divide igual por
+ramos y por territorios ¿no?
+
+*mujer1*: Sí. Sí, la organización sigue siendo la misma.
+
+*** captación de voluntarios/colaboradores
+*** comunicación con otros colectivos
+*** formar alianzas/coaliciones/movimientos/plataformas
+** documentación interna
+
+*entrevistador*: Vale. ¿Hay documentación interna?
+
+*mujer1*: Sí.
+
+*entrevistador*: Supongo que sí ¿no?. Gestión económica y cosas así
+¿no?
+
+*mujer1*: Sí, sí, claro. Hay mucha documentación interna: hay estudios
+sobre miles de ámbitos, de la mujer hasta
+
+*entrevistador*: Y eso normalmente, se hace con documentos word o
+cosas así ¿no? o herramientas tipo wiki y cosas de esas.
+
+*mujer1*: Como mucho pdf.
+
+*entrevistador*: Pdf ¿no?
+
+*mujer1*: Pdf para que no se pueda manipular. Y no se qué, pero la
+elaboración sí se puede hacer en Word o en no se qué, pero en general
+tienes *no se entiende*
+
+*entrevistador*: Aha.
+
+** gestión económica
+
+*entrevistador*: Y ahora hay un punto de gestión económica que sería
+eso: gestión de donaciones, formas de financiación, contribuciones de
+miembros, gastos/ingresos. Todo esto es un poco público que se sabe
+cómo funciona pero si nos puedes expresar ...
+
+*mujer1*: Pues hay un, hay un grupo dentro del sindicato, hay una
+organización para llevar todos los temas económicos, para llevar las
+cuentas y para controlar que las cosas se puedan ir para distribuir
+los fondos a los determinados, a los determinados sectores que
+necesiten y así. El acceso por parte de digamos el público en general
+a ese tipo de datos no es algo que se pida expresamente y que el
+sindicato diga que sí, dependiendo de para qué lo pidan o así. Digamos
+que no es de acceso público. Yo no puedo entrar y ver las
+cuentas. Pero te viene en las reuniones con los comités que hay, una
+reuniones que hay con el sindicato, si viera algo que no sé que sí
+puedo pedir de a ver qué pasa con las cuentas y siempre que tenga
+apoyo suficiente, pues simplemente me lo dejarían ver, pero no es de
+acceso público.
+
+*entrevistador*: Supongo que serán también, secretarías específicas de
+cada ramo, o algo así.
+
+*mujer1*: Sí, pero luego después hay un órgano superior que controla
+también a todos los diferentes sectores, es decir, de hecho yo creo
+que, por ejemplo, las cuotas están centralizadas, aunque siguen
+llegando desde la afiliación por sectores, por comités de empresa, no
+sé qué, no sé cuánto pero se van encuadrando dentro dentro de
+determinados tramos. Y yo creo que ahora al menos a nivel provincial
+hay un grupo centralizado que controla *no se entiende*, se pasan por
+banco en muchos casos está....
+
+*entrevistador*: Sí, la financiación son: subvenciones, cuotas de
+afiliados y ya está ¿no?
+
+*mujer1*: Subvenciones que tienen por parte del gobierno, o sea en
+función de la representatividad que se tenga y las cuotas de los
+afiliados. Hombre, hay determinados, hay alguna, alguna ...
+
+*entrevistador*: Hay cursos también que se hacen ¿no?
+
+*mujer1*: Claro. Pero los cursos en general son gratuitos, los cursos
+a través de la formación
+
+*entrevistador*: reciben subvenciones.
+
+*mujer1*: Subvenciona el gobierno, subvenciona las comunidades
+determinados cursos, pero luego el sindicato da a afiliados y no
+afiliados lo da a quien lo pide, siempre que haya suficientes plazas
+¿eh?. Pero son gratuitos, los cursos son gratuitos. Pero sí hay
+actividades digamos lúdicas de conciertos en algún momento, por
+ejemplo, el ateneo de Comisiones hace muchas cosas y tiene unas
+actividades culturales muy buenas. Y eso para entrar se paga, los
+afiliados pagan menos, pero los no afiliados pueden ir también, pagan
+más puedes ver espectáculo, teatro, concierto, hay mucho, bastantes,
+bastantes actividades y eso también es una forma de financiación. Me
+imagino que en muchos casos llega para ... para poderlo hacer, poder
+hacer la actividad que se trate, que posiblemente no dé mucho
+beneficio pero en muchos casos yo creo que sí, que sí que da remanente
+para, para financiarse.
+
+*** gestión de donaciones
+*** formas de financiación
+*** contribuciones de miembros
+*** gastos/ingresos
+
+** toma de decisiones
+
+*entrevistador*: Bueno, pues el siguiente punto es de toma de
+decisiones. Yo entiendo que en el sindicato de las decisiones se toman
+a nivel de sección sindical de la empresa, otras a nivel territorial,
+otras a nivel de ramo y otras a nivel nacional ¿no?
+
+*mujer1*: Claro. Hay diferentes niveles de representación, vamos a
+ver. Por ejemplo, yo en mi ministerio, pues las decisiones que
+corresponden vamos a decir a la Junta de Personal, en representación
+de Comisiones ¿eh?. Se eligen todos cada cuatro años, entonces las
+decisiones que hay que tomar en cada territorio/ministerio de cara a
+nuestro propio ministerio: acciones que hay que llevar, o los temas
+que hay que defender de cara a ... pues se llevan a otros niveles. La
+Junta de Personal tiene unas, digamos unas competencias determinadas
+¿emh? y entonces los representantes de Comisiones dentro de la Junta
+de Personal se reunen para ver qué posturas o que no posturas hay que
+defender de cara a los problemas que puedan tener. Pero hay otro nivel
+de representatividad dentro de los propios ministerios que lo lleva
+directamente el sindicato, hay mesas, hay determinados temas que no
+negocia la Junta de Personal, no tiene capacidad, que lo negocian los
+propios sindicatos, hay mesas en los ministerios, luego hay una mesa
+interministerial ¿eh? que de forma pública negocia otro tipo de cosas,
+bueno, pocas cosas que la administración deja negociar de cara a los
+funcionarios, las retribuciones de los Presupuestos Generales del
+Estado, ahí no hay ninguna capacidad de negociación, pero sí por
+ejemplo, hay capacidad de negociación a niveles de subvención social,
+para controles de dinero, a veces con bastantes limitaciones, pero
+bueno, por ejemplo, la productividad, de los funcionarios que es una
+retribución que no tienen todos los funcionarios que solo se da
+cuando, cuando se trabaja unas horas más en jornada de tarde, pues ahí
+los sindicatos sí controlan, o intentan controlar, como digamos que es
+una subvención que se da de forma discrecional, discrecional en el
+sentido de decente, de que haya dinero y que la gente quiera
+voluntariamente trabajar esas horas más y, por tanto, cobra, cobra esa
+parte de complemento. Pero bueno para que la discrecionalidad no sea
+del todo discrecional y que la Administración decida de forma ... como
+quiera los sindicatos sí controlan cómo se reparte esa productividad a
+quien se reparte y que se gestione bien, igual que están presentes,
+por ejemplo, los concursos de traslados que convoca el ministerio para
+que no haya, para que sea lo más objetivo posible y que cada puesto se
+de a la persona que reune esas condiciones objetivamente y no al
+amiguete de turno que se ponga de por medio.
+
+*entrevistador*: Aha
+
+*mujer1*: Pero hay diferentes niveles de representatividad. Una es a
+nivel empresa, ministerio, o no sé qué. Otra es a nivel de sector de
+servicios. O incluso en los ministerios a nivel interministerial. Y
+luego determinados temas que se traten bajo la cúpula del sindicato
+
+*entrevistador*: En general ...
+
+*mujer1*: Hombre, no lo deciden ellos solos, pero en general se pide
+opinión a las diferentes, a los diferentes grupos. Pero en princio
+aquí sí son los que ... Lo que hacen porque la mayoría de las veces se
+lo propones y *no se entiende* que del aparato, se lo puedes proponer
+pero en definitiva quien tiene que aprobarlo y negociarlo pues son
+Comisiones que trabaja en conjunto con UGT quien negocia, quien
+plantea cuándo, cómo, pide los permisos y demás *no se entiende*
+
+*entrevistador*: ¿Y qué capacidad de decisión tienen los afiliados?
+
+*mujer1*: ¿Capacidad de decisión? ... Vamos a ver depende del nivel de
+implicación
+
+*entrevistador*: ¿Depende de asambleas o *no se entiende*?
+
+*mujer1*: Se hacen reuniones, depende, esto depende de momento, yo
+creo, de la implicación que tengas, la implicación en el sindicato que
+tengan los afiliados. Y debo decir eso es una opinión personal que en
+general la implicación en las decisiones de los sindicatos ha bajado
+mucho. Hay gente que está afiliada, paga su cuota, pero no se implica
+para nada, ni en el control, ni en la manifestación de opinión, ni va
+a las asambleas, ni a las reuniones y eso yo que soy mayor y he vivido
+otras épocas del sindicato digamos que hay sectores mucho más activos,
+pero hay sectores que son bastante pasotas en cuanto a ese tipo de
+cosas, pero luego sí se convocan plenos, se convocan ... pero hay
+veces que a determinados plenos están cuatro, pues lógicamente quienes
+tienen que decidir son los cuatro que están. Hay sectores en los que
+hay bastante pasotismo.
+
+*entrevistador*: Aha.
+
+** movilización
+** gestión de nuevos colaboradores
+** reuniones/asambleas
+
+*entrevistador*: Ah bueno, esto tiene que ver, nos hemos adelantado a
+esto que venía que es el tema de reuniones/asambleas y todo esto,
+entonces mmmm Si quieres pues eso es que no he entendido bien, al
+final sí que hay secciones que convocan asambleas, porque yo me
+acuerdo un conflicto que tuve en la UNED que había sindicatos y había
+... y como había un conflicto pues para la toma de decisiones y si se
+iba a la huelga, o si no se iba pues los sindicatos hicieron asambleas
+con todos los trabajadores.
+
+*mujer1*: Sí, sí.
+
+*entrevistador*: Pero yo no sé si hay secciones sindicales, ó en las
+que tu has estado, porque tu conoces manera directa que convocan
+periódicamente asambleas para sus afiliados, o para los trabajadores
+en general, o si no, o como funciona eso.
+
+*mujer1*: Vamos a ver, no hay una norma establecida. Hay sectores que
+son muy activos, que son muy activos en la defensa de los derechos de
+los trabajadores, que la gente está muy implicada, que además tienen
+suficientes conflictos y suficientes problemas como para que ... ahí
+sí que es más normal la convocatoria de asambleas, la petición de
+reunión para tomar determinadas posturas de los trabajadores, pues que
+te diría yo: los conductores de los autobuses ¿eh? los diferentes
+conflictos que han tenido, pues sí convocan asambleas, discuten, votan
+ven si, si plantean una negociación de no sé qué pues se lleva a la
+asamblea y la gente decide si sí, o si no, si se puede, si eso es lo
+que hay que llevar, lo que no hay que llevar a las negociaciones y
+tal.
+
+Hay otros sectores que es bastante inusual la convocatoria de, en
+estos momentos, me refiero, en otros momentos ha sido más, pero en
+estos momentos es muy inusual que se convoquen asambleas. Por ejemplo,
+en la administración y bueno pese al recorte que nos han pegado y el
+varapalo que nos han dado con el recorte de sueldos y no sé qué no se
+han convocado asambleas y no se han convocado asambleas en muchos
+casos yo creo que posiblemente haya habido cierta dejación por parte
+de los sindicatos, pero en otras porque la Administración es un sector
+muy desmovilizado, quiero decir con muy poca, con muy poca sensación
+de clase los funcionarios la mayoría creen esa parte que a ellos no
+les afecta no sé qué y responden poco a ese tipo, a ese tipo de
+cosas. Entonces, yo no sé si por ejemplo en las últimas movilizaciones
+de cara al recorte del sueldo de los funcionarios el no convocar,
+porque en algunos sitios sí se hizo, pero el no convocar de forma
+generalizada, o sea decir mira digamos voy a decir, la orden, no es
+orden pero sí la expectativa de convocar asambleas en todos los sitios
+y movilizar a la gente era porque es lo que te decía hay una cierta
+dejación de la lucha que posiblemente hay un poco de eso, o porque
+realmente se sabe que hay poca capacidad de movilizar a nadie que de
+hecho sí se convocaba a la gente a hacer actos de protesta y a salir a
+la calle a manifestarse y la respuesta (me estoy refiriendo a la
+Administración General del Estado, no a la enseñanza, que son
+colectivos mucho más concienciados y mucho más luchadores, me refiero
+al funci burocratilla, por entendernos así entre nosotros) pues ahí la
+capacidad de movilización, difícil. Lo que no sé es si, lo que no sé
+es que depende de qué, es difícil matizar si los sindicatos no estamos
+trabajando lo suficientemente bien, o es porque realmente la capacidad
+de movilización es realmente pequeña, jaja
+
+*** facilitadores/moderadores, anotadores, otros roles
+
+*entrevistador*: Y luego, cuando se hacen asambleas hay, por ejemplo,
+gente que toma las notas de quien toma el turno de palabra, quien toma
+las actas y todo eso??
+
+*mujer1*: Normalmente se hace con una mesa
+
+*entrevistador*: Hay una mesa
+
+*mujer1*: Y depende de quien convoque la asamblea, si la convocan
+todos los sindicatos, pues se hace una especie como de grupo para
+organizar un poco eso quien da los turnos de palabra, quien expone,
+por parte de los diferentes sindicatos, quien expone, quien hay que
+representar y entonces en virtud de eso se ... si son todos los
+sindicatos, o parte de los sindicatos, o al menos los sindicatos más o
+menos de clase y no sé qué se negocia entre los propios sindicatos
+como eso, como se organiza la mesa qué exponen, qué controla y
+demás. Si es un solo sindicato, bueno el proceso es el mismo pero
+dentro de un solo sindicato uno expone lo que hay que hacer, otro
+controla y da los turnos de palabra y
+
+*se corta al sonar un timbre*
+
+** visibilidad exterior
+*** web con información
+
+*entrevistador*: Vale, esto me lo has contado antes. Es un punto de
+visibilidad exterior que hay web y todo esto que ya lo hemos hablado.
+
+*** actividades de promoción/visibilidad
+** participación en iniciativas de terceros
+
+*entrevistador*: Hay un punto aquí que puede ser interesante que es
+participación en iniciativas de terceros. Igual, por ejemplo, con esto
+del 15M o con otro tipo de iniciativas que hay de movilización social
+¿cómo participa Comisiones Obreras? ¿o cómo se coordina o ...?
+
+*mujer1*: Vamos a ver, cómo se coordina, por ejemplo, con el 15M
+
+*entrevistador*: Que no dejaban ahí ¿no?
+
+*mujer1*: Claro, con el 15M, por ejemplo, yo la mayoría de la gente
+que conozco de Comisiones, está, vamos, siguiendo siempre muy de
+cerca, participando en manifestaciones, en mucha gente en asambleas,
+mucha gente haciendo aportaciones teóricas de no sé qué, pero a nivel
+individual, el propio 15M no quiere ser manipulado o dejado o teme que
+pueda luego alguien aprovecharse lo cual me parece bien ¿eh?. Entonces
+la participación ahí que yo creo que por parte de Comisiones es muy
+alta en el 15M, por ejemplo, pero es a niveles individuales, tal y
+como está planteado el movimiento 15M.
+
+*entrevistador*: ¿Y en otras plataformas como por ejemplo lo del CAS
+Madrid con lo de la Sanidad que sí dejaban participar sindicatos o
+asociaciones de vecinos o cualquier cosa ...?
+
+*mujer1*: Ahí, sí, ahí sí está ...
+
+*entrevistador*: ¿Ahí quién es el secretario el que está, que se
+coordina o ...?
+
+*mujer1*: Vamos a ver, sí hay veces que cuando la participación es
+institucional, sí se ve quien es quien tiene que hacerse cargo de ese
+... se decide dentro de quien se tiene que hacer cargo de la
+representación, de la participación y un poco se ve con qué criterios
+o con qué tipo de acciones, o con qué tipo de apoyos, unas veces es
+absoluto y total y se integran dentro de la plataforma que sea y otras
+veces llevan propuestas propias.
+
+** Compartición de recursos
+*** ¿licencias libres?
+
+*entrevistador*: Luego hay un punto de compartición de recursos, por
+ejemplo, ¿En los estudios que saca Comisiones Obreras se utiliza algún
+tipo de licencia copyleft, Creative Commons, o alguna cosa de esas?
+
+*mujer1*: Eso no lo sé.
+
+*entrevistador*: Eso no lo sabes.
+
+*mujer1*: Eso no lo sé. Si te interesa puedo tratar de
+preguntarlo. Pero no, eso no tengo ni idea de si hay derechos,
+derechos de no sé qué o si consideran que es de libre acceso, eso no
+lo sé.
+
+*** transparencia de métodos, de acciones, de cuentas
+** Planificación
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: Bueno, pues ya estamos terminando más o menos. Hay un
+punto de planificación que entiendo que la hace el comité, los
+secretarios, la secretaría, la secretaría ¿no?. O sea planificar a
+corto, medio y largo plazo.
+
+*mujer1*: Sí. A los diferentes niveles, sí.
+
+* Factores de Cambio
+
+*entrevistador*: Vale, pues te he estado haciendo un montón de
+preguntas sobre el tema de flujos de información, cómo son los flujos
+de información dentro del sindicato y ahora te voy a hacer unas
+preguntas de ... muy cortitas, de factores de cambio, de factores de
+cambio de tecnologías. Entonces estos son un poco más individuales.
+
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: Entonces la primera, ¿Qué herramientas tecnológicas
+has usado en el último mes?
+
+*mujer1*: Hombre, vamos a ver, a nivel profesional yo tengo toda una
+serie de herramientas/programas que tengo que utilizar.
+
+*entrevistador*: Aha.
+
+*mujer1*: Que tengo que utilizar forzosamente, como en mi trabajo, lo
+que haces, la subdirección donde estoy la subvenciona fondos europeos
+para investigación y desarrollo ¿ehm? el dinero que pone Bruselas que
+llega a través de Hacienda a aquí, se reparte en diferentes programas
+que tienen sus condiciones y sus mecanismos y nosotros controlamos que
+llegue el dinero, que se gaste donde se tiene que gastar, que cumple
+todos los requisitos, trasladamos todos ese tipo de datos a la
+Comunidad Europea a través de diferentes programas ¿ehm? Se utilizan
+una serie de programas con las propias comisiones en unos casos y en
+otros casos nuestro propio Ministerio ha creado para gestionar ese
+tipo de cosas lo que antes era todo papel, ahora, por ejemplo, pues si
+sale una convocatoria, la gente puede solicitarlo y mandar todos los
+documentos a través de un enlace del Ministerio, para controlar los
+gastos de los proyectos igual hay una aplicación en donde el propio
+investigador puede ir metiendo todos los gastos que hace en qué y
+cómo.
+
+*entrevistador*: ¿Y son aplicaciones que acceden a una base de datos?
+
+*mujer1*: Sí.
+
+*entrevistador*: ¿Y son aplicaciones de ventanas? ¿Són aplicaciones
+que se accede a través de un navegador?
+
+*mujer1*: No, es una aplicación propia. Bueno, navegador, imagino que
+utilizas la palabra navegador en el sentido ... sí que hay que
+conectarse a través de Internet para acceder a determinadas, a
+determinadas aplicaciones, entonces ahí hacer la gestión que sea y
+meter y si tienes ...
+
+*entrevistador*: Entonces, son herramientas de gestión mayormente ...
+
+*mujer1*: Sí.
+
+*entrevistador*: Vale. Y ... herramientas tipo redes sociales ...
+
+*mujer1*: Yo, por ejemplo, no utilizo las redes sociales más que
+personalmente. A nivel de trabajo no se trabaja con eso.
+
+*entrevistador*: Yo pregunto en general
+
+*mujer1*: Sí.
+
+*entrevistador*: Facebook, Twitter, ...
+
+*mujer1*: Sí, sí
+
+** Cuáles son las herramientas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: Vale. Y al revés, ¿Cuáles son las herramientas que
+has dejado de usar si miras 5 años atrás?
+
+*mujer1*: No, no he dejado de usar ninguna, he ido incrementando, a
+medida que han salido nuevas cosas y que hay nuevas posibilidades lo
+he ido incrementando. Dejar de utilizar no he dejado de utilizar
+ninguna, sigo utilizando el correo electrónico para temas personales y
+así, pero ... La conexión a Internet para buscar, buscadores para
+buscar documentación o no sé qué. He ido incrementando en la medida
+que se han creado nuevas expectativas para estar al tanto de las
+cosas.
+
+** Qué herramientas has incorporado si miras 5 años atrás
+
+*entrevistador*: Bueno, pues ¿qué herramientas has incorporado en los
+últimos 5 años?
+
+*mujer1*: Pues redes sociales. Fundamentalmente
+
+** Qué herramientas has incorporado debido a tu activismo político
+
+*entrevistador*: Y ¿qué herramientas has incorporado debido a tu
+activismo político?
+
+*mujer1*: Mmm, minguna. Manejar, me manejo. Mi activismo político no
+lo ejercito en las redes sociales, solo es para comunicarme. Bueno,
+gente que está en mi entorno, la comunicación tiene que ver con
+determinado activismo político, pero digamos, a nivel de grupos
+cercanos o grupos pequeños, hombre sí utilizas
+
+*entrevistador*: Pero igual hay herramientas específicas de Comisiones
+Obreras, ó que se utilice allí, o son herramientas generales que no
+tiene por qué haberlas
+
+*mujer1*: Yo no sé si tiene herramientas específicas Comisiones, o sea
+ya te he explicado como nos llega el tema
+
+*entrevistador*: Sí, por e-mail.
+
+*mujer1*: Y como la gente nos comunicamos. Pero si ellos tienen o
+utilizan de forma pues imagino que es que en determinadas páginas o
+determinados temas para conectar con otros movimientos sociales no lo
+sé. Porque, por ejemplo, pues ahora hay mucha gente que se comunica a
+través de Facebook, Twitter o no sé qué interrelacionan, aunque sean
+gente de determinado nivel y ponen sus cosas, lo hacen más
+personalmente que como institución, que yo sepa, pero es un tema que
+no, que no me atrevería a decirte
+
+*entrevistador*: No, pero hay colectivos o asociaciones que sí
+utilizan, por ejemplo, una cuenta de Twitter y ponen ahí las cosas de
+la asociación y luego en un blog otras cosas.
+
+*mujer1*: Yo no tengo conocimiento, no tengo de eso, no tengo
+conocimiento de que haya blogs, ni de que la información vaya a través
+de las redes sociales, llega más por las vías de la propia web y de
+las comunicaciones vía información. No sé si he de serte sincera eso
+deberías borrarlo *se corta*

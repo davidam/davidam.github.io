@@ -1,0 +1,713 @@
+#+OPTIONS *:t
+
+* Introducción
+
+*entrevistador*: Muchas gracias por haber accedido a hacer la
+entrevista.  
+
+*mujer4*: De nada.  
+
+*entrevistador*: La entrevista es sobre nuevas tecnologías y
+movimientos sociales
+
+*mujer4*: Sí.
+
+*entrevistador*: No obstante, bueno son 2 partes: una flujos de
+información y otra factores de cambio tecnológico. Entonces en la de
+flujos de información no hace falta solo que cuentes flujos de
+información que sean tecnológicos porque también nos interesa poder
+anticipar qué tecnologías se podrían utilizar.
+
+Entonces te voy a hacer una serie de preguntas sobre flujos de
+información que están en tu colectivo ¿cómo se llamaba la asociación a
+la que pertenecías?  
+
+*mujer4*: Valle Inclán.  
+
+*entrevistador*: Valle Inclán.
+
+*mujer4*: Es una asociación de vecinos, sí.  
+
+*entrevistador*: Vale, pues te voy a hacer una serie de preguntas
+sobre los flujos de información dentro de Valle Inclán.
+
+*mujer4*: Vale.
+
+* Flujos de información:
+** comunicación interna
+*** flujo de comunicación? flujos horizontales/verticales?
+
+*entrevistador*: Bueno el primer punto es sobre comunicación interna.
+
+*mujer4*: Sí.  
+
+*entrevistador*: Entonces, ¿qué flujos de información hay? si son
+horizontales, si son verticales relacionados a cómo informar a los
+socios de la asociación.
+
+*mujer4*: Sí. Bueno, pues mayoritariamente se utiliza Internet para
+comunicar pues si hay que celebrar una serie de juntas, asambleas,
+actividades de la asociación. Y eso se utiliza Internet a través del
+correo.
+
+*entrevistador*: Correo electrónico.  
+
+*mujer4*: Y llega a todos los socios. También se utiliza el correo
+normal, a través de carta, pero eso es para gente que no tiene acceso
+a Internet, pues a través de carta.
+
+Y otros flujos de comunicación es a través de un un blog, hay un blog
+creado y ahí se comunican cosas actividades y a través de un periódico
+digital que se ha creado.  
+
+*entrevistador*: ¿Y qué diferencia hay entre la información que hay en
+el periódico digital y la del blog?
+
+*mujer4*: Pues en el blog es un lugar ... Yo tampoco he entrado mucho
+así que no lo controlo mucho, pero es más un sitio de discusión igual
+de problemas concretos que hay en el barrio y la gente opina, pues
+podría funcionar.  
+
+*entrevistador*: Más tipo foro.  
+
+*mujer4*: Más tipo foro, exacto. Y el periódico es más noticias de la
+asociación o relacionadas, y tienes acceso a otras páginas de interés
+para gente que participa en el periódico y se hacen encuestas. Y hay
+noticias relacionadas con temas sociales que interesan. Más
+información que comunicación.
+
+*** sincronización interna
+** colaboración interna
+*** redacción en común?
+*entrevistador*: Hay un punto que está relacionado que es
+colaboraciones internas, por ejemplo, ¿cómo se redactan textos en
+común?
+
+*mujer4*: Eh, ¿cómo?  
+
+*entrevistador*: O hay ... se utilizan, por ejemplo, cuando sacasteis
+los estatutos de la asociación ¿cómo se hizo? o si tenéis que sacar un
+comunicado posicionándoos ante un determinado evento ...
+
+*mujer4*: Pues yo creo que eso es bastante vertical en eso. Se crean
+una especie de comisiones. Entonces cada comisión está encargada de
+hacer una serie de cosas. Yo es que cuando hicieron los estatutos, o
+sea nosotros llevamos en la asociación poco tiempo, llevamos un año y
+medio. Entonces eso ya estaba hecho, pero por ejemplo, cuando ha
+habido que hacer algún comunicado o alguna nota más oficial siempre ha
+habido un grupo encargado de hacer ese, de redactar eso.
+
+*entrevistador*: ¿Y quién podía participar en ese grupo?
+
+
+*mujer4*: Eeh, todo el que quiera, claro. Las comisiones son abiertas,
+tu puedes participar en la comisión de comunicación, otra de cultura,
+otra de eventos, de fiestas, entonces si tu tienes tiempo puedes
+participar en todas las que quieras, o sea que es bastante abierta. Lo
+que pasa es que a la hora de redactar sí que es verdad que es la misma
+gente la que lo hace. O sea que tampoco ... La verdad es que nunca he
+dicho yo quiero hacerlo, entonces no sé si me dejarían, pero que ya
+hay una gente con ese rol de desarrollar esas cosas, de redactar esos
+textos, claro.  
+
+*entrevistador*: Aha, vale.
+
+** búsqueda de consensos
+
+*entrevistador*: Cuándo queréis llegar a algún tipo de decisión de
+consenso ¿cómo lo hacéis? ¿tenéis asambleas?
+
+*mujer4*: Sí, reuniones. Sí, asambleas.
+
+*entrevistador*: ¿Y tenéis alguna herramienta donde luego quede
+reflejado?  ¿algunas actas?
+
+*mujer4*: Se hace siempre el acta de la reunión que se publica y se
+pone en el tablón de anuncios de la asociación. Donde está la
+secretaría, siempre está el acta colgada. No se le da publicidad, no
+se envía a los socios, pero siempre está accesible para el socio que
+quiera verla, ir a la asociación y verla. Eso es un punto que hemos
+discutido que creemos ***** y yo que debería enviarse a los socios vía
+Internet sobre todo. bueno Pero ahí hay un debate que si se envía por
+Internet debería enviarse también por correo a quien no tenga
+Internet, eso sale caro porque son muchas hojas, porque el franqueo es
+caro y tal y que bueno eso está accesible para que la gente vaya nos
+vea y organización interna.
+
+** gestión de tareas
+
+*entrevistador*: ¿Y tenéis alguna herramienta interna de gestión de
+tareas? ¿o cómo ...? Cuando hay una tarea que realizar ¿hay alguna
+comisión encargada? ¿o siempre sale algún voluntario para hacerla?
+¿cómo se gestionan las tareas?
+
+*mujer4*: ¿Las tareas de organización de la asociación?
+ 
+*entrevistador*: Cualquier tarea, organizativa o de cualquier tipo.
+
+*mujer4*: Pues es complicado por lo que ya te he dicho. Casi todas las
+tareas se ubican dentro de una comisión que ya están creadas. Y esa
+comisión las desarrolla, las hace efectivas. Hay una propuesta de
+nuevas tareas que ahora recientemente hemos tenido la idea de hacer un
+taller de intercambio de saberes a propuesta de *******. Entonces se
+ha lanzado dentro una Junta Directiva ampliada, ha tenido buena
+aceptación y se ha llevado a cabo, ha habido gente que se ha apuntado
+y la hemos organizado.
+
+*entrevistador*: Entonces sin comisión ¿no?
+
+*mujer4*: Sí, pero no exactamente como comisión. Es una actividad que
+nosotros ofrecemos a todos los socios; e incluso a gente que no sea
+socia de la asociación, se ha publicitado para que todo el mundo,
+también para atraer gente a la asociación, son gratuitas y todo el
+mundo puede participar. Lo que pasa es que también es verdad que los
+que más involucrados están somos los que estamos participando haciendo
+que salga adelante ¿no? porque cada vez uno ofrece un taller con lo
+que sabe hacer, pero ... Y ahí en ese caso no se ha creado comisión,
+vamos que ...
+
+*entrevistador*: Sí, es una actividad de la asociación ...
+
+*mujer4*: Exacto, pero vamos ...
+
+*entrevistador*: Y ya está. Vale, vale. Entonces si hay que ... ¿qué
+podría ser? pegar carteles, por ejemplo, una persona que sale de la
+comisiones entonces, por ejemplo, ¿también? o ¿en ese caso más
+específico saldrían voluntarios de una asamblea o una cosa así?
+
+*mujer4*: Pues es que, por ejemplo, hace poco, recientemente hemos
+tenido una reunión, un taller y ha salido el tema de lo de pegar
+cárteles y eso es que hay varias actividades dentro de la asociación y
+como que las ha asumido gente y ya se queda así. O sea que realmente
+no estamos organizados en ese terreno de decir estos días salgo yo,
+estos días sales tu o cuando hay que pegar carteles nos reunimos y a
+ver quién lo puede hacer, está muy mal organizado. Entonces siempre
+hay gente que no le importa y ya como que se ha cargado con la
+responsabilidad y eso pasa con muchas otras tareas de la asociación:
+gente dispuesta y entonces resto de gente como que ...
+
+*entrevistador*: Entonces son personas que asumen una serie de tareas
+y ...
+
+*mujer4*: En ese caso concreto sí.
+
+** gestión de eventos
+
+*entrevistador*: Vale. Gestión de eventos.
+
+*mujer4*: Sí
+
+*entrevistador*: Cuándo hay que organizar un encuentro o alguna cosa
+así ¿cómo se gestiona? O sea organizar unas conferencias o yo que sé,
+o unas charlas.
+
+*mujer4*: Eso siempre sale a iniciativa de alguien que tiene algún
+contacto ¿qué os parece si trajéramos a esta persona para que hable de
+esto? ah, vale, perfecto. Entonces es esa persona la que se encarga de
+hablar con la persona correspondiente y de organizarlo, suele ser a
+nivel de iniciativa personal que es parte de la asociación.
+
+*entrevistador*: Y luego
+
+*mujer4*: ¿Cómo perdona?
+
+*entrevistador*: Y luego se difunde a través del blog y el periódico.
+
+*mujer4*: Entonces claro, luego se hace publicidad a través de los
+canales que disponemos, sí.
+
+** comunicación con el exterior
+
+*entrevistador*: Vale, pues ese es el punto nuevo: comunicación con el
+exterior, jaja
+
+*mujer4*: Vale
+
+*entrevistador*: Bueno eso entraría, pero también comunicación con
+otros colectivos, captación de colaboradores y alianzas con otros
+colectivos, plataformas, ...
+
+*mujer4*: Sí
+
+*entrevistador*: que ¿cómo lo hacéis eso?
+
+*mujer4*: que ¿cómo lo hacemos? Pues últimamente estamos como nuestra
+situación ha sido un poco especial, porque como nos han querido
+desalojar, nos quedábamos sin espacio, ha habido ahí una serie de
+luchas internas dentro de la asociación porque había gente que
+pensábamos que había que aguantar dentro de ese local, otra gente que
+pensaba que no que había que buscar una solución, otro local ... Y
+ahora estamos en una situación un poco de entre dos aguas, entre el
+nuevo local y el antiguo. Pero también es verdad que cuando estábamos
+en esa lucha ha habido muchos colectivos que se han acercado a
+nosotros en apoyo aunque sea de manera representativa o ante las
+instituciones de que no estamos solos y ahí está el caso de la Prospe
+que nos ha apoyado bastante, creo que también dentro del barrio
+asociaciones de, o centros como de reunión de inmigrantes de
+diferentes países que también ha habido cosas que se han hecho
+conjunto, se organizó por parte de la Asociación un mercadillo ¿cómo
+se llama? eh solidario que se vendían cosas y tal y el dinero que se
+recaudaba era para, para el centro haitiano cuando pasó todo lo de
+Haití para que simbólicamente les enviaran el dinero y que la
+Asociación colaboraba con ellos y ...
+
+*entrevistador*: Entonces ¿para todas estas asociaciones o *no se
+entiende* se hacen igual de maneras personales o hay que tener una
+comisión que hace eso?
+
+*mujer4*: Bueno se suele llevar a cabo a través de comisiones
+sí. Cuando fué el caso concreto del mercadillo que se hizo y con por
+ejemplo ahora con el tema de lo del 15M hay muchas reuniones que se
+están desarrollando dentro de la asociación. No sé si esto se puede
+considerar como de cara al exterior ¿no?
+
+*entrevistador*: Sí, es como ir a
+
+*mujer4*: Se propuso en una Junta y se dijo que si podíamos colaborar
+de esa manera que era la que podíamos cediéndoles ese espacio de la
+Asociación, entonces estábamos de acuerdo y bueno eso siempre pasa por
+las Juntas que siempre se comenta y si es algo más elaborado pasa
+también por la comisión ¿estáis de acuerdo que se haga esto? sí pues
+ya está ya no hay nadie que haga nada, se ha dicho que sí y punto y no
+sé si he respondido a lo que querías
+
+*entrevistador*: Sí.
+
+*mujer4*: Vale
+*** captación de voluntarios/colaboradores
+*** comunicación con otros colectivos
+*** formar alianzas/coaliciones/movimientos/plataformas
+** documentación interna
+
+*entrevistador*: ¿Tenéis algún tipo de documentación interna?
+
+*mujer4*: ¿En qué sentido documentación interna?
+
+*entrevistador*: Pues desde presupuestos de cualquier cosa o cualquier
+documento que no pongáis en Internet: actas, no sé
+
+*mujer4*: Las actas hombre no se publican en Internet como te he dicho
+ni se envían están ahí, pero sí que son públicas el que quiera
+acercarse las puede ver. Pero en esto caso son públicas para nosotros,
+que tiene que ser gente que sea socia igual viene uno que no es socio
+y le dice ¿y tu para qué quieres ver las actas?  creo pero no estoy
+segura.
+
+Pues así documetación interna ... Hombre, sí el estado de cuentas ¿no?
+
+*entrevistador*: Sí.
+
+*mujer4*: Yo creo que es documentación interna que tampoco se ha hecho
+pública y ... en concreto poco más. Hombre y también todos los datos
+de los socios, las fichas también es documentación interna pero ya
+está.
+
+** gestión económica
+
+*entrevistador*: ¿Y la gestión económica? formas de financiación,
+donaciones de socios, donaciones externas, gastos/ingresos
+
+*mujer4*: ¿Qué si eso se hace público?
+
+*entrevistador*: Todo eso ¿cómo se gestiona?
+
+*mujer4*: Pues hay ... Eso se gestiona a través de tesorería hay como
+3 personas encargadas de tesorería que son los que llevan las cuentas
+de la asociación.
+
+*entrevistador*: Y eso ¿qué tenéis alguna hoja excel o alguna cosa
+así?
+
+*mujer4*: Pues eso es algo que no se ha dado mucha información. Yo no
+sé muy bien cómo funciona la tesorería, ni cómo va rotando dentro de
+la gente de la asociación, ni cómo lo llevan, es un tema un poco
+tabú. Porque cuando ha pasado esto que nos ha pasado supuestamente no
+había dinero para ciertas cosas y de repente se han hecho esas cosas y
+les hemos dicho ¿pero no se supone que no había dinero? bueno sí pero
+no sé qué, pero tal, pero cual, ... Entonces es una sensación un poco
+de que no nos están informando realmente el balance de las cuentas,
+exacto. Y ya está, entonces no sé, no sé cómo se gestiona ni dónde
+está el documento, es algo que no he investigado pero tampoco está muy
+claro.
+*** gestión de donaciones
+*** formas de financiación
+*** contribuciones de miembros
+*** gastos/ingresos
+** toma de decisiones
+
+*entrevistador*: Vale. Ahora hay un punto de toma de decisiones Por
+ejemplo ¿las comisiones toman decisiones o son solamente para ejecutar
+tareas?
+
+*mujer4*: Para ejecutar tareas.
+
+*entrevistador*: Vale ¿y hay una asamblea periódica de la asociación?
+
+*mujer4*: Las asambleas creo que se hacen ... creo que son dos veces
+al año las asambleas. Pero no estoy segura eso igual te lo confirma
+********. Asambleas así abiertas a todo todo el mundo creo que son dos
+al año, luego están las juntas directivas "ampliadas" que las llaman
+así, de todos modos, eso siempre se envía, ellos no tienen como si
+dijésemos la junta directiva no es solo una gente concreta porque
+siempre vamos los mismos es como que el socio que se interese 'a mí me
+gustaría ir a las juntas', ese socio que se ha interesado porque ha
+salido de él interesarse se le incluye en los emails y se le incluye
+en las convocatorias de esas juntas, si no sale de tí querer ir a esas
+juntas a tí no te lo van a enviar, entonces ...
+
+*entrevistador*: ¿Qué se decide en esas juntas?
+
+*mujer4*: Pues casi todo el devenir de la asociación. Todas las
+decisiones así más importantes.
+
+*entrevistador*: Y los socios que van ... si es ampliada ¿tienen
+derecho de tomar en las decisiones o van como oyentes o ...?
+
+*mujer4*: Eeeh ... es que no entiendo mucho.
+
+*entrevistador*: Sí. Junta directiva ampliada. Pero no entiendo si los
+socios que van que no son parte de la junta directiva, toman
+decisiones, o sea participan en la toma deciones.
+
+*mujer4*: El que va, el socio que va ya se le considera de junta
+directiva ampliada.
+
+*entrevistador*: Entonces cualquiera puede participar.
+
+*mujer4*: Cualquiera puede participar sí, pero lo que pasa también es
+que la pescadilla que se muerde la cola porque si tu no vas porque no
+tienes la información no puedes entrar dentro como si dijéramos en
+esas reuniones. Yo pienso que se debería cada vez que hay esas
+reuniones se debería enviar a todo el mundo. Pero ya dije que si se
+envía a todo el mundo y entonces es una asamblea no es una junta
+directiva.
+
+*entrevistador*: Y entonces ¿qué diferencia hay entre las asambleas y
+las juntas directivas?
+
+*mujer4*: Las juntas directivas eeeh son como si dijéramos las
+reuniones que se toman decisiones importantes para el devenir de la
+asociación y las asambleas son como si dijéramos las decisiones ya más
+de mayor importancia en las que hay que contar con todos los socios.
+
+*entrevistador*: Aha.
+
+*mujer4*: O por lo menos informar a todos los socios. Y en el otro son
+decisiones de rango más inferior pero de bastante importancia y
+calado. Yo lo que he visto en esta asociación y por eso estoy un poco
+disgustada es que se han tomado decisiones en esas juntas que deberían
+haber pasado por la asamblea y no se ha hecho. Entonces de ahí viene
+mi malestar.
+
+*entrevistador*: Vale.
+
+** movilización
+
+*entrevistador*: Vale. ¿Se participa en movilizaciones?
+
+*mujer4*: ¿Quién?
+
+*entrevistador*: ¿La asociación?
+
+*mujer4*: Sí, sí, sí. De hecho sobre todo con el tema de sanidad han
+estado muy involucrados y muchas de las movilizaciones y
+manifestaciones que ha habido han ido. También ha título personal y no
+como asociación pero muchos de la asociación hemos ido a las reuniones
+a cuando hubo esto del 15M en Sol, a todas las movilizaciones que hubo
+ahí, también en otra de educación también me encontré con varios de
+los socios, o sea es bastante activa en cuanto a ...
+
+*entrevistador*: Vale.
+
+*mujer4*: ... movilizaciones
+
+*entrevistador*: Pero ... ¿habéis participado como asociación o a
+títulos individuales?
+
+*mujer4*: Como asociación hemos participado en las de sanidad aunque
+yo no he estado presente y ... movilizaciones luego en plan egoista
+cuando el desalojo, claro hemos salido, hemos ...
+
+*entrevistador*: ¿Cómo se ha gestionado esto desde las asambleas o
+desde la junta directiva?
+
+*mujer4*: Desde las juntas directivas, sí, sí, siempre ... Pero ahí
+dando difusión a todo el mundo para que la gente lo apoye. Todas esas
+movilizaciones y todos esos actos reivindicativos han salido de la
+junta.
+
+*entrevistador*: ¿Y la junta cada cuanto se reune?
+
+*mujer4*: Bastante. ¿Cada dos, tres semanas? Aha
+
+** gestión de nuevos colaboradores
+
+*entrevistador*: ¿Tenéis algún mecanismo de gestión de nuevos
+colaboradores?
+
+*mujer4*: No.
+
+*entrevistador*: Simplemente si alguien se interesa ...
+
+*mujer4*: Si se interesa pues se le acoge con los brazos abiertos y no
+hay ningún mecanismo especial.
+
+** reuniones/asambleas
+*** facilitadores/moderadores, anotadores, otros roles
+
+*entrevistador*: En las asambleas ¿cuál es la estructura? ¿hay
+facilitadores, moderadores, anotadores, otro tipo de roles?
+
+*mujer4*: ¿En las asambleas?
+
+*entrevistador*: Sí
+
+*mujer4*: Es que asambleas yo solo he participado pues en una
+solamente. Estructura. Está la presidenta, la vicepresidenta, hay
+siempre una persona que toma actas y hay un orden del ...
+
+*entrevistador*: del día
+
+*mujer4*: del día que trae lo que se va a tratar. Luego siempre hay al
+final del todo ruegos y preguntas y ya todo el mundo expresa qué es lo
+que piensa y horizontal ... ¿en qué sentido horizontal?
+
+*entrevistador*: No, si lo estás expresando tu. Has dicho que hay un
+presidente tal y cual. Moderador entonces no hace falta porque
+
+*mujer4*: Moderadores siempre tenemos
+
+*entrevistador*: ¿Sí?
+
+*mujer4*: Siempre. En las asambleas y en las juntas siempre hay
+alguien que ... más que moderar que lleva los turnos de preguntas
+
+*entrevistador*: palabras
+
+*mujer4*: porque a veces puede ser turnos de palabra porque está la
+discusión más encendida y vamos a respetarnos los turnos de palabra
+porque si no nos entendemos. Entonces sí un poco como turno de palabra
+y moderador. Siempre hay, sí, siempre hay alguien que sale.
+
+** visibilidad exterior
+
+*entrevistador*: Bueno este punto siguiente ya me lo has comentado que
+es todo el tema de la web, ya me has dicho que sí que está el
+periódico por digital y por escrito promoción de actividades y todo
+esto.
+
+*** web con información
+*** actividades de promoción/visibilidad
+** participación en iniciativas de terceros
+
+*entrevistador*: Pasamos al punto participación en iniciativas de
+terceros. Por ejemplo, has comentado que se ha participado en
+iniciativas del 15M ¿hay otra cosa que recuerdes que se haya
+participado? que no sean movilizaciones pero que se os haya invitado a
+participar en una mesa redonda o cosas así
+
+*mujer4*: mmmm
+
+*entrevistador*: O en Juntas de Distrito ...
+
+*mujer4*: ¡Ah! En las Juntas de Distrito sí que hemos estado yendo
+bastante lo que pasa es que como te he dicho con todo lo del desalojo
+y, por ejemplo, ahora que estamos detrás de lo de crear un huerto
+urbano y no están dando muchas largas, la verdad es que el sentido de
+la asociación es no ir pro-junta de distrito aunque deberíamos ir
+porque es un centro de poder sacar información de cómo va el barrio
+pues tiene importancia. Pero siempre hay gente voluntaria que se
+encarga de ir a las diferentes actividades del distrito y tal o de
+condiciones que había en otros centros para informarse también de cómo
+iba todo ¿no? o de cómo traer esa información, pero últimamente no se
+está haciendo, pero sí que se hacía ¿eh?
+
+Y otras cosas así ... iniciativas de terceros ... que nos hayan
+invitado, bueno no sé si puede servir pues de lo que hacemos que
+vinimos haciendo de un tiempo a esta parte es lo de participar en las
+fiestas de San Miguel y en las de Chamartín que nosotros vamos y nos
+postulamos para poder tener caseta entonces participamos en una rifa y
+varios años estamos saliendo en esa caseta y ...
+
+*entrevistador*: Y todas estas participaciones en iniciativas de
+terceros
+
+*mujer4*: Sí
+
+*entrevistador*: ¿Cómo se gestionan? ¿A través de una comisión o ...?
+
+*mujer4*: Pues depende, por ejemplo, en esta de participar en las
+fiestas tiene una comisión de fiestas que es la que se organiza desde
+la comida, la bebida, ...
+
+*entrevistador*: ¿Tenéis vosotros la comisión de fiestas en la
+asociación?
+
+*mujer4*: Sí, la tenemos.
+
+*entrevistador*: Ah, vale, vale.
+
+*mujer4*: Bueno más fiestas de dentro
+
+*entrevistador*: De dentro
+
+*mujer4*: Actos así puntuales, festivos, sí, sí que la tenemos y... y
+no sé.
+
+*entrevistador*: Vale.
+
+** Compartición de recursos
+*** ¿licencias libres?
+
+*entrevistador*: Compartición de recursos. Por ejemplo, cuándo
+publicáis alguna cosa en Internet ...
+
+*mujer4*: Sí
+
+*entrevistador*: ¿Ponéis alguna licencia de copyright o cómo ...?
+
+*mujer4*: Pues eso como yo no estoy dentro de la comision de medios no
+lo sé. Por ejemplo, sé que el blog y la página son unas personas
+encargadas dentro de esa comisión y son las que las gestionan, el que
+nadie se pueda meter, o sea que gestiona las claves todo para que no
+pueda ...
+
+*entrevistador*: *no se entiende* licencia del documento escrito
+
+*mujer4*: no lo sé
+
+*** transparencia de métodos, de acciones, de cuentas
+** Planificación
+*** a corto, a medio, a largo plazo ...?
+
+*entrevistador*: Planificación a corto, a medio, a largo plazo ¿cómo
+se gestiona?
+
+*mujer4*: ¿Qué tipo de planificación?
+
+*entrevistador*: Sí, pues es decir, pues de aquí a 2 años nos gustaría
+tener un nuevo local, por ejemplo.
+
+*mujer4*: Pues es gente mmmm yo lo digo porque no considero que
+planifique nada porque allí hay unas ...
+
+*entrevistador*: Personas
+
+*mujer4*: Sí, unas personas, quiero decir como cabezas pensantes que
+son las que más llevan todo que a nosotros nos hacen partícipes pero
+que toman las decisiones es más ... Entonces ellas planifican mucho a
+largo plazo yo no soy favorable a planificar tan a largo plazo y más a
+corto plazo y más realista ¿no? con los recursos que contamos ¿qué
+podemos hacer? Ellas, por ejemplo, con este nuevo local han firmado un
+contrato que tenemos que estar 10 años porque sino perdemos no sé
+cuantos y hay que pagar una indemnización de no sé qué y tienen tantas
+subvenciones de la Junta para hacer estas actividades y además tenemos
+que ofrecer estos talleres para ofrecer dinero para tal. Yo para mí la
+asociación debería ser otra cosa no tanto orientada a ver qué hago
+para sacar dinero, sino ver qué hago para el beneficio del barrio y
+ellas planifican pues eso a largo plazo.
+
+* Factores de Cambio
+
+*entrevistador*: Vale pues con esto habríamos terminado la parte de
+flujos de información.
+
+*mujer4*: Aha
+
+*entrevistador*: Y ahora pasaríamos a la de factores de cambio
+tecnológico.
+
+*mujer4*: Vale.
+
+** Qué herramientas tecnológicas has usado en el último mes
+
+*entrevistador*: Entonces, ¿Qué herramientas tecnológicas recuerdas
+haber usado en el último mes?
+
+*mujer4*: ¿Yo?
+
+*entrevistador*: Sí.
+
+*mujer4*: Pero ¿en el ámbito de la asociación?
+
+*entrevistador*: Donde sea.
+
+*mujer4*: Ah, vale. Herramientas tecnológicas ... Eeh ¿qué entendemos
+por herramienta tecnológica? Así, por ejemplo, ¿el ordenador?
+
+*entrevistador*: Un móvil, el ordenador.
+
+*mujer4*: Pues todo esto, el móvil, el ordenador
+
+*entrevistador*: Y dentro del ordenador, por ejemplo, ¿qué programas
+recuerdas?
+
+*mujer4*: Pues ahora recuerdo, por ejemplo, ayer que estuve intentando
+instalarme el Adobe Flash *no se entiende* podría ver vídeos pero no
+hay manera, no sé que problema tengo, jaja. Pero ... no sé que
+programas utilizo
+
+*entrevistador*: A ver ¿procesadores de texto?
+
+*mujer4*: ¿El word y todo eso? ¿El windows?
+
+*entrevistador*: Sí
+
+*mujer4*: Pues todo lo de windows....
+
+*entrevistador*: ¿Redes sociales?
+
+*mujer4*: Ah, bueno sí el Facebook, lo uso mucho, ... eeeh
+
+*entrevistador*: El Twitter
+
+*mujer4*: No, Twitter no tengo, Twitter no. Es demasiado moderno para
+mí.
+
+*entrevistador*: Correo electrónico imagino.
+
+*mujer4*: Correo electrónico, sí, sí. Bueno todo lo que conlleva
+herramientas de trabajo habituales que tiene todo el mundo, vamos: el
+Excel, el Word, el PowerPoint, el correo, el Facebook, el Gmail,
+Hotmail, ...
+
+** Cuáles son las herramientas que has dejado de usar si miras 5 años atrás
+
+*entrevistador*: Vale, ¿recuerdas herramientas tecnológicas que hayas
+dejado de usar si miras 5 años atrás?
+
+*mujer4*: mmm 5 años atrás. El fax, a lo mejor, el fax. Antes en el
+trabajo se usaba mucho el fax. Ahora casi siempre se escanea y se
+manda por Internet. Hoy en día está ... pues sí el fax he dejado de
+utilizar. Y no recuerdo así ninguna herramienta tecnológica.
+
+** Qué herramientas has incorporado si miras 5 años atrás
+
+*entrevistador*: Y al revés ¿Qué herramientas has incorporado si miras
+5 años atrás?
+
+*mujer4*: El iPhone. ¿Se puede utilizar?
+
+*entrevistador*: Sí, sí.
+
+*mujer4*: El iPhone me parece un ordenador pequeñín. El portátil que
+yo no tenía, me compré un portátil: para mí es bastante avance, un
+ordenador que te lo puedes llevar donde quieras es bastante. Y me
+gustaría incorporar la tablet, una tablet, pero ******** no me deja.
+
+*entrevistador*: Jajaja
+
+*mujer4*: jajajja. Y ya está
+
+** Qué herramientas has incorporado debido a tu activismo político
+
+*entrevistador*: ¿Y qué herramientas has incorporado debido a tu
+activismo en la asociación?
+
+*mujer4*: ¿tecnológica? Yo creo que ninguna ¿tecnológica? usar el
+correo e Internet para poner información, pero luego así otra no, no
+caigo.
+
+*entrevistador*: Pues muchas gracias, ya hemos terminado.
+
+*mujer4*: Vale.

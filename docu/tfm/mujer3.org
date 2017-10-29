@@ -1,0 +1,115 @@
+#+OPTIONS *:t
+
+* Introducción
+*entrevistador*: En primer lugar muchas gracias por haber accedido a
+hacer la entrevista. La entrevista es sobre movimientos sociales y
+nuevas tecnologías. Hay dos partes bien diferenciadas. La primera un
+poco más larga que la segunda y sobre los flujos de información en el
+colectivo al que perteneces y factores de cambio. Bueno tú estás yendo
+a las asambleas del 15M y todo esto, no?  
+*mujer3*: sí
+* Flujos de Información
+*entrevistador*: Bueno pues si quieres cuéntanos un poco cómo funcionan los flujos de comunicación interna, cualquier...lo relativo a comunicación interna,o sea llamamientos a asambleas, actas, todo tipo de cosas...si son flujos horizontales verticales, cómo funciona
+*mujer3*:Bueno todos son flujos horizontales cada persona de forma rotativa hace las actas un día determinado y entre todos llevamos todo el tema de tecnología, normalmente hay una comisión de comunicación que es la que lleva un poco todo eso pero en general somos un poco todos lo que la llevamos. ¿Qué es lo que más se utiliza? Pues se utiliza Facebook, Twitter y sobre todo Gmail. Gmail se utiliza pues para enviarnos los correos. Devolverlos, y sobre todo porque como tiene la herramienta del Googledocs pues ahí escribimos todos, todo tipo de información, artículos y demás
+*entrevistador*: ¿Sería gmail o google?
+*mujer3*:Gmail. Lo que pasa que dentro de gmail esta Googledocs... no sé si...
+*entrevistador*: Sí, sí, sí, sí...
+*mujer3*:(risas)
+*entrevistador*: Sí pero que son herramientas diferentes... yo digo que igual utilizáis un Googlegroup cuando dices Gmail?
+*mujer3*:Googlegroups cuando hacemos un grupo, una comisión pues creamos un Googlegroups y entonces ahí nos escribimos todos y vamos escribiendo... de todas formas en nuevas tecnologías utilizamos mucho las redes sociales sobre todo.
+*entrevistador*: Vale, de todas maneras las preguntas no solo van enfocadas a qué tecnologías usáis sino también cuáles son los flujos que pueden ser físicos, o sea cualquier cosa porque nos interesa saber también esos flujos que hay para poder anticipar nuevas herramientas cómo se podrían hacer de manera tecnológica y que no se están haciendo.
+*mujer3*: ¿Flujos de información en qué sentido?
+*entrevistador*: No sé...me has comentado que las actas las estáis haciendo de manera electrónica pero por ejemplo supongo que hacéis pegadas de carteles o alguna cosa así.
+*mujer3*:Pegadas de carteles, hacemos trípticos de información. 
+*entrevistador*: Puntos de información en los barrios
+*mujer3*:Sí, tenemos unos metacrilatos y ahí ponemos todo tipo de información. De todas formas donde más nos movemos es por internet por ejemplo yo estoy en (...) traducimos textos de todas partes del mundo y somos un grupo muy grande, y entonces pues por ahí llega todo por Googlegroups todos los artículos de la revista Adbuster, bueno una revista que hemos creado y los vamos traduciendo, lo cogemos de ahí, traducimos y lo enviamos. Y es todo por email, todo tecnológico. Luego lo imprimimos, lo llevamos a las asambleas, a Sol... dependiendo del número de personas o la comisión, lo leemos, lo estudiamos y demás. Otros usos tecnológicos pues no sabría decir...
+*entrevistador*: Vale yo creo que con respecto a comunicación interna es suficiente entonces hay un punto que es muy similar que iría focalizado a la redacción de textos en común que ya me has anticipado un poco. Estáis utilizando Googledocs, ¿Utilizáis alguna otra herramienta?
+*mujer3*:Googlegroups y bueno esa son las dos que utilizamos.
+*entrevistador*: ¿Alguna herramienta para buscar consensos o simplemente buscáis consensos en las asambleas?
+*mujer3*:Eso tiene que ser todo por asambleas. Vamos, de forma física ahí, quedamos a una determinada hora y aprobamos todo.
+*entrevistador*: ¿No utilizáis ninguna herramienta wiki o algo así?
+*mujer3*:No en todo caso cuando nos reunimos por ejemplo para organizar el 15 de octubre, la marcha del 15 de octubre utilizamos Skype, incluso para hablar con otros países y demás, pero solo para cuando es un tema internacional.
+*entrevistador*: Como una asamblea virtual
+*mujer3*:Sí, como una asamblea virtual
+*entrevistador*: ¿Alguna herramienta de gestión de tareas utilizáis?
+*mujer3*:Bueno si te refieres a los calendarios y demás...
+*entrevistador*: Por ejemplo podría ser.
+*mujer3*:Los calendarios y lo demás los hacemos allí en las asambleas, no utilizamos herramientas sino pues mandamos un documento word por ejemplo o en el mismo mail ponemos las convocatorias que hay.
+*entrevistador*: Claro tú estás diciendo convocatorias pero yo me estoy refiriendo a gestión de tareas por ejemplo hay que hacer unas actas. ¿Hay una tarea que es redactar las actas o hay una persona que se propone para hacerlo?
+*mujer3*:Siempre hay una persona que se propone para hacerlo y se hace por googledocs...
+*entrevistador*: O por ejemplo hacer cartel igual es una cosa...
+*mujer3*:Igual hay una comisión o un grupo que coordina eso. Entonces hacen los carteles, la forma...y demás...
+*entrevistador*: Por Googlegroups?
+*mujer3*:Doc, googledocs siempre se pasa por ahí.
+*entrevistador*: Gestión de eventos... has dicho que tenías un calendario o algo así.
+*mujer3*:Sí tenemos un calendario donde ponemos todos los eventos
+*entrevistador*: Y también carteles...
+*mujer3*:Carteles... tenemos una especia de azulejo o pizarra donde escribimos los eventos para que se entere todo el barrio, todo el barrio por ejemplo en Sol tenemos el punto de información central donde se pueden encontrar todo tipo de información en varios idiomas.
+*entrevistador*: Ahora hay un punto de comunicación con el exterior. Bueno ya hemos hablado bastante pero si quieres destacar algo más de estos tres puntos que son captación de nuevos colaboradores, comunicación con otros colectivos, nuevas alianzas con otros movimientos o plataformas.
+*mujer3*:Muchas veces se hace por Facebook, se toman contactos por ahí, pero normalmente es por las asambleas... bueno se va trasladando la información y por el exterior nos reunimos por Skype y también enviándonos artículos, manteniendo conversaciones por el chat del Gmail y poco más... captación pues tampoco... hablamos unos a otros y quien elija qué actividades te interesa.
+*entrevistador*: ¿Tenéis alguna herramienta para documentación internamente?
+*mujer3*:¿Alguna?
+*entrevistador*: Herramienta para documentación interna a parte de Googledocs
+*mujer3*:No, no... utilizamos sobre todo eso... bueno intentamos utilizar el software libre lo máximo posible, tenemos todos FireFox, intentamos utilizar el Linux, estas herramientas y se hacen talleres para aprender al tema este. También utilizamos la red social N-1, aunque lo utiliza menos gente pero también se utiliza bastante.
+*entrevistador*: ¿Cómo es la gestión económica?
+*mujer3*:La gestión económica...pues cada uno pone lo que... bueno intentamos siempre hay gente voluntaria para fotocopias y si no pues sacamos el presupuesto de lo que se necesita y entre todos los que haya en la asamblea  y quieran colaborar pues aportan x dinero y ya está. Pero simplemente lo que es el presupuesto.
+*entrevistador*: Luego hay una persona responsable de ver cómo se ha gastado...
+*mujer3*:Sí y de forma rotativa. Cada vez es una.
+*entrevistador*: Vale. Toma de decisiones. Ya me has dicho que es por Asambleas.
+*mujer3*:La toma de decisiones se hace de forma horizontal. No existe jerarquización. Solamente un moderador que se elige de forma voluntaria y siempre hay una persona que toma la palabra, una persona que toma el acta y las demás pues participan.
+*entrevistador*: Pero explícame porque hay asambleas de barrios y luego asambleas interbarrios. Y luego hay cosas que son  a nivel nacional. ¿Puedes explicar cuándo son más de una estructura o cuando va más allá de la asamblea de barrio?
+*mujer3*:Sí bueno hay varias asambleas... está la de barrio que es la local, la general... la general es la de interbarrios que has dicho tú y también está la asamblea de pueblos de Madrid, la APM y allí ya se toman decisiones de consenso global. Por ejemplo cuando las marchas indignadas fueron representantes de cada asamblea de los barrios y de los pueblos de Madrid o de los interbarrios directamente elegidas fueron allí en representación de los demás y allí expusieron las opiniones que tenían los demás. Siempre que llegamos allí se hace un consenso y si no se llega a un consenso se vuelve  a las asambleas de los distintos barrios y allí se logra un consenso y se vuelve a la asamblea de pueblos de Madrid.
+*entrevistador*: Entonces las personas que van a la APM son delegados de las asambleas.
+*mujer3*: No, no. No son delegados. Son personas voluntarias de determinadas asambleas que se eligen de forma rotativa. Nunca son las mismas. Y  que van allí en representación de la colección de las asambleas o de las propuestas. Entonces dentro de la Asamblea de Pueblos de Madrid se propone todo y existen comisiones dentro de la APM, grupos que existen generales pues de medio ambiente, de economía y demás y esos mismos se reúnen con otros de otros países.
+*entrevistador*: Por Skype
+*mujer3*:Sí, por Skype. Jeje. Bueno por móvil también si tienes contacto. Pero sobre todo por Skype.
+*entrevistador*: Vale, entonces hay un punto de movilización que si me quieres contar con más detalle cómo fue el 15 de octubre o alguna cosa así.
+*mujer3*:El 15 de octubre salió de la plataforma DRY Democracia Real Ya y del 15M. Y eso fue que el 19 de junio cuando se hizo las marchas de aquí se propuso una marcha global del 15 de octubre e intentar hacerla mundialmente. Entonces se empezó a coger contactos porque ya empezó a haber asambleas en el resto de Europa, en América y en Australia, en China pequeña asambleas del 15M que se habían ido haciendo poco a poco y en los países árabes. Entonces fuimos cogiendo contacto, fue gente también de Madrid a Bruselas, a China y demás.
+*entrevistador*: Eso fue todo un verano,no
+*mujer3*:Sí. Se fue tomando contacto con unos y otros y a través de determinadas redes sociales se fue hablando con unos y otros y se fue organizando todo para el 15 de octubre. De tal manera que sobre el 1 o 2 de agosto ya estaba en la mayoría de los países convocada esa manifestación y luego poco a poco se fueron reuniendo y colaborando en ello. Con mucho trabajo. Pero poco a poco.
+*entrevistador*: Vale. Visibilidad exterior. Supongo que tenéis alguna web qué actividades para promover...
+*mujer3*:Existen los puntos de información y sobre todo las redes sociales. La web de información es Tomalacalle.net ahí aparece todo, luego en determinados países también está WallStreetOccupy (…) La adbuster... en China también... pero es en chino y no me acuerdo. 
+*entrevistador*: Qué es adbuster?
+*mujer3*:Adbuster es un punto de información, es una web donde aparecen todos los artículos de todas partes del mundo que están escribiendo las distintas asambleas o personas.
+*entrevistador*: Vale. Imaginemos que los sindicatos quieren llamar a un huelga general, cómo sería la participación en esa iniciativa de terceros.
+*mujer3*:Bueno por ejemplo ahora, el día 27 de noviembre se hace un llamamiento desde distintos sindicatos para la huelga general y pide la participación del movimiento 15M. Entonces esos sindicatos se han puesto en contacto, se han hecho varias asambleas y en ellas se decide entre todos si se quiere colaborar o no.
+*entrevistador*: Pero han ido los representante de los sindicatos a las Asambleas de barrios...
+*mujer3*:Han ido a las comisiones de política. En Sol existen varias comisiones generales como he dicho antes y está la de política: política a corto plazo y política a largo plazo, y economía que son las que llevan un poco este tema de manera general. Hay un grupo en la comisión que se dedican a temas de huelgas y demás. Entonces los sindicatos se han puesto en contacto con ellos y ellos a su vez se han puesto en contacto con todas las asambleas para que entre todos decidamos si colaboramos o no. Entonces por ejemplo ahora ha habido varias asambleas de interbarrios por ejemplo en Usera en el teatro de la comunidad de madrid, en Orcasitas, también se ha hecho en Moncloa, en la de los pueblos del norte y demás. Y en esa asamblea interbarrios se de decide si entramos o no. Una vez decidido nos ponemos en contacto con los diferentes sindicatos y se toma la decisión de colaborar o no. una vez tomada pues se van poniendo los carteles y hacemos pues eso pegada de carteles y demás.
+*entrevistador*: Vale. Creo que ha quedado claro... compartición de recursos. Qué tipo de licencias utilizáis cuando publicáis en los blogs o cosas así...
+*mujer3*:Tipo de licencia...
+*entrevistador*: Si utilizáis algún tipo de copyright que nadie puede copiar ese artículo
+*mujer3*: No, no, no. todo es libre y todo es público.
+*entrevistador*: Vale. ¿Hay algún tipo de planificación a corto, medio o largo plazo?... Cómo se gestiona eso...
+*mujer3*: Por ejemplo...
+*entrevistador*: Si hay alguna comisión que vea como planificación a largo plazo del movimiento 15M o se va decidiendo sobre la marcha.
+*mujer3*: Se va decidiendo sobre la marcha lo que pasa... si se va decidiendo todo... tenemos ocho puntos que son donde más o menos nos vamos basando y se va decidiendo todo sobre la marcha. La verdad no tenemos expectativas.
+*entrevistador*: ¿Cuáles son esos ocho puntos? ¿te acuerdas?
+*mujer3*:Los puntos pues ahora verdad es que  no porque te voy a decir dos o tres...
+…
+*mujer3*: ¿Ah qué te los diga? Pues se busca la democracia participativa, derecho por un medio ambiente limpio, el cierre de las centrales nucleares, el tema de consumo, responsabilidad y demás... luego la lucha por unos servicios públicos de calidad, por ejemplo sanidad, educación que sean públicas. Un cambio en la ley electoral. Ahora mismo no me acuerdo demás.
+*entrevistador*: ¿Esos puntos cómo se han ido decidiendo?
+*mujer3*:Esos puntos se decidieron al principio por Asamblea
+*entrevistador*: Durante las acampadas
+*mujer3*:No, antes del 15M ya se empezaron a tomar decisiones y en cuenta esos puntos. Juventud sin vivienda y Democracia Real Ya... esos dos sobre todo se juntaban y bueno y varias personas más nos juntábamos en casas ocupas como Casablanca o patio Maravillas y allí ya empezamos a tomar decisiones de este tipo... ya estaban casi todos los puntos, se eligió el 15M, se llegó a la Asamblea General y se tocaron estos ocho puntos.
+*entrevistador*: En la Asamblea de Sol
+*mujer3*:Sí en la Asamblea de Sol antes de haber las divisiones y
+reparticiones
+
+* Factores de Cambio Tecnológico
+*entrevistador*: Bueno con esto ya cerraríamos la parte de flujos de información y entonces ahora entraríamos en el punto de factores de cambio y tecnológico. La pregunta sería que herramientas tecnológicas has usado tú en el último mes que te vengan a la cabeza.
+*mujer3*:Herramientas... ordenador
+*entrevistador*: Tecnológicas...
+*mujer3*:Bueno pues el móvil, internet, email y Skype y nada más porque no estoy en ninguna red social ni nada eso. Bueno y poco más... La verdad es que utilizo muy poco la tecnología.
+*entrevistador*: Vale si miras cinco años atrás recuerdas alguna herramienta tecnológica que hayas dejado de utilizar.
+*mujer3*:Sí.. como se llamaba este... todos los chats ya no los he vuelto a utilizar. Qué más utilizaba, bueno todos los juegos ya no los he vuelto a utilizar. Antes utilizaba más el MP· ahora ya no lo utilizo.
+*entrevistador*: ¿Y redes sociales utilizabas?
+*mujer3*:Sí, sí.. estuve en Facebook. Estuve unos meses y me quité y nada...
+*entrevistador*: ¿Qué herramientas has incorporado si miras cinco años atrás?
+*mujer3*:Solo el Skype y tampoco lo utilizo mucho
+*entrevistador*: Vale. ¿Y qué herramientas has incorporado mediante tu activismo político?
+*mujer3*:Ninguna
+*entrevistador*: La de N-1 por ejemplo
+*mujer3*:No, pero no estoy dentro.
+*entrevistador*: Vale... pues hemos terminado
+*mujer3*:Que rapidez... eh?
+*entrevistador*: Si

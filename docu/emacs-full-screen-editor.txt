@@ -1,0 +1,119 @@
+
+    The EMACS Full-Screen Editor
+
+           Richard M. Stallman
+
+Nowadays full-screen editors ("word processing" programs) are common,
+and are found on every home computer. In 1973, display terminals were
+more expensive than printers, so most people still used printing
+terminals, and those who had display terminals usually used them as if
+they were printing terminals. The AI lab had displays but no screen
+editor yet.
+
+EMACS is unusual among screen editors because it is powerful and
+extensible. EMACS contains its own programming facility which I used
+to provide commands that other editors don't have, and which users use
+to provide any commands they want which I didn't give them. Users can
+make libraries of commands and share them, and when they do a good
+job, the libraries become part of the standard EMACS system just by
+being included in the manual.
+
+Many other editors have had "macro" facilities. EMACS has a
+programming language for writing editor commands, completely separate
+from the usual editing language. Because it does not have to be an
+editing language, it can be a much better programming language, good
+for writing complicated programs. The second ingredient is to make no
+distinction between the implementor and the user. Nearly all the
+"built in" commands of EMACS are written just like user
+extensions. Each user can replace them or change them for himself.
+
+The development of EMACS followed a path that illustrates the nature
+of the lab. When I came to the lab, the editor was TECO, a
+printing-terminal editor with some more programming facilities than
+other editors. The user would type a command string of many commands,
+and then TECO would execute it. On a display terminal, TECO knew how
+to redisplay the text of the file after each command string. The
+natural way to provide screen editing was to add it to TECO and adapt
+the existing redisplay mechanism.
+
+Originally, the screen editor was just one of TECO's commands. Its
+power was very limited, and if you needed to do anything fancy, such
+as save the text in a file or search for a string, you would exit from
+the screen editor and use regular TECO for a while. Then a user
+suggested that I provide a couple of screeneditor commands that the
+user could hook up to a saved TECO commandstring or "macro". In
+implementing this, I discovered that it was just as easy to make all
+command characters redefinable rather than a specific few.
+
+This touched off an explosion. Everybody and his brother was writing,
+his own collection of redefined screen-editor commands, a command for
+everything he typically liked to do.  People would pass them around
+and improve them, making them more powerful and more general. The
+collections of redefinitions gradually became system programs in their
+own right.  Their scope increased, so that there was less and less
+reason ever to use TECO for actual editing.  It became just a
+programming language for writing editors. We started to categorize it
+mentally as a programming language rather than as an editor with
+programming as an extra feature, and this meant comparing it with
+other programming languages instead of other editors. The result was a
+demand for many features that other programming languages had. I
+improved TECO in this way while other hackers used the new features to
+improve their editors written in TECO.
+
+After about two years of this wild evolution, Guy Steele decided it
+was time to write one editor that would combine the best ideas of all
+the rest. We started together, but he drifted off to his other
+interests. I called the editor EMACS, for "editing macros". Besides, I
+wanted the new editor to have a single-letter abbreviation, and the
+letter "E" was one of the ones not in use.
+
+Thus, the standard EMACS command language was the result of years of
+experimenation by many user-maintainers on their own editors,
+something possible only because of extensibility and the AI lab's
+attitude of encouraging users to add to the system. On the fateful day
+when I gave users the power to redefine their own editors, I didn't
+know that it would lead to an earthshaking new editor. I was following
+the AI lab heuristic that it is always good to give the user more
+power. AI lab attitudes then encouraged users to use the power and to
+share what they produced thereby.
+
+I worked on EMACS for about five years, distributing to everyone free
+with the condition that they give back all extensions they made, so as
+to help EMACS improve. I called this arrangement the "EMACS commune".
+As I shared, it was their duty to share; to work with each other
+rather than against. EMACS is now used at all the best university
+computer science departments and lots of other places. It's also been
+imitated about ten times. Sad to say, many of these imitations lack
+the real essence of EMACS, which is its extensibility; they are
+"ersatz EMACSes" which imitate the superficial appearance only.
+
+Nowadays EMACS users hardly ever edit with TECO, and most don't even
+know TECO. In fact, I've forgotten how to edit with TECO. I got so
+used to thinking in terms of programming with TECO that on the rare
+occasions when I needed to edit with it I would be at a loss for a
+minute or so.  The reflexes were all gone.
+
+I've noticed that one sign that an editor improvement is a valuable
+one is when, after using it for a couple of weeks, I forget how to do
+without it. This proves it must have required a great effort to keep
+in practise to do things the old way.
+
+I don't think that anything like EMACS could have been developed
+commercially. Businesses have the wrong attitudes. The primary axiom
+of the commercial world toward users is that they are incompetent, and
+that if they have any control over their system they will mess it
+up. The primary goal is to give them nothing specific to complain
+about, not to give them a means of helping themselves. This is the
+same as why the FDA would rather kill a thousand people by keeping
+drugs off the market than one person by releasing a drug by
+mistake. The secondary goal is to give managers power over users,
+because it's the managers who decide which system to buy, not the
+users. If a corporate editor has any means for extensibility, they
+will probably let your manager decide things for you and give you no
+control at all. For both of these reasons, a company would never have
+designed an editor with which users could experiment as MIT users did,
+and they would not have been able to build on the results of the
+experiments to produce an EMACS. In addition, the company would not
+like to give you the source code, and without that, it is much harder
+to write extensions.
+

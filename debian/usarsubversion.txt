@@ -1,0 +1,12 @@
+
+# Añadir usuario (como root)
+
+htpasswd2 -c /etc/subversion/passwd darroyo
+
+# Crear proyecto
+
+svn mkdir file:////var/local/repos/dev-oacs -m "crear el proyecto desarrollo de open acs"
+
+# Importar datos a directorio dev-oacs (como root)
+
+svn import /home/darroyo/svn/casa/dev/ file:///var/local/repos/dev-oacs/

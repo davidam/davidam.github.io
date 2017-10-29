@@ -1,0 +1,1743 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.12)  10 APR 2013 04:21
+entering extended mode
+ %&-line parsing enabled.
+**/home/davidam/public_html/docu/drupal/drupal7.tex
+(/home/davidam/public_html/docu/drupal/drupal7.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count88
+\LTcapwidth=\dimen105
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks17
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks18
+\float@box=\box30
+\@float@everytoks=\toks19
+\@floatcapt=\box31
+)
+(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen106
+\WF@size=\dimen107
+\c@WF@wrappedlines=\count94
+\WF@box=\box32
+\WF@everypar=\toks20
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-texlive/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks21
+\SOUL@lasttoken=\toks22
+\SOUL@cmds=\toks23
+\SOUL@buffer=\toks24
+\SOUL@token=\toks25
+\SOUL@spaceskip=\skip47
+\SOUL@ttwidth=\dimen108
+\SOUL@uldp=\dimen109
+\SOUL@ulht=\dimen110
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen111
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/etc/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count97
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
+\Field@toks=\toks27
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count101
+) (./drupal7.aux)
+\openout1 = `drupal7.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen114
+\scratchbox=\box33
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen115
+\MPnumerator=\count106
+\everyMPtoPDFconversion=\toks29
+)
+Package hyperref Info: Link coloring OFF on input line 18.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count107
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+ (./drupal7.out)
+(./drupal7.out)
+\@outlinefile=\write3
+\openout3 = `drupal7.out'.
+
+\AtBeginShipoutBox=\box34
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) (./drupal7.toc)
+\tf@toc=\write4
+\openout4 = `drupal7.toc'.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 55.
+
+(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 70--70
+[]\T1/cmtt/m/n/10.95 // Notice the place holders are now done using the same sy
+ntax as PDOs (:uid)[] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (154.91176pt too wide) in paragraph at lines 70--70
+[]\T1/cmtt/m/n/10.95 // Result is returned as a iterable object that returns a 
+stdClass object on each iteration[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 70--70
+[] \T1/cmtt/m/n/10.95 // in this example the available data would be mapped to 
+object properties:[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 89--89
+[]\T1/cmtt/m/n/10.95 db_query($query, array $args = array(), array $options = a
+rray())[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 89--89
+[]\T1/cmtt/m/n/10.95 $options Un array de opciones para controlar como la consu
+lta opera.[] 
+ []
+
+[2]
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 Carga un objeto usuario Drupal tiene un objeto usuario ($u
+ser) global,[] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 que representa el usuario logado actualmente. Para evitar 
+confusión es[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 una buena idea asignar el resultado de esta función a un v
+ariable[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 Si tu quieres actuar como el usuario que estás cargando, e
+s esencial[] 
+ []
+
+
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 Parametros $uid Entero especificando el ID del usuario a c
+argar.[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 $reset TRUE para resetear la cache interna y cargar desde 
+la base de[] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 datos; FALSE (por defecto) para cargar desde la caché inte
+rna, si está[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 178--178
+[]\T1/cmtt/m/n/10.95 asignada.  Valor devuelto Un objeto usuario completamente 
+cargado si[] 
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 193.
+
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
+
+
+LaTeX Warning: File `/home/davidam/Im\IeC {\'a}genes/drupal1.png' not found on 
+input line 214.
+
+
+! Package pdftex.def Error: File `/home/davidam/Imágenes/drupal1.png' not found
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 ...0em]{/home/davidam/ImÃ¡genes/drupal1.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]
+Overfull \hbox (5.0235pt too wide) in paragraph at lines 226--229
+[]\T1/cmr/m/n/10.95 Ahora es el mo-mento de recor-dar user_load y ver que la va
+ri-able disponible
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 295--295
+[]  \T1/cmtt/m/n/10.95 <div class="content clearfix"<?php print $content_attrib
+utes; ?>>[] 
+ []
+
+[5]
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 295--295
+[]      \T1/cmtt/m/n/10.95 // We hide the comments and links now so that we can
+ render them later.[] 
+ []
+
+[6]
+Overfull \hbox (15.63034pt too wide) in paragraph at lines 336--339
+[]\T1/cmr/m/n/10.95 Este código hace apare-cer la frase ``Apren-di-endo a usar 
+dru-pal_set_message''
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 352--352
+[]\T1/cmtt/m/n/10.95 drupal_set_message($message = NULL, $type = 'status', $rep
+eat = TRUE)[] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 352--352
+[]\T1/cmtt/m/n/10.95 $message El mensaje empieza con una mayúscula y finaliza c
+on un punto.[] 
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 352--352
+[]\T1/cmtt/m/n/10.95 $type El tipo de mensaje. Uno de los siguientes valores es
+ posible:[] 
+ []
+
+
+Overfull \hbox (166.2285pt too wide) in paragraph at lines 352--352
+[]\T1/cmtt/m/n/10.95 $repeat Si esto es FALSE y el mensaje ha sido asignado, en
+tonces el mensaje no será repetido.[] 
+ []
+
+
+LaTeX Warning: Hyper reference `api.drupal.org/api/drupal/includes--bootstrap.i
+nc/function/drupal_set_message/7' on page 7 undefined on input line 356.
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 374--374
+[]\T1/cmtt/m/n/10.95 $node->title = 'nah, nah, nah, nah, boo, boo'; // Do some 
+changes[] 
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 390--390
+[]\T1/cmtt/m/n/10.95 Parámetros $node El objeto $node que va a ser guardado. Si
+ $node->nid[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 390--390
+[]\T1/cmtt/m/n/10.95 es omitido (o $node->is_new es TRUE), un nuevo nodo será a
+ñadido.[] 
+ []
+
+[7]
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 412--412
+[]\T1/cmtt/m/n/10.95 user_save($account, array('name' => 'John Smith')); // sav
+e your changes[] 
+ []
+
+
+Overfull \hbox (115.30316pt too wide) in paragraph at lines 432--432
+[] \T1/cmtt/m/n/10.95 'access' => 0, /* optional, i didnt want user to be able 
+to this this account yet*/[] 
+ []
+
+
+Overfull \hbox (1807.15608pt too wide) in paragraph at lines 451--451
+[]\T1/cmtt/m/n/10.95 $account (opcional) El objeto de usuario para modificar ó 
+añadir. Si se desea modificar una cuenta de usuario existente, se necesitará as
+egurar que (a) $account es un objeto, y (b) se ha asignado $account->uid al use
+r ID de la cuenta de usuario a modificar. Si se desea crear una nueva cuenta de
+ usuario, es posible establecer $account->is_new a TRUE u omitir el campo $acco
+unt->uid.[] 
+ []
+
+
+Overfull \hbox (715.09048pt too wide) in paragraph at lines 451--451
+[]\T1/cmtt/m/n/10.95 $edit Un array de campos y valores a guardar. Por ejemplo,
+ array('name' => 'My name'). Pares clave / valor añadidas a $edit['data'] serán
+ serializadas y guardadas en la columna {users.data}.[] 
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 451--451
+[]\T1/cmtt/m/n/10.95 $category (optional) The category for storing profile info
+rmation in.[] 
+ []
+
+[8]
+Overfull \hbox (285.05429pt too wide) in paragraph at lines 472--472
+[]  \T1/cmtt/m/n/10.95 watchdog('action', 'Saved @type %title', array('@type' =
+> node_type_get_name($node), '%title' => $node->title));[] 
+ []
+
+
+Overfull \hbox (149.25339pt too wide) in paragraph at lines 487--487
+[]\T1/cmtt/m/n/10.95 watchdog($type, $message, $variables = array(), $severity 
+= WATCHDOG_NOTICE, $link = NULL)[] 
+ []
+
+
+Overfull \hbox (488.75565pt too wide) in paragraph at lines 487--487
+[]\T1/cmtt/m/n/10.95 $type La categoría al que el mensaje pertenece. Puede ser 
+cualquier cadena, pero la práctica general es usar el nombre del módulo llamand
+o watchdog().[] 
+ []
+
+
+Overfull \hbox (313.34615pt too wide) in paragraph at lines 487--487
+[]\T1/cmtt/m/n/10.95 $message El mensaje a almacenar en el log. ½Deja el $messa
+ge traducible no concatenando valores dinámicos dentro de él![] 
+ []
+
+
+Overfull \hbox (347.29637pt too wide) in paragraph at lines 487--487
+[]\T1/cmtt/m/n/10.95 $variables Array de variables para reemplazar en el mensaj
+e ó NULL si el mensaje ya está traducido ó no es posible traducirlo[] 
+ []
+
+
+Overfull \hbox (290.71266pt too wide) in paragraph at lines 487--487
+[]\T1/cmtt/m/n/10.95 $severity La gravedad del mensaje, dada en el RFC 3164. Po
+sibles valores son WATCHDOG_ERROR, WATCHDOG_WARNING, etc.[] 
+ []
+
+
+</home/davidam/public_html/docu/drupal/pantallazo4.png, id=218, 396.7322pt x 25
+7.46187pt>
+File: /home/davidam/public_html/docu/drupal/pantallazo4.png Graphic file (type 
+png)
+ <use /home/davidam/public_html/docu/drupal/pantallazo4.png> [9]
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 527--527
+[]\T1/cmtt/m/n/10.95 print(t("@name's blog", array('@name' => format_username($
+account))));[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 577--577
+[]\T1/cmtt/m/n/10.95 Devuelve un nuevo objeto InsertQuery para la base de datos
+ activa.[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 577--577
+[]\T1/cmtt/m/n/10.95 $options Un array de opciones para controlar cómo opera la
+ consulta.[] 
+ []
+
+[10 </home/davidam/public_html/docu/drupal/pantallazo4.png (PNG copy)>]
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 601--601
+[]\T1/cmtt/m/n/10.95 $num_updated = db_update('node') // Table name no longer n
+eeds {}[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 625--625
+[]\T1/cmtt/m/n/10.95 Devuelve un nuevo objeto UpdateQuery para la base de datos
+ activa.[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 625--625
+[]\T1/cmtt/m/n/10.95 $options Un array de opciones para controlar cómo opera la
+ consulta.[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 644--644
+[]\T1/cmtt/m/n/10.95 $num_deleted=db_delete('node')->condition('nid',$nid)->exe
+cute();[] 
+ []
+
+[11]
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 662--662
+[]\T1/cmtt/m/n/10.95 Devuelve un nuevo objeto DeleteQuery para la base de datos
+ activa.[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 662--662
+[]\T1/cmtt/m/n/10.95 $options Un array de opciones para controlar cómo la consu
+lta opera.[] 
+ []
+
+[12]
+</home/davidam/public_html/docu/drupal/pantallazo5.png, id=239, 770.88pt x 377.
+91188pt>
+File: /home/davidam/public_html/docu/drupal/pantallazo5.png Graphic file (type 
+png)
+ <use /home/davidam/public_html/docu/drupal/pantallazo5.png> [13 </home/davidam
+/public_html/docu/drupal/pantallazo5.png (PNG copy)>] [14] [15]
+Overfull \hbox (15.08217pt too wide) in paragraph at lines 879--890
+\T1/cmr/m/n/10.95 Para este muy primer mó-dulo, se im-ple-men-tará las fun-cion
+es hook_block_info()
+ []
+
+[16]
+Overfull \hbox (38.75427pt too wide) in paragraph at lines 935--939
+\T1/cmr/m/n/10.95 nosotros nece-si-ta-mos im-ple-men-tar las fun-ciones hook$[]
+$$[]$() y hook_block_view().
+ []
+
+
+Overfull \hbox (49.8989pt too wide) in paragraph at lines 940--943
+\T1/cmr/m/n/10.95 name>_<hook name>. Así nue-stro hook de bloque se lla-mará mi
+-bloque_block_info(). 
+ []
+
+[17]
+Overfull \hbox (48.85992pt too wide) in paragraph at lines 1007--1011
+[]\T1/cmr/m/n/10.95 El di-rec-to-rio de nue-stro mó-dulo debe es-tar en el di-r
+ec-to-rio dru-pal/sites/all/modules,
+ []
+
+
+</home/davidam/public_html/docu/drupal/pantallazo10.png, id=265, 169.38281pt x 
+73.77562pt>
+File: /home/davidam/public_html/docu/drupal/pantallazo10.png Graphic file (type
+ png)
+ <use /home/davidam/public_html/docu/drupal/pantallazo10.png>
+[18 </home/davidam/public_html/docu/drupal/pantallazo10.png (PNG copy)>]
+Overfull \hbox (11.17038pt too wide) in paragraph at lines 1040--1041
+[]\T1/cmr/m/n/10.95 Crear un nuevo di-rec-to-rio en sites/all/modules y lla-mar
+lo `form_tutorial'. 
+ []
+
+
+Overfull \hbox (11.59352pt too wide) in paragraph at lines 1041--1043
+[]\T1/cmr/m/n/10.95 Crear un fichero lla-mado form_tutorial.info en el di-rec-t
+o-rio form_tutorial
+ []
+
+
+Overfull \hbox (189.59085pt too wide) in paragraph at lines 1056--1060
+[]\T1/cmr/m/n/10.95 Escribir lo sigu-iente en la barra de di-rec-ciones del nav
+e-g-ador: []http://yoursite_site_url/?q=form_tutorial/form[]
+ []
+
+
+Overfull \hbox (3.28961pt too wide) in paragraph at lines 1056--1060
+\T1/cmr/m/n/10.95 ó []http://yoursite_site_url/form_tutorial/form[] de-pen-di-e
+ndo de su con-
+ []
+
+
+Overfull \hbox (203.87656pt too wide) in paragraph at lines 1060--1067
+\T1/cmr/m/n/10.95 del nave-g-ador: []http://yoursite_site_url/?q=form_tutorial/
+form[] ó []http://yoursite_site_url/form_tutorial/form[]
+ []
+
+[19]
+Overfull \hbox (160.57013pt too wide) in paragraph at lines 1118--1118
+[]\T1/cmtt/m/n/10.95 //"http://yourhost/?q=form_tutorial/form". It will generat
+e// a page with //this form on it.[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1118--1118
+[] \T1/cmtt/m/n/10.95 // drupal_get_form() function which takes the name of thi
+s form builder[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1118--1118
+[] \T1/cmtt/m/n/10.95 // function as an argument. It returns the results to dis
+play the form.[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 1118--1118
+[]\T1/cmtt/m/n/10.95 // This function is called the "form builder". It builds t
+he form.[] 
+ []
+
+
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 1118--1118
+[] \T1/cmtt/m/n/10.95 // This is the first form element. It's a textfield with 
+a label, "Name"[] 
+ []
+
+
+Overfull \hbox (5.03981pt too wide) in paragraph at lines 1126--1131
+[]\T1/cmr/m/n/10.95 form$[]$$[]$ tiene un call-back a nues-tra se-gunda fun-ció
+n form$[]$$[]$,
+ []
+
+[20] [21] [22]
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 1291--1291
+[]    \T1/cmtt/m/n/10.95 '#description' => t('This one adds #default_value and 
+#description'),[] 
+ []
+
+[23]
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1291--1291
+[]    \T1/cmtt/m/n/10.95 '#description' => "Please enter your first name.", // 
+added description[] 
+ []
+
+[24]
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 1369--1369
+[] \T1/cmtt/m/n/10.95 * Now we add a handler/function to validate the data ente
+red into the[] 
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 1369--1369
+[] \T1/cmtt/m/n/10.95 * "year of birth" field to make sure it's between the val
+ues of 1900[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1369--1369
+[] \T1/cmtt/m/n/10.95 * $form_state['values'] (see http://drupal.org/node/14413
+2#form-state).[] 
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 1369--1369
+[] \T1/cmtt/m/n/10.95 * Notice the name of the function. It is simply the name 
+of the form[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 1369--1369
+[] \T1/cmtt/m/n/10.95 * followed by '_validate'. This is always the name of the
+ default validation[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 1369--1369
+[] \T1/cmtt/m/n/10.95 * function. An alternate list of validation functions cou
+ld have been provided[] 
+ []
+
+[25]
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 1369--1369
+[]\T1/cmtt/m/n/10.95 function form_example_tutorial_6_validate($form, &$form_st
+ate) {[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1369--1369
+[]  \T1/cmtt/m/n/10.95 if ($year_of_birth && ($year_of_birth < 1900 || $year_of
+_birth > 2000)) {[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1369--1369
+[]    \T1/cmtt/m/n/10.95 form_set_error('year_of_birth', 'Enter a year between 
+1900 and 2000.');[] 
+ []
+
+
+Overfull \hbox (60.11136pt too wide) in paragraph at lines 1373--1375
+[]\T1/cmr/m/n/10.95 Como se ahora aparece al fi-nal del código una nueva fun-ci
+ón (form$[]$$[]$$[]$$[]$)
+ []
+
+[26]
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 1441--1441
+[]\T1/cmtt/m/n/10.95 function form_example_tutorial_7_validate($form, &$form_st
+ate) {[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1441--1441
+[]  \T1/cmtt/m/n/10.95 if ($year_of_birth && ($year_of_birth < 1900 || $year_of
+_birth > 2000)) {[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1441--1441
+[]    \T1/cmtt/m/n/10.95 form_set_error('year_of_birth', 'Enter a year between 
+1900 and 2000.');[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 1441--1441
+[] \T1/cmtt/m/n/10.95 * Adds a submit handler/function to our form to send a su
+ccessful[] 
+ []
+
+
+Overfull \hbox (228.47058pt too wide) in paragraph at lines 1441--1441
+[]  \T1/cmtt/m/n/10.95 drupal_set_message(t('The form has been submitted. name=
+"@first @last", year of birth=@year_of_birth',[] 
+ []
+
+
+Overfull \hbox (534.02261pt too wide) in paragraph at lines 1441--1441
+[]    \T1/cmtt/m/n/10.95 array('@first' => $form_state['values']['first'], '@la
+st' => $form_state['values']['last'], '@year_of_birth' => $form_state['values']
+['year_of_birth'])));[] 
+ []
+
+[27]
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 if (!empty($form_state['page_num']) && $form_state['page
+_num'] == 2) {[] 
+ []
+
+
+Overfull \hbox (211.49547pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 '#default_value' => !empty($form_state['values']['firs
+t']) ? $form_state['values']['first'] : '',[] 
+ []
+
+
+Overfull \hbox (200.17873pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 '#default_value' => !empty($form_state['values']['last
+']) ? $form_state['values']['last'] : '',[] 
+ []
+
+
+Overfull \hbox (302.0294pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 '#default_value' => !empty($form_state['values']['year
+_of_birth']) ? $form_state['values']['year_of_birth'] : '',[] 
+ []
+
+[28]
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 '#validate' => array('form_tutorial_my_form_next_valid
+ate'),[] 
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 1602--1602
+[] \T1/cmtt/m/n/10.95 * Returns the form for the second page of form_tutorial_m
+y_form().[] 
+ []
+
+
+Overfull \hbox (211.49547pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 '#default_value' => !empty($form_state['values']['colo
+r']) ? $form_state['values']['color'] : '',[] 
+ []
+
+
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 '#submit' => array('form_tutorial_my_form_page_two_sub
+mit'),[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 // We won't bother validating the required 'color' fie
+ld, since they[] 
+ []
+
+[29]
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 1602--1602
+[]\T1/cmtt/m/n/10.95 function form_tutorial_my_form_next_validate($form, &$form
+_state) {[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 if ($year_of_birth && ($year_of_birth < 1900 || $year_of
+_birth > 2000)) {[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 form_set_error('year_of_birth', 'Enter a year between 
+1900 and 2000.');[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 1602--1602
+[] \T1/cmtt/m/n/10.95 * Capture the values from page one and store them away so
+ they can be used[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 1602--1602
+[]\T1/cmtt/m/n/10.95 function form_tutorial_my_form_next_submit($form, &$form_s
+tate) {[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 // When form rebuilds, it will look at this to figure wh
+ich page to build.[] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 1602--1602
+[] \T1/cmtt/m/n/10.95 * Since #limit_validation_errors = array() is set, values
+ from page 2[] 
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 1602--1602
+[]\T1/cmtt/m/n/10.95 function form_tutorial_my_form_page_two_back($form, &$form
+_state) {[] 
+ []
+
+[30]
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 1602--1602
+[] \T1/cmtt/m/n/10.95 * This is the final submit handler. Gather all the data t
+ogether and output[] 
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 1602--1602
+[]\T1/cmtt/m/n/10.95 function form_tutorial_my_form_page_two_submit($form, &$fo
+rm_state) {[] 
+ []
+
+
+Overfull \hbox (58.71945pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 // Normally, some code would go here to alter the databa
+se with the data[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 // collected from the form. Instead sets a message with 
+drupal_set_message()[] 
+ []
+
+
+Overfull \hbox (228.47058pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 drupal_set_message(t('The form has been submitted. name=
+"@first @last", year of birth=@year_of_birth',[] 
+ []
+
+
+Overfull \hbox (437.8303pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 array('@first' => $page_one_values['first'], '@last' => 
+$page_one_values['last'], '@year_of_birth' => $page_one_values['year_of_birth']
+)));[] 
+ []
+
+
+Overfull \hbox (149.25339pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 drupal_set_message(t('Second name: name="@first @last"
+, year of birth=@year_of_birth',[] 
+ []
+
+
+Overfull \hbox (466.12216pt too wide) in paragraph at lines 1602--1602
+[]    \T1/cmtt/m/n/10.95 array('@first' => $page_one_values['first2'], '@last' 
+=> $page_one_values['last2'], '@year_of_birth' => $page_one_values['year_of_bir
+th2'])));[] 
+ []
+
+
+Overfull \hbox (268.07918pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 drupal_set_message(t('And the favorite color is @color',
+ array('@color' => $form_state['values']['color'])));[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 // If we wanted to redirect on submission, set $form_sta
+te['redirect'][] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 1602--1602
+[]  \T1/cmtt/m/n/10.95 // $form_state['redirect'] = 'node'; // Redirects the us
+er to /node.[] 
+ []
+
+
+Overfull \hbox (5.52745pt too wide) in paragraph at lines 1606--1612
+[]\T1/cmr/m/n/10.95 Este código tiene dos fun-ciones form prin-ci-pales: form_t
+utorial_my_form
+ []
+
+[31]
+Overfull \hbox (58.71945pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 // We will have many fields with the same name, so we ne
+ed to be able to[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 // Build the number of name fieldsets indicated by $form
+_state['num_names'][] 
+ []
+
+[32]
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 // If we have more than one name, this button allows rem
+oval of the[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 1757--1757
+[]      \T1/cmtt/m/n/10.95 // Since we are removing a name, don't validate unti
+l later.[] 
+ []
+
+
+Overfull \hbox (58.71945pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 Submit handler for "Add another name" button on form_tut
+orial_my_form().[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 $form_state['num_names'] tells the form builder function
+ how many name[] 
+ []
+
+[33]
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 All elements of $form_state are persisted, so there's no
+ need to use a[] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 particular key, like the old $form_state['storage']. We 
+can just use[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 // Setting $form_state['rebuild'] = TRUE causes the form
+ to be rebuilt again.[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 1757--1757
+[]\T1/cmtt/m/n/10.95 function form_tutorial_my_form_remove_name($form, &$form_s
+tate) {[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 // Setting $form_state['rebuild'] = TRUE causes the form
+ to be rebuilt again.[] 
+ []
+
+
+Overfull \hbox (58.71945pt too wide) in paragraph at lines 1757--1757
+[]  \T1/cmtt/m/n/10.95 Adds logic to validate the form to check the validity of
+ the new fields,[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1757--1757
+[]    \T1/cmtt/m/n/10.95 $year_of_birth = $form_state['values']['name'][$i]['ye
+ar_of_birth'];[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 1757--1757
+[]    \T1/cmtt/m/n/10.95 if ($year_of_birth && ($year_of_birth < 1900 || $year_
+of_birth > 2000)) {[] 
+ []
+
+
+Overfull \hbox (132.27827pt too wide) in paragraph at lines 1757--1757
+[]      \T1/cmtt/m/n/10.95 form_set_error("name][$i][year_of_birth", 'Enter a y
+ear between 1900 and 2000.');[] 
+ []
+
+[34]
+Overfull \hbox (352.95474pt too wide) in paragraph at lines 1757--1757
+[]    \T1/cmtt/m/n/10.95 $output .= t("@num: @first @last (@date)... ", array('
+@num' => $i, '@first' => $form_state['values']['name'][$i]['first'],[] 
+ []
+
+
+Overfull \hbox (352.95474pt too wide) in paragraph at lines 1757--1757
+[]      \T1/cmtt/m/n/10.95 '@last' =>  $form_state['values']['name'][$i]['last'
+], '@date' =>  $form_state['values']['name'][$i]['year_of_birth']));[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 1843--1843
+[]  \T1/cmtt/m/n/10.95 // enctype="multipart/form-data" required by browsers to
+ handle files.[] 
+ []
+
+
+Overfull \hbox (126.6199pt too wide) in paragraph at lines 1843--1843
+[]        \T1/cmtt/m/n/10.95 '#description' => t('Upload a file, allowed extens
+ions: jpg, jpeg, png, gif'),[] 
+ []
+
+[35]
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 1843--1843
+[]    \T1/cmtt/m/n/10.95 'file_validate_is_image' => array(), // Validates file
+ is really an image.[] 
+ []
+
+
+Overfull \hbox (115.30316pt too wide) in paragraph at lines 1843--1843
+[]    \T1/cmtt/m/n/10.95 'file_validate_extensions' => array('png gif jpg jpeg'
+), // Validate extensions.[] 
+ []
+
+
+Overfull \hbox (171.88687pt too wide) in paragraph at lines 1843--1843
+[]      \T1/cmtt/m/n/10.95 form_set_error('file', t('Failed to write the upload
+ed file the site\'s file folder.'));[] 
+ []
+
+[36]
+Overfull \hbox (460.46379pt too wide) in paragraph at lines 1843--1843
+[]  \T1/cmtt/m/n/10.95 drupal_set_message(t('The form has been submitted and th
+e image has been saved, filename: @filename.', array('@filename' => $file->file
+name)));[] 
+ []
+
+
+Overfull \hbox (20.07619pt too wide) in paragraph at lines 1868--1871
+\T1/cmr/m/n/10.95 to-rio email$[]$ en sites/all/modules y den-tro se crea el fi
+chero email$[]$.info: 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 2092--2092
+[]\T1/cmtt/m/n/10.95 // $Id: email_example.module,v 1.4 2010/03/03 15:48:59 rfa
+y Exp $[] 
+ []
+
+[37]
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * This example module provides two different examples of 
+the Drupal email API.[] 
+ []
+
+
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 *  - defines a simple contact form and shows how to use d
+rupal_mail()[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 *    to send an e-mail (defined in hook_mail()) when the 
+form is submitted.[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 *  - shows how modules can alter emails defined by other 
+Drupal modules or[] 
+ []
+
+
+Overfull \hbox (41.74434pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 *    Core using hook_mail_alter by attaching a custom sig
+nature before[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * This hook defines a list of possible e-mail templates t
+hat this module can[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * $message comes in with some standard properties already
+ set: 'to' address,[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * 'from' address, and a set of default 'headers' from dru
+pal_mail(). The goal[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * of hook_mail() is to set the message's 'subject' and 'b
+ody' properties, as[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * well as make any adjustments to the headers that are ne
+cessary.[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * The $params argument is an array which can hold any add
+itional data required[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * to build the mail subject and body; for example, user-e
+ntered form data, or[] 
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * some context information as to where the mail request c
+ame from.[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * Note that hook_mail() is not actually a hook. It is onl
+y called for a single[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * module, the module named in the first argument of drupa
+l_mail(). So it's[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // Each message is associated with a language, which may
+ or may not be the[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // current user's selected language, depending on the ty
+pe of e-mail being[] 
+ []
+
+
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // sent. This $options array is used later in the t() ca
+lls for subject[] 
+ []
+
+[38]
+Overfull \hbox (381.2466pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 $message['subject'] = t('E-mail sent from @site-name
+', array('@site-name' => variable_get('site_name', 'Drupal')), $options);[] 
+ []
+
+
+Overfull \hbox (268.07918pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 $message['body'][] = t('@name sent you the following
+ message:', array('@name' => $user->name), $options);[] 
+ []
+
+
+Overfull \hbox (92.66968pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 // Because this is just user-entered text, we do not
+ need to translate it.[] 
+ []
+
+
+Overfull \hbox (92.66968pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 // Since user-entered text may have unintentional HT
+ML entities in it like[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 // '<' or '>', we need to make sure these entities a
+re properly escaped,[] 
+ []
+
+
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 // as the body will later be transformed from HTML t
+o text, meaning[] 
+ []
+
+
+Overfull \hbox (64.37782pt too wide) in paragraph at lines 2092--2092
+[]      \T1/cmtt/m/n/10.95 // that a normal use of '<' will result in truncatio
+n of the message.[] 
+ []
+
+
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 *   An array of values from the contact form fields that 
+were submitted.[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 *   There are just two relevant items: $form_values['emai
+l'] and[] 
+ []
+
+
+Overfull \hbox (92.66968pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // All system mails need to specify the module and templ
+ate key (mirrored from[] 
+ []
+
+
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // hook_mail()) that the message they want to send comes
+ from.[] 
+ []
+
+
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // "params" loads in additional context for email conten
+t completion in[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // hook_mail(). In this case, we want to pass in the val
+ues the user entered[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // into the form, which include the message body in $for
+m_values['message'].[] 
+ []
+
+[39]
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // * user_preferred_language(): Used for sending mail to
+ a particular website[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 //   user, so that the mail appears in their preferred l
+anguage.[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // * global $language: Used when sending a mail back to 
+the user currently[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 //   viewing the site. This will send it in the language
+ they're currently[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // * language_default(): Used when sending mail to a pre
+-existing, 'neutral'[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 //   address, such as the system e-mail address, or when
+ you're unsure of the[] 
+ []
+
+
+Overfull \hbox (92.66968pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // Since in our case, we are sending a message to a rand
+om e-mail address that[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // is not necessarily tied to a user account, we will us
+e the site's default[] 
+ []
+
+
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // Whether or not to automatically send the mail when dr
+upal_mail() is[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // called. This defaults to TRUE, and is normally what y
+ou want unless you[] 
+ []
+
+
+Overfull \hbox (58.71945pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // need to do additional processing before drupal_mail_s
+end() is called.[] 
+ []
+
+
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // Send the mail, and check for success. Note that this 
+does not guarantee[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // message delivery; only that there were no PHP-related
+ issues encountered[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 $result = drupal_mail($module, $key, $to, $language, $pa
+rams, $from, $send);[] 
+ []
+
+
+Overfull \hbox (205.8371pt too wide) in paragraph at lines 2092--2092
+[]    \T1/cmtt/m/n/10.95 drupal_set_message(t('There was a problem sending your
+ message and it was not sent.'), 'error');[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * This function is not required to send an email using Dr
+upal's mail system.[] 
+ []
+
+
+Overfull \hbox (87.0113pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * Hook_mail_alter() provides an interface to alter any as
+pect of email sent by[] 
+ []
+
+[40]
+Overfull \hbox (70.0362pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * Drupal. You can use this hook to add a common site foot
+er to all outgoing[] 
+ []
+
+
+Overfull \hbox (92.66968pt too wide) in paragraph at lines 2092--2092
+[] \T1/cmtt/m/n/10.95 * email, add extra header fields, and/or modify the email
+ in anyway. HTML-izing[] 
+ []
+
+
+Overfull \hbox (58.71945pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // For the purpose of this example, modify all the outgo
+ing messages and[] 
+ []
+
+
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 // attach a site signature. The signature will be transl
+ated to the language[] 
+ []
+
+
+Overfull \hbox (109.64479pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 $signature = t("\n--\nMail altered by email_example modu
+le.", array(), $options);[] 
+ []
+
+
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 2092--2092
+[]  \T1/cmtt/m/n/10.95 else {  // Some modules use the body as a string, errone
+ously.[] 
+ []
+
+[41]
+Overfull \hbox (143.59502pt too wide) in paragraph at lines 2092--2092
+[]    \T1/cmtt/m/n/10.95 '#markup' => t('Use this form to send a message to an 
+e-mail address. No spamming!'),[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 2092--2092
+[]    \T1/cmtt/m/n/10.95 form_set_error('email', t('That e-mail address is not 
+valid.'));[] 
+ []
+
+
+! Package inputenc Error: Unicode char \u8:â†’ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2096 ...var el mÃ³dulo desde AdministraciÃ³n â†’
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[42]
+Overfull \hbox (53.85023pt too wide) in paragraph at lines 2102--2106
+[]\T1/cmr/m/n/10.95 Otras fun-ciones como email$[]$$[]$, email$[]$$[]$$[]$ y em
+ail$[]$$[]$$[]$
+ []
+
+)
+Runaway argument?
+{email$_{\mathrm {example}}$$_{\mathrm {mail}}$$_{\mathrm {send}}$\} \ETC.
+! File ended while scanning use of \textbf .
+<inserted text> 
+                \par 
+<*> ...davidam/public_html/docu/drupal/drupal7.tex
+                                                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> ...davidam/public_html/docu/drupal/drupal7.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 5423 strings out of 495046
+ 74956 string characters out of 1181937
+ 152989 words of memory out of 3000000
+ 8409 multiletter control sequences out of 15000+50000
+ 15769 words of font info for 47 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 38i,6n,36p,1522b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

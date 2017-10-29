@@ -1,0 +1,66 @@
+/***********************************************
+ * TITLE : Davidam Docbook Screen Stylesheet   *
+ * URI   : midocbook.css 		       *
+ * CREATE: 2005-Oct-30                         *
+ ***********************************************/
+
+
+/* ##### Common Styles ##### */
+
+body {
+  color: black;
+  background-color: white;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 71%;  /* Enables font size scaling in MSIE */
+  margin: 0;
+  padding: 0;
+  margin: 1em 8% 1em 10%;
+}
+
+html > body {
+  font-size: 8.5pt;
+}
+
+a[href]:hover { background: #ffa }
+
+
+h1 {
+  color: rgb(0,102,204);
+  background-color: transparent;
+  font-size: 185.5%;
+  font-weight: bold;
+  margin: 2em 0 0 0;
+  padding: 0.5ex 0 0.5ex 0.6ex;
+  border-bottom: 1px solid rgb(0,102,204);
+}
+
+h2 {
+  color: rgb(0,102,204);
+  background-color: transparent;
+  font-size: 135.5%;
+  font-weight: bold;
+  margin: 2em 0 0 0;
+  padding: 0.5ex 0 0.5ex 0.6ex;
+  border-bottom: 1px solid rgb(0,102,204);
+}
+
+.abstract
+{
+        border: solid 1px;
+        padding-left: 10pt;
+        padding-right: 10pt;
+}
+
+acronym {
+  border-bottom: 1px dotted rgb(153,153,153);
+  cursor: help;
+  margin: 0;
+  padding: 0 0 0.4px 0;
+}
+
+.example { 
+  border: 1pt solid black; 
+  padding: 10pt; 
+  background: rgb(240, 240, 255); 
+  overflow: auto;
+}

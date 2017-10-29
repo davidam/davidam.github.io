@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>CasperJS</title>
+<!-- 2016-01-11 lun 09:53 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">CasperJS</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introducción</a></li>
+<li><a href="#sec-2">2. Login: Hagamos algo</a></li>
+<li><a href="#sec-3">3. Navegación: Chequeando enlaces</a></li>
+<li><a href="#sec-4">4. Visible: Qué se pinta, qué se ve</a></li>
+<li><a href="#sec-5">5. Viewport: Automatizando diferentes tamaños de pantalla</a></li>
+<li><a href="#sec-6">6. Scraping en Google Translate</a></li>
+<li><a href="#sec-7">7. Testing</a></li>
+<li><a href="#sec-8">8. Resurrectio</a></li>
+<li><a href="#sec-9">9. Performance</a></li>
+<li><a href="#sec-10">10. Referencias</a></li>
+<li><a href="#sec-11">11. Licencia</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introducción</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Los tests que son hechos por humanos se hacen desde el navegador y
+haciendo el énfasis en lo que se ve. Los tests hechos por CasperJS son
+hechos en JS para simular la acción de los humanos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Login: Hagamos algo</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Para hacer un login se podría simular de la siguiente manera:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var casper = require('casper').create();
+
+casper.start('http://dominio, function() {
+    this.fill('form#user-login-form', {
+	'name':    'nombre',
+	'pass':    'pass',
+    }, true);
+});
+
+casper.run(function() {
+    this.echo('message sent').exit();
+});
+
+casper.thenOpen('http://dominio/page, function() {
+    this.echo(this.getTitle());
+});
+</pre>
+</div>
+
+<p>
+Primero se crea el objeto casper, seguidamente se inicia y se rellenan
+los campos de formulario y ya estamos listos para acceder a páginas
+que requerían autenticación.
+</p>
+
+<p>
+Después llamamos a casper con 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ casperjs login.js
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Navegación: Chequeando enlaces</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Un test que puede ser de interés es navegar por las páginas de nuestro
+sitio web.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var casper = require('casper').create();
+
+casper.start('http://www.gnu.org', function() {
+    this.echo(this.getTitle());
+});
+
+casper.run(function() {
+    this.echo('message sent').exit();
+});
+
+casper.thenOpen('http://gnu.org/education/education.html', function() {
+    this.echo(this.getTitle());
+});
+
+casper.thenOpen('http://gnu.org/licenses/licenses.html', function() {
+    this.echo(this.getTitle());
+});
+</pre>
+</div>
+
+<p>
+Después llamamos a casper con 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ casperjs navigation.js
+</pre>
+</div>
+
+<p>
+Tal vez haya gente que prefiera automatizar las cuestiones de revisar
+enlaces rotos con <a href="https://www.drupal.org/project/linkchecker">link checker</a>, pero este código sí sirve de ejemplo
+de juguete para ir aprendiendo CasperJS.
+</p>
+
+<p>
+Una opción más profesional a la revisión de enlaces con CasperJS nos
+la da <i>Netsniff Spider</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Visible: Qué se pinta, qué se ve</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Es posible determinar si un elemento de la web es visible o no. Veamos
+un ejemplo:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var casper = require('casper').create();
+
+casper.start('http://google.com/', function() {
+    if (this.visible('#hplogo')) {
+	this.echo("I can see the logo");
+    } else {
+	this.echo("I can't see the logo");
+    }
+});
+
+
+casper.run();
+</pre>
+</div>
+
+<p>
+Después llamamos a casper con 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ casperjs visible.js
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Viewport: Automatizando diferentes tamaños de pantalla</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Otra cuestión que se puede automatizar con CasperJS es ver si un sitio
+web se ve bien con diferentes tamaños de pantalla lo que se suele
+llamar responsive. Veamos el siguiente código:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var casper = require("casper").create();
+
+var screenshotUrl = 'http://google.com/',
+    screenshotNow = new Date(),
+    screenshotDateTime = screenshotNow.getFullYear() + pad(screenshotNow.getMonth() + 1) + pad(screenshotNow.getDate()) + '-' + pad(screenshotNow.getHours()) + pad(screenshotNow.getMinutes()) + pad(screenshotNow.getSeconds()),
+    viewports = [
+      {
+	'name': 'smartphone-portrait',
+	'viewport': {width: 320, height: 480}
+      },
+      {
+	'name': 'smartphone-landscape',
+	'viewport': {width: 480, height: 320}
+      },
+      {
+	'name': 'tablet-portrait',
+	'viewport': {width: 768, height: 1024}
+      },
+      {
+	'name': 'tablet-landscape',
+	'viewport': {width: 1024, height: 768}
+      },
+      {
+	'name': 'desktop-standard',
+	'viewport': {width: 1280, height: 1024}
+      }
+    ];
+
+if (casper.cli.args.length &lt; 1) {
+  casper
+    .echo("Usage: $ casperjs screenshots.js http://example.com")
+    .exit(1)
+  ;
+} else {
+  screenshotUrl = casper.cli.args[0];
+}
+
+casper.start(screenshotUrl, function() {
+  this.echo('Current location is ' + this.getCurrentUrl(), 'info');
+});
+
+casper.each(viewports, function(casper, viewport) {
+  this.then(function() {
+    this.viewport(viewport.viewport.width, viewport.viewport.height);
+  });
+  this.thenOpen(screenshotUrl, function() {
+    this.wait(5000);
+  });
+  this.then(function(){
+    this.echo('Screenshot for ' + viewport.name + ' (' + viewport.viewport.width + 'x' + viewport.viewport.height + ')', 'info');
+    this.capture('screenshots/' + screenshotDateTime + '/' + viewport.name + '-' + viewport.viewport.width + 'x' + viewport.viewport.height + '.png', {
+	top: 0,
+	left: 0,
+	width: viewport.viewport.width,
+	height: viewport.viewport.height
+    });
+  });
+});
+
+casper.run();
+
+function pad(number) {
+  var r = String(number);
+  if ( r.length === 1 ) {
+    r = '0' + r;
+  }
+  return r;
+}
+</pre>
+</div>
+
+<p>
+Podemos llamar a este código con algo similar a:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ casperjs screenshot.js http://misitio.com
+</pre>
+</div>
+
+<p>
+Y crea un directorio screenshots con una serie de pantallazos en las
+diferentes resoluciones.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Scraping en Google Translate</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Mientras el html no cambia es posible hacer scraping web para tener
+scripting de cosas que se nos devuelve por Internet. Veamos un
+ejemplo, usando google translate:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var system = require('system'),
+    casper = require('casper').create(),
+    format = require('utils').format,
+    source = casper.cli.get('source') || 'auto',
+    target = casper.cli.get('target'),
+    text   = casper.cli.get(0),
+    result;
+
+if (!target) {
+    casper.warn('The --target option is mandatory.').exit(1);
+}
+
+casper.start(format('http://translate.google.com/#%s/%s/%s', source, target, text), function() {
+    this.fill('form#gt-form', {text: text});
+}).waitForSelector('span.hps', function() {
+    this.echo(this.fetchText("#result_box"));
+});
+
+casper.run();
+</pre>
+</div>
+
+<p>
+Ahora se puede utilizar con 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ casperjs translate.js --target='es' "hello world"
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Testing</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Básicamente las herramientas de test actuales se basan en crear
+asertos/aserciones, veamos un ejemplo de esto en CasperJS:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var x = require('casper').selectXPath;
+
+casper.test.begin('Tests homepage structure', 7, function suite(test) {
+
+  casper.start('http://www.davidam.com', function() {
+    // Verify that the main menu links are present.
+    test.assertExists('a.org-effectiveness', '"Org Effectiveness" link is found.');
+    test.assertExists('a.drupal-el', '"Drupal el" link is found.');
+    test.assertExists('a.orgmode-drupal', '"Orgmode Drupal" link is found.');
+
+    casper.waitForSelector(x("//*[normalize-space(text())='Traducción de una Introducción a GCC']"),
+       function success() {
+	   test.assertExists(x("//*[normalize-space(text())='Traducción de una Introducción a GCC']"));
+	 },
+       function fail() {
+	   test.assertExists(x("//*[normalize-space(text())='Traducción de una Introducción a GCC']"));
+       });
+    casper.waitForSelector(x("//*[normalize-space(text())='fuentes']"),
+       function success() {
+	   test.assertExists(x("//*[normalize-space(text())='fuentes']"));
+       },
+       function fail() {
+	   test.assertExists(x("//*[normalize-space(text())='fuentes']"));
+       });
+    casper.waitForSelector(x("//*[normalize-space(text())='Traducción de Guía Compacta de Org Mode']"),
+       function success() {
+	   test.assertExists(x("//*[normalize-space(text())='Traducción de Guía Compacta de Org Mode']"));
+	 },
+       function fail() {
+	   test.assertExists(x("//*[normalize-space(text())='Traducción de Guía Compacta de Org Mode']"));
+       });
+
+    // 10 articles should be listed.
+    test.assertElementCount('.box', 10, '10 boxes are listed.');
+  });
+
+  casper.run(function() {
+    test.done();
+  });
+});
+</pre>
+</div>
+
+<p>
+Se puede utilizar con
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">$ casperjs test davidam-test.js
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Resurrectio</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+¿Eres de los que piensan que programar es aburrido? Eres un fantasma
+que merece una resurrección :D. <a href="https://github.com/ebrehault/resurrectio">Resurrectio</a> permite generar código
+CasperJS, mientras tu haces clicks de ratón y escribes en el navegador.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Performance</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+También es posible chequear tiempos de carga con CasperJS:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">var casper = require("casper").create();
+var start = new Date().getTime();
+var links = [
+    "http://google.com/",
+    "http://yahoo.com/",
+    "http://duckduckgo.com/",
+    "http://bing.com/"
+];
+
+casper.start();
+
+casper.each(links, function(self, link) {
+    this.thenOpen(link, function() {
+	var now = new Date().getTime();
+	this.echo(link + ' loaded in ' + (now - start) + 'ms');
+	start = now;
+    });
+});
+
+casper.run();
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Referencias</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li><a href="https://www.lullabot.com/articles/testing-the-front-end-with-casperjs">https://www.lullabot.com/articles/testing-the-front-end-with-casperjs</a>
+</li>
+<li><a href="http://docs.casperjs.org/en/latest/">http://docs.casperjs.org/en/latest/</a>
+</li>
+<li><a href="https://gist.github.com/nhoizey/4060568">https://gist.github.com/nhoizey/4060568</a>
+</li>
+<li><a href="http://fourkitchens.com/blog/article/testing-drupal-casperjs">http://fourkitchens.com/blog/article/testing-drupal-casperjs</a>
+</li>
+<li><a href="https://github.com/iroy2000/casper-netsniff-spider">https://github.com/iroy2000/casper-netsniff-spider</a>
+</li>
+<li><a href="https://github.com/n1k0/casperjs.git">https://github.com/n1k0/casperjs.git</a>
+</li>
+<li><a href="https://github.com/ebrehault/resurrectio">https://github.com/ebrehault/resurrectio</a>
+</li>
+<li><a href="https://gist.github.com/n1k0/2906650">https://gist.github.com/n1k0/2906650</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> Licencia</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/es/deed.es">Licencia Creative Commons Atribución 3.0 España</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/es/deed.es"><img src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2016-01-11 lun 09:53</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+#+TITLE: Qué hacer si recibes un fichero .org
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+Si lo quieres modificar y no quieres usar el emacs (se descarga desde
+http://ftp.gul.es/gnu/ftp.gnu.org/gnu/emacs/) yo creo que lo mejor es
+abrirlo desde, por ejemplo, el openoffice/libreoffice (Archivo ->
+Abrir y eliges el fichero descargado). En Word supongo que es igual,
+pero no tengo un Word para probarlo.
+
+Los títulos empiezan con * y los subtítulos empiezan con ** y los
+subsubtítulos con *** y así sucesivamente. No necesitas saber nada más
+pues no uso más artificios para los ficheros que estoy compartiendo
+contigo. Desde el emacs es muy cómodo navegar por el fichero porque al
+principio solo se ven los títulos y al dar a la tecla TAB se
+despliegan los subtítulos y si vuelves a dar a TAB se vuelven a
+plegar. Si los abres con Word u OpenOffice aparece todo desplegado y
+tienes que tirar de scroll como te pasa en cualquier otro documento
+.doc u .odt
+
+Org mode es todo un mundo y esta es su página oficial
+http://orgmode.org/es/index.html por si te interesa, que igual no, por
+lo que no me enrrollo más.

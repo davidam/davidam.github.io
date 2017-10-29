@@ -1,0 +1,307 @@
+************ PPrreegguunnttaass FFrreeccuueenntteess aacceerrccaa ddee DDooccuummeennttaacciióónn LLiibbrree ************
+Versión 0.95
+******** ÍÍnnddiiccee ********
+    * _¿_Q_u_é_ _e_s_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_?
+    * _¿_Q_u_é_ _l_i_c_e_n_c_i_a_s_ _p_r_o_t_e_g_e_n_ _l_a_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_?
+    * _Y_o_ _c_o_m_p_a_r_t_o_ _m_i_s_ _d_o_c_u_m_e_n_t_o_s_ _e_n_ _I_n_t_e_r_n_e_t_ _¿_p_o_r_ _q_u_é_ _e_s_t_o_s_ _n_e_c_e_s_i_t_a_n_ _u_n_a
+      _l_i_c_e_n_c_i_a_?_ _¿_n_o_ _s_o_n_ _a_h_o_r_a_ _m_á_s_ _l_i_b_r_e_s_?
+    * _¿_C_ó_m_o_ _p_u_e_d_o_ _p_o_n_e_r_l_e_ _u_n_a_ _l_i_c_e_n_c_i_a_ _l_i_b_r_e_ _a_ _m_i_s_ _d_o_c_u_m_e_n_t_o_s_?
+    * _T_e_n_g_o_ _m_i_ _d_o_c_u_m_e_n_t_o_ _e_n_ _u_n_ _f_o_r_m_a_t_o_ _p_r_o_p_i_e_t_a_r_i_o_ _c_o_m_o_ _p_o_r_ _e_j_e_m_p_l_o_ _u_n_ _._d_o_c
+      _¿_p_u_e_d_e_ _m_i_ _d_o_c_u_m_e_n_t_o_ _s_e_r_ _l_i_b_r_e_?
+    * _N_o_ _e_n_t_i_e_n_d_o_ _m_u_y_ _b_i_e_n_ _p_o_r_ _q_u_é_ _p_u_e_d_e_ _h_a_b_e_r_ _s_e_c_c_i_o_n_e_s_ _i_n_v_a_r_i_a_n_t_e_s_ _e_n_ _t_e_x_t_o_s
+      _l_i_b_r_e_s
+    * _N_o_ _e_n_t_i_e_n_d_o_ _m_u_y_ _b_i_e_n_ _e_s_o_ _d_e_l_ _t_i_t_u_l_a_r_ _d_e_ _l_a_ _o_b_r_a
+    * _Y_o_ _s_o_y_ _p_r_o_f_e_s_o_r_ _¿_c_ó_m_o_ _p_u_e_d_o_ _a_p_o_y_a_r_ _l_a_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_?
+    * _C_o_m_o_ _p_r_o_f_e_s_o_r_ _e_n_ _q_u_é_ _m_e_ _b_e_n_e_f_i_c_i_a_r_í_a_ _g_e_n_e_r_a_r_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_?
+    * _¿_E_n_ _q_u_é_ _b_e_n_e_f_i_c_i_a_ _l_a_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_ _a_ _l_a_ _e_d_u_c_a_c_i_ó_n_ _y_ _a_ _l_a_ _s_o_c_i_e_d_a_d_?
+    * _Y_o_ _s_o_y_ _e_s_t_u_d_i_a_n_t_e_ _¿_c_ó_m_o_ _p_u_e_d_o_ _a_p_o_y_a_r_ _l_a_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_?_ _¿_e_n_ _q_u_é_ _m_e
+      _b_e_n_e_f_i_c_i_a_r_á_?
+    * _Y_o_ _s_o_y_ _u_n_a_ _e_d_i_t_o_r_i_a_l_ _¿_b_a_j_o_ _q_u_é_ _t_é_r_m_i_n_o_s_ _p_u_e_d_o_ _e_d_i_t_a_r_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_?
+    * _¿_C_o_n_s_t_i_t_u_y_e_ _l_a_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_ _u_n_ _p_e_l_i_g_r_o_ _p_a_r_a_ _l_a_s_ _e_d_i_t_o_r_i_a_l_e_s
+      _t_r_a_d_i_c_i_o_n_a_l_e_s_?
+    * _¿_S_o_n_ _g_r_a_t_i_s_ _l_o_s_ _l_i_b_r_o_s_ _l_i_b_r_e_s_?
+    * _¿_Q_u_é_ _p_r_o_y_e_c_t_o_s_ _e_x_i_s_t_e_n_ _d_e_ _d_o_c_u_m_e_n_t_a_c_i_ó_n_ _l_i_b_r_e_ _e_n_ _c_a_s_t_e_l_l_a_n_o_?_ _¿_y_ _e_n_ _o_t_r_o_s
+      _i_d_i_o_m_a_s_?
+    * _L_i_c_e_n_c_i_a_ _d_e_ _e_s_t_e_ _d_o_c_u_m_e_n_t_o
+******** ¿¿QQuuéé eess ddooccuummeennttaacciióónn lliibbrree?? ********
+En breves palabras se puede decir que es la documentación que garantiza la
+libre copia y modificación de sus contenidos, con la única restricción de no
+modificar su licencia.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** ¿¿QQuuéé lliicceenncciiaass pprrootteeggeenn llaa ddooccuummeennttaacciióónn lliibbrree?? ********
+La licencia más popular de documentación ó textos libres es la _G_N_U_ _F_r_e_e
+_D_o_c_u_m_e_n_t_a_t_i_o_n_ _L_i_c_e_n_s_e. Y aunque también existen otras como:
+    * _T_h_e_ _F_r_e_e_B_S_D_ _D_o_c_u_m_e_n_t_a_t_i_o_n_ _L_i_c_e_n_s_e
+    * _T_h_e_ _A_p_p_l_e_'_s_ _C_o_m_m_o_n_ _D_o_c_u_m_e_n_t_a_t_i_o_n_ _L_i_c_e_n_s_e_,_ _V_e_r_s_i_o_n_ _1_._0
+    * _O_p_e_n_ _P_u_b_l_i_c_a_t_i_o_n_ _L_i_c_e_n_s_e_,_ _V_e_r_s_i_o_n_ _1_._0_.
+En _C_r_e_a_t_i_v_e_ _C_o_m_m_o_n_s tienen un interfaz muy sencillo, para que tú le apliques a
+tu obra de libre copia otras libertades que tú consideras importantes: 1) dar
+crédito (ó no) al autor original, 2) permitir (ó no) usos comerciales a
+terceros de tu obra y 3) permitir (ó no) modificaciones a la obra original.
+Nosotros nos referiremos en estas preguntas frecuentes a la GNU Free
+Documentation License (en adelante gfdl) por ser la más utilizada y la que
+mejor defiende la libertad colectiva.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** YYoo ccoommppaarrttoo mmiiss ddooccuummeennttooss eenn IInntteerrnneett ¿¿ppoorr qquuéé eessttooss nneecceessiittaann uunnaa
+lliicceenncciiaa?? ¿¿nnoo ssoonn aahhoorraa mmááss lliibbrreess?? ********
+En realidad, no. Si tu pones un documento en Internet y no tiene ninguna
+licencia, ni copyright, tus documentos tienen el mismo copyright restrictivo
+que la mayoría de los libros impresos que puedes encontrar, es decir, todos los
+derechos reservados para el titular de la obra (en este caso el autor) de la
+obra y nadie no autorizado por éste puede hacer copias (con las excepciones
+previstas por la ley, como el "fair use", copia privada, etc). Por eso el
+anticopyright (rechazar poner copyright a una obra) es poco útil para la
+comunidad: su efecto es nulo y es una obra propietaria. Para "regalar" algo al
+público, hay que hacerlo explicito, de acuerdo a la ley : eso es lo que nos
+facilitan proyectos como _C_r_e_a_t_i_v_e_ _C_o_m_m_o_n_s.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** ¿¿CCóómmoo ppuueeddoo ppoonneerrllee uunnaa lliicceenncciiaa lliibbrree aa mmiiss ddooccuummeennttooss?? ********
+Es muy sencillo. Primero debes de pensar si tu texto es un texto cerrado que no
+puede ser mejorado o ampliado por nadie más que por ti mismo, ó si se trata de
+un texto que puede tener una lectura abierta y, por ello, mejorado por más
+personas. Si el texto, por ejemplo los apuntes de una asignatura, pueden ser
+enriquecidos y mejorados y piensas que esas aportaciones tienen la posibilidad
+de desarrollarse libre y colectivamente, entonces la licencia GFDL es la
+adecuada.
+Entonces lee con atención la licencia GFDL _h_t_t_p_:_/_/_w_w_w_._g_n_u_._o_r_g_/_c_o_p_y_l_e_f_t_/_f_d_l_._h_t_m_l
+y si no sabes mucho inglés, tienes una traducción en _h_t_t_p_:_/_/_e_s_._g_n_u_._o_r_g_/
+_L_i_c_e_n_c_i_a_s_/_f_d_l_e_s_._h_t_m_l, pero debes tener en cuenta que en caso de que una
+contradiga a la otra, la que vale es la versión en inglés.
+Básicamente, el texto únicamente debe incluir las siguientes especificaciones,
+sacadas del apartado "Cómo usar esta licencia en sus documentos" de la
+_t_r_a_d_u_c_c_i_ó_n_ _d_e_ _l_a_ _G_F_D_L:
+Para usar esta licencia en un documento que usted haya escrito, incluya una
+copia de la Licencia en el documento y ponga el siguiente derecho de autor y
+nota de licencia justo después de la página de título:
+Derecho de Autor (c) AÑO SU NOMBRE. Se otorga permiso para copiar, distribuir
+y/o modificar este documento bajo los términos de la Licencia de Documentación
+Libre GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free
+Software Foundation; con las Secciones Invariantes siendo LISTE SUS TÍTULOS,
+con los Textos de Portada siendo LISTELO, y con los Textos al respaldo de la
+página de título siendo LISTELOS. Una copia de la licencia es incluida en la
+sección titulada "Licencia de Documentación Libre GNU".
+Si no tiene Secciones Invariantes, escriba "Sin Secciones Invariantes" en vez
+de decir cuáles son invariantes. Si no tiene Texto de Portada, escriba "Sin
+Texto de Portada" en vez de "con los Textos de Portada siendo LISTELO"; e
+igualmente para los Textos al respaldo de la página de título.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** TTeennggoo mmii ddooccuummeennttoo eenn uunn ffoorrmmaattoo pprrooppiieettaarriioo ccoommoo ppoorr eejjeemmpplloo uunn ..ddoocc
+¿¿ppuueeddee mmii ddooccuummeennttoo sseerr lliibbrree?? ********
+Los formatos propietarios solo se podrán visualizar y editar bien en un
+determinado procesador de textos. Un documento libre no puede tener un formato
+propietario, puesto que ya no sería libre. Antes de ponerle licencia gfdl,
+deberías pasarlos a un formato no propietario.
+Si tu documento no tiene gráficos, ni imágenes incrustadas guardando tu
+documento como .rtf ó .txt será suficiente. En otro caso, te recomendaría que
+utilizaras un formato más profesional, como puede ser latex ó docbook. Estos
+formatos son fácilmente portables a formatos de visualización/impresión como
+pdf, ps, dvi, etc. ó a otros formatos también útiles como html, ó txt.
+Si quieres saber más acerca de los problemas de los formatos propietarios, ó en
+concreto de los .doc puedes leer:
+    * _h_t_t_p_:_/_/_w_w_w_._g_n_u_._o_r_g_/_p_h_i_l_o_s_o_p_h_y_/_r_i_g_h_t_-_t_o_-_r_e_a_d_._e_s_._h_t_m_l
+    * _h_t_t_p_:_/_/_e_s_._g_n_u_._o_r_g_/_O_p_i_n_i_o_n_/_T_e_c_n_o_l_o_g_i_a_/_f_o_r_m_p_r_o_p_._h_t_m_l
+    * _h_t_t_p_:_/_/_w_w_w_._s_i_n_d_o_m_i_n_i_o_._n_e_t_/_a_y_u_d_a_/_w_o_r_d_._s_h_t_m_l
+    * _h_t_t_p_:_/_/_w_a_i_n_u_._i_i_._u_n_e_d_._e_s_/_w_a_i_n_u_k_i_/_F_o_r_m_a_t_o_s_P_r_o_p_i_e_t_a_r_i_o_s
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** NNoo eennttiieennddoo mmuuyy bbiieenn ppoorr qquuéé ppuueeddee hhaabbeerr sseecccciioonneess iinnvvaarriiaanntteess eenn tteexxttooss
+lliibbrreess ********
+En ocasiones en un texto que se puede copiar y modificar libremente se pueden
+incluir cosas, que no debería poder modificar cualquiera, como pueden ser
+acuerdos colectivos (leyes, manifiestos, estatutos, etc.), citas a obras
+clásicas ya sean éstas literarias ó científicas, etc.
+Si por ejemplo tu haces un texto de físicas, dónde citas la teoría de la
+relatividad de Einstein y, te has cerciorado de que Einstein la formuló de ese
+modo, es posible, que no quieras que venga alguien y la modifique por algo que
+ponga 2+2=6.
+Las secciones invariantes permiten proteger a los documentos libres de
+modificaciones de cosas que piensas que no tienen que modificarse. Ó mejor
+dicho que sólo pueden modificarse por el titular de la obra, por tanto deben
+usarse con mucho respeto tanto para los lectores, como para los autores de la
+obra, y con el propio contexto del documento y las posibilidades de que quieres
+dotarlo.
+Las citas legales plantean en este sentido un problema ya que las leyes suelen
+cambiar (últimamente, cada vez más, en sentido regresivo) y declarar
+invariantes las partes de los documentos que reflejaran la legislación vigente
+plantearía dificultades a la hora de actualizar el documento. En ese sentido
+una solución sería linkear desde el documento a un sitio web donde se
+mantuvieran actualizados los textos legales, de modo que el lector pudiera
+saber si esas citas legales están vigentes o han sido modificadas. Otra
+posibilidad sería acotar, en ese punto muy concreto, la licencia, estableciendo
+una clausula. En cualquier caso, por la propia eficacia de los documentos en
+gfdl, parece más aconsejable la primera solución, aunque en la actualidad en
+este estado aún no contemos con esa mínima transparencia democrática que
+permitiera que todos los textos legales estén disponibles gratuitamente en
+internet para su lectura y discusión por parte de la ciudadanía.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** NNoo eennttiieennddoo mmuuyy bbiieenn eessoo ddeell ttiittuullaarr ddee llaa oobbrraa ********
+El titular es aquel que disfruta de ciertos derechos de propiedad intelectual
+de la obra. Por ejemplo: si tú disfrutas de unos textos licenciados bajo gfdl
+el titular podría crear una versión modificada de los mismos que tuvieran otra
+licencia. El titular puede ser una organización ó una persona física.
+Para más información acerca de la propiedad intelectual leer:
+    * _h_t_t_p_:_/_/_l_a_e_s_p_i_r_a_l_._o_r_g_/_d_o_c_u_m_e_n_t_a_c_i_o_n_/_a_r_t_i_c_u_l_o_s_/_p_r_o_p_i_n_t_l_e_c_t_/_p_r_o_p_i_n_t_l_e_c_t_._h_t_m_l
+Sin embargo, en un sentido ético, en un texto modificado y mejorado
+comunitariamente, podríamos hablar de una titularidad colectiva, sin perjucio
+de la titularidad individual y sin colisión con la propiedad intelectual.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** YYoo ssooyy pprrooffeessoorr ¿¿ccóómmoo ppuueeddoo aappooyyaarr llaa ddooccuummeennttaacciióónn lliibbrree?? ********
+Un profesor juega un papel estratégico en la aceptación y difusión de la
+documentación libre en nuestra sociedad. Es por ello que es tan importante que
+si eres profesor, o conoces alguno, leas estas ideas para apoyar la
+documentación libre:
+    * Recomendar al alumnado la lectura y escritura ;) de documentación libre
+      en las materias que impartes. Lo cual es algo que fomentará un
+      aprendizaje activo y cooperativo entre el alumnado.
+    * Realizar prácticas en las que el alumno pueda generar documentación libre
+      con sus compañeros.
+    * Liberando tus propios textos, artículos, tesis doctorales con algún tipo
+      de licencia libre.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** CCoommoo pprrooffeessoorr ¿¿eenn qquuéé mmee bbeenneeffiicciiaarrííaa ggeenneerraarr ddooccuummeennttaacciióónn lliibbrree?? ********
+Cuando alguien genera un texto sobre un tema de investigación y lo comparte a
+través de Internet, ese alguien se convierte en una autoridad acerca del tema.
+Si lo hace utilizando una licencia libre recibirá una realimentación mucho
+mayor, en forma de comentarios, mejoras directas en el texto, ó incluso nuevos
+capítulos, ó secciones a añadir. De este modo, su texto y usted se convertirán
+en una referencia para mucha gente, durante bastante tiempo.
+Como profesor quizás la primera pregunta no debiera ser en qué le beneficia la
+documentación libre, sino también en qué beneficia a l@s alumn@s, a la
+universidad, o a la educación, el que desde la docencia se liberen textos y
+libros con licencias libres. En ese sentido, que en la Universidad Pública, al
+menos, debiera ser el primordial, las licencias libres presentan multitud de
+ventajas, tanto para el profesorado, como para l@s estudiantes y la comunidad
+educativa: Se garantiza el acceso universal a la enseñanza al posibilitar el
+uso de materiales de estudio que de otra manera estarían vedados, por su alto
+coste, a importantes capas de la población. Se realiza una de las grandes
+aspiraciones pedagógicas que seguramente todo profesor guarda entre sus razones
+vocacionales, la formación de individuos críticos, participativos, libres. Se
+renueva ¡ se revoluciona! la educación tradicional entendida como esa
+unipolaridad en la que el profesor emitía monotamente un discurso y el alumno
+lo recepcionaba para a su vez volver a repetirlo: con la participación en los
+materiales de estudio libres, el profesor también aprende, y enriquece sus
+propios conocimientos y establece esa dialéctica autocrítica que es el motor
+del progreso y del conocimiento. Y por último, la licencia GFDL hace inutil la
+memorización, la repetición, un texto libre sólo puede aprenderse, conocerse,
+leerse.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** ¿¿EEnn qquuéé bbeenneeffiicciiaa llaa ddooccuummeennttaacciióónn lliibbrree aa llaa eedduuccaacciióónn yy aa llaa ssoocciieeddaadd??
+********
+En primer lugar, los beneficios de la documentación libre no son solo la
+posibilidad de adquirir gratuitamente materiales de estudio por parte del
+alumnado. Las licencias libres son mucho más que eso y resultan útiles porque
+resultan fundamentales para entender dos principios básicos, no sólo de la
+educación, sino en general de cualquier tipo de lectura y escritura, que son:
+el conocimiento y el aprendizaje.
+Las licencias libres hacen posible el aprendizaje compartido, el sentido
+crítico, la lectura colectiva, el respeto al otro y a los otros a través de la
+escritura en común. Conceptos que parecían vacíos porque el sistema educativo
+no había, hasta ahora, encontrado las herramientas que los hicieran posibles.
+La distancia autor-lector, la edificación, por parte del imaginario colectivo,
+de personalidades creativas de caracter mítico, "el genio", emisoras de un
+conocimiento extraordinario e irrepetible que apenas necesitarán de un pobre
+receptor al otro lado de la escritura, todo ello queda abolido por el principio
+de libertad del copyleft.
+De este modo, la formación del saber en nuestra sociedad no tiene por qué ser
+solo obra de "visionarios" sino de la colectividad como sujeto e instrumento de
+su propio saber y de su propio progreso. En esto el ámbito educativo es básico,
+puesto que puede optar por formar a los individuos en la tradición cultural, y
+por tanto perpetuar un sistema propietario de la cultura, o por formar a las
+persona libremente, facilitando las herramientas y los medios para que las
+personas tengan al menos la posibilidad de ser personas libres.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** YYoo ssooyy eessttuuddiiaannttee ¿¿ccóómmoo ppuueeddoo aappooyyaarr llaa ddooccuummeennttaacciióónn lliibbrree?? ¿¿eenn qquuéé mmee
+bbeenneeffiicciiaarráá?? ********
+El modo que un estudiante tiene de apoyar la documentación libre son varias:
+    * Participar en la elaboración de materiales libres como elementos
+      complementarios a su aprendizaje.
+    * Informar al profesorado de materiales libres que puede utilizar en sus
+      asignaturas.
+    * Otorgar una licencia libre y publicar en internet los trabajos que
+      realice en sus estudios (prácticas, proyectos de fin de carrera, tesis
+      doctorales, etc.).
+Los beneficios de estas acciones serían los siguientes:
+    * Al participar en la elaboración de materiales libres de manera
+      complementaria a su aprendizaje el alumno expresa ante una comunidad sus
+      propias ideas de cómo ha entendido un concepto y ésta comunidad da su
+      aprobación, matiza, ó mejora lo expresado.
+    * Al informar al profesorado de materiales libres, el/la estudiante
+      encontrará orientación de cómo utilizarlos en el contexto de la
+      asignatura, así mismo el/la docente recibirá de manera positiva el
+      interés mostrado
+    * Otorgando una licencia libre y dándole difusión apropiada a un trabajo es
+      muy probable que el/la estudiante se vuelve en un referente de lo
+      aprendido para muchas personas, también recibirá realimentación al mismo
+      en forma de comentarios y mejoras al mismo.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** YYoo ssooyy uunnaa eeddiittoorriiaall ¿¿bbaajjoo qquuéé ttéérrmmiinnooss ppuueeddoo eeddiittaarr ddooccuummeennttaacciióónn lliibbrree??
+********
+Le recomendaría que leyera la _G_N_U_ _F_r_e_e_ _D_o_c_u_m_e_n_t_a_t_i_o_n_ _L_i_c_e_n_s_e ó su _t_r_a_d_u_c_c_i_ó_n_ _a_l
+_c_a_s_t_e_l_l_a_n_o, poniendo especial interés en los puntos 2 y 3 "VERBATIM COPYING"
+(COPIA LITERAL) y "COPYING IN QUANTITY" (COPIADO EN CANTIDAD).
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** ¿¿CCoonnssttiittuuyyee llaa ddooccuummeennttaacciióónn lliibbrree uunn ppeelliiggrroo ppaarraa llaass eeddiittoorriiaalleess
+ttrraaddiicciioonnaalleess?? ********
+Hay varias fórmulas desde las que las empresas editoriales hacen negocio con la
+documentación libre.
+Es posible que navegando por internet (ó de cualquier otro modo) una editorial
+se encuentre con un texto bajo una licencia copyleft que por sus contenidos y
+su aceptación piense que es posible venderlo. Hoy día hay editoriales como la
+americana _O_'_R_e_i_l_l_y ó la española _T_r_a_f_i_c_a_n_t_e_s_ _d_e_ _S_u_e_ñ_o_s que tienen un buen
+número de libros editados de este modo.
+Otra fórmula que utiliza la editorial italiana Mondadori es utilizar una
+licencia que permita la copia y modificación electrónica de los documentos,
+pero bajo la que se reserve la exclusiva de la edición impresa.
+Puesto que es posible hacer negocio de la documentación libre, las editoriales
+deberían ver la documentación libre como una oportunidad que eso sí, tal vez
+les haga replantearse ciertos aspectos de su modelo de negocio.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** ¿¿SSoonn ggrraattiiss llooss lliibbrrooss lliibbrreess?? ********
+Pueden ser adquiridos gratuitamente ó no.
+Los libros, textos, artículos, tesis, liberados con licencias libres pueden ser
+bajados sin coste de la red (si tienes acceso a tarifas ó semiplanas), pueden
+ser copiados y modificados respetando las licencias libres, pero también pueden
+ser adquiridos pagando un precio.
+En general a la gente le resulta más comodo para el estudio que adquirir el
+libro editado normalmente y a muchos no les importará pagar por ello. También
+habrá otros que querrán evitarse el trabajo de recopilar y descargarse
+documentos libres de internet y pagarán por tener un cd con todo el contenido
+que quieren, de la misma manera que ocurre con las distribuciones de software
+libre. Seguramente surjan otros modelos de negocio en relación a la
+documentación libre que ahora no podemos preveer.
+Los libros continuarán existiendo también en su configuración actúal, pero las
+licencias serán libres, lo cual redundará en su coste, pero sobre todo en su
+calidad, ya que los contenidos estarán permanentemente actualizados gracias a
+la lectura crítica y participativa.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** ¿¿QQuuéé pprrooyyeeccttooss eexxiisstteenn ddee ddooccuummeennttaacciióónn lliibbrree eenn ccaasstteellllaannoo?? ¿¿yy eenn oottrrooss
+iiddiioommaass?? ********
+Los proyectos de documentación libre más populares son aquellos que han servido
+para crear enciclopedias libres _W_i_k_i_p_e_d_i_a, _N_u_p_e_d_i_a, _E_n_c_i_c_l_o_p_e_d_i_a, ... con una
+pretensión más ó menos multilingüe y basados en wikis como éste.
+Existen proyectos universitarios en nuestro idioma como _a_l_q_u_a, un magnífico
+proyecto de difusión de textos académicos, centrado sobre todo en la creación
+en comunidad de contenidos técnicos y científicos. Y basada en el método de
+publicación y creación wiki, en la UNED tenemos _w_a_i_n_u_k_i, en la que se están
+construyendo las páginas para el intercambio y mejora de apuntes entre los
+estudiantes de las diversas facultades.
+Para clasificar documentación libre existe _G_n_u_t_e_m_b_e_r_g_ _F_r_e_e_ _D_o_c_u_m_e_n_t_a_t_i_o_n
+_D_a_t_a_b_a_s_e y en castellano _B_i_b_l_i_o_w_e_b, aunque éste último aún no ha abierto la
+clasificación de textos al gran público, debido a que el proyecto no está
+terminado.
+[http://www.gnutemberg.org/img/gnutemberg.png]
+Restrigiéndonos solamente a la libertad de copia, debemos destacar el _P_r_o_y_e_c_t_o
+_G_u_t_e_m_b_e_r_g, dónde podemos encontrar cientos de obras literarias clásicas, libres
+de derechos de autor.
+Por útimo del proyecto Alqua ha surgido el _p_r_o_y_e_c_t_o_ _L_i_b_r_o_s_ _A_b_i_e_r_t_o_s en el que
+se entiende, como aquí, la documentación libre como, en definitiva, una
+comunidad real de lectores..
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+******** LLiicceenncciiaa ddee eessttee ddooccuummeennttoo ********
+Derecho de Autor (c) 2003 Aluned. Se otorga permiso para copiar, distribuir y/
+o modificar este documento bajo los términos de la Licencia de Documentación
+Libre GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free
+Software Foundation; sin Secciones Invariantes, sin Textos de Portada, y sin
+Textos al respaldo de la página de título. Una copia de la licencia está
+incluida en el sitio de _G_N_U en _L_i_c_e_n_c_i_a_ _d_e_ _D_o_c_u_m_e_n_t_a_c_i_ó_n_ _L_i_b_r_e_ _G_N_U.
+                             [ _V_o_l_v_e_r_ _a_l_ _Í_n_d_i_c_e ]
+===============================================================================

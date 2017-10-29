@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>The Game of Life</title>
+<!-- 2014-08-24 dom 21:08 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">The Game of Life</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a></li>
+<li><a href="#sec-2">2. Data Structure</a></li>
+<li><a href="#sec-3">3. Neighborhoods</a></li>
+<li><a href="#sec-4">4. Life</a></li>
+<li><a href="#sec-5">5. License</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com/">Come back to davidam.com</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This is a simple game loved by the hacker culture. The game made its
+first public appearance in the October 1970 issue of Scientific
+American, by Comway's attempting to drastically simplify von Neumann's
+ideas about find a hypothetical machine that could build copies of
+itself.
+</p>
+
+<p>
+Life provides an example of emergence and self-organization. It is
+interesting for computer scientists, physicists, biologists,
+biochemists, economists, mathematicians, philosophers, generative
+scientists and others to observe the way that complex patterns can
+emerge from the implementation of very simple rules.
+</p>
+
+<p>
+A visual example about the implementation of life is the programs to
+generate fractals, but you can find life in your GNU/Emacs too, typing
+M-x life.
+</p>
+
+<p>
+In this article we explain a simple implementation in emacs lisp.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Data Structure</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The data structure is a table (array 2x2), I've implemented this idea
+with lists. For instance:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(setq table-example '((1 1 0 1) 
+                      (0 1 0 1) 
+                      (0 0 0 0) 
+                      (0 1 0 0)))
+</pre>
+</div>
+
+<p>
+I've implemented a small function to print it:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #00cdcd; font-weight: bold;">defun</span> <span style="color: #0000ee; font-weight: bold;">print-matrix</span> (matrix)
+  (interactive)
+  (setq size (length matrix))
+  (insert <span style="color: #00cd00;">"\n"</span>)
+  (<span style="color: #00cdcd; font-weight: bold;">dotimes</span> (i size)
+    (<span style="color: #00cdcd; font-weight: bold;">if</span> (/= i 0) (insert <span style="color: #00cd00;">"\n"</span>))
+    (<span style="color: #00cdcd; font-weight: bold;">dotimes</span> (j size)
+      (insert (format <span style="color: #00cd00;">"%d "</span> (elt (elt matrix i) j)))))
+  (insert <span style="color: #00cd00;">"\n"</span>))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Neighborhoods</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+A core function to implement the game of life is neighborhoods, this
+function receives the position and the matrix and returns how many
+neighborhoods there are.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #00cdcd; font-weight: bold;">defun</span> <span style="color: #0000ee; font-weight: bold;">neighborhoods</span> (i j matrix)
+<span style="color: #00cd00;">"Receives the position and the matrix and returns how many neighborhoods there are"</span>
+  (interactive)
+  (<span style="color: #00cdcd; font-weight: bold;">let</span> ((size (length matrix)))
+    (<span style="color: #00cdcd; font-weight: bold;">cond</span> 
+     <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">corners</span>
+     ((and (= i 0) (= j 0)) (+ 0 (elt (elt matrix 0) 1) (elt (elt matrix 1) 0) (elt (elt matrix 1) 1)))
+     ((and (= i 0) (= j (- size 1))) (+ 0 (elt (elt matrix 0) (- size 2)) (elt (elt matrix 1) (- size 2)) (elt (elt matrix 1) (- size 1))))
+     ((and (= i (- size 1)) (= j 0)) (+ 0 (elt (elt matrix (- size 2)) 0) (elt (elt matrix (- size 2)) 1) (elt (elt matrix (- size 1)) 1)))
+     ((and (= i (- size 1)) (= j (- size 1))) (+ 0 (elt (elt matrix (- i 1)) (- j 1)) (elt (elt matrix (- i 1)) j) (elt (elt matrix i) (- j 1))))
+     <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">awns</span>
+     ((and (= i 0) (&gt; j 0) (not (= j (- size 1)))) (+ (elt (elt matrix 0) (+ j 1)) (elt (elt matrix 0) (- j 1)) (elt (elt matrix 1) (+ j 1)) (elt (elt matrix 1) j) (elt (elt matrix 1) (- j 1)))) <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">superior probada</span>
+     ((and (not (= i (- size 1))) (&gt; i 0) (= j 0)) (+ (elt (elt matrix (+ i 1)) 0) (elt (elt matrix (- i 1)) 0) (elt (elt matrix (+ i 1)) 1) (elt (elt matrix i) 1) (elt (elt matrix (- i 1)) 1))) <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">izquierda probada</span>
+     ((and (= i (- size 1)) (&gt; j 0) (not (= j (- size 1)))) (+ (elt (elt matrix (- i 1)) (- j 1)) (elt (elt matrix (- i 1)) j) (elt (elt matrix (- i 1)) (+ j 1)) (elt (elt matrix i) (- j 1)) (elt (elt matrix i) (+ j 1)))) <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">inferior (probada)</span>
+     ((and (not (= i (- size 1))) (&gt; i 0) (= j (- size 1))) (+ (elt (elt matrix (- i 1)) (- j 1)) (elt (elt matrix (- i 1)) j) (elt (elt matrix i) (- j 1)) (elt (elt matrix (+ i 1)) j))) <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">derecha (probada)</span>
+     <span style="color: #cdcd00;">;; </span><span style="color: #cdcd00;">rest</span>
+     ((and (not (= i 0)) (not (= j 0)) (not (= i (- size 1))) (not (= j (- size 1)))) (+ 0 (elt (elt matrix (- i 1)) (- j 1)) (elt (elt matrix (- i 1)) j) (elt (elt matrix (- i 1)) (+ j 1)) (elt (elt matrix i) (- j 1)) (elt (elt matrix i) (+ j 1)) (elt (elt matrix (+ i 1)) (- j 1)) (elt (elt matrix (+ i 1)) j) (elt (elt matrix (+ i 1)) (+ j 1))))
+     )))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Life</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+In life game we've a matrix with cells in two states (live or dead)
+and there are the next rules for change from the state live to dead.
+</p>
+
+<ol class="org-ol">
+<li>Any live cell with fewer than two live neighbours dies, as if
+caused by under-population.
+</li>
+<li>Any live cell with two or three live neighbours lives on to the
+next generation.
+</li>
+<li>Any live cell with more than three live neighbours dies, as if by
+overcrowding.
+</li>
+<li>Any dead cell with exactly three live neighbours becomes a live
+cell, as if by reproduction.
+</li>
+</ol>
+
+<p>
+An implementation of this rules in emacs lisp are:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #00cdcd; font-weight: bold;">defun</span> <span style="color: #0000ee; font-weight: bold;">comway-rules</span> (i j table)
+  (interactive)
+  (<span style="color: #00cdcd; font-weight: bold;">cond</span> ((and (= 1 (elt (elt table i) j)) (&lt; 2 (neighborhoods i j table)) 0))
+                            ((and (= 1 (elt (elt table i) j)) (or (= 2 (neighborhoods i j table)) (= 3 (neighborhoods i j table)))) 1)
+                            ((and (= 1 (elt (elt table i) j)) (&lt; 3 (neighborhoods i j table))) 0)
+                            ((and (= 0 (elt (elt table i) j)) (= 3 (neighborhoods i j table))) 1)
+                            (t (elt (elt table i) j))
+                            ))
+</pre>
+</div>
+
+<p>
+Now, a function to apply this rules in a table:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #00cdcd; font-weight: bold;">defun</span> <span style="color: #0000ee; font-weight: bold;">apply-comway-rules-list</span> (table)
+  (interactive)
+  (setq table-res nil)
+  (<span style="color: #00cdcd; font-weight: bold;">dotimes</span> (i (length table))
+     (setq list-res nil)
+     (<span style="color: #00cdcd; font-weight: bold;">dotimes</span> (j (length (elt table i)))
+       (setq list-res (cons (comway-rules i j table) list-res)))
+     (setq table-res (cons list-res table-res)))
+  table-res
+)
+</pre>
+</div>
+
+<p>
+Now finally, we can write the full game of life:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #00cdcd; font-weight: bold;">defun</span> <span style="color: #0000ee; font-weight: bold;">comway-life</span>(table gen)
+  (interactive <span style="color: #00cd00;">"NNumber of generations: \n"</span> gen)
+  (setq table-ej '((1 1 0 1) (0 1 0 1) (0 0 0 0) (0 1 0 0)))
+  (<span style="color: #00cdcd; font-weight: bold;">if</span> (eq table-ej nil)
+      (setq table table-ej))
+  (<span style="color: #00cdcd; font-weight: bold;">dotimes</span> (i gen)
+    (insert (format <span style="color: #00cd00;">"\nGeneration %d\n-------------"</span> i))
+    (print-matrix table)
+    (setq table (apply-comway-rules-list table))))
+</pre>
+</div>
+
+<p>
+To execute it:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(comway-life table-example 14)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> License</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Copyright (C) 2014 David Arroyo Menéndez
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in <a href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.
+</p>
+
+
+<div class="figure">
+<p><a href="https://www.gnu.org/copyleft/fdl.html"><img src="../img/licenses/gfdl/gfdl.png" alt="gfdl.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2014-08-24 dom 21:08</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

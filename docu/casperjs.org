@@ -1,0 +1,343 @@
+#+TITLE: CasperJS
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
+#+BABEL: :results output :session
+
+* Introducción
+
+Los tests que son hechos por humanos se hacen desde el navegador y
+haciendo el énfasis en lo que se ve. Los tests hechos por CasperJS son
+hechos en JS para simular la acción de los humanos.
+
+* Login: Hagamos algo
+
+Para hacer un login se podría simular de la siguiente manera:
+
+#+BEGIN_SRC js
+
+var casper = require('casper').create();
+
+casper.start('http://dominio, function() {
+    this.fill('form#user-login-form', {
+        'name':    'nombre',
+        'pass':    'pass',
+    }, true);
+});
+
+casper.run(function() {
+    this.echo('message sent').exit();
+});
+
+casper.thenOpen('http://dominio/page, function() {
+    this.echo(this.getTitle());
+});
+
+#+END_SRC
+
+Primero se crea el objeto casper, seguidamente se inicia y se rellenan
+los campos de formulario y ya estamos listos para acceder a páginas
+que requerían autenticación.
+
+Después llamamos a casper con 
+
+#+BEGIN_SRC bash
+$ casperjs login.js
+#+END_SRC
+
+* Navegación: Chequeando enlaces
+
+Un test que puede ser de interés es navegar por las páginas de nuestro
+sitio web.
+
+#+BEGIN_SRC js
+
+var casper = require('casper').create();
+
+casper.start('http://www.gnu.org', function() {
+    this.echo(this.getTitle());
+});
+
+casper.run(function() {
+    this.echo('message sent').exit();
+});
+
+casper.thenOpen('http://gnu.org/education/education.html', function() {
+    this.echo(this.getTitle());
+});
+
+casper.thenOpen('http://gnu.org/licenses/licenses.html', function() {
+    this.echo(this.getTitle());
+});
+
+#+END_SRC
+
+Después llamamos a casper con 
+
+#+BEGIN_SRC bash
+$ casperjs navigation.js
+#+END_SRC
+
+Tal vez haya gente que prefiera automatizar las cuestiones de revisar
+enlaces rotos con [[https://www.drupal.org/project/linkchecker][link checker]], pero este código sí sirve de ejemplo
+de juguete para ir aprendiendo CasperJS.
+
+Una opción más profesional a la revisión de enlaces con CasperJS nos
+la da [[ https://github.com/iroy2000/casper-netsniff-spider][Netsniff Spider]].
+
+* Visible: Qué se pinta, qué se ve
+
+Es posible determinar si un elemento de la web es visible o no. Veamos
+un ejemplo:
+
+#+BEGIN_SRC js
+
+var casper = require('casper').create();
+
+casper.start('http://google.com/', function() {
+    if (this.visible('#hplogo')) {
+        this.echo("I can see the logo");
+    } else {
+        this.echo("I can't see the logo");
+    }
+});
+
+
+casper.run();
+
+#+END_SRC
+
+Después llamamos a casper con 
+
+#+BEGIN_SRC bash
+$ casperjs visible.js
+#+END_SRC
+
+* Viewport: Automatizando diferentes tamaños de pantalla
+
+Otra cuestión que se puede automatizar con CasperJS es ver si un sitio
+web se ve bien con diferentes tamaños de pantalla lo que se suele
+llamar responsive. Veamos el siguiente código:
+
+#+BEGIN_SRC js
+
+var casper = require("casper").create();
+
+var screenshotUrl = 'http://google.com/',
+    screenshotNow = new Date(),
+    screenshotDateTime = screenshotNow.getFullYear() + pad(screenshotNow.getMonth() + 1) + pad(screenshotNow.getDate()) + '-' + pad(screenshotNow.getHours()) + pad(screenshotNow.getMinutes()) + pad(screenshotNow.getSeconds()),
+    viewports = [
+      {
+        'name': 'smartphone-portrait',
+        'viewport': {width: 320, height: 480}
+      },
+      {
+        'name': 'smartphone-landscape',
+        'viewport': {width: 480, height: 320}
+      },
+      {
+        'name': 'tablet-portrait',
+        'viewport': {width: 768, height: 1024}
+      },
+      {
+        'name': 'tablet-landscape',
+        'viewport': {width: 1024, height: 768}
+      },
+      {
+        'name': 'desktop-standard',
+        'viewport': {width: 1280, height: 1024}
+      }
+    ];
+
+if (casper.cli.args.length < 1) {
+  casper
+    .echo("Usage: $ casperjs screenshots.js http://example.com")
+    .exit(1)
+  ;
+} else {
+  screenshotUrl = casper.cli.args[0];
+}
+
+casper.start(screenshotUrl, function() {
+  this.echo('Current location is ' + this.getCurrentUrl(), 'info');
+});
+
+casper.each(viewports, function(casper, viewport) {
+  this.then(function() {
+    this.viewport(viewport.viewport.width, viewport.viewport.height);
+  });
+  this.thenOpen(screenshotUrl, function() {
+    this.wait(5000);
+  });
+  this.then(function(){
+    this.echo('Screenshot for ' + viewport.name + ' (' + viewport.viewport.width + 'x' + viewport.viewport.height + ')', 'info');
+    this.capture('screenshots/' + screenshotDateTime + '/' + viewport.name + '-' + viewport.viewport.width + 'x' + viewport.viewport.height + '.png', {
+        top: 0,
+        left: 0,
+        width: viewport.viewport.width,
+        height: viewport.viewport.height
+    });
+  });
+});
+
+casper.run();
+
+function pad(number) {
+  var r = String(number);
+  if ( r.length === 1 ) {
+    r = '0' + r;
+  }
+  return r;
+}
+
+#+END_SRC
+
+Podemos llamar a este código con algo similar a:
+
+#+BEGIN_SRC bash
+$ casperjs screenshot.js http://misitio.com 
+#+END_SRC
+
+Y crea un directorio screenshots con una serie de pantallazos en las
+diferentes resoluciones.
+
+* Scraping en Google Translate
+
+Mientras el html no cambia es posible hacer scraping web para tener
+scripting de cosas que se nos devuelve por Internet. Veamos un
+ejemplo, usando google translate:
+
+#+BEGIN_SRC js
+var system = require('system'),
+    casper = require('casper').create(),
+    format = require('utils').format,
+    source = casper.cli.get('source') || 'auto',
+    target = casper.cli.get('target'),
+    text   = casper.cli.get(0),
+    result;
+
+if (!target) {
+    casper.warn('The --target option is mandatory.').exit(1);
+}
+
+casper.start(format('http://translate.google.com/#%s/%s/%s', source, target, text), function() {
+    this.fill('form#gt-form', {text: text});
+}).waitForSelector('span.hps', function() {
+    this.echo(this.fetchText("#result_box"));
+});
+
+casper.run();
+#+END_SRC
+
+Ahora se puede utilizar con 
+
+#+BEGIN_SRC bash
+$ casperjs translate.js --target='es' "hello world"
+#+END_SRC
+
+* Testing
+
+Básicamente las herramientas de test actuales se basan en crear
+asertos/aserciones, veamos un ejemplo de esto en CasperJS:
+
+#+BEGIN_SRC js
+var x = require('casper').selectXPath;
+
+casper.test.begin('Tests homepage structure', 7, function suite(test) {
+
+  casper.start('http://www.davidam.com', function() {
+    // Verify that the main menu links are present.
+    test.assertExists('a.org-effectiveness', '"Org Effectiveness" link is found.');
+    test.assertExists('a.drupal-el', '"Drupal el" link is found.');
+    test.assertExists('a.orgmode-drupal', '"Orgmode Drupal" link is found.');
+
+    casper.waitForSelector(x("//*[normalize-space(text())='Traducción de una Introducción a GCC']"),
+       function success() {
+           test.assertExists(x("//*[normalize-space(text())='Traducción de una Introducción a GCC']"));
+         },
+       function fail() {
+           test.assertExists(x("//*[normalize-space(text())='Traducción de una Introducción a GCC']"));
+       });
+    casper.waitForSelector(x("//*[normalize-space(text())='fuentes']"),
+       function success() {
+           test.assertExists(x("//*[normalize-space(text())='fuentes']"));
+       },
+       function fail() {
+           test.assertExists(x("//*[normalize-space(text())='fuentes']"));
+       });
+    casper.waitForSelector(x("//*[normalize-space(text())='Traducción de Guía Compacta de Org Mode']"),
+       function success() {
+           test.assertExists(x("//*[normalize-space(text())='Traducción de Guía Compacta de Org Mode']"));
+         },
+       function fail() {
+           test.assertExists(x("//*[normalize-space(text())='Traducción de Guía Compacta de Org Mode']"));
+       });
+
+    // 10 articles should be listed.
+    test.assertElementCount('.box', 10, '10 boxes are listed.');
+  });
+
+  casper.run(function() {
+    test.done();
+  });
+});
+  
+  
+#+END_SRC
+
+Se puede utilizar con
+
+#+BEGIN_SRC js
+$ casperjs test davidam-test.js
+#+END_SRC
+
+* Resurrectio
+
+¿Eres de los que piensan que programar es aburrido? Eres un fantasma
+que merece una resurrección :D. [[https://github.com/ebrehault/resurrectio][Resurrectio]] permite generar código
+CasperJS, mientras tu haces clicks de ratón y escribes en el navegador.
+
+* Performance 
+
+También es posible chequear tiempos de carga con CasperJS:
+
+#+BEGIN_SRC js
+var casper = require("casper").create();
+var start = new Date().getTime();
+var links = [
+    "http://google.com/",
+    "http://yahoo.com/",
+    "http://duckduckgo.com/",
+    "http://bing.com/"
+];
+
+casper.start();
+
+casper.each(links, function(self, link) {
+    this.thenOpen(link, function() {
+        var now = new Date().getTime();
+        this.echo(link + ' loaded in ' + (now - start) + 'ms');
+        start = now;
+    });
+});
+
+casper.run();
+#+END_SRC
+
+* Referencias
+
++ https://www.lullabot.com/articles/testing-the-front-end-with-casperjs
++ http://docs.casperjs.org/en/latest/
++ https://gist.github.com/nhoizey/4060568
++ http://fourkitchens.com/blog/article/testing-drupal-casperjs
++ https://github.com/iroy2000/casper-netsniff-spider
++ https://github.com/n1k0/casperjs.git
++ https://github.com/ebrehault/resurrectio
++ https://gist.github.com/n1k0/2906650
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]
+
+

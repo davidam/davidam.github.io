@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+               "/usr/share/sgml/docbook/dtd/xml/4.2/docbookx.dtd">
+
+<article lang='es'>
+  <articleinfo>
+    <title>Pr&aacute;ctica de SIEA</title>
+    <author>
+      <firstname>David</firstname>
+      <surname>Arroyo Men&eacute;ndez</surname>
+    </author>
+    <legalnotice>
+      <para>	Copyright (c)  2004  David Arroyo Men&eacute;ndez
+	Se otorga permiso para copiar, distribuir, y/&oacute; modificar este documento
+	bajo los t&eacute;rminos de la GNU Free Documentation License, Version 1.1
+	&oacute; cualquier versi&oacute;n posterior publicada por la Free Software Foundation;
+	sin secciones invariantes, ni textos de portada, &oacute; contraportada 
+	Una copia de &eacute;sta licencia es incluida la secci&oacute;n titulada "GNU
+	Free Documentation License del documento fuente"
+      </para>
+    </legalnotice>
+  </articleinfo>
+
+  <sect1 id="intro">
+    <title>Introducci&oacute;n</title>
+
+    <para>El objetivo de esta pr&aacute;ctica es realizar un sistema adaptativo que ayude al alumnado de la asignatura Sistemas Interactivos de Ense&ntilde;anza Aprendizaje (en adelante SIEA) a interactuar tanto con compa&ntilde;eros y profesores, como con las actividades de la asignatura y la plataforma que la soporta.</para>
+
+    <para>Debido a la experiencia que ya ten&iacute;a con <ulink url="http://www.innova.uned.es">aLF2</ulink> se acord&oacute; con el equipo docente que pod&iacute;a ser interesante hacer la pr&aacute;ctica con esta plataforma en lugar de con alguna de las propuestas de manera oficial.</para>
+
+    <para>He dividido la pr&aacute;ctica en las siguientes secciones:</para>
+
+    <para><remark>Caracter&iacute;sticas del Curso:</remark> Se explican los objetivos del curso y brevemente las caracter&iacute;sticas de la plataforma sobre la que se har&aacute; la adaptaci&oacute;n.
+</para>
+
+    <para><remark>Tareas de Adaptaci&oacute;n:</remark> Se describen las tareas de adaptaci&oacute;n a realizar seg&uacute;n la teor&iacute;a del cap&iacute;tulo 5 del libro base de la asignatura. Esta secci&oacute;n tiene las siguientes subsecciones: Modelo pedag&oacute;gico y del dominio, modelo del estudiante, objetivos de la adaptaci&oacute;n y m&eacute;todos y t&eacute;cnicas de adaptaci&oacute;n.</para>
+
+    <para><remark>Datos a Recoger:</remark> Aqu&iacute; se desarrolla qu&eacute; datos se recoger&aacute;n en funci&oacute; del tipo de adaptaci&oacute;n propuesta.</para>
+
+  </sect1>
+
+
+  <sect1 id="caract">
+    <title>Caracter&iacute;sticas del Curso</title>
+
+    <para>La plataforma elegida para el curso ser&iacute;a <ulink url="http://www.innova.uned.es">aLF2</ulink>. Esta plataforma tiene una serie de aplicaciones adecuadas para la ense&ntilde;anza/aprendizaje a trav&eacute;s de internet (foros, calendario, actividades, &aacute;rea de almacenamiento, etc.), tanto en un &aacute;rea personal como de grupo (curso, comunidad, ...). Es, por tanto, una herramienta de soporte a la colaboraci&oacute;n, tambi&eacute;n conocida como CSCL (Computer Support Collaborative Learning).</para>
+
+    <para>Las interacciones de los usuarios con la plataforma son almacenadas en una base de datos</para>
+
+    <para>El objetivo de SIEA es (cito textualmente de la gu&iacute;a did&aacute;ctica) <emphasis>conseguir que los alumnos del segundo curso del Segundo Ciclo de la Escuela Superior de de Ingenier&iacute;a Inform&aacute;tica de la UNED que lo deseen sean capaces de adquirir las bases que fundamentan el desarrollo y uso de estos sistemas.</emphasis></para>
+
+    <para><emphasis>A modo de introducci&oacute;n se puede decir que entendemos como SIEA a los sistemas que en el campo de la educaci&oacute;n utilizan fundamentalmente las t&eacute;cnicas y los recursos provenientes del campo de la Inteligencia Artificial (IA) para adaptar la respuesta que le proporciona al usuario/alumno (por ejemplo, a modo de recomendaciones de navegaci&oacute;n).</emphasis></para>
+
+    <para><emphasis>Los objetivos principales de esta asignatura son:</emphasis></para>
+
+    <itemizedlist>
+      <listitem>
+	<para><emphasis>Describir los puntos fundamentales que han de considerarse a la hora de realizar un software educativo</emphasis></para>
+      </listitem>
+      <listitem>
+	<para><emphasis>Destacar los aspectos metodol&oacute;gicos del desarrollo de estos sistemas</emphasis></para>
+      </listitem>
+      <listitem>
+	<para><emphasis>Mostrar c&oacute;mo pueden combinarse en el desarrollo de los SIEAs principios  y modelos provenientes del campo de la educaci&oacute;n con herramientas y t&eacute;cnicas (fundamentalmente del campo de la IA)</emphasis></para>
+      </listitem>
+      <listitem>
+	<para><emphasis>Describir los procesos de adaptaci&oacute;n en los SIEAs</emphasis></para>
+      </listitem>
+    </itemizedlist>
+
+    <para>En la asignatura SIEA existen unos contenidos en formato libro, no obstante, para un mejor aprovechamiento de la pr&aacute;ctica supondr&eacute; que tambi&eacute;n existen v&iacute;a web. As&iacute; mismo, es necesario entregar un trabajo evaluable y, finalmente, realizar un examen que solo puede realizarse tras haber superado el trabajo. Tambi&eacute;n hay otros medios de apoyo como un sitio web de la asignatura, un tel&eacute;fono de contacto en unas determinadas horas y direcci&oacute;n de correo electr&oacute;nico y postal.</para>
+
+    <para>Los contenidos pueden accederse en cualquier orden tanto a trav&eacute;s del libro como del sitio web.</para>
+
+  </sect1>
+
+  <sect1 id="tareas">
+    <title>Tareas de Adaptaci&oacute;n</title>
+
+    <para>Antes de entrar de lleno en las tareas de adaptaci&oacute;n definiremos el modelo pedag&oacute;gico y de dominio (de manera muy breve), as&iacute; como el modelo del estudiante (d&oacute;nde se fijar&aacute;n las caracter&iacute;sticas del usuario a adaptar). Seguidamente, fijaremos los objetivos de la adaptaci&oacute;n. Finalmente, especificaremos los m&eacute;todos y t&eacute;cnicas de adaptaci&oacute;n a utilizar.</para>
+
+    <sect2>
+      <title>Modelo Pedag&oacute;gico y del Dominio</title>
+
+<!-- igual ser&iacute;a interesante definir cada cosa -->
+
+      <para>En las caracter&iacute;sticas del curso ya hemos hablado someramente acerca del dominio. En nuestro caso, &eacute;ste es b&aacute;sicamente los cap&iacute;tulos del libro "Sistemas Interactivos de Ense&ntilde;anza/Aprendizaje, Editorial Sanz y Torres". El dominio es demasiado amplio para hacer una representaci&oacute;n uml, &oacute; mediante alg&uacute;n otro lenguaje formal. Destacar&eacute; que nos encontramos ante un dominio no cerrado que es un campo abierto de investigaci&oacute;n</para>
+
+      <para>Por todo lo dicho en el p&aacute;rrafo anterior parece interesante dise&ntilde;ar una herramienta de ense&ntilde;anza/aprendizaje mediante las aproximaciones m&aacute;s constructivistas (se permitir&aacute; el acceso a m&uacute;ltiples recursos, se facilitar&aacute; la comunicaci&oacute;n con otros alumnos, etc.), aunque en mi dise&ntilde;o no eliminar&eacute; las posibilidades de tutorizaci&oacute;n convencional (sigue existiendo la figura del docente, existe un examen, etc.) y tutorizaci&oacute;n mediante aprendizaje autom&aacute;tico (se realizar&aacute;n consejos v&iacute;a web y v&iacute;a mail, habr&aacute; adaptaci&oacute;n de enlaces e incluso de contenido, todo ello s&oacute;lo cuando se vea necesario tratando de no molestar al estudiante.).</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Modelo del Estudiante</title>
+
+      <para>Un modelo es una representaci&oacute;n formal de una realidad, cada estudiante tiene cientos de atributos (peso, nombre, edad, amigos, etc.) que le caracterizan, sin embargo, nosotros tan solo formalizaremos aquellos que m&aacute;s adelante nos puedan servir para hacer adaptaci&oacute;n.</para>
+
+      <para>He dividido los atributos posibles en: conocimientos, objetivos, procedencia y experiencia en el hiperespacio.</para>
+
+      <para><remark>Conocimientos:</remark> Aqu&iacute; me refiero a la parte del modelo del dominio que el sistema le da por al alumno como asimilada. Como ya hemos dicho &eacute;stos podr&iacute;an ser los cap&iacute;tulos del libro y/o los conceptos que en &eacute;l se explican. Estos datos podr&iacute;an inferirse en base a p&aacute;ginas visitadas, test realizados, otras interacciones en la plataforma, ... </para>
+
+      <para><remark>Objetivos:</remark> Los objetivos que un/a alumno/a de la asignatura tiene son b&aacute;sicamente aprobar la pr&aacute;ctica, maximizar su nota en el examen y adquirir el mayor n&uacute;mero de conocimientos acerca de SIEA. Para aprobar la pr&aacute;ctica el/la estudiante tendr&aacute; subobjetivos como entender la especificaci&oacute;n, adquirir los conocimientos necesarios y realizar la pr&aacute;ctica en s&iacute;. Para maximizar la nota del examen el/la alumno/a tendr&aacute; subobjetivos como adquirir conocimientos necesarios y destrezas adecuadas resolviendo ex&aacute;menes de SIEA.</para>
+
+      <para><remark>Procedencia:</remark> Nos interesar&aacute; saber quiz&aacute;s mediante un test &oacute; de alg&uacute;n otro modo si el alumno ha tenido alg&uacute;n tipo de experiencia previa con los contenidos que se imparten en la asignatura, ya sea por motivos profesionales &oacute; acad&eacute;micos.</para>
+
+      <para><remark>Experiencia en el hiperespacio:</remark> Tambi&eacute;n parece interesante la experiencia que pueda tener el/la estudiante en internet, no tendr&aacute; el mismo comportamiento el alumno no familiarizado con el medio que aquel que lo utiliza a diario y, que tal vez es su trabajo.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Objetivos de la Adaptaci&oacute;n</title>
+
+      <para>En un SIEA es posible hacer adaptaci&oacute;n a la presentaci&oacute;n (el modo en el que se muestran los contenidos), la navegaci&oacute;n (qu&eacute; enlaces aparecer&aacute;n y c&oacute;mo), &oacute; la colaboraci&oacute;n (c&oacute;mo y con qui&eacute;n interactuar).</para>
+
+      <sect3>
+	<title>Presentaci&oacute;n Adaptativa</title>
+
+	<para>Una de las t&eacute;cnicas t&iacute;picas de los Sistemas Tutoriales Inteligentes (STI) es hacer sistemas basados en reglas para adaptar la presentaci&oacute;n. Es decir, es posible afirmar que para poder entender una lecci&oacute;n &oacute; un concepto, era necesario haber asimilado otro u otros. Para evaluar si el alumno hab&iacute;a asimilado un determinado concepto es posible examinar las trazas de navegaci&oacute;n y/&oacute; realizar test &oacute; ejercicios de autoevaluaci&oacute;n. Esta t&eacute;cnica tiene una buena aplicaci&oacute;n en &aacute;reas de conocimiento fuertemente estructuradas como las matem&aacute;ticas, la programaci&oacute;n, la f&iacute;sica, ... Pero no parece demasiado &uacute;til en el dominio que nos ocupa.</para>
+
+	<para>No obstante, parece &uacute;til aprovechar el conocimiento adquirido y experiencia previa del alumno para mostrar unos contenidos u otros. Por lo que no se descarta la utilizaci&oacute;n de alguna t&eacute;cnica <quote>suave</quote> de presentaci&oacute;n adaptativa.</para>
+
+      </sect3>
+
+      <sect3>
+	<title>Navegaci&oacute;n Adaptativa</title>
+
+	<para>El elemento principal de adaptaci&oacute;n ser&aacute; un <emphasis>espacio de consejos</emphasis> que aparecer&aacute; tanto desde el &aacute;rea del alumno, como desde el &aacute;rea del curso, aunque con diferentes objetivos. En el &aacute;rea del alumno aparecer&iacute;an consejos de cualquier comunidad &oacute; curso al que pertenezca y los consejos del curso ser&iacute;an espec&iacute;ficos de &eacute;ste. En dicha &aacute;rea se recomendar&iacute;a una parte del curso a trabajar, realizar una tarea &oacute; actividad, investigar acerca de un recurso externo, etc.</para>
+
+	<para>Otro elemento interesante de adaptaci&oacute;n con un objetivo similar al anterior (consejos acerca de una pr&oacute;xima tarea pedag&oacute;gica) puede ser el <emphasis>env&iacute;o de correo electr&oacute;nico</emphasis>.</para>
+
+	<para>Para este curso tambi&eacute;n puede ser interesante hacer adaptaci&oacute;n a <emphasis>enlaces locales no contextuales</emphasis> (independientes del contenido, como por ej. recursos externos), al <emphasis>&iacute;ndice del curso</emphasis>, &oacute; a <emphasis>mapas</emphasis> del curso si los hubiera. Lo que no se har&aacute; es adaptaci&oacute;n a enlaces locales (me refiero a enlaces que est&aacute;n embebidos en el contenido del curso).</para>
+
+      </sect3>
+
+      <sect3>
+	<title>Colaboraci&oacute;n Adaptativa</title>
+
+	<para>Los elementos principales de adaptaci&oacute;n ser&aacute;n de nuevo el <emphasis>correo electr&oacute;nico</emphasis> y el <emphasis>espacio de consejos</emphasis>. Pero en este caso los consejos ser&iacute;an del tipo <emphasis>le recomendamos que visite/intervenga en este hilo/mensaje del foro</emphasis>, <emphasis>es posible que le resulte interesante visitar la p&aacute;gina de interacciones de este usuario</emphasis> (por ej: a un usuario inactivo recomendarle la de un usuario activo, &oacute; a un usuario activo, pero poco colaborativo, la de uno activo y colaborativo). &Oacute; consejos m&aacute;s gen&eacute;ricos como <emphasis>utilice m&aacute;s el foro</emphasis>, <emphasis>suba documentos al &aacute;rea del curso</emphasis>, etc.</para>
+
+      </sect3>
+
+    </sect2>
+
+    <sect2>
+      <title>M&eacute;todos y T&eacute;cnicas de Adaptaci&oacute;n</title>
+
+      <para>Ahora que ya sabemos qu&eacute; adaptar puede ser interesante empezar a pensar en c&oacute;mo adaptar.</para>
+
+      <sect3>
+	<title>Presentaci&oacute;n Adaptativa</title>
+
+	<para>Para el dominio en el que estamos trabajando la t&eacute;cnica que parece m&aacute;s interesante utilizar es la de <emphasis>texto expansible</emphasis>. Esto es que en funci&oacute;n de la actividad del usuario al pasar el puntero por un determinado concepto se expandir&aacute; un texto explicativo del mismo.</para>
+
+	<para>Aunque a priori no se vea demasiado inter&eacute;s, tampoco estar&iacute;a de m&aacute;s experimentar con t&eacute;cnicas de texto condicional &oacute; de variantes de fragmentos y p&aacute;ginas.</para>
+
+      </sect3>
+
+      <sect3>
+	<title>Adaptaci&oacute;n a la Navegaci&oacute;n</title>
+
+	<para>Los consejos comentados en el apartado anterior servir&aacute;n de <emphasis>gu&iacute;a global</emphasis> al alumno. Esto es ayudar al usuario a encontrar el camino m&aacute;s corto para conseguir sus objetivos. Estos consejos se ordenar&aacute;n seg&uacute;n la relevancia que tengan para el usuario, haciendo uso de la t&eacute;cnica de <emphasis>ordenaci&oacute;n de enlaces</emphasis></para>
+
+	<para>Mediante <emphasis>ocultaci&oacute;n de enlaces</emphasis>, as&iacute; como cambios de tama&ntilde;o &oacute; color se realizar&aacute;n <emphasis>ayudas a la orientaci&oacute;n local</emphasis>. Esto es, ayudar al usuario a orientarse localmente en el hiperespacio, por ejemplo limitando el n&uacute;mero de opciones de navegaci&oacute;n. Especialmente &uacute;til para los usuarios que no est&aacute;n demasiado familiarizados con el medio.</para>
+
+      </sect3>
+
+    </sect2>
+
+  </sect1>
+  <sect1 id="mineria">
+    <title>Datos a Recoger</title>
+
+    <para>Ahora que ya sabemos qu&eacute; hacer necesitamos la materia prima para hacerlo, esto son los datos de las interacciones de cada usuario en el sistema para poder realizar los distintos modelos de usuario. Ya hemos dicho que estos datos se encuentran almacenados en una base de datos a la que podemos acceder, sin embargo, ahora queda que tengan significado para nuestros prop&oacute;sitos.</para>
+
+    <para>Para poder deducir objetivos, procedencia, intereses y experiencia previa de un usuario en el hiperespacio se realizar&aacute; una encuesta directa en el momento de alta en el curso. Esta encuesta ser&aacute; los datos iniciales sobre los que construiremos nuestro modelo de usuario. No obstante, este modelo se ir&aacute; modificando en funci&oacute;n de las interacciones de los usuarios en los distintos medios de nuestro sistema.</para>
+
+    <sect2>
+      <title>Presentaci&oacute;n Adaptativa</title>
+
+      <para>Se har&aacute; uso de la t&eacute;cnica de texto expansible cuando queden unos pocos conceptos por aprender y haya que hacer un mayor &eacute;nfasis en &eacute;stos. Para ello necesitamos conocer los conocimientos aprendidos por el alumno. &Eacute;stos se van a deducir en funci&oacute;n de qu&eacute; p&aacute;ginas ha visitado el alumno y a partir del uso de palabras clave que el alumno ha utilizado en el foro, las respuestas relativas a conocimientos previos podr&iacute;an tenerse en cuenta, aunque en menor medida. A partir de estas interacciones se utilizar&iacute;a alguna t&eacute;cnica de aprendizaje autom&aacute;tico para determinar si el alumno aprendi&oacute; &oacute; no el concepto.</para>
+
+      <para>Somos conscientes de que muchos alumnos optar&aacute;n por la versi&oacute;n impresa para adquirir los conocimientos necesarios. Pero esto no es un problema debido a la adaptaci&oacute;n propuesta.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Adaptaci&oacute;n a la Navegaci&oacute;n y a la Colaboraci&oacute;n</title>
+
+      <para>He juntado estos dos tipos de adapataci&oacute;n en este apartado, debido a que para realizarlo necesitamos datos muy similares. En ambos casos necesitaremos realizar consejos, para ello tendremos en cuenta la procedencia, los objetivos y la experiencia en el hiperespacio del alumno (&eacute;stos ser&aacute; m&aacute;s &oacute; menos est&aacute;tico y quedar&aacute; definido por la encuesta previa). Sin embargo, los conocimientos adquiridos y los objetivos conseguidos, as&iacute; como el perfil del alumno ser&aacute;n par&aacute;metros que variar&aacute;n m&aacute;s durante el curso.</para>
+
+      <para>En el p&aacute;rrafo anterior he introducido la palabra perfil para determinar si el alumno es activo y/o colaborativo en el curso virtual. Los alumnos activos ser&aacute;n aquellos que alcanzan sus objetivos. Sin embargo, los alumnos colaborativos ser&aacute;n aquellos que ayudan a otros a adquirir sus propios objetivos. N&oacute;tese que &eacute;sta no es una clasificaci&oacute;n disjunta sino que puede haber alumnos que sean colaborativos y activos al mismo tiempo.</para>
+
+      <para>Para determinar si un alumno es activo se ver&aacute; por el n&uacute;mero de sesiones realizadas en el curso, n&uacute;mero de p&aacute;ginas visitadas, si ha entregado &oacute; no la pr&aacute;ctica, descargas del material did&aacute;ctico, n&uacute;mero de hilos abiertos, etc. Determinaremos si el alumno es &oacute; no colaborativo viendo el n&uacute;mero de respuestas a mensajes de otros, si ha creado preguntas frecuentes acerca de la asignatura, si ha sugerido noticias, &oacute; enlaces para el grupo, etc. A partir de estos datos se aplicar&iacute;a alguna t&eacute;cnica de aprendizaje autom&aacute;tico.</para>
+
+      <para>El objetivo de nuestro sistema ser&iacute;a pues que el alumnado pasase de inactivo a activo (teniendo un n&uacute;cleo de activos y adem&aacute;s colaborativos). No obstante, el tipo de consejos que se dar&aacute;n depender&aacute; tambi&eacute;n de la actividad del grupo en s&iacute;. Es decir, ser&iacute;a absurdo recomendar contestar mensajes en el foro si no hay ning&uacute;n mensaje. Por ello tambi&eacute;n se recoger&aacute;n datos y habr&aacute; que aplicar aprendizaje autom&aacute;tico para determinar si el grupo en s&iacute; es activo &oacute; colaborativo y, aparte habr&aacute; que hacer prerrequisitos para determinados consejos (por ej: el consejo de mejora las preguntas frecuentes, necesita de alg&uacute;n tipo de pregunta frecuente).</para>
+
+    </sect2>
+
+  </sect1>
+
+<!--   <sect1 id="gfdl"> -->
+<!--     <title>GNU Free Documentation License</title> -->
+<!--   <sect2 id="gfdl-0"> -->
+<!--     <title>PREAMBLE</title> -->
+
+<!--     <para>The purpose of this License is to make a manual, textbook, -->
+<!--     or other written document "free" in the sense of freedom: to -->
+<!--     assure everyone the effective freedom to copy and redistribute it, -->
+<!--     with or without modifying it, either commercially or -->
+<!--     noncommercially.  Secondarily, this License preserves for the -->
+<!--     author and publisher a way to get credit for their work, while not -->
+<!--     being considered responsible for modifications made by -->
+<!--     others.</para> -->
+
+<!--     <para>This License is a kind of "copyleft", which means that -->
+<!--     derivative works of the document must themselves be free in the -->
+<!--     same sense.  It complements the GNU General Public License, which -->
+<!--     is a copyleft license designed for free software.</para> -->
+
+<!--     <para>We have designed this License in order to use it for manuals -->
+<!--     for free software, because free software needs free documentation: -->
+<!--     a free program should come with manuals providing the same -->
+<!--     freedoms that the software does.  But this License is not limited -->
+<!--     to software manuals; it can be used for any textual work, -->
+<!--     regardless of subject matter or whether it is published as a -->
+<!--     printed book.  We recommend this License principally for works -->
+<!--     whose purpose is instruction or reference.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-1"> -->
+<!--     <title>APPLICABILITY AND DEFINITIONS</title> -->
+
+<!--     <para>This License applies to any manual or other work that -->
+<!--     contains a notice placed by the copyright holder saying it can be -->
+<!--     distributed under the terms of this License.  The "Document", -->
+<!--     below, refers to any such manual or work.  Any member of the -->
+<!--     public is a licensee, and is addressed as "you".</para> -->
+
+<!--     <para>A "Modified Version" of the Document means any work -->
+<!--     containing the Document or a portion of it, either copied -->
+<!--     verbatim, or with modifications and/or translated into another -->
+<!--     language.</para> -->
+
+<!--     <para>A "Secondary Section" is a named appendix or a front-matter -->
+<!--     section of the Document that deals exclusively with the -->
+<!--     relationship of the publishers or authors of the Document to the -->
+<!--     Document's overall subject (or to related matters) and contains -->
+<!--     nothing that could fall directly within that overall subject. -->
+<!--     (For example, if the Document is in part a textbook of -->
+<!--     mathematics, a Secondary Section may not explain any mathematics.) -->
+<!--     The relationship could be a matter of historical connection with -->
+<!--     the subject or with related matters, or of legal, commercial, -->
+<!--     philosophical, ethical or political position regarding -->
+<!--     them.</para> -->
+
+<!--     <para>The "Invariant Sections" are certain Secondary Sections -->
+<!--     whose titles are designated, as being those of Invariant Sections, -->
+<!--     in the notice that says that the Document is released under this -->
+<!--     License.</para> -->
+
+<!--     <para>The "Cover Texts" are certain short passages of text that -->
+<!--     are listed, as Front-Cover Texts or Back-Cover Texts, in the -->
+<!--     notice that says that the Document is released under this -->
+<!--     License.</para> -->
+
+<!--     <para>A "Transparent" copy of the Document means a -->
+<!--     machine-readable copy, represented in a format whose specification -->
+<!--     is available to the general public, whose contents can be viewed -->
+<!--     and edited directly and straightforwardly with generic text -->
+<!--     editors or (for images composed of pixels) generic paint programs -->
+<!--     or (for drawings) some widely available drawing editor, and that -->
+<!--     is suitable for input to text formatters or for automatic -->
+<!--     translation to a variety of formats suitable for input to text -->
+<!--     formatters.  A copy made in an otherwise Transparent file format -->
+<!--     whose markup has been designed to thwart or discourage subsequent -->
+<!--     modification by readers is not Transparent.  A copy that is not -->
+<!--     "Transparent" is called "Opaque".</para> -->
+
+<!--     <para>Examples of suitable formats for Transparent copies include -->
+<!--     plain ASCII without markup, Texinfo input format, LaTeX input -->
+<!--     format, SGML or XML using a publicly available DTD, and -->
+<!--     standard-conforming simple HTML designed for human modification. -->
+<!--     Opaque formats include PostScript, PDF, proprietary formats that -->
+<!--     can be read and edited only by proprietary word processors, SGML -->
+<!--     or XML for which the DTD and/or processing tools are not generally -->
+<!--     available, and the machine-generated HTML produced by some word -->
+<!--     processors for output purposes only.</para> -->
+
+<!--     <para>The "Title Page" means, for a printed book, the title page -->
+<!--     itself, plus such following pages as are needed to hold, legibly, -->
+<!--     the material this License requires to appear in the title page. -->
+<!--     For works in formats which do not have any title page as such, -->
+<!--     "Title Page" means the text near the most prominent appearance of -->
+<!--     the work's title, preceding the beginning of the body of the -->
+<!--     text.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-2"> -->
+<!--     <title>VERBATIM COPYING</title> -->
+
+<!--     <para>You may copy and distribute the Document in any medium, -->
+<!--     either commercially or noncommercially, provided that this -->
+<!--     License, the copyright notices, and the license notice saying this -->
+<!--     License applies to the Document are reproduced in all copies, and -->
+<!--     that you add no other conditions whatsoever to those of this -->
+<!--     License.  You may not use technical measures to obstruct or -->
+<!--     control the reading or further copying of the copies you make or -->
+<!--     distribute.  However, you may accept compensation in exchange for -->
+<!--     copies.  If you distribute a large enough number of copies you -->
+<!--     must also follow the conditions in section 3.</para> -->
+
+<!--     <para>You may also lend copies, under the same conditions stated -->
+<!--     above, and you may publicly display copies.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-3"> -->
+<!--     <title>COPYING IN QUANTITY</title> -->
+
+<!--     <para>If you publish printed copies of the Document numbering more -->
+<!--     than 100, and the Document's license notice requires Cover Texts, -->
+<!--     you must enclose the copies in covers that carry, clearly and -->
+<!--     legibly, all these Cover Texts: Front-Cover Texts on the front -->
+<!--     cover, and Back-Cover Texts on the back cover.  Both covers must -->
+<!--     also clearly and legibly identify you as the publisher of these -->
+<!--     copies.  The front cover must present the full title with all -->
+<!--     words of the title equally prominent and visible.  You may add -->
+<!--     other material on the covers in addition.  Copying with changes -->
+<!--     limited to the covers, as long as they preserve the title of the -->
+<!--     Document and satisfy these conditions, can be treated as verbatim -->
+<!--     copying in other respects.</para> -->
+
+<!--     <para>If the required texts for either cover are too voluminous to -->
+<!--     fit legibly, you should put the first ones listed (as many as fit -->
+<!--     reasonably) on the actual cover, and continue the rest onto -->
+<!--     adjacent pages.</para> -->
+
+<!--     <para>If you publish or distribute Opaque copies of the Document -->
+<!--     numbering more than 100, you must either include a -->
+<!--     machine-readable Transparent copy along with each Opaque copy, or -->
+<!--     state in or with each Opaque copy a publicly-accessible -->
+<!--     computer-network location containing a complete Transparent copy -->
+<!--     of the Document, free of added material, which the general -->
+<!--     network-using public has access to download anonymously at no -->
+<!--     charge using public-standard network protocols.  If you use the -->
+<!--     latter option, you must take reasonably prudent steps, when you -->
+<!--     begin distribution of Opaque copies in quantity, to ensure that -->
+<!--     this Transparent copy will remain thus accessible at the stated -->
+<!--     location until at least one year after the last time you -->
+<!--     distribute an Opaque copy (directly or through your agents or -->
+<!--     retailers) of that edition to the public.</para> -->
+
+<!--     <para>It is requested, but not required, that you contact the -->
+<!--     authors of the Document well before redistributing any large -->
+<!--     number of copies, to give them a chance to provide you with an -->
+<!--     updated version of the Document.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-4"> -->
+<!--     <title>MODIFICATIONS</title> -->
+
+<!--     <para>You may copy and distribute a Modified Version of the -->
+<!--     Document under the conditions of sections 2 and 3 above, provided -->
+<!--     that you release the Modified Version under precisely this -->
+<!--     License, with the Modified Version filling the role of the -->
+<!--     Document, thus licensing distribution and modification of the -->
+<!--     Modified Version to whoever possesses a copy of it.  In addition, -->
+<!--     you must do these things in the Modified Version:</para> -->
+
+<!--     <orderedlist numeration="upperalpha"> -->
+<!--       <listitem>
+<simpara>Use in the Title Page -->
+<!--       (and on the covers, if any) a title distinct from that of the -->
+<!--       Document, and from those of previous versions (which should, if -->
+<!--       there were any, be listed in the History section of the -->
+<!--       Document).  You may use the same title as a previous version if -->
+<!--       the original publisher of that version gives permission.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>List on the Title Page, -->
+<!--       as authors, one or more persons or entities responsible for -->
+<!--       authorship of the modifications in the Modified Version, -->
+<!--       together with at least five of the principal authors of the -->
+<!--       Document (all of its principal authors, if it has less than -->
+<!--       five).</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>State on the Title page -->
+<!--       the name of the publisher of the Modified Version, as the -->
+<!--       publisher.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Preserve all the -->
+<!--       copyright notices of the Document.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Add an appropriate -->
+<!--       copyright notice for your modifications adjacent to the other -->
+<!--       copyright notices.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Include, immediately -->
+<!--       after the copyright notices, a license notice giving the public -->
+<!--       permission to use the Modified Version under the terms of this -->
+<!--       License, in the form shown in the Addendum below.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Preserve in that license -->
+<!--       notice the full lists of Invariant Sections and required Cover -->
+<!--       Texts given in the Document's license notice.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Include an unaltered -->
+<!--       copy of this License.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Preserve the section -->
+<!--       entitled "History", and its title, and add to it an item stating -->
+<!--       at least the title, year, new authors, and publisher of the -->
+<!--       Modified Version as given on the Title Page.  If there is no -->
+<!--       section entitled "History" in the Document, create one stating -->
+<!--       the title, year, authors, and publisher of the Document as given -->
+<!--       on its Title Page, then add an item describing the Modified -->
+<!--       Version as stated in the previous sentence.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Preserve the network -->
+<!--       location, if any, given in the Document for public access to a -->
+<!--       Transparent copy of the Document, and likewise the network -->
+<!--       locations given in the Document for previous versions it was -->
+<!--       based on.  These may be placed in the "History" section.  You -->
+<!--       may omit a network location for a work that was published at -->
+<!--       least four years before the Document itself, or if the original -->
+<!--       publisher of the version it refers to gives permission.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>In any section entitled -->
+<!--       "Acknowledgements" or "Dedications", preserve the section's -->
+<!--       title, and preserve in the section all the substance and tone of -->
+<!--       each of the contributor acknowledgements and/or dedications -->
+<!--       given therein.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Preserve all the -->
+<!--       Invariant Sections of the Document, unaltered in their text and -->
+<!--       in their titles.  Section numbers or the equivalent are not -->
+<!--       considered part of the section titles.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Delete any section -->
+<!--       entitled "Endorsements".  Such a section may not be included in -->
+<!--       the Modified Version.</para> -->
+<!--       </listitem> -->
+
+<!--       <listitem>
+<simpara>Do not retitle any -->
+<!--       existing section as "Endorsements" or to conflict in title with -->
+<!--       any Invariant Section.</para> -->
+<!--       </listitem> -->
+<!--     </orderedlist> -->
+    
+<!--     <para>If the Modified Version includes new front-matter sections -->
+<!--     or appendices that qualify as Secondary Sections and contain no -->
+<!--     material copied from the Document, you may at your option -->
+<!--     designate some or all of these sections as invariant.  To do this, -->
+<!--     add their titles to the list of Invariant Sections in the Modified -->
+<!--     Version's license notice.  These titles must be distinct from any -->
+<!--     other section titles.</para> -->
+
+<!--     <para>You may add a section entitled "Endorsements", provided it -->
+<!--     contains nothing but endorsements of your Modified Version by -->
+<!--     various parties-for example, statements of peer review or that -->
+<!--     the text has been approved by an organization as the authoritative -->
+<!--     definition of a standard.</para> -->
+
+<!--     <para>You may add a passage of up to five words as a Front-Cover -->
+<!--     Text, and a passage of up to 25 words as a Back-Cover Text, to the -->
+<!--     end of the list of Cover Texts in the Modified Version.  Only one -->
+<!--     passage of Front-Cover Text and one of Back-Cover Text may be -->
+<!--     added by (or through arrangements made by) any one entity.  If the -->
+<!--     Document already includes a cover text for the same cover, -->
+<!--     previously added by you or by arrangement made by the same entity -->
+<!--     you are acting on behalf of, you may not add another; but you may -->
+<!--     replace the old one, on explicit permission from the previous -->
+<!--     publisher that added the old one.</para> -->
+
+<!--     <para>The author(s) and publisher(s) of the Document do not by -->
+<!--     this License give permission to use their names for publicity for -->
+<!--     or to assert or imply endorsement of any Modified Version.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-5"> -->
+<!--     <title>COMBINING DOCUMENTS</title> -->
+
+<!--     <para>You may combine the Document with other documents released -->
+<!--     under this License, under the terms defined in section 4 above for -->
+<!--     modified versions, provided that you include in the combination -->
+<!--     all of the Invariant Sections of all of the original documents, -->
+<!--     unmodified, and list them all as Invariant Sections of your -->
+<!--     combined work in its license notice.</para> -->
+
+<!--     <para>The combined work need only contain one copy of this -->
+<!--     License, and multiple identical Invariant Sections may be replaced -->
+<!--     with a single copy.  If there are multiple Invariant Sections with -->
+<!--     the same name but different contents, make the title of each such -->
+<!--     section unique by adding at the end of it, in parentheses, the -->
+<!--     name of the original author or publisher of that section if known, -->
+<!--     or else a unique number.  Make the same adjustment to the section -->
+<!--     titles in the list of Invariant Sections in the license notice of -->
+<!--     the combined work.</para> -->
+
+<!--     <para>In the combination, you must combine any sections entitled -->
+<!--     "History" in the various original documents, forming one section -->
+<!--     entitled "History"; likewise combine any sections entitled -->
+<!--     "Acknowledgements", and any sections entitled "Dedications".  You -->
+<!--     must delete all sections entitled "Endorsements."</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-6"> -->
+<!--     <title>COLLECTIONS OF DOCUMENTS</title> -->
+
+<!--     <para>You may make a collection consisting of the Document and -->
+<!--     other documents released under this License, and replace the -->
+<!--     individual copies of this License in the various documents with a -->
+<!--     single copy that is included in the collection, provided that you -->
+<!--     follow the rules of this License for verbatim copying of each of -->
+<!--     the documents in all other respects.</para> -->
+
+<!--     <para>You may extract a single document from such a collection, -->
+<!--     and distribute it individually under this License, provided you -->
+<!--     insert a copy of this License into the extracted document, and -->
+<!--     follow this License in all other respects regarding verbatim -->
+<!--     copying of that document.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-7"> -->
+<!--     <title>AGGREGATION WITH INDEPENDENT WORKS</title> -->
+    
+<!--     <para>A compilation of the Document or its derivatives with other -->
+<!--     separate and independent documents or works, in or on a volume of -->
+<!--     a storage or distribution medium, does not as a whole count as a -->
+<!--     Modified Version of the Document, provided no compilation -->
+<!--     copyright is claimed for the compilation.  Such a compilation is -->
+<!--     called an "aggregate", and this License does not apply to the -->
+<!--     other self-contained works thus compiled with the Document, on -->
+<!--     account of their being thus compiled, if they are not themselves -->
+<!--     derivative works of the Document.</para> -->
+
+<!--     <para>If the Cover Text requirement of section 3 is applicable to -->
+<!--     these copies of the Document, then if the Document is less than -->
+<!--     one quarter of the entire aggregate, the Document's Cover Texts -->
+<!--     may be placed on covers that surround only the Document within the -->
+<!--     aggregate.  Otherwise they must appear on covers around the whole -->
+<!--     aggregate.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-8"> -->
+<!--     <title>TRANSLATION</title> -->
+
+<!--     <para>Translation is considered a kind of modification, so you may -->
+<!--     distribute translations of the Document under the terms of section -->
+<!--     4.  Replacing Invariant Sections with translations requires -->
+<!--     special permission from their copyright holders, but you may -->
+<!--     include translations of some or all Invariant Sections in addition -->
+<!--     to the original versions of these Invariant Sections.  You may -->
+<!--     include a translation of this License provided that you also -->
+<!--     include the original English version of this License.  In case of -->
+<!--     a disagreement between the translation and the original English -->
+<!--     version of this License, the original English version will -->
+<!--     prevail.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-9"> -->
+<!--     <title>TERMINATION</title> -->
+    
+<!--     <para>You may not copy, modify, sublicense, or distribute the -->
+<!--     Document except as expressly provided for under this License.  Any -->
+<!--     other attempt to copy, modify, sublicense or distribute the -->
+<!--     Document is void, and will automatically terminate your rights -->
+<!--     under this License.  However, parties who have received copies, or -->
+<!--     rights, from you under this License will not have their licenses -->
+<!--     terminated so long as such parties remain in full -->
+<!--     compliance.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-10"> -->
+<!--     <title>FUTURE REVISIONS OF THIS LICENSE</title> -->
+
+<!--     <para>The Free Software Foundation may publish new, revised -->
+<!--     versions of the GNU Free Documentation License from time to time. -->
+<!--     Such new versions will be similar in spirit to the present -->
+<!--     version, but may differ in detail to address new problems or -->
+<!--     concerns.  See <ulink -->
+<!--     url="http://www.gnu.org/copyleft/">http://www.gnu.org/copyleft/</ulink>.</para> -->
+
+<!--     <para>Each version of the License is given a distinguishing -->
+<!--     version number.  If the Document specifies that a particular -->
+<!--     numbered version of this License "or any later version" applies to -->
+<!--     it, you have the option of following the terms and conditions -->
+<!--     either of that specified version or of any later version that has -->
+<!--     been published (not as a draft) by the Free Software Foundation. -->
+<!--     If the Document does not specify a version number of this License, -->
+<!--     you may choose any version ever published (not as a draft) by the -->
+<!--     Free Software Foundation.</para> -->
+<!--   </sect2> -->
+
+<!--   <sect2 id="gfdl-11"> -->
+<!--     <title>How to use this License for your documents</title> -->
+
+<!--     <para>To use this License in a document you have written, include -->
+<!--     a copy of the License in the document and put the following -->
+<!--     copyright and license notices just after the title page:</para> -->
+
+<!-- <blockquote><para> -->
+<!--       Copyright (c)  YEAR  YOUR NAME. -->
+<!--       Permission is granted to copy, distribute and/or modify this document -->
+<!--       under the terms of the GNU Free Documentation License, Version 1.1 -->
+<!--       or any later version published by the Free Software Foundation; -->
+<!--       with the Invariant Sections being LIST THEIR TITLES, with the -->
+<!--       Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST. -->
+<!--       A copy of the license is included in the section entitled "GNU -->
+<!--       Free Documentation License". -->
+<!-- </para></blockquote> -->
+
+<!--       <para>If you have no Invariant Sections, write "with no Invariant -->
+<!--     Sections" instead of saying which ones are invariant.  If you have -->
+<!--     no Front-Cover Texts, write "no Front-Cover Texts" instead of -->
+<!--     "Front-Cover Texts being LIST"; likewise for Back-Cover -->
+<!--     Texts.</para> -->
+
+<!--       <para>If your document contains nontrivial examples of program -->
+<!--     code, we recommend releasing these examples in parallel under your -->
+<!--     choice of free software license, such as the GNU General Public -->
+<!--     License, to permit their use in free software.</para> -->
+<!--     </sect2> -->
+
+<!--   </sect1> -->
+
+</article>

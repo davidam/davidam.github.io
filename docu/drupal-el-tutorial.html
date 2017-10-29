@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>drupal-el tutorial</title>
+<!-- 2016-11-13 dom 22:52 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">drupal-el tutorial</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Video overview</a></li>
+<li><a href="#sec-2">2. Installation</a>
+<ul>
+<li><a href="#sec-2-1">2.1. You can download the source so:</a></li>
+<li><a href="#sec-2-2">2.2. Add melpa to your .emacs</a></li>
+<li><a href="#sec-2-3">2.3. Execute package-install-file to install dependencies</a></li>
+<li><a href="#sec-2-4">2.4. To activate drupal-el</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. drupal-el</a></li>
+<li><a href="#sec-4">4. Skeletons</a>
+<ul>
+<li><a href="#sec-4-1">4.1. bootstrap.el</a></li>
+<li><a href="#sec-4-2">4.2. control-structure.el</a></li>
+<li><a href="#sec-4-3">4.3. common.el</a></li>
+<li><a href="#sec-4-4">4.4. db.el</a></li>
+<li><a href="#sec-4-5">4.5. field.el</a></li>
+<li><a href="#sec-4-6">4.6. file.el</a></li>
+<li><a href="#sec-4-7">4.7. globals.el</a></li>
+<li><a href="#sec-4-8">4.8. hooks.el</a></li>
+<li><a href="#sec-4-9">4.9. info.el</a></li>
+<li><a href="#sec-4-10">4.10. menu.el</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. License</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com">Volver a davidam.com</a>
+</p>
+
+<p>
+drupal-el has some specific functions to develop fast, and hundreds of
+functions to generate code from M-x
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Video overview</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+You can watch videos overview about this software:
+</p>
+
+<ul class="org-ul">
+<li><a href="http://davidam.com/video/video-drupal-el-page.mkv">How can I create a simple drupal project using drupal-el?</a>
+</li>
+<li><a href="http://davidam.com/video/drupal-el-tags.mkv">How can I browse through the source code?</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Installation</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> You can download the source so:</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+
+<pre class="src src-bash">$ cd ~/.emacs.d
+$ bzr branch bzr://bzr.savannah.nongnu.org/drupal-el
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Add melpa to your .emacs</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span style="color: #b22222;">;; </span><span style="color: #b22222;">MELPA</span>
+(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">package</span>) <span style="color: #b22222;">;; </span><span style="color: #b22222;">You might already have this line</span>
+(add-to-list 'package-archives
+             '(<span style="color: #8b2252;">"melpa"</span> . <span style="color: #8b2252;">"https://melpa.org/packages/"</span>))
+(<span style="color: #a020f0;">when</span> (&lt; emacs-major-version 24)
+  <span style="color: #b22222;">;; </span><span style="color: #b22222;">For important compatibility libraries like cl-lib</span>
+  (add-to-list 'package-archives '(<span style="color: #8b2252;">"gnu"</span> . <span style="color: #8b2252;">"http://elpa.gnu.org/packages/"</span>)))
+(package-initialize) <span style="color: #b22222;">;; </span><span style="color: #b22222;">You might already have this line</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Execute package-install-file to install dependencies</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+You can install it, with:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">M-x package-list-packages
+M-x package-install-file ~/.emacs.d/drupal-el/drupal-pkg.el
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> To activate drupal-el</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+You can adapt the next lines in your .emacs
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">(setq drupal-el-path <span style="color: #8b2252;">"~/.emacs.d/drupal-el"</span>)
+(load (concat drupal-el-path <span style="color: #8b2252;">"drupal.el"</span>))
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> drupal-el</h2>
+<div class="outline-text-2" id="text-3">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-create-etags
+M-x drupal-drush-cache-clear
+M-x drupal-kill-project-buffers
+M-x drupal-save-project-buffers
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Skeletons</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+This tutorial only intends to become a walk through the main drupal-el
+features, highlighting some famous drupal functions 
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> bootstrap.el</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal_set_message
+M-x drupal-arg
+M-x drupal_set_message
+M-x drupal_set_title
+M-x drupal-t
+M-x drupal-variable_set
+M-x drupal-watchdog
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> control-structure.el</h3>
+<div class="outline-text-3" id="text-4-2">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-if
+M-x drupal-foreach
+M-x drupal-for
+M-x drupal-switch
+M-x drupal-switch-case
+M-x drupal-goto
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> common.el</h3>
+<div class="outline-text-3" id="text-4-3">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-l
+M-x drupal-l-extended
+M-x drupal_parse_url
+M-x drupal_json_decode
+M-x drupal_json_encode
+M-x drupal_clear_css_cache
+M-x drupal_add_js
+M-x drupal-base_path
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> db.el</h3>
+<div class="outline-text-3" id="text-4-4">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-db_query-foreach
+M-x drupal-db_query
+M-x drupal-db_select
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> field.el</h3>
+<div class="outline-text-3" id="text-4-5">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-field_get_items
+M-x drupal-field_has_data
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> file.el</h3>
+<div class="outline-text-3" id="text-4-6">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal_chmod
+M-x drupal_dirname
+M-x drupal_mkdir
+M-x drupal_realpath
+M-x drupal_rmdir
+M-x drupal_unlink
+M-x drupal-file_save
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-7" class="outline-3">
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> globals.el</h3>
+<div class="outline-text-3" id="text-4-7">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-$base_path
+M-x drupal-$base_root
+M-x drupal-$base_url
+M-x drupal-$user
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-8" class="outline-3">
+<h3 id="sec-4-8"><span class="section-number-3">4.8</span> hooks.el</h3>
+<div class="outline-text-3" id="text-4-8">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-hook_hook
+M-x drupal-hook_menu
+M-x drupal-hook_block_info
+M-x drupal-hook_block_save
+M-x drupal-hook_block_view
+M-x drupal-hook_entity_info
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-9" class="outline-3">
+<h3 id="sec-4-9"><span class="section-number-3">4.9</span> info.el</h3>
+<div class="outline-text-3" id="text-4-9">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-info-project-7
+M-x drupal-info-theme-7
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-10" class="outline-3">
+<h3 id="sec-4-10"><span class="section-number-3">4.10</span> menu.el</h3>
+<div class="outline-text-3" id="text-4-10">
+<div class="org-src-container">
+
+<pre class="src src-bash">M-x drupal-menu_cache_clear
+M-x drupal-menu_cache_clear_all
+M-x drupal-menu_get_active_breadcrumb
+M-x drupal-menu_get_active_trail
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> License</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+This document is under a <a href="http://creativecommons.org/licenses/by-sa/4.0/deed">Creative Commons Attribution-ShareAlike 4.0 International</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by-sa/4.0/deed"><img src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2016-11-13 dom 22:52</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

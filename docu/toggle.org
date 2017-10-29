@@ -1,0 +1,49 @@
+#+TITLE: Toggle
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+Hoy comentaré como hacer la típica función toggle para hacer que
+aparezca y desaparezca un div de varias maneras distintas:
+
+* Usando javascript puro
+
+Esta es la mejor opción si no queremos estar descargándonos el jquery ó simplemente no queremos usarlo.
+
+#+BEGIN_SRC javascript
+function toggle-js(div){
+var div = document.getElementById(div)
+if (div.style.display == 'none') {
+div.style.display = 'block'
+} else {
+div.style.display = 'none'
+}
+}
+#+END_SRC
+
+* Usando Jquery
+
+Eso mismo que hemos hecho podemos hacerlo usando selectores jquery
+
+#+BEGIN_SRC javascript
+function toggleJquery() {
+if ($('#div').css('display') == 'none') {
+$('#div').css('display', 'block');
+} else {
+$('#div').css('display', 'none');
+}
+}
+#+END_SRC
+
+Aunque si queremos usar jquery lo más cómodo es usar la función toggle que ya viene predefinida. Podemos utilizarla de la siguiente manera:
+
+#+BEGIN_SRC javascript
+$('#div').toggle();
+#+END_SRC
+
+Merece la pena echarle un vistazo a la documentación de la función toggle, ya que esta función es muy potente y presenta muchas opciones.
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed][Licencia Creative Commons Reconocimiento Unported 3.0]]
+
+[[http://creativecommons.org/licenses/by/3.0/deed][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]

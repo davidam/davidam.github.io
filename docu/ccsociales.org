@@ -1,0 +1,81 @@
+#+TITLE: Un alegato a favor del Software Libre en Ciencias Sociales
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
+#+BABEL: :results output :session
+
+* Introducción
+
+En este pequeño artículo trataré de explicar que usar software
+privativo en Ciencias Sociales, no puede ser Ciencia.
+
+La Ciencia debe poder ser reproducible, un científico hace un
+experimento y otro científico debe venir a cotejarlo, reproducirlo y
+darle la credibilidad científica de que el experimento es bueno,
+novedoso y está bien hecho. Con el software privativo hay una parte
+del experimento a cotejar que los científicos sociales confían
+ciegamente en las corporaciones que les suministran el software. 
+
+Por ejemplo, en un software estadístico hay muchos cálculos algunos
+los eligen quien usa la herramienta, pero hay mucho cálculo por abajo
+de esos cálculos que quien usa el software no tiene control, si es
+software privativo.
+
+* Contexto donde detecté la actitud de Ciencias Sociales de extrema izquierda con Software Fascista
+
+En esta sección, llamo software fascista, al software privativo puesto
+que priva de libertades. Esto se explicará más extensamente en otro
+artículo aún no publicado.
+
+En la universidad donde veía la fe ciega en el software privativo, he
+llegado a oir comentarios de "en la próxima versión de nuestro programa
+estadístico solo meteremos los datos y nos creará los artículos". Es
+bastante bestia ver que dicha universidad estaba a rebosar de pintadas
+de extrema izquierda, algunas revindican el valor del terrorismo. El
+enfado de izquierda es fuerte, pero no se enfadan mucho con el
+software fascista que utilizan todos los días es su herramienta y
+listo.
+
+Antes que el terrorismo las personas que habitan las aulas podrían
+pedir hacer ciencia social y explicar a sus profesores que no quieren
+creer en el software fascista de las grandes corporaciones que tienen
+que usar todos los días para hablar desde los datos de los problemas
+de la sociedad.
+
+En la actualidad española la ciudadanía [[http://www.cis.es/opencms/-Archivos/Indicadores/documentos_html/TresProblemas.html][detecta como problemas
+sociales graves tanto las estafas, como la falta de validez de los
+partidos]] y en esa desesperación hay personas españolas que quieren
+pagar al problema de los partidos creando a otro nuevo. Yo pienso que
+el problema que detecta la ciudadanía en los partidos, puede mejorarse
+con el software libre, porque los análisis de nuestros científicos
+sociales serían más críticos, con menos fe ciega en las corporaciones
+de software privativo.
+
+* La problemática de la migración al software libre
+
+En las ciencias sociales hay dos metodologías importantes la
+cuantitativa y la cualitativa. Para cualquiera de las dos
+problemáticas es necesario cambiar la filosofía con la que se mira al
+científico social, como una persona incapaz de programar.
+
+Los científicos sociales sí escriben sus pequeños programas, pero en
+un alarde de llamarles tontos, las empresas de software privativo
+hacen que lo tengan que llamar sintaxis.
+
+En la cuestión cualitativa es más sencillo no usar software privativo,
+solo es necesario organizar los discursos con software libre, se puede
+usar hasta Libreoffice y que el científico social tenga su método
+personal. Yo para esa tarea utilicé [[https://www.gnu.org/software/emacs/][GNU/Emacs]] que lleva una filosofía
+de ir haciendo pequeñas programaciones fácilmente y ser más productivo
+en tus pequeñas tareas.
+
+En la cuestión cuantitativa entiendo que hay una inercia social más
+fuerte para usar software privativo, pero también hay reemplazos
+libres ([[http://gretl.sourceforge.net/][Gretl]], [[https://www.gnu.org/software/pspp/][PSPP]], [[http://www.r-project.org/][GNU R]], etc.). Quienes estudian y trabajan en los
+temas de la políticia deberían saber cambiar esa inercia social es muy
+importante para la ciencia y la libertad en la sociedad.
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:../img/licenses/by/3.0/80x15.png]]

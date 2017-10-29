@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="es" xml:lang="es">
+<head>
+<title>Traduciendo Documentación en Texinfo con emacs y po4a</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-01-20 15:29:15 CET"/>
+<meta name="author" content="David Arroyo Menéndez"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Traduciendo Documentación en Texinfo con emacs y po4a</h1>
+
+<p>Texinfo es el formato de marcas estándar para documentación de GNU. Permite crear manuales en formato pdf, info, html, etc. desde un solo fichero fuente .texi con las características avanzadas que debería tener un buen manual.
+</p>
+<p>
+Antes de familiarizarnos con los comandos del proceso de traducción instalemos los paquetes debian que vamos a utilizar:
+</p>
+
+
+
+<pre class="example">apt-get install texlive texinfo texi2html emacs23 gettext-el po4a aspell-es dict dict-freedict-eng-spa dict-freedict-spa-eng dictionary-el dict-gcide
+</pre>
+
+
+
+
+<p>
+Si tenemos un fichero texinfo y queremos convertirlo a pdf se puede usar el siguiente comando:
+</p>
+
+
+
+<pre class="example">texi2pdf myfile.texi
+</pre>
+
+
+
+
+<p>
+El problema con texi2pdf es que a veces no ofrece buenos mensajes de depuración, para depurar es mejor hacerlo con:
+</p>
+
+
+
+<pre class="example">makeinfo myfile.texi
+</pre>
+
+
+
+
+<p>
+Además con este comando se crea el fichero .info
+</p>
+<p>
+Si queremos crear un sitio web con nuestro documento podemos usar:
+</p>
+
+
+
+<pre class="example">texi2html myfile.texi
+</pre>
+
+
+
+
+<p>
+Si se desea traducir el fichero del inglés al español u otras lenguas es posible utilizar gettext gracias a po4a. Siguiendo estos pasos:
+</p>
+
+
+
+<pre class="example">po4a-gettextize -f texinfo -m myfile.texi -p myfile.pot # Crea un fichero .pot a partir de un .texi
+cp myfile.pot myfile.es.po
+# Se traduce del inglés al español abriendo myfile.es.po con emacs en modo po-mode
+po4a-translate -f texinfo -m myfile.texi -p myfile.es.po -l myfile.es.texi # Creamos myfile.es.texi, el texi traducido
+</pre>
+
+
+
+
+<p>
+Es probable que con el tiempo salgan nuevas actualizaciones del fichero .texi original, podemos actualizarnos con msgmerge del siguiente modo:
+</p>
+
+
+
+<pre class="example">po4a-gettextize -f texinfo -m myupdated.texi -p myupdated.pot # Crea el fichero .pot actualizado a partir del nuevo .texi
+msgmerge myold.es.po myupdated.pot &gt; myupdated.es.po
+</pre>
+
+
+
+
+<p>
+Las frases en las que haya habido variaciones aparecerán como fuzzy debiendo ser debidamente revisadas.
+</p>
+<p>
+Y ahora vemos algo de configuración del .emacs para hacer más fácil y divertida la traducción:
+</p>
+
+
+
+<pre class="example">;;;; PO-MODE ;;;;
+(require 'po-mode)
+(defun iacute()
+(interactive)
+(insert "@'{@dotless{i}}"))
+;; El atajo C-i insertará i acentuada, a la manera nativa de texinfo
+(define-key po-subedit-mode-map "\C-i" 'iacute)
+
+;; Debe cortar las líneas automáticamente
+(add-hook 'po-subedit-mode-hook 'auto-fill-mode)
+
+;;;; ASPELL ;;;;
+;; Para que avise
+(setq ispell-program-name "aspell"
+ispell-extra-args '("--lang=es"))
+(add-hook 'po-subedit-mode-hook
+(lambda()
+(flyspell-mode 1)))
+
+;;;; Dictionary ;;;;
+(global-set-key "\C-cs" 'dictionary-search)
+(global-set-key "\C-cm" 'dictionary-match-words)
+</pre>
+
+
+
+
+
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Licencia </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Licencia </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>Esta página está bajo una <a href="http://creativecommons.org/licenses/by-nd/3.0/es/deed.es">Licencia Creative Commons Atribución-SinDerivadas 3.0</a>.
+</p></div>
+</div>
+<div id="postamble">
+<p class="author"> Autor: David Arroyo Menéndez
+<a href="mailto:davidam@tolstoi">&lt;davidam@tolstoi&gt;</a>
+</p>
+<p class="date"> Fecha: 2013-01-20 15:29:15 CET</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#+TITLE: Vídeos en Drupal
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+A veces nos hacemos un poco de lío habilitando la opción de vídeos en
+Drupal. En este tutorial trato de documentar una de las soluciones que
+hay.
+
+* Instalación de módulos
+
+#+BEGIN_SRC bash
+$ drush dl videojs video jw_player
+$ drush en videojs_hls videojs jw_player
+#+END_SRC
+
+* Configuración Video.js
+
+1. Descargar el software de http://www.videojs.com/
+2. Copiar los ficheros a sites/all/libraries/videojs
+
+* Configuración de JWPlayer
+
+La extraje de jw_player/README.txt:
+
+1. Descargar el software de http://www.longtailvideo.com/players/jw-flv-player/.
+2. Copiar los ficheros a sites/all/libraries/jwplayer
+3. Chequear la configuración en admin/reports/status. En mi caso tuve que hacer:
+#+BEGIN_SRC bash
+   $ cp jwplayer.flash.swf player.swf
+#+END_SRC
+4. Crear presets en /admin/config/media/jw_player
+
+* Creación del tipo de contenido
+
+Desde admin/structure/types se crea el tipo video y se crea un field
+de tipo file.
+
+Desde admin/structure/types/manage/video/display se elige el formato
+JW Player y el preset HTML5.
+
+Con esto ya sería posible ver vídeos, ahora pasemos a los thumbnails
+
+* Thumbnails
+
+#+BEGIN_SRC bash
+$ drush dl video
+$ drush en video video_ui zencoderapi
+#+END_SRC
+ 
+Se elige video en el campo del tipo de cotenido en vez file.
+
+Se crea un preset admin/config/media/video/presets

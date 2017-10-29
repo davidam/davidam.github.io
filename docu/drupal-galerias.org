@@ -1,0 +1,27 @@
+#+TITLE: Galerías en Drupal
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+Una cosa rápida y fácil, pero que tiene su truquillo y no quiero que
+se me olvide es hacer galerías de imágenes en drupal:
+
+#+BEGIN_SRC bash
+$ drush dl lightbox multiupload_filefield_widget
+$ drush en lightbox multiupload_filefield_widget
+#+END_SRC
+
+Luego se crea o se modifica un tipo de contenido y en "gestionar
+presentación" -> formato, se elige una de las combinaciones de
+lightbox2 con los preset que hay.
+
+Después se crea un nodo con imágenes para probar.
+
+En realidad hay muchos más módulos para hacer algo así, pero esta
+funciona y al final con explicar una es suficiente.
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]

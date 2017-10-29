@@ -1,0 +1,221 @@
+#+OPTIONS *:t
+#+LANGUAGE: es
+
+* Introducción
+*entrevistador*: Vale. Pues nada, muchas gracias por haber accedido a hacer la entrevista. Es sobre nuevas tecnologías y movimientos sociales y entonces tiene dos partes diferenciadas, una que es más de flujos de información, y otra que es de factores de cambio tecnológico. Entonces, bueno, si quieres cuéntame un poco las asociaciones u organizaciones a las que perteneces.
+*mujer5*: *asiente la entrevistada* ¿Ahora mismo?
+*entrevistador*: Sí.
+*mujer5*: Es que ahora mismo en realidad estoy en Pandora, que es una cooperativa importante, un proyecto de autoempleo, o sea, que no es una organización…
+*entrevistador*: *asiente el moderador*
+*mujer5*:…o sea, es sin ánimo de lucro, pero no es militante, digamos. O sea, que sí que va relacionado con lo monetario.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Y… *reflexiona la entrevistada* participo puntualmente en la fundación Entredós, que es una fundación creada por mujeres para mujeres.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Que ahí sí que, cuando hago alguna actividad o algo así, no es remunerado, y… ¿qué más cosas? Bueno, estoy haciendo un documental, pero no es con una organización, pero sí que para mí es como algo… 
+*entrevistador*: Militante.
+*mujer5*: …militante. Eh… estuve yendo al grupo de Economía Feminista, pero poquito, al de Sol.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Y ahora mismo yo creo que nada así organizadamente.
+*entrevistador*: Bueno, pero tú consideras que tanto Pandora como la fundación ésta son partes del movimiento feminista, entiendo, ¿no?
+*mujer5*: Sí, sí. O sea, Pandora…
+*entrevistador*: Aunque no sea… También he hecho entrevistas a gente de Traficantes de Sueños y tal, y aunque no sea un colectivo… que tenga un cierto ánimo de lucro pero que esté involucrado en los movimientos sociales.
+*mujer5*: Sí.
+*entrevistador*: O sea, para mí, una cosa igual más estructural como un partido político no lo considero parte de los movimientos sociales, pero igual una organización como Pandora, para mí sí  que entraría…
+*mujer5*: *asiente la entrevistada* Sí, o sea, por lo menos en lo que hacemos intentamos que sean proyectos que por lo menos nosotras le veamos un sentido de transformación.
+*entrevistador*: *asiente el moderador*
+*mujer5*: O sea, que en ese sentido… transformaciones del feminismo, claro.
+*entrevistador*: *asiente el moderador* Vale, muy bien, pues entonces, mira, vamos a hacer la entrevista con respecto a las dos organizaciones. Yo te voy haciendo cada pregunta, y me contestas, primero a Pandora y luego a la fundación.
+*mujer5*: Vale.
+*entrevistador*: Vale. Pues… como te decía, eran dos partes, una de flujos de información y otra de factores de cambio tecnológico. La primera es mucho más larga, entonces no te asustes *ríe el moderador* porque tardemos mucho en ésta porque la otra son cuatro preguntas muy cortas y se termina en seguida.
+*mujer5*: Vale.
+* Flujos de Información
+*entrevistador*: Entonces… bueno, pues la primera pregunta es acerca de la comunicación interna, de qué flujos de información tenéis para comunicaros entre vosotras tanto presenciales como no presenciales.
+*mujer5*: Pues tenemos una asamblea cada quince días, de unas tres horas de duración.
+*entrevistador*: ¿En Pandora, no?
+*mujer5*: En Pandora. Luego el correo, o sea, los mails pues diariamente, así de contarnos. Y… como herramienta compartida de organización, hasta ahora el Google Calendar, porque luego sí que tenemos ahí en mente en algún momento desarrollar otras, pero… Y el servidor con los archivos, que ahí también como que nos organizamos, o sea, que todas tenemos acceso al servidor y a todos los archivos de todas.
+*entrevistador*: *asiente el moderador* ¿Cómo hacéis? ¿Por FTP o…?
+*mujer5*: Pues… el servidor está en la oficina, entonces está conectado directamente a los ordenadores cuando estamos aquí, y tiene también acceso remoto cuando estamos en otro lado, de FTP.
+*entrevistador*: Pero… ¿por Web? ¿O no lo sabes?
+*mujer5*: ¿Por Web…? *ríen ambos* Será por Web, sí. 
+*entrevistador*: Sí, ¿no? Mediante una URL normal o una página web o cosas así.
+*interrumpe otra persona* *hablan a la vez*
+*mujer5*: Con Gnoxys.
+*entrevistador*: ¿Es una herramienta no?
+*mujer5*: Sí. O sea, en Gnoxys nos controlan el tema del servidor.
+*entrevistador*: Vale, pues entonces entiendo que será por… ¿Utilizáis un navegador para acceder a esos archivos cuando estáis fuera? 
+*mujer5*: Sí. De hecho, es diferente el acceso, a través de internet, cuando estoy en esta sala para acceder al servidor de allí que cuando estoy fuera de aquí.
+*entrevistador*: *asiente el moderador*
+*mujer5*: O sea, que como dentro de la oficina tienen una URL y…
+*entrevistador*: Distinta, ¿no? Vale. Vale, pues eso entonces, es una asamblea, y luego… sí que manejáis quizá el correo electrónico para daros algún aviso o alguna cosa, ¿no?, entiendo.
+*mujer5*: Sí. O… o sea, sobre proyectos, si queremos hablarlos detenidamente, pues lo reservamos para la asamblea, pero si son cosas así puntuales que tenemos ahí que decir algo, pues sí, nos lo mandamos por correo… o si estamos ahí todas nos lo decimos.
+*ríen ambos*
+*entrevistador*: Muy bien. Eh… entonces, por ejemplo, si tenéis que redactar un texto en común, ¿lo hace una persona, utilizáis una herramienta del tipo Wiki, o cómo lo hacéis?
+*mujer5*: *reflexiona la entrevistada*
+*entrevistador*: ¿O depende del momento?
+*mujer5*: Es que hace tiempo que no redacto… Pero bueno, sí, una guía que he redactado hace no mucho tiempo con otras dos personas de otras dos cooperativas, lo hacíamos como formato bastante tradicional, de “yo hago mi versión, pongo versión 1, se lo mando a las demás, lo complementan con sus típicas aportaciones y tal… Vaya, en OpenOffice, pero que las otras pueden estar manejando Word, y van añadiendo versiones hasta que la que esté más implicada en la guía o haya dicho que ella hace la revisión final, pues lo hace. Alguna vez hemos utilizado Googles Docs, como para ir modificando ahí.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Y ahora, por ejemplo, con el grupo cooperativo, tangente, que estamos varias cooperativas ahí, están mandándolo… A ver… *le pregunta a otra persona* ¿cómo es la herramienta? ¿Es como un Google Docs, en realidad, no? Cuando mandan lo de “Rellenad qué cursos tenéis” *habla otra persona* Cuando abrimos o… la definición de cada cooperativa lo que hace, yo creo que… *habla otra persona* Es que no es Google Docs. Vamos, si quieres luego lo miramos.
+*entrevistador*: Bueno, da igual, no te preocupes. Vale… 
+*habla otra persona “Luego usamos mucho el Doodle, para la agenda*
+*mujer5*: Ah, es verdad, para quedar con la gente.
+*entrevistador*: Eh… A ver, se me ha olvidado antes preguntarte por lo de la fundación, cómo es  la comunicación interna…
+*mujer5*: Lo que pasa es que en Entredós, como son más intervenciones puntuales, porque antes por lo menos sí que mes a mes me había comprometido a llevar lo de cine, pero ahora es como… Cuando tengo tiempo o surge tal, se lo propongo. Entonces, en realidad, yo la comunicación la tengo con una de las que está en el matronato, que es un matronato de ochos personas o así, ochos mujeres, o con la coordinadora que está ahí por las tardes, como para ver… o sea, que luego ella se reúne…
+*entrevistador*: Que son como colaboraciones puntuales más que tienes una dinámica de asistir a la asamblea y todo eso, ¿no?
+*mujer5*: Sí. Claro, no, eso no.
+*entrevistador*: Vale, pues… en Pandora, ¿tratáis de tomar las decisiones por consenso? ¿O son áreas de responsabilidad?
+*mujer5*: Las decisiones son por consenso, o sea, que también somos cuatro, que es más fácil, o sea, que no sean ahí treinta, entonces cómo lo votas o cómo lo haces, ¿no? Y luego sí que hay coordinadoras para distintas áreas, que puedes ser reproductivas o productivas. O sea, de reproductivo tenemos, por ejemplo, el local, la oficina, pues lo lleva una, lo coordina una. Dentro de nuestras horas como de activismo dentro de Pandora, pues en temas de economía social lo coordina otra. Un especial de cine feminista que estábamos ahí… tenemos el proyecto pero todavía no está muy en marcha, pues eso lo coordinaba otra. ¿Qué más de “repro” hay…? Tema subvenciones, tema relaciones públicas, así como que hay varias áreas, y luego en productivo, pues en cada proyecto productivo también hay una coordinadora que se pone en contacto  con la que nos lleva el tema de cuentas, como para estar al corriente de eso, y luego que tiene la responsabilidad de estar más en contacto con la clienta, o de dinamizar, organizar los talleres, por ejemplo, si es de talleres, o de lo que sea. 
+*entrevistador*: Vale… Bueno, esto se junta un poco, porque ya lo estás explicando, esto es un poco la gestión de tareas, que es un poco, pues eso, que hay gente que tiene áreas de responsabilidad y tal, que tú ya has comentado.
+*mujer5*: *asiente la entrevistada*
+*entrevistador*: Entonces… ahora venía el punto de gestión de eventos, que igual es para eso para lo que usáis el Doodle, ¿no?
+*mujer5*: Ah, sí.
+*entrevistador*: Sí, igual para coordinaros también internamente, ¿no? Como para hacer quedadas o cosas así, ¿no?
+*mujer5*: Pues las quedadas nuestras igual miramos más el Google Calendar y vemos ahí qué huecos tenemos y bueno, pues en este hueco hacemos esta reunión. Ahí el Doodle no. El Doodle es más con otras cooperativas, que igual es más difícil como saber qué agenda tienen, entonces se pone ahí la gente y quedamos.
+*entrevistador*: Pero, por ejemplo, ¿habéis organizado algún tipo de jornadas, cosas así? ¿Eso cómo lo gestionáis?
+*mujer5*: *reflexiona la entrevistada* A ver, por ejemplo, un congreso que hicimos en otoño… Es que ahí era con el Instituto de la Mujer, entonces… pues dimos las fechas que…
+*entrevistador*: ¿Fuisteis a hacer algunas reuniones con ellos…? ¿Con ellas?
+*mujer5*: ¿Así como la planificación de un evento?
+*entrevistador*: Sí, ¿cómo lo gestionáis?
+*mujer5*: Pues, hicimos reuniones presenciales, luego por mail otras cuestiones, o por llamadas. Nosotras estuvimos organizándolo, pues desde llamar a las ponentes, también por mail y alguna llamada puntual. Eh… sí, luego todo por mail. La difusión se hizo desde el Instituto de la Mujer pero también por mail. Y… también usamos a veces la página de la Madeja, que es como una red de cooperativas e iniciativa social.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Que ponemos ahí como los anuncios de eventos o tal. Ah, y la difusión también de los eventos a través del Facebook de Pandora, ¿y qué más? Y del blog.
+*entrevistador*: Vale, bueno, ya me has contado un poco… ¿Tenéis gente voluntaria que colabore con vosotros de manera puntual o…? 
+*mujer5*: No, voluntaria no. No, porque, como nosotras cobramos, no nos parece muy justo que alguien colabore y no cobre.
+*entrevistador*: Y…
+*mujer5*: Sí que hay gente que no es de la cooperativa que igual le damos trabajos puntuales, eso sí.
+*entrevistador*: *asiente el moderador*
+*mujer5*: O sea, por ejemplo, una chica que estuvo a media jornada durante la baja de Marta, que luego cuando ha terminado la baja ella sigue en su cooperativa. Luego… uno de nuestros principios es el intercooperativismo, es decir, que si en uno de los curros no nos da abasto porque hay muchos talleres que hacer o no somos suficientes o lo que sea, en principio priorizamos, antes que contratar a gente externa, el compartirlo con otras cooperativas. Es decir, hay este curro, quién lo necesita o quién tal, y… como fomentar el cooperativismo en ese sentido. Eso sí que lo tenemos ahí…
+*entrevistador*: *asiente el moderador* Vale, pues sí, lo que te estaba ahora preguntando era eso, comunicación con otros colectivos, si formáis en algún momento alianzas o participáis en plataformas o cosas así.
+*mujer5*: Sí. Está, por un lado, el Mercado Social, que es como el proyecto de economía social donde más estamos, que hay otras cooperativas y también, por ejemplo, Traficantes de Sueños está.
+*entrevistador*: ¿En Mercado Social?
+*mujer5*: Sí. Diagonal está. O sea, que se abierto más allá de la Madeja, porque la Madeja era como nuestro círculo así de cooperar con otras cooperativas, pero aquí hay proyectos de economía social que no tienen por qué ser cooperativas de iniciativa social. Y, eso por un lado, luego, por ejemplo, el festival de cine feminista es con colectivos feministas de Madrid, que sobre todo están implicada las de la Candela de Aluche, y ahí pues nos coordinamos pues o por llamadas o por mails. Y… ¿qué más cosas? Bueno, luego el grupo cooperativo, que es como una estructura profesional, o sea, que se ha creado no tanto para difundir el mercado social, de que hay otras posibilidades de economía, de empleo y tal, sino como una puerta de juntarnos y poder afrontar la crisis mejor, que ahí ha habido una sesión plenaria, al inicio, cuando todavía no tenía nombre ni nada. Y el resto, casi toda la comunicación... Bueno, hoy tenemos una reunión, pero para un proyecto en concreto, pero así como de coordinación es por mail. Y hay dos personas, digamos liberadas por el resto, para encargarse de buscar curros y de esa coordinación.
+*entrevistador*: *asiente el moderador* ¿Y vosotros tenéis entidad legal de cooperativa?
+*mujer5*: Sí.
+*entrevistador*: ¿Qué diferencia hay entre la Madeja y el grupo cooperativo?
+*mujer5*: La Madeja, por ejemplo, no tiene entidad jurídica, o sea, es como una unión de cooperativas de iniciativa social, que todas tienen el carácter de sin ánimo de lucro, que fue surgiendo y que, bueno, como que favorecía, ahora ya no sé si tanto, pero en principio la Madeja favorecía la iniciación de cooperativas nuevas, pues o bien porque había un espacio cerca de Opera, Santa Clara, que lo compartían varias cooperativas y, entonces, si empezaba una nueva, se le podía hacer un espacio más barato. O sea, que las que ya llevaban tiempo intentaban sostener económicamente y logísticamente a las nuevas, y eso era en ese espacio. Pero… como que la Madeja, entre el encuentro anual que se hace y la red en sí misma, pues… no sé, como que permite ahí a gente que no sabe por dónde tirar, si quiere hacer una cooperativa o no, acercarse a cualquiera de nosotras y, o bien que le asesoremos de cómo hacer la cooperativa, o sentir apoyo de a ver en qué proyectos estamos… Antes también… es que ahora con la crisis han cambiado muchas cosas, pero había proyectos muy grandes que se favorecía, si estabas empezando, pues empezaban ahí, y de ahí ya te impulsabas a seguir con otros curros. Pero... sí, como que igual era más informal, o sea, estas cosas no estaban formalizadas, sino que estaba como en los principios de las cooperativas que conforman la Madeja, en los principios estaba moralmente o éticamente ahí ese impulso, o políticamente. Pero el grupo cooperativo es una estructura profesional, o sea…
+*entrevistador*: Que permite tener proyectos propios como grupo cooperativo,
+¿una cosa así?
+*mujer5*: Claro, de conseguir empleos. De conseguir trabajos y proyectos productivos que, sí, permitan afrontar la crisis a las cooperativas que estamos. Y se ha hecho una selección. O sea, no todo el mundo de la Madeja, en la Madeja entra cualquiera, digamos. Cualquiera que empiece con una cooperativa de iniciativa social que al ser parte de la Madeja, pues igual simbólicamente ponen su web en la web de la Madeja o la enlazan o tal, o vienen al encuentro, ¿no?, como espacios menos formalizados. Pero el grupo cooperativo, lo empezaron cuatro cooperativas y fueron invitando, o sea, amadrinaban a otras, y creo que somos catorce, y ahí se ha cerrado, y ya dentro de un tiempo si alguna de nosotras queremos amadrinar a otra pues se hará. Y hay un contrato por medio, del vínculo de las catorce. O sea, todo mucho más reglado.
+*ríen ambos*
+*entrevistador*: Vale. Eh… imagino que tenéis algún tipo de documentación interna, como Pandora, ¿cómo…? ¿O no? O publicáis todo lo que tenéis en la web o…
+*mujer5*: ¿Documentación de correos que escribamos o…?
+*entrevistador*: Sí.
+*mujer5*: *reflexiona la entrevistada* A ver, o sea, guías que escribimos, casi todo no los piden clientes o clientas, y se publica, o sea, que eso sería público. Y luego hay informes que no se han publicado. Y, claro, una de las cosas que queremos cambiar en la web es que podamos ir publicando cosas ahí que han tenido otra salida, o cosas igual que hemos escrito cada una, pues para Diagonal o para otras historias, y que nos parece interesante que tenga también reflejo en Pandora, poder colgarlo eso también. Y otro tipo de documentación así que no sean artículos o…
+*entrevistador*: Igual los estatutos o… no lo sé.
+*mujer5*: Ah, sí. Todo eso lo tenemos en el servidor. O sea, que es interno. Sí. O sea, que lo vemos nosotras cuatro, podemos acceder a ello cuando quiera.
+*entrevistador*: Es lo que decías antes de… Sí, sí, sí.
+*mujer5*: Claro. Las actas de asambleas o todo de cada proyecto.	
+*entrevistador*: Claro. Es que, por ejemplo, este es un guión que tengo para distintas asociaciones, por ejemplo, el 15M publicaba todas las actas y cosas de esas, entonces es una pregunta que hago y tal y cual, pero que sí que entiendo que una cooperativa sí que tiene su…
+*mujer5*: Claro, las actas no…
+*entrevistador*: Vale, entonces, esto tiene un poco de relación, que es el tema de la gestión económica, si recibís donaciones o os financiáis solo por clientes o…
+*interrumpe otra persona*
+*mujer5*: Que… Donaciones no. Funcionamos más por… tampoco subvenciones. Eh… Contratos, de ayuntamientos que, o bien sacaban concursos públicos y optábamos a ellos y se ganaban. Que eso es lo que ya se ha acabado porque están priorizando ahora las empresas que ponen el precio ahora súper barato, entonces no se puede competir. Luego, son sobre todo clientas que son instituciones públicas pero que te conocen como ya toda una trayectoria o bien personal y luego ven que como cooperativa lo haces bien, pues te siguen llamando. O sea, instituciones públicas vinculadas con las áreas de género, o las áreas de igualdad de ayuntamientos, que piensan, yo que sé, en un proyecto, o nosotras se lo presentamos, y dicen “Ah, qué guay, que lo hagan”. O sea, que no tienen por qué sacarlo a concurso porque como que son contratos menores de éstos que no es mucho dinero. Y luego también de secciones de sindicatos. Pues la sección de enseñanza que quiere hacer temas de igualdad de UGT o… Bueno, y ONG también. 
+*entrevistador*: ¿Y empezasteis las mismas personas en la cooperativa que estáis ahora?
+*mujer5*: Pues al inicio, todas las que estamos en Pandora estábamos en Meigas, que era un grupo de mujeres de la facultad de Ciencias de la Información. Entonces ahí, Meigas empezó en el 98 o por ahí, estuvimos… pues igual hasta el 2003 o así, y luego ya Meigas no existía como tal porque ya no estábamos en la facultad, pero como que el grupo de chicas que estábamos en Meigas… 
+*entrevistador*: Seguís teniendo mucha relación.
+*mujer5*: Sí. No hacíamos asambleas pero como que el vínculo y los temas de conversación o cómo… Ya nuestra perspectiva del mundo estaba marcada por	lo que habíamos desarrollado de feminista en el grupo, ¿no? Y entonces hubo un momento, que Soraya empezó en otra cooperativa, que todavía sigue, y vio como la posibilidad de… pues de que el cooperativismo era una opción. Yo estaba en el Instituto de la Mujer. Marta justo había terminado un curro o algo así. Entonces, como que empezamos a darle vueltas ahí a ver si hacíamos una cooperativa, y nos empezamos a juntar casi todas las que habíamos estado en Meigas, más o menos. Y de ahí, como que costaba mucho el que hubiera un compromiso, de decir “Pues yo ahora estoy en este curro pero dentro de un año me involucraría…”. Entonces empezaron Soraya y Marta a currar, o sea, a ganar dinero, que era como asociación al principio, no como cooperativa, y luego yo tenía ahí la cosa de que venía del Instituto de la Mujer, irme un tiempo fuera, y al volver meterme en Pandora. Mientras tanto entró una amiga de Marta que luego al tiempo se fue, y cuando se fue entró Irene. Que Irene… o sea, la amiga de Marta no era de Meigas pero Irene sí era de Meigas, entonces el resto de las Meigas como que tampoco tenían su proyecto así…
+*entrevistador*: Sí. *se ríe* Es que todo esto venía a colación de la gestión económica, que si hicisteis una contribución inicial de dinero, o simplemente empezasteis a currar… Porque claro, si empezasteis como asociación  que ahí ya empezó a *no se entiende*, igual luego lo invertisteis o…
+*mujer5*: Claro, como asociación no hace falta poner dinero, que como cooperativa sí, que tienes que poner… pues entre las tres socias que te obligan como cooperativa 1800 €, o sea, que puede ser súper poco. Pero como asociación no. Lo que pasa es que cuando entró la amiga de Marta, hicieron cuentas Soraya y Marta de cuánto habían hecho de superávit y sí que había ahí un dinero que, o sea, han invertido en la cooperativa porque no se les ha devuelto, pero está pendiente de devolución. Sería ahí como una inversión, pero un préstamo, ¿no? Y luego pusimos el capital inicial que te piden que es un cuarto de capital social que pones en los estatutos, que nosotras pusimos una barbaridad de capital social, porque… bueno, por el tema de que puedes capitalizar el paro cuando te haces socia… Entonces, como Ire venía de un curro que tenía bastante paro acumulado, pues pensamos que lo mejor era… como que se pusiera alto para que esa capitalización la pudiera invertir directamente como capital social, y… Pero bueno, que son cosas que las vas poniendo poco a poco y que luego te vuelven, o sea, que a mí no me supone un desembolso… Lo que sí hemos hecho… nos hemos hecho autopréstamos, o sea, préstamos a la cooperativa, que son nuestros. Y luego ha habido algún préstamo externo, bueno, muy cercano, de mi compañero, del compañero de Marta, que luego se les ha devuelto. 
+*entrevistador*: *ríe el moderador*
+*mujer5*: Hay gente pide a Coop57 créditos, nosotras no, porque… no sé. Cuando tuvimos falta de liquidez, estuvimos nueve meses sin cobrar un tiempo, pero ahí lo asumimos nosotras. O sea, que ahí podíamos haber pedido un préstamo para seguir cobrando, pero preferimos como dejar de cobrar y esperar a cobrar más adelante.
+*entrevistador*: Vale. ¿Y alguna vez habéis participado en alguna movilización como Pandora o…?
+*mujer5*: Como Pandora no, porque… no sé. O sea, como cada una tiene… Pues Irene y Soraya están en Diagonal, eh… Marta está en ecologistas en acción, Soraya y Marta están en el grupo de ecofeminismo de ecologistas en acción. Y no sé… como no es… Ahí está la diferencia que te decía al principio, no lo vivo como colectivo que podamos ir… no sé, sí, a una manifestación o a… Igual una reivindicación más laboral sí. O sea, si fuera… como cuando se estuvo pidiendo el convenio de intervención social, por ejemplo. 
+*entrevistador*: *asiente el moderador*
+*mujer5*: Pues igual ahí, nos pilló como muy jóvenes como cooperativa, pero si fuéramos… igual si fuera ahora, pues sí que… O si ahora decidiéramos intervenir porque los ayuntamientos no pagan, pues sí que… Como que en el tema laboral sí que veo que podríamos ir como Pandora, o en esos espacios más concretos del mercado social, o tal, que con una pancarta en una mani como… así no.
+*entrevistador*: *asiente el moderador* Bueno… es que esta pregunta quizá no tiene sentido, que es gestión de nuevos colaboradores.
+*mujer5*: Bueno, sí. Por ejemplo, con la baja de Marta, sí que pensamos de… o sea, que si en algún momento quisiéramos incorporar a más gente, que sería tener un tiempo de prueba para ver si luego se hace socia, pues… como que sí que pensamos que el tema de las bajas o de colaboraciones puntuales, que en vez de hacer con otras cooperativas un curro lo hagas con alguien en concreto… sirve como para ir viendo si estás bien con esa persona, si funciona, para que se incorpore más. Pero de momento no… no sé, como que no hemos pensado en crecer. 
+*entrevistador*: Sí… O sea, no es que no tuviera sentido, es que ya me habías contado antes que era… lo habías definido como muy cercanas, ¿no?
+*mujer5*: Sí.
+*entrevistador*: La gente que se ha ido incorporando, que ya os conocíais y eso.
+*mujer5*: Sí. También es que tuvimos una mala experiencia ahí con esta que se incorporó y luego se fue, y nos ha costado yo creo… como el pensar en crecer, que hay otras cooperativas que lo ven súper necesario, que cuanto más creces más rentable es la cooperativa. Pero nosotras cuatro nos entendemos muy bien desde hace muchos años, entonces… como que tendría que ser una persona que ya veas que estás funcionando guay.
+*entrevistador*: *asiente el moderador* 
+*mujer5*: No solo en el nivel profesional de que haga bien el curro que hay que hacer, sino también en cómo te entiendes, cómo manejas la comunicación… no sé. Sí, en distintos niveles de actividad.
+*entrevistador*: Vale, entonces, esta pregunta es de cómo os visibilizáis exteriormente. Entonces, entiendo que tenéis una web con información… Y… pues el tipo de imagen que queréis transmitir al exterior y cómo lo hacéis.
+*mujer5*: Pues tenemos la web, que era una web estática, de HTML, ¿no?, y ahora la están transformando en gestor de contenidos, porque es que si no, no podíamos modificar nada. Luego el blog y el Facebook, que yo el Facebook creo que ha sido importante, lo tenemos hace un año y medio o así. 
+*entrevistador*: ¿Por qué piensas que es importante?
+
+*mujer5*: Pues, por ejemplo, ahora cada vez más hacemos cursos o
+talleres o así, que dependemos de que la gente se inscriba y pague por
+hacerlos, y en eso hay que darle una difusión, o sea, que la gente se
+entere para poder hacerlo, o sea, que ya no es que te lo organice el
+Instituto de la Mujer o que te lo organice tal, ¿no? Y ahí con cómo se
+dinamizan los eventos en Facebook de poder invitar a la gente, o sea,
+que hay mucha gente que está pendiente del Facebook y que a través de
+ahí le llega lo que podemos estar haciendo nosotras, y… bueno, y a
+través de mailing, también, ¿no? Pero… sí, que el Facebook yo creo da
+una visibilidad que con los mails y con tener tu web ahí colgada pues
+no… O sea, es como que estás más presente.
+
+*entrevistador*: ¿Y Twitter, por ejemplo, no usáis?
+*mujer5*: Twitter no. Twitter lo usa Irene personalmente, o sea, como ella, pero… nos parecía como más difícil usarlo como organización. Porque tampoco tenemos como tanto dinamismo, o sea, que… igual lo tendríamos que volver hablar, pero… así una sensación de que eso era para organizaciones, pues gabinetes de prensa o así que quieran estar comunicando cosas todos los días, ¿no? Y las cosas que nosotras comunicamos… es más puntual, de… pues eso “Se abre el plazo para inscribirse a este curso” o, yo qué sé, “estamos haciendo…” no sé. Sí, son más puntuales. Creo que no podríamos generar tanta información.
+*entrevistador*: *asiente el moderador* Y luego… eso sí, ¿hacéis algún tipo de actividad de cara a visibilizaros, alguna cosa así? 
+*mujer5*: Pues… así del tema de relaciones públicas… Claro, antes del Facebook, yo, por ejemplo, era la encargada de relaciones públicas. Entonces, pues me iba… o sea, todo lo que se me ocurría. Desde que había una presentación de una revista en Comisiones Obreras, pues me iba a la presentación, con horas pagadas de Pandora, para ver si hacíamos alianzas, ¿no? Que era una búsqueda de alianzas y de que la gente nos conociera. Y bueno, yo creo que siempre ha tenido algún efecto, que por lo menos sí que te iban conociendo, que también nuestro ámbito de trabajo, de género y comunicación, pues como que no lo tiene mucha gente, que sí que hay más que se dedican a la sociología, en general, o a intervención social en general, educadores sociales o tal. Pero yo creo que un valor nuestro era como que el tema que tenemos era más restringido, y para mí sí que ha sido un potencial eso. Y entonces, bueno, como que te conocían de “esto es lo que haces tú”. Lo haces, y sí que cuesta que vean que haces más cosas que con lo que te conocen… ¿Esto iba por lo de las relaciones públicas?
+*entrevistador*: Sí. Las actividades que hacéis para visibilizaros.
+*mujer5*: Ah, vale. Y… luego, sí que hemos pensando que, igual, guías que editamos no le damos… como que las terminamos de hacer y no le damos, igual, la suficiente visibilidad porque es para… pues eso, para una clienta que nos lo ha pedido o lo que sea. Entonces, como que se hace, y luego dejamos en las manos de quién sea que lo mueva, pero que deberíamos moverlo nosotras también. O sea, hacer presentaciones nuestras aunque sea sin remunerar, pero… Luego el tema de las charlas también lo concebimos un poco así, de si das una charla, aunque te la paguen un poco mal, o aunque no te la paguen, porque el otro día fue Marta a Valencia y no se la pagaban, pero… estamos dándonos a conocer.
+*entrevistador*: Claro.
+*mujer5*: Y… así con… En realidad casi todos los proyectos que son deficitarios también lo pensamos que, bueno, no deberíamos hacerlo por este precio pero cada vez nos conocen más. Pero bueno, sobre todo en charlas, en encuentros, en congresos, que si tuviéramos más tiempo igual incluso deberíamos ir a más encuentros, congresos como para tener más presencia.
+*entrevistador*: Entonces decías que antes tú sí que te dedicabas al tema de daros a conocer y tal, pero que con el Facebook, como que lo dejaste, ¿no? 
+*mujer5*: Sí, sí. Como que el Facebook me sustituyó ahí, en esa faceta. *ríen ambos* Igual más por comodidad, o porque… no sé. O que antes dábamos más prioridad a tener unas horas…
+*entrevistador*: O sea, piensas que fue por el Facebook o que fue porque ya teníais como más envergadura como Pandora y que ya os conocía más gente e igual no era tan necesario…
+*mujer5*: Pues con el Facebook yo, personalmente, me flipé un poco al principio, de “¡Qué de amigas hago! *ríen ambos* ¡Ya me conocen 1500 personas!”, y es mentira, claro. Y sí, lo mismo antes estaba más como con la alerta de “Vamos a tal sitio para que nos vea Fulatina” y ahora parece que si a Fulatina le pones “Me gusta” en su muro, ya te está viendo.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Pero igual es un poco irreal, o sea, esto tendríamos que volver a planteárnoslo. Y luego es verdad lo que tú dices, que ya se nos conoce más y entonces no sabes hasta qué punto como el seguir haciéndote ver es necesario o no. Pero bueno, yo creo que sí, que deberíamos igual retomar un poco eso.  
+*entrevistador*: *asiente el moderador* Vale. ¿Participais en iniciativas de terceros? Eh… no sé. El Instituto de la Mujer hace un encuentro y vais con Pandora, cosas así, o…
+*mujer5*: *reflexiona la entrevistada* Pues yo creo que más con las cercanas, o sea, si otra cooperativa de la Madeja hace una jornada de no sé qué, pues igual sí vamos. Lo que pasa es que también, como no es militancia, o sea, que en Pandora queremos tener unas horas cubierta por Pandora para tema así de activismo. Pero claro, tampoco se te pueden muchas horas en eso porque entonces tu cooperativa no es rentable.
+*entrevistador*: Claro.
+*mujer5*: Entonces es ahí un poco… como que yo creo que no vamos a muchas cosas de esas para que no nos… o sea, sí, que no sea poco rentable la cooperativa, y también porque no queremos como monetarizar todas las horas de nuestra vida, o sea, que si yo voy a una charla que hace Altequio, pues voy porque a mí me interesa y no siempre estoy pidiendo a Pandora que me cubra ese tiempo. Entonces, ahí como que yo creo que es un poco complicado.
+*entrevistador*: Claro, eso sí que lo estaba pensando. Digo, pues igual lo que podríais hacer es tener un horario más reducido y luego que cada cual decidiera, o sea, que igual queréis hacer una especie como de militancia dentro de Pandora, enfocada al ámbito de la mujer o algo así, porque claro, igual si haces lo que quieres no estás haciendo militancia sino que estás…
+*mujer5*: Claro. Es que en realidad… las horas destinadas en Pandora a cosas activistas son mínimas, o sea, que en realidad luego lo hacemos todo por fuera, o sea, que Irene y Soraya todo lo de Diagonal lo hacen fuera, o yo el docu lo hago por fuera. Pero con la pregunta de cómo nos involucramos con lo que hace otra gente… como que si no, o sea, que si no está como dentro de las líneas prioritarias de ese activismo que nos marcamos en los plenarios en Pandora, que tenemos dos Plenarios al año, pero sobre todo en el del inicio de curso, que este año han sido mercado social y festival de cine feminista, que encima este año no está saliendo. Pero si no está en esas líneas… como que no vemos cada una el sacar horas de Pandora para esas cosas, entonces lo hacemos por fuera.
+*entrevistador*: *asiente el moderador*
+*mujer5*: Sí, algo así.
+*entrevistador*: Vale. Ahora el punto de la compartición de recursos. ¿Cuando publicáis cosas que hacéis para otro u otras, o artículos o cosas así que decís que colgáis en la web, necesitáis algún tipo de licencia libre?
+*mujer5*: Casi todo es Creative Commons.
+*entrevistador*: Creative Commons.
+*mujer5*: Sí.
+*entrevistador*: Y… bueno, luego hay una pregunta un poco de transparencia de métodos, de cuentas y tal. Entiendo que claro, todas las de Pandora conocéis las cuentas, pero que, por ejemplo, ¿las publicáis en algún sitio, aunque sea en organizaciones afines como el grupo cooperativo, cosas así?
+*mujer5*: Con el grupo cooperativo vamos a tener que empezar a hacerlo. O sea, que hasta ahora no lo hacíamos. Las cuentas de hecho nos las lleva una persona que es de otra cooperativa, que digamos que compartimos la contable con ellos. Y hasta ahora pues esas cuentas nosotras podemos acceder a ellas pero las maneja más ésta, se las da a la gestoría que nos lleva todas las cuentas y ahí se quedaba, pero ahora con el grupo cooperativo sí que se va a pedir como  que  las cuentas de todo estén ahí accesibles.
+*entrevistador*: ¿Realizáis algún tipo de planificación de objetivos a corto, medio y largo plazo en Pandora?
+*mujer5*: Sí, eso en los plenarios, o sea, lo ideal, aunque este año
+no ha sido así de tiempos es que, a inicio de curso, o sea, a la
+vuelta de vacaciones, en septiembre, hagamos un plenario inicial, y
+luego en junio un plenario de evaluación. Entonces en el plenario de
+inicio de curso vemos qué proyectos hay, cómo repartírnoslos,
+estrategias también para encontrar más curros, a qué damos prioridad
+de ese año de intereses. Ahí también vemos como qué intereses tiene
+cada cual, tanto vitales como… O sea, yo, por ejemplo, en el último
+plenario planteé que me apetecía, dentro de un tiempo, irme un año a
+estudiar por ahí, pero, como que es el momento… También se puede hacer
+en las asambleas, pero igual como modo de planificarse. O… incluso que
+te apetece más ese año… “Pues me apetece involucrarme en proyectos que
+tengamos de video porque quiero seguir aprendiendo de video” o “de
+ecofeminismo”, o sea, el ver cada una, y eso lo hacemos en los
+plenarios. Y eso lo revisamos a ver si eso ha sido así. 
+
+* Factores de Cambio Tecnológico.
+*entrevistador*: Muy bien. Vale, pues ya vamos a pasar al siguiente gran apartado, que es el de factores de cambios tecnológico. Que son cuatro preguntas. Entonces, la primera sería: ¿qué herramientas tecnológicas recuerdas haber usado en el último mes?
+*mujer5*: Eh… pues internet con los mails… con rastreo de webs, con Facebook, he creado un blog en el último mes.
+*ríen ambos*
+*entrevistador*: ¿Un blog personal?
+*mujer5*: El del documental. Eh… ¿qué más? Bueno, luego, ¿tema de cámara de video también se considera?
+*entrevistador*: Sí, sí.
+*mujer5*: Pues cámara de video, micro, el grabador de sonido. Eh… cámara de fotos no… Yo creo que nada más. Bueno, el móvil.
+*ríen ambos*
+*entrevistador*: ¿Cuáles son las herramientas que has dejado de usar si miras cinco años atrás? Herramientas tecnológicas digo.
+*mujer5*: ¿La cámara de fotos es tecnológica?
+*entrevistador*: Sí.
+*mujer5*: Pues la cámara de fotos la uso ya muy poco… La grabadora de cinta de audio.
+*entrevistador*: Ya. Eh… la cámara de fotos… pero porque la has remplazado igual por  el móvil… o porque ya no haces fotos.
+*mujer5*: Porque antes me dedicaba a hacer fotos de manis o así y ya, entre que me mangaron una muy pequeñita que tenía yo muy accesible, o sea, como que me la podía llevar a muchos sitios, y ya el sacar una, que es nada, un poquito más grande, pero la utilizo como muy puntualmente. El móvil, entonces, se me estropea cada dos por tres y tampoco es bueno para hacer fotos. Sí que al principio me flipé de “Llevo una cámara en el bolsillo…”
+*entrevistador*: *ríe el moderado*
+*mujer5*: Pero no la uso tanto. Y, como que ya no tengo esa actividad vinculada a la fotografía… Y, entonces, o me voy por ahí y me emociona sacar fotos o no, no la uso. Y luego, la grabadora de audio sí que… claro, la cinta la he ido dejando de lado. Y sigo utilizando, desde hace ya bastante años, un mp3 que me compré que los botones van fatal pero graba guay el audio, entonces, cuando hago entrevistas así lo utilizo. Eh… ¿qué más he dejado de usar? ¡Ay! No lo sé... La tele, o sea, no tengo televisión en casa. O sea, que cuando hay en algún lado la veo. Pero no…
+*entrevistador*: Sí, que la usas con menos frecuencia.
+*mujer5*: Sí.
+*entrevistador*: Vale, pues ahora al revé*mujer5*: ¿qué herramientas has incorporado, herramientas tecnológicas que has incorporado, si miras cinco años atrás?
+*mujer5*: A ver, el móvil ya lo tenía y era igual de cutre casi… que el que tengo ahora… el móvil no. El mp3 ya lo tenía antes también. Pues, por ejemplo, lo del tema del servidor, sí que para mí es una novedad, o sea, el poder acceder, desde cualquier lado a los documentos de Pandora… eso sí que ha sido un cambio. Luego… bueno, es que el resto igual son más aplicaciones, ¿no?, como que he descubierto el Dropbox, yo que sé, como instrumentos ahí dentro de internet que me facilitan el trabajo, que es de los últimos años para acá. 
+*entrevistador*: Pero también puedes decirlos, si quieres.
+*mujer5*: ¿Sí? Pues eso, el Dropbox, el Google Calendar, aunque no me mola que sea de Google, pero nos está siendo útil. Lo del Facebook. Eh… bueno, es que lo del Twitter me metí un poco y luego se me olvidó la contraseña… *ríen ambos* porque, o sea, no tengo tanto tiempo para dedicarle a las redes sociales, vaya.
+*entrevistador*: Claro.
+*mujer5*: Ah, y, luego, gestores de mails, pues tengo el Evolution, que me va guay, aquí en la oficina. Luego todo lo miro por Webmail, pero sí, de aplicaciones esas.
+*entrevistador*: Vale. ¿Qué herramientas tecnológicas has incorporado debido a tu activismo político?
+*mujer5*: Pues el Twitter lo empecé a usar por eso, pero, claro, luego lo he dejado. Eh… nada, porque yo veo súper útil lo de los móviles ahora mismo, el poder estar ahí mirando cómo va la cuestión, *ríen ambos* pero no tengo. Eh… ¿qué más? Es que el Facebook, un poco, o sea, sí puede ser un poco de activismo político. Y, claro, si el documental es un poco de activismo político, pues también el Dropbox nos sirve, y todo lo que es el tema del video que estamos manejando, los programas de edición. Ah, bueno, esa es otra, que en los últimos cinco años pues un Mac, para editar. Todas las herramientas para hacer el documental. Y ya está.
+*entrevistador*: Pues nada, ya hemos terminado esta parte.
+*mujer5*: ¿Ah sí? Jolín, qué pocas tecnologías, no sé si te va a servir de mucho.

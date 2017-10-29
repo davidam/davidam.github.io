@@ -1,0 +1,37 @@
+#+TITLE: Fotos
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Esto son algunas fotos para ver si google images aprende a reconocer
+mi imagen. El gran hermano nos vigila, pero tiene que reconocernos,
+vernos la cara, sino la vigilancia que hace desde el espacio no
+funciona bien.
+
+#+CAPTION: Apoyado en árbol
+#+LABEL:   figura 1
+[[../fotos/juventud/david_apoyado_arbol.jpg]]
+
+#+CAPTION: David en Big Ben
+#+LABEL:   figura 2
+[[../fotos/juventud/david_big_ben.jpg]]
+
+#+CAPTION: David Bufanda Martín Vargas
+#+LABEL:   figura 3
+[[../fotos/juventud/david_bufanda_martin_vargas.jpg]]
+
+#+CAPTION: David Carnaby Street
+#+LABEL:   figura 4
+[[../fotos/juventud/david_carnaby_street.jpg]]
+
+#+CAPTION: David cerca de Valencia
+#+LABEL:   figura 5
+[[../fotos/juventud/david_cerca_valencia.JPG]]
+
+#+CAPTION: David cerca de Valencia
+#+LABEL:   figura 5
+[[../fotos/juventud/david_depie_parque.JPG]]
+

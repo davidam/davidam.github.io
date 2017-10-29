@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Procesamiento de Lenguaje Natural</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Planificacion"
+HREF="planific.html"><LINK
+REL="NEXT"
+TITLE="Computación Neuronal"
+HREF="neuronal.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="planific.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="neuronal.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="nlp"
+>7. Procesamiento de Lenguaje Natural</A
+></H1
+><P
+>Antes de abordar qué es el procesamiento del lenguaje
+    natural (ó lenguaje humano), pensemos por un momento
+    qué es la compresión. Según Rich y Knigth
+    "comprender algo es transformarlo de una representación a
+    otra, en donde la segunda representación se ha elegido para
+    que se corresponda con un conjunto de acciones posibles que
+    podrían llevarse a cabo, y en donde se ha diseñado
+    la correspondencia de forma que para cada suceso se realice una
+    acción apropiada". En definitiva, comprender algo es
+    transformarlo en una representación que nos sea más
+    útil para lograr nuestro objetivo.</P
+><P
+>¿Para qué podemos querer que una
+    máquina comprenda lo que pone en un texto? Lo primero que
+    se nos puede ocurrir es que sirva para comunicarnos con ella como
+    si de una persona se tratara, pero para ello no solo
+    requeriría comprender nuestras palabras, sino
+    también las emociones con las que las expresamos, lo cual
+    es algo más complejo. La traducción
+    automática desde un lenguaje natural a otro es algo para lo
+    que solo necesitamos comprender el significado neutral de las
+    palabras. Si conseguimos que un ordenador comprenda,
+    también nos va a ayudar en tareas de recuperación de
+    la información; me refiero a buscadores más eficaces
+    que sepan relacionar mejor unas palabras o frases con otras, e
+    incluso independientemente del idioma.</P
+><P
+>Para realizar estas tareas es necesario comprender un texto;
+    esto es lo que nos proporciona el procesamiento del lenguaje
+    natural. Veamos las fases de las que se compone [<SPAN
+CLASS="citation"
+>Rich y
+    Knight, 1994</SPAN
+>]:</P
+><P
+></P
+><UL
+><LI
+><P
+>Análisis morfológico: Se analizan los
+	componentes de las palabras individuales y se separan de las
+	palabras los constituyentes que no forman parte de ellas, como
+	los símbolos de puntuación</P
+></LI
+><LI
+><P
+>Análisis sintáctico: Se transforman las secuencias
+	lineales de palabras en ciertas estructuras que muestran la
+	forma en que las palabras se relacionan entre sí. Se pueden
+	rechazar algunas secuencias de palabras si infringen las
+	reglas del lenguaje sobre la forma en que las palabras pueden
+	combinarse. Ej: "niña la come mucho" se
+	rechazaría.</P
+></LI
+><LI
+><P
+>Análisis semántico: Se asigna significado a las
+	estructuras creadas por el analizador sintáctico. Es decir, se
+	hace una correspondencia entre las estructuras sintácticas y
+	los objetos del dominio de la tarea. Las estructuras en las
+	que no se pueda realizar tal correpondecia se rechazan. Ej:
+	"Las ideas verdes incoloras duermen furiosamente" se
+	rechazaría</P
+></LI
+><LI
+><P
+>Integración del discurso: El significado de una frase
+	individual puede depender de las frases precedentes y puede
+	influenciar el significado de las frases posteriores. Por
+	ejemplo, la palabra "lo" en  "Jaime lo quiso" depende del
+	contexto del discurso, mientras que la palabra "Jaime" puede
+	influenciar el significado de frases posteriores como
+	"Él vive en Madrid".</P
+></LI
+><LI
+><P
+>Análisis de la pragmática: La estructura que representa
+	qué se ha dicho se reinterpreta para determinar su significado
+	actual. Ej: "¿Sabe qué hora es?" se reintepreta como petición
+	de hora.</P
+></LI
+></UL
+><P
+>Hasta ahora hemos estado hablando del procesamiento del
+    lenguaje escrito, si quisiéramos realizar procesamiento del
+    lenguaje oral, necesitaríamos conocimiento adicional sobre
+    fonología, así como suficiente información adicional para manejar
+    las posibles ambigüedades que pudieran surgir.</P
+><P
+>Existen varias herramientas libres para tratar el
+    procesamiento del lenguaje natural. Podemos encontrar malaga-bin y
+    mmorph. Sin embargo, creo que para juguetear y/o iniciarse en este
+    campo es más adecuado <A
+HREF="http://nltk.sourceforge.net/"
+TARGET="_top"
+>nltk</A
+> (Natural Language
+    Toolkit), escrito en python y con una <A
+HREF="http://creativecommons.org/licenses/by-nc-sa/1.0/"
+TARGET="_top"
+>licencia
+    copyleft de creative commons</A
+>.</P
+><DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="img/nltk.jpg"><DIV
+CLASS="caption"
+><P
+>pantallazo de nltk en ejecución</P
+></DIV
+></P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="planific.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="neuronal.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Planificacion</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Computación Neuronal</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

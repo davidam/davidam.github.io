@@ -1,0 +1,183 @@
+#+TITLE: Crear y usar un repositorio git en un servidor
+#+LANGUAGE: es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+AUTHOR: David Arroyo Menéndez
+#+DATE: 11/11/2012
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+* En el servidor
+#+BEGIN_SRC bash
+cd ~
+mkdir repository.git
+cd repository.git
+git --bare init
+git config core.sharedRepository true
+#+END_SRC
+
+* En local:
+#+BEGIN_SRC bash
+mkdir repository
+cd repository
+git init
+git add *
+git commit -m "Initial import"
+git remote add origin git+ssh://user@server/home/user/git/repository.git
+git push origin master
+#+END_SRC
+
+* Bajar git:
+
+#+BEGIN_SRC bash
+git clone git+ssh://user@server/home/user/git/repository.git
+#+END_SRC
+
+* Permitiendo http
+
+Una vez realizados los pasos anteriores se puede habilitar usar git con http
+
+** En el servidor
+
+#+BEGIN_SRC bash
+$ cd /var/www/
+$ git clone --bare /home/user/git/repository repository.git
+$ cd drupal-el.git
+$ mv hooks/post-update.sample hooks/post-update
+$ chmod a+x hooks/post-update
+$ git update-server-info
+#+END_SRC
+
+** En el cliente
+
+#+BEGIN_SRC bash
+$ git clone http://server/repository.git
+#+END_SRC
+
+* Estudiando cosas que pasan en tu propio repositorio
+#+BEGIN_SRC bash
+$ git pull
+$ git status
+$ git log fichero
+$ git diff 84de2396c3f0fcdc9994028b5bf5f0005c763496 3c933adaf627bc8a58cfefb62ff0f2d5df640673 fichero
+#+END_SRC
+
+* Eliminar ficheros
+#+BEGIN_SRC bash
+$ git rm file                                                                   
+$ git commit -m "delete file" file                                              
+$ git push 
+#+END_SRC
+
+* Un par de apuntes rápidos para deshacer cambios
+Revertir ficheros no commiteados
+#+BEGIN_SRC bash
+$ git checkout -- file
+#+END_SRC
+
+Deshacer el último commit no enviado con push:
+#+BEGIN_SRC bash
+$ git reset --hard HEAD~1
+#+END_SRC
+
+Revertir el último cambiado, al que se le ha hecho push
+#+BEGIN_SRC bash
+$ git push -f origin last_commit:branch
+#+END_SRC
+
+* Cambiando de ramas
+Es posible que tengamos varias ramas por ejemplo production (prod) y
+master. Si estamos en master y queremos pasar los cambios a production
+se puede hacer lo siguiente:
+
+#+BEGIN_SRC bash
+$ git branch origin/prod       # en caso de no tenerla se crea la rama origin/prod
+$ git branch -a                # comprobar que realmente estamos en master
+$ git branch --track prod origin/prod  # si no lo tenemos ya asocia prod a origin/prod
+$ git checkout prod            # cambiamos a la rama prod
+$ git merge master             # se merguean los cambios desde master a prod
+$ git push                     # se suben los cambios 
+#+END_SRC
+
+* Git Submodules: Añadir, Usar, Eliminar y Actualizar
+
+** Añadir
+
+#+BEGIN_SRC bash
+$ git submodule add git@mygithost:billboard lib/billboard
+#+END_SRC
+
+Ver lo que has hecho
+
+#+BEGIN_SRC bash
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   .gitmodules
+#       new file:   lib/billboard
+#
+$ cat .gitmodules
+[submodule "lib/billboard"]
+path = lib/billboard
+url = git@mygithost:billboard
+#+END_SRC
+
+** Usando submódulos
+
+#+BEGIN_SRC bash
+$ git submodule init
+Submodule 'lib/billboard' (git@mygithost:billboard) registered for path 'lib/billboard'
+$ git submodule update
+Initialized empty Git repository in ~/git_dev/SampleTheme/lib/billboard/.git/
+remote: Counting objects: 26, done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 26 (delta 5), reused 0 (delta 0)
+Receiving objects: 100% (26/26), 17.37 KiB, done.
+Resolving deltas: 100% (5/5), done.
+Submodule path 'lib/billboard': checked out '1c407cb2315z0847facb57d79d680f88ca004332'
+#+END_SRC
+
+** Eliminando submódulos
+
+#+BEGIN_SRC bash
+$ git submodule rm lib/billboard
+#+END_SRC
+
+** Actualizando submódulos
+
+#+BEGIN_SRC bash
+$ git submodule init
+$ git submodule update
+$ git pull
+#+END_SRC
+
+* Una gui
+A quien no le guste el emacs es un animal, pero puede usar algo como
+lo siguiente:
+
+#+BEGIN_SRC bash
+$ sudo apt-get install git-cola
+#+END_SRC
+
+Y a quien le guste le pueden servir estos atajos, por ejemplo:
+
+#+BEGIN_SRC bash
+C-x v v (siguiente acción. Ej: add, commit)
+C-x v = (diff)
+C-x v d (status)
+#+END_SRC
+
+* Recursos
++ [[http://learngitbranching.js.org/][Learning Git Branching]]
++ [[https://git-scm.com/documentation][Documentación oficial]]
++ [[https://github.com/][GitHub]]
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

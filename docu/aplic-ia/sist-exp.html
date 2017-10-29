@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Sistemas Expertos</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Aplicaciones Prácticas de Inteligencia Artificial"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Juegos"
+HREF="juegos.html"><LINK
+REL="NEXT"
+TITLE="Software Adaptativo"
+HREF="sw-adapt.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="midocbook.css"></HEAD
+><BODY
+CLASS="sect1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Aplicaciones Prácticas de Inteligencia Artificial</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="juegos.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sw-adapt.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="sist-exp"
+>3. Sistemas Expertos</A
+></H1
+><P
+>Los sistemas expertos resuelven problemas que normalmente
+    son solucionados por expertos humanos.</P
+><P
+>Un sistema experto se compone de una base de conocimiento
+    del dominio en cuestión, mecanismos de razonamiento para
+    aplicar conocimiento a los problemas que se proponen, mecanismos
+    para explicar a los usuarios el razonamiento utilizado a la hora
+    de ofrecer una respuesta y mecanismos de aprendizaje y
+    adquisición de nuevo conocimiento.</P
+><P
+>Para crear una base de conocimiento es necesario contar con
+    al menos un experto humano del dominio en cuestión. Se
+    puede adquirir su conocimiento a partir de entrevistas ó
+    mediante interfaces amigables para que lo introduzca. Pero
+    también es muy importante una adecuada modelización
+    de su conocimiento.</P
+><P
+>Los mecanismos de representación del conocimiento que
+    se pueden encontrar son: lógica, redes, marcos y reglas. No
+    obstante, lo más utilizado es una adecuada
+    combinación de marcos y reglas.</P
+><P
+>Es posible representar el conocimiento mediante hechos o
+    instancias y reglas ó algún otro mecanismo para
+    inferir nuevos hechos. Pero deberemos plantearnos si a partir de
+    los hechos vamos a ir aplicando reglas (encadenamiento hacia
+    adelante), ó si por el contrario nos interesa responder a
+    una cuestión concreta (ej: ¿ tengo gripe?) e ir
+    satisfaciendo subobjetivos hasta llegar a hechos que demuestren la
+    veracidad ó falsedad de la frase (encadenamiento hacia
+    atrás). También es conveniente plantear: qué
+    reglas ejecutar antes, cuáles están listas para ser
+    ejecutadas, si ejecutar las reglas cuyos antecedentes se
+    actualizaron recientemente, ó si ejecutar primero reglas
+    específicas. Todos estos mecanismos de control del
+    razonamiento pueden ser tenidos en cuenta a la hora de construir
+    nuestro sistema experto.</P
+><P
+>El software libre nos proporciona buenas herramientas para
+    el desarrollo de sistemas expertos. Algunas de ellas son: <A
+HREF="http://www.ghg.net/clips/CLIPS.html"
+TARGET="_top"
+>clips</A
+> y <A
+HREF="http://www-cgi.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/expert/systems/babylon/0.html"
+TARGET="_top"
+>babylon</A
+>.</P
+><P
+>Para ilustrar este apartado recomiendo instalar clips que
+    está empaquetado para un buen número de sistemas. En
+    debian basta con hacer <B
+CLASS="command"
+>apt-get install xclips clips
+    clips-doc</B
+>. xclips es un interfaz gráfico para
+    utilizar clips, recomiendo su uso, para saciar la curiosidad del
+    cacharreo. Desde línea de comandos podemos ejecutar lo
+    siguiente:</P
+><DIV
+CLASS="example"
+><A
+NAME="AEN65"
+></A
+><P
+><B
+>Ejemplo 2. Ejemplo de uso de clips</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><FONT
+COLOR="#000000"
+><PRE
+CLASS="programlisting"
+>&#13;[darroyo@turing:/usr/share/doc/clips-doc/examples]$ clips
+CLIPS&#62; (load "auto.clp")
+Defining deffunction: ask-question
+Defining deffunction: yes-or-no-p
+Defining defrule: normal-engine-state-conclusions +j
+...
+
+CLIPS&#62; (reset)
+CLIPS&#62; (run)
+
+
+The Engine Diagnosis Expert System
+
+Does the engine start (yes/no)?
+
+      </PRE
+></FONT
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>De este modo, se prueba un ejemplo de sistema experto cuyo
+    objetivo es solucionar averías con el coche. El sistema va
+    haciendo preguntas acerca de los síntomas que presenta el
+    coche y finalmente otorga un diagnóstico. Os recomiendo que
+    echéis un vistazo al fichero auto.clp.</P
+><P
+>Espero que este apartado haya servido para entender
+    qué una máquina puede modelar el conocimiento de un
+    experto en, al menos, un dominio limitado y que esto es
+    útil para recibir asesoría ó consejos para
+    las que en condiciones normales precisaríamos de un experto
+    humano.</P
+><DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="img/clips.gif"><DIV
+CLASS="caption"
+><P
+>logo de clips</P
+></DIV
+></P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="juegos.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Inicio</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sw-adapt.html"
+ACCESSKEY="N"
+>Siguiente</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Juegos</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Software Adaptativo</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

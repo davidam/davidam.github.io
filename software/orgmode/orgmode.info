@@ -1,0 +1,6 @@
+name = "Org Mode"
+description = "This module transform an org file to nodes"
+package = "orgmode"
+version = "7.x-1.0"
+core = "7.x"
+

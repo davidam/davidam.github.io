@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Búsquedas con Emacs Lisp</title>
+<!-- 2016-10-24 lun 00:12 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Búsquedas con Emacs Lisp</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Estructura de Datos</a></li>
+<li><a href="#sec-2">2. Función Extiende</a></li>
+<li><a href="#sec-3">3. Primero en Profundidad</a></li>
+<li><a href="#sec-4">4. Primero en Anchura</a></li>
+<li><a href="#sec-5">5. Búsqueda binaria</a></li>
+<li><a href="#sec-6">6. Agradecimientos</a></li>
+<li><a href="#sec-7">7. Bibliografía</a></li>
+<li><a href="#sec-8">8. Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+Hoy nos divertiremos aprendiendo a hacer búsquedas en emacs lisp,
+antes de nada veamos el grafo sobre el que estas se harán:
+</p>
+
+
+<div class="figure">
+<p><img src="busquedas/grafo.png" alt="grafo.png" />
+</p>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Estructura de Datos</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Se puede ver la estructura de datos sobre la que se realizarán las
+búsquedas:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(setq vecinos '((a . (b c d)) (b . (a h)) (c . (a g)) (d . (g)) (g . (c d k)) (h . (b)) (g . (k))))
+</pre>
+</div>
+
+<p>
+Podemos entender el nivel de punteros de este grafo mirando la figura
+1:
+</p>
+
+
+<div id="figura-1" class="figure">
+<p><img src="busquedas/cajas-busquedas.png" alt="cajas-busquedas.png" />
+</p>
+<p><span class="figure-number">Figura 2:</span> Grafo sobre el que ejecutar las búsquedas</p>
+</div>
+
+<p>
+Para recuperar los vecinos de a se puede hacer de la siguiente manera:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(cdr (assoc 'a vecinos))
+</pre>
+</div>
+
+<p>
+Se puede construir una macro para realizar esto de una manera más
+elegante:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(defmacro get.value (X vecinos) `(cdr (assoc ,X ,vecinos)))
+</pre>
+</div>
+
+<p>
+Ahora podemos saber los vecinos de a de la siguiente manera:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(get.value 'a vecinos)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Función Extiende</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+El siguiente paso es crear una función extiende en la que dada una
+ruta proponga un nodo siguiente:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacslisp">(defun extiende (trayectoria)
+  (mapcar #'(lambda (nuevo-nodo) (append trayectoria (list nuevo-nodo)))
+	  (remove-if #'(lambda (vecino) (member vecino trayectoria)) 
+		     (get.value (car (last trayectoria)) vecinos))))
+</pre>
+</div>
+
+<p>
+Esta función primero invierte el orden de la lista trayectoria y
+después añade un nuevo nodo a la lista, siendo un nuevo nodo la lista
+resultado de vecinos que no son ya miembros de la lista trayectoria.
+</p>
+
+<p>
+Si queremos extender el nodo a se puede hacer del siguiente modo
+teniendo b, c y d:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(extiende '(a))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Primero en Profundidad</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Ahora podemos programar primero-en-profundidad
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(defun primero-en-profundidad (inicial final)
+  (primero-en-profundidad-aux inicial final (list (list inicial))))
+
+(defun primero-en-profundidad-aux (inicial final abierta)
+  (cond ((eq inicial final)
+	 (print (list inicial)))
+	((member (list inicial final) (extiende (list inicial)))
+	 (print (list inicial final)))
+	((member final (first abierta))
+	 (print (first abierta)))
+	(t (primero-en-profundidad-aux inicial final (append (extiende (first abierta)) (rest abierta))))
+))
+
+(primero-en-profundidad 'a 'a)
+(primero-en-profundidad 'a 'k)
+</pre>
+</div>
+
+<p>
+Veamos cómo sería la traza de (primero-en-profundidad 'a 'k):
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">;; abierta: '(a)
+;; (extiende '(a))
+;; abierta: '((a b) (a c) (a d))
+;; (extiende '(a b))
+;; abierta: '((a b h) (a c) (a d))
+;; (extiende '(a b h))
+;; abierta: '((a c) (a d))
+;; (extiende '(a c))
+;; abierta: '((a c g) (a d))
+;; (extiende '(a c g))
+;; abierta: '((a c g d) (a c g k) (a d))
+;; (print '(a c g k))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Primero en Anchura</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Ahora vamos a pensar primero cómo sería la traza de (primero-en-anchura 'a 'k):
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">;; abierta: '(a)
+;; (extiende '(a))
+;; abierta: '((a b) (a c) (a d))
+;; (extiende '(a b))
+;; (extiende '(a c))
+;; (extiende '(a d))
+;; abierta: '((a b h) (a c g) (a d g))
+;; (extiende '(a b h))
+;; abierta: '((a c g) (a d g))
+;; (extiende '(a c g))
+;; abierta: '((a c g d) (a c g k) (a d g))
+;; (print '(a c g k))
+</pre>
+</div>
+
+<p>
+Ahora ya estamos en disposición de programar el algoritmo:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(defun end-path (x listoflist)
+  (cond 
+   ((endp listoflist) nil)
+   ((equal (last (first listoflist)) (list x))
+    (first listoflist))
+   (t (end-path x (rest listoflist)))))
+
+;;(listp (end-path 'h '((a b h) (a c g) (a d g))))
+;;(listp nil)
+;;(listp 'a)
+
+(defun primero-en-anchura (inicial final)
+  (primero-en-anchura-aux inicial final (list inicial)))
+
+(defun primero-en-anchura-aux (inicial final abierta)
+  (cond 
+   ((eq inicial final) 
+    (print (list inicial)))
+   ((and (= 1 (length abierta)) (member (list inicial final) (extiende (list inicial))))
+    (print (list inicial final)))
+   ((and (= 1 (length abierta)) (not (member (list inicial final) (extiende (list inicial))))) 
+    (primero-en-anchura-aux inicial final (extiende abierta)))
+   ((&gt; 1 (length (end-path final abierta)))
+    (end-path final abierta))
+;;   ((eq abierta nil)
+;;    nil)
+   (t
+    (primero-en-anchura-aux inicial final (mapcar #'(lambda (x) (first (extiende x))) abierta)))))
+
+(primero-en-anchura 'a 'h)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Búsqueda binaria</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Si tenemos una lista ordenada podemos probar a hacer búsquedas binarias, por ejemplo,
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(setq ordenada '(11 22 30 33 40 44 55 60 66 77 80 87 90))
+</pre>
+</div>
+
+<p>
+Con esta lista podríamos implementar nuestra búsqueda de la siguiente manera:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(defun binaria (x lista)
+  "return if x is member of the sorted list"
+  (let* ((max (length lista))
+	 (pos (/ max 2))
+	 (elem (elt lista pos)))
+    (cond
+     ((and (= max 1) (not (= x elem)))
+      nil)
+     ((= x elem)
+      t)
+     ((&gt; x elem)
+      (binaria x (nthcdr pos lista)))
+     ((&lt; x elem)
+      (binaria x (butlast lista pos)))
+)))
+
+(binaria '40 ordenada)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Agradecimientos</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Gracias a #emacs-es por los ánimos y en especial a <a href="http://davazp.net/">David Vázquez Pérez</a> por los buenos consejos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Bibliografía</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Algunas fuentes que me han servido para realizar este artículo son:
+</p>
+
+<ul class="org-ul">
+<li>Chassell, R. J. (2009) "<i>An Introduction to Programming in Emacs Lisp</i>". GNU Press.
+</li>
+<li>S. F. Galán, J. G. Boticario, and J. Mira (1998) "<i>Solved Exercises of Applied Artificial Intelligence: Search and Representation</i>" (In Spanish). Addison-Wesley, 1998, Madrid, Spain
+</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Licencia</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/deed">Licencia Creative Commons Reconocimiento Unported 3.0</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/deed"><img src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2016-10-24 lun 00:12</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

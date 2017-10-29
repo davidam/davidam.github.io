@@ -1,0 +1,114 @@
+#+TITLE: Stumpwm: lisp en el gestor de ventanas
+#+LANGUAGE: es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+AUTHOR: David Arroyo Menéndez
+#+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
+Stumpwm es un gestor de ventanas atilado escrito en common lisp. Esto
+le hace ser considerablemente más rápido que utilizar gnome, unity o
+kde. Si lo que sueles hacer la mayor parte de tu tiempo es usar un
+editor de textos, un navegador y alguna otra aplicación se hace
+realmente productivo.
+
+Pero empecemos por la instalación en debian/ubuntu basta con:
+
+#+BEGIN_SRC bash
+apt-get install stumpwm
+#+END_SRC
+
+Pero después es necesario crear el fichero
+/usr/share/xsessions/stumpwm.desktop con el siguiente contenido:
+
+#+BEGIN_SRC bash
+[Desktop Entry]
+Encoding=UTF-8
+Name=StumpWM
+Comment=Tiling Window Manager
+Exec=/usr/bin/stumpwm
+Icon=
+Type=Application
+#+END_SRC
+
+Una vez hecho esto deberíamos poder elegir stumpwm, por ejemplo, en el
+gdm. Al arrancar stumpwm vemos una pequeña ventana que nos invita a
+ejecutar C-t ? para conocer los atajos.
+
+Los importantes para empezar son:
+
++ C-t c: abrir una consola
++ C-t e: abrir el emacs
++ C-t !: ejecutar un comando de consola
++ C-t C-t: volver a la ventana anterior
++ C-t w: listar las ventanas abiertas
++ C-t 0: ir a la ventana número 0 (con otros números iremos a ventanas distintas)
++ C-t h f: describe función lisp de stumpwm
++ C-t h ?: lista atajos de C-t h (describr variable, describir
+  función, describir tecla, describir comando, donde está)
+
+Para evaluar código lisp se usa C-t :. Así, podemos evaluar:
+
++ (+ 2 2): evalúa una suma de dos más dos.
++ (loadrc): evalúa el fichero .stumpwmrc
++ (quit): sale de la sesión
+
+Mi .stumpwmrc es realmente simple, ya que llevo muy poco tiempo
+utilizando este entorno, pero puede ser útil para otros principiantes
+como yo:
+
+#+BEGIN_SRC lisp
+(in-package :stumpwm)
+
+(setf *default-package* :stumpwm)
+
+;; Cambio el prefijo 
+(set-prefix-key (kbd "C-t"))
+
+;; Creo el comando iceweasel
+(defcommand iceweasel () ()
+  "Start/Switch to Iceweasel."
+  (run-or-raise "iceweasel" '(:class "Iceweasel")))
+
+;; Ahora con C-t C-i iré al iceweasel
+(stumpwm:define-key stumpwm:*root-map* (stumpwm:kbd "C-i") "iceweasel")
+
+;; Creo el comando xterm
+(defcommand xterm () ()
+  "Start to Xterm."
+  (run-or-raise "xterm" '(:class "Xterm")))
+
+;; Atajo xterm
+(stumpwm:define-key stumpwm:*root-map* (stumpwm:kbd "C-c") "xterm")
+
+;; Creo el comando wikipedia
+(defcommand wikipedia (search)
+  ((:string "Search in Wikipedia for: "))
+  "docstring"
+  (check-type search string)
+  (substitute #\+ #\Space search)
+  (run-or-raise 
+     (concat "iceweasel http://www.wikipedia.org/wiki/" search) 
+     '(:class "Wikipedia")))
+
+;; Arranca el network-manager al iniciar (para conectar vía wifi)
+(run-shell-command "nm-applet --sm-disable")
+#+END_SRC
+
+Las cosas que he encontrado útiles de stumpwm son:
+
++ tener atajos para ir directamente al emacs, ó al navegador independientemente de cuantas ventanas tengo abiertas, no como con Alt+TAB que le tienes que dar unas cuantas veces
++ tener el fichero de configuración en lisp
++ su rapidez, especialmente vital en máquinas lentas
+
+¿A vosotras/os que os parece?
+
+* Licencia
+Copyright (C)  2013 David Arroyo Menéndez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]

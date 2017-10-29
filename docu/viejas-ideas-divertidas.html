@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Viejas Ideas Divertidas</title>
+<!-- 2017-05-26 vie 22:16 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Viejas Ideas Divertidas</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Recursividad</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Factorial</a></li>
+<li><a href="#sec-1-2">1.2. Fibonacci</a></li>
+<li><a href="#sec-1-3">1.3. Hanoi</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Funciones que tienen funciones como argumentos</a></li>
+<li><a href="#sec-3">3. Macros</a></li>
+<li><a href="#sec-4">4. Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+Vivimos en unos tiempos en que la gente busca nuevos dispositivos y
+software que buscan hacer grandes logros comerciales, sin embargo,
+todavía hay mucha gente con las ideas y la actitud con la que se
+inventaron logros duraderos en la ciencia de la computación.
+</p>
+
+<p>
+Ideas como los lenguajes de alto nivel, la programación orientada a
+objetos, los editores de texto, o la inteligencia artificial salieron
+de hackers que se divertían con el lisp.
+</p>
+
+<p>
+En un intento personal de recuperar ese espíritu de divertirse con el
+código lisp voy a documentar ciertas ideas de lisp.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Recursividad</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Algunos programadores no saben lo divertido que es hacer una función
+recursiva, sin embargo, en lisp es algo natural y divertido. Veamos
+varios ejemplos
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Factorial</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">factorial</span> (n)
+  (<span style="color: #a020f0;">if</span> (= n 0) 1
+    (* n (factorial (- n 1)))))
+</pre>
+</div>
+
+<p>
+Esto es muy sencillo solo es multiplicar una cosa con lo anterior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Fibonacci</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+El algoritmo lo que dice es que si es 0 o 1 devuelve 1 y si es más
+devuelve la suma de los dos últimos:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">fibonacci</span> (n)
+  (interactive <span style="color: #8b2252;">"nEscribe un numero: "</span> n)
+  (message (number-to-string (fibonacci-aux n))))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">fibonacci-aux</span> (n)
+  (<span style="color: #a020f0;">if</span> (or (= n 0) (= n 1))
+      1
+    (+ (fibonacci-aux (- n 1)) (fibonacci-aux (- n 2)))))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Hanoi</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+El juego de la torres de hanoi consiste en tener 3 tubos y n discos y
+hay que mover los discos de un tubo a otro. 
+</p>
+
+<p>
+Véase el siguiente dibujo para recordar cómo se resuelve para 2 discos:
+</p>
+
+
+<div class="figure">
+<p><img src="hanoi2.png" alt="hanoi2.png" />
+</p>
+</div>
+
+<p>
+Como se puede observar, lleva 1 paso mover el de abajo y 2 mover el de arriba.
+</p>
+
+<p>
+Ahora se observará qué ocurre con 3 discos:
+</p>
+
+
+<div class="figure">
+<p><img src="hanoi3.png" alt="hanoi3.png" />
+</p>
+</div>
+
+<p>
+Pues lleva 1 paso mover el de abajo, 2 mover el de enmedio y 4 en mover el de arriba.
+</p>
+
+<p>
+La función devuelve el número de pasos que son necesarios en función
+del número de discos. 
+</p>
+
+<p>
+El código siguiente para implementar este coste es el siguiente:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">torres-de-hanoi</span> (discos)
+  (interactive <span style="color: #8b2252;">"nDime tus discos y te digo cuantos pasos tienes que dar: "</span> discos)
+  (message (number-to-string (torres-de-hanoi-aux discos))))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">torres-de-hanoi-aux</span> (discos)
+  (<span style="color: #a020f0;">if</span> (= discos 1)
+      1
+    (+ 1 (* 2 (torres-de-hanoi-aux (- discos 1))))))
+</pre>
+</div>
+
+<p>
+Para ver una animación de hanoi desde emacs podéis hacer M-x hanoi
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Funciones que tienen funciones como argumentos</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Otra cosa que a los programadores/as que me encuentro en los trabajos no
+siempre se les ocurre es hacer funciones que tienen funciones como argumentos.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(mapcar #'oddp '(1 2 3))
+</pre>
+</div>
+
+<p>
+Esta tontería lo que hace es ver si cada elemento de la lista es par o
+impar y devuelve una lista así (T F T) y es una cosa divertida :).
+</p>
+
+<p>
+Otro ejemplo de mapcar es el siguiente:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(mapcar (<span style="color: #a020f0;">lambda</span> (n) (/ n 2)) '(2 4 6))
+</pre>
+</div>
+
+<p>
+Aquí se hace uso de la función lambda que es una función anónima.
+</p>
+
+<p>
+Hay otra función que lo que hace es contar cuantos elementos pares
+hay, mírala:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(count-if #'evenp '(1 2 3 4))
+</pre>
+</div>
+
+<p>
+También podemos hacer funciones recursivas que tengan con este tipo de
+funciones como una función de eliminar dobles en una lista:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">elimDobles</span>(list)
+  (<span style="color: #a020f0;">if</span> (eq 0 (length list))
+     (list)
+    (cons (first list) (elimDobles (remove-if #'(<span style="color: #a020f0;">lambda</span> (x) (eq x (first list))) (rest list))))))
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(elimDobles '(3 2 3 4 5 4 5))</span>
+</pre>
+</div>
+
+<p>
+O con varias funciones crear un generador de números primos:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">divisible</span> (x y)
+  <span style="color: #8b2252;">"devuelve si x es divisible entre y"</span>
+  (= 0 (% x y)))
+
+<span style="color: #b22222;">;;</span><span style="color: #b22222;">(divisible 4 2)</span>
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">genera-lista</span> (x y)
+  <span style="color: #8b2252;">"devuelve una lista de x a y"</span>
+  (<span style="color: #a020f0;">if</span> (= x y)
+      (list y)
+    (cons x (genera-lista (+ 1 x) y))))
+
+<span style="color: #b22222;">;;</span><span style="color: #b22222;">(genera-lista 2 9)</span>
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">divisores</span> (y)
+  <span style="color: #8b2252;">"devuelve los divisores de x"</span>
+  (remove-if #'(<span style="color: #a020f0;">lambda</span> (x) (not (divisible y x))) (genera-lista 1 y)))
+
+<span style="color: #b22222;">;;</span><span style="color: #b22222;">(divisores 7)</span>
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">genera-primos</span> (max)
+  <span style="color: #8b2252;">"devuelve una lista de primos de 1 a max"</span>
+  (remove-if #'(<span style="color: #a020f0;">lambda</span> (x) (not (= (length (divisores x)) 2))) (genera-lista 1 max)))
+
+<span style="color: #b22222;">;;</span><span style="color: #b22222;">(genera-primos 29)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Macros</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Las macros es una de las razones que hacen que lisp sea un lenguaje
+fácilmente extensible, así una buena razón para usar macros es que son
+eficientes, voy a demostrarlo en gnu clisp:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp">&gt; (<span style="color: #a020f0;">defmacro</span> <span style="color: #0000ff;">square</span> (X) `(* ,X ,X))
+SQUARE
+&gt; (square 3)
+9
+&gt; (time (square 3))
+Real time: 106E-4 sec
+Run time: 0004 sec
+Space: 248 Bytes
+9
+&gt; (time (+ 3 3))
+Real time: 27E-5 sec
+Run time: 00 sec
+Space: 0 Bytes
+9
+&gt; (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">square2</span> (x) (* x x))
+SQUARE2
+&gt; (square2 3)
+9
+&gt; (time (square2 3))
+Real time: 36E-5 sec
+Run time: 00 sec
+Space: 0 Bytes
+9
+</pre>
+</div>
+
+<p>
+Con este pequeño ejemplo vemos que lo más eficiente es usar macros
+</p>
+
+<p>
+Hoy día hay muchos lenguajes implementan algunas de estas
+características divertidas aunque muchos de sus programadores en no
+las usan porque es un entorno laboral en el que no hay lugar para la
+diversión, pero les cuesta a llegar a las nuevas ideas divertidas que
+siguen implementando los nuevos programadores de lisp. Un pasito que
+podrían dar los programadores nuevos un editor duradero como GNU Emacs
+y así aprenderían trucos divertidos.
+</p>
+
+<p>
+Puedes descargar algunas implementaciones de estos ejemplos aquí:
+</p>
+<ul class="org-ul">
+<li><a href="viejas-ideas-divertidas/php.tar.gz">PHP</a>
+</li>
+<li><a href="viejas-ideas-divertidas/ruby.tar.gz">Ruby</a>
+</li>
+<li><a href="viejas-ideas-divertidas/python.tar.gz">Python</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Licencia</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/deed">Licencia Creative Commons Reconocimiento Unported 3.0</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by/3.0/deed"><img src="../img/by/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2017-05-26 vie 22:16</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

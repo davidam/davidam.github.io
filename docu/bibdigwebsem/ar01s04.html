@@ -1,0 +1,103 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"><title>Web semántica</title><meta name="generator" content="DocBook XSL Stylesheets V1.64.1"><link rel="home" href="index.html" title="Biblioteca Digital y Web Semántica"><link rel="up" href="index.html" title="Biblioteca Digital y Web Semántica"><link rel="previous" href="ar01s03.html" title="Introducción a la biblioteca digital"><link rel="next" href="ar01s05.html" title="Licencias"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Web semántica</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ar01s03.html">Anterior</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="ar01s05.html">Siguiente</a></td></tr></table><hr></div><div class="sect1" lang="es"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="web-sem"></a>Web semántica</h2></div></div><div></div></div><p>La web semántica es el futuro
+    de la web, una web que facilitará la localización de recursos, la
+    comunicación entre sistemas y programas, que nos ayudará a
+    gestionar nuestro día a día, hasta llegar a niveles que hoy pueden
+    ser considerados como de ciencia ficción.</p><p>La red
+    semántica no es una red independiente de la actual, sino una
+    ampliación; una red en la cual la información está dotada de
+    significados bien definidos, con el fin de que la coordinación del
+    trabajo entre humanos y ordenadores sea más completa.  Se han dado
+    ya los primeros pasos para incluir la red semántica en la
+    estructura de la red ya existente. En un futuro no lejano, estos
+    desarrollos introducirán prestaciones nuevas e importantes, al
+    lograr que las máquinas multipliquen su capacidad de procesar y
+    comprender los datos que hoy tan sólo se exhiben en pantalla.  En
+    su universalidad el hipertexto permite "conectar cualquier cosa
+    con todo", por tanto la técnica no debe discriminar entre un
+    borrador y la prestación más depurada, entre información comercial
+    y académica, ni entre culturas, idiomas, etc. No generamos el
+    mismo tipo de información si estamos pensando en una persona o en
+    una máquina, así tenemos por un lado un video de 5 sec. a una
+    poesía y por el otros están las bases de datos, programas hechos
+    por friskis informáticos,... </p><p>Hasta ahora, la red estaba
+    concebida más para proporcionar documentos a los humanos que para
+    manipular datos o y procesar información de manera automática,
+    pero a partir de ahora tenemos que cambiar el chip pues nos
+    encontramos frente a una potente herramienta facilitadora de la
+    comunicación, que es la red semántica,además ésta no pierda una de
+    las características esenciales que es ser descentralizada.</p><div class="sect2" lang="es"><div class="titlepage"><div><div><h3 class="title"><a name="web-sem-elementos"></a>Elementos básicos de la web semántica</h3></div></div><div></div></div><p>Antes de explicar cómo funcionará la red
+    semántica, describiremos, los elementos necesarios que la
+    comprondrán, así: XML, RDF, PICS, ONTOLOGÍAS y AGENTES
+      </p><div class="sect3" lang="es"><div class="titlepage"><div><div><h4 class="title"><a name="web-sem-elementos-xml"></a>XML</h4></div></div><div></div></div><p>XML (eXtensive Markup Language),permite la codificacion para la distribucion de documentos complejos por Internet.
+	</p><p>Vamos a dar unos datos previos que hará más fácil
+	  entender porque se elige este formato.</p><p>SGML
+	  (Standard Generalized Markup Language) es una norma que
+	  pretende establecer una manera genérica de especificar,
+	  definir documentos, la cual permitiese a su vez usar
+	  formatos de mayor flexibilidad y portabilidad. Con lo cual
+	  reunía tres condiciones básicas:
+	</p><div class="orderedlist"><ol type="1"><li><p><span class="emphasis"><em>Formal</em></span>:  pues permite establecer la validez de los documentos</p></li><li><p><span class="emphasis"><em>Estructurado</em></span>: para que fuese capaz de manejar documentos complejos</p></li><li><p><span class="emphasis"><em>Ampliable</em></span>: para facilitar la gestión de grandes depósitos de información</p></li></ol></div><p>XML  es un subconjunto de SGML, y define un formato de texto diseñado  para la transmisión de datos estructurados. Al ser un subconjunto de SGML mantiene sus caracteristicas de validación, estructurado y especialmente facilita la extensibilidad, porque es un metalenguaje que permite describir lenguajes de marcas, tanto la definicion de etiquetas como la relacion estructural que existen entre ellas.</p><p>Un ejemplo de como funciona XML sería algo así:</p><pre class="programlisting">
+&lt;agenda&gt;
+   &lt;persona&gt;
+      &lt;nombre&gt;Kike&lt;/nombre&gt;
+      &lt;telefono&gt;638002993&lt;/telefono&gt;
+	&lt;comentario&gt;Es un bombon&lt;/comentario&gt;
+   &lt;/persona&gt;
+   &lt;persona&gt;
+      &lt;nombre&gt;Maria&lt;/nombre&gt;
+      &lt;telefono&gt;956-78.90.12&lt;/telefono&gt;
+      &lt;telefono&gt;652135792&lt;/telefono&gt;
+   &lt;/persona&gt;
+&lt;/agenda&gt;
+
+	</pre></div><div class="sect3" lang="es"><div class="titlepage"><div><div><h4 class="title"><a name="web-sem-elementos-rdf"></a>RDF</h4></div></div><div></div></div><p>RDF son las siglas definen Resource
+	Description Framework (algo así como marco de descripción de
+	recursos) Como su nombre indica el área en la que está
+	enmarcado es la descripción de recursos de la red, entendiendo
+	por recurso todo lo que nos de de sí la imaginación en tanto
+	que a definir cualquier cosa, páginas, personas,
+	dispositivos...  RDF permite que las condiciones que se
+	quieren "preguntar" sobre un recurso sean definidas como un
+	conjunto de propiedades que componen el esquema.
+	</p><p>RDF ofrece una estructura semántica
+	<span class="emphasis"><em>inambigua</em></span> (por el uso de los URI, Uniform
+	Resource Identifier) que permite codificación, intercambio y
+	procesamiento automático de los metadatos normalizados.</p><p>RDF proporciona también reglas para facilitar
+	técnicamente la manera de explicar conceptos de modo que los
+	ordenadores puedan procesarlo rápidamente y proporciona un
+	medio que posibilita la edicición de vocabularios con
+	propiedades definidas para la descripción de los recursos de
+	una comunidad.</p><p>RDF usa la sintaxis del lenguaje
+	XML para el intercambio y procesamiento de metadatos,las
+	condiciones se recogen en los <span class="emphasis"><em>rdf: Descripcion de
+	los elementos XML</em></span>.
+	</p></div><div class="sect3" lang="es"><div class="titlepage"><div><div><h4 class="title"><a name="web-sem-elementos-pics"></a>PICS</h4></div></div><div></div></div><p>Los PICS (Platform for the Internet
+	Content Selection), nos indican lo adecuado o conveniente de
+	determinados ficheros de datos segun la comunidad en la que se
+	encuentre el usuario. Es una infraestructura para asociar las
+	etiquetas con los contenidos de Internet. Aunque en un
+	principio estaba destinado al control del acceso de los niños
+	a Internet, su uso se puede extender a otras etiquetas que
+	incluyan privacidad, licencias,etc. PICS es una plataforma
+	sobre la cual se han construido otros servicios de
+	clasificación que no sólo define una manera de construir
+	etiquetas sino que es un mecanismo para realizar las
+	valoraciones.Este mecanismo esta formado, al menos por lo
+	siguiente:</p><div class="itemizedlist"><ul type="disc"><li><p>Las <span class="emphasis"><em>etiquetas</em></span>, que son los metadatos que
+indican la valoración de un documento</p></li><li><p><span class="emphasis"><em>Los servicios de valoración</em></span>, es
+	    decir, las organizaciones, grupos o personas que realizan
+	    una valoración</p></li><li><p>Los <span class="emphasis"><em> perfiles</em></span>, que son las
+	    reglas que da el usuario para definir el filtro para
+	    evitar recibir documentos no deseados.</p></li></ul></div><p>Para que el filtrado de documentos no deseados se lleve
+a cabo, también es necesario un software cliente y otro servidor que
+tengan implementado el sistema de valoración.Estas funciones se pueden
+realizar por separado, lo cual permite que por un lado los
+desarrolladores de software puedan realizar una aplicación informática
+sin suministrar un sistema de valoración mientras que por otro una
+organización puede crear sistemas de valoración sin tener que
+desarrollar el software.</p></div><div class="sect3" lang="es"><div class="titlepage"><div><div><h4 class="title"><a name="web-sem-elementos-ontologia"></a>ONTOLOGÍAS</h4></div></div><div></div></div><p>La ontologías son colecciones
+	de enunciados redactados en un lenguaje, como el RDF, que
+	define las relaciones entre conceptos y especifica reglas
+	lógicas para razonar con ellos. Los ordenadores "comprenderán"
+	el significado de los datos semánticos de una página de la red
+	siguiendo vínculos con ontologías especificadas.</p></div><div class="sect3" lang="es"><div class="titlepage"><div><div><h4 class="title"><a name="web-sem-elementos-agentes"></a>AGENTES</h4></div></div><div></div></div><p>El concepto de tecnología de agentes está aún en desarrollo, pero una definición que podemos manejar de agente es la siguiente: un agente es una entidad de software que funciona continua y autónomamente en un medio particular a menudo habitado por otros agentes y procesos, sin requerir de guía constante o intervención humana. En otras palabras, un agente es un asistente personal que está dentro de la computadora y que cumple varios roles en representación de una función específica o de un usuario.</p><p>En la web semántica serán los encargados de realizar la búsqueda de servicios, para ello, la semántica facultará a los agentes para describir unos a otros la función exacta que realizan, y qué datos han de recibir para ello.</p></div></div><div class="sect2" lang="es"><div class="titlepage"><div><div><h3 class="title"><a name="web-sem-busq"></a>La recuperación de la información en la web semántica</h3></div></div><div></div></div><p>Los actuales buscadores de Internet, como <a href="http://www.google.com" target="_top">google</a> se basan en un sistema en el que los usuarios meten manualmente los enlaces y al hacer una búsqueda se aplica un algoritmo de emparejamiento de patrones, que tiene en cuenta el número de veces que se hace referencia a cada url candidata a ser resultado de búsqueda.</p><p>Si bien hemos aprendido a convivir con este sistema de búsqueda, la única información que recuperamos con él son conceptos descontextualizados, es decir, si en un buscador ponemos la palabra "flor" recuperaremos una editorial que se llamen flor, una página web para expresar sentimientos en Internet y, si tenemos suerte alguna página especializada en margaritas.</p><p>La web semántica nos permitirá hacer búsquedas precisas del tipo quiero el viaje más barato que hay entre Madrid y Barcelona, teniendo en cuenta que me gusta ir en ventanilla y en no fumadores.</p><p>En el estado actual de Internet esto es ahora posible gracias a los sistemas multiagente. Donde un agente es una entidad de software que funciona continua y autónomamente en un medio particular a menudo habitado por otros agentes y procesos, sin requerir de guía constante o intervención humana. También debe poseer ciertas habilidades sociales, reactividad ante el mundo que le rodea y comportamiento basado en deseos que pertenecen a cada agente en particular. Los sitemas multiagentes se han propuesto como la mejor herramienta para realizar aprendizaje automático en Internet. Mediante esta herramienta es posible hacer recomendaciones acertadas del tipo "pincha en este sitio web, pues me parece que te interesa", "esta persona tiene intereses muy similares a los tuyos, te interesaría contactar con ella" y esto lo hará software puro y duro, sin más intervención humana que la de la propia acción del usuario y acertarán. También será posible clasificar automáticamente sitios ó documentos de una manera acertada y un montón de más cosas que ni siquiera nos imaginamos.</p><p>El problema con el que ahora se topa la tecnología de sistemas multiagente es la volatilidad y desestructuración de la información base para realizar las inferencias. Volviendo al ejemplo del sistema multiagente para encontrar el viaje de tus sueños el único lugar desde el que puede recuperar la información son páginas html en forma de tablas, éstas páginas pueden cambiar su estructura cada mes, lo que requiere cambios de programación. Esto no es un problema si la información está almacenada y puede ser consultada desde bases de datos y/o ficheros xml/rdf.</p><p>Hoy en día podemos ver cómo se popularizan foros al estilo de <a href="http://slashdot.org" target="_top">slashdot</a> que dejan un fichero rdf (por ejemplo http://slashdot.rdf), dónde quedan las noticias de manera estructurada. La idea es que éste u otros métodos de compartir la información dinámica se popularice. Mientras tanto esta tecnología quedará restringida a poderosas bases de datos centralizadas como por ejemplo las de Amazon, que hagan recomendaciones de compra en base a lo que ya se ha comprado.</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ar01s03.html">Anterior</a> </td><td width="20%" align="center"><a accesskey="u" href="index.html">Subir</a></td><td width="40%" align="right"> <a accesskey="n" href="ar01s05.html">Siguiente</a></td></tr><tr><td width="40%" align="left" valign="top">Introducción a la biblioteca digital </td><td width="20%" align="center"><a accesskey="h" href="index.html">Inicio</a></td><td width="40%" align="right" valign="top"> Licencias</td></tr></table></div></body></html>

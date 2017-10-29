@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Biblioteca Digital y Web Semántica</title>
+<!-- 2013-08-19 lun 01:52 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Biblioteca Digital y Web Semántica</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introducción</a></li>
+<li><a href="#sec-2">2. Edición electrónica</a></li>
+<li><a href="#sec-3">3. Introducción a la biblioteca digital</a></li>
+<li><a href="#sec-4">4. Web semántica</a>
+<ul>
+<li><a href="#sec-4-1">4.1. Elementos básicos de la web semántica</a>
+<ul>
+<li><a href="#sec-4-1-1">4.1.1. XML</a></li>
+<li><a href="#sec-4-1-2">4.1.2. RDF</a></li>
+<li><a href="#sec-4-1-3">4.1.3. PICS</a></li>
+<li><a href="#sec-4-1-4">4.1.4. ONTOLOGÍAS</a></li>
+<li><a href="#sec-4-1-5">4.1.5. AGENTES</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2">4.2. La recuperación de la información en la web semántica</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introducción</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Desde el principio de los tiempos parte de la humanidad se ha
+preocupado por almacenar y compartir el saber desde las
+primitivas pinturas rupestres, pasando por la escritura,
+imprenta, dispositivos para almacenar audio, vídeo, etc. la
+llegada de ordenadores supuso un hito en cuanto que su
+capacidad de almacenamiento y procesamiento de la información
+hizo prever posibilidades hasta entonces inimaginables, la
+llegada de las redes de información e Internet evidenciaron
+que el poder de la información puede llegar a generar sistemas
+informáticos completos con la voluntariedad desinterasada de
+un incontable número de programadores, generar empresas
+punteras desde garajes, hacer temblar mercados internacionales
+por las travesuras de un quinceañero y otros sucesos que
+mantienen viva nuestra capacidad de sorprendernos. Y, sin
+embargo, quienes escribimos este artículo pensamos que lo
+mejor está aún por llegar&#x2026;
+</p>
+
+<p>
+También desde el principio el acceso a la información ha
+marcado la diferencia entre ricos y pobres, poderosos y
+desheredados, entre ganar y perder una guerra&#x2026; La
+información tiene y ha tenido un papel protagonista en la
+práctica totalidad de sistemas sociales que han existido
+durante la historia en las sociedades primitivas era el viejo
+(el sabio) el que gobernaba, en la Edad Antigua el Imperio
+Romano se alzó ante las sociedades que convivían en el
+mediterráneo absorviendo como una esponja lo mejor de cada
+cultura, el cristianismo se fundamenta en un libro: la Biblia,
+los musulmanes tienen el Corán, la Baja Edad Media supuso un
+retraso con respecto a la edad antigua debido a que el saber
+se subordinó a intereses políticos y religiosos.
+</p>
+
+<p>
+En el siglo XV, con la imprenta de Gutteberg, llegó lo que se
+podría llamar la primera revolución de la "Información", por
+primera vez en la historia el pensamiento humano, la facilidad
+con que de repente se podían hacer los libros perjudicó a las
+congregaciones religiosas que hasta el momento tenían el
+monopolio de la confección de libros. La imprenta se implantó
+en los distintos países europeos rápidamente, teniendo como
+principal consecuencia el facilitar acceso público al
+conocimiento hasta entonces sólo al alcance de algunos
+privilegiados, el pensamiento humano se empezaría a difundir
+con mayor libertad. El libro ha ido evolucionando a lo largo
+de sus años de existencia, por ello no debemos olvidar toda la
+evolución en la organización y presentación de los libros,
+comos son los índices, el fragmentar los textos en capiítulos,
+secciones, párrafos, etc. el tamaño, las tipografías, las
+notas, bibliográficas; todo esto que ahora nos parece evidente
+es fruto del pensamiento humano durante mas de 500 años, en
+estos momentos, de hecho muchas de estas problemáticas
+resueltas en los libros impresos no estan del todo resueltas
+para los formatos digitales.
+</p>
+
+<p>
+La Ilustración que promulgaba el acceso al saber provocó la
+revolución francesa, los llamados países comunistas hacían
+bandera de la educación de las masas y las sociedades
+occidentales de la libertad de prensa, cualquier regimen
+totalitario tiene el control absoluto de los medios de
+comunicación, &#x2026; Podríamos escribir hasta el infinito acerca
+de la importancia histórica del acceso a qué información, pero
+no es el objeto de este artículo.
+</p>
+
+<p>
+Siempre se habla de acceso a la información, no puede ser de
+otro modo, en el momento en que dejamos de movernos por
+instinto y racionalizamos las cosas es información lo que
+gobierna nuestras acciones, de hecho, incluso nuestros
+instintos y características físicas no son otra cosa que
+información genética, información, información, información
+¿puede la información ser libre? Ésta es una pregunta compleja
+que requeriría un estudio profundo acerca de lo que es la
+información y lo que es la libertad. En este artículo tan sólo
+se pretende hablar acerca de la libertad en una de las
+múltiples formas que adopta la información: la documentación
+escrita.
+</p>
+
+<p>
+Hoy por hoy es el lenguaje humano la forma de comunicación que
+gobierna en mayor medida la información que racionalizamos los
+seres humanos; el acceso a los contenidos descritos en este
+lenguaje y la capacidad de inferencia automática que se pueda
+hacer a través de Internet a partir de estos contenidos es el
+objeto de este artículo titulado Biblioteca Digital y Web
+Semántica dos conceptos que se entremezclan hasta tal punto
+que pronto serán uno sólo pero aún hoy deberemos tratar por
+separado.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Edición electrónica</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Para entender algunas de las licencias y la realidad que
+subyacen en bibliotecas digitales y lo que será la web
+semántica, debemos empezar entendiendo los formatos más
+habituales por los que el texto ha pasado por nuestros
+ordenadores. Esto es lo que se tratará en esta sección.
+</p>
+<ol class="org-ol">
+<li><b>txt</b>: Todos los procesadores de texto lo entienden y ocupa
+poco, pero esta bastante limitado en cuanto a lo que se
+puede mostrar, de hecho no se puede hacer ni una pobre
+cursiva. No separa lo que es presentacion de contenido,
+pero es que no hay nada que presentar :D
+</li>
+<li><b>html</b>: Todos los navegadores lo entienden, lo cual quiere
+decir que ademas se puede navegar mediante el, lo cual
+permite leer de una manera mas cercana a como se piensa,
+mediante un monton de enlaces (asociaciones). El problema
+de este formato es que tambien esta bastante limitadito.
+Por ejemplo, queremos tener en nuestro documento una
+ecuacion matematica pues no nos queda mas remedio que
+meter una imagen, lo cual ya no mola porque nuestra pagina
+ya va a tardar en cargar, entonces en nuestra ecuacion nos
+damos cuenta de que en vez de un 2 queremos meter un 3,
+pues entonces tienes que modificar la imagen lo cual es un
+engorro, pero si tuvieras que modificar 20 imagenes ya
+seria algo realmente terrible. Y todo porque html no es
+una ecuacion. Este ejemplo es extrapolable a muchos mas
+casos pero creo que este es bastante ilustrativo, ya que
+todos hemos tenido que manejar las matematicas en nuestros
+estudios y muchos seguimos haciendolo.
+Este lenguaje (si es que puede llamarse asi) hacer un
+intento realmente popular de separar lo que es
+presentacion de contenido, ya que por un lado
+nuestrofichero.html al abrirlo con un editor de textos lo
+vemos con sus etiquetitas, nosotros se las colocamos
+debidamente a nuestros contenidos y luego si pasamos hojas
+de estilo y demas &#x2026; bueno se separa bastante lo que hay
+de lo que se muestra.
+Pero en la practica a nadie le importa si hemos etiquetado
+correctamente el contenido o si deberiamos haber utilizado
+una hoja de estilo, tan solo importa como lo vea mi
+navegador y los navegadores comerciales interpretan las
+hojas de estilo y las etiquetas a su manera ?resultado? La
+gente coge el Word o el FrontPage? y genera sus paginas en
+plis plas, pero mediante un seudo-html que solo entiende
+bien el Explorer de Microsoft, en fin el html pierde su
+universalidad de esta manera tan tonta.
+</li>
+<li><b>tex</b>: latex es un lenguaje de marca (como html) donde se
+generan ficheros de extensión .tex lleva utilizándose
+mucho tiempo en entornos académicos. Este lenguaje tiene
+una expresividad brutal, separa perfectamente lo que es la
+presentación del contenido y no tendremos ningún problema
+para incluir ecuaciones matemáticas. Además siempre
+podremos pasarlo de manera automática a otros formatos más
+sencillos como txt o html, o a otros orientados a la
+visualización y que ocupan muy poco como pdf, gv, dvi, ps,
+etc. Un gran editor para este lenguaje de marca es Emacs y
+como editor visual Lyx.
+</li>
+<li><b>xml</b>: Es un metalenguaje, un lenguaje para escribir
+lenguajes. Hablamos mas en profundidad mas adelante, por
+ahora, solo decir que que un documento escrito en un
+lenguaje xml puede pasarse a todos los formatos que hemos
+descrito en latex y ademas a bases de datos debido al
+hecho de que todas las etiquetas en xml, se cierran.
+Ademas, es facil hacer un nuevo lenguaje xml basta con
+escribir una dtd que es un fichero donde definimos que
+etiquetas tendra nuestro lenguaje y una xsl para ver como
+se transformaran las etiquetas y si los entusiastas del
+xml tienen razon algun dia todos los navegadores podran
+procesar estas etiquetas y estas transformaciones, pues
+parece que tiene bastante futuro. El lenguaje xml que por
+ahora se esta usando para documentar es docbook que, en
+cuanto a posibilidades es bastante similar a latex.
+</li>
+<li><b>doc</b>: Los famosos .doc que tantas pasiones levantan en
+Internet y su omnipresente word. Muchas personas se
+preguntan que porque los usuarios de esos sistemas que
+llaman libres los .doc tienen tanta mania a este formato
+el caso es que los .doc tienen un formato compilado para
+que solo lo puedas abrir con el Word y para que las
+versiones antiguas de ese procesador no entiendan el
+formato de lasnuevas (obligandote a comprarte un nuevo
+programa cada 2 o 3 anos). Pero es que en los sistemas
+libres no existe Word y por tanto, no hay forma de abrirlo
+debido a su compilacion que por decirlo de alguna manera
+es un codigo secreto que solo Microsoft conoce. Es cierto
+que hay programas como Abiword, u OpenOffice? que haciendo
+ingenieria inversa logran visualizar un buen numero de
+archivos .doc, pero por desgracia no funcionan
+perfectamente.
+Este formato se ha popularizado tanto debido a que
+permitia hacer bastantes cosas con muy pocos
+conocimientos, a pesar de que a medio plazo tiene efectos
+realmente malos para cualquier usuario, como por ejemplo
+la facilidad para transmitir virus.
+</li>
+<li><b>rtf</b>: Este es un formato tambien de Microsoft, pero esta
+escrito mediante un lenguaje de marcas, marcas que podemos
+distinguir claramente si abrimos un documento .rtf con
+editores sencillos tales como el edit de DOS, el bloc de
+notas de Windows, el vi, el emacs, etc. Por ser un
+lenguaje de marcas ha permitido que puedan surjir editores
+libres que editen sin problemas estos archivos. Aunque
+Microsoft ha cuidado que no se pueda hacer tanto como a
+los .doc (no conozco bien las limitaciones si alguien las
+conoce ya sabe que esto se puede modificar libremente ;-).
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Introducción a la biblioteca digital</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Nuestra intención en esta sección es explicar en qué consiste,
+de qué se compone la bilbioteca digital, un concepto emergente
+concebido para dar acceso universal a toda la información
+digital en la red. Dado que no existe una única definición de
+la biblioteca digital podemos ofrecer algunas de estas
+definiciones; la biblioteca digital como (extraido del libro
+La biblioteca digital(TM)
+</p>
+
+<ul class="org-ul">
+<li>Una colección organizada de documentos digitales para cuya
+consulta se precisa de un ordenador, unos programas
+informáticos y, en algunos casos, de un sistema de
+telecomunicaciones compuesto por un modem, una l\'{\i}nea
+telefónica, una empresa que facilite el acceso a las redes
+teleáticas y unos programas de comunicaciones.
+</li>
+<li>Organismo o parte de él cuya función principal consiste en
+constituir bibliotecas digitales, mantenerlas,
+actualizarlas y facilitar el uso de los documentos
+digitales que precisen los usuarios para satisfacer sus
+necesidades de información, investigación, educación o
+esparcimiento, contando para ello con personal
+especializado
+</li>
+</ul>
+
+<p>
+Por otra parte en la web delDigital Library Project(TM), hay
+una definición de biblioteca digital, que proviene del Santa
+Fe Workshop on Distributed Knowledge Work Environments y dice
+así: "El concepto de biblioteca digital no es únicamente el
+equivalente de repertorios digitalizados con métodos de
+gestión de la información. Es más bien, un entorno donde se
+reúnen colecciones, servicios, y personal que favorece el
+ciclo completo de la creación, difusión, uso y preservación de
+los datos, para la información y el conocimiento".
+</p>
+
+<p>
+La biblioteca digital no pretende "copiar" la producción
+impresa, sino que debe generar una nueva estructura de la
+información; el uso de documentos hipertextuales hacen que un
+"libro electrónico" ya no sea lineal, como ocurre con la
+confección en papel, sino que el libro ahora tambien posee
+"profundidad", el usuario tiene acceso a la información de
+formas muy variadas, cuenta con la posibilidad de proveer
+vínculos no solo a documentos textuales, sino también a imagen
+y vídeo, de modo instantáneo, lo cual permite explicar dichos
+contenidos de formas diversas.
+</p>
+
+<p>
+Todo este cambio no se puede llevar a cabo sin que se produzca
+un proceso de innovación tecnológico que implica a las
+diferentes partes involucradas en el desarrollo de la
+biblioteca digital, como son la modificación de la
+organización de la información, su producción y la difusión de
+la misma
+</p>
+
+<p>
+Algunos elementos comunes que definen la biblioteca digital
+son:
+</p>
+
+<p>
+La biblioteca digital no debe ser una entidad individual, se
+requieren medios tecnológicos para enlazar recursos, los
+usuarios deben poder acceder a los enlaces entre bibliotecas
+digitales y servicios de información de manera transparente.
+El acceso universal a las bibliotecas digitales y a los
+servicios de información debe un objetivo principal.
+</p>
+
+<p>
+Sin embargo, no todo es fácil ni simple a la hora de pensar en
+la biblioteca digital, existen una serie de problemáticas que
+ponen freno su rápida expansión, mencionaremos algunas de
+ellas:
+</p>
+<ul class="org-ul">
+<li>Disponibilidad: todo lo que existe registrado (impreso,
+fotografiado, filmado, pintado, dibujado, etc.) tendría
+que convertirse a formato digital para que éste disponible
+a todos los usuarios con un terminal de trabajo.
+</li>
+<li>Recuperación y adecuación: cada usuario de este hipotético
+terminal de trabajo (que permitiría el acceso a la
+biblioteca digital) tendría que poder acceder a todos los
+documentos electrónicos relevantes de este universo
+digital, de una manera rápida y fácil.
+</li>
+<li>Autenticidad: cada usuario debería tener la seguridad de
+que el documento que encuentra en la red es el documento
+auténtico y original.
+</li>
+<li>Utilización: cada uno de los documentos recuperados
+mediante el terminal de trabajo tendría que ser recuperado
+de forma que todo usuario pudiera.
+</li>
+<li>Protección de la propiedad intelectual: la protección de
+los derechos de autor debería estar garantizada en todo
+documento recuperado, ¿o quizá no? sobre derechos de autor
+hablaremos más adelante.
+</li>
+<li>Asequibilidad: los costes de acceso y recuperación de los
+diversos documentos tendrían que ser razonables y no
+superar los costes de sus equivalentes tradicionales.
+</li>
+</ul>
+
+<p>
+De todas formas el interés por la biblioteca digital esta
+creciendo en todo el mundo, en Estados Unidos el interés ha
+aumentado gracias a la creación en 1994 de la Digital
+Libraries Initiative, patrocinada por la NSF (National Science
+Foundation), la DARPA (Defense Advanced Research Projects
+Agency) y la NASA, en Europa un ejemplo significativo es el de
+la Bibliothéque Nationale de France que ha digitalizado
+100.000 volúmenes, 40.000 de los cuales están libres de
+derechos de autor. Se puede encontrar más información sobre
+este proyecto en. En América Latina existen varios proyectos
+interesantes entre ellos están: la Biblioteca Digital
+Latinoamericana y Caribeña (BD-DL) y Biblioteca Virtual de
+Salud de América latina y el Caribe (BVS)
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Web semántica</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+La web semántica es el futuro de la web, una web que
+facilitará la localización de recursos, la comunicación entre
+sistemas y programas, que nos ayudará a gestionar nuestro día
+a día, hasta llegar a niveles que hoy pueden ser considerados
+como de ciencia ficción.
+</p>
+
+<p>
+La red semántica no es una red independiente de la actual,
+sino una ampliación; una red en la cual la información está
+dotada de significados bien definidos, con el fin de que la
+coordinación del trabajo entre humanos y ordenadores sea más
+completa. Se han dado ya los primeros pasos para incluir la
+red semántica en la estructura de la red ya existente. En un
+futuro no lejano, estos desarrollos introducirán prestaciones
+nuevas e importantes, al lograr que las máquinas multipliquen
+su capacidad de procesar y comprender los datos que hoy tan
+sólo se exhiben en pantalla. En su universalidad el hipertexto
+permite "conectar cualquier cosa con todo", por tanto la
+técnica no debe discriminar entre un borrador y la prestación
+más depurada, entre información comercial y académica, ni
+entre culturas, idiomas, etc. No generamos el mismo tipo de
+información si estamos pensando en una persona o en una
+máquina, así tenemos por un lado un video de 5 sec. a una
+poesía y por el otros están las bases de datos, programas
+hechos por friskis informáticos,&#x2026;
+</p>
+
+<p>
+Hasta ahora, la red estaba concebida más para proporcionar
+documentos a los humanos que para manipular datos o y procesar
+información de manera automática, pero a partir de ahora
+tenemos que cambiar el chip pues nos encontramos frente a una
+potente herramienta facilitadora de la comunicación, que es la
+red semántica,además ésta no pierda una de las características
+esenciales que es ser descentralizada.
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Elementos básicos de la web semántica</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Antes de explicar cómo funcionará la red semántica,
+describiremos, los elementos necesarios que la comprondrán,
+así: XML, RDF, PICS, ONTOLOGÍAS y AGENTES
+</p>
+</div>
+
+<div id="outline-container-sec-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> XML</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+XML (eXtensive Markup Language),permite la codificacion para
+la distribucion de documentos complejos por Internet.
+</p>
+
+<p>
+Vamos a dar unos datos previos que hará más fácil entender
+porque se elige este formato.
+</p>
+
+<p>
+SGML (Standard Generalized Markup Language) es una norma que
+pretende establecer una manera genérica de especificar,
+definir documentos, la cual permitiese a su vez usar formatos
+de mayor flexibilidad y portabilidad. Con lo cual reunía tres
+condiciones básicas:
+</p>
+<ol class="org-ol">
+<li>Formal: pues permite establecer la validez de los
+documentos
+</li>
+<li>Estructurado: para que fuese capaz de manejar documentos
+complejos
+</li>
+<li>Ampliable: para facilitar la gestión de grandes depósitos
+de información
+</li>
+</ol>
+
+<p>
+XML es un subconjunto de SGML, y define un formato de texto
+diseñado para la transmisión de datos estructurados. Al ser un
+subconjunto de SGML mantiene sus caracteristicas de
+validación, estructurado y especialmente facilita la
+extensibilidad, porque es un metalenguaje que permite
+describir lenguajes de marcas, tanto la definicion de
+etiquetas como la relacion estructural que existen entre
+ellas.
+</p>
+
+<p>
+Un ejemplo de como funciona XML sería algo así:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-xml">&lt;<span style="color: #0000ff;">agenda</span>&gt;
+   &lt;<span style="color: #0000ff;">persona</span>&gt;
+      &lt;<span style="color: #0000ff;">nombre</span>&gt;Kike&lt;/<span style="color: #0000ff;">nombre</span>&gt;
+      &lt;<span style="color: #0000ff;">telefono</span>&gt;638002993&lt;/<span style="color: #0000ff;">telefono</span>&gt;
+        &lt;<span style="color: #0000ff;">comentario</span>&gt;Es un bombon&lt;/<span style="color: #0000ff;">comentario</span>&gt;
+   &lt;/<span style="color: #0000ff;">persona</span>&gt;
+   &lt;<span style="color: #0000ff;">persona</span>&gt;
+      &lt;<span style="color: #0000ff;">nombre</span>&gt;Maria&lt;/<span style="color: #0000ff;">nombre</span>&gt;
+      &lt;<span style="color: #0000ff;">telefono</span>&gt;956-78.90.12&lt;/<span style="color: #0000ff;">telefono</span>&gt;
+      &lt;<span style="color: #0000ff;">telefono</span>&gt;652135792&lt;/<span style="color: #0000ff;">telefono</span>&gt;
+   &lt;/<span style="color: #0000ff;">persona</span>&gt;
+&lt;/<span style="color: #0000ff;">agenda</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> RDF</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<p>
+RDF son las siglas definen Resource Description Framework
+(algo así como marco de descripción de recursos) Como su
+nombre indica el área en la que está enmarcado es la
+descripción de recursos de la red, entendiendo por recurso
+todo lo que nos de de sí la imaginación en tanto que a definir
+cualquier cosa, páginas, personas, dispositivos&#x2026; RDF permite
+que las condiciones que se quieren "preguntar" sobre un
+recurso sean definidas como un conjunto de propiedades que
+componen el esquema.
+</p>
+
+<p>
+RDF ofrece una estructura semántica inambigua (por el uso de
+los URI, Uniform Resource Identifier) que permite
+codificación, intercambio y procesamiento automático de los
+metadatos normalizados.
+</p>
+
+<p>
+RDF proporciona también reglas para facilitar técnicamente la
+manera de explicar conceptos de modo que los ordenadores
+puedan procesarlo rápidamente y proporciona un medio que
+posibilita la edicición de vocabularios con propiedades
+definidas para la descripción de los recursos de una
+comunidad.
+</p>
+
+<p>
+RDF usa la sintaxis del lenguaje XML para el intercambio y
+procesamiento de metadatos,las condiciones se recogen en los
+rdf: Descripcion de los elementos XML.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-3" class="outline-4">
+<h4 id="sec-4-1-3"><span class="section-number-4">4.1.3</span> PICS</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<p>
+Los PICS (Platform for the Internet Content Selection), nos
+indican lo adecuado o conveniente de determinados ficheros de
+datos segun la comunidad en la que se encuentre el usuario. Es
+una infraestructura para asociar las etiquetas con los
+contenidos de Internet. Aunque en un principio estaba
+destinado al control del acceso de los niños a Internet, su
+uso se puede extender a otras etiquetas que incluyan
+privacidad, licencias,etc. PICS es una plataforma sobre la
+cual se han construido otros servicios de clasificación que no
+sólo define una manera de construir etiquetas sino que es un
+mecanismo para realizar las valoraciones.Este mecanismo esta
+formado, al menos por lo siguiente:
+</p>
+<ul class="org-ul">
+<li>Las etiquetas, que son los metadatos que indican la
+valoración de un documento
+</li>
+<li>Los servicios de valoración, es decir, las organizaciones,
+grupos o personas que realizan una valoración
+</li>
+<li>Los perfiles, que son las reglas que da el usuario para
+definir el filtro para evitar recibir documentos no
+deseados.
+</li>
+</ul>
+
+<p>
+Para que el filtrado de documentos no deseados se lleve a
+cabo, también es necesario un software cliente y otro servidor
+que tengan implementado el sistema de valoración.Estas
+funciones se pueden realizar por separado, lo cual permite que
+por un lado los desarrolladores de software puedan realizar
+una aplicación informática sin suministrar un sistema de
+valoración mientras que por otro una organización puede crear
+sistemas de valoración sin tener que desarrollar el software.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-4" class="outline-4">
+<h4 id="sec-4-1-4"><span class="section-number-4">4.1.4</span> ONTOLOGÍAS</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<p>
+La ontologías son colecciones de enunciados redactados en un
+lenguaje, como el RDF, que define las relaciones entre
+conceptos y especifica reglas lógicas para razonar con ellos.
+Los ordenadores "comprenderán" el significado de los datos
+semánticos de una página de la red siguiendo vínculos con
+ontologías especificadas.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-5" class="outline-4">
+<h4 id="sec-4-1-5"><span class="section-number-4">4.1.5</span> AGENTES</h4>
+<div class="outline-text-4" id="text-4-1-5">
+<p>
+El concepto de tecnología de agentes está aún en desarrollo,
+pero una definición que podemos manejar de agente es la
+siguiente: un agente es una entidad de software que funciona
+continua y autónomamente en un medio particular a menudo
+habitado por otros agentes y procesos, sin requerir de guía
+constante o intervención humana. En otras palabras, un agente
+es un asistente personal que está dentro de la computadora y
+que cumple varios roles en representación de una función
+específica o de un usuario.
+</p>
+
+<p>
+En la web semántica serán los encargados de realizar la
+búsqueda de servicios, para ello, la semántica facultará a los
+agentes para describir unos a otros la función exacta que
+realizan, y qué datos han de recibir para ello.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> La recuperación de la información en la web semántica</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Los actuales buscadores de Internet, como google se basan en
+un sistema en el que los usuarios meten manualmente los
+enlaces y al hacer una búsqueda se aplica un algoritmo de
+emparejamiento de patrones, que tiene en cuenta el número de
+veces que se hace referencia a cada url candidata a ser
+resultado de búsqueda.
+</p>
+
+<p>
+Si bien hemos aprendido a convivir con este sistema de
+búsqueda, la única información que recuperamos con él son
+conceptos descontextualizados, es decir, si en un buscador
+ponemos la palabra "flor" recuperaremos una editorial que se
+llamen flor, una página web para expresar sentimientos en
+Internet y, si tenemos suerte alguna página especializada en
+margaritas.
+</p>
+
+<p>
+La web semántica nos permitirá hacer búsquedas precisas del
+tipo quiero el viaje más barato que hay entre Madrid y
+Barcelona, teniendo en cuenta que me gusta ir en ventanilla y
+en no fumadores.
+</p>
+
+<p>
+En el estado actual de Internet esto es ahora posible gracias
+a los sistemas multiagente. Donde un agente es una entidad de
+software que funciona continua y autónomamente en un medio
+particular a menudo habitado por otros agentes y procesos, sin
+requerir de guía constante o intervención humana. También debe
+poseer ciertas habilidades sociales, reactividad ante el mundo
+que le rodea y comportamiento basado en deseos que pertenecen
+a cada agente en particular. Los sitemas multiagentes se han
+propuesto como la mejor herramienta para realizar aprendizaje
+automático en Internet. Mediante esta herramienta es posible
+hacer recomendaciones acertadas del tipo "pincha en este sitio
+web, pues me parece que te interesa", "esta persona tiene
+intereses muy similares a los tuyos, te interesaría contactar
+con ella" y esto lo hará software puro y duro, sin más
+intervención humana que la de la propia acción del usuario y
+acertarán. También será posible clasificar automáticamente
+sitios ó documentos de una manera acertada y un montón de más
+cosas que ni siquiera nos imaginamos.
+</p>
+
+<p>
+El problema con el que ahora se topa la tecnología de sistemas
+multiagente es la volatilidad y desestructuración de la
+información base para realizar las inferencias. Volviendo al
+ejemplo del sistema multiagente para encontrar el viaje de tus
+sueños el único lugar desde el que puede recuperar la
+información son páginas html en forma de tablas, éstas páginas
+pueden cambiar su estructura cada mes, lo que requiere cambios
+de programación. Esto no es un problema si la información está
+almacenada y puede ser consultada desde bases de datos y/o
+ficheros xml/rdf.
+</p>
+
+<p>
+Hoy en día podemos ver cómo se popularizan foros al estilo de
+slashdot que dejan un fichero rdf (por ejemplo
+<a href="http://slashdot.rdf">http://slashdot.rdf</a>), dónde quedan las noticias de manera
+estructurada. La idea es que éste u otros métodos de compartir
+la información dinámica se popularice. Mientras tanto esta
+tecnología quedará restringida a poderosas bases de datos
+centralizadas como por ejemplo las de Amazon, que hagan
+recomendaciones de compra en base a lo que ya se ha comprado.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Fecha: 2002</p>
+<p class="author">Autor: David Arroyo Menéndez y Carolina García Cataño</p>
+<p class="date">Created: 2013-08-19 lun 01:53</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

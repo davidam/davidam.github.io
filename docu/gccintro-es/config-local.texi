@@ -1,0 +1,32 @@
+@tex
+\gdef\paperbackbook{{\globaldefs = 1
+  \parskip = 2pt plus 1pt
+  \textleading = 12pt
+  \setleading{12pt}%
+  %
+  \internalpagesizes{180mm}{112mm}{20mm}{20.2mm}{5mm}{12pt}{9in}{6in}%
+  % correction for conversion from USletter=8.5x11 to TradePaper=6x9
+  \advance\voffset by -1in
+  \advance\normaloffset by -1in
+  \special{papersize=6in,9in}
+  %
+  \lispnarrowing=0.3in%
+  \tolerance = 700%
+  \hfuzz = 1pt%
+  \contentsrightmargin = 0pt%
+  %\deftypemargin = 0pt%
+  \defbodyindent = .5cm%
+  %\raggedbottom
+}}
+@end tex
+@c @cropmarks
+@c @afourpaper
+@paperbackbook
+@set publish
+@set printed
+@set frontcontents
+@set extrablankpages
+@raggedbottom
+@c @setchapterstyle plain
+
+

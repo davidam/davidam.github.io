@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+               "/usr/share/sgml/docbook/dtd/xml/4.2/docbookx.dtd">
+
+<article lang="es">
+  <articleinfo>
+    <title>Aplicaciones Pr&aacute;cticas de Inteligencia Artificial</title>
+    <author>
+      <firstname>David</firstname>
+      <surname>Arroyo Men&eacute;ndez</surname>
+    </author>
+    <legalnotice>
+      <para>Derecho de Autor (c) 2005 David Arroyo
+	Men&eacute;ndez. Este documento fue originalmente escrito para
+	la revista Solo Programadores Mundo Linux nº 75 y 77.
+	Se otorga permiso para copiar, distribuir, y/&oacute; modificar este documento
+	bajo los t&eacute;rminos de la GNU Free Documentation License, Version 1.1
+	&oacute; cualquier versi&oacute;n posterior publicada por la Free Software Foundation;
+	sin secciones invariantes, ni textos de portada, &oacute; contraportada 
+	Una copia de &eacute;sta licencia es incluida la secci&oacute;n titulada "GNU
+	Free Documentation License"
+      </para>
+    </legalnotice>
+    <abstract>
+      <para>En este art&iacute;culo se mostrar&aacute;n algunas de las principales aplicaciones para las cuales se utilizan las t&eacute;cnicas de Inteligencia Artificial, partiendo de las t&eacute;cnicas m&aacute;s sencillas y haciendo una breve explicaci&oacute;n de su funcionamiento y llegango a aquellas m&aacute;s novedosas y de reciente utilizaci&oacute;n. As&iacute; mismo, se ilustrar&aacute;n las explicaciones mediante explicaciones de c&oacute;digo y de aplicaciones libres disponibles.</para>
+    </abstract>
+  </articleinfo>
+
+  <sect1 id="intro">
+    <title>Introducci&oacute;n</title>
+
+    <para>Este art&iacute;culo ha sido titulado <emphasis>Aplicaciones
+    Pr&aacute;cticas de Inteligencia Artificial</emphasis> y esta
+    introducci&oacute;n explicar&aacute; tal t&iacute;tulo. Por
+    aplicaci&oacute;n pr&aacute;ctica entendemos utilizar alguna
+    t&eacute;cnica derivada de un &aacute;rea del conocimiento para
+    resolver un problema concreto que afecta a nuestra vida
+    cotidiana. La definici&oacute;n de Inteligencia Artificial de Rich y
+    Knight es suficientemente simple y precisa como para ser &uacute;til a
+    nuestros prop&oacute;sitos, <citation>La IA es el estudio de c&oacute;mo lograr
+    que las computadoras realicen tareas que, por el momento, los
+    humanos hacen mejor</citation>.</para>
+
+    <para>Turing pens&oacute; que si una m&aacute;quina se comporta en todos
+    los aspectos como inteligente, entonces debe ser inteligente. Por
+    lo que si un n&uacute;mero alto de humanos no puede diferenciar a
+    una m&aacute;quina de una persona en una conversaci&oacute;n es
+    porque se comporta de manera inteligente. Esto se llam&oacute; el
+    <ulink url="http://plato.stanford.edu/entries/turing-test">Test de
+    Turing</ulink> y el primer programa en pasarlo fue Eliza que
+    imitaba el comportamiento de un psicoanalista en un chat de
+    internet. Eliza daba respuestas que eran preguntas acercas de lo
+    que estabas diciendo, con lo cual sin ning&uacute;n conocimiento
+    real de psicolog&iacute;a Eliza pasaba el test de Turing. Las
+    soluciones que se aportan a las tareas que realizan mejor los
+    humanos suponen muchas veces un compromiso entre parecer que se
+    comporta de manera inteligente y realizar los procesos mentales
+    que hacemos los humanos. Para ver una implementaci&oacute;n libre
+    de Eliza pod&eacute;is hacer <computeroutput>Esc-x
+    doctor</computeroutput> en vuestro emacs.</para>  
+
+    <para>Demos ahora un repaso para ver cu&aacute;les pueden ser esas
+    tareas que, en principio, los humanos realizan mejor que las
+    m&aacute;quinas:</para> 
+
+    <itemizedlist>
+      <listitem>
+	<para>Juegos. Durante algunos a&ntilde;os los fabricantes de
+	ordenadores demostraban la potencia de su tecnolog&iacute;a
+	jugando al ajedrez &oacute; a las damas contra campeones
+	mundiales.</para> 
+      </listitem>
+      <listitem>
+	<para>Consejos. Los humanos solemos pedir consejo a otros
+	humanos cuando padecemos una enfermedad, se nos estropea el
+	coche, ante la compra de una casa &oacute; para otras decisiones que
+	necesitamos de un conocimiento que no siempre poseemos. Desde
+	hace a&ntilde;os los sistemas basados en conocimiento &oacute;
+	sistemas expertos hacen esta tarea con efectividad similar a
+	como lo har&iacute;a un experto en la materia.</para> 
+      </listitem>
+      <listitem>
+	<para>Lenguaje Natural. Hoy en d&iacute;a las m&aacute;quinas
+	no hablan nuestro idioma: lenguajes de programaci&oacute;n,
+	l&iacute;neas de comando, &oacute; interfaces gr&aacute;ficas
+	nos sirven para comunicarnos con &eacute;stos, pero el
+	comunicarnos con ellos como nos comunicamos con personas
+	constituye un reto que revolucionar&iacute;a la
+	inform&aacute;tica con aplicaciones inimaginables.</para> 
+      </listitem>
+      <listitem>
+	<para>Aprendizaje. Una de las principales diferencias entre
+	seres vivos e inertes es la capacidad de adaptarse a los
+	cambios, la capacidad de aprender. Algoritmos de aprendizaje
+	autom&aacute;tico son cada d&iacute;a m&aacute;s utilizados en
+	una cantidad creciente de aplicaciones.</para> 
+      </listitem>
+      <listitem>
+	<para>Empat&iacute;a. Rara vez el ordenador se pone en el
+	lugar del humano comprendiendo su objetivo abstracto y
+	ayud&aacute;ndole a solucionarlo &iquest;pueden las
+	m&aacute;quinas hacer tal cosa?</para> 
+      </listitem>
+
+      <listitem>
+	<para>Sentido com&uacute;n. Existe una gran cantidad de
+	conocimiento que aprendemos en nuestra m&aacute;s tierna
+	infancia que las personas conocemos como lo relativo a
+	consideraciones del tiempo, el espacio, los materiales, ...y
+	que incluso las aplicaciones que requieren cierta inteligencia
+	como los sistemas basados en conocimiento rara vez
+	incluyen.</para> 
+      </listitem>
+      <listitem>
+	<para>Pensar con neuronas. Tal vez si conseguimos crear un
+	sistema artificial que simulara nuestro sistema
+	neurol&oacute;gico y lo entren&aacute;ramos en un entorno
+	adecuado pueda llegar a tener un nivel de inteligencia similar
+	al nuestro. Lo cierto, es que este tipo de sistemas
+	est&aacute; obteniendo muy buenos resultados en problemas que
+	hab&iacute;a sido muy dif&iacute;cil abordar por otras
+	v&iacute;as como por ejemplo el reconocimiento de
+	formas.</para> 
+      </listitem>
+    </itemizedlist>
+
+    <para>En este art&iacute;culo veremos que las t&eacute;cnicas que
+    solucionan &oacute; se aproximan a la soluci&oacute;n de tales
+    problem&aacute;ticas nos ayudan a resolver cuestiones de nuestra
+    vida cotidiana y, que adem&aacute;s esto puede hacerse utilizando
+    software libre.</para> 
+
+  </sect1>
+
+  <sect1 id="juegos">
+    <title>Juegos</title>
+
+    <para>La mayor&iacute;a de los juegos de mesa y una gran cantidad
+    de problemas inform&aacute;ticos pueden resolverse mediante una
+    adecuada modelizaci&oacute;n en estados y aplicar un algoritmo de
+    b&uacute;squeda entre estos estados.</para> 
+
+    <para>Para acotar el problema, pensemos en un juego de tablero de
+    2 jugadores, por ejemplo, las tres en raya, las damas, el ajedrez,
+    el othello, etc. &iquest;C&oacute;mo podr&iacute;a programarse un
+    juego de este tipo?:</para> 
+
+    <para>Bien, en primer lugar, un tablero es una estructura de datos
+    de tipo matriz donde cada elemento puede ser ocupado por el
+    jugador 1, ocupado por el jugador 2, &oacute; vacio (en juegos como el
+    ajedrez donde cada jugador tiene diferentes fichas habr&iacute;a
+    que completar el enfoque). Una partida es una secuencia de estados
+    por los que pasa un tablero. Ahora veamos c&oacute;mo
+    deber&iacute;a actuar nuestro sistema inteligente para ganarnos en
+    una partida.</para> 
+
+    <itemizedlist>
+      <listitem>
+	<para>Una primera aproximaci&oacute;n podr&iacute;a ser tener
+	todas las posibles partidas en memoria y aplicar solo los
+	movimientos que han llevado a partidas victoriosas.</para> 
+      </listitem>
+      <listitem>
+	<para>Otro enfoque ser&iacute;a actuar en cada turno, teniendo
+	en cuenta ciertas reglas est&aacute;ticas (ej: ciertos if). Un
+	ejemplo de reglas en las tres en raya puede ser: si tengo dos
+	fichas alineadas entonces ocupa el &uacute;ltimo lugar
+	vac&iacute;o y gana la partida, si el oponente tiene 2 fichas
+	alineadas ocupa el lugar vac&iacute;o y evita la victoria del
+	oponente, en cualquier otro caso mueve de manera
+	aleatoria.</para> 
+      </listitem>
+      <listitem>
+	<para>En general, para este tipo de juegos se utiliza la
+	estrategia minimax que imita el comportamiento humano de
+	examinar por anticipado un cierto n&uacute;mero de jugadas,
+	explorando el grafo de tableros que se generar&iacute;an tras
+	un movimiento dado. En este enfoque existe una funci&oacute;n
+	de evaluaci&oacute;n que da un valor a cada posible
+	movimiento.</para> 
+      </listitem>
+    </itemizedlist>
+
+    <para>Para ilustrar la implementaci&oacute;n de estos enfoques
+    recomiendo instalar el paquete tictactoe que implementa las 3 en
+    raya con 2 niveles de dificultad easy (implementa reglas tontas) y
+    hard (implementa minimax). Dejo el c&oacute;digo de las funciones
+    clave al lector:</para> 
+
+
+    <para>De este modo, queda brevemente ilustrado el modo en que se
+    pueden aplicar t&eacute;cnicas de Inteligencia Artificial en los
+    juegos.</para>
+
+  </sect1>
+
+  <sect1 id="sist-expertos">
+    <title>Sistemas Expertos</title>
+
+    <para>Los sistemas expertos resuelven problemas que normalmente
+    son solucionados por expertos humanos.</para> 
+
+    <para>Un sistema experto se compone de una base de conocimiento
+    del dominio en cuesti&oacute;n, mecanismos de razonamiento para
+    aplicar conocimiento a los problemas que se proponen, mecanismos
+    para explicar a los usuarios el razonamiento utilizado a la hora
+    de ofrecer una respuesta y mecanismos de aprendizaje y
+    adquisici&oacute;n de nuevo conocimiento.</para> 
+
+    <para>Para crear una base de conocimiento es necesario contar con
+    al menos un experto humano del dominio en cuesti&oacute;n. Se
+    puede adquirir su conocimiento a partir de entrevistas &oacute;
+    mediante interfaces amigables para que lo introduzca. Pero
+    tambi&eacute;n es muy importante una adecuada modelizaci&oacute;n
+    de su conocimiento.</para> 
+
+    <para>Los mecanismos de representaci&oacute;n del conocimiento que
+    se pueden encontrar son: l&oacute;gica, redes, marcos y reglas. No
+    obstante, lo m&aacute;s utilizado es una adecuada
+    combinaci&oacute;n de marcos y reglas.</para> 
+
+    <para>Es posible representar el conocimiento mediante hechos o
+    instancias y reglas &oacute; alg&uacute;n otro mecanismo para
+    inferir nuevos hechos. Pero deberemos plantearnos si a partir de
+    los hechos vamos a ir aplicando reglas (encadenamiento hacia
+    adelante), &oacute; si por el contrario nos interesa responder a
+    una cuesti&oacute;n concreta (ej: &iquest; tengo gripe?) e ir
+    satisfaciendo subobjetivos hasta llegar a hechos que demuestren la
+    veracidad &oacute; falsedad de la frase (encadenamiento hacia
+    atr&aacute;s). Tambi&eacute;n es conveniente plantear: qu&eacute;
+    reglas ejecutar antes, cu&aacute;les est&aacute;n listas para ser
+    ejecutadas, si ejecutar las reglas cuyos antecedentes se
+    actualizaron recientemente, &oacute; si ejecutar primero reglas
+    espec&iacute;ficas. Todos estos mecanismos de control del
+    razonamiento pueden ser tenidos en cuenta a la hora de construir
+    nuestro sistema experto.</para> 
+
+    <para>El software libre nos proporciona buenas herramientas para
+    el desarrollo de sistemas expertos. Algunas de ellas son: <ulink
+    url="http://www.ghg.net/clips/CLIPS.html">clips</ulink> y <ulink
+    url="http://www-cgi.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/expert/systems/babylon/0.html">babylon</ulink>.</para> 
+
+    <para>Para ilustrar este apartado recomiendo instalar clips que
+    est&aacute; empaquetado para un buen n&uacute;mero de sistemas. En
+    debian basta con hacer <command>apt-get install xclips clips
+    clips-doc</command>. xclips es un interfaz gr&aacute;fico para
+    utilizar clips, recomiendo su uso, para saciar la curiosidad del
+    cacharreo. Desde l&iacute;nea de comandos podemos ejecutar lo
+    siguiente:</para> 
+
+
+    <example>
+      <title>Ejemplo de uso de clips</title>
+      <programlisting>
+[darroyo@turing:/usr/share/doc/clips-doc/examples]$ clips
+CLIPS> (load "auto.clp")
+Defining deffunction: ask-question
+Defining deffunction: yes-or-no-p
+Defining defrule: normal-engine-state-conclusions +j
+...
+
+CLIPS> (reset)
+CLIPS> (run)
+
+
+The Engine Diagnosis Expert System
+
+Does the engine start (yes/no)?
+
+      </programlisting>
+    </example>
+
+    <para>De este modo, se prueba un ejemplo de sistema experto cuyo
+    objetivo es solucionar aver&iacute;as con el coche. El sistema va
+    haciendo preguntas acerca de los s&iacute;ntomas que presenta el
+    coche y finalmente otorga un diagn&oacute;stico. Os recomiendo que
+    ech&eacute;is un vistazo al fichero auto.clp.</para> 
+
+    <para>Espero que este apartado haya servido para entender
+    qu&eacute; una m&aacute;quina puede modelar el conocimiento de un
+    experto en, al menos, un dominio limitado y que esto es
+    &uacute;til para recibir asesor&iacute;a &oacute; consejos para
+    las que en condiciones normales precisar&iacute;amos de un experto
+    humano.</para> 
+
+    <mediaobject id="clips">
+      <imageobject role="html">
+	<imagedata fileref="img/clips.gif" format="GIF" />
+      </imageobject>
+      <imageobject role="fo">
+	<imagedata fileref="img/clips.ps" format="PS" />
+      </imageobject>
+      <caption>
+	<para>logo de clips</para>
+      </caption>
+    </mediaobject>
+
+  </sect1>
+
+  <sect1 id="adaptativo">
+    <title>Software Adaptativo</title>
+
+    <para>Cuando aprendemos a programar, enseguida aprendemos ciertos
+    principios b&aacute;sicos que hacen que nuestro software aumente
+    su valor de uso: reutilizaci&oacute;n, abstracci&oacute;n, que sea
+    usable para el usuario final, ... Sin embargo, no nos suelen
+    preparar para que el software se adapte de manera
+    autom&aacute;tica a los cambios en las necesidades de usuario, en
+    sus objetivos, &oacute; en el entorno.</para> 
+
+    <para>Seg&uacute;n <ulink url="http://www.norvig.com">Peter
+    Norvig</ulink> director de calidad de b&uacute;squeda de Google:
+    <citation>El software adaptativo usa informaci&oacute;n disponible
+    acerca de cambios en su entorno para mejorar su
+    comportamiento</citation>. Es decir, el software tiene capacidad
+    de adaptarse al comportamiento del usuario sin que &eacute;ste lo pida de
+    una manera expl&iacute;cita, entendiendo como usuario a una
+    persona u otro sistema.</para> 
+
+    <para>El software adaptativo ha tenido su caldo de cultivo en la
+    miner&iacute;a de datos (data mining), esto es, la
+    extracci&oacute;n no trivial, impl&iacute;cita, previamente
+    desconocida y potencialmente usable de informaci&oacute;n de
+    inter&eacute;s en grandes cantidades de datos. El proceso de
+    extraer esa informaci&oacute;n se basa en aplicar algoritmos de
+    aprendizaje autom&aacute;tico.</para> 
+
+    <para>Todo esto que puede estar pareciendo un poco de ciencia
+    ficci&oacute;n est&aacute; teniendo una fuerte eclosi&oacute;n en
+    aplicaciones populares para el usuario final. Fij&eacute;monos,
+    por ejemplo, en el problema del spam, actualmente evolution,
+    mozilla, kmail y otros lectores de correo est&aacute;n
+    introduciendo facilidades para separar el spam del ham, es decir,
+    el correo electr&oacute;nico "no" deseado, del "s&iacute;" deseado. Para ello
+    normalmente se aplica un algoritmo de aprendizaje
+    autom&aacute;tico denominado Naive Bayes. Muchos sitios web
+    tambi&eacute;n est&aacute;n incorporando estos m&eacute;todos para
+    incrementar ventas &oacute; visitas. Es conocido el caso de Amazon
+    que utiliza filtrado colaborativo para encontrar usuarios con
+    perfiles de compra similares y recomendar productos
+    personalizados. Un ejemplo un poco m&aacute;s hispano es la <ulink
+    url="http://www.guiacampsa.com">Guia Campsa</ulink> que utiliza
+    una neurona articial para ordenar el orden de rutas que prefieren
+    los usuarios.</para> 
+
+    <para>Ahora que se tiene un poco m&aacute;s claro para que puede
+    ser &uacute;til hoy el aprendizaje autom&aacute;tico, se
+    ver&aacute; c&oacute;mo crear un sistema que aprenda a decidir si
+    es un buen d&iacute;a para jugar al tenis en funci&oacute;n de una
+    serie de atributos: fuerza del viento (wind), humedad (humidity),
+    temperatura (temperature) y previsi&oacute;n del cielo
+    (outlook). Para ello vamos a utilizar el algoritmo ID3
+    implementado en lisp por Tom Mitchell, uno de los padres del
+    aprendizaje autom&aacute;tico. Para ello es necesario instalar un
+    int&eacute;rprete de lisp (si usamos debian y queremos cmucl)
+    <command>apt-get install cmucl</command> y ahora se descarga el
+    programa lisp en cuesti&oacute;n <command>wget -c
+    http://www-2.cs.cmu.edu/afs/cs/project/theo-11/www/decision-trees.lisp</command>.
+    Finalmente, se ejecuta la traza que viene en el propio
+    fichero:</para> 
+
+    <example>
+      <title>Traza de ID3 dada</title>
+
+      <programlisting>
+[18:41][darroyo@turing:~/programacion/lisp]$ lisp
+CMU Common Lisp CVS release-19a 19a-release-20040728 + minimal debian patches, running on turing
+With core: /usr/lib/cmucl/lisp.core
+Dumped on: Fri, 2004-10-08 11:51:05+02:00 on turing
+For support see http://www.cons.org/cmucl/support.html Send bug reports to the debian BTS.
+or to pvaneynd@debian.org
+type (help) for help, (quit) to exit, and (demo) to see the demos
+
+Loaded subsystems:
+    Python 1.1, target Intel x86
+    CLOS based on Gerd's PCL 2004/04/14 03:32:47
+* (load "decision-trees.lisp")
+
+; Loading #p"/home/darroyo/programacion/lisp/decision-trees.lisp".
+Warning:  Declaring *DATA* special.
+T
+* *training.examples*
+
+(D14 D13 D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1)
+* (print.entity 'd6)
+
+(PLAY.TENNIS? NO WIND STRONG HUMIDITY NORMAL TEMPERATURE COOL OUTLOOK RAIN)
+(PLAY.TENNIS? NO WIND STRONG HUMIDITY NORMAL TEMPERATURE COOL OUTLOOK RAIN)
+* (setq tree (id3 *training.examples*
+                'play.tennis?
+                '(outlook temperature humidity wind)))
+Warning:  Declaring TREE special.
+
+(OUTLOOK (SUNNY (HUMIDITY (NORMAL YES) (HIGH NO))) (OVERCAST YES)
+ (RAIN (WIND (STRONG NO) (WEAK YES))))
+* (print.tree tree)
+OUTLOOK
+ = SUNNY
+     HUMIDITY
+      = NORMAL => YES
+      = HIGH => NO
+ = OVERCAST => YES
+ = RAIN
+     WIND
+      = STRONG => NO
+      = WEAK => YES
+NIL
+* (classify 'd6 tree)
+
+NO
+      </programlisting>
+    </example>
+
+    <para>Este algoritmo de clasificaci&oacute;n va construyendo un
+    &aacute;rbol de clasificaci&oacute;n escogiendo en cada paso el
+    atributo que tiene una mayor entrop&iacute;a, es decir, el
+    atributo que tiene valores m&aacute;s variados. Despu&eacute;s de
+    haber recibido los ejemplos de entrenamiento ya podemos saber si,
+    por ejemplo, la variable d6 es un ejemplo de d&iacute;a para jugar al
+    tenis &oacute; no: <command>(classify 'd6 tree)</command>.</para> 
+
+    <para>Os animo a modificar un poco el c&oacute;digo, cambiando los
+    ejemplos de entrenamiento, para familiarizarse con el
+    mecanismo. El lector interesado en librer&iacute;as de aprendizaje
+    autom&aacute;tico, puede visitar las siguientes referencias que,
+    adem&aacute;s, son libres:</para> 
+
+    <itemizedlist>
+      <listitem>
+	<para><ulink url="http://www.torch.ch/">Torch</ulink>:
+	librer&iacute;a escrita en C++ con licencia BSD, implementa
+	una gran cantidad de algoritmos de aprendizaje: redes
+	neuronales, K-nearest-neighbors, modelos de Markov,
+	clasificadores bayesianos, ...</para> 
+      </listitem>
+      <listitem>
+	<para><ulink
+	url="http://www.cs.waikato.ac.nz/~ml/weka/">Weka</ulink>:
+	librer&iacute;a escrita en Java con licencia GPL, es bastante
+	popular en el mundo acad&eacute;mico y tiene un interfaz
+	gr&aacute;fico bastante amigable.</para> 
+      </listitem>
+      <listitem>
+	<para><ulink
+	url="http://www-2.cs.cmu.edu/~mccallum/bow/">Bow</ulink>:
+	herramienta escrita en C con licencia GPL para el
+	an&aacute;lisis estad&iacute;stico de textos,
+	clasificaci&oacute;n autom&aacute;tica de documentos
+	desarrollada en Carnegie Mellon.</para> 
+      </listitem>
+
+      <listitem>
+	<para>Russell y Norvig desarrollaron para el libro
+	"Inteligencia Artificial: Un Enfoque Moderno" una buena
+	cantidad de c&oacute;digo lisp con una licencia similar a una
+	BSD, entre el que hay bastantes <ulink
+	url="http://www.di.unipi.it/~simi/AIMA/doc/overview-LEARNING.html">algoritmos
+	de aprendizaje autom&aacute;tico</ulink>. Si usas debian
+	puedes descarg&aacute;rtelos mediante <command>apt-get install
+	cl-aima</command>.</para> 
+      </listitem>
+    </itemizedlist>
+
+    <para>El software adaptativo permite solucionar problemas
+    d&oacute;nde el conocimiento est&aacute;tico no llega. El caso del
+    spam es tal vez el m&aacute;s popular, no obstante, sistemas
+    expertos, sistemas web, firewalls, encaminadores,
+    etc. est&aacute;n incluyendo enfoques adaptativos para mejorar la
+    eficacia de sus sistemas.</para> 
+
+    <para>El objetivo de este apartado ha sido vislumbrar el modo en
+    que puede aprender una m&aacute;quina y, la aplicaci&oacute;n que
+    tiene este aprendizaje de m&aacute;quinas en el software que
+    utilizamos en nuestra vida cotidiana.</para> 
+
+
+  </sect1>
+
+
+  <sect1 id="agentes">
+    <title>Agentes Inteligentes</title>
+
+
+    <para>Para Russell y Norvig un agente es cualquier cosa capaz de
+    percibir su medioambiente mediante sensores y actuar en ese medio
+    mediante actuadores. Todo agente tiene una funci&oacute;n u
+    objetivo. Por ejemplo, un agente humano de bolsa tiene el objetivo
+    de comprar y vender acciones respondiendo a los est&iacute;mulos
+    iniciados por su cliente y captados por sus sentidos. Una
+    aspiradora tiene la funci&oacute;n de aspirar cuando capta que ha
+    sido encendida y no aspirar cuando es apagada.</para> 
+
+    <para>Un agente inteligente &oacute; racional trata de maximizar
+    el valor de una medida de rendimiento, dada la secuencia de
+    percepciones que ha observado hasta el momento.</para> 
+
+    <para>Repitamos lo dicho ejemplific&aacute;ndolo. Un agente
+    inteligente tiene un objetivo abstracto (ej: "ofrecer a un usuario
+    informaci&oacute;n interesante"), tiene una forma de evaluar si
+    esa informaci&oacute;n es interesante (ej: "el usuario lee la
+    informaci&oacute;n sugerida"), tiene unos actuadores (ej: "una
+    caja html donde presenta enlaces interesantes") y  tiene unos
+    sensores (ej: "un conjunto de sitios web para recoger
+    informaci&oacute;n y filtrar la que sea interesante y el conjunto
+    de clicks que puede hacer &oacute; no el usuario de todos esos
+    sitios web"). La pregunta ahora es &iquest;c&oacute;mo mejorar ese
+    rendimiento?.</para> 
+
+    <para>Para Peter Norvig la programaci&oacute;n estructurada tiene
+    asociadas las aplicaciones basadas en entrada/salida, la
+    programaci&oacute;n orientada a objetos las aplicaciones basadas
+    en eventos y la programaci&oacute;n adaptativa las aplicaciones
+    basadas en agentes inteligentes. Es decir, la respuesta a nuestra
+    pregunta es usamos aprendizaje autom&aacute;tico para mejorar el
+    rendimiento.</para> 
+
+    <para>No obstante, el deseo de desarrollar software adaptativo no
+    es la &uacute;nica raz&oacute;n para utilizar una
+    metodolog&iacute;a de programaci&oacute;n orientada a agentes. Los
+    agentes tienen su campo de cultivo en la Inteligencia Artificial
+    Distribuida (IAD) que, como su nombre indica, es la rama de la
+    Inteligencia Artificial que trata de resolver de manera
+    distribuida sus problemas, aprovechando as&iacute; las ventajas
+    propias de la programaci&oacute;n distribuida: robustez,
+    paralelismo y escalabilidad.</para> 
+
+    <para>Desde un punto de vista de ingenier&iacute;a de software
+    este paradigma tambi&eacute;n supone una evoluci&oacute;n a las
+    necesidades de reutilizaci&oacute;n y encapsulamiento del
+    c&oacute;digo. Partiendo de la programaci&oacute;n orientada a
+    objetos, el mundo est&aacute; compuesto por elementos llamados
+    objetos que tienen atributos a los que es posible aplicarles
+    m&eacute;todos y estos pueden abstraerse a clases y estas clases
+    pueden abstraerse en otras clases de las que heredan
+    m&eacute;todos y/o atributos &oacute; de las que se componen. Sin
+    embargo, este modelo del mundo es incompleto, pues en el mundo
+    tambi&eacute;n existen agentes con capacidades de aprendizaje y
+    autonom&iacute;a.</para> 
+
+    <para>Tambi&eacute;n podemos usar agentes inteligentes para
+    entender mejor el conocimiento &oacute; para poder hacer
+    simulaci&oacute;n.</para> 
+
+
+    <mediaobject id="jade">
+      <imageobject role="html">
+	<imagedata fileref="img/jade.png" format="PNG"/>   
+      </imageobject>
+      <imageobject role="fo">
+	<imagedata fileref="img/jade.ps" format="PS"/>   
+      </imageobject>
+      <caption>
+	<para>Pantallazo de jade en ejecuci&oacute;n</para>
+      </caption>
+    </mediaobject>
+
+    <para>Hay bastante software denominado como <ulink
+    url="http://linuxselfhelp.com/HOWTO/AI-Alife-HOWTO-6.html">software
+    de agentes</ulink> para gnu/linux, sin embargo, no siempre se
+    entiende la filosof&iacute;a de agentes que subyace. La
+    herramienta para desarrollar agentes m&aacute;s extendida y
+    utilizada es <ulink url="http://jade.tilab.com/">JADE</ulink>
+    gracias a sus buenas herramientas gr&aacute;ficas,
+    documentaci&oacute;n, soporte, licencia LGPL, ... por desgracia
+    para quienes no queremos caer en la <ulink
+    url="http://gnu.fyxm.net/philosophy/java-trap.es.html">"Trampa de
+    Java"</ulink> requiere JDK 1.4 &oacute; posteriores.</para> 
+
+    <para>Para ampliar informaci&oacute;n acerca de teor&iacute;a de
+    agentes recomiendo: <ulink
+    url="http://www-2.cs.cmu.edu/afs/cs/usr/pstone/public/papers/97MAS-survey/revised-survey.html">Multiagent
+    Systems: A Survey from a Machine Learning
+    Perspective</ulink>. Aunque leer <ulink
+    url="http://www.norvig.com/adapaper-pcai.html">Adaptive
+    Software</ulink> es un excelente complemento que aclara muchas
+    ideas.</para> 
+
+    <para>Tal vez este apartado no deber&iacute;a estar en este
+    art&iacute;culo, ya que no hay una aplicaci&oacute;n
+    pr&aacute;ctica a los agentes inteligentes, debido a que es una
+    cuesti&oacute;n m&aacute;s metodol&oacute;gica que facilita, entre
+    otras cosas, poder hacer adaptaci&oacute;n.</para> 
+
+
+  </sect1>
+
+
+
+  <sect1 id="planific">
+    <title>Planificacion</title>
+
+    <para>Llamaremos planificaci&oacute;n al proceso de
+    b&uacute;squeda y articulaci&oacute;n de una secuencia de acciones
+    que permitan alcanzar un objetivo. Por ejemplo, si nuestro
+    objetivo es viajar desde un pueblo perdido de Asturias y queremos
+    llegar a Guatemala la secuencia de acciones ser&iacute;an los
+    distintos transportes que se deben tomar para llegar. Otro ejemplo
+    podr&iacute;a ser que tuvi&eacute;ramos un robot en un laberinto y
+    nuestro objetivo fuera sacarle de &eacute;l; en tal caso, nuestras
+    acciones ser&iacute;an los tramos recorridos en l&iacute;nea recta
+    y los giros dados por el robot.</para>  
+
+    <para>Para formalizar el problema de la planificaci&oacute;n
+    existen 2 notaciones principales: ADL y <ulink
+    url="http://www.rci.rutgers.edu/~cfs/472_html/Planning/STRIPS_plan_472.html">STRIPS</ulink>.
+    Ambas coinciden en utilizar la l&oacute;gica para representar
+    estado inicial, objetivo y acciones. Tambi&eacute;n coinciden en
+    que, para aplicar una acci&oacute;n, es necesario cumplir unas
+    precondiciones y, tras haber ejecutado la acci&oacute;n,
+    habr&aacute; provocado unos efectos.</para> 
+
+    <para>Para obtener la secuencia de acciones, es decir, el
+    resultado al problema de la planificaci&oacute;n, existen varios
+    enfoques:</para> 
+    <itemizedlist>
+      <listitem>
+	<para>B&uacute;squedas en el espacio de estados que operan
+	hacia adelante (desde el estado inicial), o hacia atr&aacute;s
+	(desde el objetivo) aplicando las acciones. Tambi&eacute;n
+	existen heur&iacute;sticas (estrategias) eficaces que nos
+	ayudan en la b&uacute;squeda. Estos enfoques funcionan bien
+	cuando los subobjetivos son independientes.</para> 
+      </listitem>
+      <listitem>
+	<para>Si los subobjetivos no son independientes suele ser
+	buena idea utilizar algoritmos de Planificaci&oacute;n de
+	Orden Parcial (POP), que exploran el espacio de planes sin
+	comprometerse con una secuencia de acciones totalmente
+	ordenada. Trabajan hacia atr&aacute;s, desde el objetivo y
+	a&ntilde;aden acciones para planificar c&oacute;mo alcanzar
+	cada subobjetivo.</para> 
+      </listitem>
+      <listitem>
+	<para>Otras estrategias prometedoras son el algoritmo <ulink
+	url="http://www-2.cs.cmu.edu/~avrim/graphplan.html">GRAPHPLAN</ulink>
+	y el algoritmo <ulink
+	url="http://www.cs.washington.edu/homes/kautz/satplan/">SATPLAN</ulink>.</para> 
+      </listitem>
+      <listitem>
+	<para>Cuando no se trabaja en mundos cerrados, sino en el
+	mundo real, debemos tener en cuenta varias
+	consideraciones. Muchas acciones consumen recursos: tiempo,
+	dinero, materias primas, etc. por lo que debemos tener en
+	cuenta medidas num&eacute;ricas. Las <ulink
+	url="http://www.cs.umd.edu/projects/plus/HTN/">redes
+	jer&aacute;rquicas de tareas (HTN)</ulink> permiten tener
+	sugerencias sobre el dominio por parte del
+	dise&ntilde;ador. La informaci&oacute;n incompleta puede ser
+	manejada mediante planificaci&oacute;n que utilice acciones
+	sensoriales para obtener la informaci&oacute;n que
+	necesita. La planificaci&oacute;n multiagente es necesaria
+	cuando existen otros agentes en el entorno con los que
+	cooperar, competir, o coordinarse.</para> 
+      </listitem>
+    </itemizedlist>
+
+    <para>Los problemas y soluciones que se abordan en
+    planificaci&oacute;n tienen aplicaciones directas en
+    gesti&oacute;n de tareas (workflow), control de misiones complejas
+    (espaciales, sat&eacute;lites, militares, etc.), turismo (visitas
+    a ciudades, planificar rutas, ...), procesos de
+    ense&ntilde;anza/aprendizaje, rob&oacute;tica (planificar
+    caminos), ...</para> 
+
+    <para>Para la problem&aacute;tica de la planificaci&oacute;n, las
+    licencias libres han brillado por su ausencia. No obstante, todos
+    los algoritmos se distribuyen con su c&oacute;digo, lo cual
+    tambi&eacute;n es cierto en arquitecturas integradas como <ulink
+    url="http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/prodigy/Web/prodigy-home.html">PRODIGY</ulink>,
+    muy usadas en planificaci&oacute;n.</para> 
+
+  </sect1>
+
+
+  <sect1 id="nlp">
+    <title>Procesamiento de Lenguaje Natural</title>
+
+    <para>Antes de abordar qu&eacute; es el procesamiento del lenguaje
+    natural (&oacute; lenguaje humano), pensemos por un momento
+    qu&eacute; es la compresi&oacute;n. Seg&uacute;n Rich y Knigth
+    "comprender algo es transformarlo de una representaci&oacute;n a
+    otra, en donde la segunda representaci&oacute;n se ha elegido para
+    que se corresponda con un conjunto de acciones posibles que
+    podr&iacute;an llevarse a cabo, y en donde se ha dise&ntilde;ado
+    la correspondencia de forma que para cada suceso se realice una
+    acci&oacute;n apropiada". En definitiva, comprender algo es
+    transformarlo en una representaci&oacute;n que nos sea m&aacute;s
+    &uacute;til para lograr nuestro objetivo.</para> 
+
+
+    <para>&iquest;Para qu&eacute; podemos querer que una
+    m&aacute;quina comprenda lo que pone en un texto? Lo primero que
+    se nos puede ocurrir es que sirva para comunicarnos con ella como
+    si de una persona se tratara, pero para ello no solo
+    requerir&iacute;a comprender nuestras palabras, sino
+    tambi&eacute;n las emociones con las que las expresamos, lo cual
+    es algo m&aacute;s complejo. La traducci&oacute;n
+    autom&aacute;tica desde un lenguaje natural a otro es algo para lo
+    que solo necesitamos comprender el significado neutral de las
+    palabras. Si conseguimos que un ordenador comprenda,
+    tambi&eacute;n nos va a ayudar en tareas de recuperaci&oacute;n de
+    la informaci&oacute;n; me refiero a buscadores m&aacute;s eficaces
+    que sepan relacionar mejor unas palabras o frases con otras, e
+    incluso independientemente del idioma.</para> 
+
+    <para>Para realizar estas tareas es necesario comprender un texto;
+    esto es lo que nos proporciona el procesamiento del lenguaje
+    natural. Veamos las fases de las que se compone <citation>Rich y
+    Knight, 1994</citation>:</para> 
+
+    <itemizedlist>
+      <listitem>
+	<para>An&aacute;lisis morfol&oacute;gico: Se analizan los
+	componentes de las palabras individuales y se separan de las
+	palabras los constituyentes que no forman parte de ellas, como
+	los s&iacute;mbolos de puntuaci&oacute;n</para> 
+      </listitem>
+      <listitem>
+	<para>An&aacute;lisis sint&aacute;ctico: Se transforman las secuencias
+	lineales de palabras en ciertas estructuras que muestran la
+	forma en que las palabras se relacionan entre s&iacute;. Se pueden
+	rechazar algunas secuencias de palabras si infringen las
+	reglas del lenguaje sobre la forma en que las palabras pueden
+	combinarse. Ej: "ni&ntilde;a la come mucho" se
+	rechazar&iacute;a.</para> 
+      </listitem>
+      <listitem>
+	<para>An&aacute;lisis sem&aacute;ntico: Se asigna significado a las
+	estructuras creadas por el analizador sint&aacute;ctico. Es decir, se
+	hace una correspondencia entre las estructuras sint&aacute;cticas y
+	los objetos del dominio de la tarea. Las estructuras en las
+	que no se pueda realizar tal correpondecia se rechazan. Ej:
+	"Las ideas verdes incoloras duermen furiosamente" se
+	rechazar&iacute;a</para> 
+      </listitem>
+      <listitem>
+	<para>Integraci&oacute;n del discurso: El significado de una frase
+	individual puede depender de las frases precedentes y puede
+	influenciar el significado de las frases posteriores. Por
+	ejemplo, la palabra "lo" en  "Jaime lo quiso" depende del
+	contexto del discurso, mientras que la palabra "Jaime" puede
+	influenciar el significado de frases posteriores como
+	"&Eacute;l vive en Madrid".</para> 
+      </listitem>
+      <listitem>
+	<para>An&aacute;lisis de la pragm&aacute;tica: La estructura que representa
+	qu&eacute; se ha dicho se reinterpreta para determinar su significado
+	actual. Ej: "¿Sabe qu&eacute; hora es?" se reintepreta como petici&oacute;n
+	de hora.</para> 
+      </listitem>
+    </itemizedlist>
+
+    <para>Hasta ahora hemos estado hablando del procesamiento del
+    lenguaje escrito, si quisi&eacute;ramos realizar procesamiento del
+    lenguaje oral, necesitar&iacute;amos conocimiento adicional sobre
+    fonolog&iacute;a, as&iacute; como suficiente informaci&oacute;n adicional para manejar
+    las posibles ambig&uuml;edades que pudieran surgir.</para> 
+
+    <para>Existen varias herramientas libres para tratar el
+    procesamiento del lenguaje natural. Podemos encontrar malaga-bin y
+    mmorph. Sin embargo, creo que para juguetear y/o iniciarse en este
+    campo es m&aacute;s adecuado <ulink
+    url="http://nltk.sourceforge.net/">nltk</ulink> (Natural Language
+    Toolkit), escrito en python y con una <ulink
+    url="http://creativecommons.org/licenses/by-nc-sa/1.0/">licencia
+    copyleft de creative commons</ulink>.</para> 
+
+    <mediaobject>
+      <imageobject>
+	<imagedata scalefit="1" fileref="img/nltk.jpg" format="JPG" />
+      </imageobject>
+      <caption>
+	<para>pantallazo de nltk en ejecuci&oacute;n</para>
+      </caption>
+    </mediaobject>
+
+  </sect1>
+
+  <sect1 id="neuronal">
+    <title>Computaci&oacute;n Neuronal</title>
+
+    <para>Bien, hasta aqu&iacute; hemos visto que las m&aacute;quinas
+    pueden imitar comportamientos humanos para un gran n&uacute;mero
+    de tareas. De hecho, incluso pueden aplicarse algoritmos de
+    aprendizaje que, para ciertas tareas como el spam, dan muy buenos
+    resultados. La siguiente cuesti&oacute;n entonces es
+    &iquest;pueden las m&aacute;quinas pensar tal y como lo hacemos
+    los humanos?</para> 
+
+    <para>La naturaleza nos ha dotado con un sistema de c&oacute;mputo
+    basado en una enorme red de neuronas. Si las m&aacute;quinas
+    pudieran simular tal sistema de c&oacute;mputo &iquest;no
+    estar&iacute;an entonces en condiciones de pensar tal y como lo
+    hacemos las personas?</para> 
+
+    <para>En primer lugar, pensemos qu&eacute; es una neurona. Una
+    neurona est&aacute; formada por el cuerpo celular y diferentes
+    prolongaciones: el ax&oacute;n, por el que transitan los impulsos
+    nerviosos o potenciales de acci&oacute;n desde el cuerpo celular hacia la
+    siguiente c&eacute;lula, y la/s dendritas, con n&uacute;mero y estructura
+    variable seg&uacute;n el tipo de neurona, y que transmiten los
+    potenciales de acci&oacute;n desde las neuronas adyacentes hacia el
+    cuerpo celular. Se podr&iacute;a decir que las dendritas son
+    entradas y el ax&oacute;n es la salida.</para> 
+
+    <para>Ahora bien, &iquest;c&oacute;mo se decide si tras recibir
+    entradas se produce o no una salida, y qu&eacute; salida se
+    produce? Pues bien, la salida es la suma ponderada de las entradas
+    seguida de una funci&oacute;n umbral. Esto puede parecer un diodo:
+    si el potencial de las entradas alcanza un cierto valor, entonces
+    se produce la salida, y sino no. Sin embargo, difiere en ser
+    ponderado. Se refiere a que no todos los valores de las entradas
+    van a tener la misma importancia de cara a decidir si se produce o
+    no la salida.</para> 
+
+    <para>Si nuestra neurona no es m&aacute;s que un diodo con
+    entradas ponderadas, entonces juntando unos diodos con otros en
+    forma de red ¿har&aacute; el tipo de procesos que realizamos los
+    humanos como, por ejemplo, aprender? Es curioso que para aprender
+    solo es necesaria una neurona, y el aprendizaje consiste en
+    modificar el valor de los pesos (la importancia de cada entrada)
+    aplicando un algoritmo a nuestro valor de salida. &iquest;Y cual
+    ser&aacute; ese algoritmo? Un psic&oacute;logo llamado Donald
+    O. Hebb enunci&oacute; una regla que dice que "las conexiones que
+    unen diferentes neuronas que se encuentran activas en un instante
+    dado se fortalecen". Se refiere a que si la neurona est&aacute;
+    transmitiendo, las entradas que est&acute;n activas tendr&aacute;n
+    m&aacute;s importancia de la que ya ten&iacute;n. Y esto es
+    m&aacute;s &oacute; menos la esencia de la computaci&oacute;n
+    neuronal, especialmente la no supervisada (que no requiere de un
+    tutor), y esta es la que nos encontramos en la naturaleza.</para> 
+
+    <para>Pero en la pr&aacute;ctica las redes neuronales artificiales
+    no han creado en las m&aacute;quinas comportamientos similares a
+    los de las personas. Sin embargo, lo cierto es que los problemas
+    que tradicionalmente son m&aacute;s complejos para las
+    m&aacute;quinas (visi&oacute;n artificial, reconocimiento del
+    habla, etc.), se resuelven mejor utilizando redes neuronales que
+    mediante otras perspectivas simb&oacute;licas.</para> 
+
+    <para>La computaci&oacute;n neuronal tiene como tarea
+    gen&eacute;rica la clasificaci&oacute;n. Por ejemplo, pensemos que
+    queremos averiguar en qu&eacute; im&aacute;genes est&aacute; Wally
+    y en qu&eacute; im&acute;genes no. Nuestras entradas ser&iacute;an
+    las intensidades RGB de cada pixel de cada una de las
+    im&aacute;genes, y tendr&iacute;a una &uacute;nica salida que nos
+    dir&iacute;a si est&aacute; o no.</para> 
+
+    <para>Las redes neuronales tienen un modelo inherentemente
+    distribuido, puesto que un procesador puede simular una
+    neurona. As&iacute; mismo, son autoprogramables. La
+    programaci&oacute;n pasa por elegir un n&uacute;mero de neuronas,
+    las conexiones entre las mismas, un n&uacute;mero de salidas, un
+    n&uacute;mero de entradas y una configuraci&oacute;n inicial de
+    pesos. Despu&eacute;s bastar&iacute;a con alimentarla
+    correctamente y, si el aprendizaje es supervisado, darle la
+    adecuada realimentaci&oacute;n humana</para> 
+
+    <para>Como siempre, para profundizar recomiendo jugar con el
+    software libre disponible. Lo que he encontrado ha sido <ulink
+    url="http://fann.sourceforge.net/intro.html">Fast Artificial
+    Neural Network Library (fann)</ulink>, <ulink
+    url="http://www.genesis-sim.org/GENESIS/">Genesis</ulink> y,
+    aunque no totalmente libre, tambi&eacute;n creo importante
+    destacar <ulink
+    url="http://www-ra.informatik.uni-tuebingen.de/SNNS/">SNNS</ulink>.</para> 
+
+    <para>Finalizar diciendo que, si bien los algoritmos de redes
+    neuronales no son otra cosa que algoritmos de aprendizaje
+    autom&aacute;tico, debido a las implicaciones filos&oacute;ficas
+    que tienen he decidido tratarlo aparte.</para> 
+
+    <mediaobject>
+      <imageobject>
+	<imagedata scalefit="1"  fileref="img/fann.gif" />
+      </imageobject>
+      <caption>
+	<para>Pantallazo de fann en ejecuci&oacute;n</para>
+      </caption>
+    </mediaobject>
+
+  </sect1>
+
+
+  <sect1 id="robotica">
+    <title>Rob&oacute;tica</title>
+
+    <para><citation>Russell y Norvig, 2004</citation>Los robots son
+    agentes f&iacute;sicos que realizan tareas mediante la
+    manipulaci&oacute;n f&iacute;sica del mundo. Para ello se dotan de
+    efectores, como pinzas, ruedas, brazos mec&aacute;nicos,
+    etc. Tambi&eacute;n se equipan de sensores que les permiten
+    percibir el entorno, como visores, sistemas de ultrasonidos,
+    giroscopios, etc.</para> 
+
+    <para>El inter&eacute;s de la IA en la rob&oacute;tica se centra
+    en los agentes inteligentes que manipulan el mundo
+    f&iacute;sico. No obstante, tambi&eacute;n es un campo de gran
+    inter&eacute;s para aplicar otras ideas de IA como
+    planificaci&oacute;n o visi&oacute;n artificial (aplicar
+    algoritmos de aprendizaje para el reconocimiento de
+    formas).</para> 
+
+    <para>Las &aacute;reas de aplicaci&oacute;n de la rob&oacute;tica
+    son m&uacute;ltiples: industria, agricultura, transporte, entornos
+    peligrosos (donde no deber&iacute;a haber humanos),
+    exploraci&oacute;n (ej: viajes al espacio), salud (ej:
+    cirug&iacute;a gracias a la precisi&oacute;n milim&eacute;trica),
+    entretenimiento, ... </para> 
+
+    <para>Para experimentar en este &aacute;rea respetando nuestras
+    libertades es posible encontrar programas divertidos para la
+    simulaci&oacute;n de comportamientos rob&oacute;ticos, como por
+    ejemplo <ulink
+    url="http://directory.fsf.org/GNU/gnurobots.html">gnurobots</ulink>
+    o <ulink
+    url="http://robocode.alphaworks.ibm.com/home/home.html">robocode</ulink>.
+    Este tipo de programas pueden llegar a dar mucho juego en la IA,
+    recordad que los bots del quake han sido materia de <ulink url="http://www.kbs.twi.tudelft.nl/Publications/MSc/2001-VanWaveren-MSc.html">tesis doctoral</ulink>.</para>
+
+    <para>Tambi&eacute;n es interesante salirnos un poco del software
+    y meternos en alg&uacute;n proyecto de hardware abierto, como
+    <ulink
+    url="http://www.microbotica.es/web/ha.htm)">Microb&oacute;tica.</ulink></para> 
+
+    <mediaobject>
+      <imageobject>
+	<imagedata scalefit="1" fileref="img/robot1.jpeg" format="JPEG" />
+      </imageobject>
+      <caption>
+	<para>Imagen de un robot de juguete tomado de http://www.worstdomainever.com</para>
+      </caption>
+    </mediaobject>
+
+  </sect1> 
+
+
+  <sect1 id="conclusiones">
+    <title>Conclusiones</title>
+
+    <para>En este art&iacute;culo se ha visto que existe una cierta
+    correlaci&oacute;n entre software libre e inteligencia artificial
+    debido a que existen multitud de herramientas libres para tratar
+    las diferentes problem&aacute;ticas que se plantean. En mi humilde
+    opini&oacute;n no creo que sea casual que el mismo Richard
+    Stallman trabajara en el laboratorio de Inteligencia Artificial
+    del MIT poco antes de fundar el proyecto gnu.</para> 
+
+    <para>Tambi&eacute;n he tratado de desmitificar ciertos aspectos
+    de la IA que la hacen parecer algo m&aacute;gico &oacute; carente
+    de utilidad real y dejando entrever que es uno de los principales
+    motores de la evoluci&oacute;n de la inform&aacute;tica. No es
+    casual que las principales &aacute;reas de investigaci&oacute;n de
+    cualquier universidad sea en temas de IA, como tampoco es casual
+    que las empresas punteras en tecnolog&iacute;a tengan muy en
+    cuenta este &aacute;rea de la inform&aacute;tica.</para> 
+
+    <para>En el art&iacute;culo primeramente, se ha mostrado
+    c&oacute;mo esos juegos con los que cada d&iacute;a nos divertimos
+    llevan en su motor algoritmos de IA. Despu&eacute;s se ha revisado
+    el modo en que la IA permite modelar el conocimiento de un experto
+    con herramientas integradas. Seguidamente, se mostr&oacute; que el
+    software puede ser mejorado de una manera aut&oacute;noma y que el
+    enfoque de agentes es bueno para resolver ese
+    problema. Seguidamente se han visto otras cuestiones:
+    Planificaci&oacute;n, procesamiento de lenguaje natural, redes neuronales
+    y rob&oacute;tica son &aacute;reas que permiten entendernos mejor como humanos y
+    que al mismo tiempo mejoran la productividad de las sociedades. </para>
+
+    <para>De hecho, podemos decir que la inteligencia artificial aporta soluciones para
+    casi todas las cuestiones que nos caracterizan como humanos e
+    inteligentes, sin embargo, a&uacute;n dista bastante para que realice dichas
+    tareas de la misma manera y con la misma eficacia que lo hacen las
+    personas. Sin embargo, las soluciones aportadas para resolverlos
+    tienen aplicaci&oacute;nes interesantes en m&uacute;ltiples
+    &aacute;reas de nuestra vida cotidiana que nos hacen la vida
+    m&aacute;s f&aacute;cil.</para> 
+
+    <para>Espero que este art&iacute;culo ayude a despertar el
+    inter&eacute;s por la IA entre los usuarios de software libre y, a
+    que la comunidad que existe alrededor de la inteligencia
+    artificial se interese a&uacute;n m&aacute;s por el software
+    libre.</para>  
+
+  </sect1>
+
+  <sect1 id="referencias">
+    <title>Referencias</title>
+
+    <para>Algunas referencias para profundizar en el aprendizaje de la
+    inteligencia artificial.</para>
+
+    <itemizedlist>
+      <listitem>
+	<para>Rich, E. y Knight K. (1994). Inteligencia Artificial. Madrid: McGraw Hill </para>
+      </listitem>
+      <listitem>
+	<para>Russell, S. J. y Norvig P. (2004). Inteligencia Artificial. Un Enfoque Moderno. Segunda ed. Madrid: Pearson Educaci&oacute;n S.A.</para>
+      </listitem>
+      <listitem>
+	<para><ulink url="http://linuxselfhelp.com/HOWTO/AI-Alife-HOWTO.html">Howto de inteligencia y vida artificial</ulink></para>
+      </listitem>
+      <listitem>
+	<para><ulink url="http://www.wikipedia.org/">Wikipedia</ulink></para>
+      </listitem>
+      <listitem>
+	<para><ulink url="http://www.norvig.com/">P&aacute;gina personal de Peter Norvig</ulink></para>
+      </listitem>
+      <listitem>
+	<para>Dentro del linux documentation project encontramos este <ulink url="http://linuxselfhelp.com/HOWTO/AI-Alife-HOWTO.html">howto de inteligencia y vida artificial</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect1>
+
+  <sect1 id="agradec">
+    <title>Agradecimientos</title>
+
+    <para>Este art&iacute;culo habr&iacute;a sido muy distinto sin las aportaciones
+      de un buen n&uacute;mero de miembros del <ulink
+	url="http://adenu.ia.uned.es/adenu/">grupo adenu</ulink> y de
+      Ramiro Pareja cuyas sugerencias y apoyos fueron muy valiosas.</para>
+
+    <para>Un afectuoso agradecimiento a todo el equipo de <ulink
+	url="http://digital.revistasprofesionales.com/mundolinux/">Mundo
+	Linux</ulink> por la oportunidad de escribir este
+	art&iacute;culo y de poder hacerlo aplicando una licencia
+	libre y muy especialmente a Margarita Padilla.</para>   
+    
+    <para>Finalmente, agradecer a los lectores del mismo a quienes
+    deseo que hayan disfrutado tanto ley&eacute;ndo como yo
+    escribi&eacute;ndolo.</para> 
+
+  </sect1>
+
+</article>

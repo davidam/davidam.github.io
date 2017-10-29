@@ -1,0 +1,39 @@
+su - root
+
+# paquetes obligatorios
+apt-get install postgresql postgresql-client aolserver4 aolserver4-nscache aolserver4-nsopenssl aolserver4-nspostgres aolserver4-nssha1 tdom tcl8.4
+
+# paquetes opcionales
+apt-get install postgresql-dev postgresql-doc aolserver4-dev aolserver4-doc tcl8.4-doc daemontools-installer
+
+# crear la base de datos
+su postgres -c "/usr/lib/postgresql/bin/createlang plpgsql template1"
+su postgres -c "createuser username"
+su postgres -c "createdb -E UNICODE username"
+
+# crear el directorio donde se instalara openacs
+su - username
+mkdir aolserver
+cd aolserver
+
+# copy all the two config files there. The files are aolserver.nsadmin y nsadmin.tcl
+
+wget http://www.davidam.com/usando-debian/aolserver.nsadmin
+wget http://www.davidam.com/usando-debian/nsadmin.tcl
+
+# change nsadmin to username
+mv aolserver.nsadmin aolserver.username
+mv nsadmin.tcl username.tcl
+perl -p -i -e "s/nsadmin/username/g" aolserver.username username.tcl
+
+# descargar openacs del cvs
+# cvs -z3 -d :pserver:anonymous@openacs.org:/cvsroot co -r oacs-5-1 openacs-4
+cvs -z3 -d :pserver:anonymous@cvs.openacs.org:/cvsroot co -r oacs-5-2 openacs-4
+mv openacs-4 username 
+chmod 774 aolserver.username
+
+# iniciar el aol     
+mkdir username/log   
+/aolserver.username start
+
+# despues de unos minutos deberia funcionar desde http://localhost:8000

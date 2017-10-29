@@ -1,0 +1,7 @@
+#+TITLE: Pensando Listas como Cajas
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+
+Hoy toca pensar en algunas de las primitivas de Lisp pensando que son
+cajas que pueden almacenar datos o apuntar a otras cajas.
+

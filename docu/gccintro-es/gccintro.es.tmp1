@@ -1,0 +1,14 @@
+[[!meta title="Una Introducción a GCC"]]
+\input texinfo.tex @c -*- texinfo -*-
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
+@c -*-texinfo-*-
+@c This is the texinfo source for the manual "An Introduction to GCC".
+@c Copyright (C) 2003, 2004, 2005 Network Theory Ltd
+@c See the file COPYING.FDL for copying conditions.
+
+@include config-local.texi
+@c %**start of header
