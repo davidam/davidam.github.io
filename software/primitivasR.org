@@ -1015,59 +1015,7 @@ AIC: 16.06
  
 Number of Fisher Scoring iterations: 8
 #+END_SRC
-
-
-* Test simples, medias, medianas, proporciones
-#+BEGIN_SRC R
-library(stats)
-summary(b)
-#+END_SRC
-
-** Comparamos si nuestra variable "Y" es igual a un valor ya publicado
-
-Wilcoxon Rank-Sum Test para evaluar si la mediana de mi muestra es
-igual o no a otra ya publicada.n. "mu", es el valor de la bibliografía
-
-Simple t-test para evaluar si la media de mi muestra es igual o no a otra
-ya publicada.
-
-#+BEGIN_SRC R
-wilcox.test(Peso, mu=65)
-summary(Peso)
-t.test(Peso, mu=55)
-#+END_SRC
-
-t-test para evaluar si hay diferencias entre las medias en dos
-muestras independientes, p.ej. entre dos poblaciones o entre dos
-estaciones del año (si los animales son cazados y sólo se pesan una
-vez)
-
-Podemos explorar cuestiones de este tipo haciendo gráficos boxplot
-
-#+BEGIN_SRC R
-library(gplots)
-plotmeans(Peso~Manejo, ylab="Peso en Kg", xlab="Manejo")
-#+END_SRC
-
-También podemos explorar los valores numericos de la variable peso en
-cada grupo.
-
-#+BEGIN_SRC R
-library(plotrix)
-
-me=  tapply (Peso,  Manejo,mean)
-med= tapply(Peso,  Manejo,median)
-Sd = tapply(Peso, Manejo, sd)
-Se = tapply (Peso,  Manejo,std.error)
-Mi = tapply (Peso,  Manejo,min)
-Ma = tapply (Peso,  Manejo,max)
-size= tapply (Peso,  Manejo,length)
-
-cbind(Mean = me, Median =med,SD= Sd, SE = Se, Min = Mi, Max = Ma, n = size)
-t(cbind(mean = me, SD = Sd,SE=Se, Min = Mi, Max = Ma, n = size))
-#+END_SRC
-
-** Mann-Whitney test para comparar si hay diferencias entre medianas muestras independientes
+** Mann-Whitney test: comparar si hay diferencias entre medianas muestras independientes
 
 #+BEGIN_SRC R
 boxplot(Peso ~ Manejo)
@@ -1075,6 +1023,80 @@ wilcox.test(Peso~Manejo)
 boxplot(Ostertagia ~ Manejo)
 plotmeans(Ostertagia~Manejo,col="coral", connect=T, ylab="Carga parasitaria (Ostertagia)", xlab="Manejo", data=b)# plot means and CI95% Grafica mitjana
 #+END_SRC
+
+
+* Regresión Lineal 
+
+En estadística la regresión lineal o ajuste lineal es un modelo
+matemático usado para aproximar la relación de dependencia entre una
+variable dependiente Y, las variables independientes Xi y un término
+aleatorio.
+
+En regresión lineal simple tenemos hay una variable independiente y en
+regresión lineal múltiple hay muchas variables independientes.
+
+** Ecuación de Regresión Lineal Simple
+
+Aplica regresión lineal para el conjunto de datos faithful, y estima
+la duración de la siguiente erupción si el tiempo de espera han sido
+80 minutos.
+
+#+BEGIN_SRC R
+> eruption.lm = lm(eruptions ~ waiting, data=faithful)
+> coeffs = coefficients(eruption.lm); coeffs 
+(Intercept)     waiting 
+  -1.874016    0.075628
+> waiting = 80           # the waiting time 
+> duration = coeffs[1] + coeffs[2]*waiting 
+> duration 
+(Intercept) 
+     4.1762
+#+END_SRC
+
+Si el tiempo de espera han sido 80 minutos, esperamos que la siguiente
+erupción son 4.1762 minutos.
+
+** Coeficiente de Determinación 
+
+Encuentra el coeficiente de determinación para el modelo de regresión
+lineal simple del conjunto de datos faithful.
+
+#+BEGIN_SRC R
+> eruption.lm = lm(eruptions ~ waiting, data=faithful)
+> summary(eruption.lm)$r.squared 
+[1] 0.81146
+#+END_SRC
+
+** Test de significado para la regresión lineal
+
+Decide si hay una regresión significativa entre las variables en el
+modelo de regresión lineal del conjunto de datos faithful en el nivel
+de significación 0.05.
+
+#+BEGIN_SRC R
+> eruption.lm = lm(eruptions ~ waiting, data=faithful)
+> summary(eruption.lm) 
+ 
+Call: 
+lm(formula = eruptions ~ waiting, data = faithful) 
+ 
+Residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.2992 -0.3769  0.0351  0.3491  1.1933 
+ 
+Coefficients: 
+            Estimate Std. Error t value Pr(>|t|) 
+(Intercept) -1.87402    0.16014   -11.7   <2e-16 *** 
+waiting      0.07563    0.00222    34.1   <2e-16 *** 
+--- 
+Signif. codes:  0 ’***’ 0.001 ’**’ 0.01 ’*’ 0.05 ’.’ 0.1 ’ ’ 1 
+ 
+Residual standard error: 0.497 on 270 degrees of freedom 
+Multiple R-squared: 0.811,      Adjusted R-squared: 0.811 
+F-statistic: 1.16e+03 on 1 and 270 DF,  p-value: <2e-16
+#+END_SRC
+
+Como el p-valor es mucho menor que 0.05, se rechaza la hipótesis nula.
 
 * Licencia
 Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed][Licencia Creative Commons Reconocimiento Unported 3.0]]
