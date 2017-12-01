@@ -1098,6 +1098,24 @@ F-statistic: 1.16e+03 on 1 and 270 DF,  p-value: <2e-16
 
 Como el p-valor es mucho menor que 0.05, se rechaza la hipótesis nula.
 
+* Ecuación de Regresión Logística
+
+Usando la ecuación de regresión logística, estime la probabilidad de
+un vehículo siendo ajustado con una transmisión manual si tiene un
+motor de 120 y pesa 2800.
+
+#+BEGIN_SRC R
+> am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+> newdata = data.frame(hp=120, wt=2.8)
+> predict(am.glm, newdata, type="response") 
+      1 
+0.64181
+#+END_SRC
+
+Para un automóvil con un motor de 120 hp y 2800 lbs de peso, la
+probabilidad de estar ajustado con una transmisión manual es del 64%.
+
+
 * Licencia
 Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed][Licencia Creative Commons Reconocimiento Unported 3.0]]
 
