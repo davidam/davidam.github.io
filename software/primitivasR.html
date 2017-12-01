@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
 <title>Primitivas en GNU R</title>
-<!-- 2017-12-01 vie 20:49 -->
+<!-- 2017-12-01 vie 21:04 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="David Arroyo Menéndez" />
@@ -270,6 +270,7 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#sec-18">18. Ecuación de Regresión Logística</a></li>
 <li><a href="#sec-19">19. Licencia</a></li>
+<li><a href="#sec-20">20. Referencias</a></li>
 </ul>
 </div>
 </div>
@@ -1650,7 +1651,6 @@ En nuestro ejemplo utilizaremos los datos de <a href="file:///home/davidam/publi
 </div>
 </div>
 
-
 <div id="outline-container-sec-16" class="outline-2">
 <h2 id="sec-16"><span class="section-number-2">16</span> Test estadísticos</h2>
 <div class="outline-text-2" id="text-16">
@@ -1874,7 +1874,6 @@ plotmeans(Ostertagia~Manejo,col="coral", connect=T, ylab="Carga parasitaria (Ost
 </div>
 </div>
 
-
 <div id="outline-container-sec-17" class="outline-2">
 <h2 id="sec-17"><span class="section-number-2">17</span> Regresión Lineal</h2>
 <div class="outline-text-2" id="text-17">
@@ -2003,9 +2002,44 @@ motor de 120 y pesa 2800.
 Para un automóvil con un motor de 120 hp y 2800 lbs de peso, la
 probabilidad de estar ajustado con una transmisión manual es del 64%.
 </p>
-</div>
-</div>
 
+<p>
+En el nivel de significado 0.05, decide si cualquiera de las variables
+independientes en el modelo de regresión logística de la transmisión
+del vehículo en los datos mtcars es estadísticamente insignificante.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+&gt; summary(am.glm) 
+
+Call:
+glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2537  -0.1568  -0.0168   0.1543   1.3449  
+
+Coefficients:
+	    Estimate Std. Error z value Pr(&gt;|z|)   
+(Intercept) 18.86630    7.44356   2.535  0.01126 * 
+hp           0.03626    0.01773   2.044  0.04091 * 
+wt          -8.08348    3.06868  -2.634  0.00843 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 43.230  on 31  degrees of freedom
+Residual deviance: 10.059  on 29  degrees of freedom
+AIC: 16.059
+
+Number of Fisher Scoring iterations: 8
+</pre>
+</div>
+</div>
+</div>
 
 <div id="outline-container-sec-19" class="outline-2">
 <h2 id="sec-19"><span class="section-number-2">19</span> Licencia</h2>
@@ -2021,10 +2055,21 @@ Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.
 </div>
 </div>
 </div>
+<div id="outline-container-sec-20" class="outline-2">
+<h2 id="sec-20"><span class="section-number-2">20</span> Referencias</h2>
+<div class="outline-text-2" id="text-20">
+<ul class="org-ul">
+<li>González, A., González, S. 2018. "<i>Una Introducción a R</i>", Libremanuals
+</li>
+<li>Chay, Chi. "<i>R Tutorial</i>", visto el 1 de Diciembre de 2017, <a href="http://www.r-tutor.com/">http://www.r-tutor.com/</a>. 
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Autor: David Arroyo Menéndez</p>
-<p class="date">Created: 2017-12-01 vie 20:49</p>
+<p class="date">Created: 2017-12-01 vie 21:04</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
