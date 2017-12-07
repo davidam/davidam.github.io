@@ -740,6 +740,7 @@ persp(x,y,fa,theta=30,phi=70)
 persp(x,y,fa,theta=30,phi=40)
 #+END_SRC
 
+
 * Muestreo y probabilidad
 ** Muestreo
 #+BEGIN_SRC R
@@ -904,6 +905,28 @@ El 95 percentil de la distribución F con (5, 2) grados de libertad es
 [1] 19.296
 #+END_SRC
 
+** Bondad de ajuste multinomial
+
+Dadas unas estadísticas de fumar en un campus, determine si los datos
+de ejemplo en la encuesta soportan un nivel de significación 0.5
+
+#+BEGIN_SRC R
+> library(MASS)
+> levels(survey$Smoke)
+> smoke.freq = table(survey$Smoke)
+> smoke.freq
+> smoke.prob = c(.045, .795, .085, .075) 
+> chisq.test(smoke.freq, p=smoke.prob) 
+ 
+        Chi-squared test for given probabilities 
+ 
+data:  smoke.freq 
+X-squared = 0.1074, df = 3, p-value = 0.991
+#+END_SRC
+
+Como el p-valor 0.991 es mayor que el nivel de significación 0.05, no
+rechazamos la hipótesis nula que los datos de ejemplo en la encuesta
+soportan las estadísticas de fumar.
 
 ** Test de Chi
 
@@ -1143,6 +1166,37 @@ Residual deviance: 10.059  on 29  degrees of freedom
 AIC: 16.059
 
 Number of Fisher Scoring iterations: 8
+#+END_SRC
+
+* Analisis de Varianza
+** Diseño Completamente Aleatorio
+#+BEGIN_SRC R
+> df1 = read.table("fastfood-1.txt", header=TRUE); df1 
+  Item1 Item2 Item3 
+1    22    52    16 
+2    42    33    24 
+3    44     8    19 
+4    52    47    18 
+5    45    43    34 
+6    37    32    36
+
+> r = c(t(as.matrix(df1))) # response data 
+> r 
+ [1] 22 52 16 42 33 ...
+
+> f = c("Item1", "Item2", "Item3")   # treatment levels 
+> k = 3                    # number of treatment levels 
+> n = 6                    # observations per treatment
+
+> tm = gl(k, 1, n*k, factor(f))   # matching treatments 
+> tm 
+ [1] Item1 Item2 Item3 Item1 Item2 ...
+
+> av = aov(r ~ tm)
+> summary(av) 
+            Df Sum Sq Mean Sq F value Pr(>F) 
+tm           2    745     373    2.54   0.11 
+Residuals   15   2200     147
 #+END_SRC
 
 * Licencia
