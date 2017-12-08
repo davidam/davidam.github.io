@@ -1168,7 +1168,7 @@ AIC: 16.059
 Number of Fisher Scoring iterations: 8
 #+END_SRC
 
-* Analisis de Varianza
+* Análisis de Varianza
 ** Diseño Completamente Aleatorio
 #+BEGIN_SRC R
 > df1 = read.table("fastfood-1.txt", header=TRUE); df1 
@@ -1197,6 +1197,29 @@ Number of Fisher Scoring iterations: 8
             Df Sum Sq Mean Sq F value Pr(>F) 
 tm           2    745     373    2.54   0.11 
 Residuals   15   2200     147
+#+END_SRC
+
+* Análisis de Clúster Jerárquico
+
+En los datos, se puede ejecutar la matriz distancia con hclust y
+plotear un dendograma que muestre una relación jerárquica entre
+vehículos.
+
+#+BEGIN_SRC R
+> d <- dist(as.matrix(mtcars))   # find distance matrix 
+> hc <- hclust(d)                # apply hirarchical clustering 
+> plot(hc)                       # plot the dendrogram
+#+END_SRC
+
+Para un conjunto de datos con 4000 elementos, coge hclust 2 minutos
+para finalizar el trabajo en un AMD.
+
+#+BEGIN_SRC R
+> test.data <- function(dim, num, seed=17) { 
++     set.seed(seed) 
++     matrix(rnorm(dim * num), nrow=num) 
++ } 
+> m <- test.data(120, 4500) 
 #+END_SRC
 
 * Licencia
