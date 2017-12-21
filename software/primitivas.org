@@ -214,7 +214,7 @@ Ejemplo de uso:
 * Manejo de listas 
    setq: Asigna valores a una lista   
 #+BEGIN_SRC lisp
-   Ejemplo de uso: (setq amigos '(samer vicente elisa jorge luismi))
+   Ejemplo de uso: (setq amigos '(jesus gema gregorio))
 #+END_SRC
    let: Asigna valores a una lista 
 
