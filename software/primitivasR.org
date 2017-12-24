@@ -10,7 +10,7 @@
 #+BEGIN_SRC R
 getwd() 				      # Devuelve el 
                                               # directorio de trabajo 
-setwd("/home/davidam/public_html/software/R") # Cambia el directorio 
+setwd("/home/davidam/git/davidam.github.io/software/R/") # Cambia el directorio 
                                               # de trabajo (debe 
                                               # existir previamente)
 list.files()				      # Lista el contenido 
@@ -390,7 +390,8 @@ Las funciones attach() y detach () "cargan" listas y simplifican las referencias
 Son un tipo especial de lista:
 + con estructura tabular
 + donde las columnas pueden ser de distinto tipo
-+ suelen utilizarse como bases de datos donde cada fila representa una unidad de observacion y cada columna una variable 
++ suelen utilizarse como bases de datos donde cada fila representa una
+  unidad de observacion y cada columna una variable
 
 #+BEGIN_SRC R
    var1 <- seq(150,700,50); var2 <- 6:17; var3 <- c(10, 35, 17); var4 <- 2:8
@@ -480,6 +481,7 @@ Cargar un paquete. Requiere instalarlo previamente bien:
 + utilizando el menu windows de RGui y eligiendo un repositorio
 + con la función install.packages("package")
 #+BEGIN_SRC R
+   install.packages("adagio")
    library (foreign)			# o mediante el menu windows de RGui
    library(help=foreign) 	# informacion sobre el paquete 'foreign'
 #+END_SRC
@@ -740,7 +742,6 @@ persp(x,y,fa,theta=30,phi=70)
 persp(x,y,fa,theta=30,phi=40)
 #+END_SRC
 
-
 * Muestreo y probabilidad
 ** Muestreo
 #+BEGIN_SRC R
@@ -911,20 +912,6 @@ En nuestro ejemplo utilizaremos los datos de [[file:///home/davidam/public_html/
 [1] 19.296
 #+END_SRC
 * Test estadísticos
-** Test Binomial
-
-Supongamos que tenemos un juego de mesa que depende del lanzamiento de
-un dado (ver dado) y asigna una especial importancia al lanzamiento de
-un 6. En un juego en particular, el dado es lanzado 366 veces, y el 6
-sale 51 veces. Si el dado es justo, esperamos que el 6 salga 366/6 =
-61 veces. ¿Es la proporción del 6 significativamente más alta de lo
-que se esperaría por casualidad, sobre la hipótesis nula de un dado
-justo?
-
-#+BEGIN_SRC R
-binom.test(51, 336, (1/6))
-#+END_SRC
-
 ** Distribución Binomial
 
 Si hay doce coches cruzando un puente por minuto de media, encuentra
@@ -940,6 +927,24 @@ un minuto particular.
 #+END_SRC
 
 La probabilidad es del 10.1%
+
+** Test Binomial
+
+Supongamos que tenemos un juego de mesa que depende del lanzamiento de
+un dado (ver dado) y asigna una especial importancia al lanzamiento de
+un 6. En un juego en particular, el dado es lanzado 366 veces, y el 6
+sale 51 veces. Si el dado es justo, esperamos que el 6 salga 366/6 =
+61 veces. ¿Es la proporción del 6 significativamente más alta de lo
+que se esperaría por casualidad, sobre la hipótesis nula de un dado
+justo?
+
+#+BEGIN_SRC R
+binom.test(51, 336, (1/6))
+#+END_SRC
+
+#+BEGIN_SRC python
+scipy.stats.binom_test(51, 336, 1.0/6)
+#+END_SRC
 
 ** Distribución F
 
