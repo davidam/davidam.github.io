@@ -67,7 +67,12 @@ $ git rm file
 $ git commit -m "delete file" file                                              
 $ git push 
 #+END_SRC
-
+* Mover/renombrar ficheros
+#+BEGIN_SRC bash
+$ git mv fileold folder
+$ git commit -m "folder: moving fileold" fileold
+$ git push
+#+END_SRC
 * Un par de apuntes rápidos para deshacer cambios
 Revertir ficheros no commiteados
 #+BEGIN_SRC bash
