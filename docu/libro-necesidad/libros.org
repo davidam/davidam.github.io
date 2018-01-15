@@ -1,0 +1,139 @@
+#+TITLE: Cómo reconocer si un libro es adecuado a tus necesidades académicas
+#+h3: David Arroyo Menéndez 
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez 
+#+EMAIL: davidam@gnu.org
+#+DATE: 01/05/2001
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
+
+
+* Introducción
+
+    En este artículo se trata de destacar una serie de características de los
+    libros que nos pueden hacer ver de un solo vistazo si un libro se adecúa o
+    no a las necesidades de un alumno que se enfrenta a la dura tarea de
+    aprender y aprobar una asignatura de la UNED
+
+    Estas características son en las que actualmente se fija el que os escribe
+    como fruto de la experiencia adquirida durante ciertos años de aprendizaje
+    a distancia en la UNED.
+
+    Se presupone que el lector es un alumno que quiere aprender cierta materia
+    académica de manera autodidacta y quiere saber si el libro que tiene entre
+    sus manos le valdrá o no para su propósito. En cada punto se reflexiona
+    sobre cuales serán las características que permitirán al alumno adquirir
+    los mecanismos suficientes como para tener un juicio acertado.
+
+* Prestigio
+
+    Preguntar a otras personas que ya hayan trabajado con el libro es un buen
+    modo de saber si ese libro va a adecuarse a nuestras necesidades (esas
+    personas pueden ser compañeros de clase, puedes encontrarlos en un chat,
+    en las news, etc.). Otra manera de reconocer ese prestigio es si la
+    editorial ha hecho otros libros que te han parecido buenos, o incluso
+    podría ser que el lector ya conociera al autor
+
+* Glosario
+
+    Cualquier libro que pretenda servir de material en un aprendizaje
+    autónomo, debería tener un glosario de términos, por desgracia esto no es
+    frecuente entre nuestros libros.
+
+* Lea la introducción
+
+    La introducción es siempre una buena fuente de información de lo que va a
+    ser el libro tanto en contenidos (para esto también consulte el índice),
+    como en la forma de presentarlos y de que sean didácticos
+
+* Se combina adecuadamente la teoría y la práctica
+
+    Toda materia tiene una parte teórica y una práctica, dependiendo de la
+    misma el peso de una u otra será mayor o menor. Estas partes deberían
+    estar integradas en un mismo libro, para que el aprendizaje fuera
+    verdaderamente productivo.
+
+    Podemos darnos cuenta rápidamente si existe esa buena combinación si:
+
+       *  Hay un número adecuado de ejemplos en cada punto.
+       *  Hay ejercicios resueltos y/o pruebas de autoevaluación en cada tema.
+
+* Explicación de la teoría
+
+    Es importante saber si el lector va a asumir la teoría correctamente, para
+    ello puede utilizar los siguientes indicadores:
+
+       *  Identificar elementos de apoyo al aprendizaje tales como: esquemas,
+          ilustraciones, una buenamaquetación, preguntas intercaladas, etc.
+       *  Preguntar a compañeros que antes de leer el libro tuvieran un nivel
+          similar al suyo.
+       *  Probablemente la mejor manera sea ejercitando un tema por si mismo.
+
+    Cuanto más tiempo se tenga para evaluar un libro mejor será nuestra
+    valoración del mismo, sin embargo, hay que conocer el tiempo que se quiere
+    invertir en esta evaluación, ya que nunca será perfecta.
+
+* Valoración de la parte práctica
+
+    Este punto es bastante similar al anterior, en él se trata de saber tan
+    rápidamente como sea posible si la práctica permite asimilar y ejercitar
+    los contenidos teóricos ya propuestos. Las formas de lograrlo serían
+    bastante similares: preguntar a compañeros, trabajar un tema, etc.
+
+* Temporización
+
+    Es fundamental para un autoaprendizaje el crear una planificación del
+    estudio. Para realizar esa planificación es necesario: saber tanto el
+    tiempo del que se dispone, como el tiempo que va a suponer adquirir los
+    conocimientos que se persiguen en los objetivos de la asignatura, lo mejor
+    posible. Si nuestro material didáctico nos ayuda a alcanzar este fin es
+    desde luego un signo de calidad, ya que por desgracia hay pocos textos que
+    ayuden en este sentido.
+
+* Adecuación del contenido con el temario
+
+    En principio, la bibliografía básica de la asignatura debería ser el
+    material que mejor se adecúe a los requisitos pedagógicos que el/la
+    estudiante persigue, no obstante, en demasiadas ocasiones se pueden
+    encontrar otros libros de texto que sin ser bibliografía básica o
+    recomendada, le resultan de gran valor en su aprendizaje. Pero para asumir
+    la apuesta de invertir el mayor peso del tiempo de estudio en un libro que
+    no es la bibliografía básica deberemos tener el mayor conocimiento posible
+    acerca de la valía de dicho material, formas de hacer esto es mediante el
+    consejo de tutores, compañeros experimentados, etc.
+
+* ¿Durante cuánto tiempo podré utilizar este libro?  
+
+    No todos los libros son para toda la vida, pero algunos podrían
+    serlo, los lenguajes de programación cambian lentamente, si tienen
+    alto prestigio científico y/o social es probable que no haya mucho
+    problema en que te sea útil durante muchos años.
+
+* ¿Puedo mejorar el libro?
+
+    Durante la lectura es probable que se te ocurran mejoras que son
+    útiles para tí y quizás para toda la comunidad de lectoras/es del
+    libro. Esa libertad también es importante.
+
+* Buenos propósitos
+
+    Espero que después de haber leido este artículo puedas hacer una
+    valoración más rápida y con mejores destrezas del libro que desees
+    utilizar para tu autoaprendizaje. No obstante, espero con anhelo las
+    posibles mejoras que hayas visto en el mismo :-).
+
+
+* Agradecimientos
+
+       Quiero agradecer a Rina Martínez los ánimos, consejos y materiales
+       prestados en la elaboración de este texto.
+
+* Licencia
+Copyright (C) 2001-2018  David Arroyo Menendez
+    Se permite copiar, distribuir y/o modificar este documento
+    bajo los términos de la GNU Free Documentation License, Version 1.3
+    o cualquier versión publicada por la Free Software Foundation;
+    sin Secciones Invariantes y sin Textos de Portada o Contraportada.
+    Una copia de la licencia está incluida en [[https://www.gnu.org/copyleft/fdl.html][GNU Free Documentation License]].
+
+[[https://www.gnu.org/copyleft/fdl.html][file:https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GFDL_Logo.svg/200px-GFDL_Logo.svg.png]]
+
