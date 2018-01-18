@@ -116,6 +116,18 @@ $ git merge master             # se merguean los cambios desde master a prod
 $ git push                     # se suben los cambios 
 #+END_SRC
 
+* Borrar ramas
+
+Para borrar una rama son necesarios dos pasos:
++ Borrar la rama en el sistema de ficheros
++ Publicar el cambio en el servidor
+
+#+BEGIN_SRC bash
+$ git branch -d [name_of_your_new_branch]
+$ git branch -D [name_of_your_new_branch] # Si necesitas forzar el borrado (no recomendado)
+$ git push origin :[name_of_your_new_branch]
+#+END_SRC
+
 * Git Submodules: Añadir, Usar, Eliminar y Actualizar
 
 ** Añadir
