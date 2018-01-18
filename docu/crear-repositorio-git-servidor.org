@@ -89,6 +89,19 @@ Revertir el último cambiado, al que se le ha hecho push
 $ git push -f origin last_commit:branch
 #+END_SRC
 
+* Crear ramas
+
+Los pasos son:
++ Crear la rama
++ Usar la rama
++ Enviar los cambios al servidor
+
+#+BEGIN_SRC bash
+$ git checkout -b [name_of_your_new_branch]
+$ git checkout [name_of_your_new_branch]
+$ git push origin [name_of_your_new_branch]
+#+END_SRC
+
 * Cambiando de ramas
 Es posible que tengamos varias ramas por ejemplo production (prod) y
 master. Si estamos en master y queremos pasar los cambios a production
