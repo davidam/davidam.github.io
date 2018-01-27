@@ -1,0 +1,162 @@
+#+TITLE:     Antifascismo en el Software
+#+AUTHOR:    David Arroyo Menéndez
+#+EMAIL:     davidam@es.gnu.org
+#+DATE:      [2015-10-25]
+
+#+DESCRIPTION: Example of using org to create presentations using the beamer exporter
+#+KEYWORDS:  antifascismo software libre
+#+LANGUAGE:  es
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+# specifying the beamer startup gives access to a number of
+# keybindings which make configuring individual slides and components
+# of slides easier.  See, for instance, C-c C-b on a frame headline.
+#+STARTUP: beamer
+
+#+STARTUP: oddeven
+
+# we tell the exporter to use a specific LaTeX document class, as
+# defined in org-latex-classes.  By default, this does not include a
+# beamer entry so this needs to be defined in your configuration (see
+# the tutorial).
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+
+# Beamer supports alternate themes.  Choose your favourite here
+#+BEAMER_THEME: Madrid
+
+# the beamer exporter expects to be told which level of headlines
+# defines the frames.  We use the first level headlines for sections
+# and the second (hence H:2) for frames.
+#+OPTIONS:   H:2 toc:t
+
+# the following allow us to selectively choose headlines to export or not
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+
+# for a column view of options and configurations for the individual
+# frames
+#+COLUMNS: %20ITEM %13BEAMER_env(Env) %6BEAMER_envargs(Args) %4BEAMER_col(Col) %7BEAMER_extra(Extra)
+
+* Introducción
+** Introducción: Cultura Material y Software (I)
+
++ La cultura material se refiere a valores e ideología que se transmite desde construcciones humanas. 
+
++ El software son cálculos que produce un ordenador.
+
++ La cultura material de un espacio ayuda a comprender el autoritarismo o antiautoritarismo de una sociedad. Ejemplos.
+
++ Lo que puedes hacer con el software también ayuda a comprender autoritarismo. ¿Cómo usáis el software?
+
+** Introducción: Cultura Material y Software (II)
+
+En el artículo que nos ocupa nos centraremos en la cuestión de lo que
+es fascista y no en el software según diferentes aspectos.
+1. Libertad en el Software
+2. Desigualdad Económica
+3. Control Social
+4. El Papel del Software en el Movimiento Obrero
+
+* Libertad en el Software
+** Libertad en el Software (4 libertades)
+   0. Libertad de uso
+   1. Libertad de copia
+   2. Libertad de modificación
+   3. Libertad de redistribuir lo modificado
+** Libertad en el Software versus Libertad 
+
++ En la CNT se aspira a una libertad integral y no parcial del individuo y de la sociedad.
++ Mirar el éxito en el microaspecto es bueno para la mercantilización. Ej: Opensource.
+
+** No modificar el código fuente es ideología
+
++ El que las personas no deben modificar el código fuente es la ideología que crea tiranías económicas
+
+* Desigualdad Económica
+** Cifras económicas de algunos personajes 
+
+| Número | Nombre          | Dinero($) | Edad | País   | Compañía  |
+|      1 | Bill Gates      | $ 79.2    |   59 | USA    | Microsoft |
+|      2 | Carlos Slim     | $ 77.1    |   75 | México | Telecom   |
+|      3 | Warren Buffet   | $ 72.1    |   85 | USA    | Berkshire |
+|      4 | Amancio Ortega  | $ 64.5    |   79 | Spain  | Zara      |
+|      5 | Larry Ellison   | $ 54.3    |   71 | USA    | Oracle    |
+|     15 | Jeff Bezos      | $ 34.8    |   51 | USA    | Amazon    |
+|     16 | Mark Zuckerberg | $ 33.4    |   31 | USA    | Facebook  |
+|     19 | Larry Page      | $ 29.7    |   42 | USA    | Google    |
+|     20 | Sergey Brin     | $ 29.2    |   42 | USA    | Google    |
+
+Cifras en miles de millones de dólares. Según Forbes 2015 (visto 2015/10/08)
+
+** Cifras Económicas de algunos países
+
+| Número | País                  | Dólares    |
+|      1 | China                 | 17 632 014 |
+|      2 | USA                   | 17 416 253 |
+|      3 | India                 | 7 277 279  |
+|      4 | Japón                 | 4 788 033  |
+|      5 | Alemania              | 3 621 357  |
+|     16 | España                | 1 533 590  |
+|     86 | Líbano                | 80 077     |
+|     87 | Lituania              | 78 953     |
+|     89 | Costa de Marfil       | 71 952     |
+|     90 | Costa Rica            | 71 211     |
+|    181 | Tonga                 | 523        |
+|    182 | Kiribati              | 180        |
+|    183 | Tuvalu                | 35         |
+
+Cifras en millones de dólares. Según FMI 2014 (visto 2015/10/08)
+
+** Cifras de grandes empresas en el mundo del software
+
+| Número | Compañía  | País | Dólares |
+|     12 | Apple     | USA  | 741.8 B |
+|     25 | Microsoft | USA  | 340.8 B |
+|     39 | Google    | USA  | 367.    |
+
+
+* Control Social
+** Evitar control social 
+
++ Primitivismo
++ Software libre en mi hardware, sin espionaje.
+
+** Cómo funciona el espionaje masivo
+
++ Google: Android + Gmail
++ Facebook
++ Machintosh
++ Microsoft
+
+* El papel del software en el movimiento obrero
+** El papel del software en el movimiento obrero
++ La comunicación
++ La apropiación monetaria
++ La dependencia tecnológica
++ La diversidad lingüística
++ El boicot 
++ Tecnicidad y certificación en el Software Libre
+
+* Diferentes formas de militancia por el antifascismo en el software
+** Diferentes formas de militancia por el antifascismo en el software
+
++ GNU
++ FSF
++ Opensource
++ Hacktivismo
++ Cultura libre
++ Sindicalismo y anarcosindicalismo
++ Cooperativas
++ Grupos de crackers
+
+
+
+* Conclusiones
+** Conclusión (I): En lo cuantitativo el Software Libre está bien
++ El software libre se ha ido haciendo fuerte en casi todos los mercados:
++ Supercomputadores
++ Servidores
++ Doméstico
+** Conclusión (II): En lo cualitativo estamos mal
++ El control social es mayor
++ Las desigualdades son mayores
