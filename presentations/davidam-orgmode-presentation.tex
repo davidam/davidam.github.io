@@ -1,0 +1,132 @@
+% Created 2017-11-23 jue 22:47
+\documentclass[bigger]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usetheme{Madrid}
+\author{David Arroyo Menéndez}
+\date{\textit{[2017-11-23 Wed]}}
+\title{Orgmode}
+\hypersetup{
+  pdfkeywords={beamer org orgmode},
+  pdfsubject={Example of using org to create presentations using the beamer exporter},
+  pdfcreator={Emacs 24.4.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\begin{frame}[label=sec-1]{Features}
+\begin{itemize}
+\item TODO management in text mode
+\item Articles (reproducible research, latex capabilities, nice navigation, \ldots{})
+\item Spreadsheet
+\item Presentation (beamer)
+\item Web Deployment
+\item Powerful hiperlinks (RMAIL, BBDB, IRC, \ldots{})
+\item In general, easy to extend
+\item Ready to use in emacs, vim, github, \ldots{}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-2]{Todo Management}
+\begin{block}{Todo management in text mode is useful to}
+\begin{itemize}
+\item Software projects with a limited number of developers (ej: sed)
+\item Share public agendas
+\item Manage your own time
+\item Acess by ssh to your agenda
+\end{itemize}
+\end{block}
+
+\begin{block}{Orgmode and gpg}
+\begin{itemize}
+\item C-x C-f file.org.gpg
+\item C-x C-s
+\end{itemize}
+\end{block}
+
+\begin{block}{Orgmode and Android}
+\begin{itemize}
+\item MobileOrg
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-3]{Articles}
+\begin{itemize}
+\item Reproducible research
+\item Latex capabilities
+\item Nice navigation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-4]{Spreadsheet}
+\begin{itemize}
+\item Ascii text is a system accesible from ssh, easy to make diffs
+\item Lisp formulas
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-5]{Presentations}
+\begin{itemize}
+\item M-x org-beamer-export-to-pdf
+\item evince davidam-orgmode-presentation.pdf
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-6]{Web Deployment}
+\begin{itemize}
+\item M-x org-html-export-to-html
+\item firefox davidam-orgmode-presentation.html
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-7]{My own orgmode extensions}
+\begin{itemize}
+\item org-effectiveness.el
+\item org-license.el
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-8]{How I'm using orgmode}
+\begin{itemize}
+\item Presentations (sometimes)
+\item Personal agenda (not in all jobs)
+\item Personal web page
+\item Articles, thesis
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-9]{Books translated to use and contribute}
+\begin{itemize}
+\item Guía Compacta de Orgmode
+\item Una introducción a la programación en emacs lisp
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-10]{Conclusions}
+\begin{itemize}
+\item Orgmode is for gnu emacs, as gnu emacs is for the operating system.
+\item Orgmode is a format text full for any task in a desktop.
+\item Orgmode is a scientifics advance in this field.
+\end{itemize}
+\end{frame}
+% Emacs 24.4.1 (Org mode 8.2.10)
+\end{document}

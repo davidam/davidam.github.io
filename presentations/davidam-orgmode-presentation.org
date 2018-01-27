@@ -1,0 +1,97 @@
+#+TITLE:     Orgmode
+#+AUTHOR:    David Arroyo Menéndez
+#+EMAIL:     davidam@gnu.org
+#+DATE:      [2017-11-23 Wed]
+#+DESCRIPTION: Example of using org to create presentations using the beamer exporter
+#+KEYWORDS:  beamer org orgmode
+#+LANGUAGE:  en
+
+# specifying the beamer startup gives access to a number of
+# keybindings which make configuring individual slides and components
+# of slides easier.  See, for instance, C-c C-b on a frame headline.
+#+STARTUP: beamer
+
+#+STARTUP: oddeven
+
+# we tell the exporter to use a specific LaTeX document class, as
+# defined in org-latex-classes.  By default, this does not include a
+# beamer entry so this needs to be defined in your configuration (see
+# the tutorial).
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+
+# Beamer supports alternate themes.  Choose your favourite here
+#+BEAMER_THEME: Madrid
+
+# the beamer exporter expects to be told which level of headlines
+# defines the frames.  We use the first level headlines for sections
+# and the second (hence H:2) for frames.
+#+OPTIONS:   H:1 toc:t
+
+# the following allow us to selectively choose headlines to export or not
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+
+# for a column view of options and configurations for the individual
+# frames
+#+COLUMNS: %20ITEM %13BEAMER_env(Env) %6BEAMER_envargs(Args) %4BEAMER_col(Col) %7BEAMER_extra(Extra)
+
+* Features
++ TODO management in text mode
++ Articles (reproducible research, latex capabilities, nice navigation, ...)
++ Spreadsheet
++ Presentation (beamer)
++ Web Deployment
++ Powerful hiperlinks (RMAIL, BBDB, IRC, ...)
++ In general, easy to extend
++ Ready to use in emacs, vim, github, ...
+
+* Todo Management
+** Todo management in text mode is useful to
++ Software projects with a limited number of developers (ej: sed)
++ Share public agendas
++ Manage your own time
++ Acess by ssh to your agenda
+
+** Orgmode and gpg 
++ C-x C-f file.org.gpg
++ C-x C-s
+
+** Orgmode and Android
++ MobileOrg
+
+* Articles
++ Reproducible research
++ Latex capabilities
++ Nice navigation
+
+* Spreadsheet
++ Ascii text is a system accesible from ssh, easy to make diffs
++ Lisp formulas
+
+* Presentations
++ M-x org-beamer-export-to-pdf
++ evince davidam-orgmode-presentation.pdf
+
+* Web Deployment
++ M-x org-html-export-to-html
++ firefox davidam-orgmode-presentation.html 
+
+* My own orgmode extensions
++ org-effectiveness.el
++ org-license.el
+
+* How I'm using orgmode
++ Presentations (sometimes)
++ Personal agenda (not in all jobs)
++ Personal web page
++ Articles, thesis
+
+* Books translated to use and contribute
++ Guía Compacta de Orgmode
++ Una introducción a la programación en emacs lisp
+
+* Conclusions
++ Orgmode is for gnu emacs, as gnu emacs is for the operating system.
++ Orgmode is a format text full for any task in a desktop.
++ Orgmode is a scientifics advance in this field.
