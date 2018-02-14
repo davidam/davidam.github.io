@@ -70,7 +70,7 @@ $ git push
 * Mover/renombrar ficheros
 #+BEGIN_SRC bash
 $ git mv fileold folder
-$ git commit -m "folder: moving fileold" fileold
+$ git commit -m "folder: moving fileold" fileold filenew
 $ git push
 #+END_SRC
 * Un par de apuntes rápidos para deshacer cambios
@@ -89,7 +89,8 @@ Revertir el último cambiado, al que se le ha hecho push
 $ git push -f origin last_commit:branch
 #+END_SRC
 
-* Crear ramas
+* Ramas
+** Crear ramas
 
 Los pasos son:
 + Crear la rama
@@ -102,7 +103,7 @@ $ git checkout [name_of_your_new_branch]
 $ git push origin [name_of_your_new_branch]
 #+END_SRC
 
-* Cambiando de ramas
+** Cambiando de ramas
 Es posible que tengamos varias ramas por ejemplo production (prod) y
 master. Si estamos en master y queremos pasar los cambios a production
 se puede hacer lo siguiente:
@@ -116,7 +117,7 @@ $ git merge master             # se merguean los cambios desde master a prod
 $ git push                     # se suben los cambios 
 #+END_SRC
 
-* Borrar ramas
+** Borrar ramas
 
 Para borrar una rama son necesarios dos pasos:
 + Borrar la rama en el sistema de ficheros
@@ -127,6 +128,20 @@ $ git branch -d [name_of_your_new_branch]
 $ git branch -D [name_of_your_new_branch] # Si necesitas forzar el borrado (no recomendado)
 $ git push origin :[name_of_your_new_branch]
 #+END_SRC
+
+** Clonar ramas
+
+#+BEGIN_SRC bash
+$ git clone -b [name_of_your_branch] [name_of_your_repository]
+#+END_SRC
+
+** Listar ramas
+
+#+BEGIN_SRC bash
+$ git branch -a # list branches in local repository
+$ git branch -r # list branches in remote repository
+#+END_SRC
+ 
 
 * Git Submodules: Añadir, Usar, Eliminar y Actualizar
 
