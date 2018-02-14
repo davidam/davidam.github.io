@@ -1,0 +1,35 @@
+#+TODO: TODO(t) POSIBLE(p) POSSIBLE(p) FUTURE(f) | DONE(d!) CANCELED(c!)
+
+* TODO fsfe en la Ingobernable
+  SCHEDULED: <2018-02-22 jue>
+  :PROPERTIES:
+  :ID:       e08f5c02-f3bf-443a-ad8d-7e1466942ac9
+  :PUBDATE:  <2018-02-08 jue 09:04>
+  :END:
+* TODO RMS a en Oviedo
+  SCHEDULED: <2018-02-24 sáb>
+* TODO Techfest. Día 1.
+  SCHEDULED: <2018-03-01 jue>
+* TODO Techfest. Día 2.
+  SCHEDULED: <2018-03-02 vie>
+* TODO Día de datos abierto
+  SCHEDULED: <2018-03-04 dom>
+http://medialab-prado.es/article/dia-de-los-datos-abiertos-2017
+* TODO Día 2 de datos abierto
+  SCHEDULED: <2018-03-03 sáb>
+http://medialab-prado.es/article/dia-de-los-datos-abiertos-2017
+* POSIBLE Encuentro FSFE Madrid
+  SCHEDULED: <2018-02-22 jue>
+
+* TODO Ubucon. Día 1
+  SCHEDULED: <2018-04-27 vie>
+http://ubucon.org/en/events/ubucon-europe/schedule/
+* TODO Ubucon. Día 2
+  SCHEDULED: <2018-04-28 sáb>
+http://ubucon.org/en/events/ubucon-europe/schedule/
+* TODO Ubucon. Día 3
+  SCHEDULED: <2018-04-29 dom>
+http://ubucon.org/en/events/ubucon-europe/schedule/
+* TODO Faqin congress
+  SCHEDULED: <2018-03-01 jue>
+http://www.faqin.org/es/
