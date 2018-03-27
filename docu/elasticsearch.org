@@ -66,6 +66,14 @@ $ curl http://localhost:9200/_cat/nodes?v
 http://localhost:9200/_cluster/health
 #+END_SRC
 
+* Elasticdump
+** json to the index
+$ elasticdump --input=git_openstack_data.json --output=http://localhost:9200 --output-index=dam-index --type=data
+$ elasticdump --input=git_openstack_mapping.json --output=http://localhost:9200 --output-index=dam-index --type=mapping
+** index data to json
+$ elasticdump  --input=http://production.es.com:9200/my_index --output=/data/my_index_mapping.json --type=mapping
+$ elasticdump  --input=http://production.es.com:9200/my_index --output=/data/my_index.json --type=data
+
 * License
 Copyright (C) 2018 David Arroyo Menendez
     Permission is granted to copy, distribute and/or modify this document
