@@ -1,0 +1,115 @@
+#+TITLE: Analyzing Source Code
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+  
+[[http://www.davidam.com][Volver a davidam.com]]
+
+* Introduction
+* Metrics
+
+#+BEGIN_SRC bash
+$ metrics *
+Metrics Summary:
+Files                       Language        SLOC Comment McCabe 
+----- ------------------------------ ----------- ------- ------ 
+    4                           HTML        2097     239      4 
+    7                         Python         137      12     13 
+    4                      Text only           0       0      0 
+----- ------------------------------ ----------- ------- ------ 
+   15                          Total        2234     251     17 
+#+END_SRC
+
+* Pylint
+
+#+BEGIN_SRC bash
+$ pylint timeout.py
+No config file found, using default configuration
+************* Module app.timeout
+C: 29, 0: Trailing whitespace (trailing-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  9, 4: Method should have "self" as first argument (no-self-argument)
+W:  9,25: Unused argument 'frame' (unused-argument)
+R:  9, 4: Method could be a function (no-self-use)
+W: 18,23: Unused argument 'timeout' (unused-argument)
+R:  2, 0: Too few public methods (0/2) (too-few-public-methods)
+
+-----------------------------------
+Your code has been rated at 2.14/10
+#+END_SRC
+
+* Radon
+
+** Lines of Code
+
+#+BEGIN_SRC bash
+$ radon raw formatter.py 
+formatter.py
+    LOC: 68
+    LLOC: 53
+    SLOC: 53
+    Comments: 4
+    Single comments: 4
+    Multi: 0
+    Blank: 11
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 8%
+        (C + M % L): 6%
+#+END_SRC
+
+** Complexity
+
+#+BEGIN_SRC bash
+$ radon cc formatter.py -a
+formatter.py
+    M 28:4 Formatter.drop_accents_whitespaces - A
+    M 14:4 Formatter.drop_accents - A
+    C 6:0 Formatter - A
+    M 22:4 Formatter.drop_whitespaces - A
+    M 40:4 Formatter.hostFromUrl - A
+    M 49:4 Formatter.isUrl - A
+    M 59:4 Formatter.isPath - A
+    M 8:4 Formatter.__init__ - A
+    M 11:4 Formatter.imprimes - A
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.111111111111111)
+#+END_SRC
+
+* Prospector
+
+#+BEGIN_SRC bash
+$ prospector simple-parser.py 
+Messages
+========
+
+simple-parser.py
+  Line: 3
+    pylint: unused-import / Unused import sys
+  Line: 6
+    pylint: using-constant-test / Using a conditional statement with a constant value
+    mccabe: MC0001 / If 6 is too complex (24)
+  Line: 65
+    pylint: undefined-variable / Undefined variable 'operator_div_token' (col 22)
+  Line: 67
+    pylint: undefined-variable / Undefined variable 'operator_pow_token' (col 22)
+  Line: 74
+    pylint: used-before-assignment / Using variable 'token' before assignment (col 12)
+  Line: 85
+    pylint: redefined-builtin / Redefining built-in 'next' (col 8)
+
+
+Check Information
+=================
+         Started: 2018-04-18 09:54:42.703626
+        Finished: 2018-04-18 09:54:42.911139
+      Time Taken: 0.21 seconds
+       Formatter: grouped
+        Profiles: default, no_doc_warnings, no_test_warnings, strictness_medium, strictness_high, strictness_veryhigh, no_member_warnings
+      Strictness: None
+  Libraries Used: 
+       Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
+  Messages Found: 7
+#+END_SRC
