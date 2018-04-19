@@ -7,7 +7,12 @@
 [[http://www.davidam.com][Volver a davidam.com]]
 
 * Introduction
+
+
+
 * Metrics
+
+You can classify code by programming language and lines of code with metrics.
 
 #+BEGIN_SRC bash
 $ metrics *
@@ -22,6 +27,8 @@ Files                       Language        SLOC Comment McCabe
 #+END_SRC
 
 * Pylint
+
+You can measure good practiques making source code with pylint.
 
 #+BEGIN_SRC bash
 $ pylint timeout.py
@@ -40,8 +47,9 @@ Your code has been rated at 2.14/10
 #+END_SRC
 
 * Radon
+** Radon is for Lines of Code
 
-** Lines of Code
+You can count lines of code with radon in a nice way.
 
 #+BEGIN_SRC bash
 $ radon raw formatter.py 
@@ -59,7 +67,9 @@ formatter.py
         (C + M % L): 6%
 #+END_SRC
 
-** Complexity
+** Radon is for Complexity
+
+You can measure the complexity from methods and classes with radon.
 
 #+BEGIN_SRC bash
 $ radon cc formatter.py -a
@@ -112,4 +122,12 @@ Check Information
   Libraries Used: 
        Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
   Messages Found: 7
+#+END_SRC
+
+* Perceval
+
+You can organize commits and mails in objects to write scripts with perceval.
+
+#+BEGIN_SRC bash
+$ python3 ~/git/python-examples/perceval/perceval_git_counter.py https://github.com/grimoirelab/perceval.git /tmp/clonedir
 #+END_SRC
