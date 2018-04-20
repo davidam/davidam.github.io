@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Analyzing Source Code</title>
+<!-- 2018-04-20 vie 08:01 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Analyzing Source Code</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a></li>
+<li><a href="#sec-2">2. Metrics</a></li>
+<li><a href="#sec-3">3. Pylint</a></li>
+<li><a href="#sec-4">4. Radon</a>
+<ul>
+<li><a href="#sec-4-1">4.1. Radon is for Lines of Code</a></li>
+<li><a href="#sec-4-2">4.2. Radon is for Complexity</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Prospector</a></li>
+<li><a href="#sec-6">6. Perceval</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com">Volver a davidam.com</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+It's possible understand metrics about your software about number
+lines of code, programming language, scripting about your commits,
+troubles or style in your code, etc. in this tutorial you can learn
+some tools to reach it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Metrics</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+You can classify code by programming language and lines of code with metrics.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ metrics *
+Metrics Summary:
+Files                       Language        SLOC Comment McCabe 
+----- ------------------------------ ----------- ------- ------ 
+    4                           HTML        2097     239      4 
+    7                         Python         137      12     13 
+    4                      Text only           0       0      0 
+----- ------------------------------ ----------- ------- ------ 
+   15                          Total        2234     251     17
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Pylint</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+You can measure good practiques making source code with pylint.
+</p>
+
+<p>
+#+BEGIN<sub>SRC</sub> bash
+$ pylint timeout.py
+No config file found, using default configuration
+</p>
+</div>
+<ol class="org-ol"><li><a id="sec-3-0-0-0-0-0-0-0-0-0-0-0-1" name="sec-3-0-0-0-0-0-0-0-0-0-0-0-1"></a>Module app.timeout<br  /><div class="outline-text-14" id="text-3-0-0-0-0-0-0-0-0-0-0-0-1">
+<p>
+C: 29, 0: Trailing whitespace (trailing-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  9, 4: Method should have "self" as first argument (no-self-argument)
+W:  9,25: Unused argument 'frame' (unused-argument)
+R:  9, 4: Method could be a function (no-self-use)
+W: 18,23: Unused argument 'timeout' (unused-argument)
+R:  2, 0: Too few public methods (0/2) (too-few-public-methods)
+</p>
+
+<hr  />
+<p>
+Your code has been rated at 2.14/10
+#+END<sub>SRC</sub>
+</p>
+</div>
+</li></ol>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Radon</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Radon is for Lines of Code</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+You can count lines of code with radon in a nice way.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ radon raw formatter.py 
+formatter.py
+    LOC: 68
+    LLOC: 53
+    SLOC: 53
+    Comments: 4
+    Single comments: 4
+    Multi: 0
+    Blank: 11
+    - Comment Stats
+	(C % L): 6%
+	(C % S): 8%
+	(C + M % L): 6%
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Radon is for Complexity</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+You can measure the complexity from methods and classes with radon.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ radon cc formatter.py -a
+formatter.py
+    M 28:4 Formatter.drop_accents_whitespaces - A
+    M 14:4 Formatter.drop_accents - A
+    C 6:0 Formatter - A
+    M 22:4 Formatter.drop_whitespaces - A
+    M 40:4 Formatter.hostFromUrl - A
+    M 49:4 Formatter.isUrl - A
+    M 59:4 Formatter.isPath - A
+    M 8:4 Formatter.__init__ - A
+    M 11:4 Formatter.imprimes - A
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.111111111111111)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Prospector</h2>
+<div class="outline-text-2" id="text-5">
+<div class="org-src-container">
+
+<pre class="src src-bash">$ prospector simple-parser.py 
+Messages
+========
+
+simple-parser.py
+  Line: 3
+    pylint: unused-import / Unused import sys
+  Line: 6
+    pylint: using-constant-test / Using a conditional statement with a constant value
+    mccabe: MC0001 / If 6 is too complex (24)
+  Line: 65
+    pylint: undefined-variable / Undefined variable 'operator_div_token' (col 22)
+  Line: 67
+    pylint: undefined-variable / Undefined variable 'operator_pow_token' (col 22)
+  Line: 74
+    pylint: used-before-assignment / Using variable 'token' before assignment (col 12)
+  Line: 85
+    pylint: redefined-builtin / Redefining built-in 'next' (col 8)
+
+
+Check Information
+=================
+	 Started: 2018-04-18 09:54:42.703626
+	Finished: 2018-04-18 09:54:42.911139
+      Time Taken: 0.21 seconds
+       Formatter: grouped
+	Profiles: default, no_doc_warnings, no_test_warnings, strictness_medium, strictness_high, strictness_veryhigh, no_member_warnings
+      Strictness: None
+  Libraries Used: 
+       Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
+  Messages Found: 7
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Perceval</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+You can organize commits and mails in objects to write scripts with perceval.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ python3 ~/git/python-examples/perceval/perceval_git_counter.py https://github.com/grimoirelab/perceval.git /tmp/clonedir
+$ python3 ~/git/python-examples/perceval/perceval_git_json.py https://github.com/grimoirelab/perceval.git /tmp/clonedir
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2018-04-20 vie 08:01</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
