@@ -8,7 +8,10 @@
 
 * Introduction
 
-
+It's possible understand metrics about your software about number
+lines of code, programming language, scripting about your commits,
+troubles or style in your code, etc. in this tutorial you can learn
+some tools to reach it.
 
 * Metrics
 
@@ -130,4 +133,6 @@ You can organize commits and mails in objects to write scripts with perceval.
 
 #+BEGIN_SRC bash
 $ python3 ~/git/python-examples/perceval/perceval_git_counter.py https://github.com/grimoirelab/perceval.git /tmp/clonedir
+$ python3 ~/git/python-examples/perceval/perceval_git_json.py https://github.com/grimoirelab/perceval.git /tmp/clonedir
 #+END_SRC
+
