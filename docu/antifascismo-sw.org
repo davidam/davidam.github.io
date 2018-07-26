@@ -1,0 +1,746 @@
+#+TITLE: Antifascismo en el Software
+#+h3: David Arroyo Menéndez
+#+LANGUAGE: es
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+#+AUTHOR: David Arroyo Menéndez
+#+EMAIL: davidam@gnu.org
+#+DATE: 11/08/2014
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+* Introducción
+
+La cultura material de un espacio ayuda a comprender el autoritarismo
+o antiautoritarismo de una sociedad. Los edificios estalinistas, o
+nazis, chocan con las construcciones de pequeñas poblaciones indígenas
+o aldeas vascas. Con el software pasa algo parecido cada programa de
+software lleva intrínseca su propia cultura material: su lenguaje, su
+licencia, sus profesionales, etc.
+
+En el artículo que nos ocupa nos centraremos en la cuestión de lo que
+es fascista y no en el software según diferentes aspectos.
+
+
+
+* Sobre fascismo y antifascismo
+
+Para este artículo entenderé como fascismo una estructura de poder que
+esclaviza de arriba a abajo, mediante mando económico, militar y
+estructural a quienes forman parte de esa estructura.
+
+El antifascismo es la oposición activa a esa estructura destruyéndola
+y creando una alternativa que la sustituya.
+
+#+CAPTION: Logo Antifascista (Fuente Wikipedia: Public Domain)
+#+NAME:   fig:1
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/Antifascismo.png
+
+En este sentido el software privativo de las grandes corporaciones es
+fascista, se construye de arriba a abajo, maneja grandes cifras
+económicas y quienes se saltan la legalidad impuesta si la estructura
+lo decide y les cogen serán procesados y condenados. La objeción
+podría ser que las leyes con respecto del software son decididas por
+gobiernos democráticos, esto no siempre es así, y en cualquier caso la
+objeción que yo pongo es que esas corporaciones manejan un poder
+económico de países, pudiendo presionar muy fuerte a cualquier estado
+de cualquier ideología, como ya explicaré más adelante, los estados
+son más o menos débiles a las corporaciones en función de la
+militancia del pueblo y otras presiones, por ejemplo, económicas.
+
+Otra cuestión por la que pienso que sí es fascista es por como aumenta
+la desigualdad económica.
+
+Y la tercera tesis por la que hago esta aseveración es por como se
+ayuda al control social, ya sea para los estados o para la propia
+corporación.
+
+El software libre es la alternativa antifascista a este problema al
+plantearse en términos de la libertad.
+
+* Libertad en el Software
+
+Hay personas que piensan que la cuestión de el Software Libre está
+fuera de ideología, aún hoy recuerdo unas declaraciones de un líder
+del Partido Popular diciendo que una Administración sin 'software'
+libre, no es una Administración democrática (El Mundo, 2005). Si bien
+es cierto, que al igual que la libertad de expresión, a medida que la
+cuestión del software libre avanza en legitimidades de la sociedad y
+se genera una economía estable que lo defiende, la derecha puede
+aceptarlo en personalidades o de maneras coyunturales, si esta cultura
+ideológica (como la libertad de expresión) avanza en la sociedad.
+
+En el anarquismo hay una tradición de ver culturas ideológicas como
+amigas de la libertad total a la que se aspira, durante los años
+previos a la revolución española, se veía a esperantistas, o nudistas,
+como cercanos a ciertas cuestiones que veíamos amigos para acercarnos
+a la libertad total. Si hoy la derecha defendiera la conveniencia del
+esperanto en las escuelas simplemente porque el esperanto aumentara en
+popularidad, nadie pensaría que la derecha se ha convertido en extrema
+izquierda, sino que, tal vez, ha habido una conquista social, de la
+misma manera que se vió más o menos así la supresión del servicio
+militar obligatorio.
+
+Para entender la cuestión de cómo se defiende la libertad en el
+software hay dos posturas claramente polarizadas, la que lo aborda
+desde la cuestión política y ética (GNU y la FSF) y la que lo aborda
+desde la cuestión puramente técnica y practicista (OpenSource).
+
+En el movimiento del Software Libre, se entiende por Software Libre lo
+siguiente (Stallman, 2013):
+
++ La libertad de ejecutar el programa como se desea, con cualquier
+  propósito (libertad 0).
++ La libertad de estudiar cómo funciona el programa, y cambiarlo para
+  que haga lo que usted quiera (libertad 1). El acceso al código
+  fuente es una condición necesaria para ello.
++ La libertad de redistribuir copias para ayudar a su prójimo
+  (libertad 2).
++ La libertad de distribuir copias de sus versiones modificadas a
+  terceros (libertad 3). Esto le permite ofrecer a toda la comunidad
+  la oportunidad de beneficiarse de las modificaciones. El acceso al
+  código fuente es una condición necesaria para ello.
+
+#+CAPTION: Foto de Richard M. Stallman tomada desde el libro de O'Reilly (Fuente Wikipedia: CC BY-SA 3.0)
+#+NAME:   fig:2
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/Richard_Matthew_Stallman.jpeg
+
+Como se puede ver en la definición Stallman solo habla de la cuestión
+de la libertad, por otro lado, el Open Source es un movimiento que
+define el software abierto en los aspectos puramente prácticos y
+defiende su uso por la conveniencia económica y práctica. Es como si
+en el anarquismo, hubiera habido una rama que hubiera visto la
+conveniencia económica de las colectividades anarquistas agrarias
+españolas y hubiera dicho solo queremos ganar dinero y con esta
+tecnicidad se gana dinero. Me imagino un montón de trabajadores de
+McDonalds de Arizona, tratando de repetir las tecnicidades del
+anarquismo agrario español, solo porque quieren ganar dinero ¿es el
+mismo movimiento? no exactamente, porque no quieren reconocer apenas
+el valor de la ética, pero claro que es importante triunfar en la
+ética y en la economía para que el movimiento triunfe.  Pero ¿qué
+ocurre si vemos al ku-kux-klan repitiendo tecnicidades del anarquismo
+agrario español?, seguramente la CNT no le reconocería como amigos,
+porque si el ku-kux-klan mata o acosa negros es fascista y, por tanto,
+son enemigos, aunque nos resultaría verles haciendo asambleas para
+planificar la producción.
+
+Supongo que con la cuestión del software libre y el anarquismo es algo
+parecido, en el anarquismo se verán como amigos a aquellos activistas
+del software libre y en el mundo del software libre no se verían como
+amigos a anarquistas que boicotean al software libre y desde un punto
+de vista estricto no serían buenos anarquistas, aunque cumplan con
+otras tecnicidades ácratas.
+
+En realidad, no es tan difícil pensar que si algo conviene desde un
+punto de vista moral, también conviene desde un punto de vista
+puramente económico. Pero separar ambos aspectos es malo en la
+estrategia, aunque quizás no en una táctica del corto (por ej. una
+entrevista de trabajo). Al final lo que pasa es que los que solo van
+al software libre por el aspecto económico, están ganando los dineros
+políticos de los que vamos por ambos motivos.
+
+* La Desigualdad Económica
+
+** Cifras Económicas de Personajes del Mundo del Software
+
+| Numero | Nombre                  | Dinero ($)    |  Edad | País          | Compañía                           |
+|      1 | Bill Gates              | $76.0 billion |    58 | United States | Microsoft                          |
+|      2 | Carlos Slim & family    | $72.0 billion |    74 | Mexico        | Telmex, América Móvil, Grupo Carso |
+|      3 | Amancio Ortega          | $64.0 billion |    77 | Spain         | Inditex Group                      |
+|      4 | Warren Buffett          | $58.2 billion |    83 | United States | Berkshire Hathaway                 |
+|      5 | Larry Ellison           | $48.0 billion |    69 | United States | Oracle Corporation                 |
+|      6 | Charles Koch            | $40.0 billion |    78 | United States | Koch Industries                    |
+|      7 | David Koch              | $40.0 billion |    73 | United States | Koch Industries                    |
+|      8 | Sheldon Adelson         | $38.0 billion |    80 | United States | Las Vegas Sands                    |
+|      9 | Christy Walton & family | $36.7 billion | 58-59 | United States | Wal-Mart                           |
+|     10 | Jim Walton              | $34.7 billion |    65 | United States | Wal-Mart                           |
+
+Fuente: (Forbes, 2014).
+
+En realidad el poder está repartido entre unas pocas manos, el único
+negocio de dos de estos 10 hombres más ricos ha sido la industria del
+software.
+
+Bill Gates el primer hombre más rico del mundo fué un hombre muy
+astuto para sus negocios económicos, consiguió que prácticamente todos
+los ordenadores domésticos fueran con su sistema operativo, con la
+llegada de las tablets ahora hay muchos ordenadores domésticos que
+tienen diferentes sistemas operativos. Sin embargo, este hombre sigue
+haciendo crecer su fortuna todos los años. El modo en que gana dinero
+con los ordenadores en realidad se puede calificar de fascista, ya que
+él tiene poder para dominar cualquier cálculo de lo que pasa en esos
+ordenadores. Si esto fuera PIB esta persona tendría un poder económico
+que le situaría en el país 81 del planeta tierra, donde hay 226 países
+(entre Ghana y Guatemala) (Indexmundi, 2014).
+
+El caso de Larry Ellison es algo diferente, también se hizo
+multimillonario con una base de datos privativa (tener el poder de los
+datos y el cómputo de lo que ocurre allí es bastante útil para el
+fascismo). Sin embargo, también hizo algo curioso para la libertad y
+los negocios es la compra de Sun Microsystems que entre otras cosas
+tiene la base de datos libre MySQL y la suite ofimática Libreoffice
+que también tiene una licencia libre. Así que podemos decir que a los
+grandes multimillonarios no tienen por qué ser enemigos del software
+libre a nivel de inversión.
+
+Se puede crear un negocio que genera fuertes desigualdades económicas
+con diferentes aspectos de la economía, no hay un problema ético con
+montar un supermercado a priori, pero sí puede alguien crear
+estrategias económicas que lleven a alguien a acumular riqueza con esa
+estrategia y crear una desigualdad.
+
+Con respecto al software libre y el software privativo supongo que es
+mucho más fácil llegar a ser rico con software privativo. Sin embargo,
+Linus Torvalds se ha hecho bastante millonario con software libre
+también: 150 millones de dólares americanos (The Richest, 2014). Esto
+le situaría en un nivel de riqueza situado que si fuera PIB de países
+mundiales le dejaría en el país 218.
+
+** Grandes Empresas del Mundo del Software
+
+Es un poco complejo elegir empresas de software, debido a que en
+ocasiones una misma empresa se dedica a otras cuestiones, por ejemplo,
+el hardware u otras cuestiones, de este modo, trataré de explicar la
+relación con el software.
+
+|                     | Puesto | País | Ventas   | Beneficios | Adquisiciones | Valor de Mercado |
+| Apple               |     15 | USA  | $173.8 B | $37 B      | $225.2 B      | $483.1 B         |
+| AT&T                |     23 | USA  | $128.8 B | $18.2 B    | $277.8 B      | $182.7 B         |
+| Microsoft           |     32 | USA  | $83.3 B  | $22.8 B    | $153.5 B      | $343.8 B         |
+| IBM                 |     35 | USA  | $99.8 B  | $16.5 B    | $126.2 B      | $202.5 B         |
+| Google              |     52 | USA  | $59.7 B  | $12.2 B    | $110.9 B      | $382.5 B         |
+
+Fuente: (Forbes, 2014).
+
+Apple es la empresa más poderosa en el mundo de la tecnología es una
+empresa curiosa uno de sus creadores está muerto ya y le despidió y le
+volvió a contratar la empresa, otro de sus creadores Steve Wozniak
+tiene menos dinero que Linus Torvalds . El sistema fascista de Apple
+se rebela incluso a sus creadores. Microsoft sí sirvió a Bill Gates
+para ser el hombre más rico del mundo, pero Apple solo sirve a
+Apple. La libertad está restringida a un nivel similar que Microsoft,
+fueron menos arrogantes con la cultura UNIX, algo más de innovación,
+supongo que esas fueron las claves. Si el valor de mercado de Apple
+fuera PIB de países estaría en el puesto 28 de nuestro planeta.
+
+AT&T es una de las empresas más poderosa del mundo en la tecnología,
+esta empresa inventó UNIX y el lenguaje con el que se escribió C. Si
+bien el campo clave es el sector de telecomunicaciones.
+
+Microsoft es conocido por su sistema operativo para usuarios
+domésticos. Si el valor de mercado de esta empresa fuera PIB le
+situaría en el puesto 38 del planeta, donde hay 226 países. Es decir,
+el cálculo raro sería que para vencer a Microsoft habría que hacer una
+revolución en Ucrania y poner a todas las personas Ucranianas a
+programar durante un año (presuponiendo que todas esas personas fueran
+programadoras) y la alimentación, ropa, transporte, etc. vendría de
+fuera del país, solo programarían.
+
+IBM es la empresa que apadrinó al sistema operativo de Microsoft en el
+hardware. IBM tiene muchos buenos tratos con su propio UNIX y con
+GNU/Linux también. Si el valor de mercado de esta empresa fuera PIB le
+situaría 54 del planeta.
+
+Google nace en la cultura UNIX de Stanford y de la IA, es muy
+respetuosa con la investigación científica. Los servidores de Google
+son en general GNU/Linux y Linux es el kernel que utilizaron en
+Android. Si el valor de mercado de Google fuera PIB de países estaría
+en el puesto 34 de nuestro planeta.
+
+Una forma de redistribución del poder y la riqueza tecnológica es la
+colectivización de la tecnología UNIX, la opción más usada es
+GNU/Linux. El nombre de este dúo es que a Linux no le interesaba
+hablar de ideales éticos, pero sí le gustaban las tecnicidades éticas
+y decir lo que le da la gana, para poder ganar mucho dinero. GNU (en
+lo técnico) y la FSF (en lo político) se encargan de la eticidad en el
+mundo del software y es una organización muy experta en la materia.
+
+* Control Social
+
+Desde los principios del anarquismo siempre ha habido control social,
+normalmente desde los patrones o la policia a los obreros, sin
+embargo, en la actualidad unas pocas manos concentran poder
+tecnológico para controlar de una manera u otra a la mayoría
+planetaria: Facebook, Google, Microsoft, ... son empresas gran hermano
+(Stallman, 2014), donde ni siquiera somos peligrosos a un nivel
+personal, sino que se crean perfiles por medio de minería de datos
+para calcularnos.
+
+En realidad, para evitar el control social solo hay dos maneras:
++ La primitivista (Zerzan, 2012).
++ Negar usar software que lleve al control social.
+
+La primitivista se basa en no usar nada de tecnologías de la
+información, esto seguramente no sea muy práctico si se vive en una
+gran ciudad, para casi cualquier trabajo suele ser necesario usar
+correo eletrónico o móvil y ya hay inercias sociales a usar redes
+sociales también.
+
+#+CAPTION: Foto de John Zerzan John Zerzan en 2010 en San Francisco Anarchist Bookfair (Fuente Wikipedia: CC BY 3.0)
+#+NAME:   fig:3
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/John_Zerzan_SF_bookfair_lecture_2010.jpg
+
+Si negamos usar software que lleva al control social entramos en un
+terreno más resbaladizo. El software privativo permite el control
+social, puesto que la empresa dueña del software puede hacer cosas que
+desconocemos. En el software libre si desconfiamos de nuestro software
+podemos leer el código o decirle a algún amigo que sepa leerlo que nos
+diga lo que hace. Con el software que usamos y está en Internet solo
+tenemos control si está en nuestro servidores.
+
+He visto prácticas en militantes de software libre de no conectar a
+Internet su ordenador que considera libre de control ajeno a su
+persona. Eso evita que algún enemigo pueda espiar datos privados, y si
+esa persona quiere transferir algo fuera lo copia con un ordenador
+conectado, por ejemplo, con un pendrive o similar.
+
+En la transferencia de la información es importante ser conscientes de
+si transmitimos información de manera segura o no. En este sentido
+deberíamos abogar por la posibilidad de utilizar criptografía, siempre
+que lo deseemos.
+
+* El Papel del Software en el Movimiento Obrero Actual
+** La Comunicación
+
+Hoy en día, todo movimiento o colectivo que se precie tiene un espacio
+en Internet: un sitio web, una lista o foro, redes sociales,
+etc. (Arroyo, 2012). Desde estos espacios se organizan o amplifican
+campañas y difusión de la ideología del movimiento.
+
+Las licencias del software que se usan y la autonomía para modificarlo
+denotan la coherencia ideológica del movimiento en cuestión consigo
+mismo y/o con el Movimiento del Software Libre.
+
+Para valorar la importancia que se puede dar al software en Internet
+como medio de comunicación se puede mirar la Encuesta General de
+Medios (EGM) de AIMC realizada entre Octubre de 2011 a Febrero/Marzo
+de 2014. El porcentaje de población española que se conectó a Internet
+el día antes de hacer la encuesta fué de un 60.4% en 2014. Por tanto,
+la estrategia astuta de la clase obrera es utilizar esta herramienta
+en su manera de comunicarse, pero junto con otras alternativas (por ej
+periódicos, o panfletos).
+
+** La Apropiación Monetaria
+
+Con la crisis económica, surgieron ideas para evitar la intervención
+de las instituciones financieras en la economía más allá del
+tradicional trueque. El [[http://bitcoin.com/][bitcoin]] y la moneda social son los enfoques
+más conocidos.
+
+Bitcoin es un enfoque que basado en Software Libre y confianza basado
+en iguales y criptografía evita el paso por las instituciones
+financieras (Nakamoto, 2008).
+
+#+CAPTION: Monedas Bitcoin (Fuente Wikipedia: Public Domain)
+#+NAME:   fig:4
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/Bitcoin-coins.png
+
+Las monedas sociales son un enfoque de moneda local que suelen tener
+sus pequeñas diferencias. Así, mientras en el bitcoin la confianza
+está en el protocolo libre, en la moneda social está en el
+conocimiento de quien usa la moneda. Otras nomenclaturas de esta
+cuestión es Sistema de Intercambio en Comunidad, o Banco de Tiempo,
+tratando de despolitizar la cuestión. En [[https://www.community-exchange.org/][Community Exchange System]],
+uno puede encontrar sistemas locales a los que adherirse (Community
+Exchage System, 2014). También hay desarrollos libres en este sentido.
+
+** La Dependencia Tecnológica
+
+Una de las cuestiones que provocan el sometimiento de una cultura por
+otra es la capacidad que tiene una cultura sometida de construir su
+propia economía. En este sentido, si se usa software privativo está
+garantizado el sometimiento. Con Software Libre uno todavía debe
+alcanzar los conocimientos técnicos para ser amo de su propia
+tecnología, pero esto es posible desde el punto de vista legal y
+tecnológico. Desde este punto de vista, el Software Libre sienta unas
+bases legales y tecnológicas para poder desarrollar una economía local
+independiente de corporaciones, ya sea en un sindicato obrero en una
+pequeña aldea.
+
+Se podría tener una intuición de la dependencia tecnológica que tiene
+la población mundial, mirando la [[http://stats.wikimedia.org/archive/squid_reports/2014-08/SquidReportOperatingSystems.htm][estadísticas de acceso de Wikipedia
+de Agosto de 2014]]
+
+| Sistema | Porcentaje |
+| Windows |     39.29% |
+| iPhone  |     27.04% |
+| Linux   |     13.71% |
+| iPad    |     10.13% |
+| Mac     |      4.85% |
+
+Fuente: (Wikimedia, 2014).
+
+Los cinco sistemas operativos en orden de popularidad son Windows
+(39.29%), iPhone (27.04%), Linux (13.71%), iPad (10.13%), Mac
+(4.85%). Excepto Linux el resto de sistemas son privativos
+(fascistas).
+
+En la estadística Android Linux (12.55%) y GNU/Linux (1.16%) se
+juntan. Esto no es muy bueno porque son sistemas muy diferentes aunque
+compartan un mismo kernel. En la [[https://fsfe.org/][FSFE]] hay un proyecto para hacer que
+tu [[https://fsfe.org/campaigns/android/android.en.html][Android sea totalmente libre]], esto es posible en muchos
+dispositivos Android, pero no todos. En GNU/Linux también hay la
+posibilidad de que sea totalmente libre o no, pero sí hay más cultura
+activista de tratar de que lo sea.
+
+En resumen, hay un 13.71% de usuarios potencialmente libres, en la
+cuestión del software con el que se conectan a Internet. Es cuestión
+de su propio interés y esfuerzo el que lo sean realmente.
+
+En realidad, con la llegada de estos dispositivos ha crecido mucho el
+número de usuarios que utilizan software libre para conectarse a
+Internet.
+
+| Operating System | "Windows (non mobile)" | "Windows (mobiles)" | Macintosh | "Android Linux" | iPhone | Blackberry |  iPad | GNU/Linux |
+|          2009-04 |                  89.44 |                0.06 |      6.05 |            0.03 |   0.93 |       0.15 |     0 |      1.46 |
+|          2010-04 |                  86.63 |                0.04 |      6.89 |            0.17 |   1.52 |       0.38 |  0.04 |      1.58 |
+|          2011-04 |                  80.39 |                0.07 |      8.17 |            1.12 |   2.89 |       0.51 |  0.90 |      1.56 |
+|          2012-04 |                  71.38 |                0.66 |      8.75 |            3.67 |   5.67 |       0.80 |  2.76 |      1.60 |
+|          2013-04 |                   55.9 |                0.47 |      6.90 |            6.32 |  16.37 |       0.51 |  8.43 |      1.31 |
+|          2014-02 |                  43.87 |                0.68 |      5.85 |           11.03 |  22.34 |       0.39 | 10.34 |      1.35 |
+
+Fuente: (Wikimedia, 2014).
+
+#+CAPTION: Gráfica de la Evolución de los Sistemas Operativos en el Acceso a Internet en los Últimos 5 Años (Elaboración propia: CC BY 3.0 ES)
+#+NAME:   fig:5
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/operating-system-evolution-mid.png
+
+De esta manera, la independencia tecnológica sí está creciendo mucho
+cuantitativamente a nivel mundial a nivel de conectarnos a Internet.
+
+El tema del control social con Android no se soluciona, debido a que
+nos conectamos con una cuenta de Google, pero como el software es
+libre, pues podríamos utilizar el software que se encarga de
+solucionar este problema, por ejemplo, [[http://www.cyanogenmod.org/][CyanogenMod]].
+
+** La Diversidad Lingüística
+
+En el movimiento obrero la cuestión idiomática siempre es
+controvertida, tratando de favorecer las lenguas locales y necesitando
+lenguas que favorezcan el internacionalismo, o al menos la compresión
+entre diferentes culturas.
+
+En (Montecelo, 2002) ya se habla de la importancia de la traducción de
+software en las lenguas minorizadas. Así mientras, en el mundo del
+software privativo la posibilidad de traducir se basa en una presión
+económica y política a la empresa que tiene el control del código, en
+el movimiento del Software Libre es la voluntad obrera quien permite
+esa posibilidad.
+
+** El Boicot
+
+Hay un boicot consciente a las empresas de software privativo que es
+simplemente no usarlo, usando un reemplazo idealista de software
+libre, de la misma manera que boicoteríamos la industria de Coca Cola,
+fabricando y consumiendo nuestros propios zumos de proyectos
+autogestionados.
+
+Para el boicot de estilo cracking: sabotear la seguridad informática
+de organizaciones, el software libre tiene un valor muy moderado, se
+puede aprender acerca de protocolos mirando software libre, pero
+también leyendo libros y construyendo software. Al final son de nuevo
+los valores de la persona lo que le llevan a utilizar software libre o
+no.
+
+Es por tanto, el Software Libre un boicot de valores de construir una
+alternativa libre, que hunda por practicidad y política la alternativa
+fascista. El boicot de la conflictividad y el sabotaje correspondería
+a una estrategia anarquista, o de otro tipo de ideología antifascista.
+
+** La Tecnicidad
+
+Para que un anarquista pueda ganarse el pan, necesita una tecnicidad,
+esto es, una capacidad de hacer trabajo técnico. En la sociedad
+actual, la certificación de que uno puede hacer tal o cual tecnicidad
+puede venir de universidades, centros de formación, o empresas.
+
+No obstante, con la cuestión del Software Libre, una persona tiene la
+capacidad de reivindicar su propia tecnicidad, simplemente publicando
+su código fuente. Así, la persona puede demostrar su capacidad de
+trabajo independientemente de lo que otras personas digan, o piensen
+liberando trabajo, al tiempo que tal vez está llevando a su visión
+anarquista la sociedad. Quizás una persona de recursos humanos, se
+fiará más de un currículum, pero sus iguales sí reconocerán su
+capacidad. Esa tecnicidad puede quedar guardada durante muchos años, e
+incluso poder ver si la persona la actualiza.
+
+* Diferentes Formas de Militancia por el Antifascismo en el Software
+** GNU
+
+[[http://www.gnu.org][GNU]] establece la base filosófica y tecnológica para la construcción de
+la libertad en el software. En GNU la militancia se basa en la
+construcción de un sistema operativo libre y completo. Hay una [[https://www.fsf.org/campaigns/priority-projects/][lista
+proyectos prioritarios en la FSF]], si quiere empezar por uno de los que
+se considera muy importantes.
+
+El problema de GNU para los anarquistas es el no reconocimiento
+interno de que es anarquismo. En realidad, un mantenedor de un paquete
+de software es algo similar, a lo que vendría siendo un secretario,
+tiene poder desde el mando técnico y político, por tanto, encaja
+bastante bien con la idea anarquista o anarcosindicalista. En lo
+político, tristemente, quienes no compartan nuestros principios
+podrían robarnos legitimidades para los partidos y/o sindicatos del
+poder, cosa que rara vez pasa en lo práctico, normalmente son
+trabajadores de empresa que defienden sus dignidades profesionales
+casi exclusivamente a la manera de GNU, pero también existen como
+socios de alguna pequeña empresa (ej: [[https://trisquel.info/][Trisquel]]). En lo comercial
+podrían hacer buenos tratos con los anarquistas del software libre. Y
+donde sale mejor es en las cuestiones de la ciencia, al preocuparse en
+GNU por la libertad en un área técnica, es más fácil encontrar la
+legitimidad de nuestros trabajos científicos.
+
+** FSF
+
+La Free Software Foundation es el arma legal y política para defender
+a GNU, allí existen abogados y campañas políticas, para defender los
+proyectos de GNU.
+
+Algunas campañas importantes son:
++ [[http://endsoftpatents.org/][Abolición de patentes de software]]
++ [[https://fsf.org/campaigns/freejs][Abolir javascript no libre de sitios web]]
++ [[https://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/statement/][Abolir restricciones a que los ordenadores puedan arrancarse con software libre]]
++ [[https://www.fsf.org/resources/hw/how_hardware_vendors_can_help.html][Apoyar que todo hardware tenga drivers libres]]
++ [[https://www.fsf.org/campaigns/surveillance][Proteger la privacidad y la libertad]]
++ [[https://www.fsf.org/campaigns/opendocument][Favorecer opendocument]]
++ [[https://www.fsf.org/campaigns/free-bios.html][Por la libertad en las bios]]
++ [[http://www.fsf.org/campaigns/playogg/][Favorecer el formato ogg]]
+
+** El Opensource
+
+Con el OpenSource es diferente, se habla solo desde la conveniencia
+técnica y de mercado. La actitud anarquista podría ser acercarse solo
+desde estas perspectivas. Si ellos van solo a ganar dinero y/o
+tecnicidades vayamos a eso, asumiendo que quienes no compartan nuestra
+ideología serán nuestros patrones, o colegas de trabajo y no nuestros
+socios políticos.
+
+El anarquismo no aspira a un sistema operativo libre completo,
+aspiramos a un sistema político libre completo. Los ordenadores, si
+queremos usarlos, son objetos de consumo, producción y comunicación
+con los que ser críticos, para que no nos roben nuestra libertad.
+
+** Hacktivismo
+Básicamente las personas que se reunen en hacklabs o hackmeetings,
+cercanos al movimiento de la okupación, hacen muchos buenos trabajos
+en la cuestión pedagógica de ideales de software libre, si les
+apetece, crear afinidades de software libre en las ciudades y muchas
+veces, son muy activos en ciberderechos tales como privacidad, o leyes
+injustas.
+
+Esta cuestión se ha abordado sobre todo en [[http://www.sindominio.net/hackmeeting][España]] e [[http://it.hackmeeting.org/][Italia]], durante
+muchos años.
+
+En otros países se cambia el sabor anarquista por comunidades del
+software libre con más ideología: [[https://metalab.at/][Metalab]], [[http://www.tech-center-enlightentcity.tv][South End Technology
+Center]], o quitando más valores lo que se viene llamando
+[[https://en.wikipedia.org/wiki/Hackerspace][hackerspaces]]. He llegado a ver barbaridades ideológicas raras en lo
+que se llama hackerspace en Diciembre de 2012, visité el [[https://en.wikipedia.org/wiki/C-base][c-base]], a
+nivel decorativo parecía a todas luces en la propaganda y en la
+decoración del espacio un hacklab, pero de repente empezó la charla y
+desde una ubuntu nos querían enseñar el lenguaje de programación .NET
+de Microsoft, las pizzas nos las financiaba Microsoft
+directamente. Entiendo que en este tipo de espacios hay giros
+ideológicos de unos lados a otros y lo que nos puede resultar
+coherente en un momento dado, puede cambiar en otro, yo solo hablo
+desde mi experiencia de campo.
+
+Otras proyectos dentro del hacktivismo son cuestiones como [[http://www.sindominio.net][sindominio]],
+[[http://riseup.net][riseup]], [[http://indymedia.org][indymedia]], [[http://guifi.net][guifi.net]], etc.
+
+#+CAPTION: Logo de la Página Principal del Hackmeeting de 2012 (Fuente Hakckmeetig: GFDL)
+#+NAME:   fig:6
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/Logo_entrada_HackGaraiak.png
+
+** Grupos de Usuarios de Software Libre
+Estos grupos nacen más vinculados a las universidades, en lo que se
+solía llamar GUL (Grupos de Usuarios de GNU/Linux), en la actualidad
+hay grupos de usuarios asociadas a herramientas concretas, o lenguajes
+de programación, dado como ha ido creciendo nuestro movimiento.
+
+Estos grupos suelen cuidar más aspectos profesionales y/o técnicos que
+ideológicos, pero al final está siempre todo relacionado.
+
+** Cultura Libre
+La Cultura Libre (Lessig, 2004), nace de un ex-miembro de la [[http://www.fsf.org][Free
+Software Foundation]], llamado Lawrence Lessig, que con su tecnicidad
+como abogado entendió que podía llevarse la idea de libertad de
+licencias de software, a obras artísticas o culturales (libros,
+música, imágenes, vídeo, etc.) diseñando las licencias Creative
+Commons. Generalmente, suelen tener sensibilidades de software libre
+también.
+
+Dentro de este área encontramos comunidades como [[https://www.jamendo.com][Jamendo]], [[https://www.wikipedia.org/][Wikipedia]],
+[[http://mediagoblin.com/][Mediaglobin]], [[http://www.openstreetmap.org][OpenStreetMap]], etc.
+
+#+CAPTION: Lawrence Lessig (Creative Commons) Jimmy Wales (Wikipedia) (Fuente Wikipedia: CC BY 2.0)
+#+NAME:   fig:7
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/Lessig-Wales-20070615.jpg
+
+** Sindicalismo y Anarcosindicalismo
+Cuanto más legítimo y alejado del poder está un sindicato, más le
+interesan las cuestiones del Software Libre, normalmente.
+
+Sin ir más lejos, sindicatos como [[http://informaticamadrid.cnt.es/social/software-libre][STSI - Madrid]], existe un [[http://informaticamadrid.cnt.es/social/software-libre][apartado de
+Software Libre]], lógicamente también por ser del ramo que les ocupa,
+pero en general existen estas sensibilidades en mayor o menor
+medida. En realidad, sería muy importante que toda la militancia de
+este sindicato adoptara como táctica de lucha el Software Libre en sus
+puestos de trabajo, al igual que pegatinas o panfletos.
+
+#+CAPTION: Un GNU simulando al gato erizado anarquista (Fuente STSI: CC BY 3.0 Unported.)
+#+NAME:   fig:8
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/black-gnu.png
+
+El problema con el sindicalismo es que con la politización, se llega a
+los negocios de la mentira, esto es malo para el desarrollo de
+software que siempre son negocios de la verdad. No desligitimo en lo
+moral los negocios de la mentira en el anarcosindicalismo, ya que
+muchas veces son tácticas para que el obrero no llegue al despido, o
+algún otro avance, aunque no siempre resulten bien. Pero sí considero
+inconveniente para el estado mental que necesita un buen programador
+idealista que es centrado todo el rato en los negocios de la verdad,
+mejorando sus programas de software para mejorar su economía y sus
+cuestiones de la vida al tiempo que mejora el mundo. Otro problema son
+los odios internos, en otras profesiones no sale tan mal porque
+criticando al semejante se refuerzan en sus morales y deben ser
+coherentes con ellas. En la informática sale mal porque los hackers
+anarquistas con afinidad a la CNT no somos tantos, deberíamos
+llevarnos bien, para intercambiar tecnicidades y mejorarnos unos a otros.
+
+Pero sí es el anarcosindicalismo de los mejores sitios para organizar
+las rabias contra las injusticias de los estados y los patrones, la
+CNT sobrevivió a 40 años de dictadura fascista y durante la guerra
+supo demostrar que las masas organizaron su vida y su economía de
+contra toda forma de autoridad, mediante colectividades agrarias e
+industriales. Más de 100 años estudiando el autoritarismo en el Estado
+y en los puestos de trabajo.
+
+** Cooperativas
+Los militantes del software libre suelen vivir felices en cooperativas
+o proyectos autogestionados, al haber diferentes programadores
+idealistas que se ven todos los días y hay incentivos de contratos
+económicos es una manera sostenible de mantenerse en posturas
+tecnológicas favorables a las personas que lo integran y a la
+sociedad. Así, se cumplen sus sueños profesionales que son políticos y
+tecnológicos normalmente, siempre asumiendo que son parte de un
+mercado capitalista.
+
+El problema es el desencuentro porque se pierden afinidades por
+motivos políticos y personales que acaban siendo técnicos también.
+
+** Grupos de Crackers
+Con el comienzo de Internet, llegaron los grupos de seguridad
+informático, que algunas veces vinculados a grupos anarquistas,
+practicaban el boicot y sabotaje a la seguridad informática de
+organizaciones.
+
+Algunos grupos históricos y/o conocidos son [[https://www.ccc.de/][Chaos Computer Club]],
+[[https://en.wikipedia.org/wiki/Anonymous_%28group%29][Anonymous]], [[http://www.2600.com][2600]], [[http://w3.cultdeadcow.com/cms/][Cult of the Dead Cow]], etc.
+
+Los riesgos con estos grupos son los derivados de saltarse las leyes y
+boicotear.
+
+* La Rabia Anarquista en la Programación
+Hay sendos artículos de las actitudes que llevan a una persona a ser
+hacker que no es necesario repetir (ver [[http://www.norvig.com/21-days.html][Teach Yourself Programming in
+Ten Years]], [[http://www.catb.org/~esr/writings/taoup/html/][The Art of Unix Programming]]) y las motivaciones generales
+de un programador/a (ver [[https://www.gnu.org/philosophy/fs-motives.html][Motives For Writing Free Software]]).
+
+En la cuestión anarquista, la decisión es llevar la rabia hacia el
+cálculo, por ganar en esos otros motivos. Si la rabia es alta, es
+mejor ir a manifestaciones, piquetes u otras estrategias de acción
+directa.
+
+Pero cuando es suave, es bonito hacerla duradera mediante
+algo de programación, al compartir software con el mundo esa rabia se
+recuerda como algo productivo para con el mundo y para con la persona
+anarquista que la hizo.
+
+Un sindicato anarquista, o un centro social tiene sus pequeñas
+necesidades de programación, también hay distribuciones de software
+libre anarquista, o como en GNU o Debian hay proyectos idealistas, con
+poca participación de empresas o estados (normalmente viene a través
+de trabajadores/as, en su tiempo libre o no). Aunque tal vez prefieras
+algo que te interese a tí para el mundo y no a tu comunidad ácrata más
+directa, para que no se politice excesivamente tu tecnología con tus
+afectos políticos directos.
+
+Sin embargo, es posible concentrarse bien en bibliotecas, con
+concentraciones a través de ejercicios matemáticos parecidas a las que
+se necesitan en programación, o directamente cerca de programadores, o
+simplemente cerca de la naturaleza.
+
+* Conclusión
+
+Mi conclusión es que la evolución en el mundo de la informática es que
+en lo cuantitativo y en el nivel de negocios de mercado el software
+libre ha avanzado de una manera admirable, la mayoría de los peligros
+que impedirían su desarrollo suelen vencerse, si bien no hay que
+relajarse mucho pensando que siempre va a ser así.
+
+Sin embargo, en lo cualitativo la humanidad está cada día más vencida
+por la tecnología fascista, tantos por las estrategias de control
+social, como por la acumulación salvaje de riqueza material.
+
+El anarquismo debe aprender a ser más consciente y responsable en el
+tema de la libertad en el software para evitar el fascismo a través de
+la tecnología.
+
+Para mí las problemáticas derivadas del fascismo y el antifascismo en
+la tecnología no sería un tema de pureza anarquista más, como lo puede
+ser el veganismo, o el nudismo, sino de lo más prioritarios en la
+estrategia anarquista, para evitar futuros horribles para la
+humanidad. Siempre hay y ha habido muchos peligros fascistas:
+psiquiatría, religión, guerras, ... el software fascista es uno de
+esto grandes peligros que nos llevaría a una sociedad muy tiránica.
+
+Con software libre se puede evitar el problema del control social y si
+hablamos en términos de eticidad en la tecnología sí evitaremos ambos
+problemas (control social y desigualdad salvaje).
+
+España es el puesto 13 del planeta en PIB. Los problemas de los
+españoles (CIS, 2014) son de mayor a menor preocupación: el paro
+(77%), la corrupción y el fraude (41.5%), la economía (28.0%), los
+partidos (26.4%).
+
+Para hacer ensayos de revueltas de software libre contra los problemas
+que nos amenazan, un obrero con cabreo contra injusticias planetarias
+que se queda en el paro, tal vez podría probar a programar y se
+centraría en negocios de la verdad que es lo contrario al fraude. Así
+mejoraría algo su economía al haber ganado algo de tecnicidad. Los
+salarios en informática son bastante bajos con respecto el resto de
+Europa, pero no es una de las áreas más afectadas por el desempleo en
+este país.
+
+Es extraño que no se considere el autoritarismo como un problema de la
+población española, el vestigio franquista está inmerso en la cultura
+material de ciudades cultas como Madrid, pero también en culturas
+empresariales como las grandes empresas de informática que matan la
+creatividad y tecnicidad que se hubiera transformado en economía. La
+rabia anarquista es desde luego un arma psicológica para la clase
+obrera contra esas preocupaciones que atemorizan a la sociedad
+española.
+
+La CNT tiene mucha experiencia en generar riqueza con valores ya sea
+en colectividades, o defendiendo salarios en cooperativas y puestos de
+trabajo es por ello que se puede negociar con estas formas de
+economías con valores como el software libre.
+
+#+CAPTION: Logo de la CNT (Fuente: CNT)
+#+NAME:   fig:9
+file:/home/davidam/tosync/documentos/revista-estudios/img/reviewed/logo-cnt.png
+
+* Bibliografía
+
++ Arroyo, D. (2012). "/Trabajo de Fin de Máster. Usos, Actitudes y Necesidades Tecnológicas de los Movimientos Sociales de la ciudad de Madrid/", UCM, visto Septiembre de 2014, <http://davidam.com/docu/tfm.html>.
++ CIS (2014). "/Tres problemas principales que existen actualmente en España/" CIS. Visto en Julio de 2014 <http://www.cis.es/cis/export/sites/default/-Archivos/Indicadores/documentos_html/TresProblemas.html>.
++ Community Exchage System (2014). "/The Community Exchange System - Reinventing Money/". Visto en Septiembre de 2014 <https://www.community-exchange.org/docs/show.asp?doc=ddd.html>.
++ El Mundo (2005). "/Ibarra, González Pons y el Senado, premios 'Libre.Org'/" El Mundo. Visto en Agosto de 2014 <http://www.elmundo.es/navegante/2005/05/05/softlibre/1115309346.html>.
++ Indexmundi (2014). "/Producto Interno Bruto (PIB) - Indexmundi/". Indexmundi. Visto en Agosto de 2014 <http://www.indexmundi.com/g/r.aspx?v=65&l=es>.
++ Forbes (2014). "/The World's Biggest Companies/" Forbes. Visto en Agosto de 2014 <http://www.forbes.com/global2000/>.
++ Nakamoto, S. (2008). "/Bitcoin: A peer-to-peer electronic cash system/". Visto en Septiembre de 2014.
++ Montecelo, M. (2002). "/Software libre e linguas minorizadas/". Trasno. Visto en Septiembre de 2014.
++ Lessig, L (2004). "/Free Culture: How Big Media Uses Technology and the Law to Lock Down Culture and Control Creativity/”. Penguin.
++ Stallman, R. M. (2014). "/¿Cuánta vigilancia puede soportar la democracia?/". GNU. Visto en Agosto de 2014 <http://www.gnu.org>.
++ Stallman, R. M. (2013). "/¿Qué es el software libre?/". GNU. Visto en Agosto de 2014 <http://www.gnu.org>.
++ Stallman, R. M. (2002). "/Free Software, Free Society/". GNU Press. pp 41.
++ The Richest (2014). "/Richest Tech Millonaires/" therichest.com. Visto en Agosto de 2014 <http://www.therichest.com/celebnetworth/celebrity-business/tech-millionaire/linus-torvalds-net-worth/>.
++ Zerzan, J. (2012). "/Future Primitive Revisited/". Feral House.
