@@ -20,7 +20,7 @@ complex search features and requirements.
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html
 
-* Checking 
+* Checking
 #+BEGIN_SRC bash
 http://localhost:9200/
 #+END_SRC
@@ -34,7 +34,10 @@ http://localhost:9200/_cat/indices
 #+BEGIN_SRC bash
 $ curl 'http://localhost:9200/_cat/indices?pretty' -H "Accept: application/json"
 #+END_SRC
-
+* Delete index
+#+BEGIN_SRC bash
+$ curl -XDELETE localhost:9200/commits
+#+END_SRC
 * Show an index
 #+BEGIN_SRC bash
 $ wget http://localhost:9200/dam-index/
@@ -48,7 +51,7 @@ $ wget -c http://localhost:9200/dam-index/_search
 * The cluster state API allows to get a comprehensive state information of the whole cluster.
 #+BEGIN_SRC bash
 $ wget http://localhost:9200/_cluster/state
-#+END_SRC 
+#+END_SRC
 
 * Master
 #+BEGIN_SRC bash
