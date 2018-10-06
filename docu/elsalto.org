@@ -1,0 +1,278 @@
+#+TITLE: Problemas Éticos en el Mundo del Software
+#+h3: David Arroyo Menéndez
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+EMAIL: davidam@gnu.org
+#+DATE: 04/10/2018
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+
+* Introducción
+
+La industria del software domina nuestras vidas por digamos cuatro
+razones principales.
++ La guerra entre el Software Libre y el software privativo que nos
+  lleva a usar software como si fuera una tostadora cuando tenemos
+  toda nuestra vida en forma de datos personales y nuestra economía en
+  la tostadora.
++ Exceso de dinero de unos pocos magnates y corporaciones contra la
+  ciudadanía.
++ El control social que ejercen unas cuantas aplicaciones software
+  sobre las vidas de la gente.
++ Falta de perspectiva integral desde los movimientos éticos en los
+  que nos apoyamos para equilibrar la economía a favor de la
+  ciudadanía en esta cuestión.
+
+* Software Libre y Software Privativo
+
+El software es básicamente matemáticas escritas en un ordenador,
+escribir software es básicamente escribir una secuencia de pasos
+matemáticos para resolver un problema.
+
+Las personas que nunca hayan hecho secuencias de problemas matemáticos
+podría decírseles que es básicamente como cocinar, por ejemplo, una
+sopa de sobre:
+1. Poner el agua a calentar hasta el punto de ebullición:
+2. Echar el sobre en el agua.
+3. Esperar 15 minutos.
+4. Echar la sopa en el plato.
+
+A una secuencia de pasos matemáticos se le puede generar una
+protección legal y nos planteamos si le permitimos a la secuencia de
+pasos qué libertades.
++ Libertad de uso.
++ Libertad de copia.
++ Libertad de modificar.
++ Libertad de copiar lo modificado.
+
+Si tienes estas cuatro libertades se le llama Software Libre, si no se
+le puede llamar software no libre, o privativo.
+
+Con la invención del software privativo, algunos científicos
+conservadores de la ética anterior de compartir el código con esas
+libertades inventaron la cuestión del Software Libre, con Richard
+Stallman como principal filósofo científica de la cuestión y muchos
+científicos colaborando con software.
+
+Hubo un momento en que el movimiento se escindió de GNU a Open Source,
+muchas personas se acercan al mundo del software solo por dinero y le
+parecen bien los valores originales de los científicos de la
+computación en lo práctico de lo que hacen en lo técnico, pero les
+molesta muchísimo hablar en términos de libertad para generar negocio.
+
+* Desigualdades económicas
+
+FALTA DAR DATOS DE DESIGUALDADES ECONÓMICAS.
+
+¿Por qué se produce desigualdad económica, por ejemplo, en una
+economía familiar?. Los valores de los padres son normalmente dar las
+mismas posibilidades a los hijos. Si un hijo es altruista y otro es
+egoista, tenemos un individuo que gorronea la solidaridad familiar y
+sobre todo al altruista. Si la economía del egoista se consolida más
+rápido que la del altruista y por un tema de valores entran en
+contradicción pues lo normal es que gane el egoista. Lo normal cuando
+uno está en una comunidad que no corresponde en valores para mejorar
+la economía es salirse y llegar a una comunidad de valores compatibles
+que permitan hacer crecer la economía del individuo de manera viable
+para la comunidad a la que llega.
+
+Ahora veamos lo que pasa en el mundo del software, unas pocas opciones
+son las que se consolidan en el mundo por razones prácticas de los
+usuarios, por ejemplo, en el mundo de los sistemas operativos cuando
+un programador va a construir software quiere que le funcione en los
+sistemas operativos que la gente use. Si tiene que construir ese
+software para 200 sistemas operativos y eso le obliga a reescribir
+código es bastante probable que no lo haga. Si hay sistemas operativos
+que son no libres la portabilidad no está garantizada, es decir, es
+posible que en el sistema operativo no libre pongan dificultades para
+que funcione en ambos. Así, el hijo altruista de los sistemas
+operativos está en gran desventaja si está en desventaja económica.
+
+|   | C      | D      |
+| C | (2, 2) | (0, 3) |
+| D | (3, 0) | (1, 1) |
+
+Es lo que en cooperación se suele llamar el dilema del prisionero,
+cuando el opuesto constantemente defrauda es un poco tonto cooperar
+con él, porque en aún en el caso que coopere no sacarías más dinero
+que él (2). Si defraudas al que no coopera sacarás poco (1), pero no
+pierdes.
+
+| Sistema Operativo | % en Abril de 2009 | % en Marzo de 2012 | % en Abril de 2015 |
+| Windows           |               89.5 |              75.79 |              41.44 |
+| Mac               |               6.05 |               8.69 |               5.68 |
+| Linux             |               1.49 |               5.31 |              15.74 |
+| iPhone            |               0.93 |               5.22 |              22.25 |
+| iPad              |                  0 |               2.39 |               7.69 |
+| Blackberry        |               0.15 |               0.83 |               0.23 |
+| SymbianOS         |               0.09 |               0.17 |               0.02 |
+| DoCoMo            |               0.02 |               0.01 |               0.01 |
+| SunOS             |               0.01 |               0.01 |                  0 |
+| FreeBSD           |               0.01 |               0.01 |                  0 |
+| OpenBSD           |                  0 |                  0 |                  0 |
+| Total             |              98.25 |              98.43 |              93.06 |
+
+En el mercado de los sistemas operativos hasta el invento de los
+móviles inteligentes y, por tanto, la llegada de Android con Google
+como empresa desde la que invertir en el kernel libre Linux, esta
+opción era prácticamente inexistente en los sistemas operativos desde
+los que se conectan los usuarios de wikipedia. Desde luego, no todo lo
+que es Android es Software Libre, pero sí al menos el kernel más
+famoso del mundo UNIX. Mac desde el año 2001 usa un microkernel Mach
+que viene de un desarrollo para FreeBSD al tener una licencia con la
+compresión de la libertad de poderse privatizar pues pasó a ser un
+kernel no libre y la opción también muy pequeña de FreeBSD no mejora
+tampoco.
+
+Las personas que quieren ver el Software Libre desde una perspectiva
+ideológica, no lo hacen muy bien. En general es algo que viene bien a
+la ciencia y, por tanto, más o menos es positivo para todas las
+ideologías, como la creación de universidades. El Software Libre
+vendrá mal a algunos componentes de software privativo, obviamente si
+tu puedes conseguir el software sin pagar, pues puede ser que esté
+destruyendo algún negocio de pago, pero no siempre es así, por
+ejemplo, el mercado de escritorio es muy estable.
+
+ESTE PÁRRAFO ESTÁ INCOMPLETO. TEMAS A TERMINAR:
++ [ ] Estadísticas de la estabilidad del escritorio
+
+[[file:///home/davidam/git/davidam.github.io/img/top500-linux.png]]
+(Fuente: top500, 2018)
+
+
+| Numero | Nombre                  | Dinero (2014) | Dinero (2018) | País    | Compañía           |
+|      1 | Jeff Bezos              | -             | $112.0        | EEUU    | Amazon             |
+|      2 | Bill Gates              | $76.0         | $90.0         | EEUU    | Microsoft          |
+|      3 | Warren Buffett          | $58.2         | $84.0         | EEUU    | Berkshire Hathaway |
+|      4 | Bernard Arnault         | -             | $72.0         | Francia | LVMH               |
+|      5 | Mark Zuckerberg         | -             | $71.0         | EEUU    | Facebook           |
+|      6 | Amancio Ortega          | $64.0         | $70           | Spain   | Inditex Group      |
+|      7 | Carlos Slim & family    | $72.0         | $67.1         | Mexico  | América Móvil      |
+|      8 | Charles Koch            | $40.0         | $60.0         | EEUU    | Koch Industries    |
+|      9 | David Koch              | $40.0         | $60.0         | EEUU    | Koch Industries    |
+|     10 | Larry Ellison           | $48.0         | $58.5         | EEUU    | Oracle Corporation |
+|     11 | Sheldon Adelson         | $38.0         | -             | EEUU    | Las Vegas Sands    |
+|     12 | Christy Walton & family | $36.7         | -             | EEUU    | Wal-Mart           |
+|     13 | Jim Walton              | $34.7         | -             | EEUU    | Wal-Mart           |
+(Fuente: Forbes 2014, 2018. En millones de dólares.)
+
+En general, los ricos cada vez más ricos, cuando uno ya tiene un poder
+económico muy fuerte es más fácil seguir aplastando economías para
+seguir acrecentando la tuya.
+
+No es posible parar que los ricos sean cada vez más ricos, sin una
+unión entre muchos países, los ciudadanos podemos actuar en un país,
+pero las economías son internacionales. Debería haber una unión
+política muy fuerte entre muchos países para parar ese fenómeno.
+
+* Control Social
+
+Sin paranoias, pero es bastante bueno, entender que desde hace unos
+años todas nuestras comunicaciones son registradas de una manera que
+daría vértigo a los antiguos anarquistas de los años 30 que les
+sometían a escuchas desde el Estado. Ahora la escucha es de masas,
+aunque también se puede escuchar a individuos obviamente, pero con
+inteligencia artificial el capitalismo entiende nuestras múltiples
+ideologías al dedillo, así nuestras maneras de pensar se convierten en
+un producto más del mismo. Obviamente me refiero, a publicidad en
+redes sociales, o publicidad en búsquedas de Internet a partir de lo
+que decimos en el correo electrónico.
+
+Hay mecanismos tecnológicos más con la idea de resistir que de vencer:
++ Utilizar criptografía siempre que se puede defenderá tu privacidad.
++ Utilizar software libre, ayudará a que tu o un programador amigo
+  tuyo explique lo que pasa en tu ordenador si lo necesitas.
++ Saber trabajar con ordenadores conectado y desconectado de Internet
+  también ayuda bastante.
+
+Si se quiere vencer al control social, en realidad, es mejor pensar en
+no utilizar nada de tecnología. Hay culturas que sí lo consiguen, pero
+no he visto nada así en España.
+
+* Soluciones militantes y perspectivas integrales
+
+Quizás el principal problema es la falta de perspectivas integrales
+del software en las diferentes posturas ideológicas. El mundo del
+software es un gran desconocido a menos que seas programador, las
+mejores críticas (Zerzan, Richard Stallman, ...) vienen de científicos
+de computación, que no son muy buenos de otros problemas, por ejemplo,
+un científico de software rara vez tendría un conflicto laboral
+parecido al de un camarero, al tener problemas diferentes a la gente
+en general se aplican soluciones diferentes.
+
+¿Cómo hacer que un partido o un sindicato enrraicen las críticas a la
+tecnología que la sociedad necesita? Pues básicamente se necesitan
+programadores/as que hagan militancia en estos aspectos, este tipo de
+personas no son las que suelen triunfar en estas organizaciones, en
+general, detestamos el derecho que es lo que hace triunfar a los
+políticos. Ian Murdock el creador de Debian, le causó tanto estrés
+político un caso de derecho que prefirió el suicidio, esto es,
+básicamente porque con la situación política que le creaba le parecía
+imposible de resolver de otra manera. Quizás pensó que perdería sus
+partidas políticas hacker y éticas pasara lo que le pasara y que le
+compensaba al mundo y así mismo quitarse la vida. Desde mi punto de
+vista, un hombre acaudalado económicamente podía haberse ocultado en
+un lugar no conectado con la tecnología y hubiera desaparecido de la
+partida de derecho que le planteaban. El señor Julian Assange quien
+tuvo acoso personal desde niño debido a un gafe desde que su madre
+entro en la secta "The Family" optó por encontrar temporalmente
+tranquilo para él.
+
+No es muy bueno que ningún programador juegue a la política, pero sí
+es real que a veces algunas personas nos sentimos obligadas a hacer
+militancia, quizás por políticos que nos lo comandan a leches, nadie
+puede evitar trabajar en motivos morales de una manera convencional, o
+quizás programando. Elegimos sitios quizás hacklabs, sindicatos, csoas
+donde hablar de las cosas, pero una buena guía son los textos de
+GNU [fn:3]. El problema de esta filosofía es que está escrita y
+pensada para científicos de la computación y cada sindicato,
+organización solidaria o partido debe actualizarla a sus valores con
+sus propias palabras. Richard Stallman nunca ha sido obrero en un
+sentido convencional, sí fue científico asalariado por el MIT y desde,
+la creación de GNU es más un santo patrón, que asalaria a gente en la
+FSF, pero no cobra. Con lo cual está filosofía no está pensada para el
+movimiento obrero convencional.
+
+A veces basta con que las organizaciones de valores expliquen
+problemas a la sociedad para que se organice solidaridad hacker en un
+tema de valores.
+
+* Libremanuals como caso de uso positivista
+
+Libremanuals es un proyecto editorial que trata de llevar la
+coherencia moral de GNU sin romper valores del movimiento obrero.
+
+Como utilizamos libros de GNU algunos libros tienen un alto valor
+científico, queremos distribuirlos en universidades, eventos de
+Software Libre, pero también en librerías de movimientos sociales de
+base.
+
+La organización es más como un proyecto voluntarista el mayor peso lo
+llevo yo, hago la web, doy charlas, etc. Pero también ha habido gente
+que se me ha acercado para traducir conmigo (Luis Palomo), o
+proponerme libros que está traduciendo (Jorge Maldonado), o ayudarme
+con las portadas de los libros (Adolfo Antón Bravo). Por otro lado,
+viene de una inercia de aluned que era un colectivo de la UNED que
+entre otras cosas fomentaba la documentación libre para parar el alto
+coste de los libros de texto y mejorar el rendimiento académico con el
+trabajo en comunidad, hemos recibido donaciones anónimas de gente
+ligada a ese colectivo para comenzarlo y además recoge tradición
+filosófica. El dinero que se saca es por ahora más para autofinanciar
+el proyecto que para otra cosa, quizás en el futuro sí sirva para
+generar algún salario como en el proyecto editorial Network Theory,
+pero por ahora no es el caso.
+
+* Referencias
+
+[fn:1] http://stats.wikimedia.org/archive/squid_reports/2009-04/SquidReportOperatingSystems.htm,
+http://stats.wikimedia.org/archive/squid_reports/2012-03/SquidReportOperatingSystems.htm,
+http://stats.wikimedia.org/archive/squid_reports/2015-04/SquidReportClients.htm
+
+[fn:2] http://www.davidam.com/docu/imagina-bibliografia-libre.html,
+http://www.libremanuals.net/faq-freedoc.html,
+
+[fn:3] https://www.gnu.org/philosophy/philosophy.es.html
+
+* Licencia
+Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
+
+[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]
