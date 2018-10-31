@@ -10,12 +10,11 @@
 
 La industria del software domina nuestras vidas por digamos cuatro
 razones principales.
-+ La guerra entre el Software Libre y el software privativo que nos
-  lleva a usar software como si fuera una tostadora cuando tenemos
-  toda nuestra vida en forma de datos personales y nuestra economía en
-  la tostadora.
-+ Exceso de dinero de unos pocos magnates y corporaciones contra la
-  ciudadanía.
++ La falta de libertades que el software privativo, deja datos
+  personales e innovación técnica a merced de millonarios.
++ Acumulación de dinero de unos pocos magnates y corporaciones contra
+  la ciudadanía. Entre los mayores millonarios hay más informáticos
+  que banqueros.
 + El control social que ejercen unas cuantas aplicaciones software
   sobre las vidas de la gente.
 + Falta de perspectiva integral desde los movimientos éticos en los
@@ -37,8 +36,11 @@ sopa de sobre:
 4. Echar la sopa en el plato.
 
 A una secuencia de pasos matemáticos se le puede generar una
-protección legal y nos planteamos si le permitimos a la secuencia de
-pasos qué libertades.
+protección legal. A esto se le llama copyright, por defecto, el
+copyright reserva todos los derechos al propietario del copyright, que
+muchas veces coincide con el autor. El movimiento del Software Libre
+otorga una protección de copyright a las siguientes libertades:
+
 + Libertad de uso.
 + Libertad de copia.
 + Libertad de modificar.
@@ -47,21 +49,53 @@ pasos qué libertades.
 Si tienes estas cuatro libertades se le llama Software Libre, si no se
 le puede llamar software no libre, o privativo.
 
+Antes de la invención del software privativo, los ordenadores
+personales, ... El software se construía para la mejora de la ciencia,
+se compartía libremente para explicar la matemática del artículo
+científico relacionado.
+
 Con la invención del software privativo, algunos científicos
 conservadores de la ética anterior de compartir el código con esas
 libertades inventaron la cuestión del Software Libre, con Richard
-Stallman como principal filósofo científica de la cuestión y muchos
-científicos colaborando con software.
+Stallman como principal filósofo científico de la cuestión y muchos
+científicos colaborando con software a través del proyecto GNU (GNU is
+Not Unix), fundado en 1983 y con la FSF (Free Software Foundation)
+como fundación para gestión de socios y donaciones para financiar
+proyectos con prioridad en esta ética científica.
 
-Hubo un momento en que el movimiento se escindió de GNU a Open Source,
-muchas personas se acercan al mundo del software solo por dinero y le
-parecen bien los valores originales de los científicos de la
-computación en lo práctico de lo que hacen en lo técnico, pero les
+Esta ética ha seguido teniendo éxito hasta nuestros días, a pesar de
+que la mayoría los científicos no implementen las ideas radicales de
+Richard Stallman en muchos aspectos. Si están de acuerdo con la idea
+general de que el software libre viene bien para hacer ciencia.
+
+[[file:///home/davidam/git/davidam.github.io/img/top500-linux.png]]
+(Fuente: top500, 2018)
+
+En este gráfico se explica que el grado de penetración de GNU/Linux en
+supercomputación es total. Esto no quiere decir que lo usen todos los
+científicos del mundo, pero sí es un indicador explicativo de que el
+Software Libre para hacer ciencia es una idea ampliamente aceptada.
+
+Hubo un momento en que parte del movimiento de GNU se escindió a Open
+Source, muchas personas se acercan al mundo del software solo por
+dinero y le parecen bien los valores originales de los científicos de
+la computación en lo práctico de lo que hacen en lo técnico, pero les
 molesta muchísimo hablar en términos de libertad para generar negocio.
 
-* Desigualdades económicas
+Puesto que ciencia y empresas de innovación tecnológica tiene una alta
+correlación es más o menos normal que esta idea de hablar en términos
+de rentabilidad de los aspectos prácticos del software libre tuviera
+éxito. La crítica hecha por Stallman es que si se deja de hablar en
+términos de libertad es bastante probable que se olvide el objetivo de
+libertad en el software [fn:0].
 
-FALTA DAR DATOS DE DESIGUALDADES ECONÓMICAS.
+Entonces tenemos una idea ética que es la cooperación en el mundo del
+software, generando bienes públicos, software público para la
+sociedad. Y esto tiene un éxito de popularidad, sobre todo científica,
+pero también en el mundo de los servidores de Internet la penetración
+de GNU/Linux es bastante fuerte [fn:1].
+
+* Desigualdades económicas
 
 ¿Por qué se produce desigualdad económica, por ejemplo, en una
 economía familiar?. Los valores de los padres son normalmente dar las
@@ -95,7 +129,8 @@ Es lo que en cooperación se suele llamar el dilema del prisionero,
 cuando el opuesto constantemente defrauda es un poco tonto cooperar
 con él, porque en aún en el caso que coopere no sacarías más dinero
 que él (2). Si defraudas al que no coopera sacarás poco (1), pero no
-pierdes.
+pierdes. Hay muchos juegos de cooperación [fn:2], por favor, no me
+llamen un pesimista de la cooperación.
 
 | Sistema Operativo | % en Abril de 2009 | % en Marzo de 2012 | % en Abril de 2015 |
 | Windows           |               89.5 |              75.79 |              41.44 |
@@ -110,34 +145,36 @@ pierdes.
 | FreeBSD           |               0.01 |               0.01 |                  0 |
 | OpenBSD           |                  0 |                  0 |                  0 |
 | Total             |              98.25 |              98.43 |              93.06 |
+(Fuente: wikipedia stats, 2009, 2012, 2015 [fn:3])
+
+En la tabla se muestra el sistema operativo desde los que se conectan
+los usuarios de wikipedia, según Alexa [fn:4] Wikipedia es el quinto
+sitio más visitado de Internet, con lo cual es la muestra con datos
+públicos más grande del mundo hasta 2015. Lo cual es bastante
+representativo para entender la realidad de los sistemas operativos
+desde los que podemos acceder a Internet.
 
 En el mercado de los sistemas operativos hasta el invento de los
 móviles inteligentes y, por tanto, la llegada de Android con Google
-como empresa desde la que invertir en el kernel libre Linux, esta
-opción era prácticamente inexistente en los sistemas operativos desde
-los que se conectan los usuarios de wikipedia. Desde luego, no todo lo
-que es Android es Software Libre, pero sí al menos el kernel más
-famoso del mundo UNIX. Mac desde el año 2001 usa un microkernel Mach
-que viene de un desarrollo para FreeBSD al tener una licencia con la
-compresión de la libertad de poderse privatizar pues pasó a ser un
-kernel no libre y la opción también muy pequeña de FreeBSD no mejora
-tampoco.
+como empresa desde la que invertir en el kernel libre Linux (el kernel
+es la componente con el hardware, la máquina física) esta opción era
+prácticamente inexistente en los sistemas operativos desde los que se
+conectan los usuarios de wikipedia. Desde luego, no todo lo que es
+Android es Software Libre, pero sí al menos el kernel Linux. MacOS
+desde el año 2001 usa un microkernel Mach que viene de un desarrollo
+para FreeBSD (otro sistema operativo libre) que al tener una licencia
+con la compresión de la libertad de poderse privatizar pues pasó a ser
+un kernel no libre y la opción también muy pequeña de FreeBSD no
+mejora tampoco. De nuevo, software público que no se privatiza, más
+éxito de mercado que el que se privatiza, quizás en esos valores saben
+que son más seguros en valores.
 
-Las personas que quieren ver el Software Libre desde una perspectiva
-ideológica, no lo hacen muy bien. En general es algo que viene bien a
-la ciencia y, por tanto, más o menos es positivo para todas las
-ideologías, como la creación de universidades. El Software Libre
-vendrá mal a algunos componentes de software privativo, obviamente si
-tu puedes conseguir el software sin pagar, pues puede ser que esté
-destruyendo algún negocio de pago, pero no siempre es así, por
-ejemplo, el mercado de escritorio es muy estable.
-
-ESTE PÁRRAFO ESTÁ INCOMPLETO. TEMAS A TERMINAR:
-+ [ ] Estadísticas de la estabilidad del escritorio
-
-[[file:///home/davidam/git/davidam.github.io/img/top500-linux.png]]
-(Fuente: top500, 2018)
-
+En general, el Software Libre es algo que viene bien a la ciencia y,
+por tanto, más o menos es positivo para todas las ideologías, como la
+creación de universidades. El Software Libre vendrá mal a algunos
+componentes de software privativo, obviamente si tu puedes conseguir
+el software sin pagar, pues puede ser que esté destruyendo algún
+negocio de pago, pero no siempre es así.
 
 | Numero | Nombre                  | Dinero (2014) | Dinero (2018) | País    | Compañía           |
 |      1 | Jeff Bezos              | -             | $112.0        | EEUU    | Amazon             |
@@ -157,12 +194,35 @@ ESTE PÁRRAFO ESTÁ INCOMPLETO. TEMAS A TERMINAR:
 
 En general, los ricos cada vez más ricos, cuando uno ya tiene un poder
 económico muy fuerte es más fácil seguir aplastando economías para
-seguir acrecentando la tuya.
+seguir acrecentando la suya. Si una persona, por ejemplo, Jeff Bezos
+acumula la riqueza de un país similar a Ecuador (62 en riqueza de una
+lista de 189) ¿Qué se puede hacer? La dictadura a veces ya no es
+política, ni militar, solo lo es de manera económica, pero sí es
+porque ha habido toda una historia de injusticia política que lo
+permite.
 
 No es posible parar que los ricos sean cada vez más ricos, sin una
 unión entre muchos países, los ciudadanos podemos actuar en un país,
 pero las economías son internacionales. Debería haber una unión
-política muy fuerte entre muchos países para parar ese fenómeno.
+política muy fuerte entre muchos países para parar ese fenómeno. Esa
+unión no se consigue con tratos económicos se necesita una base de
+movimientos sociales solidarios y de clase que combatan esa inercia.
+
+En la actualidad muchas de las principales fortunas del mundo están
+relacionadas con el negocio del software ¿Pero de dónde viene estas
+fortunas? ¿Cómo se crean? Esto no viene de reyes y burguesía basada en
+una acumulación basada de herencia. Microsoft está basado básicamente
+en implementar el software que necesita la gente en ese momento, tener
+los lazos comerciales y generar una inercia social que genere un
+monopolio que por cuestiones económicas a la gente no le compensa
+salir como población, a pesar de que haya otras opciones
+razonables. El experimento ocurre una y otra vez, Amazon es un caso
+parecido y Facebook también. Para evitar un exceso de acumulación
+económica en unas pocas manos, obviamente es necesario medición,
+estudio del fenómeno y legislación internacional. En España, el grupo
+de investigación Libresoft (URJC) [fn:5] hace buenos trabajos de
+estudio y medición del fenómeno del software desde una perspectiva de
+comprensión y apoyo a la filosofía al movimiento del Software Libre.
 
 * Control Social
 
@@ -185,8 +245,92 @@ Hay mecanismos tecnológicos más con la idea de resistir que de vencer:
   también ayuda bastante.
 
 Si se quiere vencer al control social, en realidad, es mejor pensar en
-no utilizar nada de tecnología. Hay culturas que sí lo consiguen, pero
-no he visto nada así en España.
+no utilizar nada de tecnología. Hay culturas que sí lo consiguen, como
+los Amish, culturas indígenas, ... pero no he visto nada así en
+España.
+
+[[file:///home/davidam/git/davidam.github.io/img/amis-caballos.jpg]]
+
+Desde el Salto, me han pedido algunos consejos prácticos para evitar
+control social en usos de Internet. Estos consejos si los lees después
+de 2 años de la publicación de este artículo no sé si serán válidos ya
+que la realidad tecnológica suele cambiar algo rápido, pero para mí sí
+lo son hoy. No considero que sea muy buena idea que alguien pierda
+mucho tiempo en mejorar su privacidad personal, uno tiene que ser apto
+para leer cualquier programa de su ordenador y ser muy bueno en
+detectar ataques para tener una privacidad completa, quizás personas
+como Richard Stallman, sí tienen control total sobre la tecnología que
+usan, la mayoría de las personas no. Sin embargo, como hobby sí
+considero útil hacer ejercicios para mejorar la privacidad.
+
+** Correo Electrónico
+
+Usar criptografía, por ejemplo, gnupg es bastante fácil a día de hoy,
+lo difícil es encontrar gente en los movimientos sociales que le
+apetezca perder el tiempo con este juego tecnológico, pero es un
+aprendizaje de quizás 30 minutos adaptarse a usar criptografía en el
+correo electrónico y protege bastante bien la privacidad [fn:6].
+
+** Mensajería Instantánea
+
+Jabber, el protocolo libre de mensajería que ha sido usado antes de la
+llegada de los móviles, está bastante bien en general y también el
+soporte para móviles, hay iniciativas en todo el mundo en este
+sentido, en Madrid la más militante es Sin Guasa. [fn:7]
+
+También pienso que Signal es software libre y tambień trae
+funcionalidades buenas funcionalidades de criptografía.
+
+** Móvil
+
+Hay iniciativas para eliminar todo el software privativo de tu móvil,
+los encuentro algo tediosos, pero descargar software desde f-droid sí
+es muy útil porque te aseguran que solo descargas software libre y en
+los repositorios que vienen por defecto en los móviles no lo suelen
+distinguir. Si un día quiero estar seguro de que no me detectan a
+través del móvil prefiero dejarlo en casa. Es un poco raro pensar que
+un dispositivo que está constantemente conectado a Internet puede un
+usuario con tiempo limitado para estas cosas tener control total y
+real sobre la computación que ocurre en el dispositivo con nuestros
+datos.
+
+** Ordenador
+
+Es bastante bueno tener un sistema operativo libre instalado. Ubuntu
+es la opción más habitual de inercia de mercado, Debian es un proyecto
+voluntarista y, por tanto, están más preocupados por los aspectos
+éticos del software. La opción de Trisquel [fn:8] que se creó en
+Galicia es muy popular en GNU, la ventaja ética es que solo admite
+Software Libre.
+
+Ahora mismo, ya se superó la fase de dificultades de instalación, hay
+compañías españolas como PCUbuntu [fn:9], o Slimbook [fn:10] que venden
+ordenadores con sistemas operativos libres preinstalado con buena
+relación calidad y precio.
+
+** Encriptación de Ficheros
+
+Hay sistemas de ficheros que permiten la encriptación, los sistemas
+modernos de GNU/Linux permiten elegir un sistema de ficheros con
+encriptación al instalarse. También es posible usar gnupg para
+ficheros concretos que uno quiera encriptar.
+
+** Redes Sociales
+
+Donamos bastantes contenidos y datos personales a redes sociales como
+Facebook y Twitter. Pienso que sí habría que escribir algún software
+para volver a las ideas anteriores de publicar contenidos en Internet,
+sin perder el copyright y el control de los mismos, permitiendo el
+seguimiento con las ideas que había de rss y esas tecnologías de web
+semántica del W3C.
+
+Las redes sociales distribuidas como status.net, diaspora, gnusocial,
+...  no me gustan apenas como alternativa, debido a que todas
+requieren que uses su software concreto para hacer la idea de
+federación y por eso no se popularizan y compiten con Facebook, o
+Twitter. La idea de federación si no es con rss es entrar en
+discusiones estériles. También habría que volver a popularizar más rss
+...
 
 * Soluciones militantes y perspectivas integrales
 
@@ -204,41 +348,53 @@ tecnología que la sociedad necesita? Pues básicamente se necesitan
 programadores/as que hagan militancia en estos aspectos, este tipo de
 personas no son las que suelen triunfar en estas organizaciones, en
 general, detestamos el derecho que es lo que hace triunfar a los
-políticos. Ian Murdock el creador de Debian, le causó tanto estrés
-político un caso de derecho que prefirió el suicidio, esto es,
-básicamente porque con la situación política que le creaba le parecía
-imposible de resolver de otra manera. Quizás pensó que perdería sus
-partidas políticas hacker y éticas pasara lo que le pasara y que le
-compensaba al mundo y así mismo quitarse la vida. Desde mi punto de
-vista, un hombre acaudalado económicamente podía haberse ocultado en
-un lugar no conectado con la tecnología y hubiera desaparecido de la
-partida de derecho que le planteaban. El señor Julian Assange quien
-tuvo acoso personal desde niño debido a un gafe desde que su madre
-entro en la secta "The Family" optó por encontrar temporalmente
-tranquilo para él.
+políticos (al dedicarse a escribir leyes muchos vienen de estudios de
+derecho, abogados, ...). Ian Murdock el creador de Debian, le causó
+tanto estrés político un caso de derecho que prefirió el suicidio,
+esto es, básicamente porque con la situación política que le creaba le
+parecía imposible de resolver de otra manera. Quizás pensó que
+perdería sus partidas políticas hacker y éticas pasara lo que le
+pasara y que le compensaba al mundo y así mismo quitarse la
+vida. Desde mi punto de vista, un hombre acaudalado económicamente
+podía haberse ocultado en un lugar no conectado con la tecnología y
+hubiera desaparecido de la partida de derecho que le planteaban. El
+señor Julian Assange quien tuvo acoso personal desde niño debido a un
+gafe desde que su madre entro en la secta "The Family" optó por
+exiliarse temporalmente a un país tranquilo para él.
 
 No es muy bueno que ningún programador juegue a la política, pero sí
 es real que a veces algunas personas nos sentimos obligadas a hacer
-militancia, quizás por políticos que nos lo comandan a leches, nadie
-puede evitar trabajar en motivos morales de una manera convencional, o
-quizás programando. Elegimos sitios quizás hacklabs, sindicatos, csoas
-donde hablar de las cosas, pero una buena guía son los textos de
-GNU [fn:3]. El problema de esta filosofía es que está escrita y
+militancia, quizás por problemas con políticos, nadie puede evitar
+trabajar en causas morales de una manera convencional, o quizás
+programando (ej: las primeras empresas de software privativo acabaron
+con el laboratorio donde Richard Stallman era feliz, él se conjuró
+contra esas primeras empresas con el proyecto GNU hasta acabar con
+esas empresas en concreto ofreciendo una alternativa libre y gratuita
+a los usuarios [fn:12]). Elegimos sitios quizás hacklabs, sindicatos,
+csoas donde hablar de las cosas, pero una buena guía son los textos de
+GNU [fn:12]. El problema de esta filosofía es que está escrita y
 pensada para científicos de la computación y cada sindicato,
 organización solidaria o partido debe actualizarla a sus valores con
 sus propias palabras. Richard Stallman nunca ha sido obrero en un
 sentido convencional, sí fue científico asalariado por el MIT y desde,
 la creación de GNU es más un santo patrón, que asalaria a gente en la
-FSF, pero no cobra. Con lo cual está filosofía no está pensada para el
-movimiento obrero convencional.
+FSF, pero no cobra que un obrero. Con lo cual está filosofía no está
+pensada para el movimiento obrero convencional.
 
-A veces basta con que las organizaciones de valores expliquen
-problemas a la sociedad para que se organice solidaridad hacker en un
-tema de valores.
+A veces basta con que movimientos sociales y otras organizaciones con
+valores (ONGs, sindicatos, etc.) expliquen problemas a la sociedad
+para que se organice solidaridad hacker en un tema de valores. Esto
+puede materializarse en esas cosas que se piensan en las películas de
+ciberataques, pero a veces es simplemente programas libres que
+combaten una idea de injusticia, por ejemplo, Libremanuals con las
+redes de librerías de movimientos sociales podría ser un buen
+experimento para ir aprendiendo a combatir el problema de Amazon que
+seguramente de otra manera sería el monopolio de la cultura escrita,
+implementando la distopía del derecho a leer [fn:13].
 
 * Libremanuals como caso de uso positivista
 
-Libremanuals es un proyecto editorial que trata de llevar la
+Libremanuals [fn:14] es un proyecto editorial que trata de llevar la
 coherencia moral de GNU sin romper valores del movimiento obrero.
 
 Como utilizamos libros de GNU algunos libros tienen un alto valor
@@ -258,21 +414,47 @@ trabajo en comunidad, hemos recibido donaciones anónimas de gente
 ligada a ese colectivo para comenzarlo y además recoge tradición
 filosófica. El dinero que se saca es por ahora más para autofinanciar
 el proyecto que para otra cosa, quizás en el futuro sí sirva para
-generar algún salario como en el proyecto editorial Network Theory,
-pero por ahora no es el caso.
+generar algún salario como en el proyecto editorial Network
+Theory [fn:15], pero por ahora no es el caso.
 
 * Referencias
 
-[fn:1] http://stats.wikimedia.org/archive/squid_reports/2009-04/SquidReportOperatingSystems.htm,
+[fn:0] https://www.gnu.org/philosophy/open-source-misses-the-point.es.html
+
+[fn:1] https://w3techs.com/
+
+[fn:2] Sánchez-Cuenca, I. (2009). "/Teoría de Juegos/" Centro de Investigaciones Sociológicas.
+
+[fn:3] http://stats.wikimedia.org/archive/squid_reports/2009-04/SquidReportOperatingSystems.htm,
 http://stats.wikimedia.org/archive/squid_reports/2012-03/SquidReportOperatingSystems.htm,
 http://stats.wikimedia.org/archive/squid_reports/2015-04/SquidReportClients.htm
 
-[fn:2] http://www.davidam.com/docu/imagina-bibliografia-libre.html,
+[fn:4] https://www.alexa.com/topsites
+
+[fn:5] http://www.libresoft.info/
+
+[fn:6] https://emailselfdefense.fsf.org/es/
+
+[fn:7] https://www.publico.es/sociedad/nace-singuasa-whatsapp-libertario-y.html
+
+[fn:8] https://trisquel.info/
+
+[fn:9] https://www.pcubuntu.es/
+
+[fn:10] https://slimbook.es/
+
+[fn:11] http://www.davidam.com/docu/imagina-bibliografia-libre.html,
 http://www.libremanuals.net/faq-freedoc.html,
 
-[fn:3] https://www.gnu.org/philosophy/philosophy.es.html
+[fn:12] Stallman, R. (2002). "/Free as in Freedom/" O'Reilly <https://www.oreilly.com/openbook/freedom/>
+
+[fn:13] https://www.gnu.org/philosophy/philosophy.es.html
+
+[fn:14] https://www.gnu.org/philosophy/right-to-read.es.html
+
+[fn:15] https://www.libremanuals.net
+
+[fn:16] http://www.network-theory.co.uk/
 
 * Licencia
 Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
-
-[[http://creativecommons.org/licenses/by/3.0/es/deed.es][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]
