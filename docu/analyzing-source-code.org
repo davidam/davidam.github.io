@@ -33,10 +33,10 @@ Files                       Language        SLOC Comment McCabe
 
 You can measure good practiques making source code with pylint.
 
-#+BEGIN_SRC bash
+#+BEGIN_SRC 
 $ pylint timeout.py
 No config file found, using default configuration
-************* Module app.timeout
+Module app.timeout
 C: 29, 0: Trailing whitespace (trailing-whitespace)
 C:  1, 0: Missing module docstring (missing-docstring)
 E:  9, 4: Method should have "self" as first argument (no-self-argument)
@@ -45,7 +45,6 @@ R:  9, 4: Method could be a function (no-self-use)
 W: 18,23: Unused argument 'timeout' (unused-argument)
 R:  2, 0: Too few public methods (0/2) (too-few-public-methods)
 
------------------------------------
 Your code has been rated at 2.14/10
 #+END_SRC
 
@@ -136,3 +135,7 @@ $ python3 ~/git/python-examples/perceval/perceval_git_counter.py https://github.
 $ python3 ~/git/python-examples/perceval/perceval_git_json.py https://github.com/grimoirelab/perceval.git /tmp/clonedir
 #+END_SRC
 
+* License
+This document is under a [[http://creativecommons.org/licenses/by/4.0/deed][Creative Commons Attribution 4.0 International]]
+
+[[http://creativecommons.org/licenses/by/4.0/deed][file:http://i.creativecommons.org/l/by/3.0/80x15.png]]
