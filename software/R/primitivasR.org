@@ -7,12 +7,12 @@
 ** Configuración del Entorno
 
 #+BEGIN_SRC R
-getwd() 				      # Devuelve el 
-                                              # directorio de trabajo 
-setwd("/home/davidam/public_html/software/R") # Cambia el directorio 
-                                              # de trabajo (debe 
+getwd() 				      # Devuelve el
+                                              # directorio de trabajo
+setwd("/home/davidam/public_html/software/R") # Cambia el directorio
+                                              # de trabajo (debe
                                               # existir previamente)
-list.files()				      # Lista el contenido 
+list.files()				      # Lista el contenido
                                               # del directorio
                                               # de trabajo. Tambien ls()
 
@@ -35,7 +35,7 @@ q()                                           # Salir del entorno
 ** Operaciones Aritméticas
 
 #+BEGIN_SRC R
-   5+7		# se evalua y el resultado se imprime 
+   5+7		# se evalua y el resultado se imprime
                 # por pantalla pero no se guarda
    5**7
    5-7
@@ -45,7 +45,7 @@ q()                                           # Salir del entorno
    51 %/% 7	# division entera
 #+END_SRC
 
-** Asignacion de valores a variables 
+** Asignacion de valores a variables
 
 #+BEGIN_SRC R
    x <- 1	# asigna el valor 1 a la variable x
@@ -60,15 +60,15 @@ q()                                           # Salir del entorno
 #+BEGIN_SRC R
    q	# Muestra informacion de la funcion
    ?q
-   # Algunas funciones elementales: log(), log10(), 
+   # Algunas funciones elementales: log(), log10(),
    # exp(), sqrt(), sin(), cos(), tan()
-   # Mas funciones basicas: c(), max(), min(), 
-   # pmax(), pmin(), range(), length(), sort() 
-   # sum(), rowSums(), prod(), mean(), colMeans(), 
+   # Mas funciones basicas: c(), max(), min(),
+   # pmax(), pmin(), range(), length(), sort()
+   # sum(), rowSums(), prod(), mean(), colMeans(),
    # var(), cumsum(), etc.
    c(2,69,5,47,3647)
    sum(1,3,5,7)
-   raiz64 <- sqrt(64)	# el resultado de una funcion 
+   raiz64 <- sqrt(64)	# el resultado de una funcion
                         # puede guardarse en una variable
    print(x)
    print(pi,digits=16); print(pi,digits=5)
@@ -91,14 +91,14 @@ mentira <- F
 edad <- c(27,30,29);
 is.numeric(edad)
 is.integer(edad)
-is.double(edad)	# tambien existen is.complex(), 
+is.double(edad)	# tambien existen is.complex(),
                 # is.logical(), is.character()...
-typeof(edad)	# devuelve el tipo del objeto 
+typeof(edad)	# devuelve el tipo del objeto
                 # introducido como argumento
 #+END_SRC
 ** Arrays
 #+BEGIN_SRC R
-calle <- c("c/ rue del percebe","28013"); 
+calle <- c("c/ rue del percebe","28013");
 #+END_SRC
 ** Conversiones de Tipo
 #+BEGIN_SRC R
@@ -118,7 +118,7 @@ as.numeric(y)
 #+BEGIN_SRC R
 x <- c(1,4,6,3,7); x
 x[3]			# devuelve el valor guardado en 3a posicion
-x[-4]			# devuelve todo excepto el valor 
+x[-4]			# devuelve todo excepto el valor
                         # guardado en 4a posicion
 x[1] <- 35		# guarda el valor 35 en la primer posicion
 length(x)		# devuelve la longitud de x
@@ -133,7 +133,7 @@ y <- c(1,2,3);y
 suma <- x+y; suma		# recicla el vector mas corto
 suma2 <- x-1			# con escalares parece mas natural
 x <- c(0.0001, 0.001, 0.01, 0.1, 1)
-log10(x)			# muchas funciones tambien se 
+log10(x)			# muchas funciones tambien se
                                 # aplican vectorizadamente
 #+END_SRC
 ** Generacion de secuencias regulares
@@ -142,7 +142,7 @@ log10(x)			# muchas funciones tambien se
 1:10-1				# el operador ':' tiene maxima prioridad
 1:{10-1}
 #funcion seq(from, to, by, length)
-x <- seq (-3,3,0.5);x		# valores desde -3 hasta 3 a intervalos de 0.5	
+x <- seq (-3,3,0.5);x		# valores desde -3 hasta 3 a intervalos de 0.5
 seq (-3,3,length=10)		# 10 valores equiespaciados desde -3 hasta 3
 seq (-3, by=0.5,length=10)	# 10 valores a intervalos de 0.5 desde -3
 seq(along=x)			# Genera la secuencia 1, 2, 3,..., length(x)
@@ -182,7 +182,7 @@ all.equal(x, y, tol=0.001)
 #+END_SRC
 ** Operadores logicos: &,|, !, xor()
 #+BEGIN_SRC R
-a<-c(TRUE,TRUE,FALSE,FALSE) 
+a<-c(TRUE,TRUE,FALSE,FALSE)
 b<-c(F, T, F, T)
 a&b
 a|b
@@ -206,7 +206,7 @@ is.na(x)
 Entonces si tenemos data$q_005 como un frame con algunos datos
 perdidos y queremos solo los datos no perdidos podemos hacer
 
-#+BEGIN_SRC 
+#+BEGIN_SRC
 data5 <- data$q_005[!is.na(data$q_005)]
 #+END_SRC
 
@@ -369,7 +369,7 @@ lista
    b; typeof(b)
 
    nomb <- c("reales","enteros", "matriz", "caracteres", "logicos")
-   names(lista1) <- nomb; 	# asigna nombres a los componenes de la lista 
+   names(lista1) <- nomb; 	# asigna nombres a los componenes de la lista
    names(lista1)				# devuelve los nombres de los componentes (si los hay)
    lista1[["reales"]]
    lista1$logicos 			# equivalente a lista1[["logicos"]] y a lista[[5]]
@@ -380,7 +380,7 @@ lista
 #+END_SRC
 
 ** Attach
-Las funciones attach() y detach () "cargan" listas y simplifican las referencias. 
+Las funciones attach() y detach () "cargan" listas y simplifican las referencias.
 #+BEGIN_SRC R
    attach(lista1, warn.conflicts = T)
 #+END_SRC
@@ -389,11 +389,11 @@ Las funciones attach() y detach () "cargan" listas y simplifican las referencias
 Son un tipo especial de lista:
 + con estructura tabular
 + donde las columnas pueden ser de distinto tipo
-+ suelen utilizarse como bases de datos donde cada fila representa una unidad de observacion y cada columna una variable 
++ suelen utilizarse como bases de datos donde cada fila representa una unidad de observacion y cada columna una variable
 
 #+BEGIN_SRC R
    var1 <- seq(150,700,50); var2 <- 6:17; var3 <- c(10, 35, 17); var4 <- 2:8
-   data.frame(var1, var2) 
+   data.frame(var1, var2)
    data.frame(var1, var3) # recicla var3
    data.frame(var1, var4) # mensaje de error porque la longitud var1 no es multiplo de la de var4
    var5 <- factor(rep(c(2,1,1,1), times=3), levels=1:2, labels=c("UsaTwitter", "NoUsaTwitter"));var5
@@ -457,7 +457,7 @@ R dispone de una utilidad de aspecto sejemante a una hoja de calculo para:
    respuestas
    respuestas2 <- edit(respuestas)	# guarda los cambios en una nueva hoja de datos (y conserva la antigua)
    respuestas;respuestas2
-   fix(respuestas)						# sobreescribe los cambios. Es equivalente a respuestas <- edit(respuestas)	
+   fix(respuestas)						# sobreescribe los cambios. Es equivalente a respuestas <- edit(respuestas)
 #+END_SRC
 
 * Cargar datos nativos de R
@@ -467,7 +467,7 @@ La instalacion basica de R incluye el paquete 'datasets'.
    help(women)								# informacion sobre ese conjunto de datos concreto
    data(women, package="datasets")	# carga esos datos
    # Si el paquete de procedencia esta cargado basta simplemente:
-   women	
+   women
    data(women)								# Equivalente data('women')
 #+END_SRC
 Muchos paquetes adicionales tambien vienen con sus datos de ejemplo
@@ -525,7 +525,7 @@ Precauciones:
 
 ** Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames
 #+BEGIN_SRC R
-   x<-seq(1,3,0.1) 
+   x<-seq(1,3,0.1)
    write(x,"../datos/numeros.dat", ncolumns=1,append=T)
    write(x,"../datos/numeros.dat", ncolumns=length(x),append=F)
 #+END_SRC
@@ -544,7 +544,7 @@ Precauciones:
 #+END_SRC
 
 ** Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim ...
-Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc., 
+Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc.,
 aunque resulta mas comodo usar esos programas para guardar los datos en texto plano y usar read.table para importar a R
 
 #+BEGIN_SRC R
@@ -559,7 +559,7 @@ con el paquete.
 Paquete para importar y exportar datos de excel: ‘xlsReadWrite’ (no
 incluido en el sistema base; hay que importarlo)
 
-** Funcion scan(). 
+** Funcion scan().
 Mas flexible pero mas complicada de utilizar. Permite especificar el modo de las variables
 #+BEGIN_SRC R
    ?scan
@@ -585,7 +585,7 @@ Para una buena introduccion: R for Beginners de E. Paradis (citado en la documen
    dev.off() 	# cierra el dispositivo grafico activo; dev.off(3) cierra el dispositivo grafico num 3
 #+END_SRC
 
-** Funcion plot(). Es la función gráfica basica. 
+** Funcion plot(). Es la función gráfica basica.
 Segun los argumentos puede generar un diagrama de dispersion, de barras, caja y bigotes etc.
 #+BEGIN_SRC R
    x <- 1:15; y <- 30:16
@@ -641,7 +641,7 @@ Se usa la función png para almacenar la salida en un fichero de imagen.
    x11(); hist(extraversion, labels=T, col= "gray", xlim=c(-4,4), ylab="Frecuencia absoluta", sub= "Figura 1. Ejemplo de histograma", main= "Extraversión")
    hist(amabilidad, col= "red", border="white", add=T, xlim=c(-4,4), sub= "Figura 2. Otro ejemplo de histograma", main= c("Extraversión  Amabilidad superpuestos"))
    x11(); hist(extraversion,freq=F, labels=T, col= "light blue",xlim=c(-4,4),ylab="Frecuencia relativa", las=1,sub= "Figura 1b. Ejemplo de histograma", main= "Extraversión")
-   hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color")	
+   hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color")
 
    pdf("ejemplos_histograma.pdf")
    hist(extraversion, nclas=3, col= "light blue", sub= "Figura 3. Ejemplo de histograma", main= "Extraversión")
@@ -652,7 +652,7 @@ Se usa la función png para almacenar la salida en un fichero de imagen.
 ** Funcion boxplot()
 #+BEGIN_SRC R
    boxplot(extraversion, main= "Diagrama de caja de extraversión")
-   text(locator(5),"más outliers", adj=0) 
+   text(locator(5),"más outliers", adj=0)
    boxplot(pers)
 #+END_SRC
 
@@ -694,7 +694,7 @@ Permite contral cada elemento del grafico final
    # un ultimo ejemplo
    hist(extraversion, freq=F)
    curve(dnorm(x), add=T)
-   detach(pers)  
+   detach(pers)
 #+END_SRC
 * Muestreo y probabilidad
 ** Muestreo
@@ -788,7 +788,7 @@ Utilizacion de la funcion una vez definida (y cargada en memoria)
    mi.media <- media(datos=x);mi.media
 #+END_SRC
 
-Recomendaciones: 
+Recomendaciones:
 + crear un directorio especifico para funciones propias
 + guardar cada funcion en un script independiente
 
@@ -815,6 +815,13 @@ desviacionTipica <- sd(paises.csv$Porcentaje)
 varianza <- var(paises.csv$Porcentaje)
 cuantil <- quantile(paises.csv$Porcentaje)
 todos <- summary(paises.csv$Porcentaje)
+max <- max(paises.csv$Porcentaje)
+min <- min(paises.csv$Porcentaje)
+amplitud <- max - min
+tr=c(3,4,5,3,4,5,4,3,2,3,12,11,3,4,89)
+mean(tr,trim=5/100) # media recortada al 5%
+IQR(tr)  # rango intercuartil
+stem(tr) # diagrama de tallos y hojas (ver http://www.estadisticaparatodos.es/taller/graficas/tallos_hojas.html)
 #+END_SRC
 
 En nuestro ejemplo utilizaremos los datos de [[file:///home/davidam/public_html/software/R/paises.csv][paises.csv]]

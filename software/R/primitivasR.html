@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
 <title>Primitivas en GNU R</title>
-<!-- 2016-10-05 mié 12:02 -->
+<!-- 2019-02-06 mié 17:00 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="David Arroyo Menéndez" />
@@ -261,14 +261,14 @@ for the JavaScript code in this tag.
 <div class="outline-text-3" id="text-1-1">
 <div class="org-src-container">
 
-<pre class="src src-R">getwd()                                       # Devuelve el 
-					      # directorio de trabajo 
-setwd("/home/davidam/public_html/software/R") # Cambia el directorio 
-					      # de trabajo (debe 
-					      # existir previamente)
-list.files()                                  # Lista el contenido 
-					      # del directorio
-					      # de trabajo. Tambien ls()
+<pre class="src src-R">getwd()                       # Devuelve el
+											  # directorio de trabajo
+setwd("/home/davidam/public_html/software/R") # Cambia el directorio
+											  # de trabajo (debe
+											  # existir previamente)
+list.files()                      # Lista el contenido
+											  # del directorio
+											  # de trabajo. Tambien ls()
 
 source("/home/davidam/public_html/software/R/ejercicios-descriptivos.R")
 
@@ -287,8 +287,8 @@ q()                                           # Salir del entorno
 ?mean
 help.search('mean')
 ??'standard deviation'
-help.start()                         # abre una ventana del navegador
-example (mean)                       # ejemplos del uso de mean
+help.start()             # abre una ventana del navegador
+example (mean)           # ejemplos del uso de mean
 </pre>
 </div>
 </div>
@@ -299,14 +299,14 @@ example (mean)                       # ejemplos del uso de mean
 <div class="outline-text-3" id="text-1-3">
 <div class="org-src-container">
 
-<pre class="src src-R">5+7          # se evalua y el resultado se imprime 
-	     # por pantalla pero no se guarda
+<pre class="src src-R">5+7      # se evalua y el resultado se imprime
+			 # por pantalla pero no se guarda
 5**7
 5-7
 5/7
 5^7          # elevado a
-51 %% 7      # modulo (resto de una division entera)
-51 %/% 7     # division entera
+51 %% 7  # modulo (resto de una division entera)
+51 %/% 7 # division entera
 </pre>
 </div>
 </div>
@@ -317,11 +317,11 @@ example (mean)                       # ejemplos del uso de mean
 <div class="outline-text-3" id="text-1-4">
 <div class="org-src-container">
 
-<pre class="src src-R">x &lt;- 1       # asigna el valor 1 a la variable x
-x            # lo escribe por pantalla
+<pre class="src src-R">x &lt;- 1   # asigna el valor 1 a la variable x
+x        # lo escribe por pantalla
 y &lt;- x^2
-x = 1        # una alternativa
-1 -&gt; x       # otra alternativa
+x = 1    # una alternativa
+1 -&gt; x   # otra alternativa
 </pre>
 </div>
 </div>
@@ -334,16 +334,16 @@ x = 1        # una alternativa
 
 <pre class="src src-R">q    # Muestra informacion de la funcion
 ?q
-# Algunas funciones elementales: log(), log10(), 
+# Algunas funciones elementales: log(), log10(),
 # exp(), sqrt(), sin(), cos(), tan()
-# Mas funciones basicas: c(), max(), min(), 
-# pmax(), pmin(), range(), length(), sort() 
-# sum(), rowSums(), prod(), mean(), colMeans(), 
+# Mas funciones basicas: c(), max(), min(),
+# pmax(), pmin(), range(), length(), sort()
+# sum(), rowSums(), prod(), mean(), colMeans(),
 # var(), cumsum(), etc.
 c(2,69,5,47,3647)
 sum(1,3,5,7)
-raiz64 &lt;- sqrt(64)   # el resultado de una funcion 
-		     # puede guardarse en una variable
+raiz64 &lt;- sqrt(64)   # el resultado de una funcion
+					 # puede guardarse en una variable
 print(x)
 print(pi,digits=16); print(pi,digits=5)
 </pre>
@@ -379,10 +379,10 @@ mentira &lt;- F
 edad &lt;- c(27,30,29);
 is.numeric(edad)
 is.integer(edad)
-is.double(edad) # tambien existen is.complex(), 
-		# is.logical(), is.character()...
-typeof(edad)    # devuelve el tipo del objeto 
-		# introducido como argumento
+is.double(edad) # tambien existen is.complex(),
+				# is.logical(), is.character()...
+typeof(edad)    # devuelve el tipo del objeto
+				# introducido como argumento
 </pre>
 </div>
 </div>
@@ -403,7 +403,7 @@ typeof(edad)    # devuelve el tipo del objeto
 <div class="org-src-container">
 
 <pre class="src src-R">as.character(verdad)
-as.numeric(verdad)              # doble precision por defecto
+as.numeric(verdad)      # doble precision por defecto
 y &lt;- c(0,1,27,14.9,NA,-3.2);y   # ojo, trunca en vez de redondear
 as.logical(y)
 as.character(y)
@@ -426,11 +426,11 @@ as.numeric(y)
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(1,4,6,3,7); x
-x[3]                    # devuelve el valor guardado en 3a posicion
-x[-4]                   # devuelve todo excepto el valor 
-			# guardado en 4a posicion
-x[1] &lt;- 35              # guarda el valor 35 en la primer posicion
-length(x)               # devuelve la longitud de x
+x[3]            # devuelve el valor guardado en 3a posicion
+x[-4]           # devuelve todo excepto el valor
+						# guardado en 4a posicion
+x[1] &lt;- 35      # guarda el valor 35 en la primer posicion
+length(x)       # devuelve la longitud de x
 x[11] &lt;- 99; x
 </pre>
 </div>
@@ -445,11 +445,11 @@ x[11] &lt;- 99; x
 y &lt;- c(5,4,3,2,1)
 x+y
 y &lt;- c(1,2,3);y
-suma &lt;- x+y; suma               # recicla el vector mas corto
-suma2 &lt;- x-1                    # con escalares parece mas natural
+suma &lt;- x+y; suma       # recicla el vector mas corto
+suma2 &lt;- x-1            # con escalares parece mas natural
 x &lt;- c(0.0001, 0.001, 0.01, 0.1, 1)
-log10(x)                        # muchas funciones tambien se 
-				# aplican vectorizadamente
+log10(x)            # muchas funciones tambien se
+								# aplican vectorizadamente
 </pre>
 </div>
 </div>
@@ -460,21 +460,21 @@ log10(x)                        # muchas funciones tambien se
 <div class="org-src-container">
 
 <pre class="src src-R">1:10
-1:10-1                          # el operador ':' tiene maxima prioridad
+1:10-1              # el operador ':' tiene maxima prioridad
 1:{10-1}
 #funcion seq(from, to, by, length)
-x &lt;- seq (-3,3,0.5);x           # valores desde -3 hasta 3 a intervalos de 0.5  
-seq (-3,3,length=10)            # 10 valores equiespaciados desde -3 hasta 3
-seq (-3, by=0.5,length=10)      # 10 valores a intervalos de 0.5 desde -3
-seq(along=x)                    # Genera la secuencia 1, 2, 3,..., length(x)
+x &lt;- seq (-3,3,0.5);x       # valores desde -3 hasta 3 a intervalos de 0.5
+seq (-3,3,length=10)        # 10 valores equiespaciados desde -3 hasta 3
+seq (-3, by=0.5,length=10)  # 10 valores a intervalos de 0.5 desde -3
+seq(along=x)            # Genera la secuencia 1, 2, 3,..., length(x)
 #funcion rep(x, times, each)
 x &lt;- 1:4
-rep(x,times=3)                  # repite el contenido de x tres veces
-rep(x,each=3)                   # repite cada elemento de x tres veces
+rep(x,times=3)          # repite el contenido de x tres veces
+rep(x,each=3)               # repite cada elemento de x tres veces
 rep(x,times=2,each=3)
-rep(c(0,1),times=c(4,3))        # 'times' puede ser un vector. Aqui ya no cabe 'each'
+rep(c(0,1),times=c(4,3))    # 'times' puede ser un vector. Aqui ya no cabe 'each'
 x &lt;- seq(19,6,-3);x
-rep(x,1:length(x))              # 'times' puede estar implicito times={1:length(x)}
+rep(x,1:length(x))      # 'times' puede estar implicito times={1:length(x)}
 </pre>
 </div>
 </div>
@@ -485,13 +485,13 @@ rep(x,1:length(x))              # 'times' puede estar implicito times={1:length(
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(20,80,30,50,0)
-order (x, decreasing=F)         # devuelve las posiciones del vector ordenadas segun su contenido
-sort (x, decreasing=F)          # devuelve el contenido del vector ordenado
-rank(x)                         # devuelve el orden de cada posicion segun su contenido
+order (x, decreasing=F)     # devuelve las posiciones del vector ordenadas segun su contenido
+sort (x, decreasing=F)      # devuelve el contenido del vector ordenado
+rank(x)             # devuelve el orden de cada posicion segun su contenido
 min(x)
-which.min(x)                    # equivale a which(x == min(x))
+which.min(x)            # equivale a which(x == min(x))
 x &lt;- c(1,1,3:1,1:4,3); y &lt;- c(0,9:1)
-x.ord &lt;- order(x,y)             # ordena los valores de x y, en caso de empate, utiliza los valores de y en las posiciones correspondientes. Ambos, x e y deben tener la misma longitud
+x.ord &lt;- order(x,y)     # ordena los valores de x y, en caso de empate, utiliza los valores de y en las posiciones correspondientes. Ambos, x e y deben tener la misma longitud
 x.ord;x;y
 </pre>
 </div>
@@ -505,10 +505,10 @@ x.ord;x;y
 <pre class="src src-R">x &lt;- c(1:10); x
 valor.verdad &lt;- x&gt;5; valor.verdad
 x &lt;- 1:10
-x[x &gt;= 5] &lt;- 20; x      # condicional implicito
+x[x &gt;= 5] &lt;- 20; x  # condicional implicito
 x[x == 1] &lt;- 25; x
 x &lt;- 1:3; y &lt;- 1:3
-x == y                  # equivalente a identical(x, y) o all.equal(x, y, tol=0)
+x == y          # equivalente a identical(x, y) o all.equal(x, y, tol=0)
 y &lt;- y+0.001; y
 identical(x, y)
 all.equal(x, y, tol=0.001)
@@ -521,7 +521,7 @@ all.equal(x, y, tol=0.001)
 <div class="outline-text-3" id="text-3-6">
 <div class="org-src-container">
 
-<pre class="src src-R">a&lt;-c(TRUE,TRUE,FALSE,FALSE) 
+<pre class="src src-R">a&lt;-c(TRUE,TRUE,FALSE,FALSE)
 b&lt;-c(F, T, F, T)
 a&amp;b
 a|b
@@ -543,8 +543,8 @@ x[8:10] &lt;- 3;x
 is.na(x)
 !is.na(x)
 which(is.na(x))
-x[is.na(x)]&lt;-999;x      # codifica como 999 los valores perdidos
-x==NA                   # la expresion logica x == NA sa un resultado muy distinto de
+x[is.na(x)]&lt;-999;x  # codifica como 999 los valores perdidos
+x==NA           # la expresion logica x == NA sa un resultado muy distinto de
 is.na(x)
 </pre>
 </div>
@@ -592,9 +592,9 @@ x &lt;- paste(LETTERS[1:5], collapse="");x
 
 # Concatena e imprime. Funcion cat(... , file = "", sep = " ", fill = F, labels = NULL, append = F)
 verano &lt;- month.abb[7:9]; verano
-cat(verano)                     # el resultado no puede guardarse en ua variable
+cat(verano)         # el resultado no puede guardarse en ua variable
 cat(verano,"\n")
-cat(verano, sep=',')            # concatena separando con comas e imprime
+cat(verano, sep=',')        # concatena separando con comas e imprime
 cat(verano, sep=';', fill=3)
 cat("Estaciones:","\t","Moncloa","\n", "\t", "\t","Aluche","\n")
 
@@ -610,12 +610,12 @@ x&lt;-2/3; cat(paste("resultado", signif(x,2), sep=" : " ),"\n")
 <div class="org-src-container">
 
 <pre class="src src-R">edad &lt;- c(12,22,15,16,10)
-names(edad)                                             # por defecto no se asignan nombres
+names(edad)                     # por defecto no se asignan nombres
 names(edad) &lt;- paste("suj#", sep = "",length(edad):1); edad
 names(edad)
-edad["suj#2"]                                   # devuelve la edad de Sujeto #2 (almacenado en la penultima posicion)
+edad["suj#2"]                   # devuelve la edad de Sujeto #2 (almacenado en la penultima posicion)
 edad[length(edad)-1]
-names(edad) &lt;- NULL; edad       # elimina los nombre asignados
+names(edad) &lt;- NULL; edad   # elimina los nombre asignados
 </pre>
 </div>
 </div>
@@ -636,11 +636,11 @@ nivel.estudios &lt;- factor(estudios, levels=1:4,labels=c("primarios", "secundar
 nivel.estudios
 factor(c(5,2,2,4,5,4,3,3,1), 2:5, exclude=4) # los valores 1 y 4 se consideran valores perdidos
 # OJO. Internamente R siempre se asigna 1 al primer nivel del factor, 2 al segundo etc.
-levels(nivel.estudios)                       # levels() extrae los posibles niveles de un factor
-as.numeric(nivel.estudios)           # recodifica el factor numericamente
+levels(nivel.estudios)           # levels() extrae los posibles niveles de un factor
+as.numeric(nivel.estudios)       # recodifica el factor numericamente
 codigo.postal &lt;- factor(c('28011', '28044', '28011','28013', '28013','28023'))
 equipo.futbol &lt;- factor(c('VAL', 'VAL', 'FCB','VAL', 'FCB','ATM'))
-equipo.futbol                                                # ordena los factores alfabeticamente
+equipo.futbol                        # ordena los factores alfabeticamente
 as.numeric(equipo.futbol)
 as.character(equipo.futbol)  # convierte en cadenas de caracters no en factor de nuevo
 </pre>
@@ -667,7 +667,7 @@ dim(X) &lt;- c(4,3); X # los elementos se organizan por columnas
 matrix(1:12,nrow=3,ncol=4,byrow=T)
 matrix(1:12,nrow=4,byrow=T)
 Mi.matriz &lt;- matrix(1:12,3,4,F); Mi.matriz
-tamano &lt;- dim(Mi.matriz)             # otro uso de dim(); devuelve las dimensiones de la matriz
+tamano &lt;- dim(Mi.matriz)     # otro uso de dim(); devuelve las dimensiones de la matriz
 rownames(Mi.matriz) &lt;- LETTERS[1:tamano[1]]; Mi.matriz
 colnames(Mi.matriz) &lt;- paste("Var",1:tamano[2], sep=""); Mi.matriz
 dimnames(Mi.matriz)
@@ -695,11 +695,11 @@ Zz &lt;- cbind(X1,Xx);Zz
 <div class="org-src-container">
 
 <pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2);X
-X[1,2]                               # elemento guardado en la 1a fila, 2da columna
-X[1, ]                               # todos los elementos de la primera fila
-X[ ,2]                               # todos los elementos de la segunda columna
-X[3]                                 # para pensar un poco...
-Mi.matriz['B',]      #tambien se pueden usar los nombres (se han asignado)
+X[1,2]               # elemento guardado en la 1a fila, 2da columna
+X[1, ]               # todos los elementos de la primera fila
+X[ ,2]               # todos los elementos de la segunda columna
+X[3]                 # para pensar un poco...
+Mi.matriz['B',]  #tambien se pueden usar los nombres (se han asignado)
 </pre>
 </div>
 </div>
@@ -713,18 +713,18 @@ Mi.matriz['B',]      #tambien se pueden usar los nombres (se han asignado)
 Y &lt;- matrix(1:4,2,2); Y
 X+Y
 X-Y
-X%*%Y                                                # producto matricial
-X*Y                                          # producto elemento por elemento
-t(X)                                         # traspuesta
-det(X)                                       # determinante
+X%*%Y                        # producto matricial
+X*Y                      # producto elemento por elemento
+t(X)                     # traspuesta
+det(X)                   # determinante
 X.inv &lt;- solve (X)   # inversa de X (siempre que X sea cuadrada no singular, claro)
 X.inv
-X%*%X.inv                            # Comprueba el resultado. Ojo a los errores de redondeo
+X%*%X.inv                # Comprueba el resultado. Ojo a los errores de redondeo
 # En general, solve(a,b) es una funcion que resuelve a %*% x = b para x, donde b puede ser un vector o una matriz. Si no se explicta se asume que es la matriz identidad y la funcion devuelve la inversa de a
 A &lt;- matrix(c(1,4,12,15),2,2); A
 B &lt;- matrix(c(5,2),2,1);B
 X &lt;- solve(A,B); X
-A%*%X                        # comprueba que el resultado es efectivamente B
+A%*%X            # comprueba que el resultado es efectivamente B
 </pre>
 </div>
 </div>
@@ -748,8 +748,8 @@ colMeans(X)
 <div class="outline-text-3" id="text-5-6">
 <div class="org-src-container">
 
-<pre class="src src-R">apply(X,1,sum)               # suma por filas; equivale a rowSums(X)
-apply(X,2,mean)      # media por columnas; equivale a colMeans(X)
+<pre class="src src-R">apply(X,1,sum)       # suma por filas; equivale a rowSums(X)
+apply(X,2,mean)  # media por columnas; equivale a colMeans(X)
 apply(X,1,sd)
 </pre>
 </div>
@@ -800,18 +800,18 @@ lista1
 <div class="outline-text-3" id="text-6-1">
 <div class="org-src-container">
 
-<pre class="src src-R">length(lista1)               # devuelve el numero de componentes de la lista
-str(lista1)          # devuelve informacion sobre la estructura de la lista
-a &lt;- lista1[[1]]     # devuelve el 1er objeto de la lista en forma de vector/matriz (y nombre  excluido)
+<pre class="src src-R">length(lista1)       # devuelve el numero de componentes de la lista
+str(lista1)      # devuelve informacion sobre la estructura de la lista
+a &lt;- lista1[[1]] # devuelve el 1er objeto de la lista en forma de vector/matriz (y nombre  excluido)
 a; typeof(a)
-b &lt;- lista1[1]               # devuelve una sublista compuesta por los elementos de la 1a entrada de la lista (nombre incluido)
+b &lt;- lista1[1]       # devuelve una sublista compuesta por los elementos de la 1a entrada de la lista (nombre incluido)
 b; typeof(b)
 
 nomb &lt;- c("reales","enteros", "matriz", "caracteres", "logicos")
-names(lista1) &lt;- nomb;       # asigna nombres a los componenes de la lista 
-names(lista1)                                # devuelve los nombres de los componentes (si los hay)
+names(lista1) &lt;- nomb;   # asigna nombres a los componenes de la lista
+names(lista1)                # devuelve los nombres de los componentes (si los hay)
 lista1[["reales"]]
-lista1$logicos                       # equivalente a lista1[["logicos"]] y a lista[[5]]
+lista1$logicos           # equivalente a lista1[["logicos"]] y a lista[[5]]
 
 # Otro modo de definir una lista que incluye nombres para los componentes
 lista2 &lt;- list(A=mis.num, B=mis.num2); lista2
@@ -825,7 +825,7 @@ names(lista2)
 <h3 id="sec-6-2"><span class="section-number-3">6.2</span> Attach</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
-Las funciones attach() y detach () "cargan" listas y simplifican las referencias. 
+Las funciones attach() y detach () "cargan" listas y simplifican las referencias.
 </p>
 <div class="org-src-container">
 
@@ -847,14 +847,14 @@ Son un tipo especial de lista:
 </li>
 <li>donde las columnas pueden ser de distinto tipo
 </li>
-<li>suelen utilizarse como bases de datos donde cada fila representa una unidad de observacion y cada columna una variable 
+<li>suelen utilizarse como bases de datos donde cada fila representa una unidad de observacion y cada columna una variable
 </li>
 </ul>
 
 <div class="org-src-container">
 
 <pre class="src src-R">var1 &lt;- seq(150,700,50); var2 &lt;- 6:17; var3 &lt;- c(10, 35, 17); var4 &lt;- 2:8
-data.frame(var1, var2) 
+data.frame(var1, var2)
 data.frame(var1, var3) # recicla var3
 data.frame(var1, var4) # mensaje de error porque la longitud var1 no es multiplo de la de var4
 var5 &lt;- factor(rep(c(2,1,1,1), times=3), levels=1:2, labels=c("UsaTwitter", "NoUsaTwitter"));var5
@@ -871,9 +871,9 @@ row.names(mis.datos) &lt;- paste("suj",1:max(length(var1),length(var2),length(va
 <div class="org-src-container">
 
 <pre class="src src-R">rownames(mis.datos); colnames(mis.datos)
-dim(mis.datos)                               # dimensiones
-str(mis.datos)                               # estructura
-attributes(mis.datos)        # clase y nombres de fila y columna
+dim(mis.datos)               # dimensiones
+str(mis.datos)               # estructura
+attributes(mis.datos)    # clase y nombres de fila y columna
 </pre>
 </div>
 </div>
@@ -887,7 +887,7 @@ Uso: split (x, factor). unsplit(x, factor)
 </p>
 <div class="org-src-container">
 
-<pre class="src src-R">trozos &lt;- split (mis.datos, mis.datos$var5); trozos          # devuelve una lista "trozos" con los valores de var1 segregados segun var5
+<pre class="src src-R">trozos &lt;- split (mis.datos, mis.datos$var5); trozos      # devuelve una lista "trozos" con los valores de var1 segregados segun var5
 typeof(trozos)
 junto.otravez &lt;- unsplit(trozos, mis.datos$var5); junto.otravez
 
@@ -953,15 +953,15 @@ R dispone de una utilidad de aspecto sejemante a una hoja de calculo para:
 
 <div class="org-src-container">
 
-<pre class="src src-R">edit(data.frame())                    # abre el editor con una 'hoja de datos' vacia
-					      # los huecos se rellenaran solos con NA
-					      # doble click en "var?" para cambiar el nombre de la variable
-					      # ¿que ha pasado?, ¿donde estan los datos?
- respuestas &lt;- edit(data.frame())     # Es esencial asignarle un nombre a la hoja de datos
+<pre class="src src-R">edit(data.frame())            # abre el editor con una 'hoja de datos' vacia
+					  # los huecos se rellenaran solos con NA
+					  # doble click en "var?" para cambiar el nombre de la variable
+					  # ¿que ha pasado?, ¿donde estan los datos?
+ respuestas &lt;- edit(data.frame()) # Es esencial asignarle un nombre a la hoja de datos
  respuestas
- respuestas2 &lt;- edit(respuestas)      # guarda los cambios en una nueva hoja de datos (y conserva la antigua)
+ respuestas2 &lt;- edit(respuestas)  # guarda los cambios en una nueva hoja de datos (y conserva la antigua)
  respuestas;respuestas2
- fix(respuestas)                                              # sobreescribe los cambios. Es equivalente a respuestas &lt;- edit(respuestas)
+ fix(respuestas)                      # sobreescribe los cambios. Es equivalente a respuestas &lt;- edit(respuestas)
 </pre>
 </div>
 </div>
@@ -976,12 +976,12 @@ La instalacion basica de R incluye el paquete 'datasets'.
 </p>
 <div class="org-src-container">
 
-<pre class="src src-R">data()                                                                       # lista todas las bases de datos disponibles en datasets'
-help(women)                                                          # informacion sobre ese conjunto de datos concreto
-data(women, package="datasets")      # carga esos datos
+<pre class="src src-R">data()                                   # lista todas las bases de datos disponibles en datasets'
+help(women)                              # informacion sobre ese conjunto de datos concreto
+data(women, package="datasets")  # carga esos datos
 # Si el paquete de procedencia esta cargado basta simplemente:
-women        
-data(women)                                                          # Equivalente data('women')
+women
+data(women)                              # Equivalente data('women')
 </pre>
 </div>
 <p>
@@ -1004,8 +1004,8 @@ Cargar un paquete. Requiere instalarlo previamente bien:
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-R">library (foreign)                    # o mediante el menu windows de RGui
-library(help=foreign)        # informacion sobre el paquete 'foreign'
+<pre class="src src-R">library (foreign)            # o mediante el menu windows de RGui
+library(help=foreign)    # informacion sobre el paquete 'foreign'
 </pre>
 </div>
 </div>
@@ -1020,7 +1020,7 @@ paquetes para buscar objetos partes deOrden en el que R
 </p>
 <div class="org-src-container">
 
-<pre class="src src-R">search()             # muestra la ruta de busqueda
+<pre class="src src-R">search()     # muestra la ruta de busqueda
 # Cuidado con los nombres de las variables del espacio de trabajo: Tienen prioridad
 rm(list=ls())
 women
@@ -1055,9 +1055,9 @@ Precauciones:
 <div class="org-src-container">
 
 <pre class="src src-R">detach (package:ISwR)
-detach()             # elimina el paquete que haya en 2a posicion
+detach()     # elimina el paquete que haya en 2a posicion
 plot(c(1,2,5,6), c(2,5,6,7)) # representa un diagrama de dispersion (vease la seccion 'Graficos')
-detach()             # elimina el nuevo 2do paquete
+detach()     # elimina el nuevo 2do paquete
 plot(c(1,2,5,6), c(2,5,6,7))
 </pre>
 </div>
@@ -1090,7 +1090,7 @@ write.table(women, "../datos/mujeres.dat", append=F,quote=F)
 <div class="outline-text-3" id="text-10-2">
 <div class="org-src-container">
 
-<pre class="src src-R">x&lt;-seq(1,3,0.1) 
+<pre class="src src-R">x&lt;-seq(1,3,0.1)
 write(x,"../datos/numeros.dat", ncolumns=1,append=T)
 write(x,"../datos/numeros.dat", ncolumns=length(x),append=F)
 </pre>
@@ -1114,7 +1114,7 @@ edit(mis.datos)
 median(mis.datos$weight)
 colMeans(mis.datos)
 attach(mis.datos)
-sum(weight &gt;=125)/length(weight)             # calcula la proporcion de individuos que pesan al menos 125 lb
+sum(weight &gt;=125)/length(weight)     # calcula la proporcion de individuos que pesan al menos 125 lb
 </pre>
 </div>
 </div>
@@ -1124,13 +1124,13 @@ sum(weight &gt;=125)/length(weight)             # calcula la proporcion de indiv
 <h3 id="sec-11-2"><span class="section-number-3">11.2</span> Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</h3>
 <div class="outline-text-3" id="text-11-2">
 <p>
-Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc., 
+Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc.,
 aunque resulta mas comodo usar esos programas para guardar los datos en texto plano y usar read.table para importar a R
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-R">library(foreign)     # En primer lugar hay que cargar el paquete
+<pre class="src src-R">library(foreign) # En primer lugar hay que cargar el paquete
 mi.encuesta.spss &lt;- read.spss("../datos/SurveyStatisticsI.sav", to.data.frame=T)
 edit(mi.encuesta.spss)
 </pre>
@@ -1179,11 +1179,11 @@ Para una buena introduccion: R for Beginners de E. Paradis (citado en la documen
 <div class="outline-text-3" id="text-12-1">
 <div class="org-src-container">
 
-<pre class="src src-R">x11()                                                                        # abre una nueva ventana grafica (Unix y Wndows)
-windows(width=15, height=15, title='Figura 1')       # abre una nueva ventana grafica (Windows)
-quartz()                                                             # abre una nueva ventana grafica (Mac OS)
-pdf("prueba.pdf")                                    # abre un pdf de nombre "prueba.pdf" y redirige el output gráfico al archivo pdf
-postscript("prueba.eps")             # abre un archivo de postscript encapsulado de nombre "prueba.eps" y redirige el output gráfico
+<pre class="src src-R">x11()                                    # abre una nueva ventana grafica (Unix y Wndows)
+windows(width=15, height=15, title='Figura 1')   # abre una nueva ventana grafica (Windows)
+quartz()                             # abre una nueva ventana grafica (Mac OS)
+pdf("prueba.pdf")                    # abre un pdf de nombre "prueba.pdf" y redirige el output gráfico al archivo pdf
+postscript("prueba.eps")     # abre un archivo de postscript encapsulado de nombre "prueba.eps" y redirige el output gráfico
 
 dev.list()   # lista todos los dispositivos grafico abiertos. Los nums son los identificadores
 dev.cur()    # devuelve el identificador del dispositivo grafico activo
@@ -1205,8 +1205,8 @@ Segun los argumentos puede generar un diagrama de dispersion, de barras, caja y 
 <pre class="src src-R">x &lt;- 1:15; y &lt;- 30:16
 # con datos cuantitativos produce diagramas de dispersion
 plot (x,y, pch=2)
-plot(women)          # puede usarse una hoja de datos o matriz. OJO solo toma las 2 primeras columnas
-plot(y)                      # representa los valores de 'y' en funcion de su posicion en el vector
+plot(women)      # puede usarse una hoja de datos o matriz. OJO solo toma las 2 primeras columnas
+plot(y)          # representa los valores de 'y' en funcion de su posicion en el vector
 
 # plot (factor) produce un diagrama de barras
 f &lt;- factor(rep(c(1,2,2,1,1,3), each=2), levels=1:3, labels=c("No fumador", "Fumador", "NS/NC"))
@@ -1257,11 +1257,11 @@ coplot(women$weight ~ women$height | entorno+socioeconomico)
 <div class="outline-text-3" id="text-12-5">
 <div class="org-src-container">
 
-<pre class="src src-R">pers &lt;- matrix(rnorm(1000), ncol = 5)        # genera 1000 datos con distribucion normal. Vease seccion 'Muestreo y probabilidad'
+<pre class="src src-R">pers &lt;- matrix(rnorm(1000), ncol = 5)    # genera 1000 datos con distribucion normal. Vease seccion 'Muestreo y probabilidad'
 colnames(pers) &lt;- c("extraversion", "estabilidad", "apertura", "responsabilidad", "amabilidad")
 pairs(pers)
 # Nótese la diferencia con el resultado de plot()
-x11(); plot(pers)                    # usa solo las 2 primeras variables
+x11(); plot(pers)            # usa solo las 2 primeras variables
 </pre>
 </div>
 </div>
@@ -1281,7 +1281,7 @@ hist(extraversion)
 x11(); hist(extraversion, labels=T, col= "gray", xlim=c(-4,4), ylab="Frecuencia absoluta", sub= "Figura 1. Ejemplo de histograma", main= "Extraversión")
 hist(amabilidad, col= "red", border="white", add=T, xlim=c(-4,4), sub= "Figura 2. Otro ejemplo de histograma", main= c("Extraversión  Amabilidad superpuestos"))
 x11(); hist(extraversion,freq=F, labels=T, col= "light blue",xlim=c(-4,4),ylab="Frecuencia relativa", las=1,sub= "Figura 1b. Ejemplo de histograma", main= "Extraversión")
-hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color") 
+hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color")
 
 pdf("ejemplos_histograma.pdf")
 hist(extraversion, nclas=3, col= "light blue", sub= "Figura 3. Ejemplo de histograma", main= "Extraversión")
@@ -1298,7 +1298,7 @@ dev.off()
 <div class="org-src-container">
 
 <pre class="src src-R">boxplot(extraversion, main= "Diagrama de caja de extraversión")
-text(locator(5),"más outliers", adj=0) 
+text(locator(5),"más outliers", adj=0)
 boxplot(pers)
 </pre>
 </div>
@@ -1341,12 +1341,12 @@ Permite contral cada elemento del grafico final
 <div class="org-src-container">
 
 <pre class="src src-R">   ?par
-   par.actual &lt;- par()          # guarda los valores actuales (para poder reestablecerlos posteriormente)
+   par.actual &lt;- par()      # guarda los valores actuales (para poder reestablecerlos posteriormente)
    par(font.main=4, las=1, xaxs= "r", col.lab="blue", col="skyblue3",lwd=3)
    hist(extraversion,xlim=c(-4,4))
    plot(extraversion, amabilidad)
-#   par(par.actual)                     # reestablece los valores guardados
-   par(mfrow=c(2,1))            # distribuye el espacio grafico e dos filas
+#   par(par.actual)         # reestablece los valores guardados
+   par(mfrow=c(2,1))        # distribuye el espacio grafico e dos filas
 </pre>
 </div>
 </div>
@@ -1383,9 +1383,9 @@ detach(pers)
 <div class="org-src-container">
 
 <pre class="src src-R">datos &lt;- c(1,5,9,8,52,2,4)
-sample(datos,3)                              # toma 3 elementos de 'datos'. Por defecto, muestrea SIN reposición
+sample(datos,3)              # toma 3 elementos de 'datos'. Por defecto, muestrea SIN reposición
 
-dado &lt;- 1:6                                          # para simular el lanzamiento de 5 dados hace falta muestreo CON reposición
+dado &lt;- 1:6                      # para simular el lanzamiento de 5 dados hace falta muestreo CON reposición
 sample(dado,5,replace=T)
 # sample() tambien permite incluir un vector de pesos si los sucesos no son equiprobables
 </pre>
@@ -1420,8 +1420,8 @@ Estructura: rfunc(n, par1, par2,&#x2026;)
 </p>
 <div class="org-src-container">
 
-<pre class="src src-R">datos.gauss &lt;- rnorm (100, mean=5, sd=2)     # genera 100 numeros ~N(5,2)
-runif (4,-10,10)                                                                     # genera 4 numeros ~U(-10, 10)
+<pre class="src src-R">datos.gauss &lt;- rnorm (100, mean=5, sd=2) # genera 100 numeros ~N(5,2)
+runif (4,-10,10)                                 # genera 4 numeros ~U(-10, 10)
 </pre>
 </div>
 
@@ -1461,9 +1461,9 @@ Estructura: pfunc(n, par1, par2,&#x2026;, lower.tail = TRUE, log.p = FALSE)
 
 <div class="org-src-container">
 
-<pre class="src src-R">pnorm(0.7)                                                           # devuelve la prob de que una V.A.con distribución N(0,1) tome un valor menor o igual que 0.7
+<pre class="src src-R">pnorm(0.7)                               # devuelve la prob de que una V.A.con distribución N(0,1) tome un valor menor o igual que 0.7
 pnorm(0.7, mean=10, sd=0.5)
-pchisq(3.84, df=3, lower.tail=F)     # devuelve la probabilidad de que una V.A.~ Chi2 con 3gl tome un valor mayor que 3.84
+pchisq(3.84, df=3, lower.tail=F) # devuelve la probabilidad de que una V.A.~ Chi2 con 3gl tome un valor mayor que 3.84
 </pre>
 </div>
 
@@ -1474,8 +1474,8 @@ Estructura: qfunc(n, par1, par2,&#x2026;, lower.tail = TRUE, log.p = FALSE)
 
 <div class="org-src-container">
 
-<pre class="src src-R">qnorm(0.025)                                          # devuelve el cuantil 2.5 (valor de la V.A. que deja por debajo el 2.5% de la distribución)
-qf(0.975, df1=4, df2=53)              # se puede usar para obtener los puntos de corte de la región de rechazo en un contraste de hipótesis
+<pre class="src src-R">qnorm(0.025)                      # devuelve el cuantil 2.5 (valor de la V.A. que deja por debajo el 2.5% de la distribución)
+qf(0.975, df1=4, df2=53)      # se puede usar para obtener los puntos de corte de la región de rechazo en un contraste de hipótesis
 </pre>
 </div>
 </div>
@@ -1487,8 +1487,8 @@ qf(0.975, df1=4, df2=53)              # se puede usar para obtener los puntos de
 <div class="outline-text-2" id="text-14">
 <p>
 Estructura: nombre.funcion &lt;- function(argumento1, argumento2){
-                instruccion1; instruccion2; &#x2026;;
-                return(variable.resultado)}
+        instruccion1; instruccion2; &#x2026;;
+        return(variable.resultado)}
 Las llaves no son necesarias si la funcion se define en una sola linea
 </p>
 
@@ -1498,11 +1498,11 @@ Ejemplo: Definicion de una funcion que calcula la media
 
 <div class="org-src-container">
 
-<pre class="src src-R">media &lt;- function(datos){               # pueden darse valores por defecto a los argumentos
+<pre class="src src-R">media &lt;- function(datos){       # pueden darse valores por defecto a los argumentos
 	numerador &lt;-sum(datos)
 	denominador &lt;- length(datos)
-	xm &lt;- numerador/denominador                             # podriamos llamar "media" a la variable de retorno
-	return(xm)}                                                                             # devuelve al programa principal el VALOR de xm (pero la variable xm es local y sale)
+	xm &lt;- numerador/denominador             # podriamos llamar "media" a la variable de retorno
+	return(xm)}                                     # devuelve al programa principal el VALOR de xm (pero la variable xm es local y sale)
 </pre>
 </div>
 
@@ -1513,13 +1513,13 @@ Utilizacion de la funcion una vez definida (y cargada en memoria)
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- rnorm(100)
-media(x)             # la llamada se hace mediante el nombre de la función
+media(x)     # la llamada se hace mediante el nombre de la función
 mi.media &lt;- media(datos=x);mi.media
 </pre>
 </div>
 
 <p>
-Recomendaciones: 
+Recomendaciones:
 </p>
 <ul class="org-ul">
 <li>crear un directorio especifico para funciones propias
@@ -1535,7 +1535,7 @@ Cargar una funcion en el espacio de trabajo, funcion source()
 <div class="org-src-container">
 
 <pre class="src src-R">source("../funciones/descriptivos.r") # carga la funcion 'descriptivos' que esta en el subdirectorio 'funciones'
-resultados &lt;- descriptivos(x)                         # devuelve una LISTA de elementos que se almacenan en la variable 'resultados'
+resultados &lt;- descriptivos(x)             # devuelve una LISTA de elementos que se almacenan en la variable 'resultados'
 </pre>
 </div>
 
@@ -1564,6 +1564,13 @@ desviacionTipica &lt;- sd(paises.csv$Porcentaje)
 varianza &lt;- var(paises.csv$Porcentaje)
 cuantil &lt;- quantile(paises.csv$Porcentaje)
 todos &lt;- summary(paises.csv$Porcentaje)
+max &lt;- max(paises.csv$Porcentaje)
+min &lt;- min(paises.csv$Porcentaje)
+amplitud &lt;- max - min
+tr=c(3,4,5,3,4,5,4,3,2,3,12,11,3,4,89)
+mean(tr,trim=5/100) # media recortada al 5%
+IQR(tr)  # rango intercuartil
+stem(tr) # diagrama de tallos y hojas (ver http://www.estadisticaparatodos.es/taller/graficas/tallos_hojas.html)xs
 </pre>
 </div>
 
@@ -1590,8 +1597,8 @@ Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.
 </div>
 <div id="postamble" class="status">
 <p class="author">Autor: David Arroyo Menéndez</p>
-<p class="date">Created: 2016-10-05 mié 12:02</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2019-02-06 mié 17:00</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
