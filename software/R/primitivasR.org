@@ -2,11 +2,45 @@
 #+LANGUAGE: es
 #+AUTHOR: David Arroyo Menéndez
 
+* Instalación
+** Debian/Ubuntu
+En Debian/Ubuntu encontraremos paquetes R empaquetados con el sufijo
+r-base o r-cran, buscando con apt-cache search. Es posible usar
+metapaquetes dependiendo de la versión como r-recommended
+
+** R Commander
+Para las personas que vienen adictas a SPSS y similares, puede ser
+necesario instalarse R para empezar a cuestionar utilizarlo. Por
+favor, no olviden que la estadística es programación no manejo de un
+interfaz. Para instalarlo también es posible usar paquetería Debian como
+
+#+BEGIN_SRC
+$ sudo apt-get install r-cran-rcmdr
+#+END_SRC
+
+Y después ejecutar:
+
+#+BEGIN_SRC
+$ R
+> library("Rcmdr")
+#+END_SRC
+
+** Paquetería R
+
+La ventaja de R frente a otras opciones para hacer estadística es el
+enorme número de paquetes. R tiene facilidades propias si su sistema
+operativo no tiene soporte, o no le apetece utilizarlo.
+
+#+BEGIN_SRC
+> install.packages("snow")
+#+END_SRC
 
 * Básicas
 ** Configuración del Entorno
 
 #+BEGIN_SRC R
+$ R                           # Para entrar en el entorno R una vez instalado
+                              # es necesario ejecutar la R desde la consola
 getwd() 				      # Devuelve el
                                               # directorio de trabajo
 setwd("/home/davidam/public_html/software/R") # Cambia el directorio
