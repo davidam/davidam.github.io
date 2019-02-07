@@ -8,16 +8,16 @@
 ** Configuración del Entorno
 
 #+BEGIN_SRC R
-getwd() 				      # Devuelve el 
-                                              # directorio de trabajo 
-setwd("/home/davidam/git/davidam.github.io/software/R/") # Cambia el directorio 
-                                              # de trabajo (debe 
+getwd() 				      # Devuelve el
+                                              # directorio de trabajo
+setwd("/home/davidam/git/davidam.github.io/software/R/") # Cambia el directorio
+                                              # de trabajo (debe
                                               # existir previamente)
-list.files()				      # Lista el contenido 
+list.files()				      # Lista el contenido
                                               # del directorio
                                               # de trabajo. Tambien ls()
 
-source("/home/davidam/public_html/software/R/ejercicios-descriptivos.R")
+source("/home/davidam/git/davidam.github.io/software/R/ejercicios-descriptivos.R")
 
 q()                                           # Salir del entorno
 #+END_SRC
@@ -36,7 +36,7 @@ q()                                           # Salir del entorno
 ** Operaciones Aritméticas
 
 #+BEGIN_SRC R
-   5+7		# se evalua y el resultado se imprime 
+   5+7		# se evalua y el resultado se imprime
                 # por pantalla pero no se guarda
    5**7
    5-7
@@ -46,7 +46,7 @@ q()                                           # Salir del entorno
    51 %/% 7	# division entera
 #+END_SRC
 
-** Asignacion de valores a variables 
+** Asignacion de valores a variables
 
 #+BEGIN_SRC R
    x <- 1	# asigna el valor 1 a la variable x
@@ -61,15 +61,15 @@ q()                                           # Salir del entorno
 #+BEGIN_SRC R
    q	# Muestra informacion de la funcion
    ?q
-   # Algunas funciones elementales: log(), log10(), 
+   # Algunas funciones elementales: log(), log10(),
    # exp(), sqrt(), sin(), cos(), tan()
-   # Mas funciones basicas: c(), max(), min(), 
-   # pmax(), pmin(), range(), length(), sort() 
-   # sum(), rowSums(), prod(), mean(), colMeans(), 
+   # Mas funciones basicas: c(), max(), min(),
+   # pmax(), pmin(), range(), length(), sort()
+   # sum(), rowSums(), prod(), mean(), colMeans(),
    # var(), cumsum(), etc.
    c(2,69,5,47,3647)
    sum(1,3,5,7)
-   raiz64 <- sqrt(64)	# el resultado de una funcion 
+   raiz64 <- sqrt(64)	# el resultado de una funcion
                         # puede guardarse en una variable
    print(x)
    print(pi,digits=16); print(pi,digits=5)
@@ -92,14 +92,14 @@ mentira <- F
 edad <- c(27,30,29);
 is.numeric(edad)
 is.integer(edad)
-is.double(edad)	# tambien existen is.complex(), 
+is.double(edad)	# tambien existen is.complex(),
                 # is.logical(), is.character()...
-typeof(edad)	# devuelve el tipo del objeto 
+typeof(edad)	# devuelve el tipo del objeto
                 # introducido como argumento
 #+END_SRC
 ** Arrays
 #+BEGIN_SRC R
-calle <- c("c/ rue del percebe","28013"); 
+calle <- c("c/ rue del percebe","28013");
 #+END_SRC
 ** Conversiones de Tipo
 #+BEGIN_SRC R
@@ -119,7 +119,7 @@ as.numeric(y)
 #+BEGIN_SRC R
 x <- c(1,4,6,3,7); x
 x[3]			# devuelve el valor guardado en 3a posicion
-x[-4]			# devuelve todo excepto el valor 
+x[-4]			# devuelve todo excepto el valor
                         # guardado en 4a posicion
 x[1] <- 35		# guarda el valor 35 en la primer posicion
 length(x)		# devuelve la longitud de x
@@ -134,7 +134,7 @@ y <- c(1,2,3);y
 suma <- x+y; suma		# recicla el vector mas corto
 suma2 <- x-1			# con escalares parece mas natural
 x <- c(0.0001, 0.001, 0.01, 0.1, 1)
-log10(x)			# muchas funciones tambien se 
+log10(x)			# muchas funciones tambien se
                                 # aplican vectorizadamente
 #+END_SRC
 ** Generacion de secuencias regulares
@@ -143,7 +143,7 @@ log10(x)			# muchas funciones tambien se
 1:10-1				# el operador ':' tiene maxima prioridad
 1:{10-1}
 #funcion seq(from, to, by, length)
-x <- seq (-3,3,0.5);x		# valores desde -3 hasta 3 a intervalos de 0.5	
+x <- seq (-3,3,0.5);x		# valores desde -3 hasta 3 a intervalos de 0.5
 seq (-3,3,length=10)		# 10 valores equiespaciados desde -3 hasta 3
 seq (-3, by=0.5,length=10)	# 10 valores a intervalos de 0.5 desde -3
 seq(along=x)			# Genera la secuencia 1, 2, 3,..., length(x)
@@ -183,7 +183,7 @@ all.equal(x, y, tol=0.001)
 #+END_SRC
 ** Operadores logicos: &,|, !, xor()
 #+BEGIN_SRC R
-a<-c(TRUE,TRUE,FALSE,FALSE) 
+a<-c(TRUE,TRUE,FALSE,FALSE)
 b<-c(F, T, F, T)
 a&b
 a|b
@@ -207,7 +207,7 @@ is.na(x)
 Entonces si tenemos data$q_005 como un frame con algunos datos
 perdidos y queremos solo los datos no perdidos podemos hacer
 
-#+BEGIN_SRC 
+#+BEGIN_SRC
 data5 <- data$q_005[!is.na(data$q_005)]
 #+END_SRC
 
@@ -370,7 +370,7 @@ lista
    b; typeof(b)
 
    nomb <- c("reales","enteros", "matriz", "caracteres", "logicos")
-   names(lista1) <- nomb; 	# asigna nombres a los componenes de la lista 
+   names(lista1) <- nomb; 	# asigna nombres a los componenes de la lista
    names(lista1)				# devuelve los nombres de los componentes (si los hay)
    lista1[["reales"]]
    lista1$logicos 			# equivalente a lista1[["logicos"]] y a lista[[5]]
@@ -381,7 +381,7 @@ lista
 #+END_SRC
 
 ** Attach
-Las funciones attach() y detach () "cargan" listas y simplifican las referencias. 
+Las funciones attach() y detach () "cargan" listas y simplifican las referencias.
 #+BEGIN_SRC R
    attach(lista1, warn.conflicts = T)
 #+END_SRC
@@ -395,7 +395,7 @@ Son un tipo especial de lista:
 
 #+BEGIN_SRC R
    var1 <- seq(150,700,50); var2 <- 6:17; var3 <- c(10, 35, 17); var4 <- 2:8
-   data.frame(var1, var2) 
+   data.frame(var1, var2)
    data.frame(var1, var3) # recicla var3
    data.frame(var1, var4) # mensaje de error porque la longitud var1 no es multiplo de la de var4
    var5 <- factor(rep(c(2,1,1,1), times=3), levels=1:2, labels=c("UsaTwitter", "NoUsaTwitter"));var5
@@ -459,7 +459,7 @@ R dispone de una utilidad de aspecto sejemante a una hoja de calculo para:
    respuestas
    respuestas2 <- edit(respuestas)	# guarda los cambios en una nueva hoja de datos (y conserva la antigua)
    respuestas;respuestas2
-   fix(respuestas)						# sobreescribe los cambios. Es equivalente a respuestas <- edit(respuestas)	
+   fix(respuestas)						# sobreescribe los cambios. Es equivalente a respuestas <- edit(respuestas)
 #+END_SRC
 
 * Cargar datos nativos de R
@@ -469,7 +469,7 @@ La instalacion basica de R incluye el paquete 'datasets'.
    help(women)								# informacion sobre ese conjunto de datos concreto
    data(women, package="datasets")	# carga esos datos
    # Si el paquete de procedencia esta cargado basta simplemente:
-   women	
+   women
    data(women)								# Equivalente data('women')
 #+END_SRC
 
@@ -530,7 +530,7 @@ Precauciones:
 
 ** Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames
 #+BEGIN_SRC R
-   x<-seq(1,3,0.1) 
+   x<-seq(1,3,0.1)
    write(x,"../datos/numeros.dat", ncolumns=1,append=T)
    write(x,"../datos/numeros.dat", ncolumns=length(x),append=F)
 #+END_SRC
@@ -561,13 +561,13 @@ summary(b)
 names(b)# obtengo los nombres de las cabeceras de columna
 head(b)# Quiero ver los 6 primeros valores
 tail(b) # Los seis últimos
-attach(b)# anclamos la base de datos para trabajar con ella 
+attach(b)# anclamos la base de datos para trabajar con ella
 View(b)# Veo mis datos
 edit(b)
 #+END_SRC
 
 ** Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim ...
-Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc., 
+Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc.,
 aunque resulta mas comodo usar esos programas para guardar los datos en texto plano y usar read.table para importar a R
 
 #+BEGIN_SRC R
@@ -582,7 +582,7 @@ con el paquete.
 Paquete para importar y exportar datos de excel: ‘xlsReadWrite’ (no
 incluido en el sistema base; hay que importarlo)
 
-** Funcion scan(). 
+** Funcion scan().
 Mas flexible pero mas complicada de utilizar. Permite especificar el modo de las variables
 #+BEGIN_SRC R
    ?scan
@@ -608,7 +608,7 @@ Para una buena introduccion: R for Beginners de E. Paradis (citado en la documen
    dev.off() 	# cierra el dispositivo grafico activo; dev.off(3) cierra el dispositivo grafico num 3
 #+END_SRC
 
-** Funcion plot(). Es la función gráfica basica. 
+** Funcion plot(). Es la función gráfica basica.
 Segun los argumentos puede generar un diagrama de dispersion, de barras, caja y bigotes etc.
 #+BEGIN_SRC R
    x <- 1:15; y <- 30:16
@@ -664,7 +664,7 @@ Se usa la función png para almacenar la salida en un fichero de imagen.
    x11(); hist(extraversion, labels=T, col= "gray", xlim=c(-4,4), ylab="Frecuencia absoluta", sub= "Figura 1. Ejemplo de histograma", main= "Extraversión")
    hist(amabilidad, col= "red", border="white", add=T, xlim=c(-4,4), sub= "Figura 2. Otro ejemplo de histograma", main= c("Extraversión  Amabilidad superpuestos"))
    x11(); hist(extraversion,freq=F, labels=T, col= "light blue",xlim=c(-4,4),ylab="Frecuencia relativa", las=1,sub= "Figura 1b. Ejemplo de histograma", main= "Extraversión")
-   hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color")	
+   hist(amabilidad, col= "gray", border="white", xlim=c(-4,4), sub="", main= "Figura 3. Otro ejemplo de histograma cambiando el color")
 
    pdf("ejemplos_histograma.pdf")
    hist(extraversion, nclas=3, col= "light blue", sub= "Figura 3. Ejemplo de histograma", main= "Extraversión")
@@ -675,7 +675,7 @@ Se usa la función png para almacenar la salida en un fichero de imagen.
 ** Funcion boxplot()
 #+BEGIN_SRC R
    boxplot(extraversion, main= "Diagrama de caja de extraversión")
-   text(locator(5),"más outliers", adj=0) 
+   text(locator(5),"más outliers", adj=0)
    boxplot(pers)
 #+END_SRC
 
@@ -717,7 +717,7 @@ Permite contral cada elemento del grafico final
    # un ultimo ejemplo
    hist(extraversion, freq=F)
    curve(dnorm(x), add=T)
-   detach(pers)  
+   detach(pers)
 #+END_SRC
 ** Curvas de nivel y 3d
 #+BEGIN_SRC R
@@ -737,8 +737,8 @@ contour(x,y,fa,nlevels=15)
 image(x,y,fa)
 persp(x,y,fa)
 persp(x,y,fa,theta=30)
-persp(x,y,fa,theta=30,phi=20) 
-persp(x,y,fa,theta=30,phi=70) 
+persp(x,y,fa,theta=30,phi=20)
+persp(x,y,fa,theta=30,phi=70)
 persp(x,y,fa,theta=30,phi=40)
 #+END_SRC
 
@@ -834,7 +834,7 @@ Utilizacion de la funcion una vez definida (y cargada en memoria)
    mi.media <- media(datos=x);mi.media
 #+END_SRC
 
-Recomendaciones: 
+Recomendaciones:
 + crear un directorio especifico para funciones propias
 + guardar cada funcion en un script independiente
 
@@ -868,47 +868,47 @@ En nuestro ejemplo utilizaremos los datos de [[file:///home/davidam/public_html/
 * Distribuciones
 ** Binomial
 #+BEGIN_SRC R
-> dbinom(4, size=12, prob=0.2) 
+> dbinom(4, size=12, prob=0.2)
 [1] 0.1329
-> pbinom(4, size=12, prob=0.2) 
+> pbinom(4, size=12, prob=0.2)
 [1] 0.92744
 #+END_SRC
 ** Poisson
 #+BEGIN_SRC R
-> ppois(16, lambda=12)   # lower tail 
+> ppois(16, lambda=12)   # lower tail
 [1] 0.89871
-> ppois(16, lambda=12, lower=FALSE)   # upper tail 
+> ppois(16, lambda=12, lower=FALSE)   # upper tail
 [1] 0.10129
 #+END_SRC
 ** Distribución Contínua Uniforme
 #+BEGIN_SRC R
-> runif(10, min=1, max=3) 
-[1] 1.6121 1.2028 1.9306 2.4233 1.6874 1.1502 2.7068 
+> runif(10, min=1, max=3)
+[1] 1.6121 1.2028 1.9306 2.4233 1.6874 1.1502 2.7068
 [8] 1.4455 2.4122 2.2171
 #+END_SRC
 ** Exponencial
 #+BEGIN_SRC R
-> pexp(2, rate=1/3) 
+> pexp(2, rate=1/3)
 [1] 0.48658
 #+END_SRC
 ** Normal
 #+BEGIN_SRC R
-> pnorm(84, mean=72, sd=15.2, lower.tail=FALSE) 
+> pnorm(84, mean=72, sd=15.2, lower.tail=FALSE)
 [1] 0.21492
 #+END_SRC
 ** Chi cuadrado
 #+BEGIN_SRC R
-> qchisq(.95, df=7)        # 7 degrees of freedom 
+> qchisq(.95, df=7)        # 7 degrees of freedom
 [1] 14.067
 #+END_SRC
 ** T de Student
 #+BEGIN_SRC R
-> qt(c(.025, .975), df=5)   # 5 degrees of freedom 
+> qt(c(.025, .975), df=5)   # 5 degrees of freedom
 [1] -2.5706  2.5706
 #+END_SRC
 ** F distribución
 #+BEGIN_SRC R
-> qf(.95, df1=5, df2=2) 
+> qf(.95, df1=5, df2=2)
 [1] 19.296
 #+END_SRC
 * Test estadísticos
@@ -919,10 +919,10 @@ la probabilidad de tener dieciseis o más coches cruzando el puente en
 un minuto particular.
 
 #+BEGIN_SRC R
-> ppois(16, lambda=12)   # lower tail 
+> ppois(16, lambda=12)   # lower tail
 [1] 0.89871
 
-> ppois(16, lambda=12, lower=FALSE)   # upper tail 
+> ppois(16, lambda=12, lower=FALSE)   # upper tail
 [1] 0.10129
 #+END_SRC
 
@@ -952,7 +952,7 @@ El 95 percentil de la distribución F con (5, 2) grados de libertad es
 19.296
 
 #+BEGIN_SRC R
-> qf(.95, df1=5, df2=2) 
+> qf(.95, df1=5, df2=2)
 [1] 19.296
 #+END_SRC
 
@@ -966,12 +966,12 @@ de ejemplo en la encuesta soportan un nivel de significación 0.5
 > levels(survey$Smoke)
 > smoke.freq = table(survey$Smoke)
 > smoke.freq
-> smoke.prob = c(.045, .795, .085, .075) 
-> chisq.test(smoke.freq, p=smoke.prob) 
- 
-        Chi-squared test for given probabilities 
- 
-data:  smoke.freq 
+> smoke.prob = c(.045, .795, .085, .075)
+> chisq.test(smoke.freq, p=smoke.prob)
+
+        Chi-squared test for given probabilities
+
+data:  smoke.freq
 X-squared = 0.1074, df = 3, p-value = 0.991
 #+END_SRC
 
@@ -986,25 +986,25 @@ independiente de su nivel de ejercicio en un nivel de significancia de
 0.05.
 
 #+BEGIN_SRC R
-> library(MASS)       # load the MASS package 
-> tbl = table(survey$Smoke, survey$Exer) 
-> tbl                 # the contingency table 
- 
-        Freq None Some 
-  Heavy    7    1    3 
-  Never   87   18   84 
-  Occas   12    3    4 
+> library(MASS)       # load the MASS package
+> tbl = table(survey$Smoke, survey$Exer)
+> tbl                 # the contingency table
+
+        Freq None Some
+  Heavy    7    1    3
+  Never   87   18   84
+  Occas   12    3    4
   Regul    9    1    7
 
-> chisq.test(tbl) 
- 
-        Pearson’s Chi-squared test 
- 
-data:  table(survey$Smoke, survey$Exer) 
-X-squared = 5.4885, df = 6, p-value = 0.4828 
- 
-Warning message: 
-In chisq.test(table(survey$Smoke, survey$Exer)) : 
+> chisq.test(tbl)
+
+        Pearson’s Chi-squared test
+
+data:  table(survey$Smoke, survey$Exer)
+X-squared = 5.4885, df = 6, p-value = 0.4828
+
+Warning message:
+In chisq.test(table(survey$Smoke, survey$Exer)) :
   Chi-squared approximation may be incorrect
 #+END_SRC
 
@@ -1019,22 +1019,22 @@ nivel de significación 0.05 si los rendimientos entre 1931 y 1932 en
 los datos tienen distribuciones de datos idénticas.
 
 #+BEGIN_SRC R
-> library(MASS)         # load the MASS package 
-> head(immer) 
-  Loc Var    Y1    Y2 
-1  UF   M  81.0  80.7 
-2  UF   S 105.4  82.3 
+> library(MASS)         # load the MASS package
+> head(immer)
+  Loc Var    Y1    Y2
+1  UF   M  81.0  80.7
+2  UF   S 105.4  82.3
 
-> wilcox.test(immer$Y1, immer$Y2, paired=TRUE) 
- 
-        Wilcoxon signed rank test with continuity correction 
- 
-data:  immer$Y1 and immer$Y2 
-V = 368.5, p-value = 0.005318 
-alternative hypothesis: true location shift is not equal to 0 
- 
-Warning message: 
-In wilcox.test.default(immer$Y1, immer$Y2, paired = TRUE) : 
+> wilcox.test(immer$Y1, immer$Y2, paired=TRUE)
+
+        Wilcoxon signed rank test with continuity correction
+
+data:  immer$Y1 and immer$Y2
+V = 368.5, p-value = 0.005318
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(immer$Y1, immer$Y2, paired = TRUE) :
   cannot compute exact p-value with ties
 #+END_SRC
 
@@ -1048,7 +1048,7 @@ ajustado es del 64%.
 #+BEGIN_SRC R
 > am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
 > newdata = data.frame(hp=120, wt=2.8)
-> predict(am.glm, newdata, type="response") 
+> predict(am.glm, newdata, type="response")
 #+END_SRC
 
 ** Test de significado para la regresión logística
@@ -1059,33 +1059,33 @@ transmisión del vehículo en los datos asigna mtcars es
 estadísticamente insignificante.
 
 #+BEGIN_SRC R
-> am.glm = glm(formula=am ~ hp + wt, 
-+              data=mtcars, 
+> am.glm = glm(formula=am ~ hp + wt,
++              data=mtcars,
 +              family=binomial)
 
-> summary(am.glm) 
- 
-Call: 
-glm(formula = am ~ hp + wt, family = binomial, data = mtcars) 
- 
-Deviance Residuals: 
-    Min       1Q   Median       3Q      Max 
--2.2537  -0.1568  -0.0168   0.1543   1.3449 
- 
-Coefficients: 
-            Estimate Std. Error z value Pr(>|z|) 
-(Intercept)  18.8663     7.4436    2.53   0.0113 * 
-hp            0.0363     0.0177    2.04   0.0409 * 
-wt           -8.0835     3.0687   -2.63   0.0084 ** 
---- 
-Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1 
- 
-(Dispersion parameter for binomial family taken to be 1) 
- 
-    Null deviance: 43.230  on 31  degrees of freedom 
-Residual deviance: 10.059  on 29  degrees of freedom 
-AIC: 16.06 
- 
+> summary(am.glm)
+
+Call:
+glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-2.2537  -0.1568  -0.0168   0.1543   1.3449
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  18.8663     7.4436    2.53   0.0113 *
+hp            0.0363     0.0177    2.04   0.0409 *
+wt           -8.0835     3.0687   -2.63   0.0084 **
+---
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 43.230  on 31  degrees of freedom
+Residual deviance: 10.059  on 29  degrees of freedom
+AIC: 16.06
+
 Number of Fisher Scoring iterations: 8
 #+END_SRC
 ** Mann-Whitney test: comparar si hay diferencias entre medianas muestras independientes
@@ -1097,7 +1097,7 @@ boxplot(Ostertagia ~ Manejo)
 plotmeans(Ostertagia~Manejo,col="coral", connect=T, ylab="Carga parasitaria (Ostertagia)", xlab="Manejo", data=b)# plot means and CI95% Grafica mitjana
 #+END_SRC
 
-* Regresión Lineal 
+* Regresión Lineal
 
 En estadística la regresión lineal o ajuste lineal es un modelo
 matemático usado para aproximar la relación de dependencia entre una
@@ -1115,27 +1115,27 @@ la duración de la siguiente erupción si el tiempo de espera han sido
 
 #+BEGIN_SRC R
 > eruption.lm = lm(eruptions ~ waiting, data=faithful)
-> coeffs = coefficients(eruption.lm); coeffs 
-(Intercept)     waiting 
+> coeffs = coefficients(eruption.lm); coeffs
+(Intercept)     waiting
   -1.874016    0.075628
-> waiting = 80           # the waiting time 
-> duration = coeffs[1] + coeffs[2]*waiting 
-> duration 
-(Intercept) 
+> waiting = 80           # the waiting time
+> duration = coeffs[1] + coeffs[2]*waiting
+> duration
+(Intercept)
      4.1762
 #+END_SRC
 
 Si el tiempo de espera han sido 80 minutos, esperamos que la siguiente
 erupción son 4.1762 minutos.
 
-** Coeficiente de Determinación 
+** Coeficiente de Determinación
 
 Encuentra el coeficiente de determinación para el modelo de regresión
 lineal simple del conjunto de datos faithful.
 
 #+BEGIN_SRC R
 > eruption.lm = lm(eruptions ~ waiting, data=faithful)
-> summary(eruption.lm)$r.squared 
+> summary(eruption.lm)$r.squared
 [1] 0.81146
 #+END_SRC
 
@@ -1147,24 +1147,24 @@ de significación 0.05.
 
 #+BEGIN_SRC R
 > eruption.lm = lm(eruptions ~ waiting, data=faithful)
-> summary(eruption.lm) 
- 
-Call: 
-lm(formula = eruptions ~ waiting, data = faithful) 
- 
-Residuals: 
-    Min      1Q  Median      3Q     Max 
--1.2992 -0.3769  0.0351  0.3491  1.1933 
- 
-Coefficients: 
-            Estimate Std. Error t value Pr(>|t|) 
-(Intercept) -1.87402    0.16014   -11.7   <2e-16 *** 
-waiting      0.07563    0.00222    34.1   <2e-16 *** 
---- 
-Signif. codes:  0 ’***’ 0.001 ’**’ 0.01 ’*’ 0.05 ’.’ 0.1 ’ ’ 1 
- 
-Residual standard error: 0.497 on 270 degrees of freedom 
-Multiple R-squared: 0.811,      Adjusted R-squared: 0.811 
+> summary(eruption.lm)
+
+Call:
+lm(formula = eruptions ~ waiting, data = faithful)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-1.2992 -0.3769  0.0351  0.3491  1.1933
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) -1.87402    0.16014   -11.7   <2e-16 ***
+waiting      0.07563    0.00222    34.1   <2e-16 ***
+---
+Signif. codes:  0 ’***’ 0.001 ’**’ 0.01 ’*’ 0.05 ’.’ 0.1 ’ ’ 1
+
+Residual standard error: 0.497 on 270 degrees of freedom
+Multiple R-squared: 0.811,      Adjusted R-squared: 0.811
 F-statistic: 1.16e+03 on 1 and 270 DF,  p-value: <2e-16
 #+END_SRC
 
@@ -1179,8 +1179,8 @@ motor de 120 y pesa 2800.
 #+BEGIN_SRC R
 > am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
 > newdata = data.frame(hp=120, wt=2.8)
-> predict(am.glm, newdata, type="response") 
-      1 
+> predict(am.glm, newdata, type="response")
+      1
 0.64181
 #+END_SRC
 
@@ -1193,19 +1193,19 @@ del vehículo en los datos mtcars es estadísticamente insignificante.
 
 #+BEGIN_SRC R
 > am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
-> summary(am.glm) 
+> summary(am.glm)
 
 Call:
 glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
 
-Deviance Residuals: 
-    Min       1Q   Median       3Q      Max  
--2.2537  -0.1568  -0.0168   0.1543   1.3449  
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-2.2537  -0.1568  -0.0168   0.1543   1.3449
 
 Coefficients:
-            Estimate Std. Error z value Pr(>|z|)   
-(Intercept) 18.86630    7.44356   2.535  0.01126 * 
-hp           0.03626    0.01773   2.044  0.04091 * 
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept) 18.86630    7.44356   2.535  0.01126 *
+hp           0.03626    0.01773   2.044  0.04091 *
 wt          -8.08348    3.06868  -2.634  0.00843 **
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
@@ -1222,31 +1222,31 @@ Number of Fisher Scoring iterations: 8
 * Análisis de Varianza
 ** Diseño Completamente Aleatorio
 #+BEGIN_SRC R
-> df1 = read.table("fastfood-1.txt", header=TRUE); df1 
-  Item1 Item2 Item3 
-1    22    52    16 
-2    42    33    24 
-3    44     8    19 
-4    52    47    18 
-5    45    43    34 
+> df1 = read.table("fastfood-1.txt", header=TRUE); df1
+  Item1 Item2 Item3
+1    22    52    16
+2    42    33    24
+3    44     8    19
+4    52    47    18
+5    45    43    34
 6    37    32    36
 
-> r = c(t(as.matrix(df1))) # response data 
-> r 
+> r = c(t(as.matrix(df1))) # response data
+> r
  [1] 22 52 16 42 33 ...
 
-> f = c("Item1", "Item2", "Item3")   # treatment levels 
-> k = 3                    # number of treatment levels 
+> f = c("Item1", "Item2", "Item3")   # treatment levels
+> k = 3                    # number of treatment levels
 > n = 6                    # observations per treatment
 
-> tm = gl(k, 1, n*k, factor(f))   # matching treatments 
-> tm 
+> tm = gl(k, 1, n*k, factor(f))   # matching treatments
+> tm
  [1] Item1 Item2 Item3 Item1 Item2 ...
 
 > av = aov(r ~ tm)
-> summary(av) 
-            Df Sum Sq Mean Sq F value Pr(>F) 
-tm           2    745     373    2.54   0.11 
+> summary(av)
+            Df Sum Sq Mean Sq F value Pr(>F)
+tm           2    745     373    2.54   0.11
 Residuals   15   2200     147
 #+END_SRC
 
@@ -1257,8 +1257,8 @@ plotear un dendograma que muestre una relación jerárquica entre
 vehículos.
 
 #+BEGIN_SRC R
-> d <- dist(as.matrix(mtcars))   # find distance matrix 
-> hc <- hclust(d)                # apply hirarchical clustering 
+> d <- dist(as.matrix(mtcars))   # find distance matrix
+> hc <- hclust(d)                # apply hirarchical clustering
 > plot(hc)                       # plot the dendrogram
 #+END_SRC
 
@@ -1266,11 +1266,11 @@ Para un conjunto de datos con 4000 elementos, coge hclust 2 minutos
 para finalizar el trabajo en un AMD.
 
 #+BEGIN_SRC R
-> test.data <- function(dim, num, seed=17) { 
-+     set.seed(seed) 
-+     matrix(rnorm(dim * num), nrow=num) 
-+ } 
-> m <- test.data(120, 4500) 
+> test.data <- function(dim, num, seed=17) {
++     set.seed(seed)
++     matrix(rnorm(dim * num), nrow=num)
++ }
+> m <- test.data(120, 4500)
 #+END_SRC
 
 * Licencia
@@ -1280,4 +1280,4 @@ Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed]
 * Referencias
 
 + González, A., González, S. 2018. "/Una Introducción a R/", Libremanuals
-+ Chay, Chi. "/R Tutorial/", visto el 1 de Diciembre de 2017, <http://www.r-tutor.com/>. 
++ Chay, Chi. "/R Tutorial/", visto el 1 de Diciembre de 2017, <http://www.r-tutor.com/>.
