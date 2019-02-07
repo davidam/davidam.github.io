@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
 <title>Primitivas en GNU R</title>
-<!-- 2019-02-06 mié 17:00 -->
+<!-- 2019-02-07 jue 17:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="David Arroyo Menéndez" />
@@ -88,6 +88,7 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="../../css/org.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -142,126 +143,221 @@ for the JavaScript code in this tag.
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Básicas</a>
+<li><a href="#sec-1">1. Instalación</a>
 <ul>
-<li><a href="#sec-1-1">1.1. Configuración del Entorno</a></li>
-<li><a href="#sec-1-2">1.2. Ayuda on-line en R</a></li>
-<li><a href="#sec-1-3">1.3. Operaciones Aritméticas</a></li>
-<li><a href="#sec-1-4">1.4. Asignacion de valores a variables</a></li>
-<li><a href="#sec-1-5">1.5. Funciones</a></li>
-<li><a href="#sec-1-6">1.6. Listar y Eliminar Objetos del Espacio de Trabajo</a></li>
+<li><a href="#sec-1-1">1.1. Debian/Ubuntu</a></li>
+<li><a href="#sec-1-2">1.2. R Commander</a></li>
+<li><a href="#sec-1-3">1.3. Paquetería R</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2. Tipos de Datos</a>
+<li><a href="#sec-2">2. Básicas</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Booleanos</a></li>
-<li><a href="#sec-2-2">2.2. Arrays</a></li>
-<li><a href="#sec-2-3">2.3. Conversiones de Tipo</a></li>
+<li><a href="#sec-2-1">2.1. Configuración del Entorno</a></li>
+<li><a href="#sec-2-2">2.2. Ayuda on-line en R</a></li>
+<li><a href="#sec-2-3">2.3. Operaciones Aritméticas</a></li>
+<li><a href="#sec-2-4">2.4. Asignacion de valores a variables</a></li>
+<li><a href="#sec-2-5">2.5. Funciones</a></li>
+<li><a href="#sec-2-6">2.6. Listar y Eliminar Objetos del Espacio de Trabajo</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. Vectores</a>
+<li><a href="#sec-3">3. Tipos de Datos</a>
 <ul>
-<li><a href="#sec-3-1">3.1. Básico</a></li>
-<li><a href="#sec-3-2">3.2. Calculo vectorizado. Equivale a un bucle implicito</a></li>
-<li><a href="#sec-3-3">3.3. Generacion de secuencias regulares</a></li>
-<li><a href="#sec-3-4">3.4. Ordenacion de vectores</a></li>
-<li><a href="#sec-3-5">3.5. Operadores comparativos: &lt;, &lt;=, &gt;, &gt;=, <code>=, !</code></a></li>
-<li><a href="#sec-3-6">3.6. Operadores logicos: &amp;,|, !, xor()</a></li>
-<li><a href="#sec-3-7">3.7. Identificacion y sustitucion de valores perdidos. Funciones is.na() y which()</a></li>
-<li><a href="#sec-3-8">3.8. Indeterminaciones e infinito</a></li>
-<li><a href="#sec-3-9">3.9. Manipulacion de vectores de caracteres</a></li>
-<li><a href="#sec-3-10">3.10. Indexacion de vectores mediante variables de caracteres. Funcion names()</a></li>
+<li><a href="#sec-3-1">3.1. Booleanos</a></li>
+<li><a href="#sec-3-2">3.2. Arrays</a></li>
+<li><a href="#sec-3-3">3.3. Conversiones de Tipo</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Factores</a></li>
-<li><a href="#sec-5">5. Matrices</a>
+<li><a href="#sec-4">4. Vectores</a>
 <ul>
-<li><a href="#sec-5-1">5.1. Función matrix()</a></li>
-<li><a href="#sec-5-2">5.2. Concatenación de matrices</a></li>
-<li><a href="#sec-5-3">5.3. Indexacion de matrices</a></li>
-<li><a href="#sec-5-4">5.4. Operaciones con matrices</a></li>
-<li><a href="#sec-5-5">5.5. Algunas funciones que operan sobre filas o columnas completas</a></li>
-<li><a href="#sec-5-6">5.6. Apply</a></li>
-<li><a href="#sec-5-7">5.7. Matrices multidimensionales (arrays)</a></li>
+<li><a href="#sec-4-1">4.1. Básico</a></li>
+<li><a href="#sec-4-2">4.2. Calculo vectorizado. Equivale a un bucle implicito</a></li>
+<li><a href="#sec-4-3">4.3. Generacion de secuencias regulares</a></li>
+<li><a href="#sec-4-4">4.4. Ordenacion de vectores</a></li>
+<li><a href="#sec-4-5">4.5. Operadores comparativos: &lt;, &lt;=, &gt;, &gt;=, <code>=, !</code></a></li>
+<li><a href="#sec-4-6">4.6. Operadores logicos: &amp;,|, !, xor()</a></li>
+<li><a href="#sec-4-7">4.7. Identificacion y sustitucion de valores perdidos. Funciones is.na() y which()</a></li>
+<li><a href="#sec-4-8">4.8. Indeterminaciones e infinito</a></li>
+<li><a href="#sec-4-9">4.9. Manipulacion de vectores de caracteres</a></li>
+<li><a href="#sec-4-10">4.10. Indexacion de vectores mediante variables de caracteres. Funcion names()</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">6. Listas</a>
+<li><a href="#sec-5">5. Factores</a></li>
+<li><a href="#sec-6">6. Matrices</a>
 <ul>
-<li><a href="#sec-6-1">6.1. Indexacion, nombres y atributos</a></li>
-<li><a href="#sec-6-2">6.2. Attach</a></li>
+<li><a href="#sec-6-1">6.1. Función matrix()</a></li>
+<li><a href="#sec-6-2">6.2. Concatenación de matrices</a></li>
+<li><a href="#sec-6-3">6.3. Indexacion de matrices</a></li>
+<li><a href="#sec-6-4">6.4. Operaciones con matrices</a></li>
+<li><a href="#sec-6-5">6.5. Algunas funciones que operan sobre filas o columnas completas</a></li>
+<li><a href="#sec-6-6">6.6. Apply</a></li>
+<li><a href="#sec-6-7">6.7. Matrices multidimensionales (arrays)</a></li>
 </ul>
 </li>
-<li><a href="#sec-7">7. Hojas de datos (data frames)</a>
+<li><a href="#sec-7">7. Listas</a>
 <ul>
-<li><a href="#sec-7-1">7.1. Algunos atributos</a></li>
-<li><a href="#sec-7-2">7.2. Particiones de una hoja de datos segun un factor, funcion split()</a></li>
-<li><a href="#sec-7-3">7.3. Filtrado segun condiciones logicas. Función subset()</a></li>
-<li><a href="#sec-7-4">7.4. Transformaciones de datos, funcion transform()</a></li>
-<li><a href="#sec-7-5">7.5. Edición manual de bases de datos</a></li>
+<li><a href="#sec-7-1">7.1. Indexacion, nombres y atributos</a></li>
+<li><a href="#sec-7-2">7.2. Attach</a></li>
 </ul>
 </li>
-<li><a href="#sec-8">8. Cargar datos nativos de R</a></li>
-<li><a href="#sec-9">9. Paquetes R</a>
+<li><a href="#sec-8">8. Hojas de datos (data frames)</a>
 <ul>
-<li><a href="#sec-9-1">9.1. Ruta de busqueda (search path).</a></li>
-<li><a href="#sec-9-2">9.2. ACERCA de attach()</a>
+<li><a href="#sec-8-1">8.1. Algunos atributos</a></li>
+<li><a href="#sec-8-2">8.2. Particiones de una hoja de datos segun un factor, funcion split()</a></li>
+<li><a href="#sec-8-3">8.3. Filtrado segun condiciones logicas. Función subset()</a></li>
+<li><a href="#sec-8-4">8.4. Transformaciones de datos, funcion transform()</a></li>
+<li><a href="#sec-8-5">8.5. Edición manual de bases de datos</a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9. Cargar datos nativos de R</a></li>
+<li><a href="#sec-10">10. Paquetes R</a>
 <ul>
-<li><a href="#sec-9-2-1">9.2.1. Retirar paquetes</a></li>
+<li><a href="#sec-10-1">10.1. Ruta de busqueda (search path).</a></li>
+<li><a href="#sec-10-2">10.2. ACERCA de attach()</a>
+<ul>
+<li><a href="#sec-10-2-1">10.2.1. Retirar paquetes</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-10">10. Escritura de datos en un archivo</a>
+<li><a href="#sec-11">11. Escritura de datos en un archivo</a>
 <ul>
-<li><a href="#sec-10-1">10.1. Guardar en un archivo de texto plano una hoja de datos. Funcion write.table()</a></li>
-<li><a href="#sec-10-2">10.2. Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames</a></li>
+<li><a href="#sec-11-1">11.1. Guardar en un archivo de texto plano una hoja de datos. Funcion write.table()</a></li>
+<li><a href="#sec-11-2">11.2. Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames</a></li>
 </ul>
 </li>
-<li><a href="#sec-11">11. Lectura de datos desde un archivo</a>
+<li><a href="#sec-12">12. Lectura de datos desde un archivo</a>
 <ul>
-<li><a href="#sec-11-1">11.1. Informacion completa en el manual "R Data Import/Export" accesible desde la ayuda</a></li>
-<li><a href="#sec-11-2">11.2. Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</a></li>
-<li><a href="#sec-11-3">11.3. Funcion scan().</a></li>
+<li><a href="#sec-12-1">12.1. Información completa en el manual "R Data Import/Export" accesible desde la ayuda</a></li>
+<li><a href="#sec-12-2">12.2. Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</a></li>
+<li><a href="#sec-12-3">12.3. Funcion scan().</a></li>
 </ul>
 </li>
-<li><a href="#sec-12">12. Gráficos</a>
+<li><a href="#sec-13">13. Gráficos</a>
 <ul>
-<li><a href="#sec-12-1">12.1. Gestion de ventanas graficas</a></li>
-<li><a href="#sec-12-2">12.2. Funcion plot(). Es la función gráfica basica.</a></li>
-<li><a href="#sec-12-3">12.3. Plot a Png</a></li>
-<li><a href="#sec-12-4">12.4. Funcicion coplot(). Matriz de graficos de dispersion separados segun factores</a></li>
-<li><a href="#sec-12-5">12.5. Funcion pairs(). Ejemplo con datos simulados de los "Big Five" de personalidad</a></li>
-<li><a href="#sec-12-6">12.6. Funcion hist(). Histogramas</a></li>
-<li><a href="#sec-12-7">12.7. Funcion boxplot()</a></li>
-<li><a href="#sec-12-8">12.8. Funciones qqnorm() y qline</a></li>
-<li><a href="#sec-12-9">12.9. Catalogo de nombres de color</a></li>
-<li><a href="#sec-12-10">12.10. Parametros gráficos. Funcion par()</a></li>
-<li><a href="#sec-12-11">12.11. Representacion de funciones</a></li>
+<li><a href="#sec-13-1">13.1. Gestion de ventanas graficas</a></li>
+<li><a href="#sec-13-2">13.2. Funcion plot(). Es la función gráfica basica.</a></li>
+<li><a href="#sec-13-3">13.3. Plot a Png</a></li>
+<li><a href="#sec-13-4">13.4. Funcicion coplot(). Matriz de graficos de dispersion separados segun factores</a></li>
+<li><a href="#sec-13-5">13.5. Funcion pairs(). Ejemplo con datos simulados de los "Big Five" de personalidad</a></li>
+<li><a href="#sec-13-6">13.6. Funcion hist(). Histogramas</a></li>
+<li><a href="#sec-13-7">13.7. Funcion boxplot()</a></li>
+<li><a href="#sec-13-8">13.8. Funciones qqnorm() y qline</a></li>
+<li><a href="#sec-13-9">13.9. Catalogo de nombres de color</a></li>
+<li><a href="#sec-13-10">13.10. Parametros gráficos. Funcion par()</a></li>
+<li><a href="#sec-13-11">13.11. Representacion de funciones</a></li>
 </ul>
 </li>
-<li><a href="#sec-13">13. Muestreo y probabilidad</a>
+<li><a href="#sec-14">14. Muestreo y probabilidad</a>
 <ul>
-<li><a href="#sec-13-1">13.1. Muestreo</a></li>
-<li><a href="#sec-13-2">13.2. Distribuciones de probabilidad</a></li>
+<li><a href="#sec-14-1">14.1. Muestreo</a></li>
+<li><a href="#sec-14-2">14.2. Distribuciones de probabilidad</a></li>
 </ul>
 </li>
-<li><a href="#sec-14">14. Definicion de funciones</a></li>
-<li><a href="#sec-15">15. Descriptivos</a></li>
-<li><a href="#sec-16">16. Licencia</a></li>
+<li><a href="#sec-15">15. Definicion de funciones</a></li>
+<li><a href="#sec-16">16. Descriptivos</a></li>
+<li><a href="#sec-17">17. Distribuciones</a>
+<ul>
+<li><a href="#sec-17-1">17.1. Binomial</a></li>
+<li><a href="#sec-17-2">17.2. Poisson</a></li>
+<li><a href="#sec-17-3">17.3. Distribución Contínua Uniforme</a></li>
+<li><a href="#sec-17-4">17.4. Exponencial</a></li>
+<li><a href="#sec-17-5">17.5. Normal</a></li>
+<li><a href="#sec-17-6">17.6. Chi cuadrado</a></li>
+<li><a href="#sec-17-7">17.7. T de Student</a></li>
+<li><a href="#sec-17-8">17.8. F distribución</a></li>
+</ul>
+</li>
+<li><a href="#sec-18">18. Test estadísticos</a>
+<ul>
+<li><a href="#sec-18-1">18.1. Distribución Binomial</a></li>
+<li><a href="#sec-18-2">18.2. Test Binomial</a></li>
+<li><a href="#sec-18-3">18.3. Distribución F</a></li>
+<li><a href="#sec-18-4">18.4. Bondad de ajuste multinomial</a></li>
+<li><a href="#sec-18-5">18.5. Test de Chi</a></li>
+<li><a href="#sec-18-6">18.6. Test Wilcox</a></li>
+<li><a href="#sec-18-7">18.7. Ecuación de la Regresión Logística</a></li>
+<li><a href="#sec-18-8">18.8. Test de significado para la regresión logística</a></li>
+<li><a href="#sec-18-9">18.9. Mann-Whitney test: comparar si hay diferencias entre medianas muestras independientes</a></li>
+</ul>
+</li>
+<li><a href="#sec-19">19. Ecuación de Regresión Logística</a></li>
+<li><a href="#sec-20">20. Análisis de Varianza</a>
+<ul>
+<li><a href="#sec-20-1">20.1. Diseño Completamente Aleatorio</a></li>
+</ul>
+</li>
+<li><a href="#sec-21">21. Análisis de Clúster Jerárquico</a></li>
+<li><a href="#sec-22">22. Licencia</a></li>
 </ul>
 </div>
 </div>
-
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Básicas</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Instalación</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Configuración del Entorno</h3>
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Debian/Ubuntu</h3>
 <div class="outline-text-3" id="text-1-1">
+<p>
+En Debian/Ubuntu encontraremos paquetes R empaquetados con el sufijo
+r-base o r-cran, buscando con apt-cache search. Es posible usar
+metapaquetes dependiendo de la versión como r-recommended
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> R Commander</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Para las personas que vienen adictas a SPSS y similares, puede ser
+necesario instalarse R para empezar a cuestionar utilizarlo. Por
+favor, no olviden que la estadística es programación no manejo de un
+interfaz. Para instalarlo también es posible usar paquetería Debian como
+</p>
+
+<pre class="example">
+$ sudo apt-get install r-cran-rcmdr
+</pre>
+
+<p>
+Y después ejecutar:
+</p>
+
+<pre class="example">
+$ R
+&gt; library("Rcmdr")
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Paquetería R</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+La ventaja de R frente a otras opciones para hacer estadística es el
+enorme número de paquetes. R tiene facilidades propias si su sistema
+operativo no tiene soporte, o no le apetece utilizarlo.
+</p>
+
+<pre class="example">
+&gt; install.packages("snow")
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Básicas</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Configuración del Entorno</h3>
+<div class="outline-text-3" id="text-2-1">
 <div class="org-src-container">
 
-<pre class="src src-R">getwd()                       # Devuelve el
+<pre class="src src-R">$ R                           # Para entrar en el entorno R una vez instalado
+							  # es necesario ejecutar la R desde la consola
+getwd()                       # Devuelve el
 											  # directorio de trabajo
 setwd("/home/davidam/public_html/software/R") # Cambia el directorio
 											  # de trabajo (debe
@@ -278,9 +374,9 @@ q()                                           # Salir del entorno
 </div>
 </div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Ayuda on-line en R</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Ayuda on-line en R</h3>
+<div class="outline-text-3" id="text-2-2">
 <div class="org-src-container">
 
 <pre class="src src-R">help (aov)
@@ -294,9 +390,9 @@ example (mean)           # ejemplos del uso de mean
 </div>
 </div>
 
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Operaciones Aritméticas</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Operaciones Aritméticas</h3>
+<div class="outline-text-3" id="text-2-3">
 <div class="org-src-container">
 
 <pre class="src src-R">5+7      # se evalua y el resultado se imprime
@@ -312,9 +408,9 @@ example (mean)           # ejemplos del uso de mean
 </div>
 </div>
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Asignacion de valores a variables</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Asignacion de valores a variables</h3>
+<div class="outline-text-3" id="text-2-4">
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- 1   # asigna el valor 1 a la variable x
@@ -327,9 +423,9 @@ x = 1    # una alternativa
 </div>
 </div>
 
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Funciones</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Funciones</h3>
+<div class="outline-text-3" id="text-2-5">
 <div class="org-src-container">
 
 <pre class="src src-R">q    # Muestra informacion de la funcion
@@ -351,9 +447,9 @@ print(pi,digits=16); print(pi,digits=5)
 </div>
 </div>
 
-<div id="outline-container-sec-1-6" class="outline-3">
-<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Listar y Eliminar Objetos del Espacio de Trabajo</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Listar y Eliminar Objetos del Espacio de Trabajo</h3>
+<div class="outline-text-3" id="text-2-6">
 <div class="org-src-container">
 
 <pre class="src src-R">ls()
@@ -366,12 +462,12 @@ ls()
 </div>
 </div>
 </div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Tipos de Datos</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Booleanos</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Tipos de Datos</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Booleanos</h3>
+<div class="outline-text-3" id="text-3-1">
 <div class="org-src-container">
 
 <pre class="src src-R">verdad &lt;- T
@@ -387,9 +483,9 @@ typeof(edad)    # devuelve el tipo del objeto
 </div>
 </div>
 </div>
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Arrays</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Arrays</h3>
+<div class="outline-text-3" id="text-3-2">
 <div class="org-src-container">
 
 <pre class="src src-R">calle &lt;- c("c/ rue del percebe","28013");
@@ -397,9 +493,9 @@ typeof(edad)    # devuelve el tipo del objeto
 </div>
 </div>
 </div>
-<div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Conversiones de Tipo</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Conversiones de Tipo</h3>
+<div class="outline-text-3" id="text-3-3">
 <div class="org-src-container">
 
 <pre class="src src-R">as.character(verdad)
@@ -417,12 +513,12 @@ as.numeric(y)
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Vectores</h2>
-<div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Básico</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Vectores</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Básico</h3>
+<div class="outline-text-3" id="text-4-1">
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(1,4,6,3,7); x
@@ -436,9 +532,9 @@ x[11] &lt;- 99; x
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Calculo vectorizado. Equivale a un bucle implicito</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Calculo vectorizado. Equivale a un bucle implicito</h3>
+<div class="outline-text-3" id="text-4-2">
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(1,2,3,4,5)
@@ -454,9 +550,9 @@ log10(x)            # muchas funciones tambien se
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Generacion de secuencias regulares</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Generacion de secuencias regulares</h3>
+<div class="outline-text-3" id="text-4-3">
 <div class="org-src-container">
 
 <pre class="src src-R">1:10
@@ -479,9 +575,9 @@ rep(x,1:length(x))      # 'times' puede estar implicito times={1:length(x)}
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Ordenacion de vectores</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Ordenacion de vectores</h3>
+<div class="outline-text-3" id="text-4-4">
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(20,80,30,50,0)
@@ -497,9 +593,9 @@ x.ord;x;y
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-5" class="outline-3">
-<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Operadores comparativos: &lt;, &lt;=, &gt;, &gt;=, <code>=, !</code></h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Operadores comparativos: &lt;, &lt;=, &gt;, &gt;=, <code>=, !</code></h3>
+<div class="outline-text-3" id="text-4-5">
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(1:10); x
@@ -516,9 +612,9 @@ all.equal(x, y, tol=0.001)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-6" class="outline-3">
-<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Operadores logicos: &amp;,|, !, xor()</h3>
-<div class="outline-text-3" id="text-3-6">
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Operadores logicos: &amp;,|, !, xor()</h3>
+<div class="outline-text-3" id="text-4-6">
 <div class="org-src-container">
 
 <pre class="src src-R">a&lt;-c(TRUE,TRUE,FALSE,FALSE)
@@ -531,9 +627,9 @@ a|b
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-7" class="outline-3">
-<h3 id="sec-3-7"><span class="section-number-3">3.7</span> Identificacion y sustitucion de valores perdidos. Funciones is.na() y which()</h3>
-<div class="outline-text-3" id="text-3-7">
+<div id="outline-container-sec-4-7" class="outline-3">
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> Identificacion y sustitucion de valores perdidos. Funciones is.na() y which()</h3>
+<div class="outline-text-3" id="text-4-7">
 <div class="org-src-container">
 
 <pre class="src src-R">rm(list=ls())
@@ -560,9 +656,9 @@ data5 &lt;- data$q_005[!is.na(data$q_005)]
 </div>
 </div>
 
-<div id="outline-container-sec-3-8" class="outline-3">
-<h3 id="sec-3-8"><span class="section-number-3">3.8</span> Indeterminaciones e infinito</h3>
-<div class="outline-text-3" id="text-3-8">
+<div id="outline-container-sec-4-8" class="outline-3">
+<h3 id="sec-4-8"><span class="section-number-3">4.8</span> Indeterminaciones e infinito</h3>
+<div class="outline-text-3" id="text-4-8">
 <div class="org-src-container">
 
 <pre class="src src-R">x &lt;- c(0,7,8); x/x
@@ -576,9 +672,9 @@ is.nan(1/x)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-9" class="outline-3">
-<h3 id="sec-3-9"><span class="section-number-3">3.9</span> Manipulacion de vectores de caracteres</h3>
-<div class="outline-text-3" id="text-3-9">
+<div id="outline-container-sec-4-9" class="outline-3">
+<h3 id="sec-4-9"><span class="section-number-3">4.9</span> Manipulacion de vectores de caracteres</h3>
+<div class="outline-text-3" id="text-4-9">
 <div class="org-src-container">
 
 <pre class="src src-R"># Concatena objetos en un vector de caracteres. Funcion paste(..., sep = " ", collapse = NULL)
@@ -604,9 +700,9 @@ x&lt;-2/3; cat(paste("resultado", signif(x,2), sep=" : " ),"\n")
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3-10" class="outline-3">
-<h3 id="sec-3-10"><span class="section-number-3">3.10</span> Indexacion de vectores mediante variables de caracteres. Funcion names()</h3>
-<div class="outline-text-3" id="text-3-10">
+<div id="outline-container-sec-4-10" class="outline-3">
+<h3 id="sec-4-10"><span class="section-number-3">4.10</span> Indexacion de vectores mediante variables de caracteres. Funcion names()</h3>
+<div class="outline-text-3" id="text-4-10">
 <div class="org-src-container">
 
 <pre class="src src-R">edad &lt;- c(12,22,15,16,10)
@@ -621,9 +717,9 @@ names(edad) &lt;- NULL; edad   # elimina los nombre asignados
 </div>
 </div>
 </div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Factores</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Factores</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Son vectores para datos categoricos. Permiten prescindir de la
 codificacion numerica y referirse a los niveles mediante nombres
@@ -648,18 +744,18 @@ as.character(equipo.futbol)  # convierte en cadenas de caracters no en factor de
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Matrices</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Matrices</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 Suponen la generalizacion de vectores a 2D.
 Todos los elementos de una matriz deben ser del mismo tipo.
 Una convencion relativamente extendida es cmenzar con mayuscula el nombre de una matriz
 </p>
 </div>
-<div id="outline-container-sec-5-1" class="outline-3">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Función matrix()</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Función matrix()</h3>
+<div class="outline-text-3" id="text-6-1">
 <div class="org-src-container">
 
 <pre class="src src-R">X &lt;- 1:12
@@ -675,9 +771,9 @@ dimnames(Mi.matriz)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5-2" class="outline-3">
-<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Concatenación de matrices</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Concatenación de matrices</h3>
+<div class="outline-text-3" id="text-6-2">
 <div class="org-src-container">
 
 <pre class="src src-R">X1 &lt;- c(3,7,5)
@@ -689,9 +785,9 @@ Zz &lt;- cbind(X1,Xx);Zz
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5-3" class="outline-3">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Indexacion de matrices</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> Indexacion de matrices</h3>
+<div class="outline-text-3" id="text-6-3">
 <div class="org-src-container">
 
 <pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2);X
@@ -704,9 +800,9 @@ Mi.matriz['B',]  #tambien se pueden usar los nombres (se han asignado)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5-4" class="outline-3">
-<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Operaciones con matrices</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> Operaciones con matrices</h3>
+<div class="outline-text-3" id="text-6-4">
 <div class="org-src-container">
 
 <pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2); X
@@ -729,9 +825,9 @@ A%*%X            # comprueba que el resultado es efectivamente B
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5-5" class="outline-3">
-<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Algunas funciones que operan sobre filas o columnas completas</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> Algunas funciones que operan sobre filas o columnas completas</h3>
+<div class="outline-text-3" id="text-6-5">
 <div class="org-src-container">
 
 <pre class="src src-R">X &lt;- matrix(c(1,4,12,15),2,2); X
@@ -743,9 +839,9 @@ colMeans(X)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5-6" class="outline-3">
-<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Apply</h3>
-<div class="outline-text-3" id="text-5-6">
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6"><span class="section-number-3">6.6</span> Apply</h3>
+<div class="outline-text-3" id="text-6-6">
 <div class="org-src-container">
 
 <pre class="src src-R">apply(X,1,sum)       # suma por filas; equivale a rowSums(X)
@@ -755,9 +851,9 @@ apply(X,1,sd)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5-7" class="outline-3">
-<h3 id="sec-5-7"><span class="section-number-3">5.7</span> Matrices multidimensionales (arrays)</h3>
-<div class="outline-text-3" id="text-5-7">
+<div id="outline-container-sec-6-7" class="outline-3">
+<h3 id="sec-6-7"><span class="section-number-3">6.7</span> Matrices multidimensionales (arrays)</h3>
+<div class="outline-text-3" id="text-6-7">
 <div class="org-src-container">
 
 <pre class="src src-R">A &lt;- array(1:24, c(3, 4, 2)); A
@@ -767,9 +863,9 @@ dimnames(A) &lt;- list(c("fila1", "fila2", "fila3"), c("col1", "col2", "col3", "
 </div>
 </div>
 </div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> Listas</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Listas</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 Son una especie de contenedores generales donde pueden mezclarse todo
 tipo de componentes (objetos de cualquier tipo y cualquier longitud)
@@ -795,9 +891,9 @@ lista1
 </pre>
 </div>
 </div>
-<div id="outline-container-sec-6-1" class="outline-3">
-<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Indexacion, nombres y atributos</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Indexacion, nombres y atributos</h3>
+<div class="outline-text-3" id="text-7-1">
 <div class="org-src-container">
 
 <pre class="src src-R">length(lista1)       # devuelve el numero de componentes de la lista
@@ -821,9 +917,9 @@ names(lista2)
 </div>
 </div>
 
-<div id="outline-container-sec-6-2" class="outline-3">
-<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Attach</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> Attach</h3>
+<div class="outline-text-3" id="text-7-2">
 <p>
 Las funciones attach() y detach () "cargan" listas y simplifican las referencias.
 </p>
@@ -836,9 +932,9 @@ Las funciones attach() y detach () "cargan" listas y simplifican las referencias
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> Hojas de datos (data frames)</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Hojas de datos (data frames)</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 Son un tipo especial de lista:
 </p>
@@ -865,9 +961,9 @@ row.names(mis.datos) &lt;- paste("suj",1:max(length(var1),length(var2),length(va
 </div>
 </div>
 
-<div id="outline-container-sec-7-1" class="outline-3">
-<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Algunos atributos</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> Algunos atributos</h3>
+<div class="outline-text-3" id="text-8-1">
 <div class="org-src-container">
 
 <pre class="src src-R">rownames(mis.datos); colnames(mis.datos)
@@ -879,9 +975,9 @@ attributes(mis.datos)    # clase y nombres de fila y columna
 </div>
 </div>
 
-<div id="outline-container-sec-7-2" class="outline-3">
-<h3 id="sec-7-2"><span class="section-number-3">7.2</span> Particiones de una hoja de datos segun un factor, funcion split()</h3>
-<div class="outline-text-3" id="text-7-2">
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> Particiones de una hoja de datos segun un factor, funcion split()</h3>
+<div class="outline-text-3" id="text-8-2">
 <p>
 Uso: split (x, factor). unsplit(x, factor)
 </p>
@@ -902,9 +998,9 @@ twitter.si &lt;- mis.datos[mis.datos$var5=="UsaTwitter",];twitter.si
 </div>
 </div>
 
-<div id="outline-container-sec-7-3" class="outline-3">
-<h3 id="sec-7-3"><span class="section-number-3">7.3</span> Filtrado segun condiciones logicas. Función subset()</h3>
-<div class="outline-text-3" id="text-7-3">
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3"><span class="section-number-3">8.3</span> Filtrado segun condiciones logicas. Función subset()</h3>
+<div class="outline-text-3" id="text-8-3">
 <p>
 Uso: subset(x, subset, select)
 </p>
@@ -924,9 +1020,9 @@ subset(mis.datos, var3 &gt;= 15, select=-var3)
 </div>
 </div>
 
-<div id="outline-container-sec-7-4" class="outline-3">
-<h3 id="sec-7-4"><span class="section-number-3">7.4</span> Transformaciones de datos, funcion transform()</h3>
-<div class="outline-text-3" id="text-7-4">
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4"><span class="section-number-3">8.4</span> Transformaciones de datos, funcion transform()</h3>
+<div class="outline-text-3" id="text-8-4">
 <p>
 Uso: transform()
 </p>
@@ -938,9 +1034,9 @@ Uso: transform()
 </div>
 </div>
 
-<div id="outline-container-sec-7-5" class="outline-3">
-<h3 id="sec-7-5"><span class="section-number-3">7.5</span> Edición manual de bases de datos</h3>
-<div class="outline-text-3" id="text-7-5">
+<div id="outline-container-sec-8-5" class="outline-3">
+<h3 id="sec-8-5"><span class="section-number-3">8.5</span> Edición manual de bases de datos</h3>
+<div class="outline-text-3" id="text-8-5">
 <p>
 R dispone de una utilidad de aspecto sejemante a una hoja de calculo para:
 </p>
@@ -968,9 +1064,9 @@ R dispone de una utilidad de aspecto sejemante a una hoja de calculo para:
 </div>
 </div>
 
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> Cargar datos nativos de R</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Cargar datos nativos de R</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 La instalacion basica de R incluye el paquete 'datasets'.
 </p>
@@ -990,9 +1086,9 @@ Muchos paquetes adicionales tambien vienen con sus datos de ejemplo
 </div>
 </div>
 
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> Paquetes R</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Paquetes R</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 Cargar un paquete. Requiere instalarlo previamente bien:
 </p>
@@ -1001,18 +1097,22 @@ Cargar un paquete. Requiere instalarlo previamente bien:
 </li>
 <li>utilizando el menu windows de RGui y eligiendo un repositorio
 </li>
+<li>con la función install.packages("package")
+</li>
 </ul>
+
 <div class="org-src-container">
 
-<pre class="src src-R">library (foreign)            # o mediante el menu windows de RGui
+<pre class="src src-R">install.packages("adagio")
+library (foreign)            # o mediante el menu windows de RGui
 library(help=foreign)    # informacion sobre el paquete 'foreign'
 </pre>
 </div>
 </div>
 
-<div id="outline-container-sec-9-1" class="outline-3">
-<h3 id="sec-9-1"><span class="section-number-3">9.1</span> Ruta de busqueda (search path).</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1"><span class="section-number-3">10.1</span> Ruta de busqueda (search path).</h3>
+<div class="outline-text-3" id="text-10-1">
 <p>
 Puede haber muchos objetos con el mismo nombre en distintos paquetes.
 La ruta de busqueda explicita el orden en que se van a recorrer los
@@ -1033,9 +1133,9 @@ mean(women$weight)
 </div>
 </div>
 
-<div id="outline-container-sec-9-2" class="outline-3">
-<h3 id="sec-9-2"><span class="section-number-3">9.2</span> ACERCA de attach()</h3>
-<div class="outline-text-3" id="text-9-2">
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2"><span class="section-number-3">10.2</span> ACERCA de attach()</h3>
+<div class="outline-text-3" id="text-10-2">
 <p>
 attach() inserta el paquete en la ruta de busqueda de R de modo que todos los objetos del paquete estan accesibles mediante sus nombres
 Uso: attach(what, pos = 2, name = deparse(substitute(what)), warn.conflicts = TRUE)
@@ -1049,9 +1149,9 @@ Precauciones:
 </ul>
 </div>
 
-<div id="outline-container-sec-9-2-1" class="outline-4">
-<h4 id="sec-9-2-1"><span class="section-number-4">9.2.1</span> Retirar paquetes</h4>
-<div class="outline-text-4" id="text-9-2-1">
+<div id="outline-container-sec-10-2-1" class="outline-4">
+<h4 id="sec-10-2-1"><span class="section-number-4">10.2.1</span> Retirar paquetes</h4>
+<div class="outline-text-4" id="text-10-2-1">
 <div class="org-src-container">
 
 <pre class="src src-R">detach (package:ISwR)
@@ -1066,12 +1166,12 @@ plot(c(1,2,5,6), c(2,5,6,7))
 </div>
 </div>
 
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> Escritura de datos en un archivo</h2>
-<div class="outline-text-2" id="text-10">
-</div><div id="outline-container-sec-10-1" class="outline-3">
-<h3 id="sec-10-1"><span class="section-number-3">10.1</span> Guardar en un archivo de texto plano una hoja de datos. Funcion write.table()</h3>
-<div class="outline-text-3" id="text-10-1">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> Escritura de datos en un archivo</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-sec-11-1" class="outline-3">
+<h3 id="sec-11-1"><span class="section-number-3">11.1</span> Guardar en un archivo de texto plano una hoja de datos. Funcion write.table()</h3>
+<div class="outline-text-3" id="text-11-1">
 <div class="org-src-container">
 
 <pre class="src src-R">rm(list=ls())
@@ -1085,9 +1185,9 @@ write.table(women, "../datos/mujeres.dat", append=F,quote=F)
 </div>
 </div>
 
-<div id="outline-container-sec-10-2" class="outline-3">
-<h3 id="sec-10-2"><span class="section-number-3">10.2</span> Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames</h3>
-<div class="outline-text-3" id="text-10-2">
+<div id="outline-container-sec-11-2" class="outline-3">
+<h3 id="sec-11-2"><span class="section-number-3">11.2</span> Guadar en texto plano cualquier objeto. Funcion write(). Es mas general, pero no funciona bien con data frames</h3>
+<div class="outline-text-3" id="text-11-2">
 <div class="org-src-container">
 
 <pre class="src src-R">x&lt;-seq(1,3,0.1)
@@ -1099,12 +1199,15 @@ write(x,"../datos/numeros.dat", ncolumns=length(x),append=F)
 </div>
 </div>
 
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> Lectura de datos desde un archivo</h2>
-<div class="outline-text-2" id="text-11">
-</div><div id="outline-container-sec-11-1" class="outline-3">
-<h3 id="sec-11-1"><span class="section-number-3">11.1</span> Informacion completa en el manual "R Data Import/Export" accesible desde la ayuda</h3>
-<div class="outline-text-3" id="text-11-1">
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Lectura de datos desde un archivo</h2>
+<div class="outline-text-2" id="text-12">
+</div><div id="outline-container-sec-12-1" class="outline-3">
+<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Información completa en el manual "R Data Import/Export" accesible desde la ayuda</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+Es posible cargar datos desde un fichero de texto y hacer algún cálculo.
+</p>
 <div class="org-src-container">
 
 <pre class="src src-R">?read.table
@@ -1117,12 +1220,31 @@ attach(mis.datos)
 sum(weight &gt;=125)/length(weight)     # calcula la proporcion de individuos que pesan al menos 125 lb
 </pre>
 </div>
+
+<p>
+También es posible cargar datos desde un fichero de texto y manipular datos.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">rm(list=ls(all=TRUE))
+b=read.table("Oster.txt", header=T)
+dim(b)
+summary(b)
+names(b)# obtengo los nombres de las cabeceras de columna
+head(b)# Quiero ver los 6 primeros valores
+tail(b) # Los seis últimos
+attach(b)# anclamos la base de datos para trabajar con ella
+View(b)# Veo mis datos
+edit(b)
+</pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-sec-11-2" class="outline-3">
-<h3 id="sec-11-2"><span class="section-number-3">11.2</span> Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</h3>
-<div class="outline-text-3" id="text-11-2">
+<div id="outline-container-sec-12-2" class="outline-3">
+<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim &#x2026;</h3>
+<div class="outline-text-3" id="text-12-2">
 <p>
 Tambien hay multiples paquetes como 'foreign' para leer archivos creados por programas como SPSS, SAS, Minitab, etc.,
 aunque resulta mas comodo usar esos programas para guardar los datos en texto plano y usar read.table para importar a R
@@ -1148,9 +1270,9 @@ incluido en el sistema base; hay que importarlo)
 </div>
 </div>
 
-<div id="outline-container-sec-11-3" class="outline-3">
-<h3 id="sec-11-3"><span class="section-number-3">11.3</span> Funcion scan().</h3>
-<div class="outline-text-3" id="text-11-3">
+<div id="outline-container-sec-12-3" class="outline-3">
+<h3 id="sec-12-3"><span class="section-number-3">12.3</span> Funcion scan().</h3>
+<div class="outline-text-3" id="text-12-3">
 <p>
 Mas flexible pero mas complicada de utilizar. Permite especificar el modo de las variables
 </p>
@@ -1165,18 +1287,18 @@ mis.datos2 &lt;- scan("../datos/mujeres.dat", what = list(0,0,0), skip=3)
 </div>
 </div>
 
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> Gráficos</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Gráficos</h2>
+<div class="outline-text-2" id="text-13">
 <p>
 R tiene un sistema de graficos muy completo que permite producir graficos con calidad de publicacion
 Hay múltiples funciones, parametros y paquetes graficos. Se van aprendiendo a medida que se van utilizando
 Para una buena introduccion: R for Beginners de E. Paradis (citado en la documentacion)
 </p>
 </div>
-<div id="outline-container-sec-12-1" class="outline-3">
-<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Gestion de ventanas graficas</h3>
-<div class="outline-text-3" id="text-12-1">
+<div id="outline-container-sec-13-1" class="outline-3">
+<h3 id="sec-13-1"><span class="section-number-3">13.1</span> Gestion de ventanas graficas</h3>
+<div class="outline-text-3" id="text-13-1">
 <div class="org-src-container">
 
 <pre class="src src-R">x11()                                    # abre una nueva ventana grafica (Unix y Wndows)
@@ -1194,9 +1316,9 @@ dev.off()    # cierra el dispositivo grafico activo; dev.off(3) cierra el dispos
 </div>
 </div>
 
-<div id="outline-container-sec-12-2" class="outline-3">
-<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Funcion plot(). Es la función gráfica basica.</h3>
-<div class="outline-text-3" id="text-12-2">
+<div id="outline-container-sec-13-2" class="outline-3">
+<h3 id="sec-13-2"><span class="section-number-3">13.2</span> Funcion plot(). Es la función gráfica basica.</h3>
+<div class="outline-text-3" id="text-13-2">
 <p>
 Segun los argumentos puede generar un diagrama de dispersion, de barras, caja y bigotes etc.
 </p>
@@ -1220,9 +1342,9 @@ plot(entorno,y)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-12-3" class="outline-3">
-<h3 id="sec-12-3"><span class="section-number-3">12.3</span> Plot a Png</h3>
-<div class="outline-text-3" id="text-12-3">
+<div id="outline-container-sec-13-3" class="outline-3">
+<h3 id="sec-13-3"><span class="section-number-3">13.3</span> Plot a Png</h3>
+<div class="outline-text-3" id="text-13-3">
 <p>
 Se usa la función png para almacenar la salida en un fichero de imagen.
 </p>
@@ -1237,9 +1359,9 @@ dev.off()
 </div>
 </div>
 </div>
-<div id="outline-container-sec-12-4" class="outline-3">
-<h3 id="sec-12-4"><span class="section-number-3">12.4</span> Funcicion coplot(). Matriz de graficos de dispersion separados segun factores</h3>
-<div class="outline-text-3" id="text-12-4">
+<div id="outline-container-sec-13-4" class="outline-3">
+<h3 id="sec-13-4"><span class="section-number-3">13.4</span> Funcicion coplot(). Matriz de graficos de dispersion separados segun factores</h3>
+<div class="outline-text-3" id="text-13-4">
 <div class="org-src-container">
 
 <pre class="src src-R">datos2 &lt;- data.frame(entorno,women)
@@ -1252,9 +1374,9 @@ coplot(women$weight ~ women$height | entorno+socioeconomico)
 </div>
 </div>
 
-<div id="outline-container-sec-12-5" class="outline-3">
-<h3 id="sec-12-5"><span class="section-number-3">12.5</span> Funcion pairs(). Ejemplo con datos simulados de los "Big Five" de personalidad</h3>
-<div class="outline-text-3" id="text-12-5">
+<div id="outline-container-sec-13-5" class="outline-3">
+<h3 id="sec-13-5"><span class="section-number-3">13.5</span> Funcion pairs(). Ejemplo con datos simulados de los "Big Five" de personalidad</h3>
+<div class="outline-text-3" id="text-13-5">
 <div class="org-src-container">
 
 <pre class="src src-R">pers &lt;- matrix(rnorm(1000), ncol = 5)    # genera 1000 datos con distribucion normal. Vease seccion 'Muestreo y probabilidad'
@@ -1267,9 +1389,9 @@ x11(); plot(pers)            # usa solo las 2 primeras variables
 </div>
 </div>
 
-<div id="outline-container-sec-12-6" class="outline-3">
-<h3 id="sec-12-6"><span class="section-number-3">12.6</span> Funcion hist(). Histogramas</h3>
-<div class="outline-text-3" id="text-12-6">
+<div id="outline-container-sec-13-6" class="outline-3">
+<h3 id="sec-13-6"><span class="section-number-3">13.6</span> Funcion hist(). Histogramas</h3>
+<div class="outline-text-3" id="text-13-6">
 <div class="org-src-container">
 
 <pre class="src src-R">pers &lt;- as.data.frame(matrix(rnorm(1000), ncol = 5))
@@ -1292,9 +1414,9 @@ dev.off()
 </div>
 </div>
 
-<div id="outline-container-sec-12-7" class="outline-3">
-<h3 id="sec-12-7"><span class="section-number-3">12.7</span> Funcion boxplot()</h3>
-<div class="outline-text-3" id="text-12-7">
+<div id="outline-container-sec-13-7" class="outline-3">
+<h3 id="sec-13-7"><span class="section-number-3">13.7</span> Funcion boxplot()</h3>
+<div class="outline-text-3" id="text-13-7">
 <div class="org-src-container">
 
 <pre class="src src-R">boxplot(extraversion, main= "Diagrama de caja de extraversión")
@@ -1305,9 +1427,9 @@ boxplot(pers)
 </div>
 </div>
 
-<div id="outline-container-sec-12-8" class="outline-3">
-<h3 id="sec-12-8"><span class="section-number-3">12.8</span> Funciones qqnorm() y qline</h3>
-<div class="outline-text-3" id="text-12-8">
+<div id="outline-container-sec-13-8" class="outline-3">
+<h3 id="sec-13-8"><span class="section-number-3">13.8</span> Funciones qqnorm() y qline</h3>
+<div class="outline-text-3" id="text-13-8">
 <div class="org-src-container">
 
 <pre class="src src-R">qqnorm(extraversion, col="red")
@@ -1320,9 +1442,9 @@ Tambien existe qqplot(), que permite utilizar otras distribuiones distintas de l
 </div>
 </div>
 
-<div id="outline-container-sec-12-9" class="outline-3">
-<h3 id="sec-12-9"><span class="section-number-3">12.9</span> Catalogo de nombres de color</h3>
-<div class="outline-text-3" id="text-12-9">
+<div id="outline-container-sec-13-9" class="outline-3">
+<h3 id="sec-13-9"><span class="section-number-3">13.9</span> Catalogo de nombres de color</h3>
+<div class="outline-text-3" id="text-13-9">
 <div class="org-src-container">
 
 <pre class="src src-R">colors()
@@ -1331,9 +1453,9 @@ Tambien existe qqplot(), que permite utilizar otras distribuiones distintas de l
 </div>
 </div>
 
-<div id="outline-container-sec-12-10" class="outline-3">
-<h3 id="sec-12-10"><span class="section-number-3">12.10</span> Parametros gráficos. Funcion par()</h3>
-<div class="outline-text-3" id="text-12-10">
+<div id="outline-container-sec-13-10" class="outline-3">
+<h3 id="sec-13-10"><span class="section-number-3">13.10</span> Parametros gráficos. Funcion par()</h3>
+<div class="outline-text-3" id="text-13-10">
 <p>
 Produce cambios permanentes en el dispositivo gráfico activo
 Permite contral cada elemento del grafico final
@@ -1352,9 +1474,9 @@ Permite contral cada elemento del grafico final
 </div>
 </div>
 
-<div id="outline-container-sec-12-11" class="outline-3">
-<h3 id="sec-12-11"><span class="section-number-3">12.11</span> Representacion de funciones</h3>
-<div class="outline-text-3" id="text-12-11">
+<div id="outline-container-sec-13-11" class="outline-3">
+<h3 id="sec-13-11"><span class="section-number-3">13.11</span> Representacion de funciones</h3>
+<div class="outline-text-3" id="text-13-11">
 <div class="org-src-container">
 
 <pre class="src src-R">curve(x^2)
@@ -1374,12 +1496,12 @@ detach(pers)
 </div>
 </div>
 </div>
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> Muestreo y probabilidad</h2>
-<div class="outline-text-2" id="text-13">
-</div><div id="outline-container-sec-13-1" class="outline-3">
-<h3 id="sec-13-1"><span class="section-number-3">13.1</span> Muestreo</h3>
-<div class="outline-text-3" id="text-13-1">
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> Muestreo y probabilidad</h2>
+<div class="outline-text-2" id="text-14">
+</div><div id="outline-container-sec-14-1" class="outline-3">
+<h3 id="sec-14-1"><span class="section-number-3">14.1</span> Muestreo</h3>
+<div class="outline-text-3" id="text-14-1">
 <div class="org-src-container">
 
 <pre class="src src-R">datos &lt;- c(1,5,9,8,52,2,4)
@@ -1411,9 +1533,9 @@ Generacion de numeros pseudo-aleatorios.
 </div>
 </div>
 
-<div id="outline-container-sec-13-2" class="outline-3">
-<h3 id="sec-13-2"><span class="section-number-3">13.2</span> Distribuciones de probabilidad</h3>
-<div class="outline-text-3" id="text-13-2">
+<div id="outline-container-sec-14-2" class="outline-3">
+<h3 id="sec-14-2"><span class="section-number-3">14.2</span> Distribuciones de probabilidad</h3>
+<div class="outline-text-3" id="text-14-2">
 <p>
 Funciones de generacion de numeros pseudo-aleatorios conforme a una distrbucion dada
 Estructura: rfunc(n, par1, par2,&#x2026;)
@@ -1482,9 +1604,9 @@ qf(0.975, df1=4, df2=53)      # se puede usar para obtener los puntos de corte d
 </div>
 </div>
 
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> Definicion de funciones</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> Definicion de funciones</h2>
+<div class="outline-text-2" id="text-15">
 <p>
 Estructura: nombre.funcion &lt;- function(argumento1, argumento2){
         instruccion1; instruccion2; &#x2026;;
@@ -1545,9 +1667,9 @@ minimos conocimientos de programación.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> Descriptivos</h2>
-<div class="outline-text-2" id="text-15">
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16"><span class="section-number-2">16</span> Descriptivos</h2>
+<div class="outline-text-2" id="text-16">
 <p>
 Cuando vamos a analizar unos datos lo primero que debemos mirar
 normalmente son los descriptivos, veamos cómo:
@@ -1570,7 +1692,7 @@ amplitud &lt;- max - min
 tr=c(3,4,5,3,4,5,4,3,2,3,12,11,3,4,89)
 mean(tr,trim=5/100) # media recortada al 5%
 IQR(tr)  # rango intercuartil
-stem(tr) # diagrama de tallos y hojas (ver http://www.estadisticaparatodos.es/taller/graficas/tallos_hojas.html)xs
+stem(tr) # diagrama de tallos y hojas (ver http://www.estadisticaparatodos.es/taller/graficas/tallos_hojas.html)
 </pre>
 </div>
 
@@ -1580,9 +1702,502 @@ En nuestro ejemplo utilizaremos los datos de <a href="file:///home/davidam/publi
 </div>
 </div>
 
-<div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> Licencia</h2>
-<div class="outline-text-2" id="text-16">
+<div id="outline-container-sec-17" class="outline-2">
+<h2 id="sec-17"><span class="section-number-2">17</span> Distribuciones</h2>
+<div class="outline-text-2" id="text-17">
+</div><div id="outline-container-sec-17-1" class="outline-3">
+<h3 id="sec-17-1"><span class="section-number-3">17.1</span> Binomial</h3>
+<div class="outline-text-3" id="text-17-1">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; dbinom(4, size=12, prob=0.2)
+[1] 0.1329
+&gt; pbinom(4, size=12, prob=0.2)
+[1] 0.92744
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-2" class="outline-3">
+<h3 id="sec-17-2"><span class="section-number-3">17.2</span> Poisson</h3>
+<div class="outline-text-3" id="text-17-2">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; ppois(16, lambda=12)   # lower tail
+[1] 0.89871
+&gt; ppois(16, lambda=12, lower=FALSE)   # upper tail
+[1] 0.10129
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-3" class="outline-3">
+<h3 id="sec-17-3"><span class="section-number-3">17.3</span> Distribución Contínua Uniforme</h3>
+<div class="outline-text-3" id="text-17-3">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; runif(10, min=1, max=3)
+[1] 1.6121 1.2028 1.9306 2.4233 1.6874 1.1502 2.7068
+[8] 1.4455 2.4122 2.2171
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-4" class="outline-3">
+<h3 id="sec-17-4"><span class="section-number-3">17.4</span> Exponencial</h3>
+<div class="outline-text-3" id="text-17-4">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; pexp(2, rate=1/3)
+[1] 0.48658
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-5" class="outline-3">
+<h3 id="sec-17-5"><span class="section-number-3">17.5</span> Normal</h3>
+<div class="outline-text-3" id="text-17-5">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; pnorm(84, mean=72, sd=15.2, lower.tail=FALSE)
+[1] 0.21492
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-6" class="outline-3">
+<h3 id="sec-17-6"><span class="section-number-3">17.6</span> Chi cuadrado</h3>
+<div class="outline-text-3" id="text-17-6">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; qchisq(.95, df=7)        # 7 degrees of freedom
+[1] 14.067
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-7" class="outline-3">
+<h3 id="sec-17-7"><span class="section-number-3">17.7</span> T de Student</h3>
+<div class="outline-text-3" id="text-17-7">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; qt(c(.025, .975), df=5)   # 5 degrees of freedom
+[1] -2.5706  2.5706
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-17-8" class="outline-3">
+<h3 id="sec-17-8"><span class="section-number-3">17.8</span> F distribución</h3>
+<div class="outline-text-3" id="text-17-8">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; qf(.95, df1=5, df2=2)
+[1] 19.296
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-18" class="outline-2">
+<h2 id="sec-18"><span class="section-number-2">18</span> Test estadísticos</h2>
+<div class="outline-text-2" id="text-18">
+</div><div id="outline-container-sec-18-1" class="outline-3">
+<h3 id="sec-18-1"><span class="section-number-3">18.1</span> Distribución Binomial</h3>
+<div class="outline-text-3" id="text-18-1">
+<p>
+Si hay doce coches cruzando un puente por minuto de media, encuentra
+la probabilidad de tener dieciseis o más coches cruzando el puente en
+un minuto particular.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; ppois(16, lambda=12)   # lower tail
+[1] 0.89871
+
+&gt; ppois(16, lambda=12, lower=FALSE)   # upper tail
+[1] 0.10129
+</pre>
+</div>
+
+<p>
+La probabilidad es del 10.1%
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-18-2" class="outline-3">
+<h3 id="sec-18-2"><span class="section-number-3">18.2</span> Test Binomial</h3>
+<div class="outline-text-3" id="text-18-2">
+<p>
+Supongamos que tenemos un juego de mesa que depende del lanzamiento de
+un dado (ver dado) y asigna una especial importancia al lanzamiento de
+un 6. En un juego en particular, el dado es lanzado 366 veces, y el 6
+sale 51 veces. Si el dado es justo, esperamos que el 6 salga 366/6 =
+61 veces. ¿Es la proporción del 6 significativamente más alta de lo
+que se esperaría por casualidad, sobre la hipótesis nula de un dado
+justo?
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">binom.test(51, 336, (1/6))
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python">scipy.stats.binom_test(51, 336, 1.0/6)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-18-3" class="outline-3">
+<h3 id="sec-18-3"><span class="section-number-3">18.3</span> Distribución F</h3>
+<div class="outline-text-3" id="text-18-3">
+<p>
+El 95 percentil de la distribución F con (5, 2) grados de libertad es
+19.296
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; qf(.95, df1=5, df2=2)
+[1] 19.296
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-18-4" class="outline-3">
+<h3 id="sec-18-4"><span class="section-number-3">18.4</span> Bondad de ajuste multinomial</h3>
+<div class="outline-text-3" id="text-18-4">
+<p>
+Dadas unas estadísticas de fumar en un campus, determine si los datos
+de ejemplo en la encuesta soportan un nivel de significación 0.5
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; library(MASS)
+&gt; levels(survey$Smoke)
+&gt; smoke.freq = table(survey$Smoke)
+&gt; smoke.freq
+&gt; smoke.prob = c(.045, .795, .085, .075)
+&gt; chisq.test(smoke.freq, p=smoke.prob)
+
+		Chi-squared test for given probabilities
+
+data:  smoke.freq
+X-squared = 0.1074, df = 3, p-value = 0.991
+</pre>
+</div>
+
+<p>
+Como el p-valor 0.991 es mayor que el nivel de significación 0.05, no
+rechazamos la hipótesis nula que los datos de ejemplo en la encuesta
+soportan las estadísticas de fumar.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-18-5" class="outline-3">
+<h3 id="sec-18-5"><span class="section-number-3">18.5</span> Test de Chi</h3>
+<div class="outline-text-3" id="text-18-5">
+<p>
+Establezcamos la hipótesis del hábito de fumar de los estudiantes es
+independiente de su nivel de ejercicio en un nivel de significancia de
+0.05.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; library(MASS)       # load the MASS package
+&gt; tbl = table(survey$Smoke, survey$Exer)
+&gt; tbl                 # the contingency table
+
+		Freq None Some
+  Heavy    7    1    3
+  Never   87   18   84
+  Occas   12    3    4
+  Regul    9    1    7
+
+&gt; chisq.test(tbl)
+
+		Pearson’s Chi-squared test
+
+data:  table(survey$Smoke, survey$Exer)
+X-squared = 5.4885, df = 6, p-value = 0.4828
+
+Warning message:
+In chisq.test(table(survey$Smoke, survey$Exer)) :
+  Chi-squared approximation may be incorrect
+</pre>
+</div>
+
+<p>
+Como el p-valor es 0.4828 es mayor que el nivel de significado 0.05,
+no rechazamos la hipótesis nula que el hábito de fumar es
+independiente del nivel de ejercicio de los estudiantes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-18-6" class="outline-3">
+<h3 id="sec-18-6"><span class="section-number-3">18.6</span> Test Wilcox</h3>
+<div class="outline-text-3" id="text-18-6">
+<p>
+Sin asumir que los datos tienen distribución normal, chequea en el
+nivel de significación 0.05 si los rendimientos entre 1931 y 1932 en
+los datos tienen distribuciones de datos idénticas.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; library(MASS)         # load the MASS package
+&gt; head(immer)
+  Loc Var    Y1    Y2
+1  UF   M  81.0  80.7
+2  UF   S 105.4  82.3
+
+&gt; wilcox.test(immer$Y1, immer$Y2, paired=TRUE)
+
+		Wilcoxon signed rank test with continuity correction
+
+data:  immer$Y1 and immer$Y2
+V = 368.5, p-value = 0.005318
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(immer$Y1, immer$Y2, paired = TRUE) :
+  cannot compute exact p-value with ties
+</pre>
+</div>
+
+<p>
+Las distribuciones son NO idénticas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-18-7" class="outline-3">
+<h3 id="sec-18-7"><span class="section-number-3">18.7</span> Ecuación de la Regresión Logística</h3>
+<div class="outline-text-3" id="text-18-7">
+<p>
+Para un coche de 120 km/h y un peso de 2800, la probabilidad de estar
+ajustado es del 64%.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+&gt; newdata = data.frame(hp=120, wt=2.8)
+&gt; predict(am.glm, newdata, type="response")
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-18-8" class="outline-3">
+<h3 id="sec-18-8"><span class="section-number-3">18.8</span> Test de significado para la regresión logística</h3>
+<div class="outline-text-3" id="text-18-8">
+<p>
+En el nivel de significado 0.05, decidimos si cualquiera de las
+variables independientes en el modelo de regresión logística de la
+transmisión del vehículo en los datos asigna mtcars es
+estadísticamente insignificante.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; am.glm = glm(formula=am ~ hp + wt,
++              data=mtcars,
++              family=binomial)
+
+&gt; summary(am.glm)
+
+Call:
+glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
+
+Deviance Residuals:
+	Min       1Q   Median       3Q      Max
+-2.2537  -0.1568  -0.0168   0.1543   1.3449
+
+Coefficients:
+			Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)  18.8663     7.4436    2.53   0.0113 *
+hp            0.0363     0.0177    2.04   0.0409 *
+wt           -8.0835     3.0687   -2.63   0.0084 **
+---
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+	Null deviance: 43.230  on 31  degrees of freedom
+Residual deviance: 10.059  on 29  degrees of freedom
+AIC: 16.06
+
+Number of Fisher Scoring iterations: 8
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-18-9" class="outline-3">
+<h3 id="sec-18-9"><span class="section-number-3">18.9</span> Mann-Whitney test: comparar si hay diferencias entre medianas muestras independientes</h3>
+<div class="outline-text-3" id="text-18-9">
+<div class="org-src-container">
+
+<pre class="src src-R">boxplot(Peso ~ Manejo)
+wilcox.test(Peso~Manejo)
+boxplot(Ostertagia ~ Manejo)
+plotmeans(Ostertagia~Manejo,col="coral", connect=T, ylab="Carga parasitaria (Ostertagia)", xlab="Manejo", data=b)# plot means and CI95% Grafica mitjana
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-19" class="outline-2">
+<h2 id="sec-19"><span class="section-number-2">19</span> Ecuación de Regresión Logística</h2>
+<div class="outline-text-2" id="text-19">
+<p>
+Usando la ecuación de regresión logística, estime la probabilidad de
+un vehículo siendo ajustado con una transmisión manual si tiene un
+motor de 120 y pesa 2800.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+&gt; newdata = data.frame(hp=120, wt=2.8)
+&gt; predict(am.glm, newdata, type="response")
+	  1
+0.64181
+</pre>
+</div>
+
+<p>
+Para un automóvil con un motor de 120 hp y 2800 lbs de peso, la
+probabilidad de estar ajustado con una transmisión manual es del 64%.
+</p>
+
+<p>
+En el nivel de significado 0.05, decide si cualquiera de las variables
+independientes en el modelo de regresión logística de la transmisión
+del vehículo en los datos mtcars es estadísticamente insignificante.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+&gt; summary(am.glm)
+
+Call:
+glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
+
+Deviance Residuals:
+	Min       1Q   Median       3Q      Max
+-2.2537  -0.1568  -0.0168   0.1543   1.3449
+
+Coefficients:
+			Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept) 18.86630    7.44356   2.535  0.01126 *
+hp           0.03626    0.01773   2.044  0.04091 *
+wt          -8.08348    3.06868  -2.634  0.00843 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+	Null deviance: 43.230  on 31  degrees of freedom
+Residual deviance: 10.059  on 29  degrees of freedom
+AIC: 16.059
+
+Number of Fisher Scoring iterations: 8
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-20" class="outline-2">
+<h2 id="sec-20"><span class="section-number-2">20</span> Análisis de Varianza</h2>
+<div class="outline-text-2" id="text-20">
+</div><div id="outline-container-sec-20-1" class="outline-3">
+<h3 id="sec-20-1"><span class="section-number-3">20.1</span> Diseño Completamente Aleatorio</h3>
+<div class="outline-text-3" id="text-20-1">
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; df1 = read.table("fastfood-1.txt", header=TRUE); df1
+  Item1 Item2 Item3
+1    22    52    16
+2    42    33    24
+3    44     8    19
+4    52    47    18
+5    45    43    34
+6    37    32    36
+
+&gt; r = c(t(as.matrix(df1))) # response data
+&gt; r
+ [1] 22 52 16 42 33 ...
+
+&gt; f = c("Item1", "Item2", "Item3")   # treatment levels
+&gt; k = 3                    # number of treatment levels
+&gt; n = 6                    # observations per treatment
+
+&gt; tm = gl(k, 1, n*k, factor(f))   # matching treatments
+&gt; tm
+ [1] Item1 Item2 Item3 Item1 Item2 ...
+
+&gt; av = aov(r ~ tm)
+&gt; summary(av)
+			Df Sum Sq Mean Sq F value Pr(&gt;F)
+tm           2    745     373    2.54   0.11
+Residuals   15   2200     147
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-21" class="outline-2">
+<h2 id="sec-21"><span class="section-number-2">21</span> Análisis de Clúster Jerárquico</h2>
+<div class="outline-text-2" id="text-21">
+<p>
+En los datos, se puede ejecutar la matriz distancia con hclust y
+plotear un dendograma que muestre una relación jerárquica entre
+vehículos.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; d &lt;- dist(as.matrix(mtcars))   # find distance matrix
+&gt; hc &lt;- hclust(d)                # apply hirarchical clustering
+&gt; plot(hc)                       # plot the dendrogram
+</pre>
+</div>
+
+<p>
+Para un conjunto de datos con 4000 elementos, coge hclust 2 minutos
+para finalizar el trabajo en un AMD.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-R">&gt; test.data &lt;- function(dim, num, seed=17) {
++     set.seed(seed)
++     matrix(rnorm(dim * num), nrow=num)
++ }
+&gt; m &lt;- test.data(120, 4500)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-22" class="outline-2">
+<h2 id="sec-22"><span class="section-number-2">22</span> Licencia</h2>
+<div class="outline-text-2" id="text-22">
 <p>
 Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.0/deed">Licencia Creative Commons Reconocimiento Unported 3.0</a>
 </p>
@@ -1597,7 +2212,7 @@ Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.
 </div>
 <div id="postamble" class="status">
 <p class="author">Autor: David Arroyo Menéndez</p>
-<p class="date">Created: 2019-02-06 mié 17:00</p>
+<p class="date">Created: 2019-02-07 jue 17:15</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

@@ -1,6 +1,7 @@
 #+TITLE: Primitivas en GNU R
 #+LANGUAGE: es
 #+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
 
 * Instalación
 ** Debian/Ubuntu
@@ -510,7 +511,10 @@ Muchos paquetes adicionales tambien vienen con sus datos de ejemplo
 Cargar un paquete. Requiere instalarlo previamente bien:
 + descargandolo en www.r-project.org y siguiendo las instrucciones
 + utilizando el menu windows de RGui y eligiendo un repositorio
++ con la función install.packages("package")
+
 #+BEGIN_SRC R
+   install.packages("adagio")
    library (foreign)			# o mediante el menu windows de RGui
    library(help=foreign) 	# informacion sobre el paquete 'foreign'
 #+END_SRC
@@ -565,7 +569,8 @@ Precauciones:
 #+END_SRC
 
 * Lectura de datos desde un archivo
-** Informacion completa en el manual "R Data Import/Export" accesible desde la ayuda
+** Información completa en el manual "R Data Import/Export" accesible desde la ayuda
+Es posible cargar datos desde un fichero de texto y hacer algún cálculo.
 #+BEGIN_SRC R
    ?read.table
    rm(list=ls())
@@ -575,6 +580,21 @@ Precauciones:
    colMeans(mis.datos)
    attach(mis.datos)
    sum(weight >=125)/length(weight)		# calcula la proporcion de individuos que pesan al menos 125 lb
+#+END_SRC
+
+También es posible cargar datos desde un fichero de texto y manipular datos.
+
+#+BEGIN_SRC R
+rm(list=ls(all=TRUE))
+b=read.table("Oster.txt", header=T)
+dim(b)
+summary(b)
+names(b)# obtengo los nombres de las cabeceras de columna
+head(b)# Quiero ver los 6 primeros valores
+tail(b) # Los seis últimos
+attach(b)# anclamos la base de datos para trabajar con ella
+View(b)# Veo mis datos
+edit(b)
 #+END_SRC
 
 ** Existen variantes de read.table() para formatos algunos formatos habituales: read.csv, read.csv2, read.delim ...
@@ -859,6 +879,419 @@ stem(tr) # diagrama de tallos y hojas (ver http://www.estadisticaparatodos.es/ta
 #+END_SRC
 
 En nuestro ejemplo utilizaremos los datos de [[file:///home/davidam/public_html/software/R/paises.csv][paises.csv]]
+
+* Distribuciones
+** Binomial
+#+BEGIN_SRC R
+> dbinom(4, size=12, prob=0.2)
+[1] 0.1329
+> pbinom(4, size=12, prob=0.2)
+[1] 0.92744
+#+END_SRC
+** Poisson
+#+BEGIN_SRC R
+> ppois(16, lambda=12)   # lower tail
+[1] 0.89871
+> ppois(16, lambda=12, lower=FALSE)   # upper tail
+[1] 0.10129
+#+END_SRC
+** Distribución Contínua Uniforme
+#+BEGIN_SRC R
+> runif(10, min=1, max=3)
+[1] 1.6121 1.2028 1.9306 2.4233 1.6874 1.1502 2.7068
+[8] 1.4455 2.4122 2.2171
+#+END_SRC
+** Exponencial
+#+BEGIN_SRC R
+> pexp(2, rate=1/3)
+[1] 0.48658
+#+END_SRC
+** Normal
+#+BEGIN_SRC R
+> pnorm(84, mean=72, sd=15.2, lower.tail=FALSE)
+[1] 0.21492
+#+END_SRC
+** Chi cuadrado
+#+BEGIN_SRC R
+> qchisq(.95, df=7)        # 7 degrees of freedom
+[1] 14.067
+#+END_SRC
+** T de Student
+#+BEGIN_SRC R
+> qt(c(.025, .975), df=5)   # 5 degrees of freedom
+[1] -2.5706  2.5706
+#+END_SRC
+** F distribución
+#+BEGIN_SRC R
+> qf(.95, df1=5, df2=2)
+[1] 19.296
+#+END_SRC
+* Test estadísticos
+** Distribución Binomial
+
+Si hay doce coches cruzando un puente por minuto de media, encuentra
+la probabilidad de tener dieciseis o más coches cruzando el puente en
+un minuto particular.
+
+#+BEGIN_SRC R
+> ppois(16, lambda=12)   # lower tail
+[1] 0.89871
+
+> ppois(16, lambda=12, lower=FALSE)   # upper tail
+[1] 0.10129
+#+END_SRC
+
+La probabilidad es del 10.1%
+
+** Test Binomial
+
+Supongamos que tenemos un juego de mesa que depende del lanzamiento de
+un dado (ver dado) y asigna una especial importancia al lanzamiento de
+un 6. En un juego en particular, el dado es lanzado 366 veces, y el 6
+sale 51 veces. Si el dado es justo, esperamos que el 6 salga 366/6 =
+61 veces. ¿Es la proporción del 6 significativamente más alta de lo
+que se esperaría por casualidad, sobre la hipótesis nula de un dado
+justo?
+
+#+BEGIN_SRC R
+binom.test(51, 336, (1/6))
+#+END_SRC
+
+#+BEGIN_SRC python
+scipy.stats.binom_test(51, 336, 1.0/6)
+#+END_SRC
+
+** Distribución F
+
+El 95 percentil de la distribución F con (5, 2) grados de libertad es
+19.296
+
+#+BEGIN_SRC R
+> qf(.95, df1=5, df2=2)
+[1] 19.296
+#+END_SRC
+
+** Bondad de ajuste multinomial
+
+Dadas unas estadísticas de fumar en un campus, determine si los datos
+de ejemplo en la encuesta soportan un nivel de significación 0.5
+
+#+BEGIN_SRC R
+> library(MASS)
+> levels(survey$Smoke)
+> smoke.freq = table(survey$Smoke)
+> smoke.freq
+> smoke.prob = c(.045, .795, .085, .075)
+> chisq.test(smoke.freq, p=smoke.prob)
+
+        Chi-squared test for given probabilities
+
+data:  smoke.freq
+X-squared = 0.1074, df = 3, p-value = 0.991
+#+END_SRC
+
+Como el p-valor 0.991 es mayor que el nivel de significación 0.05, no
+rechazamos la hipótesis nula que los datos de ejemplo en la encuesta
+soportan las estadísticas de fumar.
+
+** Test de Chi
+
+Establezcamos la hipótesis del hábito de fumar de los estudiantes es
+independiente de su nivel de ejercicio en un nivel de significancia de
+0.05.
+
+#+BEGIN_SRC R
+> library(MASS)       # load the MASS package
+> tbl = table(survey$Smoke, survey$Exer)
+> tbl                 # the contingency table
+
+        Freq None Some
+  Heavy    7    1    3
+  Never   87   18   84
+  Occas   12    3    4
+  Regul    9    1    7
+
+> chisq.test(tbl)
+
+        Pearson’s Chi-squared test
+
+data:  table(survey$Smoke, survey$Exer)
+X-squared = 5.4885, df = 6, p-value = 0.4828
+
+Warning message:
+In chisq.test(table(survey$Smoke, survey$Exer)) :
+  Chi-squared approximation may be incorrect
+#+END_SRC
+
+Como el p-valor es 0.4828 es mayor que el nivel de significado 0.05,
+no rechazamos la hipótesis nula que el hábito de fumar es
+independiente del nivel de ejercicio de los estudiantes.
+
+** Test Wilcox
+
+Sin asumir que los datos tienen distribución normal, chequea en el
+nivel de significación 0.05 si los rendimientos entre 1931 y 1932 en
+los datos tienen distribuciones de datos idénticas.
+
+#+BEGIN_SRC R
+> library(MASS)         # load the MASS package
+> head(immer)
+  Loc Var    Y1    Y2
+1  UF   M  81.0  80.7
+2  UF   S 105.4  82.3
+
+> wilcox.test(immer$Y1, immer$Y2, paired=TRUE)
+
+        Wilcoxon signed rank test with continuity correction
+
+data:  immer$Y1 and immer$Y2
+V = 368.5, p-value = 0.005318
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(immer$Y1, immer$Y2, paired = TRUE) :
+  cannot compute exact p-value with ties
+#+END_SRC
+
+Las distribuciones son NO idénticas.
+
+** Ecuación de la Regresión Logística
+
+Para un coche de 120 km/h y un peso de 2800, la probabilidad de estar
+ajustado es del 64%.
+
+#+BEGIN_SRC R
+> am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+> newdata = data.frame(hp=120, wt=2.8)
+> predict(am.glm, newdata, type="response")
+#+END_SRC
+
+** Test de significado para la regresión logística
+
+En el nivel de significado 0.05, decidimos si cualquiera de las
+variables independientes en el modelo de regresión logística de la
+transmisión del vehículo en los datos asigna mtcars es
+estadísticamente insignificante.
+
+#+BEGIN_SRC R
+> am.glm = glm(formula=am ~ hp + wt,
++              data=mtcars,
++              family=binomial)
+
+> summary(am.glm)
+
+Call:
+glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-2.2537  -0.1568  -0.0168   0.1543   1.3449
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  18.8663     7.4436    2.53   0.0113 *
+hp            0.0363     0.0177    2.04   0.0409 *
+wt           -8.0835     3.0687   -2.63   0.0084 **
+---
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 43.230  on 31  degrees of freedom
+Residual deviance: 10.059  on 29  degrees of freedom
+AIC: 16.06
+
+Number of Fisher Scoring iterations: 8
+#+END_SRC
+** Mann-Whitney test: comparar si hay diferencias entre medianas muestras independientes
+
+#+BEGIN_SRC R
+boxplot(Peso ~ Manejo)
+wilcox.test(Peso~Manejo)
+boxplot(Ostertagia ~ Manejo)
+plotmeans(Ostertagia~Manejo,col="coral", connect=T, ylab="Carga parasitaria (Ostertagia)", xlab="Manejo", data=b)# plot means and CI95% Grafica mitjana
+#+END_SRC
+
+* Regresión Lineal
+
+En estadística la regresión lineal o ajuste lineal es un modelo
+matemático usado para aproximar la relación de dependencia entre una
+variable dependiente Y, las variables independientes Xi y un término
+aleatorio.
+
+En regresión lineal simple tenemos hay una variable independiente y en
+regresión lineal múltiple hay muchas variables independientes.
+
+** Ecuación de Regresión Lineal Simple
+
+Aplica regresión lineal para el conjunto de datos faithful, y estima
+la duración de la siguiente erupción si el tiempo de espera han sido
+80 minutos.
+
+#+BEGIN_SRC R
+> eruption.lm = lm(eruptions ~ waiting, data=faithful)
+> coeffs = coefficients(eruption.lm); coeffs
+(Intercept)     waiting
+  -1.874016    0.075628
+> waiting = 80           # the waiting time
+> duration = coeffs[1] + coeffs[2]*waiting
+> duration
+(Intercept)
+     4.1762
+#+END_SRC
+
+Si el tiempo de espera han sido 80 minutos, esperamos que la siguiente
+erupción son 4.1762 minutos.
+
+** Coeficiente de Determinación
+
+Encuentra el coeficiente de determinación para el modelo de regresión
+lineal simple del conjunto de datos faithful.
+
+#+BEGIN_SRC R
+> eruption.lm = lm(eruptions ~ waiting, data=faithful)
+> summary(eruption.lm)$r.squared
+[1] 0.81146
+#+END_SRC
+
+** Test de significado para la regresión lineal
+
+Decide si hay una regresión significativa entre las variables en el
+modelo de regresión lineal del conjunto de datos faithful en el nivel
+de significación 0.05.
+
+#+BEGIN_SRC R
+> eruption.lm = lm(eruptions ~ waiting, data=faithful)
+> summary(eruption.lm)
+
+Call:
+lm(formula = eruptions ~ waiting, data = faithful)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-1.2992 -0.3769  0.0351  0.3491  1.1933
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) -1.87402    0.16014   -11.7   <2e-16 ***
+waiting      0.07563    0.00222    34.1   <2e-16 ***
+---
+Signif. codes:  0 ’***’ 0.001 ’**’ 0.01 ’*’ 0.05 ’.’ 0.1 ’ ’ 1
+
+Residual standard error: 0.497 on 270 degrees of freedom
+Multiple R-squared: 0.811,      Adjusted R-squared: 0.811
+F-statistic: 1.16e+03 on 1 and 270 DF,  p-value: <2e-16
+#+END_SRC
+
+Como el p-valor es mucho menor que 0.05, se rechaza la hipótesis nula.
+
+* Ecuación de Regresión Logística
+
+Usando la ecuación de regresión logística, estime la probabilidad de
+un vehículo siendo ajustado con una transmisión manual si tiene un
+motor de 120 y pesa 2800.
+
+#+BEGIN_SRC R
+> am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+> newdata = data.frame(hp=120, wt=2.8)
+> predict(am.glm, newdata, type="response")
+      1
+0.64181
+#+END_SRC
+
+Para un automóvil con un motor de 120 hp y 2800 lbs de peso, la
+probabilidad de estar ajustado con una transmisión manual es del 64%.
+
+En el nivel de significado 0.05, decide si cualquiera de las variables
+independientes en el modelo de regresión logística de la transmisión
+del vehículo en los datos mtcars es estadísticamente insignificante.
+
+#+BEGIN_SRC R
+> am.glm = glm(formula=am ~ hp + wt, data=mtcars, family=binomial)
+> summary(am.glm)
+
+Call:
+glm(formula = am ~ hp + wt, family = binomial, data = mtcars)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-2.2537  -0.1568  -0.0168   0.1543   1.3449
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept) 18.86630    7.44356   2.535  0.01126 *
+hp           0.03626    0.01773   2.044  0.04091 *
+wt          -8.08348    3.06868  -2.634  0.00843 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 43.230  on 31  degrees of freedom
+Residual deviance: 10.059  on 29  degrees of freedom
+AIC: 16.059
+
+Number of Fisher Scoring iterations: 8
+#+END_SRC
+
+* Análisis de Varianza
+** Diseño Completamente Aleatorio
+#+BEGIN_SRC R
+> df1 = read.table("fastfood-1.txt", header=TRUE); df1
+  Item1 Item2 Item3
+1    22    52    16
+2    42    33    24
+3    44     8    19
+4    52    47    18
+5    45    43    34
+6    37    32    36
+
+> r = c(t(as.matrix(df1))) # response data
+> r
+ [1] 22 52 16 42 33 ...
+
+> f = c("Item1", "Item2", "Item3")   # treatment levels
+> k = 3                    # number of treatment levels
+> n = 6                    # observations per treatment
+
+> tm = gl(k, 1, n*k, factor(f))   # matching treatments
+> tm
+ [1] Item1 Item2 Item3 Item1 Item2 ...
+
+> av = aov(r ~ tm)
+> summary(av)
+            Df Sum Sq Mean Sq F value Pr(>F)
+tm           2    745     373    2.54   0.11
+Residuals   15   2200     147
+#+END_SRC
+
+* Análisis de Clúster Jerárquico
+
+En los datos, se puede ejecutar la matriz distancia con hclust y
+plotear un dendograma que muestre una relación jerárquica entre
+vehículos.
+
+#+BEGIN_SRC R
+> d <- dist(as.matrix(mtcars))   # find distance matrix
+> hc <- hclust(d)                # apply hirarchical clustering
+> plot(hc)                       # plot the dendrogram
+#+END_SRC
+
+Para un conjunto de datos con 4000 elementos, coge hclust 2 minutos
+para finalizar el trabajo en un AMD.
+
+#+BEGIN_SRC R
+> test.data <- function(dim, num, seed=17) {
++     set.seed(seed)
++     matrix(rnorm(dim * num), nrow=num)
++ }
+> m <- test.data(120, 4500)
+#+END_SRC
+
+* Referencias
+
++ González, A., González, S. 2018. "/Una Introducción a R/", Libremanuals
++ Chay, Chi. "/R Tutorial/", visto el 1 de Diciembre de 2017, <http://www.r-tutor.com/>.
 
 * Licencia
 Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/deed][Licencia Creative Commons Reconocimiento Unported 3.0]]
