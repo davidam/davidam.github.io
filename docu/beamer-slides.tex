@@ -1,0 +1,88 @@
+% Created 2019-03-06 mié 16:50
+\documentclass[unicode,presentation,c,squeeze,shrink,10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\AtBeginSection[]{\begin{frame}<beamer>\frametitle{Outline}\tableofcontents[currentsection]\end{frame}}
+\usetheme{KansaiDebian}
+\author{David Arroyo Menéndez}
+\date{2017-01-29 16:45:57}
+\title{Orgmode \& Beamer}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\section{Introduction from files}
+\label{sec-1}
+\begin{frame}[fragile,label=sec-1-1]{Downloads}
+ \begin{verbatim}
+$ git clone https://github.com/davidam/davidam.github.io
+\end{verbatim}
+\end{frame}
+\begin{frame}[fragile,label=sec-1-2]{A beamer file is a latex file}
+ \begin{verbatim}
+$ cd ~/git/davidam.github.io/presentations
+$ more beamer.tex
+\end{verbatim}
+\end{frame}
+\begin{frame}[fragile,label=sec-1-3]{An orgmode file can be a beamer file with wiki sintaxis}
+ \begin{verbatim}
+$ cd ~/git/davidam.github.io/presentations
+$ more beamer.org
+\end{verbatim}
+\end{frame}
+\section{Why?}
+\label{sec-2}
+\begin{frame}[label=sec-2-1]{Why is a good idea make slides with latex or wiki sintaxis?}
+\begin{itemize}
+\item $\boxtimes$ Version Control
+\item $\square$ I'm using ssh
+\item $\square$ Divide visualization and structure is for winners!
+\item $\boxtimes$ Good support for equations
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-2-2]{What advantages is adding emacs orgmode to latex beamer}
+\begin{itemize}
+\item $\boxtimes$ Good navigation
+\item $\boxtimes$ Reproducible research
+\end{itemize}
+\end{frame}
+\section{Just do it!}
+\label{sec-3}
+\begin{frame}[fragile,label=sec-3-1]{I want export my beamer.org}
+ \begin{block}{From GNU/Emacs to pdf}
+M-x org-beamer-export-to-pdf
+\end{block}
+\begin{block}{From shell to html}
+\begin{verbatim}
+$ latex2html beamer.tex
+\end{verbatim}
+\end{block}
+\end{frame}
+\begin{frame}[label=sec-3-2]{Themes by example}
+Take a look to the \href{http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html}{matrix} between beamer color theme and beamer theme.
+Some examples
+\begin{itemize}
+\item $\square$ Madrid
+\item $\boxtimes$ beamerthemeKansaiDebianMeeting
+\end{itemize}
+\end{frame}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

@@ -1,0 +1,49 @@
+#+TITLE: Orgmode & Beamer
+#+AUTHOR: David Arroyo Menéndez
+#+EMAIL: davidam@gnu.org
+#+DATE: 2017-01-29 16:45:57
+#+OPTIONS: H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS: TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:notintoc
+#+STARTUP: beamer
+#+LATEX_CLASS_OPTIONS: [unicode,presentation,c,squeeze,shrink,10pt]
+#+BEAMER_FRAME_LEVEL: 2
+#+BEAMER_THEME: KansaiDebian
+#+BEAMER_HEADER: \AtBeginSection[]{\begin{frame}<beamer>\frametitle{Outline}\tableofcontents[currentsection]\end{frame}}
+* Introduction from files
+** Downloads
+#+BEGIN_SRC
+$ git clone https://github.com/davidam/davidam.github.io
+#+END_SRC
+** A beamer file is a latex file
+#+BEGIN_SRC
+$ cd ~/git/davidam.github.io/presentations
+$ more beamer.tex
+#+END_SRC
+** An orgmode file can be a beamer file with wiki sintaxis
+#+BEGIN_SRC
+$ cd ~/git/davidam.github.io/presentations
+$ more beamer.org
+#+END_SRC
+* Why?
+** Why is a good idea make slides with latex or wiki sintaxis?
++ [X] Version Control
++ [ ] I'm using ssh
++ [ ] Divide visualization and structure is for winners!
++ [X] Good support for equations
+
+** What advantages is adding emacs orgmode to latex beamer
++ [X] Good navigation
++ [X] Reproducible research
+* Just do it!
+** I want export my beamer.org
+*** From GNU/Emacs to pdf
+M-x org-beamer-export-to-pdf
+*** From shell to html
+#+BEGIN_SRC
+$ latex2html beamer.tex
+#+END_SRC
+** Themes by example
+Take a look to the [[http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html][matrix]] between beamer color theme and beamer theme.
+Some examples
++ [ ] Madrid
++ [X] beamerthemeKansaiDebianMeeting
