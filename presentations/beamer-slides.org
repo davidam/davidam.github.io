@@ -47,3 +47,14 @@ Take a look to the [[http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.h
 Some examples
 + [ ] Madrid
 + [X] beamerthemeKansaiDebianMeeting
+** Give me a reproducible calculus
+
+The source is:
+#+begin_src emacs-lisp :exports code
+  (+ 2 2)
+#+end_src
+
+The result is:
+#+begin_src emacs-lisp :exports results
+  (+ 2 2)
+#+end_src
