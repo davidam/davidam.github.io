@@ -9,6 +9,7 @@
 #+BEAMER_FRAME_LEVEL: 2
 #+BEAMER_THEME: KansaiDebian
 #+BEAMER_HEADER: \AtBeginSection[]{\begin{frame}<beamer>\frametitle{Outline}\tableofcontents[currentsection]\end{frame}}
+
 * Introduction from files
 ** Downloads
 #+BEGIN_SRC
@@ -24,6 +25,15 @@ $ more beamer.tex
 $ cd ~/git/davidam.github.io/presentations
 $ more beamer.org
 #+END_SRC
+** Orgmode is for ...
++ TODO management in text mode
++ Articles (reproducible research, latex capabilities, nice navigation, ...)
++ Spreadsheet
++ Presentation (beamer)
++ Web Deployment
++ Powerful hiperlinks (RMAIL, BBDB, IRC, ...)
++ In general, easy to extend
++ Ready to use in emacs, vim, github, ...
 * Why?
 ** Why is a good idea make slides with latex or wiki sintaxis?
 + [X] Version Control
@@ -58,3 +68,8 @@ The result is:
 #+begin_src emacs-lisp :exports results
   (+ 2 2)
 #+end_src
+
+** Give me documentation
+
++ https://orgmode.org/worg/exporters/beamer/tutorial.html
++ https://orgmode.org/manual/Beamer-export.html
