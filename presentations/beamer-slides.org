@@ -57,6 +57,7 @@ Take a look to the [[http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.h
 Some examples
 + [ ] Madrid
 + [X] beamerthemeKansaiDebianMeeting
++ [X] latex-beamerposter
 ** Give me a reproducible calculus
 
 The source is:
