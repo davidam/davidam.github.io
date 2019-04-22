@@ -27,8 +27,8 @@ software privativo.
 * Contexto donde detecté la actitud de Ciencias Sociales de extrema izquierda con Software Fascista
 
 En esta sección, llamo software fascista, al software privativo puesto
-que priva de libertades. Esto se explicará más extensamente en otro
-artículo aún no publicado.
+que priva de libertades. Esto se explica más extensamente en
+[[http://estudios.cnt.es/antifascismo-en-el-software/][otro artículo]].
 
 En la universidad donde veía la fe ciega en el software privativo, he
 llegado a oir comentarios de "en la próxima versión de nuestro programa
@@ -45,14 +45,14 @@ creer en el software fascista de las grandes corporaciones que tienen
 que usar todos los días para hablar desde los datos de los problemas
 de la sociedad.
 
-En la actualidad española la ciudadanía [[http://www.cis.es/opencms/-Archivos/Indicadores/documentos_html/TresProblemas.html][detecta como problemas
-sociales graves tanto las estafas, como la falta de validez de los
-partidos]] y en esa desesperación hay personas españolas que quieren
-pagar al problema de los partidos creando a otro nuevo. Yo pienso que
-el problema que detecta la ciudadanía en los partidos, puede mejorarse
-con el software libre, porque los análisis de nuestros científicos
-sociales serían más críticos, con menos fe ciega en las corporaciones
-de software privativo.
+En la actualidad española la ciudadanía [[http://www.cis.es/opencms/-Archivos/Indicadores/documentos_html/TresProblemas.html][detecta, entre otros,
+problemas sociales graves estafas, desempleo, economía, falta de
+validez de los partidos]] y en esa desesperación hay personas españolas
+que quieren pagar al problema de los partidos creando a otro nuevo. Yo
+pienso que el problema que detecta la ciudadanía en los partidos,
+puede mejorarse con el software libre, porque los análisis de nuestros
+científicos sociales serían más críticos, con menos fe ciega en las
+corporaciones de software privativo.
 
 * La problemática de la migración al software libre
 
