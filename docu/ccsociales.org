@@ -1,8 +1,11 @@
 #+TITLE: Un alegato a favor del Software Libre en Ciencias Sociales
 #+LANGUAGE: es
 #+AUTHOR: David Arroyo Menéndez
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
 #+BABEL: :results output :session
+
+[[http://www.davidam.com][Volver a davidam.com]]
+
 
 * Introducción
 
@@ -14,7 +17,7 @@ experimento y otro científico debe venir a cotejarlo, reproducirlo y
 darle la credibilidad científica de que el experimento es bueno,
 novedoso y está bien hecho. Con el software privativo hay una parte
 del experimento a cotejar que los científicos sociales confían
-ciegamente en las corporaciones que les suministran el software. 
+ciegamente en las corporaciones que les suministran el software.
 
 Por ejemplo, en un software estadístico hay muchos cálculos algunos
 los eligen quien usa la herramienta, pero hay mucho cálculo por abajo
@@ -74,6 +77,23 @@ fuerte para usar software privativo, pero también hay reemplazos
 libres ([[http://gretl.sourceforge.net/][Gretl]], [[https://www.gnu.org/software/pspp/][PSPP]], [[http://www.r-project.org/][GNU R]], etc.). Quienes estudian y trabajan en los
 temas de la políticia deberían saber cambiar esa inercia social es muy
 importante para la ciencia y la libertad en la sociedad.
+
+También es posible utilizar lenguajes de propósito general como
+Python, o Ruby para el tema estadístico. Con la cuestión de que es
+necesario localizar las librerías correctas.
+
+Python, no es un lenguaje orientado a la estadística por lo que para
+reproducir las funcionalidades de GNU R es necesario instalar una
+serie de paquetería:
++ Pandas
++ Scipy
++ Scikit
++ Matplotlib
+
+Pandas es necesario para tener las estructuras de datos de la manera
+de dataframes.  Scipy es una librería matemática.  Scikit es para
+machine learning Matplotlib permite la representación gráfica de los
+resultados.
 
 * Licencia
 Este documento está bajo una [[http://creativecommons.org/licenses/by/3.0/es/deed.es][Licencia Creative Commons Atribución 3.0 España]]
