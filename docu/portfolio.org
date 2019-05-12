@@ -18,9 +18,11 @@ fueron lanzados en servidores gnu/linux o freebsd.
 
 * Año 2018
 
-Lanzamos el proyecto [[http://www.libremanuals.net][Libremanuals]].
+Lanzamos el proyecto [[http://www.libremanuals.net][Libremanuals]]. Libros libres para el Software Libre.
 #+ATTR_HTML: width="50px"
 [[http://www.libremanuals.net][http://www.davidam.com/img/portfolio/libremanuals.png]]
+
+[[https://github.com/davidam/libremanuals.github.io][Proyecto contribuido en github]]. Se desarrolló un generador de sitios estáticos desde el framework Python Flask.
 
 * Año 2017
 
