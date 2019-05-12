@@ -16,6 +16,12 @@ pero me gusta saberlo para quitarlos de aquí.
 Me alegra decir que todos los proyectos que tengo en esta página
 fueron lanzados en servidores gnu/linux o freebsd.
 
+* Año 2018
+
+Lanzamos el proyecto [[http://www.libremanuals.net][Libremanuals]].
+#+ATTR_HTML: width="50px"
+[[http://www.libremanuals.net][http://www.davidam.com/img/portfolio/libremanuals.png]]
+
 * Año 2017
 
 Más trabajo en el [[https://www.bsc.es][Barcelona Supercomputing Center]].
@@ -138,7 +144,7 @@ hacen modificar el precio.
 #+ATTR_HTML: width="100px"
 [[http://www.alaguanatacion.com/][http://www.davidam.com/img/portfolio/alagua.png]]
 
-** Comunidad de Studiolab 
+** Comunidad de Studiolab
 
 En este proyecto había que integrar funcionalidades de red social,
 junto con otras más tradicionales como wikis, foros, documentos, etc.
@@ -197,7 +203,6 @@ tablón de anuncios, mensajes internos, etc.
 
 #+ATTR_HTML: width="100px"
 [[http://www.fuentesdelencinar.com][http://www.davidam.com/img/portfolio/fuentes-del-encinar.png]]
-
 * Año 2009
 
 ** Antonio Salas
