@@ -4,10 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
 <title>Búsquedas con Emacs Lisp</title>
-<!-- 2013-08-19 lun 02:42 -->
+<!-- 2019-06-17 lun 12:20 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-
+<meta  name="author" content="David Arroyo Menéndez" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -55,6 +55,8 @@
   pre.src-sql:before   { content: 'SQL'; }
 
   table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
   th.right  { text-align: center;  }
   th.left   { text-align: center;   }
@@ -92,7 +94,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012  Free Software Foundation, Inc.
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -173,13 +175,7 @@ búsquedas:
 
 <div class="org-src-container">
 
-<pre class="src src-lisp">(setq vecinos '((a . (b c d)) 
-                (b . (a h)) 
-                (c . (a g)) 
-                (d . (g)) 
-                (g . (c d k)) 
-                (h . (b)) 
-                (g . (k))))
+<pre class="src src-lisp">(setq vecinos '((a . (b c d)) (b . (a h)) (c . (a g)) (d . (g)) (g . (c d k)) (h . (b)) (g . (k))))
 </pre>
 </div>
 
@@ -192,7 +188,7 @@ Podemos entender el nivel de punteros de este grafo mirando la figura
 <div id="figura-1" class="figure">
 <p><img src="cajas-busquedas.png" alt="cajas-busquedas.png" />
 </p>
-<p><span class="figure-number">Figura 1:</span> Grafo sobre el que ejecutar las búsquedas</p>
+<p><span class="figure-number">Figura 2:</span> Grafo sobre el que ejecutar las búsquedas</p>
 </div>
 
 <p>
@@ -227,6 +223,7 @@ Ahora podemos saber los vecinos de a de la siguiente manera:
 </div>
 </div>
 </div>
+
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2"><span class="section-number-2">2</span> Función Extiende</h2>
 <div class="outline-text-2" id="text-2">
@@ -262,6 +259,7 @@ teniendo b, c y d:
 </div>
 </div>
 </div>
+
 <div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3"><span class="section-number-2">3</span> Primero en Profundidad</h2>
 <div class="outline-text-2" id="text-3">
@@ -311,6 +309,7 @@ Veamos cómo sería la traza de (primero-en-profundidad 'a 'k):
 </div>
 </div>
 </div>
+
 <div id="outline-container-sec-4" class="outline-2">
 <h2 id="sec-4"><span class="section-number-2">4</span> Primero en Anchura</h2>
 <div class="outline-text-2" id="text-4">
@@ -339,24 +338,30 @@ Ahora vamos a pensar primero cómo sería la traza de (primero-en-anchura 'a 'k)
 Ahora ya estamos en disposición de programar el algoritmo:
 </p>
 
-<div class="org-src-container">
-
-<pre class="src src-lisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">end-path</span> (x listoflist)
-  (<span style="color: #a020f0;">cond</span> 
+<p>
+#+BEGIN<sub>SRC</sub> lisp
+(defun end-path (x listoflist)
+  (cond 
    ((endp listoflist) nil)
    ((equal (last (first listoflist)) (list x))
     (first listoflist))
    (t (end-path x (rest listoflist)))))
+</p>
 
-<span style="color: #b22222;">;;</span><span style="color: #b22222;">(listp (end-path 'h '((a b h) (a c g) (a d g))))</span>
-<span style="color: #b22222;">;;</span><span style="color: #b22222;">(listp nil)</span>
-<span style="color: #b22222;">;;</span><span style="color: #b22222;">(listp 'a)</span>
+<p>
+;;(listp (end-path 'h '((a b h) (a c g) (a d g))))
+;;(listp nil)
+;;(listp 'a)
+</p>
 
-(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">primero-en-anchura</span> (inicial final)
+<p>
+(defun primero-en-anchura (inicial final)
   (primero-en-anchura-aux inicial final (list inicial)))
+</p>
 
-(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">primero-en-anchura-aux</span> (inicial final abierta)
-  (<span style="color: #a020f0;">cond</span> 
+<p>
+(defun primero-en-anchura-aux (inicial final abierta)
+  (cond 
    ((eq inicial final) 
     (print (list inicial)))
    ((and (= 1 (length abierta)) (member (list inicial final) (extiende (list inicial))))
@@ -365,16 +370,18 @@ Ahora ya estamos en disposición de programar el algoritmo:
     (primero-en-anchura-aux inicial final (extiende abierta)))
    ((&gt; 1 (length (end-path final abierta)))
     (end-path final abierta))
-<span style="color: #b22222;">;;   </span><span style="color: #b22222;">((eq abierta nil)</span>
-<span style="color: #b22222;">;;    </span><span style="color: #b22222;">nil)</span>
+;;   ((eq abierta nil)
+;;    nil)
    (t
-    (primero-en-anchura-aux inicial final (mapcar #'(<span style="color: #a020f0;">lambda</span> (x) (first (extiende x))) abierta)))))
+    (primero-en-anchura-aux inicial final (mapcar #'(lambda (x) (first (extiende x))) abierta)))))
+</p>
 
+<p>
 (primero-en-anchura 'a 'h)
-</pre>
+</p>
 </div>
 </div>
-</div>
+
 <div id="outline-container-sec-5" class="outline-2">
 <h2 id="sec-5"><span class="section-number-2">5</span> Búsqueda binaria</h2>
 <div class="outline-text-2" id="text-5">
@@ -415,14 +422,16 @@ Con esta lista podríamos implementar nuestra búsqueda de la siguiente manera:
 </div>
 </div>
 </div>
+
 <div id="outline-container-sec-6" class="outline-2">
 <h2 id="sec-6"><span class="section-number-2">6</span> Agradecimientos</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-Gracias a #emacs-es por los ánimos y en especial a <a href="http://davazp.net/">David Vázquez Pérez</a> por los buenos consejos.
+Gracias a #emacs-es por los ánimos.
 </p>
 </div>
 </div>
+
 <div id="outline-container-sec-7" class="outline-2">
 <h2 id="sec-7"><span class="section-number-2">7</span> Bibliografía</h2>
 <div class="outline-text-2" id="text-7">
@@ -439,6 +448,7 @@ Algunas fuentes que me han servido para realizar este artículo son:
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-8" class="outline-2">
 <h2 id="sec-8"><span class="section-number-2">8</span> Licencia</h2>
 <div class="outline-text-2" id="text-8">
@@ -456,8 +466,8 @@ Este documento está bajo una <a href="http://creativecommons.org/licenses/by/3.
 </div>
 <div id="postamble" class="status">
 <p class="author">Autor: David Arroyo Menéndez</p>
-<p class="date">Created: 2013-08-19 lun 02:42</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.2.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
+<p class="date">Created: 2019-06-17 lun 12:20</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

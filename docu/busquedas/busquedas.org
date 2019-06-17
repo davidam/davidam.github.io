@@ -192,7 +192,7 @@ Con esta lista podríamos implementar nuestra búsqueda de la siguiente manera:
 
 * Agradecimientos
 
-Gracias a #emacs-es por los ánimos y en especial a [[http://davazp.net/][David Vázquez Pérez]] por los buenos consejos.
+Gracias a #emacs-es por los ánimos.
 
 * Bibliografía
 
