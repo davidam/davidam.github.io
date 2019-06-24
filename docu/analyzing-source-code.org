@@ -3,7 +3,7 @@
 #+AUTHOR: David Arroyo Menéndez
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
 #+BABEL: :results output :session
-  
+
 [[http://www.davidam.com][Volver a davidam.com]]
 
 * Introduction
@@ -13,6 +13,36 @@ lines of code, programming language, scripting about your commits,
 troubles or style in your code, etc. in this tutorial you can learn
 some tools to reach it.
 
+* Sloccount
+
+#+BEGIN_SRC bash
+$ cd git/damengeder
+$ sloccount .
+[...]
+SLOC	Directory	SLOC-by-Language (Sorted)
+2859    src_damegender  python=2745,sh=114
+185     flask           python=185
+56      top_dir         python=50,sh=6
+0       articles        (none)
+0       damegender.egg-info (none)
+0       dist            (none)
+0       slides          (none)
+
+Totals grouped by language (dominant language first):
+python:        2980 (96.13%)
+sh:             120 (3.87%)
+
+Total Physical Source Lines of Code (SLOC)                = 3,100
+Development Effort Estimate, Person-Years (Person-Months) = 0.66 (7.87)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.46 (5.48)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 1.44
+Total Estimated Cost to Develop                           = $ 88,628
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+#+END_SRC
+
 * Metrics
 
 You can classify code by programming language and lines of code with metrics.
@@ -20,20 +50,20 @@ You can classify code by programming language and lines of code with metrics.
 #+BEGIN_SRC bash
 $ metrics *
 Metrics Summary:
-Files                       Language        SLOC Comment McCabe 
------ ------------------------------ ----------- ------- ------ 
-    4                           HTML        2097     239      4 
-    7                         Python         137      12     13 
-    4                      Text only           0       0      0 
------ ------------------------------ ----------- ------- ------ 
-   15                          Total        2234     251     17 
+Files                       Language        SLOC Comment McCabe
+----- ------------------------------ ----------- ------- ------
+    4                           HTML        2097     239      4
+    7                         Python         137      12     13
+    4                      Text only           0       0      0
+----- ------------------------------ ----------- ------- ------
+   15                          Total        2234     251     17
 #+END_SRC
 
 * Pylint
 
 You can measure good practiques making source code with pylint.
 
-#+BEGIN_SRC 
+#+BEGIN_SRC
 $ pylint timeout.py
 No config file found, using default configuration
 Module app.timeout
@@ -54,7 +84,7 @@ Your code has been rated at 2.14/10
 You can count lines of code with radon in a nice way.
 
 #+BEGIN_SRC bash
-$ radon raw formatter.py 
+$ radon raw formatter.py
 formatter.py
     LOC: 68
     LLOC: 53
@@ -93,7 +123,7 @@ Average complexity: A (2.111111111111111)
 * Prospector
 
 #+BEGIN_SRC bash
-$ prospector simple-parser.py 
+$ prospector simple-parser.py
 Messages
 ========
 
@@ -121,7 +151,7 @@ Check Information
        Formatter: grouped
         Profiles: default, no_doc_warnings, no_test_warnings, strictness_medium, strictness_high, strictness_veryhigh, no_member_warnings
       Strictness: None
-  Libraries Used: 
+  Libraries Used:
        Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
   Messages Found: 7
 #+END_SRC
