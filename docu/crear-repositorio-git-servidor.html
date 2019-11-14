@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
 <title>Crear y usar un repositorio git en un servidor</title>
-<!-- 2017-01-26 jue 18:00 -->
+<!-- 2019-11-14 jue 15:38 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="David Arroyo Menéndez" />
@@ -144,29 +144,39 @@ for the JavaScript code in this tag.
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#sec-1">1. En el servidor</a></li>
-<li><a href="#sec-2">2. En local:</a></li>
-<li><a href="#sec-3">3. Bajar git:</a></li>
-<li><a href="#sec-4">4. Permitiendo http</a>
+<li><a href="#sec-2">2. En local (mi primera vez)</a></li>
+<li><a href="#sec-3">3. En local (las siguientes veces)</a></li>
+<li><a href="#sec-4">4. Bajar git:</a></li>
+<li><a href="#sec-5">5. Permitiendo http</a>
 <ul>
-<li><a href="#sec-4-1">4.1. En el servidor</a></li>
-<li><a href="#sec-4-2">4.2. En el cliente</a></li>
+<li><a href="#sec-5-1">5.1. En el servidor</a></li>
+<li><a href="#sec-5-2">5.2. En el cliente</a></li>
 </ul>
 </li>
-<li><a href="#sec-5">5. Estudiando cosas que pasan en tu propio repositorio</a></li>
-<li><a href="#sec-6">6. Eliminar ficheros</a></li>
-<li><a href="#sec-7">7. Un par de apuntes rápidos para deshacer cambios</a></li>
-<li><a href="#sec-8">8. Cambiando de ramas</a></li>
-<li><a href="#sec-9">9. Git Submodules: Añadir, Usar, Eliminar y Actualizar</a>
+<li><a href="#sec-6">6. Estudiando cosas que pasan en tu propio repositorio</a></li>
+<li><a href="#sec-7">7. Eliminar ficheros</a></li>
+<li><a href="#sec-8">8. Mover/renombrar ficheros</a></li>
+<li><a href="#sec-9">9. Un par de apuntes rápidos para deshacer cambios</a></li>
+<li><a href="#sec-10">10. Ramas</a>
 <ul>
-<li><a href="#sec-9-1">9.1. Añadir</a></li>
-<li><a href="#sec-9-2">9.2. Usando submódulos</a></li>
-<li><a href="#sec-9-3">9.3. Eliminando submódulos</a></li>
-<li><a href="#sec-9-4">9.4. Actualizando submódulos</a></li>
+<li><a href="#sec-10-1">10.1. Crear ramas</a></li>
+<li><a href="#sec-10-2">10.2. Cambiando de ramas</a></li>
+<li><a href="#sec-10-3">10.3. Borrar ramas</a></li>
+<li><a href="#sec-10-4">10.4. Clonar ramas</a></li>
+<li><a href="#sec-10-5">10.5. Listar ramas</a></li>
 </ul>
 </li>
-<li><a href="#sec-10">10. Una gui</a></li>
-<li><a href="#sec-11">11. Recursos</a></li>
-<li><a href="#sec-12">12. Licencia</a></li>
+<li><a href="#sec-11">11. Git Submodules: Añadir, Usar, Eliminar y Actualizar</a>
+<ul>
+<li><a href="#sec-11-1">11.1. Añadir</a></li>
+<li><a href="#sec-11-2">11.2. Usando submódulos</a></li>
+<li><a href="#sec-11-3">11.3. Eliminando submódulos</a></li>
+<li><a href="#sec-11-4">11.4. Actualizando submódulos</a></li>
+</ul>
+</li>
+<li><a href="#sec-12">12. Una gui</a></li>
+<li><a href="#sec-13">13. Recursos</a></li>
+<li><a href="#sec-14">14. Licencia</a></li>
 </ul>
 </div>
 </div>
@@ -186,11 +196,16 @@ git --bare init
 git config core.sharedRepository true
 </pre>
 </div>
+
+<p>
+Si aptece crear el repositorio a través de github, o gitlab vía
+interfaz web puedes obviar este paso.
+</p>
 </div>
 </div>
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> En local:</h2>
+<h2 id="sec-2"><span class="section-number-2">2</span> En local (mi primera vez)</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 
@@ -207,27 +222,57 @@ git push origin master
 </div>
 
 <div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Bajar git:</h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> En local (las siguientes veces)</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 
-<pre class="src src-bash">git clone git+ssh://user@server/home/user/git/repository.git
+<pre class="src src-bash">cd repository
+git add *
+git commit -m "Initial import"
+git push
 </pre>
 </div>
 </div>
 </div>
 
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Permitiendo http</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Bajar git:</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-Una vez realizados los pasos anteriores se puede habilitar usar git con http
+Si tienes tu propio servidor &#x2026;
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">git clone git+ssh://user@server/home/user/git/repository.git
+</pre>
+</div>
+
+<p>
+Si por ejemplo usas github &#x2026;
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">git clone https://github.com/davidam/damenumpy.git
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Permitiendo http</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Una vez realizados los pasos anteriores se puede habilitar usar git
+con http en tu servidor y cliente. Este paso obviamente no es
+necesario si usas github, gitlab, savannah, &#x2026;
 </p>
 </div>
 
-<div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> En el servidor</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> En el servidor</h3>
+<div class="outline-text-3" id="text-5-1">
 <div class="org-src-container">
 
 <pre class="src src-bash">$ cd /var/www/
@@ -241,9 +286,9 @@ $ git update-server-info
 </div>
 </div>
 
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> En el cliente</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> En el cliente</h3>
+<div class="outline-text-3" id="text-5-2">
 <div class="org-src-container">
 
 <pre class="src src-bash">$ git clone http://server/repository.git
@@ -253,13 +298,13 @@ $ git update-server-info
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Estudiando cosas que pasan en tu propio repositorio</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Estudiando cosas que pasan en tu propio repositorio</h2>
+<div class="outline-text-2" id="text-6">
 <div class="org-src-container">
 
-<pre class="src src-bash">$ git pull
-$ git status
+<pre class="src src-bash">$ git pull .
+$ git status .
 $ git log fichero
 $ git diff 84de2396c3f0fcdc9994028b5bf5f0005c763496 3c933adaf627bc8a58cfefb62ff0f2d5df640673 fichero
 </pre>
@@ -267,22 +312,33 @@ $ git diff 84de2396c3f0fcdc9994028b5bf5f0005c763496 3c933adaf627bc8a58cfefb62ff0
 </div>
 </div>
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> Eliminar ficheros</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Eliminar ficheros</h2>
+<div class="outline-text-2" id="text-7">
 <div class="org-src-container">
 
-<pre class="src src-bash">$ git rm file                                                                   
-$ git commit -m "delete file" file                                              
+<pre class="src src-bash">$ git rm file
+$ git commit -m "delete file" file
 $ git push
 </pre>
 </div>
 </div>
 </div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Mover/renombrar ficheros</h2>
+<div class="outline-text-2" id="text-8">
+<div class="org-src-container">
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> Un par de apuntes rápidos para deshacer cambios</h2>
-<div class="outline-text-2" id="text-7">
+<pre class="src src-bash">$ git mv fileold folder
+$ git commit -m "folder: moving fileold" fileold filenew
+$ git push
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Un par de apuntes rápidos para deshacer cambios</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 Revertir ficheros no commiteados
 </p>
@@ -312,12 +368,40 @@ Revertir el último cambiado, al que se le ha hecho push
 </div>
 </div>
 
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> Cambiando de ramas</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Ramas</h2>
+<div class="outline-text-2" id="text-10">
+</div><div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1"><span class="section-number-3">10.1</span> Crear ramas</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+Los pasos son:
+</p>
+<ul class="org-ul">
+<li>Crear la rama
+</li>
+<li>Usar la rama
+</li>
+<li>Enviar los cambios al servidor
+</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ git checkout -b [name_of_your_new_branch]
+$ git checkout [name_of_your_new_branch]
+$ git push origin [name_of_your_new_branch]
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2"><span class="section-number-3">10.2</span> Cambiando de ramas</h3>
+<div class="outline-text-3" id="text-10-2">
 <p>
 Es posible que tengamos varias ramas por ejemplo production (prod) y
-master. Si estamos en master y queremos pasar los cambios a production
+development (dev). Si estamos en master y queremos pasar los cambios a production
 se puede hacer lo siguiente:
 </p>
 
@@ -327,19 +411,67 @@ se puede hacer lo siguiente:
 $ git branch -a                # comprobar que realmente estamos en master
 $ git branch --track prod origin/prod  # si no lo tenemos ya asocia prod a origin/prod
 $ git checkout prod            # cambiamos a la rama prod
-$ git merge master             # se merguean los cambios desde master a prod
+$ git merge dev                # se merguean los cambios desde dev a prod
 $ git push                     # se suben los cambios
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> Git Submodules: Añadir, Usar, Eliminar y Actualizar</h2>
-<div class="outline-text-2" id="text-9">
-</div><div id="outline-container-sec-9-1" class="outline-3">
-<h3 id="sec-9-1"><span class="section-number-3">9.1</span> Añadir</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-sec-10-3" class="outline-3">
+<h3 id="sec-10-3"><span class="section-number-3">10.3</span> Borrar ramas</h3>
+<div class="outline-text-3" id="text-10-3">
+<p>
+Para borrar una rama son necesarios dos pasos:
+</p>
+<ul class="org-ul">
+<li>Borrar la rama en el sistema de ficheros
+</li>
+<li>Publicar el cambio en el servidor
+</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">$ git branch -d [name_of_your_new_branch]
+$ git branch -D [name_of_your_new_branch] # Si necesitas forzar el borrado (no recomendado)
+$ git push origin :[name_of_your_new_branch]
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10-4" class="outline-3">
+<h3 id="sec-10-4"><span class="section-number-3">10.4</span> Clonar ramas</h3>
+<div class="outline-text-3" id="text-10-4">
+<div class="org-src-container">
+
+<pre class="src src-bash">$ git clone -b [name_of_your_branch] [name_of_your_repository]
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10-5" class="outline-3">
+<h3 id="sec-10-5"><span class="section-number-3">10.5</span> Listar ramas</h3>
+<div class="outline-text-3" id="text-10-5">
+<div class="org-src-container">
+
+<pre class="src src-bash">$ git branch -a # list branches in local repository
+$ git branch -r # list branches in remote repository
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> Git Submodules: Añadir, Usar, Eliminar y Actualizar</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-sec-11-1" class="outline-3">
+<h3 id="sec-11-1"><span class="section-number-3">11.1</span> Añadir</h3>
+<div class="outline-text-3" id="text-11-1">
 <div class="org-src-container">
 
 <pre class="src src-bash">$ git submodule add git@mygithost:billboard lib/billboard
@@ -369,9 +501,9 @@ url = git@mygithost:billboard
 </div>
 </div>
 
-<div id="outline-container-sec-9-2" class="outline-3">
-<h3 id="sec-9-2"><span class="section-number-3">9.2</span> Usando submódulos</h3>
-<div class="outline-text-3" id="text-9-2">
+<div id="outline-container-sec-11-2" class="outline-3">
+<h3 id="sec-11-2"><span class="section-number-3">11.2</span> Usando submódulos</h3>
+<div class="outline-text-3" id="text-11-2">
 <div class="org-src-container">
 
 <pre class="src src-bash">$ git submodule init
@@ -389,9 +521,9 @@ Submodule path 'lib/billboard': checked out '1c407cb2315z0847facb57d79d680f88ca0
 </div>
 </div>
 
-<div id="outline-container-sec-9-3" class="outline-3">
-<h3 id="sec-9-3"><span class="section-number-3">9.3</span> Eliminando submódulos</h3>
-<div class="outline-text-3" id="text-9-3">
+<div id="outline-container-sec-11-3" class="outline-3">
+<h3 id="sec-11-3"><span class="section-number-3">11.3</span> Eliminando submódulos</h3>
+<div class="outline-text-3" id="text-11-3">
 <div class="org-src-container">
 
 <pre class="src src-bash">$ git submodule rm lib/billboard
@@ -400,9 +532,9 @@ Submodule path 'lib/billboard': checked out '1c407cb2315z0847facb57d79d680f88ca0
 </div>
 </div>
 
-<div id="outline-container-sec-9-4" class="outline-3">
-<h3 id="sec-9-4"><span class="section-number-3">9.4</span> Actualizando submódulos</h3>
-<div class="outline-text-3" id="text-9-4">
+<div id="outline-container-sec-11-4" class="outline-3">
+<h3 id="sec-11-4"><span class="section-number-3">11.4</span> Actualizando submódulos</h3>
+<div class="outline-text-3" id="text-11-4">
 <div class="org-src-container">
 
 <pre class="src src-bash">$ git submodule init
@@ -414,9 +546,9 @@ $ git pull
 </div>
 </div>
 
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> Una gui</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Una gui</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 A quien no le guste el emacs es un animal, pero puede usar algo como
 lo siguiente:
@@ -442,9 +574,9 @@ C-x v d (status)
 </div>
 </div>
 
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> Recursos</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Recursos</h2>
+<div class="outline-text-2" id="text-13">
 <ul class="org-ul">
 <li><a href="http://learngitbranching.js.org/">Learning Git Branching</a>
 </li>
@@ -455,9 +587,9 @@ C-x v d (status)
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> Licencia</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> Licencia</h2>
+<div class="outline-text-2" id="text-14">
 <p>
 Copyright (C)  2013 David Arroyo Menéndez
     Se permite copiar, distribuir y/o modificar este documento
@@ -478,8 +610,8 @@ Copyright (C)  2013 David Arroyo Menéndez
 <div id="postamble" class="status">
 <p class="date">Fecha: 11/11/2012</p>
 <p class="author">Autor: David Arroyo Menéndez</p>
-<p class="date">Created: 2017-01-26 jue 18:00</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2019-11-14 jue 15:38</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
