@@ -15,7 +15,10 @@ git --bare init
 git config core.sharedRepository true
 #+END_SRC
 
-* En local:
+Si aptece crear el repositorio a través de github, o gitlab vía
+interfaz web puedes obviar este paso.
+
+* En local (mi primera vez)
 #+BEGIN_SRC bash
 mkdir repository
 cd repository
@@ -26,15 +29,34 @@ git remote add origin git+ssh://user@server/home/user/git/repository.git
 git push origin master
 #+END_SRC
 
+* En local (las siguientes veces)
+
+#+BEGIN_SRC bash
+cd repository
+git add *
+git commit -m "Initial import"
+git push
+#+END_SRC
+
 * Bajar git:
+
+Si tienes tu propio servidor ...
 
 #+BEGIN_SRC bash
 git clone git+ssh://user@server/home/user/git/repository.git
 #+END_SRC
 
+Si por ejemplo usas github ...
+
+#+BEGIN_SRC bash
+git clone https://github.com/davidam/damenumpy.git
+#+END_SRC
+
 * Permitiendo http
 
-Una vez realizados los pasos anteriores se puede habilitar usar git con http
+Una vez realizados los pasos anteriores se puede habilitar usar git
+con http en tu servidor y cliente. Este paso obviamente no es
+necesario si usas github, gitlab, savannah, ...
 
 ** En el servidor
 
@@ -63,9 +85,9 @@ $ git diff 84de2396c3f0fcdc9994028b5bf5f0005c763496 3c933adaf627bc8a58cfefb62ff0
 
 * Eliminar ficheros
 #+BEGIN_SRC bash
-$ git rm file                                                                   
-$ git commit -m "delete file" file                                              
-$ git push 
+$ git rm file
+$ git commit -m "delete file" file
+$ git push
 #+END_SRC
 * Mover/renombrar ficheros
 #+BEGIN_SRC bash
@@ -105,7 +127,7 @@ $ git push origin [name_of_your_new_branch]
 
 ** Cambiando de ramas
 Es posible que tengamos varias ramas por ejemplo production (prod) y
-master. Si estamos en master y queremos pasar los cambios a production
+development (dev). Si estamos en master y queremos pasar los cambios a production
 se puede hacer lo siguiente:
 
 #+BEGIN_SRC bash
@@ -113,8 +135,8 @@ $ git branch origin/prod       # en caso de no tenerla se crea la rama origin/pr
 $ git branch -a                # comprobar que realmente estamos en master
 $ git branch --track prod origin/prod  # si no lo tenemos ya asocia prod a origin/prod
 $ git checkout prod            # cambiamos a la rama prod
-$ git merge master             # se merguean los cambios desde master a prod
-$ git push                     # se suben los cambios 
+$ git merge dev                # se merguean los cambios desde dev a prod
+$ git push                     # se suben los cambios
 #+END_SRC
 
 ** Borrar ramas
@@ -141,7 +163,7 @@ $ git clone -b [name_of_your_branch] [name_of_your_repository]
 $ git branch -a # list branches in local repository
 $ git branch -r # list branches in remote repository
 #+END_SRC
- 
+
 
 * Git Submodules: Añadir, Usar, Eliminar y Actualizar
 
