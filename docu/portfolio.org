@@ -16,6 +16,17 @@ pero me gusta saberlo para quitarlos de aquí.
 Me alegra decir que todos los proyectos que tengo en esta página
 fueron lanzados en servidores gnu/linux o freebsd.
 
+* Año 2019
+
+Lanzamos el proyecto [[http://www.damegender.net][Damegender]]. Herramienta de detección de género a partir del nombre.
+#+ATTR_HTML: width="50px"
+[[http://www.damegender.net][http://www.davidam.com/img/portfolio/damegender.png]]
+
+Contribuciones en github:
++ [[https://github.com/davidam/damegender][Proyecto Software]]
++ [[https://github.com/davidam/damegender-web][Web]]
+
+
 * Año 2018
 
 Lanzamos el proyecto [[http://www.libremanuals.net][Libremanuals]]. Libros libres para el Software Libre.
