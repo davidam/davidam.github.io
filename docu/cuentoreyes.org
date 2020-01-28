@@ -36,7 +36,7 @@ J: ¿Cuál es el animal que más se ve en el barrio?
 
 D: La urraca
 
-J: Ya hablaremos de gemas y urracas. Mantén los ojos abiertos.
+J: Ya hablaremos de gemas y urracas...
 
 
 * Licencia
