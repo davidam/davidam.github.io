@@ -1,6 +1,6 @@
 
 * Científica
-David Arroyo Menéndez se encuentra en su tercer año de doctorado en la
+David Arroyo Menéndez se encuentra estudiando el doctorado en la
 URJC. Comenzó a participar en grupos científicos a través de
 publicaciones en la UNED, mientras cursaba la carrera en el área de
 e-learning en el momento que aparecía Internet. Después pasó unos años
@@ -23,36 +23,39 @@ el Medialab.
 
 * Activista
 David ha dedicado gran parte de su vida militante al hacktivismo
-enrraizándolo en los barrios a través de la estructura política de los
-hacklabs y en el sindicalismo a través de la estructura política de STSI.
+enraizándolo en los barrios a través de la estructura política de los
+hacklabs, la democracia directa en asambleas tipo 15M o de centros
+sociales y en el sindicalismo a través de la estructuras políticas sin
+liberados, ni subvenciones. Como proyecto activista estable mantiene
+Libremanuals (http://www.libremanuals.net)
 
 En el nivel de publicaciones tiene:
 + Software contribuido en Github: https://github.com/davidam/
 + Software contribuido en Drupal: https://www.drupal.org/u/davidam
 + Traducciones de libros y software en Savannah: https://savannah.nongnu.org/users/davidam
-+ Software en Orgmode:
-++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-license.el 
-++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-effectiveness.el
-+ Trabajos a nivel de máster de metodología de investigación social acerca de software libre:
-++ http://www.davidam.com/docu/tfm.html
-++ http://www.davidam.com/docu/analisis-logos-sw-libre.pdf
-++ http://www.davidam.com/docu/etnografia-drupal.pdf
-++ http://www.davidam.com/docu/cultura-material.pdf
-+ Artículos en revistas y periódicos activistas:
-++ http://www.diagonalperiodico.net/saberes/software-libre-es-activismo.html
-++ http://estudios.cnt.es/antifascismo-en-el-software/
+** Software en Orgmode:
++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-license.el
++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-effectiveness.el
+** Trabajos a nivel de máster de metodología de investigación social acerca de software libre:
++ http://www.davidam.com/docu/tfm.html
++ http://www.davidam.com/docu/analisis-logos-sw-libre.pdf
++ http://www.davidam.com/docu/etnografia-drupal.pdf
++ http://www.davidam.com/docu/cultura-material.pdf
+** Artículos en revistas y periódicos activistas:
++ http://www.diagonalperiodico.net/saberes/software-libre-es-activismo.html
++ http://estudios.cnt.es/antifascismo-en-el-software/
 
 
 * Scientific
 David Arroyo Menéndez is doing the Phd in the URJC. He starts to
-participate in research groups with publications at UNED, while he is
-doing the degree in the e-learning area when Internet was starting. 
+participate in research groups with e-learning publications at UNED,
+while he is doing the degree in Computing Science.
 
 Later, he was working in the private companies in the web programming
 area. After of this, he starts master studies in the UCM to understand
 the methods in the sociology. Later, he decides starts the Phd with
 Jesús González Barahona by the ethical compromise with the Free
-Software and the scientifical interest measuring the phenomenon with
+Software and the scientific interest measuring the phenomenon with
 specialization in the gender matters.
 
 * Profesional
@@ -61,27 +64,29 @@ different ethical objectives (Fundación Bip Bip, Proyecto Solidario),
 scientifics (UNED, Libresoft, UPM, BSC) and economical (BBVA,
 Telefónica, OpenSistemas, ...). On free time has demonstrated personal
 interest creating free software events in universities and public
-centres such as Medialab-Prado.
+centres such as Medialab-Prado. He has demostrated good skills in
+computing sharing source in different repositories.
 
 * Activism
-David has invested many time in his activist life to the hacktivism
-from the streets with the political structure called hacklabs and with
-sindicalism with political structure called STSI.
+David has invested time in his activist life to the hacktivism in
+political structure called hacklabs, direct democracy from assemblies
+in social centers or 15M movement and with sindicalism in
+organizations without people with salaries and/or grants from the
+State. He maintains Libremanuals (http://www.libremanuals.net) as an
+activist stable project.
 
-He has the next publications
+He has the next publications:
 + Software in Github: https://github.com/davidam/
 + Software in Drupal: https://www.drupal.org/u/davidam
 + Translations of books and software in Savannah: https://savannah.nongnu.org/users/davidam
-+ Software in Orgmode:
-++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-license.el 
-++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-effectiveness.el
-+ Works in the master of methodology in social research about free software:
-++ http://www.davidam.com/docu/tfm.html
-++ http://www.davidam.com/docu/analisis-logos-sw-libre.pdf
-++ http://www.davidam.com/docu/etnografia-drupal.pdf
-++ http://www.davidam.com/docu/cultura-material.pdf
-+ Articles in activists newspapers and magazines:
-++ http://www.diagonalperiodico.net/saberes/software-libre-es-activismo.html
-++ http://estudios.cnt.es/antifascismo-en-el-software/
-
-
+** Software in Orgmode:
++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-license.el
++ https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-effectiveness.el
+** Works in the master of methodology in social research about free software:
++ http://www.davidam.com/docu/tfm.html
++ http://www.davidam.com/docu/analisis-logos-sw-libre.pdf
++ http://www.davidam.com/docu/etnografia-drupal.pdf
++ http://www.davidam.com/docu/cultura-material.pdf
+** Articles in activists newspapers and magazines:
++ http://www.diagonalperiodico.net/saberes/software-libre-es-activismo.html
++ http://estudios.cnt.es/antifascismo-en-el-software/
