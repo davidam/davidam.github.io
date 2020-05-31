@@ -32,10 +32,10 @@ Contribuciones en github:
 DameWebUtils proporciona algunas herramientas simples y duraderas para cuestiones web con Python: tests, binarios, etc.
 
 #+ATTR_HTML: width="50px"
-[[http://damelibraries.davidam.com][http://www.davidam.com/img/portfolio/damewebutils.png]]
+[[http://damewebutils.davidam.com][http://www.davidam.com/img/portfolio/damewebutils.png]]
 
 Contribuciones en github:
-+ [[https://github.com/davidam/damewebutils][Proyecto Software]]
++ [[https://github.com/davidam/damewebutils][Proyecto Software]] 
 + [[https://damewebutils.davidam.com][Web]]
 
 * Año 2019
