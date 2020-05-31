@@ -16,6 +16,28 @@ pero me gusta saberlo para quitarlos de aquí.
 Me alegra decir que todos los proyectos que tengo en esta página
 fueron lanzados en servidores gnu/linux o freebsd.
 
+* Año 2020
+
+Lanzamos más proyectos Python [[https://github.com/davidam/damewebutils][DameLibraries]] y [[https://github.com/davidam/damewebutils][DameWebUtils]]. 
+
+DameLibraries está relacionado con el mantenimiento de tests acerca de las principales librerías Python.
+
+#+ATTR_HTML: width="50px"
+[[http://damelibraries.davidam.com][http://www.davidam.com/img/portfolio/damelibraries.png]]
+
+Contribuciones en github:
++ [[https://github.com/davidam/damelibraries][Proyecto Software]]
++ [[https://damelibraries.davidam.com][Web]]
+
+DameWebUtils proporciona algunas herramientas simples y duraderas para cuestiones web con Python: tests, binarios, etc.
+
+#+ATTR_HTML: width="50px"
+[[http://damelibraries.davidam.com][http://www.davidam.com/img/portfolio/damewebutils.png]]
+
+Contribuciones en github:
++ [[https://github.com/davidam/damewebutils][Proyecto Software]]
++ [[https://damewebutils.davidam.com][Web]]
+
 * Año 2019
 
 Lanzamos el proyecto [[http://www.damegender.net][Damegender]]. Herramienta de detección de género a partir del nombre.
