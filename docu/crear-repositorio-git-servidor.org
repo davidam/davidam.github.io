@@ -164,6 +164,13 @@ $ git branch -a # list branches in local repository
 $ git branch -r # list branches in remote repository
 #+END_SRC
 
+** Etiquetar ramas
+
+#+BEGIN_SRC bash
+$ git tag -a v0.2.9rc6 -m 'v0.2.9rc6 uploaded to pip' 
+$ git tag -l 
+$ git push origin --tags
+#+END_SRC
 
 * Git Submodules: Añadir, Usar, Eliminar y Actualizar
 
