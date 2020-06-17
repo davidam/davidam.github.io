@@ -76,12 +76,12 @@ h1 {
 }
 
 .box-title { 
-  border-bottom: 1px solid #999999;
+  /* border-bottom: 1px solid #999999; */
   color: white;
 /*  background-color: #96c2d9;*/
   background-color: black;
 /*  background-color: #532150;*/
-  /* background-color: #009900; */
+  background-color: #009900;
 /*  background-color: #6487dc;*/
   padding-right: 2em;
   padding-left: 2em;
