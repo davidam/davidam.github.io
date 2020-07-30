@@ -4,7 +4,8 @@ var colors = [
     "green",
     "blue",
     "black",
-    "orange"
+    "orange",
+    "purple"
 ]
 
 var i= 0;
