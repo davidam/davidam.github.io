@@ -1,4 +1,18 @@
 
+var photos = [
+    "img/davidam-github.jpg",
+    "img/davidam2.png",
+    "img/davidam3.png",
+    "img/davidam-e.jpg"
+];
+
+
+var size = photos.length;
+var x = Math.floor(size*Math.random());
+document.getElementById('photo-left').src=photos[x];
+document.getElementById('photo-rigth').src=photos[x];
+
+
 var colors = [
     "red",
     "green",
