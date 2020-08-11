@@ -28,7 +28,8 @@ var photos = [
     "img/davidam-github.jpg",
     "img/davidam2.png",
     "img/davidam3.png",
-    "img/davidam-e.jpg"
+    "img/davidam-e.jpg",
+    "img/davidam-santander.jpg",
 ];
 
 
