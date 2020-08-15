@@ -38,11 +38,13 @@ var x = Math.floor(size*Math.random());
 document.getElementById('photo-left').src=photos[x];
 document.getElementById('photo-rigth').src=photos[x];
 
+//document.getElementById("demo").innerHTML = "colortext2";
 
 var colors = [
     "red",
     "green",
     "blue",
+    "#0080FF",
     "black",
     "orange",
     "purple"
@@ -55,11 +57,32 @@ for (i = 0; i < document.getElementsByClassName("box-title").length; i++) {
 
 var list = document.getElementsByClassName("box-title");
 
-var x = Math.floor(Math.random() * list.length);
+var x = Math.floor(Math.random() * colors.length);
 
 for (var i = 0; i < list.length; i++) {
     list[i].style.background = colors[x];
 }
 
-Document.getElementsByClassName("box-title")[0].style.background = "red";
+//Document.getElementById('colortext').textContent = "text";
+document.getElementById("demo").innerHTML = colors[x];
+
+if ( colors[x] == "red") {
+    document.getElementById("demo").innerHTML = "We need improve the social politics, the citizens must be happy";
+} else if ( colors[x] == "purple" ) {
+    document.getElementById("demo").innerHTML = "The feminism is changing all the society, we can be safe, we can be public.";
+} else if ( colors[x] == "blue" ) {
+    document.getElementById("demo").innerHTML = "The house, the food, the family. That's the important thing.";
+} else if ( colors[x] == "green" ) {
+    document.getElementById("demo").innerHTML = "Save your city, save your country, save the planet, join us in the distance.";
+} else if ( colors[x] == "black" ) {
+    document.getElementById("demo").innerHTML = "I am angry with the injustice";
+} else if ( colors[x] == "#0080FF" ) {
+    document.getElementById("demo").innerHTML = "You are a sky, I want a start up with you";
+} else if ( colors[x] == "orange" ) {
+    document.getElementById("demo").innerHTML = "Understanding the diversity we know that the value of the unity";
+} else {
+    document.getElementById("demo").innerHTML = "Save your city, save your country, save the planet, join us in the distance.";
+}
+
+
 
