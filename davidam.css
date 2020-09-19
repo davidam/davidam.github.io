@@ -103,6 +103,14 @@ h1 {
     margin-left: 15px;
 }
 
-#photo-rigth, #photo-left {
+#photo-rigth{
+    position: absolute;    
     height: 50px;
+    right: 3em;
+}
+
+#photo-left {
+    position: absolute;    
+    height: 50px;
+    left: 3em;    
 }
