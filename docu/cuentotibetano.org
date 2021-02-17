@@ -1,0 +1,19 @@
+#+TITLE: Cuento Tibetano
+#+LANGUAGE: es
+#+AUTHOR: David Arroyo Menéndez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
+#+BABEL: :results output :session
+
+Érase que se era un hombre tibetano en el limbo, como no sabía a dónde
+ir, pidió diferentes autorizaciones y cuando consiguió la autorización
+del cielo del feminismo científico, el tibetano la mostró al resto de
+puertas y todas tenían que obedecer a pesar de los planes, pero la
+puerta de la masonería gritaba y gritaba y gritaba hasta que a la
+guardián de la puerta del feminismo científico le sangraban los oidos
+y tuvo que cerrar la puerta para evitar el dolor. Y así es como el
+hombre tibetano abrió la puerta de la tierra del Software Libre, donde
+el guardián es sordo.
+
+* Licencia
+Se permite copiar este documento de manera literal, dando atribución
+al autor y manteniendo esta nota.
