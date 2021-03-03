@@ -3,7 +3,7 @@
 #+LANGUAGE: es
 #+LATEX_HEADER: \usepackage[spanish]{babel}
 #+AUTHOR: David Arroyo Menéndez
-#+EMAIL: davidam@gnu.org
+#+EMAIL: davidam@gmail.com
 #+DATE: 11/08/2014
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
 
