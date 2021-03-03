@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage[utf8]{inputenc}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{David} % Your first name
+\familyname{Arroyo Menéndez} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{C/ Rafael Salazar Alonso 17, 9A}{Madrid, Spain}
+\mobile{+34 722489688}
+\email{davidam@gmail.com}
+\homepage{http://www.davidam.com}{http://www.davidam.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{información adicional}
+% \photo[70pt][0.4pt]{pictures/picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"I hope that the life give you the double of things that you wish me, give me and work for me." - davidam}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%% \clearpage
+
+%% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%% \date{\today} % Letter date
+%% \opening{Dear Sir or Madam,} % Opening greeting
+%% \closing{Sincerely yours,} % Closing phrase
+%% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%% \makelettertitle % Print letter title
+
+%% \lipsum[1-2] % Dummy text
+%% \lipsum[4] % Dummy text
+
+%% \makeletterclosing % Print letter signature
+
+%% \newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Educación}
+
+\cventry{2010--2012}{Máster en Investigación Social. Innovaciones y aplicaciones}{Facultad de Ciencias Políticas y Sociología}{Universidad Complutense de Madrid}{Madrid, Spain}{Trabajo fin de máster en Movimientos Sociales y Nuevas Tecnologías en Madrid}  % Arguments not required can be left empty
+\cventry{2003--2007}{Ingeniería Informática Segundo Ciclo}{Escuela de Informática}{Universidad Nacional de Educación a Distancia}{Madrid, Spain}{No finalizado}
+\cventry{1997--2003}{Ingeniería Técnica en Informática de Sistemas}{Escuela de Informática}{Universidad Nacional de Educación a Distancia}{Madrid, Spain}{Especialización en Inteligencia Artificial}
+
+%\cventry{2003--2007}{Computer Science Master Degree}{Computer Science Faculty}{Universidad Nacional de Educación a Distancia}{\textit{Madrid}}{Spain}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia}
+
+\subsection{Participación en Proyectos Científicos}
+
+\cventry{2017--2020}{Estudiante de doctorado en GSYC}{Jesús González Barahona}{Damegender, Herramientas de detección de género desde el nombre}{Fuenlabrada, España}{Universidad Rey Juan Carlos}
+\cventry{2016--2017}{ERA4CS: European Research Area for Climate Services}{Project ID: 690462}{Proyecto Europeo}{Barcelona, España}{Barcelona Centro de Supercomputación}
+\cventry{2004--2005}{ALFANET: Active Learning For Adaptive internet}{IST-2001-33288}{Proyecto Europeo}{Madrid, Spain}{UNED-Innova Offices}
+
+\subsection{Experiencia de Trabajo}
+
+\cventry{2016--2017}{Python and Drupal Developer}{\textsc{Barcelona Supercomputing Center}}{Barcelona}{}{Sitios web de investigación: era4cs, caliope, earth system services, ...}
+\cventry{2016--2016}{Drupal Developer}{\textsc{Instituto Municipal de Informatica} (IMI)}{Barcelona}{}{Theming y despliegue}
+\cventry{2015--2015}{Drupal Developer}{\textsc{Atos/Zemsania}}{Madrid}{}{Backend y Theming}
+\cventry{2014--2014}{Drupal Developer}{\textsc{eDoctores}}{Madrid}{}{Backend}
+\cventry{2014--2014}{Drupal Developer}{\textsc{BBVA}}{Madrid}{}{Backend y despliegue}
+\cventry{2013--2013}{Drupal Developer}{\textsc{Entelgy - UPM}}{Madrid}{}{Backend and administración de sistemas}
+\cventry{2012--2012}{Web Developer}{\textsc{Dabne}}{Madrid}{}{Backend, theming y administración de sistemas. Tecnologías: drupal y mediawiki}
+\cventry{2010--2010}{Drupal Developer}{\textsc{Iddeasp}}{Madrid}{}{Backend y theming}
+\cventry{2009--2010}{PHP Developer}{\textsc{BBVA Globalnet}}{Madrid}{}{Backend y jquery con typo3}
+\cventry{2009--2009}{Sys Admin}{\textsc{Proyecta4}}{Madrid}{}{}
+\cventry{2009--2009}{Research Assistant}{\textsc{Libresoft, GSYC}}{Universidad Complutense de Madrid}{Madrid}{}{}
+\cventry{2009--2009}{Web Developer and Sys Admin}{\textsc{Proyecta Solidario}}{Madrid}{}{}
+\cventry{2006--2007}{Web Developer}{\textsc{Innova}}{Universidad Nacional de Educación a Distancia}{Madrid}{}{}
+\cventry{2006--2006}{Web Developer}{\textsc{Fundación Bip Bip}}{Madrid}{}{}
+\cventry{2005--2006}{Web Developer}{\textsc{OpenSistemas}}{Madrid}{}{}
+\cventry{2005--2005}{Sys Admin}{\textsc{Proyecta4}}{Madrid}{}{}
+\cventry{2004--2005}{Research Assistant}{\textsc{Proyecto Europeo Alfanet, Departamento de Inteligencia Artificial, Universidad Nacional de Educación a Distancia}}{Madrid}{}{}
+\cventry{2000--2004}{Web Developer}{\textsc{Innova, Universidad Nacional de Educación a Distancia}}{Madrid}{}{}
+
+\section{Publicaciones revisadas por pares}
+
+\subsection{Artículos en Revistas}
+\cventry{2009}{Arroyo, D.}{\textsc{Aumenta tu productividad con GNU/Emacs}}{Solo Programadores Mundo Linux, (109):58-60 (2009).}{}{}
+\cventry{2005}{Arroyo, D., Marchesi, J.E.}{\textsc{Lisp: Un lenguaje que se aprende 10 minutos}}{Solo Programadores Mundo Linux, (82):52-56 (2005).}{}{}
+\cventry{2005}{Arroyo, D., Marchesi, J.E.}{\textsc{Lisp: Un lenguaje de casi 50 años de historia}}{Solo Programadores Mundo Linux, (84):46-49 (2005).}{}{}
+\cventry{2005}{Arroyo, D.}{\textsc{Aplicaciones Prácticas de Inteligencia Artificial II}}{Solo Programadores Mundo Linux, (77):18-21 (2005).}{}{}
+\cventry{2005}{Arroyo, D.}{\textsc{Aplicaciones Prácticas de Inteligencia Artificial I}}{Solo Programadores Mundo Linux, (75):24-28 (2005).}{}{}
+\cventry{2003}{Arroyo, D.}{\textsc{Biblioteca Digital y Web Semántica}}{Solo Programadores Mundo Linux, (50):8-11 (2003).}{}{}
+
+\subsection{Libros traducidos}
+\cventry{2017}{Dominik, C.}{\textsc{Guía compacta de org-mode}}{Libremanuals, (2017).}{}{}
+\cventry{2017}{Chassell, R.J.}{\textsc{Una introducción a la programación en emacs lisp}}{Libremanuals, (2016).}{}{}
+\cventry{2016}{Gough, B.}{\textsc{Una introducción a GCC}}{Libremanuals, (2016).}{}{}
+
+\subsection{Volúmenes editados}
+\cventry{2000}{Boticario, J.G.; Gaudioso, E.; Aguado, M.; Arroyo, D.; Catalina, C.; Cordova, M.A.; García, J.; Ortíz, J.; Pesquera, A.; Raffenne, E.; Redal, D.; San Cristóbal, E.}{\textsc{TutorT - UNED: Tutor telemático de la UNED}}{Tec-infor, Instituto universitario de educacion a distancia, (IUED), UNED, Madrid (2000)}{}{}
+
+\subsection{Artículos revisados por pares en conferencias}
+\cventry{2004}{Boticario, J.G.; Raffenne, E.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Guzmán, J.L.; García, T.; Hermira, S.; Ortíz, J.; Pesquera, A.; Romojaro, H.; Valiente, S.}{\textsc{An active collaborative framework for improving e-learning practices.}}{In the 21st world conference on open learning and distance education, lifelong learning in the networked world.  International council for open and distance education (ICDE), Hong Kong (2004)}{}{}
+\cventry{2004}{Boticario, J.G.; Raffenne, E.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Guzmán, J.L.; García, T.; Hermira, S.; Ortíz, J.; Pesquera, A.; Romojaro, H.; Valiente, S.}{\textsc{ALF: Un Entorno Abierto para el Desarrollo de Comunidades Virtuales de Trabajo y Cursos Adaptados a la Educación Superior}}{Virtual Educa 2004, Barcelona, Spain (2004)}{}{}
+\cventry{2004}{Boticario, J.G.; Raffenne, E.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Guzmán, J.L.; García, T.; Hermira, S.; Ortíz, J.; Pesquera, A.; Romojaro, H.; Valiente, S.}{\textsc{ALFANET: Active learning in aLF through Virtual Communities and CSCL.}}{CEN/ISSS Workshop. Learning Technologies meeting, Madrid, Spain (2004)}{}{}
+\cventry{2003}{Boticario, J.G.; Raffenne, E.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Guzmán, J.L.; García, T.; Hermira, S.; Ortíz, J.; Pesquera, A.; Romojaro, H.; Valiente, S.}{\textsc{The INNOVA approach}}{Eadtu Anual Conference: E-Bologna, 2003., Madrid, Spain (2003)}{}{}
+\cventry{2003}{Boticario, J.G.; Raffenne, E.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Guzmán, J.L.; García, T.; Hermira, S.; Ortíz, J.; Pesquera, A.; Romojaro, H.; Valiente, S.}{\textsc{ALF: Mejora del aprendizaje a través de un entorno colaborativo basado en comunidades virtuales}}{In 3a Conferencia Internacional de la Educación y de la Formación Basada en las Tecnologías (Online Educa 2003), Barcelona, Spain (2003)}{}{}
+\cventry{2003}{Boticario, J.G.; Raffenne, E.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Guzmán, J.L.; García, T.; Hermira, S.; Ortíz, J.; Pesquera, A.; Romojaro, H.; Valiente, S.}{\textsc{ALF: Aprendizaje efectivo mediante comunidades virtuales y espacios estructurados de trabajo colaborativo}}{In IV Conferencia Internacional sobre Educación, Formación y Nuevas Tecnologías (Virtual Educa 2003)}{}{}
+\cventry{2001}{Boticario, J.G.; Catalina, C.; Aguado, M.; Arroyo, D.; Cordova, M.A.; Gaudioso, E.; Pesquera, A.; Raffenne, E.; Recio, D.}{\textsc{In “A dynamic web platform for distance learning research and training”}}{The future of learning - learning for the future 20th world conference on open learning and distance education, Germany (2001)}{}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Habilidades informáticas}
+
+\cvitem{Normal}{\textsc{java}, \textsc{c}, \textsc{GNU R}, \textsc{Ruby}}
+\cvitem{Muy Bueno}{\textsc{html}, \textsc{Drupal}, \LaTeX, \textsc{css}, \textsc{GNU/Linux}, \textsc{bash}, \textsc{SQL}, \textsc{php}, \textsc{jquery}} 
+\cvitem{Excelente}{\textsc{python}, \textsc{git}}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%% \section{Communication Skills}
+
+%% \cvitem{2010}{Oral Presentation at the California Business Conference}
+%% \cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Idiomas}
+
+\cvitemwithcomment{Inglés}{Intermedio}{Fluido en conversación}
+\cvitemwithcomment{Spanish}{Idioma original}{}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
