@@ -2,7 +2,7 @@
 #+h3: David Arroyo Menéndez 
 #+LANGUAGE: es
 #+AUTHOR: David Arroyo Menéndez 
-#+EMAIL: davidam@gnu.org
+#+EMAIL: davidam@gmail.com
 #+DATE: 01/05/2001
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/org.css" />
 
