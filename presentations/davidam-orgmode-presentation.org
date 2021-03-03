@@ -1,6 +1,6 @@
 #+TITLE:     Orgmode
 #+AUTHOR:    David Arroyo Menéndez
-#+EMAIL:     davidam@gnu.org
+#+EMAIL:     davidam@gmail.com
 #+DATE:      [2017-11-23 Wed]
 #+DESCRIPTION: Example of using org to create presentations using the beamer exporter
 #+KEYWORDS:  beamer org orgmode
