@@ -31,7 +31,8 @@ var photos = [
     "img/davidam-e.jpg",
     "img/davidam-santander.jpg",
     "img/davidam-mit.jpg",
-    "img/davidam-logo-madrid.jpg",    
+    "img/davidam-logo-madrid.jpg",
+    "img/davidam-covid19.jpg",        
 ];
 
 
