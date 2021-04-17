@@ -66,6 +66,9 @@ var x = Math.floor(Math.random() * colors.length);
 
 for (var i = 0; i < list.length; i++) {
     list[i].style.background = colors[x];
+    if ( colors[x] == "gold") {
+	list[i].style.color = "black";
+    }
 }
 
 //Document.getElementById('colortext').textContent = "text";
