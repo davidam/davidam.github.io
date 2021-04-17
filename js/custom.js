@@ -32,7 +32,8 @@ var photos = [
     "img/davidam-santander.jpg",
     "img/davidam-mit.jpg",
     "img/davidam-logo-madrid.jpg",
-    "img/davidam-covid19.jpg",        
+    "img/davidam-covid19.jpg",
+    "img/davidam-traje.jpg",
 ];
 
 
@@ -50,6 +51,7 @@ var colors = [
     "#0080FF",
     "black",
     "orange",
+    "gold",
     "purple"
 ]
 
@@ -83,8 +85,8 @@ if ( colors[x] == "red") {
     document.getElementById("demo").innerHTML = "You are a sky, I want a start up with you";
 } else if ( colors[x] == "orange" ) {
     document.getElementById("demo").innerHTML = "Understanding the diversity we know that the value of the unity";
-// } else if ( colors[x] == "gold" ) {
-//      document.getElementById("demo").innerHTML = "I want gold";
+} else if ( colors[x] == "gold" ) {
+     document.getElementById("demo").innerHTML = "The life is better accompanied by another person";
 } else {
     document.getElementById("demo").innerHTML = "Save your city, save your country, save the planet, join us in the distance.";
 }
