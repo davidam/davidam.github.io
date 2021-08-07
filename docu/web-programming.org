@@ -1,0 +1,148 @@
+#+TITLE: Web Programming Crash Course
+#+AUTHOR: David Arroyo Menéndez
+#+OPTIONS: H:2 toc:nil num:t
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation]
+#+BEAMER_THEME: Madrid
+#+COLUMNS: %45ITEM %10BEAMER_ENV(Env) %10BEAMER_ACT(Act) %4BEAMER_COL(Col) %8BEAMER_OPT(Opt)
+
+* Summary
+** Web Programming: Summary
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/sql-examples.git
+$ git clone https://github.com/davidam/php-examples.git
+$ git clone https://github.com/davidam/js-examples.git
+$ git clone https://github.com/davidam/jquery-examples.git
+$ git clone https://github.com/davidam/bootstrap-examples.git
+$ git clone https://github.com/davidam/angular-examples.git
+$ git clone https://github.com/davidam/casperjs-examples.git
+#+END_SRC
+
+1. Storing Data: sql and nosql
+2. PHP: A popular language in web programming
+3. Pure Javascript!
+4. JQuery: the popular library about js with ajax
+5. Bootstrap: A responsive solution
+6. NodeJS: JS in the server side
+7. Angular: A MVC javascript library
+8. Jestjs: Test for JS
+9. CasperJS: Test for the frontend
+
+**** This will be formatted as a beamer note                       :B_note:
+     :PROPERTIES:
+     :BEAMER_env: note
+     :END:
+
+** Storing Data (I): What?
+
++ SQL is the Structured Query Language
++ ACID is Atomicity, Consistency, Isolation and Durability
++ noSQL is a most fast way to make queries droping ACID
+
+** Storing Data (II): You must to learn
+
++ Create databases
++ Create tables
++ Insert and delete rows
++ Queries in tables
++ Dumps to save databases and recover databases
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/sql-examples.git
+#+END_SRC
+
+** PHP (I): What?
+
++ A popular language in web programming
++ A language in the server side
+
+** PHP (II): You must to learn
+
++ loops, control structures
++ php datastructures
++ poo
++ filesystem
++ filters
++ formats (xml, csv, ...)
++ regex
++ cookies, sessions
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/php-examples.git
+#+END_SRC
+
+** Pure Javascript! (I): What?
+
++ A popular language in web programming
++ A language in the client side
+
+** Pure Javascript! (II): You must to learn
+
++ loops, control structures
++ datastructures
++ formats (xml, json, ...)
++ debugging js
++ ajax in pure js
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/js-examples.git
+#+END_SRC
+
+** JQuery (I): What?
+
++ The popular js library with ajax
+
+** JQuery (II): You must to learn
+
++ Basics
++ JQuery UI
++ JQuery API
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/jquery-examples
+#+END_SRC
+
+** Bootstrap: What?
+
++ A responsive solution for web publishing
++ A mix of html markup, css and javascript code
+
+** Bootstrap (II): You must to learn
+
++ A good bunch of html examples
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/bootstrap-examples
+#+END_SRC
+
+** NodeJS: What?
+
++ NodeJS is javascript for the client and the server side
++ NodeJS has a very popular packaging system
+
+** NodeJS (II): You must to learn
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/nodejs-examples
+#+END_SRC
+
+** Angular (I): What?
+
++ A popular MVC framework in JavaScript
+
+** Angular (II): You must to learn
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/angularjs-examples
+#+END_SRC
+
+** Jest: What?
+
++ A testing system in Javascript
+
+** Jest (II): You must to learn
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/davidam/jest-examples
+#+END_SRC
+
