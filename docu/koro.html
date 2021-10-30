@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-10-30 sáb 09:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Versos escondidos a Koro Castellano</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="David Arroyo Menéndez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Versos escondidos a Koro Castellano</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgfa56eb7">1. Poemas a Koro (I)</a></li>
+<li><a href="#org91b3361">2. Poemas a Koro (II)</a></li>
+<li><a href="#org446cdb9">3. Poemas a Koro (III)</a></li>
+<li><a href="#orge82eab6">4. Poemas a Koro (IV)</a></li>
+<li><a href="#orgdd6d51a">5. Poemas a Koro (V)</a></li>
+<li><a href="#org83566f0">6. Poemas a Koro (VI)</a></li>
+<li><a href="#orgdedb35a">7. Poemas a Koro (VII)</a></li>
+<li><a href="#org1a2583c">8. Poemas a Koro (VIII)</a></li>
+<li><a href="#org1b7c7c4">9. Poemas a Koro (XIX)</a></li>
+<li><a href="#org968793f">10. Poemas a Koro (XX)</a></li>
+<li><a href="#org5fce049">11. Poemas a Koro (XXI)</a></li>
+<li><a href="#org20682dc">12. Poemas a Koro (XXII)</a></li>
+<li><a href="#orgfaf4255">13. Poemas a Koro (XXIII)</a></li>
+<li><a href="#orgb0e7e65">14. Licencia</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://www.davidam.com">Come back to davidam.com</a>
+</p>
+
+<p>
+Esta historia es pura ficción, cualquier parecido con la realidad es
+pura coincidencia.
+</p>
+
+<div id="outline-container-orgfa56eb7" class="outline-2">
+<h2 id="orgfa56eb7"><span class="section-number-2">1</span> Poemas a Koro (I)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Le veo liderar
+</p>
+
+<p>
+con Amazon azul oscuro y
+</p>
+
+<p>
+la sonrisa del dorado
+</p>
+
+<p>
+y así mi corazón corre alocado
+</p>
+
+
+<p>
+Deme una oportunidad
+</p>
+
+<p>
+para construir
+</p>
+
+<p>
+Amazon Universidad
+</p>
+
+
+<p>
+Que salgan doctorandos
+</p>
+
+<p>
+con doctoras, con doctores,
+</p>
+
+<p>
+con liderazgo universal,
+</p>
+
+<p>
+nadie se va a enfadar.
+</p>
+
+
+<p>
+Yo a usted le quiero &#x2026;
+</p>
+
+<p>
+ayudar &#x2026;
+</p>
+
+<p>
+Pero me dan miedo
+</p>
+
+<p>
+quienes no le quieren ná
+</p>
+
+<p>
+&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org91b3361" class="outline-2">
+<h2 id="org91b3361"><span class="section-number-2">2</span> Poemas a Koro (II)</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Ví a Andi
+</p>
+
+<p>
+y dí
+</p>
+
+<p>
+¿Encontrará la verdadera D
+</p>
+
+<p>
+a la verdadera Í?
+</p>
+
+<p>
+Id,
+</p>
+
+<p>
+Calla cadete,
+</p>
+
+<p>
+únete a KDE.
+</p>
+
+<p>
+Dime
+</p>
+
+<p>
+¿Qué?
+</p>
+
+<p>
+Yo soy de unir.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org446cdb9" class="outline-2">
+<h2 id="org446cdb9"><span class="section-number-2">3</span> Poemas a Koro (III)</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Libros, libros y más libros
+</p>
+
+<p>
+Y al final todos los contenidos,
+</p>
+
+<p>
+música, vídeos,
+</p>
+
+<p>
+dvds de mil amores,
+</p>
+
+<p>
+ordenadores,
+</p>
+
+<p>
+no son difamaciones,
+</p>
+
+<p>
+son obras de trabajadoras y trabajadores
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge82eab6" class="outline-2">
+<h2 id="orge82eab6"><span class="section-number-2">4</span> Poemas a Koro (IV)</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Una mujer, un objetivo,
+</p>
+
+<p>
+liderazgo internacional,
+</p>
+
+<p>
+tiene sentido,
+</p>
+
+<p>
+valores, economía,
+</p>
+
+<p>
+ecuaciones,
+</p>
+
+<p>
+fotos, simpatía,
+</p>
+
+<p>
+razones.
+</p>
+
+<p>
+Una distribución para todas las organizaciones
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdd6d51a" class="outline-2">
+<h2 id="orgdd6d51a"><span class="section-number-2">5</span> Poemas a Koro (V)</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+¿Enamorado?
+</p>
+
+<p>
+Y motivado!
+</p>
+
+<p>
+Aquí se trabaja,
+</p>
+
+<p>
+No nos gusta estar parados,
+</p>
+
+<p>
+Pensamiento divertido,
+</p>
+
+<p>
+Sonrientes, cayendo bien a la gente,
+</p>
+
+<p>
+No nos vamos a cansar,
+</p>
+
+<p>
+Estamos para triunfar
+</p>
+</div>
+</div>
+
+<div id="outline-container-org83566f0" class="outline-2">
+<h2 id="org83566f0"><span class="section-number-2">6</span> Poemas a Koro (VI)</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+¿Qué me dirá si le digo libros libres?
+</p>
+
+<p>
+Proponga, plantee, 
+</p>
+
+<p>
+Encontraremos la ecuación que más conviene,
+</p>
+
+<p>
+Sopesamos gastos e ingresos,
+</p>
+
+<p>
+Planteamos buenos precios.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdedb35a" class="outline-2">
+<h2 id="orgdedb35a"><span class="section-number-2">7</span> Poemas a Koro (VII)</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+¿Es este un sueño norteamericano?
+</p>
+
+<p>
+Queremos ganar en todos los mercados,
+</p>
+
+<p>
+España, Japón, Korea,
+</p>
+
+<p>
+pero también China o Guinea,
+</p>
+
+
+<p>
+Déjame que te seduzca,
+</p>
+
+<p>
+hazlo rentable,
+</p>
+
+<p>
+que se reproduzca.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a2583c" class="outline-2">
+<h2 id="org1a2583c"><span class="section-number-2">8</span> Poemas a Koro (VIII)</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Una mujer que es un monumento,
+</p>
+
+<p>
+con el corazón en el parlamento,
+</p>
+
+<p>
+en su familia,
+</p>
+
+<p>
+en los buenos sentimientos,
+</p>
+
+<p>
+¿Qué más queremos?
+</p>
+
+
+<p>
+¡Koro Castellano!
+</p>
+
+<p>
+una mujer de cuento.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1b7c7c4" class="outline-2">
+<h2 id="org1b7c7c4"><span class="section-number-2">9</span> Poemas a Koro (XIX)</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Koro te encuentro en Vogue
+</p>
+
+<p>
+y en la prensa,
+</p>
+
+<p>
+pero no en la Wikipedia
+</p>
+
+
+<p>
+¡Será que no interesa!
+</p>
+
+
+<p>
+No amas ese debate,
+</p>
+
+<p>
+Ni esa protesta.
+</p>
+
+<p>
+Te enseñaría a una 
+</p>
+
+<p>
+que sí te besa.
+</p>
+
+
+<p>
+Y a mas de una y a más de dos
+</p>
+
+<p>
+que cuando te hablo,
+</p>
+
+<p>
+siento que hablo cerca de Dios.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org968793f" class="outline-2">
+<h2 id="org968793f"><span class="section-number-2">10</span> Poemas a Koro (XX)</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+A Koro todos le van a querer,
+</p>
+
+<p>
+nadie me va a convencer contra usted,
+</p>
+
+<p>
+el lechero, el político,
+</p>
+
+<p>
+el vecino que habla de usted,
+</p>
+
+<p>
+Yo sí le sé querer,
+</p>
+
+<p>
+Nadie nos debe ofender
+</p>
+
+
+
+<p>
+¿Y esos de todostuslibros?,
+</p>
+
+<p>
+libreros unidos, con ánimo de victimismo,
+</p>
+
+<p>
+traficantes de un mundo desaparecido,
+</p>
+
+<p>
+Amazon ha vencido,
+</p>
+
+<p>
+Ellas y ellos han sonreido.
+</p>
+
+
+
+<p>
+¿Es lulu.com una revolución?
+</p>
+
+<p>
+Nos sirve para un revolcón,
+</p>
+
+<p>
+Idea locuaz la de la libertad,
+</p>
+
+<p>
+Nosotros la podríamos comercializar,
+</p>
+
+<p>
+liderar, mejorar y ampliar,
+</p>
+
+<p>
+hágame el amor, pero de verdad
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fce049" class="outline-2">
+<h2 id="org5fce049"><span class="section-number-2">11</span> Poemas a Koro (XXI)</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+Sé que tenemos un sueño escondido,
+</p>
+
+<p>
+el del ecofeminismo,
+</p>
+
+<p>
+es porque tuvimos corazoncito,
+</p>
+
+<p>
+no nos estorba, así nos damos más amorcito,
+</p>
+
+<p>
+alegría, confianza inversora,
+</p>
+
+<p>
+sí, me gusta tratarle como a una gran señora.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org20682dc" class="outline-2">
+<h2 id="org20682dc"><span class="section-number-2">12</span> Poemas a Koro (XXII)</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+Estaba en mi balcón y vaya un follón,
+</p>
+
+<p>
+verde paz apareció,
+</p>
+
+<p>
+y nadie lo comprendió,
+</p>
+
+<p>
+¿qué hace el ecologismo en un barrio tan de pijos?
+</p>
+
+<p>
+Militarás con modelos que mi hija tenga celos,
+</p>
+
+<p>
+Ganaremos elecciones,
+</p>
+
+<p>
+morado y blanco son nuestros colores,
+</p>
+
+<p>
+Somos la izda pija y revolucionaria,
+</p>
+
+<p>
+la idea no es estrafalaria
+</p>
+
+
+<p>
+De acuerdo, si has construido el edificio,
+</p>
+
+<p>
+¡haré el ecologismo!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfaf4255" class="outline-2">
+<h2 id="orgfaf4255"><span class="section-number-2">13</span> Poemas a Koro (XXIII)</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+A Pablo le han vencido,
+</p>
+
+<p>
+porque él mismo se ha ido,
+</p>
+
+<p>
+hacia tí van todas las miradas,
+</p>
+
+<p>
+eres vasca, rubia y guapa,
+</p>
+
+
+
+<p>
+Amazon está cambiando,
+</p>
+
+<p>
+necesito seguirlo observando.
+</p>
+
+
+<p>
+Con amor puro y eterno,
+</p>
+
+<p>
+no pretendo ser tu dueño,
+</p>
+
+<p>
+solo el hombre de tus sueños.  
+</p>
+
+
+
+<p>
+No es Belarra una lagarta,
+</p>
+
+<p>
+acéptala que no maltrata,
+</p>
+
+<p>
+que nos quita pederastas,
+</p>
+
+<p>
+que piensa en la vivienda,
+</p>
+
+<p>
+que no te hará ir a arrastras.
+</p>
+
+
+
+<p>
+Pobre Irene, triste y sola,
+</p>
+
+<p>
+queda en Moncloa,
+</p>
+
+<p>
+con su amado 
+</p>
+
+<p>
+en el paro.
+</p>
+
+
+
+<p>
+Podrás hacerle algo de compañía,
+</p>
+
+<p>
+sí, es ella buena chica.
+</p>
+
+
+
+<p>
+Trabaja en el problema,
+</p>
+
+<p>
+de género,
+</p>
+
+<p>
+reducir la brecha.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0e7e65" class="outline-2">
+<h2 id="orgb0e7e65"><span class="section-number-2">14</span> Licencia</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+Este documento está bajo una <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es">Licencia Creative Commons
+Reconocimiento-NoComercial-SinObraDerivada 3.0</a>
+</p>
+
+
+<div class="figure">
+<p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es"><img src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" alt="80x15.png" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: David Arroyo Menéndez</p>
+<p class="date">Created: 2021-10-30 sáb 09:56</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
