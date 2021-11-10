@@ -1,4 +1,4 @@
-#+TITLE: Versos escondidos a Koro Castellano
+#+TITLE: Versos escondidos a Koro Castellano. No hay nada más fuerte que el amor verdadero
 #+LANGUAGE: es
 #+AUTHOR: David Arroyo Menéndez
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/org.css" />
@@ -441,6 +441,31 @@ el parlamento está tomado,
 ¡Viva el Pais Vasco!
 ¡Viva Koro Castellano!
 ¡Viva Ámazon!
+
+* Poemas a Koro (XIX)
+
+¿Y con la policía qué pasó?
+¿Por qué no intervino el Ejército español?
+
+Drones Amazon, los fulminó,
+
+Yo te quiero, no tengas temor,
+ahora hagamos el amor.
+
+¿Por qué ves amor y no dominación?
+Estoy asustado, sometido al control.
+
+Así es el baile del amor,
+conocimiento, cariño
+y de los cuerpos atracción
+
+Pues así obedezco,
+si me dices que te quiera,
+te quiero,
+si me dices que me aleje,
+me alejo,
+si me cambias por un robot,
+ni me sorprendo.
 
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
