@@ -34,6 +34,10 @@ var photos = [
     "img/davidam-logo-madrid.jpg",
     "img/davidam-covid19.jpg",
     "img/davidam-traje.jpg",
+    "img/davidam-amsterdam-dark-ukranian-flag.jpg",
+    "img/davidam-stalingrad.jpg",
+    "img/davidam-ukrainian-flag.jpg",
+    "img/davidam-united-painting.jpg",
 ];
 
 
