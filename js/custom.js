@@ -39,7 +39,8 @@ var photos = [
     "img/davidam-ukrainian-flag.jpg",
     "img/davidam-united-painting.jpg",
     "img/davidam-bath.jpg",
-    "img/davidam-piruli.jpg",    
+    "img/davidam-piruli.jpg",
+    "img/davidam-park.jpg",    
 ];
 
 
