@@ -2,7 +2,7 @@
   @licstart  The following is the entire license notice for the 
   JavaScript code in this page. 
   
-  Copyright (C) 2020  David Arroyo Menéndez davidam@libresoft
+  Copyright (C) 2020  David Arroyo Menéndez davidam@gmail.com
   
   The JavaScript code in this page is free software: you can 
   redistribute it and/or modify it under the terms of the GNU 
@@ -40,7 +40,8 @@ var photos = [
     "img/davidam-united-painting.jpg",
     "img/davidam-bath.jpg",
     "img/davidam-piruli.jpg",
-    "img/davidam-park.jpg",    
+    "img/davidam-park.jpg",
+    "img/davidam-echenique.jpg",    
 ];
 
 
