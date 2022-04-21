@@ -49,7 +49,7 @@ var photos = [
 var size = photos.length;
 var x = Math.floor(size*Math.random());
 document.getElementById('photo-left').src=photos[x];
-document.getElementById('photo-rigth').src=photos[x];
+document.getElementById('photo-right').src=photos[x];
 
 //document.getElementById("demo").innerHTML = "colortext2";
 
