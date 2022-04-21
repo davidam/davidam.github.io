@@ -37,22 +37,39 @@ h1 {
 
 /* #### Content Box #### */
 
+
 .content-left {
   left: 25px;
   float: left;
-  width:45%;
+  width: 45%;
   padding: 3px;
   margin: 15px 15px 5px 15px;
   font-size: 90%;
 }
 
 .content-right {
+  right: 25px;
   float: right;
-  width:45%;
+  width: 45%;
   padding: 3px;
   margin: 15px 15px 5px 15px;
   font-size: 90%;
 }
+
+#photo-right {
+  position: absolute;
+  top: 0.75em;
+  height: 50px;
+  right: 3em;
+}
+
+#photo-left {
+  position: absolute;
+  top: 0.75em;
+  height: 50px;
+  left: 3em;
+}
+
 
 @media (max-width: 850px) {
 
@@ -65,6 +82,39 @@ h1 {
       width: 100%;
       font-size: 20px;
   }
+    
+  #photo-left {
+      position: absolute;
+      top: 140px;
+      left: 3em;
+  }
+    
+  #photo-right {
+      position: absolute;
+      top: 140px;
+      right: 3em;
+  }
+
+  .content {
+      margin-top: 170px;
+  }
+}
+
+@media (max-width: 520px) {
+    
+    #photo-left {
+	position: absolute;
+	top: 190px;
+	margin: 10px;
+	left: 3em;
+    }
+    
+    #photo-right {
+	position: absolute;
+	top: 190px;
+	margin: 10px;
+	right: 3em;
+    }
 
 }
 
@@ -103,14 +153,3 @@ h1 {
     margin-left: 15px;
 }
 
-#photo-rigth{
-    position: absolute;    
-    height: 50px;
-    right: 3em;
-}
-
-#photo-left {
-    position: absolute;    
-    height: 50px;
-    left: 3em;    
-}
