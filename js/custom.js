@@ -42,7 +42,8 @@ var photos = [
     "img/davidam-bath.jpg",
     "img/davidam-piruli.jpg",
     "img/davidam-park.jpg",
-    "img/davidam-echenique.jpg",    
+    "img/davidam-echenique.jpg",
+    "img/davidam-iguazu.jpg",    
 ];
 
 
