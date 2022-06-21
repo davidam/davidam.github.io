@@ -47,7 +47,8 @@ var photos = [
     "img/davidam-iguazubrasil.jpg",
     "img/davidam-elsalto.jpg",
     "img/davidam-puenteamistad.jpg",
-    "img/davidmichelangelo.jpg",    
+    "img/davidmichelangelo.jpg",
+    "img/davidam-rms.jpg",        
 ];
 
 
