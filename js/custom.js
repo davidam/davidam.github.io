@@ -2,7 +2,7 @@
   @licstart  The following is the entire license notice for the 
   JavaScript code in this page. 
   
-  Copyright (C) 2020  David Arroyo Menéndez davidam@libresoft
+  Copyright (C) 2020  David Arroyo Menéndez davidam@gmail.com
   
   The JavaScript code in this page is free software: you can 
   redistribute it and/or modify it under the terms of the GNU 
@@ -35,16 +35,27 @@ var photos = [
     "img/davidam-covid19.jpg",
     "img/davidam-traje.jpg",
     "img/davidam-amsterdam-dark-ukranian-flag.jpg",
+    "img/davidam-barco-amsterdam.jpg",
     "img/davidam-stalingrad.jpg",
     "img/davidam-ukrainian-flag.jpg",
     "img/davidam-united-painting.jpg",
+    "img/davidam-bath.jpg",
+    "img/davidam-piruli.jpg",
+    "img/davidam-park.jpg",
+    "img/davidam-echenique.jpg",
+    "img/davidam-iguazu.jpg",
+    "img/davidam-iguazubrasil.jpg",
+    "img/davidam-elsalto.jpg",
+    "img/davidam-puenteamistad.jpg",
+    "img/davidmichelangelo.jpg",
+    "img/davidam-rms.jpg",        
 ];
 
 
 var size = photos.length;
 var x = Math.floor(size*Math.random());
 document.getElementById('photo-left').src=photos[x];
-document.getElementById('photo-rigth').src=photos[x];
+document.getElementById('photo-right').src=photos[x];
 
 //document.getElementById("demo").innerHTML = "colortext2";
 

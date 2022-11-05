@@ -1,9 +1,8 @@
 
 * Científica
-David Arroyo Menéndez se encuentra estudiando el doctorado en la
-URJC. Comenzó a participar en grupos científicos a través de
-publicaciones en la UNED, mientras cursaba la carrera en el área de
-e-learning en el momento que aparecía Internet. Después pasó unos años
+Comenzó a participar en grupos científicos a través de
+publicaciones en la UNED en el área de e-learning en el momento que
+aparecía Internet mientras cursaba la carrera. Después pasó unos años
 de vida profesional en la empresa privada en el área de programación
 web. Después decide comenzar estudios de máster en la UCM para
 entender lo técnico de la sociología, los métodos de investigación en
@@ -48,9 +47,8 @@ En el nivel de publicaciones tiene:
 
 
 * Scientific
-David Arroyo Menéndez is doing the Phd in the URJC. He starts to
-participate in research groups with e-learning publications at UNED,
-while he is doing the degree in Computing Science.
+He starts to participate in research groups with e-learning publications
+at UNED, while he is doing the degree in Computing Science.
 
 Later, he was working in the private companies in the web programming
 area. After of this, he starts master studies in the UCM to understand
