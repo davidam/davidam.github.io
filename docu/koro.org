@@ -779,6 +779,49 @@ L: en un coche la han metido
 L: hay que hablar con el partido
 D: Sí, lo he entendido
 
+* Poemas a Koro (XXIX)
+
+K: Pensé que alguien me había cogido
+K: pero eran mi esposa y mi marido
+L: Estamos en Baztán
+L: A tus padres les interesó el plan
+D: Es tu fiesta de cumpleaños
+D: Aunque todo resulta extraño
+KyU: Estamos en una okupa abertzale
+KyU: Desde aquí nos gusta liderar
+D: Así es la empresa de Andí
+D: Y+D+I 
+D: Si lo sabes entender
+D: hay una parte para tí
+
+* Poemas a Koro (XXX)
+
+KLU: David me dejo de hacer la lista
+KLU: sois de la Unión Real de la Juventud Comunista
+KLU: ya tienes tus hijas
+KLU: te las habíamos robados desde Euskal Herría
+KLU: la vacuna está fuertecita
+KLU: Andi tiene la compañía
+KLU: vuelves con la inesita
+
+* Poemas a Koro (XXXI)
+
+Fiesta, baile, risas y regalos, ahora, por fin,
+todos parecen humanos,
+pero espera ...
+
+KLU: D verdadera con I verdadera
+KLU: juntaré todas las letras
+KLU: hasta que madre pierda
+D: en eso puedo ayudar
+D: he escrito el software para hacer los match
+D: en la UNED están llamando
+D: quieren ofrecerme un contrato
+L: con un Unidas Podemos he hablado
+L: las ministras también han ayudado
+KLU: Así sí me siento tu amiga
+KLU: Soy Ko-RRo, la Ro Kooperativa
+D: Ese será el nombre de la nueva compañía
 
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
