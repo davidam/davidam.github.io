@@ -823,6 +823,33 @@ KLU: Así sí me siento tu amiga
 KLU: Soy Ko-RRo, la Ro Kooperativa
 D: Ese será el nombre de la nueva compañía
 
+* Poemas a Koro (XXXII)
+
+I: Cambiando valores a Baztán hacéis daño
+I: aquí cada cual están siempre en un lado
+I: con ustedes no entendemos
+I: si sois del monopolio o de Unidas Podemos
+I: Así, que de nada de ustedes creemos
+I: Queremos veros unos años igual
+I: Si no no os vamos a aceptar
+I: Bastantes problemas tuvimos
+I: Con Marina D'Or y esa maldita ecuación
+D: Con menos cambio extremista
+D: Se tranquilizaría la economía
+D: Lo vamos a sopesar
+D: Está bien dejar de cambiar
+I: Ahora fuera de Baztán
+I: Aquí todavía no debéis pasar
+
+* Poemas a Koro (XXXIII)
+
+KLU: Vaya un lío hemos armado
+KLU: Familia y trabajo se han desajustado
+KLU: Contigo no sé qué hacer
+KLU: Quizás te deba vender
+KLU: Te exporto a Suramérica
+K: Allí Amazon no tiene mucha presencia ...
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
