@@ -934,6 +934,12 @@ D: se aleja de mi psicología natural
 D: Santamaría aléjate
 D: tu all.csv no lo quiero tener
 
+* Poemas a Koro (XXXV)
+
+D: Y así estos poemas han acabado
+D: porque ya no hablábamos
+D: de Koro Castellano
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
