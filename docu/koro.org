@@ -9,6 +9,8 @@
 Esta historia es pura ficción, cualquier parecido con la realidad es
 pura coincidencia.
 
+Por favor, no lea las secciones poemacs si no sabe programar
+
 * Poemas a Koro (I)
 Le veo liderar
 
@@ -883,11 +885,36 @@ D: les acompañan mis dedos que llevan de las flores los pétalos,
 D: bailamos lambada hasta llegar a la cama
 D: y tener orgasmos toda la semana
 
-* Poemas a Koro (XXXV)
+* Poemacs a Koro (II)
 
 D: Me sentí libre más de un día
 D: de las horribles pesadillas
 D: luego desapareció cual dulce dama
+
+La Inter de Paul le saluda
+
+IP: Bienvenido comandante
+IP: Queremos interrogarle
+IP: Hemos escuchado las conversaciones
+IP: Queremos analizar orina y sangre
+IP: Que sople fuerte el aire
+D: De acuerdo, adelante
+IP: Todo limpio y estamos sorprendidísimos
+IP: Espere un momentito
+IP: Es este ficherito
+IP: all.csv se hace llamar
+IP: Este fichero es ilegal
+D: Ponía MIT, lo juro
+IP: Licencia no había
+IP: se había llamado a la policía
+IP: Hay muchos casos así
+IP: La conducta suicida es sí
+IP: leemos el setup.py
+IP: sin buscar el fichero MIT
+IP: si su vida quiere salvar
+IP: lo tiene que eliminar
+IP: su actitud es insana
+IP: queremos para usted un mañana
 
 
 * Licencia 
