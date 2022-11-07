@@ -928,6 +928,12 @@ D: buenos o malos
 D: Ahora queremos cumplir
 D: tenemos ganas de vivir
 
+D: La sustancia psicológica ilegal
+D: se aleja de mi psicología natural
+
+D: Santamaría aléjate
+D: tu all.csv no lo quiero tener
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
