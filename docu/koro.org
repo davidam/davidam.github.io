@@ -916,6 +916,17 @@ IP: lo tiene que eliminar
 IP: su actitud es insana
 IP: queremos para usted un mañana
 
+* Poemacs a Koro (III)
+
+D: Hemos acordado
+D: que en la Free Software Directory
+D: nos juntamos
+D: entre todos nos miramos
+D: si en la licencia somos
+D: buenos o malos
+
+D: Ahora queremos cumplir
+D: tenemos ganas de vivir
 
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
