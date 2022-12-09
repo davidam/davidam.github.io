@@ -974,6 +974,23 @@ D: más amistad, más inteligente
 D: familia, hijos, dinero,
 D: la felicidad que no miente
 
+* Poemas a Koro (XXXVII)
+
+D: el tiempo pasa deprisa,
+D: David trabaja la ingeniería,
+D: con su nueva amiga,
+D: love programming,
+D: es la nueva metodología,
+D: entender afectos, ideología,
+D: sexo, amistades, empatías,
+D: objetivos, economías,
+D: se emparejan programadoras,
+D: y programadores con simpatía,
+D: De Bolivía a Ecuador,
+D: no hay lugar para el rencor,
+D: todo es psicología y educación,
+D: en un continente hecho para el amor.
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
