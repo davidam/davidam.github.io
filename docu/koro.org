@@ -1006,7 +1006,16 @@ KLU: así se las hemos contado
 K: El sistema MocOS ya ha convencido,
 K: el hetero quería que,
 K: lo supieran todo sus amigos,
-K: él estaba enfadado con los confundidos
+K: él estaba enfadado con los confundidos,
+K: que sea el sistema del partido,
+K: Pablo lo patrocina en lo televisivo,
+
+K: Movimiento Obrero Clase Obrera Socialista,
+K: Así son las siglas,
+K: de este sistema operativo realista
+
+K: Así funciona COVID,
+K: Si lo has entendido hay una parte para tí
 
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
