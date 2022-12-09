@@ -1001,6 +1001,13 @@ KLU: ese amor avergonzado,
 KLU: así son las cosas,
 KLU: así se las hemos contado
 
+* Poemas a Koro (XXXIX)
+
+K: El sistema MocOS ya ha convencido,
+K: el hetero quería que,
+K: lo supieran todo sus amigos,
+K: él estaba enfadado con los confundidos
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
