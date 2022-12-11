@@ -1065,6 +1065,15 @@ D: Suave, suavecito.
 D: Las cosas se ven de lejos,
 D: No nos sorprendemos
 
+* Poemas a Koro (XLII)
+
+D: Si me contratas para el feminismo de datos,
+D: No me caes fatal,
+D: No me hables de amor,
+D: Esa ya me la sé,
+D: Empieza a poner dinero,
+D: Eso es lo que tienes que hacer.
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
