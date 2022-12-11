@@ -1051,6 +1051,19 @@ K: para tí, para mi hija,
 K: somos una familia
 K: piensa en la ecología
 
+* Poemas a Koro (XLI)
+
+D: Al final todos decimos lo mismo,
+D: Qué hacer el tiempo que estamos vivos,
+D: Salvar la Amazonía,
+D: Generar nuevas vidas,
+D: Escribir un algoritmo,
+D: Darnos cariño,
+D: Cada cual va eligiendo su destino,
+D: Pasito a pasito,
+D: Suave, suavecito.
+D: Las cosas se ven de lejos,
+D: No nos sorprendemos
 
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
