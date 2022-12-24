@@ -1074,6 +1074,14 @@ D: Esa ya me la sé,
 D: Empieza a poner dinero,
 D: Eso es lo que tienes que hacer.
 
+* Poemas a Koro (XLIII)
+
+K: Vamos a parar el mal
+K: La estatua del Ángel Caido
+K: De Retiro, la vamos a quitar
+D: Eso es empezar,
+D: Pero a mí me tienes que pagar
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
