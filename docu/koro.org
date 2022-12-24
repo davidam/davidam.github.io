@@ -1092,6 +1092,18 @@ K: Quedaron mudos,
 D: En nada de lo que dices,
 D: Ví jamás un duro
 
+* Poemas a Koro (XLV)
+
+D: Yo no veo otro requiebro,
+D: Que a cada obrero,
+D: Le paguen su dinero,
+D: Y a mí el primero,
+D: Luego si Amazon saca inventos,
+D: O lo saca otro elemento,
+D: Pues ya los abordaremos,
+D: Pero cada cual con su dinero,
+D: Pensara su regateo.
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
