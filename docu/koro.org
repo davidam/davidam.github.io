@@ -1082,6 +1082,16 @@ K: De Retiro, la vamos a quitar
 D: Eso es empezar,
 D: Pero a mí me tienes que pagar
 
+* Poemas a Koro (XLIV)
+
+K: Del Valle de los Caidos
+K: Al Valle del Cuelgamuros
+K: Cuántos destinos,
+K: Quedaron mudos,
+
+D: En nada de lo que dices,
+D: Ví jamás un duro
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
