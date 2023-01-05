@@ -1221,6 +1221,24 @@ K: esa ave marica no va a estar,
 D: fin de la urraca,
 K: en la fauna local.
 
+* Last poem to Koro
+
+D: Hoy es el día final,
+D: Mi cuchillo brilla,
+D: Tu sangre comienza a brotar,
+D: Mataste a mi padre,
+D: Lo empiezo a recordar,
+D: Has matado a tantas personas,
+D: Forzaste la relación desigual,
+D: Lo tengo en el adentro,
+D: Solo así lo puedo expresar,
+D: Cuando te veo muerta en el suelo,
+D: Es cuando lo empiezo a pensar,
+D: Que quería matarte,
+D: Y otra cosa tenía que pensar.
+
+
+
 * Licencia 
 Este documento está bajo una [[http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.es][Licencia Creative Commons
 Reconocimiento-NoComercial-SinObraDerivada 3.0]]
