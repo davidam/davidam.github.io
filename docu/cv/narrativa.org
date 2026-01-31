@@ -1,25 +1,27 @@
 
 * Científica
-Comenzó a participar en grupos científicos a través de
-publicaciones en la UNED en el área de e-learning en el momento que
-aparecía Internet mientras cursaba la carrera. Después pasó unos años
-de vida profesional en la empresa privada en el área de programación
-web. Después decide comenzar estudios de máster en la UCM para
+La participación en grupos científicos a través de
+publicaciones comienza en la UNED en el área de e-learning, es en el
+momento que aparecía Internet mientras cursaba la carrera.
+
+Después de unos años de vida profesional en la empresa privada en el área de programación
+web, llegó el momento de estudiar un máster en la UCM para
 entender lo técnico de la sociología, los métodos de investigación en
-ciencias sociales. Decide doctorarse con Jesús González Barahona por
-la afinidad ética en las cuestiones del software y científica en la
-medición cuantitativa del fenómeno especializando en la cuestión de
-género, desarrollando Damegender el primer toolkit de medición de
-género.
+ciencias sociales.
+
+Siguieron de nuevo más años en programación web. También comenzó un
+doctorado en las cuestiones del  software y científica en la medición
+cuantitativa del fenómeno especializando en la cuestión de género,
+desarrollando Damegender un toolkit de medición de género.
 
 * Profesional
-En su trayectoria profesional ha participado en diferentes proyectos
+En su trayectoria profesional se ha participado en diferentes proyectos
 con diferentes objetivos éticos (Fundación Bip Bip, Proyecto
-Solidario), científicos (UNED, Libresoft, UPM, BSC) y económicos
-(BBVA, Telefónica, OpenSistemas, ...). En su tiempo libre ha
-demostrado interés voluntarista en su profesión organizando diferentes
+Solidario), científicos (UNED, URJC, UPM, BSC) y económicos
+(BBVA, Telefónica, OpenSistemas, ...). También ha
+demostrado interés en su profesión organizando diferentes
 tipos de eventos tecnológicos en universidades y centros públicos como
-el Medialab.
+el Medialab, la UNED, ... 
 
 * Activista
 David ha dedicado gran parte de su vida militante al hacktivismo
